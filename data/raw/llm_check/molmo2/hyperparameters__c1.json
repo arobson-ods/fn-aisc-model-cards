@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "c73d36c7293cc1f5",
+ "request_user": "Fact definition: Training hyperparameters (learning rate, batch size, optimiser, epochs, sequence length).\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The extractor is right: the card gives no training hyperparameters. It never mentions a learning rate, batch size, optimiser, number of epochs or training sequence length. The only numeric settings it contains are for inference in the example code, such as max_new_tokens=2048 or 448 and max_fps=8 for tracking. Otherwise it only names the training datasets and base models (Qwen3-8B and SigLIP) and points to the technical report for details."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 582,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 255
+ },
+ "cost_usd_list_price": 0.011295000000000001,
+ "duration_ms": 7049
+}

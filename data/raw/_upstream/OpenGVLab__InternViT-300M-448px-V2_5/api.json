@@ -1,0 +1,83 @@
+{
+ "_id": "674022eb1b99fe8e53fde088",
+ "id": "OpenGVLab/InternViT-300M-448px-V2_5",
+ "private": false,
+ "pipeline_tag": "image-feature-extraction",
+ "tags": [
+  "safetensors",
+  "intern_vit_6b",
+  "image-feature-extraction",
+  "custom_code",
+  "arxiv:2312.14238",
+  "arxiv:2404.16821",
+  "arxiv:2410.16261",
+  "arxiv:2412.05271",
+  "base_model:OpenGVLab/InternViT-300M-448px",
+  "base_model:finetune:OpenGVLab/InternViT-300M-448px",
+  "license:mit",
+  "region:us"
+ ],
+ "downloads": 846,
+ "likes": 49,
+ "modelId": "OpenGVLab/InternViT-300M-448px-V2_5",
+ "author": "OpenGVLab",
+ "sha": "8f86a5e87697180b439811ca69fabbfccd38d996",
+ "lastModified": "2024-12-09T08:03:31.000Z",
+ "gated": false,
+ "disabled": false,
+ "model-index": null,
+ "config": {
+  "architectures": [
+   "InternVisionModel"
+  ],
+  "auto_map": {
+   "AutoConfig": "configuration_intern_vit.InternVisionConfig",
+   "AutoModel": "modeling_intern_vit.InternVisionModel"
+  },
+  "model_type": "intern_vit_6b"
+ },
+ "cardData": {
+  "license": "mit",
+  "pipeline_tag": "image-feature-extraction",
+  "base_model": "OpenGVLab/InternViT-300M-448px",
+  "base_model_relation": "finetune"
+ },
+ "siblings": [
+  {
+   "rfilename": ".gitattributes"
+  },
+  {
+   "rfilename": "README.md"
+  },
+  {
+   "rfilename": "config.json"
+  },
+  {
+   "rfilename": "configuration_intern_vit.py"
+  },
+  {
+   "rfilename": "flash_attention.py"
+  },
+  {
+   "rfilename": "model.safetensors"
+  },
+  {
+   "rfilename": "modeling_intern_vit.py"
+  },
+  {
+   "rfilename": "preprocessor_config.json"
+  }
+ ],
+ "spaces": [
+  "gatilin/nanoVLM-SmolLM2-dinov2",
+  "gatilin/nanoVLM-SmolLM2-sglip2-webui"
+ ],
+ "createdAt": "2024-11-22T06:21:31.000Z",
+ "safetensors": {
+  "parameters": {
+   "BF16": 304012288
+  },
+  "total": 304012288
+ },
+ "usedStorage": 608059320
+}

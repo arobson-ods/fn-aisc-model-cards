@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "knowledge_cutoff",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: knowledge_cutoff\nWhat to find: Data freshness / knowledge cutoff date of the training data.\nCard sections that often contain it: Training Data, Data Freshness, Cutoff\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Dec. 2024",
+  "quotes": [
+   "- **Date cutoff:** Dec. 2024."
+  ],
+  "section": "Model Description"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 550,
+  "cache_read_input_tokens": 6858,
+  "output_tokens": 145
+ },
+ "cost_usd_list_price": 0.0050256,
+ "duration_ms": 2016
+}

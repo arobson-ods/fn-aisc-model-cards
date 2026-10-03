@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "license",
+ "input_sha256": "b1229487fcca27ee92fb5c8f7c6cef83beb40ece9d0a059c00120007043d3adf",
+ "request_user": "Fact: license\nWhat to find: Licence(s) under which the model weights are made available (identifier, name or link).\nThe card's machine-readable metadata gives: \"apache-2.0\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines",
+  "quotes": [
+   "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use)."
+  ],
+  "agreement": "adds",
+  "section": "License"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7583,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 241
+ },
+ "cost_usd_list_price": 0.032746000000000004,
+ "duration_ms": 2653
+}

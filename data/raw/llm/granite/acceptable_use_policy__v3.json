@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "acceptable_use_policy",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: acceptable_use_policy\nWhat to find: Acceptable use policy or use restrictions that apply to the model (link or text).\nCard sections that often contain it: Acceptable Use, License, Use Policy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state an acceptable use policy or specific use restrictions. It only gives the Apache 2.0 license and says the models are open for commercial and research use.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16970,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 168
+ },
+ "cost_usd_list_price": 0.069564,
+ "duration_ms": 2585
+}

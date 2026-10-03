@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pretraining data is a mix of publicly available data, licensed data, and information from Meta's products and services (including publicly shared Instagram and Facebook posts and people's interactions with Meta AI). For safety fine-tuning, data combines human-generated data from vendors with synthetic data, with LLM-based classifiers used to select high-quality prompts and responses.",
+  "quotes": [
+   "Overview: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook and people’s interactions with Meta AI.",
+   "We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks. We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control."
+  ],
+  "section": "Training Data"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 460
+ },
+ "cost_usd_list_price": 0.0087038,
+ "duration_ms": 3685
+}

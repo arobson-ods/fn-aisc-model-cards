@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "integration_means",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Deployable via vLLM (recommended), llama.cpp, LM Studio, Ollama, SGLang and transformers; usable in Mistral Vibe via the Mistral API or a local vLLM server; fine-tuning via Axolotl and Unsloth. vLLM serving uses an OpenAI-compatible client with reasoning_effort set to 'none' or 'high'.",
+  "quotes": [
+   "- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).",
+   "- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs.",
+   "- [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang).",
+   "- [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers).",
+   "Mistral Medium 3.5 can be selected by starting `vibe`. If it is the first time you launch `vibe`, it will:",
+   "- [`Axolotl`](https://github.com/axolotl-ai-cloud/axolotl): See [here](https://docs.axolotl.ai/docs/models/mistral-medium-3_5.html).",
+   "REASONING_EFFORT = \"none\" # Toggle reasoning with 'high'."
+  ],
+  "section": "Usage"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 9889,
+  "output_tokens": 589
+ },
+ "cost_usd_list_price": 0.0101238,
+ "duration_ms": 4001
+}

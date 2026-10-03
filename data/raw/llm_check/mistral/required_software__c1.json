@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "d7dad65065996290",
+ "request_user": "Fact definition: Software required to run the model (libraries/frameworks and versions).\nValue taken from the model's structured metadata (config:transformers_version = \"transformers 5.6.0.dev0\"): transformers 5.6.0.dev0\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The card says the requirement is 'transformers >= 5.4.0' (vLLM and SGLang sections), plus vllm nightly and mistral_common >= 1.11.1. The config's transformers_version (5.6.0.dev0) is most likely the version used to save the config, not a stated requirement. It fits within the >= 5.4.0 range, so it doesn't conflict with the card. But it's only an indirect answer and leaves out the other required software."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 612,
+  "cache_read_input_tokens": 9306,
+  "output_tokens": 311
+ },
+ "cost_usd_list_price": 0.012985200000000002,
+ "duration_ms": 5493
+}

@@ -1,0 +1,365 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:cf1c3186-eef3-5ba5-a4da-6b99ab9f383d",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:04Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "molmo2:model",
+   "name": "allenai/Molmo2-8B",
+   "supplier": {
+    "name": "Allen Institute for AI (Ai2)"
+   },
+   "version": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use); trained on third party datasets subject to academic and non-commercial research use only."
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True), with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using chat messages containing text, video or image content; supports video QA, video pointing, tracking, multi-image QA and multi-image pointing."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets available on Hugging Face"
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "molmo2:ancestor-Qwen/Qwen3-8B",
+      "name": "Qwen/Qwen3-8B",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/Qwen/Qwen3-8B"
+       }
+      ],
+      "version": "b968826d9c46dd6066d109eabc6255188de91218"
+     },
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "molmo2:ancestor-google/siglip-so400m-patch14-384",
+      "name": "google/siglip-so400m-patch14-384",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/google/siglip-so400m-patch14-384"
+       }
+      ],
+      "version": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/allenai/Molmo2-8B"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/allenai/Molmo2-8B"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Vision-language model based on Qwen3-8B (language model) with SigLIP 2 as vision backbone",
+     "modelArchitecture": "Molmo2-8B is based on Qwen3-8B (language model) and uses SigLIP 2 as vision backbone. The card does not state layers, attention type, experts, active parameters, or design rationale.",
+     "inputs": [
+      {
+       "format": "text"
+      },
+      {
+       "format": "image"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "image-text-to-text",
+     "datasets": [
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-Cap"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-VideoCapQA"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-VideoSubtitleQA"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-AskModelAnything"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-VideoPoint"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-VideoTrack"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-MultiImageQA"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-SynMultiImageQA"
+      },
+      {
+       "ref": "molmo2:dataset-allenai/Molmo2-MultiImagePoint"
+      },
+      {
+       "ref": "molmo2:training-data"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Average Score on 15 Academic Benchmarks: Molmo2-8B 63.1 (also Molmo2-4B 62.8, Molmo2-7B 59.7, GPT-5 70.6, Gemini 2.5 Pro 71.2, Qwen3-VL-8B 59.5)"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines."
+     ],
+     "technicalLimitations": [
+      "out_of_scope_uses: No explicit out-of-scope list. The card says the model is intended for research and educational use. Its training datasets are subject to academic and non-commercial research use only, and users should review the sources to decide whether the model suits their use case."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "8661703120"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "36864"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "float32"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-Cap",
+   "name": "allenai/Molmo2-Cap",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-Cap"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-Cap"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-VideoCapQA",
+   "name": "allenai/Molmo2-VideoCapQA",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-VideoCapQA"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoCapQA"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-VideoSubtitleQA",
+   "name": "allenai/Molmo2-VideoSubtitleQA",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-VideoSubtitleQA"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoSubtitleQA"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-AskModelAnything",
+   "name": "allenai/Molmo2-AskModelAnything",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-AskModelAnything"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-AskModelAnything"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-VideoPoint",
+   "name": "allenai/Molmo2-VideoPoint",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-VideoPoint"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoPoint"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-VideoTrack",
+   "name": "allenai/Molmo2-VideoTrack",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-VideoTrack"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-VideoTrack"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-MultiImageQA",
+   "name": "allenai/Molmo2-MultiImageQA",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-MultiImageQA"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-MultiImageQA"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-SynMultiImageQA",
+   "name": "allenai/Molmo2-SynMultiImageQA",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-SynMultiImageQA"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-SynMultiImageQA"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:dataset-allenai/Molmo2-MultiImagePoint",
+   "name": "allenai/Molmo2-MultiImagePoint",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Molmo2-MultiImagePoint"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Molmo2-MultiImagePoint"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "molmo2:training-data",
+   "name": "Training data of allenai/Molmo2-8B (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_modality: Image-text and video-text pairs (images, video, multi-image)\ndata_provenance: Public datasets: trained on publicly available third party datasets (as referenced in the technical report and the Molmo2 data collection of curated image-text and video-text pairs); the card notes these are subject to academic and non-commercial research use only.\ndata_acquisition: Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only.\ndata_scope: Trained on publicly available third party datasets, a collection of highly-curated image-text and video-text pairs; the model supports image, video and multi-image understanding and grounding. The datasets are subject to academic and non-commercial research use only."
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "molmo2:dependency-software",
+   "name": "transformers"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "molmo2:model",
+   "dependsOn": [
+    "molmo2:dependency-software"
+   ]
+  },
+  {
+   "ref": "molmo2:dependency-software"
+  }
+ ]
+}

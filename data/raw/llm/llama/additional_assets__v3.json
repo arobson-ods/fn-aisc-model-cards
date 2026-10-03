@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "additional_assets",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Quantized checkpoints are provided (Llama 4 Scout released as BF16 weights, with code for on-the-fly int4 quantization; Maverick as BF16 and FP8 weights). Safety system-level protections (Llama Guard, Prompt Guard, Code Shield) are provided to the community. Training data and training code are not stated as released.",
+  "quotes": [
+   "We've provided quantized checkpoints for deployment flexibility, but all reported evaluations and testing were conducted on bf16 models.",
+   "The Llama 4 Scout model is released as BF16 weights, but can fit within a single H100 GPU with on-the-fly int4 quantization; the Llama 4 Maverick model is released as both BF16 and FP8 quantized weights.",
+   "We provide code for on-the-fly int4 quantization which minimizes performance degradation as well.",
+   "We provide the community with system level protections - like Llama Guard, Prompt Guard and Code Shield - that developers should deploy with Llama models or other LLMs."
+  ],
+  "section": "Quantization"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9431,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 444
+ },
+ "cost_usd_list_price": 0.042168,
+ "duration_ms": 3776
+}

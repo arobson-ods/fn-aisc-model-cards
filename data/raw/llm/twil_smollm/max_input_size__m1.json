@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "max_input_size",
+ "input_sha256": "9fdce6457af9ab83716deb2f7d54c34a72f0e71313cb60254608d53d81dc0c2b",
+ "request_user": "Fact: max_input_size\nWhat to find: Maximum input size (context length in tokens, or maximum image/audio size).\nThe card's machine-readable metadata gives: 65536\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Context window of 65,536 tokens (inherited from base model; all scores measured within an 8,192-token window)",
+  "quotes": [
+   "| Context window            | 65,536 tokens                                                                               |",
+   "The base model's 65,536-token context is carried through unchanged, but every score on this card\nwas measured inside an 8,192-token window; longer contexts are inherited rather than validated\nhere."
+  ],
+  "agreement": "adds",
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10930,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 263
+ },
+ "cost_usd_list_price": 0.0464702,
+ "duration_ms": 2825
+}

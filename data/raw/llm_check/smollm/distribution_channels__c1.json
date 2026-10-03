@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "191490aa31facc2d",
+ "request_user": "Fact definition: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nExtracted value: Open weights distributed via Hugging Face (HuggingFaceTB/SmolLM3-3B), with quantized checkpoints in a Hugging Face collection and intermediate checkpoints in a separate repo. Can be loaded with transformers and deployed via vLLM and SGLang with an OpenAI-compatible API; local inference supported with llama.cpp, ONNX, MLX, MLC and ExecuTorch.\nQuotes given as evidence (separated by [...]): **Fully open model**: open weights + full training details including public data mixture and training configs [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23) [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format. [...] The training intermediate checkpoints (including the mid-training and SFT checkpoints) are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints)\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "Quotes support open weights, quantized checkpoints in HF collection, intermediate checkpoints repo, vLLM/SGLang OpenAI-compatible API, and local inference tools. However, the specific repo name HuggingFaceTB/SmolLM3-3B and loading via transformers are not in the provided quotes (though present elsewhere in the card), so some claims lack quoted support."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1045,
+  "cache_read_input_tokens": 8726,
+  "output_tokens": 847
+ },
+ "cost_usd_list_price": 0.0270532,
+ "duration_ms": 10871
+}

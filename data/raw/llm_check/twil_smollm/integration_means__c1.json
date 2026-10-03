@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "6a73e992853e8f81",
+ "request_user": "Fact definition: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nExtracted value: Use via Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, greedy generate with max_new_tokens=2048); also quantized GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) for llama.cpp (llama-cli with --temp 0); evaluation ran through vLLM backend. Chat template is used and the model emits a <think>...</think> block before answering.\nQuotes given as evidence (separated by [...]): model = AutoModelForCausalLM.from_pretrained(\n    model_id, torch_dtype=torch.bfloat16, device_map=\"auto\"\n) [...] out = model.generate(**inputs, max_new_tokens=2048, do_sample=False) [...] Quantized GGUF builds ship in this repository alongside the safetensors weights. The `smollm3`\narchitecture is supported by llama.cpp [...] llama-cli -m TwIL-LM3-Q4_K_M.gguf -cnv --temp 0 -n 2048 [...] The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse. [...] Track B: 300 examples per task, greedy, `max_gen_toks = 4096`, `max_model_len = 8192`,\n  `repetition_penalty = 1.0`, chat template applied, vLLM backend.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's text supports every claim in the value. It shows loading with transformers AutoModelForCausalLM and AutoTokenizer, apply_chat_template, and greedy generate with max_new_tokens=2048. It lists GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) for llama.cpp, run with llama-cli and --temp 0. It says the vLLM backend was used for evaluation, the chat template was applied, and the model emits a <think> block before answering. Together these answer the integration definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1111,
+  "cache_read_input_tokens": 10326,
+  "output_tokens": 327
+ },
+ "cost_usd_list_price": 0.0175012,
+ "duration_ms": 5733
+}

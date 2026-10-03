@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "eval_methodology",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: eval_methodology\nWhat to find: How evaluations were run (harness, settings, prompts, shots).\nCard sections that often contain it: Evaluation, Methodology\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Benchmark footnotes give per-benchmark settings. Terminal Bench 2.1 was run with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. SWE-bench Pro used the Claude Code harness, temp=1.0, top_p=0.95 and a 256K context window. QwenSWEBench used the Claude Code harness, avg@3, an 8-hour timeout, max_tokens=32,768, temperature=1.0 and a 256K-token context window.",
+  "quotes": [
+   "2. Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072.",
+   "3. SWE-bench Pro: Evaluated with the Claude Code harness, temp=1.0, top_p=0.95, and a 256K context window.",
+   "10. QwenSWEBench: Inhouse coding benchmark to evaluate models' software engineering capabilities. Evaluated with the Claude Code harness. Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K-token context window."
+  ],
+  "section": "Benchmark Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 498
+ },
+ "cost_usd_list_price": 0.010789199999999999,
+ "duration_ms": 3627
+}

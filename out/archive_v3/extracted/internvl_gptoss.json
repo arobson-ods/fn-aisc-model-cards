@@ -1,0 +1,1148 @@
+[
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/provider_name__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "api:id = \"OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "49b11e8d5e9d4c822de52dee190f95c988009559",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "api:sha = \"49b11e8d5e9d4c822de52dee190f95c988009559\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "49b11e8d5e9d4c822de52dee190f95c988009559",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "49b11e8d5e9d4c822de52dee190f95c988009559",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "api:sha = \"49b11e8d5e9d4c822de52dee190f95c988009559\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "49b11e8d5e9d4c822de52dee190f95c988009559",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/eu_release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/acceptable_use_policy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/additional_assets__v3.json",
+  "status": "prose",
+  "value": "Checkpoints from different training stages (Pretrained, Instruct, MPO, and full CascadeRL) are open-sourced with HF and ModelScope links. Conversion scripts (custom2hf, hf2custom) are provided. Code is on GitHub (OpenGVLab/InternVL). The card says all models and code are publicly released. The evaluation uses VLMEvalkit.",
+  "quote": "Here, we also open-source the model weights after different training stages for potential research usage. [...] > If you want to convert the checkpoint between these two formats, please refer to the scripts about [custom2hf](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_custom2hf.py) and [hf2custom](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_hf2custom.py). [...] All models and code are publicly released. [...] > We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit).",
+  "quotes": [
+   "Here, we also open-source the model weights after different training stages for potential research usage.",
+   "> If you want to convert the checkpoint between these two formats, please refer to the scripts about [custom2hf](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_custom2hf.py) and [hf2custom](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_hf2custom.py).",
+   "All models and code are publicly released.",
+   "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)."
+  ],
+  "section": "InternVL3.5 Family",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/architecture_family__v3.json",
+  "status": "prose",
+  "value": "\"ViT–MLP–LLM\" paradigm (vision encoder + MLP + language model); language model initialized from Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; the 20B-A4B variant is listed with 21.2B-A4B total params (A4B notation)",
+  "quote": "This series of models follow the \"ViT–MLP–LLM\" paradigm adopted in previous versions of InternVL. [...] We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder using InternViT-300M and InternViT-6B.",
+  "quotes": [
+   "This series of models follow the \"ViT–MLP–LLM\" paradigm adopted in previous versions of InternVL.",
+   "We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder using InternViT-300M and InternViT-6B."
+  ],
+  "section": "Model Architecture",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/architecture_details__v3.json",
+  "status": "prose",
+  "value": "Follows the \"ViT–MLP–LLM\" paradigm; language model initialized from the Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; retains the Dynamic High Resolution strategy from InternVL1.5. For this 20B-A4B model: 0.3B vision params, 20.9B language params, 21.2B-A4B total. Each image patch is 1024 visual tokens from the vision encoder, compressed into 256 tokens via pixel shuffle before the LLM.",
+  "quote": "This series of models follow the \"ViT–MLP–LLM\" paradigm adopted in previous versions of InternVL. [...] We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder using InternViT-300M and InternViT-6B. [...] The Dynamic High Resolution strategy introduced in InternVL1.5 is also retained in our design. [...] | InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [...] Specifically, in InternVL3.5, each image patch is initially represented as 1024 visual tokens for the vision encoder, which are then compressed into 256 tokens via a pixel shuffle module before being passed to the Large Language Model (LLM).",
+  "quotes": [
+   "This series of models follow the \"ViT–MLP–LLM\" paradigm adopted in previous versions of InternVL.",
+   "We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder using InternViT-300M and InternViT-6B.",
+   "The Dynamic High Resolution strategy introduced in InternVL1.5 is also retained in our design.",
+   "| InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |",
+   "Specifically, in InternVL3.5, each image patch is initially represented as 1024 visual tokens for the vision encoder, which are then compressed into 256 tokens via a pixel shuffle module before being passed to the Large Language Model (LLM)."
+  ],
+  "section": "Model Architecture",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": 21232768704,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "api:safetensors.total = 21232768704",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 21232768704,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": [
+   "text",
+   "image"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "derived:pipeline_input_modalities = [\"text\", \"image\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text",
+     "image"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": 131072,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/config.json",
+  "quote": "config:text_config.max_position_embeddings = 131072",
+  "section": "config:text_config.max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:text_config.max_position_embeddings",
+    "value": 131072,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/max_output_size__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "image-text-to-text",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:pipeline_tag = \"image-text-to-text\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/config.json",
+  "quote": "config:torch_dtype = \"bfloat16\"",
+  "section": "config:torch_dtype",
+  "evidence": [
+   {
+    "path": "config:torch_dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": [
+   "OpenGVLab/MMPR-v1.2",
+   "OpenGVLab/MMPR-Tiny"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:datasets = [\"OpenGVLab/MMPR-v1.2\", \"OpenGVLab/MMPR-Tiny\"]",
+  "section": "card:datasets",
+  "evidence": [
+   {
+    "path": "card:datasets",
+    "value": [
+     "OpenGVLab/MMPR-v1.2",
+     "OpenGVLab/MMPR-Tiny"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_modality__v3.json",
+  "status": "prose",
+  "value": "Text and multimodal (image-text) data: pre-training uses large-scale text and multimodal corpora; SFT includes multimodal reasoning data and GUI/embodied interaction data.",
+  "quote": "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora. [...] (2) Multimodal reasoning data in the \"Thinking\" mode, which are included to instill long-thinking capabilities in the model.",
+  "quotes": [
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+   "(2) Multimodal reasoning data in the \"Thinking\" mode, which are included to instill long-thinking capabilities in the model."
+  ],
+  "section": "Pre-Training",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_provenance__v3.json",
+  "status": "prose",
+  "value": "Only partially stated. Synthetic data: multimodal \"Thinking\" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning rollouts, with incorrect rollouts filtered out. Pre-training uses \"large-scale text and multimodal corpora\", with no provenance given. The card gives no breakdown into web crawl, licensed, or user data.",
+  "quote": "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. [...] During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+  "quotes": [
+   "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes.",
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora."
+  ],
+  "section": "Supervised Fine-Tuning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_acquisition__v3.json",
+  "status": "prose",
+  "value": "SFT data comes from three sources: reused InternVL3 instruction-following data; multimodal \"Thinking\" reasoning data built synthetically by having InternVL3-78B describe images and feeding the descriptions to DeepSeek-R1 to sample reasoning rollouts, with incorrect-final-answer rollouts filtered out; and capability-expansion datasets (e.g., GUI-based interaction, embodied interaction). Pre-training uses large-scale text and multimodal corpora. The card does not state how rights were obtained.",
+  "quote": "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks. [...] To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. Rollouts with an incorrect final answer are filtered out. [...] (3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect [...] During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+  "quotes": [
+   "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks.",
+   "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. Rollouts with an incorrect final answer are filtered out.",
+   "(3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect",
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora."
+  ],
+  "section": "Supervised Fine-Tuning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_data_size__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_scope__v3.json",
+  "status": "prose",
+  "value": "Pre-training uses large-scale text and multimodal corpora; SFT data comes from three sources: InternVL3 instruction-following data, multimodal reasoning data in \"Thinking\" mode (covering expert domains such as mathematics and scientific disciplines), and capability-expansion datasets (GUI-based interaction, embodied interaction). Card metadata lists language as multilingual.",
+  "quote": "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora. [...] (1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks. [...] The questions in these datasets cover various expert domains, such as mathematics and scientific disciplines, thereby strengthening performance on different reasoning tasks. [...] (3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect",
+  "quotes": [
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+   "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks.",
+   "The questions in these datasets cover various expert domains, such as mathematics and scientific disciplines, thereby strengthening performance on different reasoning tasks.",
+   "(3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect"
+  ],
+  "section": "Pre-Training",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/knowledge_cutoff__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_curation__v3.json",
+  "status": "prose",
+  "value": "Card states some curation steps: random JPEG compression in pre-training; square-averaging re-weighting of NTP loss; SFT reasoning data built by InternVL3-78B describing images then DeepSeek-R1 sampling rollouts, with rollouts with an incorrect final answer filtered out.",
+  "quote": "The random JPEG compression is also included to enhance the model's real-world performance. [...] Rollouts with an incorrect final answer are filtered out. [...] To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes.",
+  "quotes": [
+   "The random JPEG compression is also included to enhance the model's real-world performance.",
+   "Rollouts with an incorrect final answer are filtered out.",
+   "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes."
+  ],
+  "section": "Supervised Fine-Tuning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/unsuitable_data_measures__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/personal_data__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/data_bias_measures__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_method__v3.json",
+  "status": "prose",
+  "value": "Training pipeline has stages: Multimodal Continual Pre-Training (CPT), Supervised Fine-Tuning (SFT), and Cascade Reinforcement Learning (CascadeRL). In CascadeRL, the model is first fine-tuned with Mixed Preference Optimization (MPO) under offline RL, followed by GSPO under online RL. The Flash version additionally has Visual Consistency Learning (ViCO).",
+  "quote": "Our training pipeline comprises four stages: Multimodal Continual Pre-Training (**CPT**), Supervised Fine-Tuning (**SFT**), and Cascade Reinforcement Learning (**CascadeRL**). In CascadeRL, we first fine-tune the model using Mixed Preference Optimization (**MPO**) under an offline RL setting, followed by **GSPO** under an oneline RL setting. [...] For the Flash version of InternVL3.5, we additionally introduce a lightweight training stage, termed Visual Consistency Learning (**ViCO**), which reduces the token cost required to represent an image patch.",
+  "quotes": [
+   "Our training pipeline comprises four stages: Multimodal Continual Pre-Training (**CPT**), Supervised Fine-Tuning (**SFT**), and Cascade Reinforcement Learning (**CascadeRL**). In CascadeRL, we first fine-tune the model using Mixed Preference Optimization (**MPO**) under an offline RL setting, followed by **GSPO** under an oneline RL setting.",
+   "For the Flash version of InternVL3.5, we additionally introduce a lightweight training stage, termed Visual Consistency Learning (**ViCO**), which reduces the token cost required to represent an image patch."
+  ],
+  "section": "InternVL3.5 Family",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/design_rationale__v3.json",
+  "status": "prose",
+  "value": "Cascade RL combines offline RL (MPO) as an efficient warm-up to reach satisfied results and guarantee high-quality rollouts, then online RL (GSPO) to refine the output distribution from the model's own rollouts; this achieves significant performance improvements at a fraction of the GPU time cost versus a single offline or online RL stage. GSPO was chosen because it was found more effective for training both dense and MoE models. In pre-training, square averaging re-weights the NTP loss to mitigate bias toward longer or shorter responses. SFT thinking data filters out rollouts with incorrect final answers.",
+  "quote": "Cascade RL aims to combine the benefits of offline RL and online RL to progressively facilitate the post-training of MLLMs in an efficient manner. [...] Specifically, we first fine-tune the model using an offline RL algorithm as an efficient warm-up stage to reach a satisfied results, which can guarantee the high-quality rollouts for the latter stage. [...] Subsequently, we employ an online RL algorithm to further refine the output distribution based on rollouts generated by the model itself.  Compared to the single offline or online RL stage, our cascaded RL achieves significant performance improvements at a fraction of the GPU time cost. [...] During the online RL stage, we employ GSPO, without reference model constraints, as our online RL algorithm, which we find more effective in training both dense and mixture-of-experts (MoE) models. [...] Additionally, to mitigate bias toward either longer or shorter responses during training, we adopt the square averaging to re-weight the NTP loss  as follows: [...] Rollouts with an incorrect final answer are filtered out.",
+  "quotes": [
+   "Cascade RL aims to combine the benefits of offline RL and online RL to progressively facilitate the post-training of MLLMs in an efficient manner.",
+   "Specifically, we first fine-tune the model using an offline RL algorithm as an efficient warm-up stage to reach a satisfied results, which can guarantee the high-quality rollouts for the latter stage.",
+   "Subsequently, we employ an online RL algorithm to further refine the output distribution based on rollouts generated by the model itself.  Compared to the single offline or online RL stage, our cascaded RL achieves significant performance improvements at a fraction of the GPU time cost.",
+   "During the online RL stage, we employ GSPO, without reference model constraints, as our online RL algorithm, which we find more effective in training both dense and mixture-of-experts (MoE) models.",
+   "Additionally, to mitigate bias toward either longer or shorter responses during training, we adopt the square averaging to re-weight the NTP loss  as follows:",
+   "Rollouts with an incorrect final answer are filtered out."
+  ],
+  "section": "Cascade Reinforcement Learning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/hyperparameters__v3.json",
+  "status": "prose",
+  "value": "Only partially stated: during SFT the context window is set to 32K tokens. The card gives no learning rate, batch size, optimiser or epochs.",
+  "quote": "In this stage, the context window is set to 32K tokens to adapt long-context information.",
+  "quotes": [
+   "In this stage, the context window is set to 32K tokens to adapt long-context information."
+  ],
+  "section": "Supervised Fine-Tuning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_hardware__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_time__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/compute_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/training_energy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/energy_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/carbon_emissions__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/inference_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/intended_uses__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/out_of_scope_uses__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/target_systems__v3.json",
+  "status": "prose",
+  "value": "The card describes multimodal (image-text) MLLM use with GUI interaction and embodied agency capabilities (agentic tasks), and states the model can be served as an API service via LMDeploy. No explicit intended-use section listing target systems such as RAG or decision support.",
+  "quote": "In addition, InternVL3.5 supports novel capabilities such as GUI interaction and embodied agency. [...] LMDeploy's `api_server` enables models to be easily packed into services with a single command.",
+  "quotes": [
+   "In addition, InternVL3.5 supports novel capabilities such as GUI interaction and embodied agency.",
+   "LMDeploy's `api_server` enables models to be easily packed into services with a single command."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/integration_means__v3.json",
+  "status": "prose",
+  "value": "Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required for the 20B version), and deployable with LMDeploy (pipeline, api_server with OpenAI-compatible RESTful API) or vLLM (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode is enabled via a system prompt (R1_SYSTEM_PROMPT) in a chat messages format.",
+  "quote": "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS. [...] > Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version of our model, transformers>=4.55.0 is required. [...] model = AutoModelForImageTextToText.from_pretrained( [...] To enable thinking mode, please set the system prompt to our Thinking System Prompt. [...] LMDeploy's `api_server` enables models to be easily packed into services with a single command. The provided RESTful APIs are compatible with OpenAI's interfaces.",
+  "quotes": [
+   "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS.",
+   "> Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version of our model, transformers>=4.55.0 is required.",
+   "model = AutoModelForImageTextToText.from_pretrained(",
+   "To enable thinking mode, please set the system prompt to our Thinking System Prompt.",
+   "LMDeploy's `api_server` enables models to be easily packed into services with a single command. The provided RESTful APIs are compatible with OpenAI's interfaces."
+  ],
+  "section": "Quick Start",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/required_hardware__v3.json",
+  "status": "prose",
+  "value": "Models with up to 30B parameters can be deployed on a single A100 GPU, the 38B model requires two A100 GPUs, and the 235B model requires eight A100 GPUs.",
+  "quote": "Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs.",
+  "quotes": [
+   "Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs."
+  ],
+  "section": "Quick Start",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.55.0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/limitations__v3.json",
+  "status": "prose",
+  "value": "The card has no dedicated limitations section. It notes only a few technical caveats. Thinking mode can produce undesired repetition, which it recommends mitigating with do_sample=True and temperature=0.6. LMDeploy does not yet support GPT-OSS, so vLLM is recommended for InternVL3.5-20B-A4B. The 20B version requires transformers>=4.55.0.",
+  "quote": "When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition. [...] However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS. [...] For the 20B version of our model, transformers>=4.55.0 is required.",
+  "quotes": [
+   "When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition.",
+   "However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS.",
+   "For the 20B version of our model, transformers>=4.55.0 is required."
+  ],
+  "section": "Quick Start",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": [
+   "multilingual"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:language = [\"multilingual\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "multilingual"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/eval_results__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/eval_datasets__v3.json",
+  "status": "prose",
+  "value": "Average scores reported on multimodal general, reasoning, text, and agentic benchmarks including MMBench v1.1 (en), MMStar, BLINK, HallusionBench, AI2D, OCRBench, MMVet, MME-RealWorld (en), MVBench, VideoMME, MMMU, MathVista, MathVision, MathVerse, DynaMath, WeMath, LogicVista, MATH500, AIME24, AIME25, GPQA, MMLU-Pro, GAOKAO, IFEval, SGP-Bench, VSI-Bench, ERQA, SpaCE-10, and OmniSpatial. Evaluation conducted with VLMEvalkit.",
+  "quote": "> Hatched bars represent closed-source commercial models. We report average scores on a set of multimodal general, reasoning, text, and agentic benchmarks: MMBench v1.1 (en), MMStar,BLINK, HallusionBench, AI2D, OCRBench, MMVet, MME-RealWorld (en), MVBench, VideoMME, MMMU, MathVista, MathVision, MathVerse, DynaMath, WeMath, LogicVista, MATH500, AIME24, AIME25, GPQA, MMLU-Pro, GAOKAO, IFEval, SGP-Bench, VSI-Bench, ERQA, SpaCE-10, and OmniSpatial. [...] > We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit).",
+  "quotes": [
+   "> Hatched bars represent closed-source commercial models. We report average scores on a set of multimodal general, reasoning, text, and agentic benchmarks: MMBench v1.1 (en), MMStar,BLINK, HallusionBench, AI2D, OCRBench, MMVet, MME-RealWorld (en), MVBench, VideoMME, MMMU, MathVista, MathVision, MathVerse, DynaMath, WeMath, LogicVista, MATH500, AIME24, AIME25, GPQA, MMLU-Pro, GAOKAO, IFEval, SGP-Bench, VSI-Bench, ERQA, SpaCE-10, and OmniSpatial.",
+   "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/eval_methodology__v3.json",
+  "status": "prose",
+  "value": "Evaluation was conducted with VLMEvalkit. To enable Thinking mode, set the system prompt to R1_SYSTEM_PROMPT, with do_sample=True and temperature=0.6 recommended to mitigate repetition. Reported paper results are obtained without test-time scaling unless otherwise specified.",
+  "quote": "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit). ***To enable the Thinking mode of our model, please set the system prompt to [R1_SYSTEM_PROMPT](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/vlm/internvl/internvl_chat.py#L38).*** When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition. [...] > Notably, unless otherwise specified, the experimental results reported in our paper are obtained without applying TTS.",
+  "quotes": [
+   "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit). ***To enable the Thinking mode of our model, please set the system prompt to [R1_SYSTEM_PROMPT](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/vlm/internvl/internvl_chat.py#L38).*** When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition.",
+   "> Notably, unless otherwise specified, the experimental results reported in our paper are obtained without applying TTS."
+  ],
+  "section": "InternVL3.5 Family",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/safety_evaluation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/bias_fairness_evaluation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/autonomy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/explainability__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/standards_compliance__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": [
+   "OpenGVLab/InternViT-300M-448px-V2_5",
+   "openai/gpt-oss-20b"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:base_model = [\"OpenGVLab/InternViT-300M-448px-V2_5\", \"openai/gpt-oss-20b\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "OpenGVLab/InternViT-300M-448px-V2_5",
+     "openai/gpt-oss-20b"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "merge",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "card:base_model_relation = \"merge\"",
+  "section": "card:base_model_relation",
+  "evidence": [
+   {
+    "path": "card:base_model_relation",
+    "value": "merge",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "merge"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+  "llm_cache": "data/raw/llm/internvl_gptoss/distribution_channels__v3.json",
+  "status": "prose",
+  "value": "Open weights are published on Hugging Face and ModelScope (GitHub and HF formats). The card says all models and code are publicly released. Deployment is possible via LMDeploy and vLLM.",
+  "quote": "All models and code are publicly released. [...] | InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [...] > In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment.",
+  "quotes": [
+   "All models and code are publicly released.",
+   "| InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |",
+   "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment."
+  ],
+  "section": "InternVL3.5 Family",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "internvl_gptoss",
+  "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:05+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+  "quote": "derived:hub_url = \"https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "training_method",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: training_method\nWhat to find: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nCard sections that often contain it: Training, Training Procedure, Post-training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pre-trained on the Dolma 3 dataset, then post-trained on Dolci datasets in three stages: Stage 1 SFT (supervised fine-tuning), Stage 2 DPO (direct preference optimization), Stage 3 RLVR (reinforcement learning from verifiable rewards).",
+  "quotes": [
+   "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+   "#### Stage 1: SFT",
+   "- supervised fine-tuning on the Dolci-Think-SFT-7B dataset. This dataset consits of math, code, chat, and general knowledge queries.",
+   "#### Stage 2:DPO",
+   "- direct preference optimization on the Dolci-Think-DPO-7B dataset. This dataset consits of math, code, chat, and general knowledge queries.",
+   "#### Stage 3: RLVR",
+   "- reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and general chat queries."
+  ],
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 561,
+  "cache_read_input_tokens": 6670,
+  "output_tokens": 466
+ },
+ "cost_usd_list_price": 0.008242,
+ "duration_ms": 3045
+}

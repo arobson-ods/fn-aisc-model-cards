@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "eval_results",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Track A (in-domain formal logic), TwIL-LM3: lean_formalize token_f1 0.5869; rule_induction derivation 0.3192; entailment_label accuracy 0.5750; mcq_answer accuracy 0.1100; semantic_parse token_f1 0.4416; lean_critic accuracy 0.6600; macro gate 0.4218; strict-7 0.1971. Track B (held-out): gsm8k 0.8733; macro (10 CoT datasets) 0.7339; macro (all 14) 0.6694.",
+  "quotes": [
+   "| lean_formalize token_f1 | 0.5869 |",
+   "| rule_induction derivation | 0.3192 |",
+   "| entailment_label accuracy | 0.5750 |",
+   "| mcq_answer accuracy | 0.1100 |",
+   "| semantic_parse token_f1 | 0.4416 |",
+   "| lean_critic accuracy | 0.6600 |",
+   "| gsm8k | 0.8733 |",
+   "| **macro (10 CoT datasets)** | 0.7339 |"
+  ],
+  "section": "Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 466
+ },
+ "cost_usd_list_price": 0.0089832,
+ "duration_ms": 3129
+}

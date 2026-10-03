@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "additional_assets",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Checkpoints from different training stages (Pretrained, Instruct, MPO, and full CascadeRL) are open-sourced with HF and ModelScope links. Conversion scripts (custom2hf, hf2custom) are provided. Code is on GitHub (OpenGVLab/InternVL). The card says all models and code are publicly released. The evaluation uses VLMEvalkit.",
+  "quotes": [
+   "Here, we also open-source the model weights after different training stages for potential research usage.",
+   "> If you want to convert the checkpoint between these two formats, please refer to the scripts about [custom2hf](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_custom2hf.py) and [hf2custom](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_hf2custom.py).",
+   "All models and code are publicly released.",
+   "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit)."
+  ],
+  "section": "InternVL3.5 Family"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19907,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 471
+ },
+ "cost_usd_list_price": 0.084342,
+ "duration_ms": 4129
+}

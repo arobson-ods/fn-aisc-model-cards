@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "eval_datasets",
+ "input_sha256": "3c8dc7c84d334f7fa30c2f8e6dd97d23e68c4e949076a7a819c82803b2d57b67",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nThe card's machine-readable metadata gives: [\"AI2D\", \"ChartQA\", \"MMMU\", \"MathVista (MINI)\", \"OCRBench\", \"ScreenSpot-V2\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluated via VLMEvalKit on AI2D, BLINK, ChartQA, DocVQA, HallusionBench, MathVerse, MathVision, MathVista, MMMU, MMStar, OCRBench, ScreenSpot-V2 (Desktop, Mobile, Web), WeMath, WildVision and ZeroBench; additionally MMMU-CoT, ScreenSpot-Pro and V*Bench via Eureka ML Insights during development.",
+  "quotes": [
+   "The model was evaluated on the following benchmarks via VLMEvalKit: AI2D (diagram understanding), BLINK (core visual perception), ChartQA (chart reasoning), DocVQA (document question answering), HallusionBench (hallucination and visual illusion detection), MathVerse (visual math with varying multimodal information), MathVision (competition-level mathematical reasoning), MathVista (math reasoning in visual contexts), MMMU (multi-discipline multimodal understanding), MMStar (vision-indispensable multimodal evaluation), OCRBench (OCR capabilities), ScreenSpot-V2 for Desktop, Mobile, and Web (GUI element localization), WeMath (human-like mathematical reasoning process evaluation), WildVision (real-world human preference evaluation), and ZeroBench (challenging visual reasoning).",
+   "During development, additional benchmarks including MMMU-CoT, ScreenSpot-Pro, and V*Bench were evaluated using Eureka ML Insights."
+  ],
+  "agreement": "adds",
+  "section": "3. Quality and Performance Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 799,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 658
+ },
+ "cost_usd_list_price": 0.0118078,
+ "duration_ms": 4437
+}

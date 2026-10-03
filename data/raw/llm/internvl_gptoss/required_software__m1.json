@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "required_software",
+ "input_sha256": "b5a022718079b4ba7549036eba5679d22a4aea77b46b721a81a243324b0cb3a9",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nThe card's machine-readable metadata gives: \"transformers\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "transformers>=4.52.1 is required; for the 20B version, transformers>=4.55.0 is required. vLLM is recommended for deployment of InternVL3.5-20B-A4B since lmdeploy has not yet supported GPT-OSS (LMDeploy and vLLM can otherwise be used).",
+  "quotes": [
+   "> Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version of our model, transformers>=4.55.0 is required.",
+   "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS."
+  ],
+  "agreement": "adds",
+  "section": "Quick Start"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 753,
+  "cache_read_input_tokens": 19419,
+  "output_tokens": 411
+ },
+ "cost_usd_list_price": 0.0110098,
+ "duration_ms": 3585
+}

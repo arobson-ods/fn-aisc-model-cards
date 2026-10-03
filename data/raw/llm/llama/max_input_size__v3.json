@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "max_input_size",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: max_input_size\nWhat to find: Maximum input size (context length in tokens, or maximum image/audio size).\nCard sections that often contain it: Context Length, Model Details\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Llama 4 Scout context length is 10M tokens (table lists 10M); also tested for image understanding up to 5 input images.",
+  "quotes": [
+   "Llama 4 has been tested for image understanding up to 5 input images.",
+   " Context length | ",
+   " 10M | "
+  ],
+  "section": "Model Information"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9416,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 199
+ },
+ "cost_usd_list_price": 0.039658000000000006,
+ "duration_ms": 2144
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The evaluation table includes a Safety benchmark: Olmo 3 Instruct 7B SFT 89.2, DPO 90.2, final Olmo3 Instruct 7B 87.3 (compared with Qwen 3 8B (no reasoning) 78.0, Qwen 3 VL 8B Instruct 80.2, Qwen 2.5 7B 73.4, Olmo 2 7B Instruct 93.1, Apertus 8B Instruct 72.2, Granite 3.3 8B Instruct 73.7).",
+  "quotes": [
+   "| **Safety** | Safety | 89.2 | 90.2 | 87.3 | 78.0 | 80.2 | 73.4 | 93.1 | 72.2 | 73.7 |",
+   "| **Skill** | **Benchmark** | **Olmo 3 Instruct 7B SFT** | **Olmo 3 Instruct 7B DPO** | **Olmo3 Instruct 7B** | **Qwen 3 8B (no reasoning)** | **Qwen 3 VL 8B Instruct** | **Qwen 2.5 7B** | **Olmo 2 7B Instruct** | **Apertus 8B Instruct** | **Granite 3.3 8B Instruct** |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 6339,
+  "output_tokens": 539
+ },
+ "cost_usd_list_price": 0.0088858,
+ "duration_ms": 3827
+}

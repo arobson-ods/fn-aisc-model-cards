@@ -1,0 +1,11 @@
+{
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct-DPO",
+ "sha": "fc84a4f699916fcf585aa54371f47897fa934d5c",
+ "api_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct-DPO",
+ "retrieved_at": "2026-09-30T10:29:54+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO/raw/fc84a4f699916fcf585aa54371f47897fa934d5c/README.md",
+ "config_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO/raw/fc84a4f699916fcf585aa54371f47897fa934d5c/config.json"
+}

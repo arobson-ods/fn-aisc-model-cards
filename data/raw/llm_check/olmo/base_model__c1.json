@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "29c75fe2111397ac",
+ "request_user": "Fact definition: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nValue taken from the model's structured metadata (card:base_model = \"allenai/Olmo-3.1-32B-Instruct-DPO\"): allenai/Olmo-3.1-32B-Instruct-DPO\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's base_model metadata lists allenai/Olmo-3.1-32B-Instruct-DPO. The staging table backs this up: in the Olmo 3.1 32B Instruct column, the DPO checkpoint comes right before the final RLVR model, so the final model was derived from it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 643,
+  "cache_read_input_tokens": 6275,
+  "output_tokens": 169
+ },
+ "cost_usd_list_price": 0.009787,
+ "duration_ms": 4495
+}

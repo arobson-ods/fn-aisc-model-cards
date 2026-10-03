@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "intended_uses",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: intended_uses\nWhat to find: Intended uses of the model.\nCard sections that often contain it: Intended Use, Uses, Direct Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Reasoning, code generation, tool calling, agentic workflows, and multilingual dialog; also usable as the backbone model for agentic coding tools. Designed for enterprise and research use (Granite family).",
+  "quotes": [
+   "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog |",
+   "Granite-4.2-8B can be used as the backbone model for agentic coding tools.",
+   "Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use."
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 16605,
+  "output_tokens": 295
+ },
+ "cost_usd_list_price": 0.008407000000000001,
+ "duration_ms": 3122
+}

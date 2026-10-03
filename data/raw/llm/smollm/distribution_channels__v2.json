@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights on Hugging Face (transformers); quantized checkpoints in a Hugging Face collection; intermediate training checkpoints on Hugging Face; can be deployed locally via llama.cpp, ONNX, MLX, MLC and ExecuTorch, and served via vLLM and SGLang with an OpenAI-compatible API.",
+  "quotes": [
+   "**Fully open model**: open weights + full training details including public data mixture and training configs",
+   "For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.",
+   "The training intermediate checkpoints (including the mid-training and SFT checkpoints) are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints)"
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 9031,
+  "output_tokens": 497
+ },
+ "cost_usd_list_price": 0.0090002,
+ "duration_ms": 3501
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "base_model",
+ "input_sha256": "bd6297ed2370b97b0a4ba6de1eeb4562796e9187df2eb2e4ff0c3d27d2ee99db",
+ "request_user": "Fact: base_model\nWhat to find: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nThe card's machine-readable metadata gives: [\"Qwen/Qwen3-8B\", \"google/siglip-so400m-patch14-384\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Based on Qwen3-8B, and uses SigLIP 2 as vision backbone",
+  "quotes": [
+   "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone."
+  ],
+  "agreement": "agrees",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 793,
+  "cache_read_input_tokens": 7994,
+  "output_tokens": 258
+ },
+ "cost_usd_list_price": 0.0073548,
+ "duration_ms": 3003
+}

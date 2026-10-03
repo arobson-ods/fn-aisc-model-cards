@@ -1,0 +1,1122 @@
+[
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/provider_name__v3.json",
+  "status": "prose",
+  "value": "DeepSeek-AI",
+  "quote": "author={DeepSeek-AI},",
+  "quotes": [
+   "author={DeepSeek-AI},"
+  ],
+  "section": "Citation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "api:id = \"deepseek-ai/DeepSeek-V4.1-Flash\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "api:sha = \"dba1be0a40aa45a94ad051997016db3960a90277\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "api:sha = \"dba1be0a40aa45a94ad051997016db3960a90277\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/eu_release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "mit",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "card:license = \"mit\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "mit",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/acceptable_use_policy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/additional_assets__v3.json",
+  "status": "prose",
+  "value": "Released alongside the model: a technical report PDF; an `encoding` folder with a Python reference implementation (encoding.py) and test cases for prompt encoding; the deepseek-recipe Rust libraries with Python bindings (GitHub) for production prompt encoding/parsing; an `inference` folder with instructions for weight conversion and running inference locally; and an `evaluation` folder with instructions for reproducing DeepSWE v1.1 results, including a patch for integrating dsh-minimal with Pier.",
+  "quote": "<a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf\"><b>Technical Report</b> 👁️</a> [...] The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content. [...] For production use, we additionally release [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe), a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit. [...] Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally. [...] The [`evaluation`](evaluation/README.md) folder contains step-by-step instructions for reproducing the DeepSWE v1.1 benchmark results, covering both the `dsh-minimal` agent and the official `mini-swe-agent`. The patch required to integrate `dsh-minimal` with [Pier](https://github.com/datacurve-ai/pier) is also included there.",
+  "quotes": [
+   "<a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf\"><b>Technical Report</b> 👁️</a>",
+   "The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.",
+   "For production use, we additionally release [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe), a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit.",
+   "Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally.",
+   "The [`evaluation`](evaluation/README.md) folder contains step-by-step instructions for reproducing the DeepSWE v1.1 benchmark results, covering both the `dsh-minimal` agent and the official `mini-swe-agent`. The patch required to integrate `dsh-minimal` with [Pier](https://github.com/datacurve-ai/pier) is also included there."
+  ],
+  "section": "Prompt Encoding",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/architecture_family__v3.json",
+  "status": "prose",
+  "value": "Multimodal Mixture-of-Experts (MoE) model with a Causal Encoder-Decoder (CED) architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder",
+  "quote": "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. [...] DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder.",
+  "quotes": [
+   "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens.",
+   "DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/architecture_details__v3.json",
+  "status": "prose",
+  "value": "Multimodal MoE with 552B backbone parameters; Causal Encoder-Decoder (CED): 40-layer Transformer (20-layer causal encoder, 20-layer decoder). Decoder's global KV cache is projected from final encoder hidden states, so only 8B parameters are active per token in prefill and 16B in decode, improving cost efficiency for input-heavy agentic workloads. Uses 1 shared expert and 384 routed experts per MoE layer, activating 6 routed experts per token. CSA2 assigns each attention layer one of three modes (Full, Reindex, Reuse) to share KV/indexer K and reuse Top-K indices; with FP4 main KV caching this gives 890 bytes per token global KV cache, roughly 1/4 of DeepSeek-V4-Flash.",
+  "quote": "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. [...] DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder. [...] With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. [...] DeepSeek-V4.1-Flash uses CSA2, which assigns each attention layer one of three static modes — **Full**, **Reindex**, or **Reuse** — to share main KV and indexer K across layers and reuse Top-K sparse-attention indices. [...] Combined with **FP4 main KV caching** (E2M1 format, one E4M3 scale per 16 channels), these designs reduce the global KV cache footprint to **890 bytes per token** — roughly **1/4** of DeepSeek-V4-Flash. [...] The model uses 1 shared expert and 384 routed experts per MoE layer, activating 6 routed experts per token.",
+  "quotes": [
+   "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens.",
+   "DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder.",
+   "With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads.",
+   "DeepSeek-V4.1-Flash uses CSA2, which assigns each attention layer one of three static modes — **Full**, **Reindex**, or **Reuse** — to share main KV and indexer K across layers and reuse Top-K sparse-attention indices.",
+   "Combined with **FP4 main KV caching** (E2M1 format, one E4M3 scale per 16 channels), these designs reduce the global KV cache footprint to **890 bytes per token** — roughly **1/4** of DeepSeek-V4-Flash.",
+   "The model uses 1 shared expert and 384 routed experts per MoE layer, activating 6 routed experts per token."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": 763205315794,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "api:safetensors.total = 763205315794",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 763205315794,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": [
+   "text",
+   "image"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "derived:pipeline_input_modalities = [\"text\", \"image\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text",
+     "image"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": 1048576,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/config.json",
+  "quote": "config:text_config.max_position_embeddings = 1048576",
+  "section": "config:text_config.max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:text_config.max_position_embeddings",
+    "value": 1048576,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/max_output_size__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "image-text-to-text",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "card:pipeline_tag = \"image-text-to-text\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "fp8",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/config.json",
+  "quote": "config:quantization_config.quant_method = \"fp8\"",
+  "section": "config:quantization_config.quant_method",
+  "evidence": [
+   {
+    "path": "config:quantization_config.quant_method",
+    "value": "fp8",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_datasets__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_modality__v3.json",
+  "status": "prose",
+  "value": "Multimodal corpus (images and text); pre-training on 45T tokens",
+  "quote": "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens. [...] The model natively processes images and text, and generates text autoregressively.",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+   "The model natively processes images and text, and generates text autoregressively."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_provenance__v3.json",
+  "status": "prose",
+  "value": "Only partial provenance is given. Post-training data includes large-scale automated synthesis of agent tasks and environments (synthetic). Pre-training is described only as a multimodal corpus of 45T tokens, with no source categories (web crawl, licensed, user data, public datasets) stated.",
+  "quote": "All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts. [...] DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**",
+  "quotes": [
+   "All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.",
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**"
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_acquisition__v3.json",
+  "status": "prose",
+  "value": "The card gives only partial information. Pre-training used a multimodal corpus of 45T tokens. Post-training data came from large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. The card does not state how data rights were obtained or how annotation was done.",
+  "quote": "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens. [...] All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+   "All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_data_size__v3.json",
+  "status": "prose",
+  "value": "45T tokens (multimodal corpus)",
+  "quote": "**Pre-training.** DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+  "quotes": [
+   "**Pre-training.** DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_scope__v3.json",
+  "status": "prose",
+  "value": "Pre-trained from scratch on a multimodal corpus of 45T tokens (images and text); sparse attention trained at 64K sequence length, with context extended to 1M tokens at 34T tokens. Languages, geography and domain breakdown are not stated.",
+  "quote": "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens. [...] The model natively processes images and text, and generates text autoregressively.",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+   "The model natively processes images and text, and generates text autoregressively."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/knowledge_cutoff__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_curation__v3.json",
+  "status": "prose",
+  "value": "Only limited detail: post-training changes lie in the data pipeline, with large-scale automated synthesis of agent tasks and environments and progressive scaling of data, tasks, and rollouts. The card gives no cleaning, filtering or deduplication details.",
+  "quote": "All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.",
+  "quotes": [
+   "All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/unsuitable_data_measures__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/personal_data__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/data_bias_measures__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_method__v3.json",
+  "status": "prose",
+  "value": "Pre-trained from scratch on a 45T-token multimodal corpus (sparse attention trained at 64K sequence length, context extended to 1M at 34T tokens). Post-training follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications, with changes lying in the data pipeline (large-scale automated synthesis of agent tasks and environments).",
+  "quote": "**Pre-training.** DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens. [...] **Post-training.** The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.",
+  "quotes": [
+   "**Pre-training.** DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+   "**Post-training.** The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/design_rationale__v3.json",
+  "status": "prose",
+  "value": "The card gives some rationale for design choices. CED projects the decoder's global KV cache from the final encoder hidden states, so only 8B parameters are active per token in prefill and 16B in decode, which improves cost efficiency for input-heavy agentic workloads. SWA Bounded Replay avoids persisting SWA KV to SSD and cuts the persistent KV cache footprint to roughly 1/8 of DeepSeek-V4-Flash. The Hierarchical Sparse Indexer bounds deeper indexer cost independently of context length. For post-training, the standard SFT → RL → OPD paradigm is used without algorithmic modifications, and all changes are in the data pipeline (large-scale automated synthesis of agent tasks and environments).",
+  "quote": "With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. [...] **SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash. [...] In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length. [...] The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.",
+  "quotes": [
+   "With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads.",
+   "**SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash.",
+   "In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length.",
+   "The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/hyperparameters__v3.json",
+  "status": "prose",
+  "value": "Only sequence length is stated: sparse attention trained at a sequence length of 64K, with context extended to 1M tokens at 34T tokens (of 45T total training tokens). The card does not state learning rate, batch size, optimiser or epochs.",
+  "quote": "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_hardware__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_time__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/compute_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/training_energy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/energy_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/carbon_emissions__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/inference_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/intended_uses__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/out_of_scope_uses__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/target_systems__v3.json",
+  "status": "prose",
+  "value": "Agentic workloads (code agents, visual agents, tool calling) and chat/API-style systems; the card says the model's CED design improves cost efficiency for input-heavy agentic workloads, and prompt tooling converts Messages, Chat Completions and Responses API requests, covering thinking, tool calls and images.",
+  "quote": "This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads. [...] It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses — covering thinking, tool calls, images, and generation settings. [...] For code agent benchmarks (Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, NL2Repo-Bench, ProgramBench), the model is evaluated with the Minimal mode of DeepSeek Harness and a 1M-token context window.",
+  "quotes": [
+   "This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads.",
+   "It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses — covering thinking, tool calls, images, and generation settings.",
+   "For code agent benchmarks (Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, NL2Repo-Bench, ProgramBench), the model is evaluated with the Minimal mode of DeepSeek Harness and a 1M-token context window."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/integration_means__v3.json",
+  "status": "prose",
+  "value": "No Jinja chat template; a Python reference implementation (encoding.py in the encoding folder) provides prompt encoding. The deepseek-recipe Rust libraries with Python bindings convert Messages, Chat Completions and Responses API requests into prompts/token IDs and parse model output. An inference folder gives weight conversion and local inference instructions. Recommended sampling: temperature 1.0, top_p 0.95 or 1.0.",
+  "quote": "This release does not include a Jinja-format chat template. The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content. [...] For production use, we additionally release [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe), a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit. [...] It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses [...] Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally. [...] | `temperature` | 1.0 | [...] | `top_p` | 0.95 or 1.0 |",
+  "quotes": [
+   "This release does not include a Jinja-format chat template. The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.",
+   "For production use, we additionally release [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe), a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit.",
+   "It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses",
+   "Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally.",
+   "| `temperature` | 1.0 |",
+   "| `top_p` | 0.95 or 1.0 |"
+  ],
+  "section": "Prompt Encoding",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/required_hardware__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 5.6.0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/limitations__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/languages__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/eval_results__v3.json",
+  "status": "prose",
+  "value": "DeepSeek-V4.1-Flash (max reasoning effort) scores: GPQA Diamond (Pass@1) 90.9; Codeforces (Rating) 3471; MathArena Apex (Pass@1) 65.6; Terminal-Bench 2.1 (Pass@1) 90.6; DeepSWE v1.1 (Resolved) 74.2; CyberGym (Pass@1) 88.1. Base model DeepSeek-V4.1-Flash-Base: MMLU-Pro (EM, 5-shot) 74.1; HumanEval (Pass@1, 0-shot) 79.4; GSM8K (EM, 8-shot) 93.0; DocVQA (LLM-Judge, 4-shot) 95.6.",
+  "quote": "| GPQA Diamond (Pass@1) | 93.4 | **94.1** | 92.9 | 88.1 | 92.4 | 89.9 | 90.9 | [...] | Codeforces (Rating) | — | — | — | — | 3348 | 3289 | **3471** | [...] | MathArena Apex (Pass@1) | — | — | **65.6** | — | 65.3 | 58.6 | **65.6** | [...] | Terminal-Bench 2.1 (Pass@1) | 89.1 | 88.8 | 88.3 | 88.2 | 87.9 | 82.7 | **90.6** | [...] | DeepSWE v1.1 (Resolved) | 74.0 | 73.0 | 67.5 | 66.9 | 62.7 | 54.4 | **74.2** | [...] | CyberGym (Pass@1) | — | 84.5 | 80.0 | 84.5 | 83.3 | 76.7 | **88.1** | [...] | MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** | [...] | HumanEval (Pass@1) | 0-shot | 69.5 | 76.8 | **79.4** | [...] | GSM8K (EM) | 8-shot | 90.8 | 92.6 | **93.0** | [...] | DocVQA (LLM-Judge) | 4-shot | — | — | 95.6 |",
+  "quotes": [
+   "| GPQA Diamond (Pass@1) | 93.4 | **94.1** | 92.9 | 88.1 | 92.4 | 89.9 | 90.9 |",
+   "| Codeforces (Rating) | — | — | — | — | 3348 | 3289 | **3471** |",
+   "| MathArena Apex (Pass@1) | — | — | **65.6** | — | 65.3 | 58.6 | **65.6** |",
+   "| Terminal-Bench 2.1 (Pass@1) | 89.1 | 88.8 | 88.3 | 88.2 | 87.9 | 82.7 | **90.6** |",
+   "| DeepSWE v1.1 (Resolved) | 74.0 | 73.0 | 67.5 | 66.9 | 62.7 | 54.4 | **74.2** |",
+   "| CyberGym (Pass@1) | — | 84.5 | 80.0 | 84.5 | 83.3 | 76.7 | **88.1** |",
+   "| MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** |",
+   "| HumanEval (Pass@1) | 0-shot | 69.5 | 76.8 | **79.4** |",
+   "| GSM8K (EM) | 8-shot | 90.8 | 92.6 | **93.0** |",
+   "| DocVQA (LLM-Judge) | 4-shot | — | — | 95.6 |"
+  ],
+  "section": "Comparison with frontier models (Max reasoning effort)",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/eval_datasets__v3.json",
+  "status": "prose",
+  "value": "Base model evaluated on AGIEval, MMLU-Pro, C-Eval, MultiLoKo, SimpleQA-Verified, SuperGPQA, BBH, BBEH, DROP, HellaSwag, BigCodeBench, HumanEval, GSM8K, MATH, MGSM, LongBench-V2, and multimodal MMMU-Pro, CVBench, DocVQA, RefCOCO-avg. Instruct model evaluated on GPQA Diamond, HLE, Codeforces, MathArena Apex, Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, ProgramBench, NL2Repo-Bench, CyberGym, SEC-Bench Pro, ExploitGym, AutomationBench, Agent's Last Exam, Chartography, BabyVision, and ZeroBench.",
+  "quote": "| AGIEval (EM) | 3–5-shot | 83.9 | **84.4** | 83.4 | [...] | MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** | [...] | C-Eval (EM) | 5-shot | 92.1 | **93.1** | 92.1 | [...] | MultiLoKo (LLM-Judge) | 5-shot | 42.6 | **50.9** | 45.5 | [...] | SimpleQA-Verified (EM) | 25-shot | 30.1 | **55.2** | 42.3 | [...] | SuperGPQA (EM) | 5-shot | 46.5 | **53.9** | 53.1 | [...] | LongBench-V2 (EM) | 1-shot | 44.7 | **51.5** | 45.2 | [...] | MMMU-Pro (EM) | 4-shot | — | — | 56.5 | [...] | GPQA Diamond (Pass@1) | 93.4 | **94.1** | 92.9 | 88.1 | 92.4 | 89.9 | 90.9 |",
+  "quotes": [
+   "| AGIEval (EM) | 3–5-shot | 83.9 | **84.4** | 83.4 |",
+   "| MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** |",
+   "| C-Eval (EM) | 5-shot | 92.1 | **93.1** | 92.1 |",
+   "| MultiLoKo (LLM-Judge) | 5-shot | 42.6 | **50.9** | 45.5 |",
+   "| SimpleQA-Verified (EM) | 25-shot | 30.1 | **55.2** | 42.3 |",
+   "| SuperGPQA (EM) | 5-shot | 46.5 | **53.9** | 53.1 |",
+   "| LongBench-V2 (EM) | 1-shot | 44.7 | **51.5** | 45.2 |",
+   "| MMMU-Pro (EM) | 4-shot | — | — | 56.5 |",
+   "| GPQA Diamond (Pass@1) | 93.4 | **94.1** | 92.9 | 88.1 | 92.4 | 89.9 | 90.9 |"
+  ],
+  "section": "Evaluation Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/eval_methodology__v3.json",
+  "status": "prose",
+  "value": "Base models are evaluated in an internal framework under the same settings, with per-benchmark shot counts given in the table (e.g., MMLU-Pro 5-shot, GSM8K 8-shot, HumanEval 0-shot). Instruct results use max reasoning effort (reasoning_effort=100) with temperature=1.0, top_p=0.95. Code agent benchmarks use the Minimal mode of DeepSeek Harness with a 1M-token context window (mini-SWE harness for DeepSWE v1.1, Claude Code harness for SEC-Bench Pro). Visual agent benchmarks use the Claude Code harness with a 512k-token context window. Scaffold comparison uses N=8 samples per task on DeepSWE v1.1 and N=3 on Terminal-Bench 2.1, max_steps=500.",
+  "quote": "All base models are evaluated in our internal framework under the same evaluation settings. [...] All instruct results below use the maximum effort setting (`reasoning_effort=100`). Evaluations use `temperature=1.0, top_p=0.95`. [...] For code agent benchmarks (Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, NL2Repo-Bench, ProgramBench), the model is evaluated with the Minimal mode of DeepSeek Harness and a 1M-token context window. [...] To align with official setup requirements, the mini-SWE harness is used for DeepSWE v1.1, and the Claude Code harness for SEC-Bench Pro. [...] Visual agent benchmarks (Chartography, BabyVision, ZeroBench) use the Claude Code harness with a 512k-token context window. [...] All scaffolds use N=8 samples per task on DeepSWE v1.1 and N=3 on Terminal-Bench 2.1, with Linux containers, `temperature=1.0`, `top_p=0.95`, a 1M-token context limit, and max_steps=500 per agent. [...] | MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** |",
+  "quotes": [
+   "All base models are evaluated in our internal framework under the same evaluation settings.",
+   "All instruct results below use the maximum effort setting (`reasoning_effort=100`). Evaluations use `temperature=1.0, top_p=0.95`.",
+   "For code agent benchmarks (Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, NL2Repo-Bench, ProgramBench), the model is evaluated with the Minimal mode of DeepSeek Harness and a 1M-token context window.",
+   "To align with official setup requirements, the mini-SWE harness is used for DeepSWE v1.1, and the Claude Code harness for SEC-Bench Pro.",
+   "Visual agent benchmarks (Chartography, BabyVision, ZeroBench) use the Claude Code harness with a 512k-token context window.",
+   "All scaffolds use N=8 samples per task on DeepSWE v1.1 and N=3 on Terminal-Bench 2.1, with Linux containers, `temperature=1.0`, `top_p=0.95`, a 1M-token context limit, and max_steps=500 per agent.",
+   "| MMLU-Pro (EM) | 5-shot | 68.3 | 73.5 | **74.1** |"
+  ],
+  "section": "Evaluation Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/safety_evaluation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/bias_fairness_evaluation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/autonomy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/explainability__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/standards_compliance__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/base_model__v3.json",
+  "status": "prose",
+  "value": "None; the model is trained from scratch (not derived from another model)",
+  "quote": "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens."
+  ],
+  "section": "Introduction",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/base_model_relation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+  "llm_cache": "data/raw/llm/deepseek/distribution_channels__v3.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face under the MIT License (with local inference instructions), plus a chat interface at chat.deepseek.com.",
+  "quote": "This repository and the model weights are licensed under the [MIT License](LICENSE). [...] Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally. [...] <a href=\"https://chat.deepseek.com/\" target=\"_blank\" style=\"margin: 2px;\">",
+  "quotes": [
+   "This repository and the model weights are licensed under the [MIT License](LICENSE).",
+   "Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally.",
+   "<a href=\"https://chat.deepseek.com/\" target=\"_blank\" style=\"margin: 2px;\">"
+  ],
+  "section": "License",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "deepseek",
+  "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:00+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+  "quote": "derived:hub_url = \"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

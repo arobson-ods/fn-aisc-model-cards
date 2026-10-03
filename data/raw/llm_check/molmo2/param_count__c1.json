@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "97f5f68c3a4e1aaf",
+ "request_user": "Fact definition: Total number of parameters.\nValue taken from the model's structured metadata (api:safetensors.total = 8661703120): 8661703120\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The value comes from the model's safetensors metadata, which records the total parameter count directly, so it answers the definition. It also fits the card, which names the model \"Molmo2-8B\" and says it is based on Qwen3-8B. That makes about 8.66B parameters, including the vision backbone. Nothing in the card conflicts with it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 583,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 257
+ },
+ "cost_usd_list_price": 0.011343,
+ "duration_ms": 4780
+}

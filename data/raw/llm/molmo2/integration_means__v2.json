@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "integration_means",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Used via Hugging Face transformers (transformers==4.57.1, AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True) in a Python 3.11 conda environment, with extra packages (torch, pillow, einops, torchvision, accelerate, decord2, molmo_utils). Input is a chat-style messages list with text, video or image content, formatted via processor.apply_chat_template and run with model.generate. Quick Start examples cover general video QA, video pointing, video tracking (best with max_fps=8), multi-image QA and multi-image pointing.",
+  "quotes": [
+   "pip install transformers==4.57.1",
+   "pip install torch pillow einops torchvision accelerate decord2 molmo_utils",
+   "model = AutoModelForImageTextToText.from_pretrained(\n     model_id,\n     trust_remote_code=True,\n     dtype=\"auto\",\n     device_map=\"auto\"\n)",
+   "inputs = processor.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n    return_tensors=\"pt\",\n    return_dict=True,\n)",
+   "### Tracking Video QA (best with max_fps=8)"
+  ],
+  "section": "Quick Start"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 7953,
+  "output_tokens": 527
+ },
+ "cost_usd_list_price": 0.0091166,
+ "duration_ms": 4427
+}

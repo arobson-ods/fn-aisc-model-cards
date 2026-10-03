@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "data_provenance",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: data_provenance\nWhat to find: Provenance categories of training data (web crawl, licensed/third-party private, user data, public datasets, synthetic, other).\nCard sections that often contain it: Training Data, Data Sources\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pretraining used a staged curriculum of web, code, math and reasoning data; pretraining datasets are public (public data mixture), while mid-training and post-training datasets will be uploaded later.",
+  "quotes": [
+   "it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.",
+   "**Fully open model**: open weights + full training details including public data mixture and training configs",
+   "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later"
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 558,
+  "cache_read_input_tokens": 9120,
+  "output_tokens": 340
+ },
+ "cost_usd_list_price": 0.00746,
+ "duration_ms": 3657
+}

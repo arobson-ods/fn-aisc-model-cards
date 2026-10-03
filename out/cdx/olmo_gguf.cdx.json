@@ -1,0 +1,179 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:d719c86c-907d-5c30-8aff-9e57c89a1dca",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:03Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "olmo_gguf:model",
+   "name": "unsloth/Olmo-3-7B-Instruct-GGUF",
+   "supplier": {
+    "name": "Allen Institute for AI (Ai2)"
+   },
+   "version": "a2a9ae53f5a95087616b3f45ca96e9d2631344ee",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "a2a9ae53f5a95087616b3f45ca96e9d2631344ee"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)"
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Use with the HuggingFace transformers library (version 4.57.0 or higher) via AutoModelForCausalLM and AutoTokenizer; optional 8-bit quantization with bitsandbytes; ChatML-style chat template with <|im_start|>/<|im_end|> tags and a default system message."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights/checkpoints released on Hugging Face (usable via the transformers library, with revisions loadable via huggingface_hub); code in GitHub repositories"
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "olmo_gguf:ancestor-allenai/Olmo-3-7B-Instruct",
+      "name": "allenai/Olmo-3-7B-Instruct",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct"
+       }
+      ],
+      "version": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc"
+     }
+    ],
+    "notes": "base_model_relation: quantized"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/unsloth/Olmo-3-7B-Instruct-GGUF"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/unsloth/Olmo-3-7B-Instruct-GGUF"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Transformer style autoregressive language model",
+     "datasets": [
+      {
+       "ref": "olmo_gguf:dataset-Pre-trained-on-Dolma-3-post-trained-on-Dolci-datasets-including-Dolci-Think-SFT-7B-Dolci-Instruct-SFT-7B-SFT-Dolci-Think-DPO-7B-Dolci-Instruct-DPO-7B-DPO-Dolci-Think-RL-7B-Dolci-Instruct-RL-7B-RLVR-"
+      },
+      {
+       "ref": "olmo_gguf:training-data"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Olmo 3 Instruct 7B scores: MATH 87.3, AIME 2024 44.3, AIME 2025 32.5, IFEval 85.6, MMLU 69.1, GPQA 40.4 (metric not named in card; scores from Evaluation table)"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines"
+     ],
+     "technicalLimitations": [
+      "Models can easily be prompted by users to generate harmful and sensitive content (no safety filtering), such content may be produced unintentionally especially involving bias, and statements from OLMo or any LLM are often inaccurate so facts should be verified."
+     ],
+     "ethicalConsiderations": [
+      {
+       "name": "The evaluation table includes a Safety benchmark: Olmo 3 Instruct 7B SFT 89.2, DPO 90.2, final Olmo3 Instruct 7B 87.3 (compared with Qwen 3 8B (no reasoning) 78.0, Qwen 3 VL 8B Instruct 80.2, Qwen 2.5 7B 73.4, Olmo 2 7B Instruct 93.1, Apertus 8B Instruct 72.2, Granite 3.3 8B Instruct 73.7)."
+      }
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "7298011136"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "gguf"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "olmo_gguf:dataset-Pre-trained-on-Dolma-3-post-trained-on-Dolci-datasets-including-Dolci-Think-SFT-7B-Dolci-Instruct-SFT-7B-SFT-Dolci-Think-DPO-7B-Dolci-Instruct-DPO-7B-DPO-Dolci-Think-RL-7B-Dolci-Instruct-RL-7B-RLVR-",
+   "name": "Pre-trained on Dolma 3; post-trained on Dolci datasets, including Dolci-Think-SFT-7B, Dolci-Instruct-SFT-7B (SFT), Dolci-Think-DPO-7B, Dolci-Instruct-DPO-7B (DPO), Dolci-Think-RL-7B, Dolci-Instruct-RL-7B (RLVR)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Pre-trained on Dolma 3; post-trained on Dolci datasets, including Dolci-Think-SFT-7B, Dolci-Instruct-SFT-7B (SFT), Dolci-Think-DPO-7B, Dolci-Instruct-DPO-7B (DPO), Dolci-Think-RL-7B, Dolci-Instruct-RL-7B (RLVR)"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "olmo_gguf:training-data",
+   "name": "Training data of unsloth/Olmo-3-7B-Instruct-GGUF (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_scope: Pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets; SFT/DPO data consist of math, code, chat, and general knowledge queries; RLVR data consist of math, code, instruction-following, and general chat queries. Language: English."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:knowledge_cutoff",
+     "value": "Dec. 2024"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "olmo_gguf:dependency-software",
+   "name": "transformers 4.57.0 or higher (HuggingFace transformers library); bitsandbytes required for 8-bit quantization"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "olmo_gguf:model",
+   "dependsOn": [
+    "olmo_gguf:dependency-software"
+   ]
+  },
+  {
+   "ref": "olmo_gguf:dependency-software"
+  }
+ ]
+}

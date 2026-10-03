@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "b739be7ff0f7fead",
+ "request_user": "Fact definition: Modalities of the training data (text, images, audio, video, other).\nExtracted value: Multimodal data (the card does not itemize which modalities the training data contains; input modalities are multilingual text and image)\nQuotes given as evidence (separated by [...]): Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information from Meta’s products and services.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quote does support the main claim: Scout and Maverick were pretrained on \"multimodal data\". The value is also right that the card never says which modalities that data contains, so it only partly answers the definition. The added claim that the input modalities are \"multilingual text and image\" is true in the card's model table, but the quoted evidence doesn't include it, and input modalities aren't the same thing as training-data modalities."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9225,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 402
+ },
+ "cost_usd_list_price": 0.081848,
+ "duration_ms": 9824
+}

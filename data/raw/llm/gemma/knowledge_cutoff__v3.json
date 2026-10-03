@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "knowledge_cutoff",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: knowledge_cutoff\nWhat to find: Data freshness / knowledge cutoff date of the training data.\nCard sections that often contain it: Training Data, Data Freshness, Cutoff\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "January 2025 (cutoff date of the pre-training dataset)",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025."
+  ],
+  "section": "Training Dataset"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 550,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 209
+ },
+ "cost_usd_list_price": 0.006566200000000001,
+ "duration_ms": 2664
+}

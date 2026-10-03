@@ -1,0 +1,11 @@
+{
+ "url": "https://huggingface.co/google/siglip-so400m-patch14-384/raw/9fdffc58afc957d1a03a25b10dba0329ab15c2a3/config.json",
+ "status": 200,
+ "retrieved_at": "2026-09-30T10:17:05+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "\"a513b447f6b05f640f9980d25f4d8a5cff6cd25d\"",
+  "x-repo-commit": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3"
+ },
+ "body": "{\n  \"architectures\": [\n    \"SiglipModel\"\n  ],\n  \"initializer_factor\": 1.0,\n  \"model_type\": \"siglip\",\n  \"text_config\": {\n    \"hidden_size\": 1152,\n    \"intermediate_size\": 4304,\n    \"model_type\": \"siglip_text_model\",\n    \"num_attention_heads\": 16,\n    \"num_hidden_layers\": 27\n  },\n  \"torch_dtype\": \"float32\",\n  \"transformers_version\": \"4.37.0.dev0\",\n  \"vision_config\": {\n    \"hidden_size\": 1152,\n    \"image_size\": 384,\n    \"intermediate_size\": 4304,\n    \"model_type\": \"siglip_vision_model\",\n    \"num_attention_heads\": 16,\n    \"num_hidden_layers\": 27,\n    \"patch_size\": 14\n  }\n}\n"
+}

@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluated on benchmarks including Terminal Bench 2.1, SWE-bench Pro, DeepSWE 1.1, NL2Repo-Bench, FrontierSWE, MLS-Bench-Lite, PaperBench, AndroidBench, SkillsBench v1.1, Automation-Bench, WideSearch, $OneMillion-Bench, PLawBench, plus in-house QwenSWEBench, QwenQoderBench, QwenReactBench, QwenSVGBench and CoWorkBench (the table also lists others, e.g. GPQA Diamond, HLE, IFBench, HealthBench, MRCR v2, LongBench v2).",
+  "quotes": [
+   "2. Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072.",
+   "3. SWE-bench Pro: Evaluated with the Claude Code harness, temp=1.0, top_p=0.95, and a 256K context window.",
+   "9. AndroidBench: Evaluated on the 95-task public subset, reporting avg@3 scores.",
+   "16. Automation-Bench: Evaluated on the 600-task public subset.",
+   "18. $OneMillion-Bench: Evaluated using gemini-3.1-pro-preview.",
+   "10. QwenSWEBench: Inhouse coding benchmark to evaluate models' software engineering capabilities.",
+   "15. SkillsBench: Evaluated on the public SkillsBench v1.1 benchmark across 87 tasks"
+  ],
+  "section": "Benchmark Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 1197
+ },
+ "cost_usd_list_price": 0.0177712,
+ "duration_ms": 7403
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "eval_methodology",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: eval_methodology\nWhat to find: How evaluations were run (harness, settings, prompts, shots).\nCard sections that often contain it: Evaluation, Methodology\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Track A: n = 200 per objective, greedy (temperature = 0), max_new_tokens = 2048, one retry at 4096 for truncated rows, max_seq_len = 8192, seed 42. Track B: 300 examples per task, greedy, max_gen_toks = 4096, max_model_len = 8192, repetition_penalty = 1.0, chat template applied, vLLM backend. Same protocol used for the model and its base, in a paired run over identical sampled rows.",
+  "quotes": [
+   "- Track A: `n = 200` per objective, greedy (`temperature = 0`), `max_new_tokens = 2048`, one\n  retry at 4096 for truncated rows, `max_seq_len = 8192`, seed 42.",
+   "- Track B: 300 examples per task, greedy, `max_gen_toks = 4096`, `max_model_len = 8192`,\n  `repetition_penalty = 1.0`, chat template applied, vLLM backend.",
+   "- Both tracks use the same protocol for the model and its base, in a paired run over identical\n  sampled rows."
+  ],
+  "section": "Evaluation protocol"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 472
+ },
+ "cost_usd_list_price": 0.0090312,
+ "duration_ms": 3620
+}

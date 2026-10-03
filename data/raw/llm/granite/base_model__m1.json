@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "base_model",
+ "input_sha256": "bcacdeebb1566acd8597b14e31b8b1a2142dcfda3a5f3770d34eac5e4605952f",
+ "request_user": "Fact: base_model\nWhat to find: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nThe card's machine-readable metadata gives: [\"ibm-granite/granite-4.1-8b-base\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Granite-4.1-8B-Base (post-trained from it)",
+  "quotes": [
+   "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities."
+  ],
+  "agreement": "agrees",
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 781,
+  "cache_read_input_tokens": 16522,
+  "output_tokens": 270
+ },
+ "cost_usd_list_price": 0.0091324,
+ "duration_ms": 2706
+}

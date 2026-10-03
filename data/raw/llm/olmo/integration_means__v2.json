@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "integration_means",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use via the HuggingFace transformers library (version 4.57.0 or higher) with AutoModelForCausalLM and AutoTokenizer; optional 8-bit quantization via bitsandbytes; specific checkpoint revisions can be loaded with the `revision` argument; fine-tuning with the OLMo-core repository (torchrun). No chat/prompt format is stated.",
+  "quotes": [
+   "Olmo 3 is supported in transformers 4.57.0 or higher:",
+   "You can use OLMo with the standard HuggingFace transformers library:",
+   "olmo = AutoModelForCausalLM.from_pretrained(\"allenai/Olmo-3.1-32B-Instruct\", revision=\"step_1375\")",
+   "load_in_8bit=True)  # Requires bitsandbytes",
+   "1. Fine-tune with the OLMo-core repository:"
+  ],
+  "section": "Installation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 6581,
+  "output_tokens": 400
+ },
+ "cost_usd_list_price": 0.007572199999999999,
+ "duration_ms": 2985
+}

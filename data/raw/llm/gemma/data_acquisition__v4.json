@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pre-training data is a large-scale, diverse collection spanning web documents, code, mathematics and images (audio also listed), with a January 2025 cutoff; web text covers over 140 languages. Filtering applied: CSAM filtering, automated sensitive/personal data filtering, and content quality and safety filtering. The card does not describe annotation, synthetic data generation, or how rights were obtained.",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+   "**Web Documents**: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages.",
+   "**CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content.",
+   "**Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf)."
+  ],
+  "section": "Training Dataset"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 11549,
+  "output_tokens": 523
+ },
+ "cost_usd_list_price": 0.0097638,
+ "duration_ms": 4023
+}

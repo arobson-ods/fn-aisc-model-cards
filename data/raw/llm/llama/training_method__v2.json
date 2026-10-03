@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "training_method",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: training_method\nWhat to find: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nCard sections that often contain it: Training, Training Procedure, Post-training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pretraining on ~40 trillion tokens of multimodal data (Llama 4 Scout), followed by safety fine-tuning using human-generated and synthetic data. Architecture is auto-regressive MoE with early fusion. The card does not detail SFT, DPO, RL, distillation or merging stages.",
+  "quotes": [
+   "Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on ~22 trillion tokens of multimodal data",
+   "The primary objective of conducting safety fine-tuning is to offer developers a readily available, safe, and powerful model for various applications",
+   "We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks.",
+   "The Llama 4 models are auto-regressive language models that use a mixture-of-experts (MoE) architecture and incorporate early fusion for native multimodality."
+  ],
+  "section": "Training Data"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 561,
+  "cache_read_input_tokens": 8785,
+  "output_tokens": 425
+ },
+ "cost_usd_list_price": 0.008254999999999998,
+ "duration_ms": 3625
+}

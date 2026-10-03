@@ -1,0 +1,211 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:d4690875-d12a-5299-a54d-1d9c60146076",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:02Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "granite:model",
+   "name": "ibm-granite/granite-4.2-8b",
+   "supplier": {
+    "name": "Granite Team, IBM"
+   },
+   "version": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "f8de16cdcdbc6c779ca517604e050d82cc119e44"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:release_date",
+     "value": "August 25, 2026"
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Can be served with vLLM (custom granite_thinking_parser reasoning parser, qwen3_coder tool-call parser) and SGLang (v0.5.18+), via OpenAI-compatible API; also usable with Hugging Face Transformers via tokenizer.apply_chat_template with enable_thinking, low_effort and tools options; ChatML-style prompt format with <think>...</think> reasoning."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM and SGLang; GitHub repository available"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "granite:ancestor-ibm-granite/granite-4.1-8b-base",
+      "name": "ibm-granite/granite-4.1-8b-base",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/ibm-granite/granite-4.1-8b-base"
+       }
+      ],
+      "version": "cbc32f94fbf8179ca4b22b664831f6a73965bb16"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Decoder-only Dense Transformer (GraniteForCausalLM)",
+     "modelArchitecture": "Decoder-only dense transformer (GraniteForCausalLM) with 8B parameters; Grouped Query Attention with 32 attention heads and 8 KV heads; RoPE (θ = 10,000,000); SwiGLU MLP (hidden size 12800); RMSNorm (ε = 1e-5); untied input/output embeddings; 40 layers; embedding size 4096. Dense model (no experts). No rationale for the design choices is stated.",
+     "inputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "text-generation",
+     "datasets": [
+      {
+       "ref": "granite:training-data"
+      },
+      {
+       "ref": "granite:evalset-SWE-Bench-Multilingual-SWE-Bench-Pro-SWE-Bench-Verified-Terminal-Bench-2.1--bench-AVG-BFCL-v4-ProfBench-BirdBench-GDPval-AIME25-HMMT-Feb25-GPQA-LiveCodeBench-v6-SciCode-MMLU-Pro-MMLU-ProX-lite-IBM-Arena-Hard-V2-IFBench-prompt-RULER-64K-RULER-128K"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Granite-4.2-8B (8B Dense) scores: AIME25 86.67, HMMT Feb25 78.33, GPQA 64.14, LiveCodeBench v6 73.24, SciCode 36.09, MMLU-Pro 74.04, IFBench (prompt) 79.33, SWE Bench Verified 47.67, BFCL (v4) 52.39, RULER 128K 71.41. The card's table gives no explicit metric names."
+      }
+     ]
+    },
+    "considerations": {
+     "environmentalConsiderations": {
+      "properties": [
+       {
+        "name": "model-cards:training_hardware",
+        "value": "NVIDIA GB200 NVL72 cluster hosted in CoreWeave (72-GPU NVLink domain intra-rack; NDR 400 Gb/s InfiniBand Fat-Tree inter-rack); total GPU count not stated"
+       }
+      ]
+     },
+     "useCases": [
+      "Reasoning, code generation, tool calling, agentic workflows, and multilingual dialog; also usable as the backbone model for agentic coding tools. Designed for enterprise and research use (Granite family).",
+      "Agentic workflows and agentic coding harnesses (backbone model for agentic coding tools), tool-calling systems, and multilingual dialog/chat"
+     ],
+     "technicalLimitations": [
+      "Multilingual performance may vary compared to English (few-shot examples can help); the model may occasionally produce inaccurate, biased, or unsafe responses; content within <think>...</think> tags is internal reasoning that may be unpolished or intermediate and not final conclusions."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "8791592960"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "131072"
+     },
+     {
+      "name": "model-cards:max_output_size",
+      "value": "max_new_tokens is set to 8192 in thinking mode (increase for complex reasoning) and 2048 in non-thinking mode"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "The card gives some rationale for training choices: SFT uses instruction-following, chain-of-thought and reasoning data to cultivate reasoning and thinking abilities; hyperparameters were tuned before scaling to all three model sizes; for the 30B model a second SFT phase up-sampled agentic data while retaining a smaller share of general replay data. RL uses GRPO across multiple environments, with verifiable rewards where available and a generative reward model for open-ended prompts; an RLHF phase tunes helpfulness, conversational quality, and safety."
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Evaluations are run with an evaluation framework based on NeMo Evaluator SDK. Generation settings recommended: temperature=1.0 and top_p=0.95 across all tasks (no shots/prompts stated for benchmarks)."
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "granite:training-data",
+   "name": "Training data of ibm-granite/granite-4.2-8b (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_provenance: SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data (reasoning, tool calling, chain-of-thought), agentic traces collected across diverse tasks, and a curated selection of human-authored data. Base model pre-trained on a large-scale English and multilingual corpus (no provenance breakdown given).\ndata_acquisition: SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic traces collected across diverse tasks, and a curated selection of human-authored data. Pre-training data details are deferred to the Granite 4.1 Technical Blog.\ndata_scope: SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling and chain-of-thought, agentic traces across diverse tasks, and curated human-authored data. Finetuned mostly on English instruction-response pairs plus multilingual data covering the supported languages. Base model pre-trained on a large-scale English and multilingual corpus."
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "granite:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "granite:evalset-SWE-Bench-Multilingual-SWE-Bench-Pro-SWE-Bench-Verified-Terminal-Bench-2.1--bench-AVG-BFCL-v4-ProfBench-BirdBench-GDPval-AIME25-HMMT-Feb25-GPQA-LiveCodeBench-v6-SciCode-MMLU-Pro-MMLU-ProX-lite-IBM-Arena-Hard-V2-IFBench-prompt-RULER-64K-RULER-128K",
+   "name": "SWE Bench Multilingual, SWE Bench Pro, SWE Bench Verified, Terminal-Bench 2.1, τ³-bench (AVG), BFCL (v4), ProfBench, BirdBench, GDPval, AIME25, HMMT Feb25, GPQA, LiveCodeBench v6, SciCode, MMLU-Pro, MMLU-ProX lite (IBM), Arena-Hard-V2, IFBench (prompt), RULER 64K, RULER 128K",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "SWE Bench Multilingual, SWE Bench Pro, SWE Bench Verified, Terminal-Bench 2.1, τ³-bench (AVG), BFCL (v4), ProfBench, BirdBench, GDPval, AIME25, HMMT Feb25, GPQA, LiveCodeBench v6, SciCode, MMLU-Pro, MMLU-ProX lite (IBM), Arena-Hard-V2, IFBench (prompt), RULER 64K, RULER 128K"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "granite:model",
+   "dependsOn": [
+    "granite:dependency-software"
+   ]
+  },
+  {
+   "ref": "granite:dependency-software"
+  }
+ ]
+}

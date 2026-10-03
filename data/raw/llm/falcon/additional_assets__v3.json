@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "additional_assets",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card links to a technical report (PDF on GitHub, tiiuae/falcon-h1r, also on Hugging Face papers) and a release blogpost. It does not list training data, training code or checkpoints. The base model Falcon-H1-7B-Base is linked on Hugging Face.",
+  "quotes": [
+   "For more details about the training protocol of this model, please refer to the [Falcon-H1R technical blogpost](https://falcon-lm.github.io/blog/falcon-h1r-7b) and [Technical Report](https://github.com/tiiuae/falcon-h1r/blob/main/tech_report.pdf).",
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)",
+   "- View [our technical report](https://huggingface.co/papers/2601.02346)."
+  ],
+  "section": "Training details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7064,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 396
+ },
+ "cost_usd_list_price": 0.03222,
+ "duration_ms": 3084
+}

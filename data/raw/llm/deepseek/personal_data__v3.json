@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "personal_data",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: personal_data\nWhat to find: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).\nCard sections that often contain it: Training Data, Privacy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state whether the training data includes personal or sensitive personal information, or how it was handled.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 7215,
+  "output_tokens": 148
+ },
+ "cost_usd_list_price": 0.005135,
+ "duration_ms": 2199
+}

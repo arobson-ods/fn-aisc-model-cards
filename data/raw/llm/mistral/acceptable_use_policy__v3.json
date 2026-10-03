@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "acceptable_use_policy",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: acceptable_use_policy\nWhat to find: Acceptable use policy or use restrictions that apply to the model (link or text).\nCard sections that often contain it: Acceptable Use, License, Use Policy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Licensed under a Modified MIT License (open-source for commercial and non-commercial use, with exceptions for companies with large revenue). Use restriction: you must not use the model in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights.",
+  "quotes": [
+   "*You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights.*",
+   "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue."
+  ],
+  "section": "License"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10254,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 348
+ },
+ "cost_usd_list_price": 0.0445,
+ "duration_ms": 3015
+}

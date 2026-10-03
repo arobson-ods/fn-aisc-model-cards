@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "limitations",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Limitations: training data quality/diversity and gaps or biases affect responses; open-ended or highly complex tasks may be challenging; performance is influenced by amount of context; may struggle with subtle nuances, sarcasm, or figurative language; may generate incorrect or outdated factual statements; may lack common sense reasoning in certain situations. Risks: generation of harmful content, misuse for malicious purposes, privacy violations, perpetuation of biases.",
+  "quotes": [
+   "The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses.",
+   "Models perform well on tasks that can be framed with clear prompts and instructions. Open-ended or highly complex tasks might be challenging.",
+   "A model's performance can be influenced by the amount of context provided (longer context generally leads to better outputs, up to a certain point).",
+   "Models might struggle to grasp subtle nuances, sarcasm, or figurative language.",
+   "They may generate incorrect or outdated factual statements.",
+   "They might lack the ability to apply common sense reasoning in certain situations.",
+   "**Generation of harmful content**: Mechanisms and guidelines for content safety are essential.",
+   "**Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases."
+  ],
+  "section": "Usage and Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 590
+ },
+ "cost_usd_list_price": 0.0103362,
+ "duration_ms": 4031
+}

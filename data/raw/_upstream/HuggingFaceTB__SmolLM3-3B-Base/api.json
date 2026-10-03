@@ -1,0 +1,183 @@
+{
+ "_id": "6853f5779e7c268e15850d9c",
+ "id": "HuggingFaceTB/SmolLM3-3B-Base",
+ "private": false,
+ "pipeline_tag": "text-generation",
+ "library_name": "transformers",
+ "tags": [
+  "transformers",
+  "onnx",
+  "safetensors",
+  "smollm3",
+  "text-generation",
+  "transformers.js",
+  "en",
+  "fr",
+  "es",
+  "it",
+  "pt",
+  "zh",
+  "ar",
+  "ru",
+  "license:apache-2.0",
+  "endpoints_compatible",
+  "region:us"
+ ],
+ "downloads": 213155,
+ "likes": 174,
+ "modelId": "HuggingFaceTB/SmolLM3-3B-Base",
+ "author": "HuggingFaceTB",
+ "sha": "d78a42f79198603e614095753484a04c10c2b940",
+ "lastModified": "2025-08-14T16:41:36.000Z",
+ "gated": false,
+ "disabled": false,
+ "widgetData": [
+  {
+   "text": "Hi, what can you help me with?"
+  },
+  {
+   "text": "What is 84 * 3 / 2?"
+  },
+  {
+   "text": "Tell me an interesting fact about the universe!"
+  },
+  {
+   "text": "Explain quantum computing in simple terms."
+  }
+ ],
+ "model-index": null,
+ "config": {
+  "architectures": [
+   "SmolLM3ForCausalLM"
+  ],
+  "model_type": "smollm3",
+  "tokenizer_config": {
+   "bos_token": null,
+   "eos_token": "<|end_of_text|>"
+  }
+ },
+ "cardData": {
+  "library_name": "transformers",
+  "license": "apache-2.0",
+  "language": [
+   "en",
+   "fr",
+   "es",
+   "it",
+   "pt",
+   "zh",
+   "ar",
+   "ru"
+  ],
+  "tags": [
+   "transformers.js"
+  ]
+ },
+ "transformersInfo": {
+  "auto_model": "AutoModelForCausalLM",
+  "pipeline_tag": "text-generation",
+  "processor": "AutoTokenizer"
+ },
+ "siblings": [
+  {
+   "rfilename": ".gitattributes"
+  },
+  {
+   "rfilename": "README.md"
+  },
+  {
+   "rfilename": "config.json"
+  },
+  {
+   "rfilename": "generation_config.json"
+  },
+  {
+   "rfilename": "model-00001-of-00002.safetensors"
+  },
+  {
+   "rfilename": "model-00002-of-00002.safetensors"
+  },
+  {
+   "rfilename": "model.safetensors.index.json"
+  },
+  {
+   "rfilename": "notebook.ipynb"
+  },
+  {
+   "rfilename": "onnx/model.onnx"
+  },
+  {
+   "rfilename": "onnx/model.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_bnb4.onnx"
+  },
+  {
+   "rfilename": "onnx/model_bnb4.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_fp16.onnx"
+  },
+  {
+   "rfilename": "onnx/model_fp16.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_int8.onnx"
+  },
+  {
+   "rfilename": "onnx/model_int8.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_q4.onnx"
+  },
+  {
+   "rfilename": "onnx/model_q4.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_q4f16.onnx"
+  },
+  {
+   "rfilename": "onnx/model_q4f16.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_quantized.onnx"
+  },
+  {
+   "rfilename": "onnx/model_quantized.onnx_data"
+  },
+  {
+   "rfilename": "onnx/model_uint8.onnx"
+  },
+  {
+   "rfilename": "onnx/model_uint8.onnx_data"
+  },
+  {
+   "rfilename": "special_tokens_map.json"
+  },
+  {
+   "rfilename": "tokenizer.json"
+  },
+  {
+   "rfilename": "tokenizer_config.json"
+  }
+ ],
+ "spaces": [
+  "embedl/hfviewer",
+  "aquanode/gpu-vram-calculator",
+  "EuroEval/euroeval_leaderboard",
+  "VIDraft/global-llm-leaderboard",
+  "Typony/JacobianScopes",
+  "build-small-hackathon/garden-of-forking-paths",
+  "qikp/tokenizers",
+  "emanuelaboros/historical-llm-leaderboard",
+  "tetracta/model-xray-sample-reports"
+ ],
+ "createdAt": "2025-06-19T11:33:11.000Z",
+ "safetensors": {
+  "parameters": {
+   "BF16": 3075098624
+  },
+  "total": 3075098624
+ },
+ "usedStorage": 38523035903
+}

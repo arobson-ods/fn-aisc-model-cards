@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "param_count",
+ "input_sha256": "cff1b0d65b845647331bf8836ef33e6969cbbd823372fc2cc94cb402ef54ef4a",
+ "request_user": "Fact: param_count\nWhat to find: Total number of parameters.\nThe card's machine-readable metadata gives: 8791592960\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "8B",
+  "quotes": [
+   "| **Parameters** | 8B |"
+  ],
+  "agreement": "agrees",
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16682,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 161
+ },
+ "cost_usd_list_price": 0.0684582,
+ "duration_ms": 2508
+}

@@ -1,0 +1,11 @@
+{
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "sha": "dba1be0a40aa45a94ad051997016db3960a90277",
+ "api_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+ "retrieved_at": "2026-09-30T10:17:00+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+ "config_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/dba1be0a40aa45a94ad051997016db3960a90277/config.json"
+}

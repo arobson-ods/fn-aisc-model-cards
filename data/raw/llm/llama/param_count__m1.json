@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "param_count",
+ "input_sha256": "ff4b0990e14a7ecc2b4787fb99d82036ac9823ea4204dda5bd97f73f1c11c2e7",
+ "request_user": "Fact: param_count\nWhat to find: Total number of parameters.\nThe card's machine-readable metadata gives: 108641793536\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "109B (Total) parameters for Llama 4 Scout (17B activated)",
+  "quotes": [
+   "109B (Total)",
+   "17B (Activated)"
+  ],
+  "agreement": "agrees",
+  "section": "Model Information"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9605,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 405
+ },
+ "cost_usd_list_price": 0.0425902,
+ "duration_ms": 4289
+}

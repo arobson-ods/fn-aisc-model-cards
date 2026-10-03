@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "model_version",
+ "input_sha256": "1a58d39561e8c6f507e8343cfba704898fb772d009374bbb4fd5268e368a4af3",
+ "request_user": "Fact: model_version\nWhat to find: Version identifier of this model release (named version or repository revision).\nThe card's machine-readable metadata gives: \"c3e4fac79ddace21976ced56fbf1564b8bd8c89f\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10334,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 144
+ },
+ "cost_usd_list_price": 0.042896199999999995,
+ "duration_ms": 2151
+}

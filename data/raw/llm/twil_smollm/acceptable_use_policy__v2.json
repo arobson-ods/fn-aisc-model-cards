@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "acceptable_use_policy",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: acceptable_use_policy\nWhat to find: Acceptable use policy or use restrictions that apply to the model (link or text).\nCard sections that often contain it: Acceptable Use, License, Use Policy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card states no separate acceptable use policy. The only use restriction is the license: the model is released under the webAI Non-Commercial License ver. 1.0, with terms in LICENSE.md in the repository.",
+  "quotes": [
+   "Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this\nrepository."
+  ],
+  "section": "License and attribution"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11180,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 453
+ },
+ "cost_usd_list_price": 0.049254000000000006,
+ "duration_ms": 4118
+}

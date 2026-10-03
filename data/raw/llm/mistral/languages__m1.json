@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "languages",
+ "input_sha256": "a36134977eca96564991b47606da35aaaecc6e99d7ad3b55ec13cbd76c860cd8",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nThe card's machine-readable metadata gives: [\"en\", \"fr\", \"de\", \"es\", \"pt\", \"it\", \"ja\", \"ko\", \"ru\", \"zh\", \"ar\", \"fa\", \"id\", \"ms\", \"ne\", \"pl\", \"ro\", \"sr\", \"sv\", \"tr\", \"uk\", \"vi\", \"hi\", \"bn\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, and Arabic.",
+  "quotes": [
+   "**Multilingual**: Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, and Arabic."
+  ],
+  "agreement": "adds",
+  "section": "Key Features"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10072,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 418
+ },
+ "cost_usd_list_price": 0.044588199999999995,
+ "duration_ms": 3588
+}

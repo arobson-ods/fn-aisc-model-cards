@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "architecture_details",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7416,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.030848,
+ "duration_ms": 2168
+}

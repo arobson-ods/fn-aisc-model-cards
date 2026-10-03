@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "architecture_family",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: architecture_family\nWhat to find: Model architecture family or type (e.g. transformer decoder, mixture-of-experts).\nCard sections that often contain it: Model Architecture, Model Details, Model Summary\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Dense 128B model (dense, not mixture-of-experts), multimodal with a vision encoder trained from scratch",
+  "quotes": [
+   "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,",
+   "- **Dense 128B parameters**.",
+   "We trained the vision encoder from"
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9909,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 226
+ },
+ "cost_usd_list_price": 0.042006999999999996,
+ "duration_ms": 2202
+}

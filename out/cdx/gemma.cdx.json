@@ -1,0 +1,221 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:813a0084-de38-521c-a9d4-eabf1c3516be",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:16:59Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "gemma:model",
+   "name": "google/gemma-4-31B-it",
+   "supplier": {
+    "name": "Google DeepMind"
+   },
+   "version": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "842da3794eaa0b77d5f08bae87a17459d91ff475"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Usable with the Hugging Face Transformers library (pip install -U transformers torch accelerate; load via AutoProcessor and AutoModelForMultimodalLM). Chat format uses system, assistant and user roles; thinking is enabled with the <|think|> token at the start of the system prompt."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open-weights models (pre-trained and instruction-tuned variants) available on Hugging Face, loadable with the Transformers library"
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "gemma:ancestor-google/gemma-4-31B",
+      "name": "google/gemma-4-31B",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/google/gemma-4-31B"
+       }
+      ],
+      "version": "5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/google/gemma-4-31B-it"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/google/gemma-4-31B-it"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Dense architecture (31B Dense) with hybrid attention interleaving local sliding window attention and full global attention; the Gemma 4 family includes Dense and Mixture-of-Experts variants",
+     "modelArchitecture": "31B Dense model: 30.7B parameters, 60 layers, 1024-token sliding window, 256K context, 262K vocabulary. Hybrid attention interleaves local sliding window attention with full global attention (final layer always global), giving the speed and low memory footprint of a lightweight model without sacrificing deep awareness for complex, long-context tasks. Global layers use unified Keys and Values and Proportional RoPE (p-RoPE) to optimize memory for long contexts.",
+     "inputs": [
+      {
+       "format": "text"
+      },
+      {
+       "format": "image"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "image-text-to-text",
+     "datasets": [
+      {
+       "ref": "gemma:training-data"
+      },
+      {
+       "ref": "gemma:evalset-MMLU-Pro-AIME-2026-no-tools-LiveCodeBench-v6-Codeforces-ELO-GPQA-Diamond-Tau2-HLE-BigBench-Extra-Hard-MMMLU-MMMU-Pro-OmniDocBench-1.5-MATH-Vision-MedXPertQA-MM-CoVoST-FLEURS-MRCR-v2-8-needle-128k"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Gemma 4 31B (instruction-tuned): MMLU Pro 85.2%; AIME 2026 no tools 89.2%; LiveCodeBench v6 80.0%; Codeforces ELO 2150; GPQA Diamond 84.3%; MMMU Pro 76.9%"
+      }
+     ]
+    },
+    "considerations": {
+     "fairnessAssessments": [
+      {
+       "harms": "The card acknowledges that VLMs trained on real-world data can reflect socio-cultural biases; mitigation consists of careful scrutiny, input data pre-processing, and post-training evaluations. Training data was filtered for CSAM, certain personal/sensitive data, and by content quality and safety. It also notes biases or gaps in training data can limit responses, and encourages continuous monitoring and exploration of de-biasing techniques."
+      }
+     ],
+     "useCases": [
+      "Content creation and communication (text generation, chatbots and conversational AI, text summarization, image data extraction, audio processing and interaction for E2B/E4B/12B) and research and education (NLP and VLM research, language learning tools, knowledge exploration).",
+      "Chatbots/conversational AI (customer service, virtual assistants, interactive applications), and agentic workflows/autonomous agents via native function calling; also research foundation for VLM/NLP"
+     ],
+     "technicalLimitations": [
+      "Limitations include training data biases/gaps affecting responses; difficulty with open-ended or highly complex tasks; struggles with subtle nuances, sarcasm, figurative language; may generate incorrect or outdated factual statements; may lack common sense reasoning. Risks include generation of harmful content, misuse, privacy violations and perpetuation of biases."
+     ],
+     "ethicalConsiderations": [
+      {
+       "name": "Automated and human evaluations were conducted with internal safety and responsible AI teams, aligned with Google's AI principles and safety policies. Results: major improvements in all content safety categories relative to previous Gemma models; Gemma 4 significantly outperforms Gemma 3 and 3n on safety while keeping unjustified refusals low; testing was conducted without safety filters; minimal policy violations for text-to-text and image-to-text across all model sizes."
+      }
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "31273088876"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "262144"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "The card gives rationales for some design choices. Hybrid attention (local sliding window interleaved with global) gives the speed and low memory footprint of a lightweight model without losing deep awareness for long-context tasks. Training data includes code to learn programming syntax and patterns, and mathematical text to learn logical reasoning, symbolic representation and to address mathematical queries."
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "Multilingual support in over 140 languages; out-of-the-box support for 35+ languages, pre-trained on 140+ languages"
+     },
+     {
+      "name": "model-cards:autonomy",
+      "value": "Card describes native function-calling support powering highly capable autonomous agents (agentic workflows)."
+     },
+     {
+      "name": "model-cards:standards_compliance",
+      "value": "Safety evaluations align with Google's AI principles and Google's safety policies. The card names no external standards or regulations such as ISO/IEC 42001 or the EU AI Act."
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "gemma:training-data",
+   "name": "Training data of google/gemma-4-31B-it (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_modality: Web documents, code, images, audio (also mathematics text)\ndata_provenance: Web documents (web crawl) in over 140 languages, code, mathematics, images, and audio; cutoff January 2025. No synthetic, licensed or user data categories stated.\ndata_acquisition: Pre-training data is a large-scale, diverse collection spanning web documents, code, mathematics and images (audio also listed), with a January 2025 cutoff; web text covers over 140 languages. Filtering applied: CSAM filtering, automated sensitive/personal data filtering, and content quality and safety filtering. The card does not describe annotation, synthetic data generation, or how rights were obtained.\ndata_scope: Large-scale, diverse pre-training dataset spanning multiple domains and modalities: web documents, code, mathematics, images, and audio, with a cutoff date of January 2025. Web content covers over 140 languages.\ndata_curation: CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies.\nunsuitable_data_measures: CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies.",
+     "sensitiveData": [
+      "Training data was filtered with automated techniques to remove certain personal information and other sensitive data; CSAM filtering was also applied."
+     ]
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:knowledge_cutoff",
+     "value": "January 2025"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "gemma:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "gemma:evalset-MMLU-Pro-AIME-2026-no-tools-LiveCodeBench-v6-Codeforces-ELO-GPQA-Diamond-Tau2-HLE-BigBench-Extra-Hard-MMMLU-MMMU-Pro-OmniDocBench-1.5-MATH-Vision-MedXPertQA-MM-CoVoST-FLEURS-MRCR-v2-8-needle-128k",
+   "name": "MMLU Pro, AIME 2026 no tools, LiveCodeBench v6, Codeforces ELO, GPQA Diamond, Tau2, HLE, BigBench Extra Hard, MMMLU, MMMU Pro, OmniDocBench 1.5, MATH-Vision, MedXPertQA MM, CoVoST, FLEURS, MRCR v2 8 needle 128k",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "MMLU Pro, AIME 2026 no tools, LiveCodeBench v6, Codeforces ELO, GPQA Diamond, Tau2, HLE, BigBench Extra Hard, MMMLU, MMMU Pro, OmniDocBench 1.5, MATH-Vision, MedXPertQA MM, CoVoST, FLEURS, MRCR v2 8 needle 128k"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "gemma:model",
+   "dependsOn": [
+    "gemma:dependency-software"
+   ]
+  },
+  {
+   "ref": "gemma:dependency-software"
+  }
+ ]
+}

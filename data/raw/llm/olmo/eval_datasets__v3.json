@@ -1,0 +1,38 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluated on MATH, AIME 2024, AIME 2025, OMEGA (Math); BigBenchHard, ZebraLogic, AGI Eval English (Reasoning); HumanEvalPlus, MBPP+, LiveCodeBench v3 (Coding); IFEval, IFBench (IF); MMLU, PopQA, GPQA (Knowledge & QA); AlpacaEval 2 LC (Chat); Safety",
+  "quotes": [
+   "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 |",
+   "| AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 |",
+   "| AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 |",
+   "| OMEGA | 15.5 | 33.3 | 42.2 | 5.6 | 23.4 | 44.0 | 19.2 | 24.0 | 9.1 | 9.8 |",
+   "| BigBenchHard | 69.0 | 82.1 | 84.0 | 57.0 | 80.4 | 89.0 | 80.9 | 82.4 | 66.0 | 65.6 |",
+   "| ZebraLogic | 30.6 | 51.1 | 61.7 | 9.0 | 28.4 | 86.7 | 24.1 | 24.8 | 17.2 | 13.3 |",
+   "| AGI Eval English | 71.7 | 79.4 | 79.5 | 61.6 | 82.4 | 89.4 | 78.9 | 76.9 | 70.9 | 68.4 |",
+   "| HumanEvalPlus | 80.8 | 85.7 | 86.7 | 42.9 | 83.9 | 89.3 | 82.6 | 79.2 | 67.5 | 44.4 |",
+   "| MBPP+ | 61.5 | 63.6 | 65.1 | 45.8 | 67.9 | 69.0 | 66.6 | 65.7 | 61.2 | 49.0 |",
+   "| LiveCodeBench v3 | 35.4 | 49.6 | 54.7 | 9.7 | 57.5 | 70.2 | 49.9 | 39.0 | 28.7 | 10.6 |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 6670,
+  "output_tokens": 972
+ },
+ "cost_usd_list_price": 0.013214,
+ "duration_ms": 7294
+}

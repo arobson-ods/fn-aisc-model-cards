@@ -1,0 +1,193 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:00Z",
+   "createdBy": [
+    "urn:model-cards:qwen#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:qwen#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for qwen (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:qwen#model"
+   ],
+   "element": [
+    "urn:model-cards:qwen#agent",
+    "urn:model-cards:qwen#supplier",
+    "urn:model-cards:qwen#model",
+    "urn:model-cards:qwen#dependency-software",
+    "urn:model-cards:qwen#rel-4",
+    "urn:model-cards:qwen#evalset-Evaluated-on-benchmarks-including-Terminal-Bench-2.1-SWE-bench-Pro-DeepSWE-1.1-NL2Repo-Bench-FrontierSWE-MLS-Bench-Lite-PaperBench-AndroidBench-SkillsBench-v1.1-Automation-Bench-WideSearch-OneMillion-Bench-PLawBench-plus-in-house-QwenSWEBench-QwenQoderBench-QwenReactBench-QwenSVGBench-and-CoWorkBench-the-table-also-lists-others-e.g.-GPQA-Diamond-HLE-IFBench-HealthBench-MRCR-v2-LongBench-v2-.",
+    "urn:model-cards:qwen#rel-6",
+    "urn:model-cards:qwen#licence-en-model",
+    "urn:model-cards:qwen#rel-8",
+    "urn:model-cards:qwen#rel-9"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:qwen#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:qwen#supplier",
+   "name": "Qwen Team",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:qwen#model",
+   "name": "Qwen/Qwen3.8-2.4T-A95B",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:qwen#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Causal Language Model with a hybrid Mixture-of-Experts architecture (Gated DeltaNet and Gated Attention layers, each followed by MoE); 2.4T total / 95B activated parameters"
+   ],
+   "ai_domain": [
+    "text-generation"
+   ],
+   "ai_informationAboutApplication": "Intended uses: Designed for coding, professional work, research, and long-horizon agentic tasks, carrying complex multi-step tasks through to completion; text-only generation with thinking mode.\nTarget systems: Agentic systems and coding/development tools: designed for long-horizon, multi-step agentic tasks, with support for popular harnesses and development tools for integration into existing stacks",
+   "ai_limitation": "No dedicated limitations section. The card notes that the model is text-only, with no multimodal input, and that thinking cannot be disabled. It also notes that a higher presence_penalty (used to reduce endless repetition) may occasionally cause language mixing and a slight decrease in model performance.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "The card has a benchmark table with a Qwen3.8-Max column, covering coding agent, general agent and general capability benchmarks (for example GPQA Diamond 92.6). Terminal Bench 2.1 was evaluated with Claude Code (avg@10)."
+    }
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app; deployable with SGLang, vLLM, TokenSpeed"
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+   "releaseTime": "2026-08-08T01:50:52Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "2446182725504"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "262144"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "max_output_size",
+     "value": "Recommended maximum output length of 262,144 tokens for reasoning content and 131,072 tokens for the final response (within the 1M context length)"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Pre-training & Post-training (no further methods such as SFT, DPO, RL or distillation are detailed); MTP (Multi-Token Prediction) trained with multiple steps",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: The card states the repository contains model weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed). Deployment recipes/cookbooks are linked for SGLang, vLLM and TokenSpeed. No training data, training code or evaluation code is mentioned.\narchitecture_details: Causal language model with 2.4T total and 95B activated parameters; 92 layers; hidden layout 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)); Mixture of Experts with 512 experts, 10 routed + 1 shared activated; hidden dimension 8192. Built on the architectural foundation of Qwen3.5. The card gives no detailed rationale for the design choices.\nintegration_means: Hugging Face Transformers format weights compatible with vLLM, SGLang, TokenSpeed; deployable via SGLang, vLLM and TokenSpeed; usable through the Chat Completions API (OpenAI Python SDK) including Qwen Cloud; thinking mode required, with reasoning_effort (xhigh default, medium, low) and preserve_thinking options.\neval_methodology: Benchmark footnotes give per-benchmark settings. Terminal Bench 2.1 was run with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. SWE-bench Pro used the Claude Code harness, temp=1.0, top_p=0.95 and a 256K context window. QwenSWEBench used the Claude Code harness, avg@3, an 8-hour timeout, max_tokens=32,768, temperature=1.0 and a 256K-token context window."
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:qwen#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:qwen#rel-4",
+   "from": "urn:model-cards:qwen#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:qwen#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:qwen#evalset-Evaluated-on-benchmarks-including-Terminal-Bench-2.1-SWE-bench-Pro-DeepSWE-1.1-NL2Repo-Bench-FrontierSWE-MLS-Bench-Lite-PaperBench-AndroidBench-SkillsBench-v1.1-Automation-Bench-WideSearch-OneMillion-Bench-PLawBench-plus-in-house-QwenSWEBench-QwenQoderBench-QwenReactBench-QwenSVGBench-and-CoWorkBench-the-table-also-lists-others-e.g.-GPQA-Diamond-HLE-IFBench-HealthBench-MRCR-v2-LongBench-v2-.",
+   "name": "Evaluated on benchmarks including Terminal Bench 2.1, SWE-bench Pro, DeepSWE 1.1, NL2Repo-Bench, FrontierSWE, MLS-Bench-Lite, PaperBench, AndroidBench, SkillsBench v1.1, Automation-Bench, WideSearch, $OneMillion-Bench, PLawBench, plus in-house QwenSWEBench, QwenQoderBench, QwenReactBench, QwenSVGBench and CoWorkBench (the table also lists others, e.g. GPQA Diamond, HLE, IFBench, HealthBench, MRCR v2, LongBench v2).",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:qwen#rel-6",
+   "from": "urn:model-cards:qwen#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:qwen#evalset-Evaluated-on-benchmarks-including-Terminal-Bench-2.1-SWE-bench-Pro-DeepSWE-1.1-NL2Repo-Bench-FrontierSWE-MLS-Bench-Lite-PaperBench-AndroidBench-SkillsBench-v1.1-Automation-Bench-WideSearch-OneMillion-Bench-PLawBench-plus-in-house-QwenSWEBench-QwenQoderBench-QwenReactBench-QwenSVGBench-and-CoWorkBench-the-table-also-lists-others-e.g.-GPQA-Diamond-HLE-IFBench-HealthBench-MRCR-v2-LongBench-v2-."
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:qwen#licence-en-model",
+   "simplelicensing_licenseExpression": "LicenseRef-qwen3.8-max",
+   "creationInfo": "_:creationinfo",
+   "comment": "Licence link from card: LICENSE"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:qwen#rel-8",
+   "from": "urn:model-cards:qwen#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:qwen#licence-en-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:qwen#rel-9",
+   "from": "urn:model-cards:qwen#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

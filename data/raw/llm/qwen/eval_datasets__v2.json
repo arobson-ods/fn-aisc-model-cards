@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Many benchmarks in coding agent, general agent and general capability categories, including Terminal Bench 2.1, SWE-bench Pro, SkillsBench, GPQA Diamond and LongBench v2 (the table lists many more, e.g. in-house benchmarks such as QwenSWEBench)",
+  "quotes": [
+   "Terminal Bench 2.1",
+   "SWE-bench Pro",
+   "SkillsBench",
+   "GPQA Diamond",
+   "LongBench v2"
+  ],
+  "section": "Benchmark Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 17929,
+  "output_tokens": 614
+ },
+ "cost_usd_list_price": 0.0118858,
+ "duration_ms": 5452
+}

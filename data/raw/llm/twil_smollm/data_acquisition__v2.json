@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives (FOL translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction). RL stage (MGPO, entropy-weighted GRPO) used a programmatic verifier with partial credit for loose matches and token-F1. The card does not state how rights were obtained.",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction).",
+   "4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient."
+  ],
+  "section": "How it was built"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 428
+ },
+ "cost_usd_list_price": 0.008629399999999999,
+ "duration_ms": 3107
+}

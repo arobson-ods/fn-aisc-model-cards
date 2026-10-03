@@ -1,0 +1,161 @@
+{
+ "_id": "68b1a84678d0bd542fdbc5a7",
+ "id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "private": false,
+ "pipeline_tag": "image-text-to-text",
+ "library_name": "transformers",
+ "tags": [
+  "transformers",
+  "safetensors",
+  "internvl",
+  "image-text-to-text",
+  "custom_code",
+  "conversational",
+  "multilingual",
+  "dataset:OpenGVLab/MMPR-v1.2",
+  "dataset:OpenGVLab/MMPR-Tiny",
+  "arxiv:2312.14238",
+  "arxiv:2404.16821",
+  "arxiv:2412.05271",
+  "arxiv:2411.10442",
+  "arxiv:2504.10479",
+  "arxiv:2508.18265",
+  "base_model:OpenGVLab/InternViT-300M-448px-V2_5",
+  "base_model:merge:OpenGVLab/InternViT-300M-448px-V2_5",
+  "base_model:openai/gpt-oss-20b",
+  "base_model:merge:openai/gpt-oss-20b",
+  "license:apache-2.0",
+  "endpoints_compatible",
+  "region:us"
+ ],
+ "downloads": 527466,
+ "likes": 9,
+ "modelId": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "author": "OpenGVLab",
+ "sha": "49b11e8d5e9d4c822de52dee190f95c988009559",
+ "lastModified": "2025-09-08T09:54:41.000Z",
+ "gated": false,
+ "disabled": false,
+ "model-index": null,
+ "config": {
+  "architectures": [
+   "InternVLForConditionalGeneration"
+  ],
+  "model_type": "internvl",
+  "tokenizer_config": {
+   "bos_token": "<|startoftext|>",
+   "eos_token": "<|return|>",
+   "pad_token": "<|endoftext|>"
+  },
+  "chat_template_jinja": "{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n'}}{% if message['content'] is string %}{{ message['content'] }}{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' %}{{ '<IMG_CONTEXT>\n' }}{% elif content['type'] == 'video' %}{{ '<video>\n' }}{% elif content['type'] == 'text' %}{{ content['text'] }}{% endif %}{% endfor %}{% endif %}{{'<|im_end|>\n'}}{% endfor %}{% if add_generation_prompt %}{{'<|im_start|>assistant\n' }}{% endif %}"
+ },
+ "cardData": {
+  "license": "apache-2.0",
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "transformers",
+  "base_model": [
+   "OpenGVLab/InternViT-300M-448px-V2_5",
+   "openai/gpt-oss-20b"
+  ],
+  "base_model_relation": "merge",
+  "datasets": [
+   "OpenGVLab/MMPR-v1.2",
+   "OpenGVLab/MMPR-Tiny"
+  ],
+  "language": [
+   "multilingual"
+  ],
+  "tags": [
+   "internvl",
+   "custom_code"
+  ]
+ },
+ "transformersInfo": {
+  "auto_model": "AutoModelForMultimodalLM",
+  "pipeline_tag": "image-text-to-text",
+  "processor": "AutoProcessor"
+ },
+ "siblings": [
+  {
+   "rfilename": ".gitattributes"
+  },
+  {
+   "rfilename": "README.md"
+  },
+  {
+   "rfilename": "chat_template.jinja"
+  },
+  {
+   "rfilename": "config.json"
+  },
+  {
+   "rfilename": "examples/image1.jpg"
+  },
+  {
+   "rfilename": "examples/image2.jpg"
+  },
+  {
+   "rfilename": "examples/red-panda.mp4"
+  },
+  {
+   "rfilename": "generation_config.json"
+  },
+  {
+   "rfilename": "model-00001-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00002-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00003-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00004-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00005-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00006-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00007-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00008-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model-00009-of-00009.safetensors"
+  },
+  {
+   "rfilename": "model.safetensors.index.json"
+  },
+  {
+   "rfilename": "preprocessor_config.json"
+  },
+  {
+   "rfilename": "processor_config.json"
+  },
+  {
+   "rfilename": "special_tokens_map.json"
+  },
+  {
+   "rfilename": "tokenizer.json"
+  },
+  {
+   "rfilename": "tokenizer_config.json"
+  },
+  {
+   "rfilename": "video_preprocessor_config.json"
+  }
+ ],
+ "spaces": [],
+ "createdAt": "2025-08-29T13:16:54.000Z",
+ "safetensors": {
+  "parameters": {
+   "BF16": 21232768704
+  },
+  "total": 21232768704
+ },
+ "usedStorage": 42495508471
+}

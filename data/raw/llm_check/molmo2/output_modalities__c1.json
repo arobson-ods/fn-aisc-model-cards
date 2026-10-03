@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "89fd8c4beff58af8",
+ "request_user": "Fact definition: Output modalities produced (text, images, audio, video).\nValue taken from the model's structured metadata (derived:pipeline_output_modalities = [\"text\"]): [\"text\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's pipeline_tag is image-text-to-text, so the model outputs text. All the examples produce text that gets decoded with the tokenizer. Even the pointing and tracking coordinates come out as text strings that are parsed with regex afterwards."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 597,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 199
+ },
+ "cost_usd_list_price": 0.010295,
+ "duration_ms": 6304
+}

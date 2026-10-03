@@ -1,0 +1,1215 @@
+[
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/provider_name__v4.json",
+  "status": "prose",
+  "value": "Allen Institute for AI (Ai2)",
+  "quote": "Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding.",
+  "quotes": [
+   "Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "allenai/Molmo2-8B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "api:id = \"allenai/Molmo2-8B\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "allenai/Molmo2-8B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "api:sha = \"e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "api:sha = \"e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Apache 2.0; intended for research and educational use, and trained on third party datasets subject to academic and non-commercial research use only",
+   "quotes": [
+    "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+    "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+   ],
+   "agreement": "adds",
+   "section": "License and Use",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/acceptable_use_policy__v4.json",
+  "status": "prose",
+  "value": "Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use); trained on third party datasets subject to academic and non-commercial research use only.",
+  "quote": "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use). [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "License and Use",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/additional_assets__v4.json",
+  "status": "prose",
+  "value": "The Molmo2 datasets are available in the Molmo2 data collection on Hugging Face; the other artifacts (training code, evaluations, intermediate checkpoints) will be made available at a later date. All models in the Molmo2 family are in a Hugging Face collection.",
+  "quote": "Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data).  [...] All other artifacts used in creating Molmo2 (training code, evaluations, intermediate checkpoints) will be made available at a later date, furthering our commitment to open-source AI development and reproducibility. [...] You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2).",
+  "quotes": [
+   "Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data). ",
+   "All other artifacts used in creating Molmo2 (training code, evaluations, intermediate checkpoints) will be made available at a later date, furthering our commitment to open-source AI development and reproducibility.",
+   "You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2)."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Vision-language model based on Qwen3-8B (language model) with SigLIP 2 as vision backbone",
+  "quote": "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone.",
+  "quotes": [
+   "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/architecture_details__v4.json",
+  "status": "prose",
+  "value": "Molmo2-8B is based on Qwen3-8B (language model) and uses SigLIP 2 as vision backbone. The card does not state layers, attention type, experts, active parameters, or design rationale.",
+  "quote": "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone.",
+  "quotes": [
+   "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": 8661703120,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "api:safetensors.total = 8661703120",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 8661703120,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "text",
+   "image"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "derived:pipeline_input_modalities = [\"text\", \"image\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text",
+     "image"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Image, video and multi-image understanding and grounding (image and video inputs)",
+   "quotes": [
+    "Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding."
+   ],
+   "agreement": "adds",
+   "section": "Molmo2-8B",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": 36864,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/config.json",
+  "quote": "config:text_config.max_position_embeddings = 36864",
+  "section": "config:text_config.max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:text_config.max_position_embeddings",
+    "value": 36864,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/max_output_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "image-text-to-text",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:pipeline_tag = \"image-text-to-text\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "float32",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/config.json",
+  "quote": "config:dtype = \"float32\"",
+  "section": "config:dtype",
+  "evidence": [
+   {
+    "path": "config:dtype",
+    "value": "float32",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "allenai/Molmo2-Cap",
+   "allenai/Molmo2-VideoCapQA",
+   "allenai/Molmo2-VideoSubtitleQA",
+   "allenai/Molmo2-AskModelAnything",
+   "allenai/Molmo2-VideoPoint",
+   "allenai/Molmo2-VideoTrack",
+   "allenai/Molmo2-MultiImageQA",
+   "allenai/Molmo2-SynMultiImageQA",
+   "allenai/Molmo2-MultiImagePoint"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:datasets = [\"allenai/Molmo2-Cap\", \"allenai/Molmo2-VideoCapQA\", \"allenai/Molmo2-VideoSubtitleQA\", \"allenai/Molmo2-AskModelAnything\", \"allenai/Molmo2-VideoPoint\", \"allenai/Molmo2-VideoTrack\", \"allenai/Molmo2-MultiImageQA\", \"allenai/Molmo2-SynMultiImageQA\", \"allenai/Molmo2-MultiImagePoint\"]",
+  "section": "card:datasets",
+  "evidence": [
+   {
+    "path": "card:datasets",
+    "value": [
+     "allenai/Molmo2-Cap",
+     "allenai/Molmo2-VideoCapQA",
+     "allenai/Molmo2-VideoSubtitleQA",
+     "allenai/Molmo2-AskModelAnything",
+     "allenai/Molmo2-VideoPoint",
+     "allenai/Molmo2-VideoTrack",
+     "allenai/Molmo2-MultiImageQA",
+     "allenai/Molmo2-SynMultiImageQA",
+     "allenai/Molmo2-MultiImagePoint"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Trained on publicly available third party datasets referenced in the technical report and the \"Molmo2 data\" collection of highly-curated image-text and video-text pairs. Individual datasets are not named in the text.",
+   "quotes": [
+    "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs."
+   ],
+   "agreement": "adds",
+   "section": "Molmo2-8B",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_modality__v4.json",
+  "status": "prose",
+  "value": "Image-text and video-text pairs (images, video, multi-image)",
+  "quote": "a collection of datasets with highly-curated image-text and video-text pairs.",
+  "quotes": [
+   "a collection of datasets with highly-curated image-text and video-text pairs."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_provenance__v4.json",
+  "status": "prose",
+  "value": "Public datasets: trained on publicly available third party datasets (as referenced in the technical report and the Molmo2 data collection of curated image-text and video-text pairs); the card notes these are subject to academic and non-commercial research use only.",
+  "quote": "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),  [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), ",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_acquisition__v4.json",
+  "status": "prose",
+  "value": "Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only.",
+  "quote": "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),  [...] a collection of datasets with highly-curated image-text and video-text pairs. [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), ",
+   "a collection of datasets with highly-curated image-text and video-text pairs.",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_scope__v4.json",
+  "status": "prose",
+  "value": "Trained on publicly available third party datasets, a collection of highly-curated image-text and video-text pairs; the model supports image, video and multi-image understanding and grounding. The datasets are subject to academic and non-commercial research use only.",
+  "quote": "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs. [...] Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding. [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs.",
+   "Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding.",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_method__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/design_rationale__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/intended_uses__v4.json",
+  "status": "prose",
+  "value": "Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines.",
+  "quote": "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+  "quotes": [
+   "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use)."
+  ],
+  "section": "License and Use",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/out_of_scope_uses__v4.json",
+  "status": "prose",
+  "value": "No explicit out-of-scope list. The card says the model is intended for research and educational use. Its training datasets are subject to academic and non-commercial research use only, and users should review the sources to decide whether the model suits their use case.",
+  "quote": "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use). [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only. Please review the sources to determine if this model is appropriate for your use case.",
+  "quotes": [
+   "It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only. Please review the sources to determine if this model is appropriate for your use case."
+  ],
+  "section": "License and Use",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/target_systems__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/integration_means__v4.json",
+  "status": "prose",
+  "value": "Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True), with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using chat messages containing text, video or image content; supports video QA, video pointing, tracking, multi-image QA and multi-image pointing.",
+  "quote": "pip install transformers==4.57.1 [...] pip install torch pillow einops torchvision accelerate decord2 molmo_utils [...] from transformers import AutoProcessor, AutoModelForImageTextToText [...] inputs = processor.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n    return_tensors=\"pt\",\n    return_dict=True,\n) [...] ### Tracking Video QA (best with max_fps=8)",
+  "quotes": [
+   "pip install transformers==4.57.1",
+   "pip install torch pillow einops torchvision accelerate decord2 molmo_utils",
+   "from transformers import AutoProcessor, AutoModelForImageTextToText",
+   "inputs = processor.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n    return_tensors=\"pt\",\n    return_dict=True,\n)",
+   "### Tracking Video QA (best with max_fps=8)"
+  ],
+  "section": "Quick Start",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/required_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.57.1",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Python 3.11 conda environment with transformers==4.57.1, plus torch, pillow, einops, torchvision, accelerate, decord2 and molmo_utils",
+   "quotes": [
+    "conda create --name transformers4571 python=3.11",
+    "pip install transformers==4.57.1",
+    "pip install torch pillow einops torchvision accelerate decord2 molmo_utils"
+   ],
+   "agreement": "adds",
+   "section": "Quick Start",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/limitations__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "en"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:language = [\"en\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/eval_results__v4.json",
+  "status": "prose",
+  "value": "Average Score on 15 Academic Benchmarks: Molmo2-8B 63.1 (also Molmo2-4B 62.8, Molmo2-7B 59.7, GPT-5 70.6, Gemini 2.5 Pro 71.2, Qwen3-VL-8B 59.5)",
+  "quote": "We report the Average Score on 15 Academic Benchmarks here. [...] | **Molmo2-8B (this model)** | 63.1 | [...] | Molmo2-4B | 62.8 | [...] | Molmo2-7B | 59.7 | [...] | GPT-5 | 70.6 | [...] | Gemini 2.5 Pro | 71.2 | [...] | Qwen3-VL-8B | 59.5 |",
+  "quotes": [
+   "We report the Average Score on 15 Academic Benchmarks here.",
+   "| **Molmo2-8B (this model)** | 63.1 |",
+   "| Molmo2-4B | 62.8 |",
+   "| Molmo2-7B | 59.7 |",
+   "| GPT-5 | 70.6 |",
+   "| Gemini 2.5 Pro | 71.2 |",
+   "| Qwen3-VL-8B | 59.5 |"
+  ],
+  "section": "Evaluations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/eval_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/eval_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "Qwen/Qwen3-8B",
+   "google/siglip-so400m-patch14-384"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "card:base_model = [\"Qwen/Qwen3-8B\", \"google/siglip-so400m-patch14-384\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "Qwen/Qwen3-8B",
+     "google/siglip-so400m-patch14-384"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Based on Qwen3-8B, and uses SigLIP 2 as vision backbone",
+   "quotes": [
+    "Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384) as vision backbone."
+   ],
+   "agreement": "agrees",
+   "section": "",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+  "llm_cache": "data/raw/llm/molmo2/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets available on Hugging Face",
+  "quote": "You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2). [...] - 💬 [Demo](https://playground.allenai.org/?model=molmo2-8b) [...] Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data).",
+  "quotes": [
+   "You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2).",
+   "- 💬 [Demo](https://playground.allenai.org/?model=molmo2-8b)",
+   "Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data)."
+  ],
+  "section": "Molmo2-8B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "molmo2",
+  "repo_id": "allenai/Molmo2-8B",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:04+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/allenai/Molmo2-8B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+  "quote": "derived:hub_url = \"https://huggingface.co/allenai/Molmo2-8B\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/allenai/Molmo2-8B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

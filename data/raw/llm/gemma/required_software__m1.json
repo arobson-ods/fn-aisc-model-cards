@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "required_software",
+ "input_sha256": "84c32ebf9f1bd2e24f1da26db3692e4c120e997ada93abbb6ea92ab750bebeb0",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nThe card's machine-readable metadata gives: \"transformers\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Latest version of Transformers; install dependencies with pip: transformers, torch, accelerate",
+  "quotes": [
+   "You can use all Gemma 4 models with the latest version of Transformers.",
+   "`pip install -U transformers torch accelerate`"
+  ],
+  "agreement": "adds",
+  "section": "Getting Started"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 753,
+  "cache_read_input_tokens": 11512,
+  "output_tokens": 217
+ },
+ "cost_usd_list_price": 0.0074884,
+ "duration_ms": 2204
+}

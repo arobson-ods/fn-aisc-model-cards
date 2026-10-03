@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "personal_data",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: personal_data\nWhat to find: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).\nCard sections that often contain it: Training Data, Privacy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state whether the training data includes personal or sensitive personal information, or how it was handled. It only describes the SFT corpus as synthetic formal-logic data.",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction)."
+  ],
+  "section": "How it was built"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 270
+ },
+ "cost_usd_list_price": 0.0070552,
+ "duration_ms": 2632
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "eval_results",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The Evaluation section gives benchmark score tables comparing Falcon-H1R-7B with other models. It covers math, code, general and agentic benchmarks, including AIME24, AIME25, HMMT25, AMO-BENCH, MATH500, LCBv5-v6, SciCode, GPQA-D, MMLU-Pro, HLE, IFBench, τ²-Bench Telecom and Terminal-Bench Hard. For example, Falcon-H1R-7B scores 88.1 on AIME24. A second table reports test-time scaling (TTS) results via DeepConf on AIME24, AIME25, GPQA-D and AMO-Bench*. The card does not name the metric in the tables.",
+  "quotes": [
+   "Falcon-H1R achieves state of art results in reasoning benchmarks.",
+   "<td>AIME24</td>",
+   "<td><b>88.1</b></td>",
+   "TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf)."
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 6418,
+  "output_tokens": 879
+ },
+ "cost_usd_list_price": 0.0122536,
+ "duration_ms": 6621
+}

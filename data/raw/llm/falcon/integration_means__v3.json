@@ -1,0 +1,34 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "integration_means",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Usable via Hugging Face `transformers`, `vLLM` or `SGLang`. vLLM and SGLang serve OpenAI-compatible endpoints, with the reasoning parser deepseek_r1 (vLLM) or deepseek-r1 (SGLang). Function calling in vLLM uses `--enable-auto-tool-choice` and `--tool-call-parser hermes`. The model generates think content wrapped in a `<think>...</think>` block, followed by the final response. Recommended sampling: temperature 0.6, top-p 0.95, max new tokens up to 65536.",
+  "quotes": [
+   "Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or `SGLang` library.",
+   "Model will generate think content wrapped in a `<think>...</think>` block, followed by the final response.",
+   "We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536.",
+   "* For function calling, append `--enable-auto-tool-choice` and `--tool-call-parser hermes` to the vllm serve command.",
+   "  --reasoning-parser deepseek_r1",
+   "  --reasoning-parser deepseek-r1"
+  ],
+  "section": "Usage"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 6507,
+  "output_tokens": 516
+ },
+ "cost_usd_list_price": 0.0087174,
+ "duration_ms": 4069
+}

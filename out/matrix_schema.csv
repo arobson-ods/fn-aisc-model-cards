@@ -1,0 +1,62 @@
+fact_id,group,spdx,spdx_path,cdx,cdx_path,eu,eu_items,eu_audience
+provider_name,identity,field,suppliedBy -> Organization.name,field,components[].supplier.name,field,legal_name_for_the_model_provider,AIONCADP
+model_name,identity,field,ai_AIPackage.name,field,components[].name,field,model_name,AIONCADP
+model_version,identity,field,ai_AIPackage.software_packageVersion,field,components[].version,field,model_name,AIONCADP
+model_authenticity,identity,field,ai_AIPackage.verifiedUsing[] -> Hash,field,components[].hashes[],field,model_authenticity,AIONCA
+release_date,identity,field,ai_AIPackage.releaseTime,escape_hatch,components[].properties[name=releaseDate],field,release_date,AIONCADP
+eu_release_date,identity,none,,none,,field,union_market_release_date,AIONCADP
+license,licensing,field,Relationship(hasDeclaredLicense) -> simplelicensing_LicenseExpression,field,components[].licenses[],field,license;license_2,AIONCADP
+acceptable_use_policy,licensing,escape_hatch,externalRef[externalRefType=other],escape_hatch,components[].externalReferences[type=other],field,acceptable_use_policy,AIONCADP
+access_conditions,licensing,escape_hatch,comment,escape_hatch,components[].properties[name=accessConditions],none,,
+additional_assets,licensing,escape_hatch,Relationship(other) -> software_Package,field,components[].externalReferences[type=vcs|distribution|build-meta],field,license_3,AIODP
+architecture_family,architecture,field,ai_AIPackage.ai_typeOfModel[],field,modelCard.modelParameters.architectureFamily,field,model_architecture,AIONCADP
+architecture_details,architecture,escape_hatch,description,field,modelCard.modelParameters.modelArchitecture,field,design_specifications_of_the_model,AIONCA
+param_count,architecture,escape_hatch,ai_hyperparameter[key=parameterCount],escape_hatch,modelCard.properties[name=parameterCount],field,total_model_size;total_model_size_2,AIONCADP
+input_modalities,architecture,escape_hatch,ai_hyperparameter[key=inputModality],field,modelCard.modelParameters.inputs[].format,field,input_modalities,AIONCADP
+max_input_size,architecture,field,ai_hyperparameter[key=contextLength],escape_hatch,modelCard.properties[name=contextLength],field,input_modalities_maximum_size,AIODP
+output_modalities,architecture,escape_hatch,ai_hyperparameter[key=outputModality],field,modelCard.modelParameters.outputs[].format,field,output_modalities_modalities,AIONCADP
+max_output_size,architecture,escape_hatch,ai_hyperparameter[key=maxOutputTokens],escape_hatch,modelCard.properties[name=maxOutputSize],field,output_modalities_maximum_size,DP
+task,architecture,escape_hatch,ai_domain[],field,modelCard.modelParameters.task,none,,
+weights_precision,architecture,escape_hatch,ai_hyperparameter[key=precision],escape_hatch,modelCard.properties[name=precision],none,,
+training_datasets,training_data,field,Relationship(trainedOn) -> dataset_DatasetPackage,field,modelCard.modelParameters.datasets[] -> components[type=data],none,,
+data_modality,training_data,field,dataset_DatasetPackage.dataset_datasetType[],escape_hatch,components[type=data].data[].classification,field,data_type_modality_select_all_that_apply,AIONCADP
+data_provenance,training_data,field/coarse,dataset_DatasetPackage.dataset_dataCollectionProcess,escape_hatch,components[type=data].data[].description,field,data_provenance_select_all_that_apply,AIONCADP
+data_acquisition,training_data,field,dataset_DatasetPackage.dataset_dataCollectionProcess,escape_hatch,components[type=data].data[].description,field,how_data_was_obtained_and_selected,AIONCA
+training_data_size,training_data,escape_hatch,dataset_DatasetPackage.dataset_datasetSize,escape_hatch,components[type=data].properties[name=size],field,number_of_data_points;number_of_data_points_2,AIONCA
+data_scope,training_data,escape_hatch,dataset_DatasetPackage.description,escape_hatch,components[type=data].data[].description,field,scope_and_main_characteristics,AIONCA
+knowledge_cutoff,training_data,escape_hatch,dataset_DatasetPackage.comment,escape_hatch,components[type=data].properties[name=knowledgeCutoff],none,,
+data_curation,training_data,field,dataset_DatasetPackage.dataset_dataPreprocessing[] / ai_modelDataPreprocessing[],escape_hatch,components[type=data].data[].description,field,data_curation_methodologies,AIONCADP
+unsuitable_data_measures,training_data,escape_hatch,dataset_DatasetPackage.comment,escape_hatch,components[type=data].data[].description,field,measures_to_detect_unsuitability_of_data_sources,AIONCA
+personal_data,training_data,field,dataset_hasSensitivePersonalInformation / dataset_anonymizationMethodUsed / ai_useSensitivePersonalInformation,field,components[type=data].data[].sensitiveData[],field,measures_to_detect_unsuitability_of_data_sources,AIONCA
+data_bias_measures,training_data,field/coarse,dataset_DatasetPackage.dataset_knownBias[],field/coarse,modelCard.considerations.fairnessAssessments[],field,measures_to_detect_identifiable_biases,AIONCA
+training_method,training_process,field,ai_AIPackage.ai_informationAboutTraining,field/coarse,modelCard.modelParameters.approach.type,field,design_specifications_of_the_training_process,AIONCA
+design_rationale,training_process,escape_hatch,ai_AIPackage.comment,escape_hatch,modelCard.properties[name=designRationale],field,decision_rationale,AIONCA
+hyperparameters,training_process,field,ai_AIPackage.ai_hyperparameter[],escape_hatch,modelCard.properties[name=hyperparameter:*],field,design_specifications_of_the_training_process,AIONCA
+training_hardware,training_process,escape_hatch,ai_AIPackage.ai_informationAboutTraining,escape_hatch,modelCard.considerations.environmentalConsiderations.properties[],field,training_time_2,AIO
+training_time,training_process,escape_hatch,ai_AIPackage.ai_informationAboutTraining,escape_hatch,modelCard.properties[name=trainingTime],field,training_time;training_time_2,AIONCA
+training_compute,training_process,escape_hatch,ai_AIPackage.ai_informationAboutTraining,escape_hatch,modelCard.properties[name=trainingCompute],field,amount_of_computation_used_for_training;amount_of_computation_used_for_training_2,AIONCA
+compute_methodology,training_process,escape_hatch,ai_AIPackage.comment,escape_hatch,modelCard.properties[name=trainingComputeMethodology],field,amount_of_computation_used_for_training_2_methodology,AIONCA
+training_energy,energy,field,"ai_energyConsumption.ai_trainingEnergyConsumption[] (energyQuantity, energyUnit)",field,modelCard.considerations.environmentalConsiderations.energyConsumptions[activity=training].activityEnergyCost,field,amount_of_energy_used_for_training,AIONCA
+energy_methodology,energy,escape_hatch,ai_AIPackage.comment,escape_hatch,modelCard.considerations.environmentalConsiderations.properties[],field,amount_of_energy_used_for_training_methodology,AIONCA
+carbon_emissions,energy,none,,field,modelCard.considerations.environmentalConsiderations.energyConsumptions[].co2CostEquivalent,none,,
+inference_compute,energy,escape_hatch,ai_energyConsumption.ai_inferenceEnergyConsumption[],escape_hatch,modelCard.considerations.environmentalConsiderations.energyConsumptions[activity=inference],field,benchmarked_amount_of_computation_used_for_inferen;benchmarked_amount_of_computation_used_for_inferen_methodology,AIONCA
+intended_uses,use,field,ai_AIPackage.ai_informationAboutApplication,field,modelCard.considerations.useCases[],field,intended_uses,AIONCADP
+out_of_scope_uses,use,field/coarse,ai_AIPackage.ai_informationAboutApplication,escape_hatch,modelCard.considerations.technicalLimitations[],field,type_and_nature_of_ai_systems_in_which_the_general,AIONCADP
+target_systems,use,field/coarse,ai_AIPackage.ai_informationAboutApplication,field/coarse,modelCard.considerations.useCases[],field,type_and_nature_of_ai_systems_in_which_the_general,AIONCADP
+integration_means,use,escape_hatch,externalRef[externalRefType=documentation],escape_hatch,components[].externalReferences[type=documentation],field,technical_means_for_model_integration,DP
+required_hardware,use,escape_hatch,ai_AIPackage.comment,escape_hatch,modelCard.properties[name=requiredHardware],field,required_hardware,DP
+required_software,use,field,Relationship(dependsOn) -> software_Package,field,dependencies[] -> components[type=library|framework],field,required_software,DP
+limitations,use,field,ai_AIPackage.ai_limitation,field,modelCard.considerations.technicalLimitations[],none,,
+languages,use,escape_hatch,ai_domain[] / comment,escape_hatch,modelCard.properties[name=language],none,,
+eval_results,evaluation,field,ai_AIPackage.ai_metric[],field,modelCard.quantitativeAnalysis.performanceMetrics[],none,,
+eval_datasets,evaluation,field,Relationship(testedOn) -> dataset_DatasetPackage,field,modelCard.modelParameters.datasets[] -> components[type=data],none,,
+eval_methodology,evaluation,escape_hatch,ai_AIPackage.comment,escape_hatch,modelCard.quantitativeAnalysis.properties,none,,
+safety_evaluation,safety,field/coarse,ai_AIPackage.ai_safetyRiskAssessment,field/coarse,modelCard.considerations.ethicalConsiderations[],none,,
+bias_fairness_evaluation,safety,escape_hatch,ai_AIPackage.ai_limitation,field,modelCard.considerations.fairnessAssessments[],none,,
+autonomy,safety,field,ai_AIPackage.ai_autonomyType,escape_hatch,modelCard.properties[name=autonomyType],none,,
+explainability,safety,field,ai_AIPackage.ai_modelExplainability[],escape_hatch,modelCard.properties[name=explainability],none,,
+standards_compliance,safety,field,ai_AIPackage.ai_standardCompliance[],escape_hatch,modelCard.properties[name=standardCompliance],none,,
+base_model,lineage,field,Relationship(descendantOf) -> ai_AIPackage,field,components[].pedigree.ancestors[],field,model_dependencies,AIONCADP
+base_model_relation,lineage,escape_hatch,Relationship(descendantOf).comment,escape_hatch,components[].pedigree.notes,field,model_dependencies,AIONCADP
+distribution_channels,distribution,field/coarse,software_downloadLocation + externalRef[],field,components[].externalReferences[type=distribution],field,distribution_channels;distribution_channels_2,AIONCADP
+download_location,distribution,field,ai_AIPackage.software_downloadLocation,field,components[].externalReferences[type=distribution].url,field,distribution_channels,AIONCA

@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "integration_means",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use with Hugging Face transformers (v4.51.0 or later) via AutoProcessor and Llama4ForConditionalGeneration, with processor.apply_chat_template for chat-format messages (text and image inputs) and model.generate; the card also points to the Llama cookbook for generation parameters and recipes.",
+  "quotes": [
+   "Please, make sure you have transformers v4.51.0 installed, or upgrade using pip install -U transformers.",
+   "from transformers import AutoProcessor, Llama4ForConditionalGeneration",
+   "inputs = processor.apply_chat_template(",
+   "outputs = model.generate(",
+   "For more technical information about generation parameters and recipes for how to use Llama 4 in applications, please go here (https://github.com/meta-llama/llama-cookbook)."
+  ],
+  "section": "How to use with transformers"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 375
+ },
+ "cost_usd_list_price": 0.0078858,
+ "duration_ms": 3351
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "47cde00449f1f870",
+ "request_user": "Fact definition: How and why key design choices in training were made.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card doesn't explain how or why any training design choice was made. It names some components: \"based on Qwen3-8B and uses SigLIP 2 as vision backbone\", and says it was trained on \"publicly available third party datasets\" plus Molmo2 data with \"highly-curated image-text and video-text pairs\". It gives no reasons for these choices and no training method details, and it sends readers to the technical report instead. The only \"best with max_fps=8\" note is about inference, not training. The extractor's answer that the fact is absent is correct."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 562,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 416
+ },
+ "cost_usd_list_price": 0.014355,
+ "duration_ms": 5248
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "target_systems",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: target_systems\nWhat to find: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nCard sections that often contain it: Intended Use, Use Cases, Downstream Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Multimodal (vision-language) models supporting GUI interaction and embodied agency; deployable as online-served multimodal LLM services (e.g., via OpenAI-compatible API servers).",
+  "quotes": [
+   "In addition, InternVL3.5 supports novel capabilities such as GUI interaction and embodied agency.",
+   "LMDeploy's `api_server` enables models to be easily packed into services with a single command. The provided RESTful APIs are compatible with OpenAI's interfaces."
+  ],
+  "section": "Introduction"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 564,
+  "cache_read_input_tokens": 19538,
+  "output_tokens": 273
+ },
+ "cost_usd_list_price": 0.0088976,
+ "duration_ms": 3439
+}

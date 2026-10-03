@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "1601f9009373d76c",
+ "request_user": "Fact definition: Maximum output size (e.g. maximum generated tokens).\nExtracted value: Recommended maximum output length of 262,144 tokens for reasoning content and 131,072 tokens for the final response (within the 1M context length)\nQuotes given as evidence (separated by [...]): **Reasoning Content:** Set the maximum output length to 262,144 tokens. [...] **Final Response:** Set the maximum output length to 131,072 tokens.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes come from this model card's Best Practices section and match both figures exactly: 262,144 tokens for reasoning and 131,072 tokens for the final response. The value correctly labels them as recommended settings, and the 1M context qualifier is from the card. It leaves out that the split applies to frameworks that support separate reasoning and output limits, but that is a minor omission."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 733,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 664
+ },
+ "cost_usd_list_price": 0.0226764,
+ "duration_ms": 7848
+}

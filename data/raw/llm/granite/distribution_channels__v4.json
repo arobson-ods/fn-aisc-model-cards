@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM and SGLang; GitHub repository available",
+  "quotes": [
+   "| **HF Collection** | [Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models) |",
+   "Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).",
+   "Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference."
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 16605,
+  "output_tokens": 324
+ },
+ "cost_usd_list_price": 0.008785000000000001,
+ "duration_ms": 3036
+}

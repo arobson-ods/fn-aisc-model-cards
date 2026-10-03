@@ -1,0 +1,287 @@
+{
+ "olmo": [
+  {
+   "repo_id": "allenai/Olmo-3.1-32B-Instruct-DPO",
+   "parent": "allenai/Olmo-3.1-32B-Instruct",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/Dolci-Instruct-DPO"
+   ],
+   "base_model": [
+    "allenai/Olmo-3.1-32B-Instruct-SFT"
+   ]
+  },
+  {
+   "repo_id": "allenai/Olmo-3.1-32B-Instruct-SFT",
+   "parent": "allenai/Olmo-3.1-32B-Instruct-DPO",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/Dolci-Instruct-SFT"
+   ],
+   "base_model": [
+    "allenai/Olmo-3-1125-32B"
+   ]
+  },
+  {
+   "repo_id": "allenai/Olmo-3-1125-32B",
+   "parent": "allenai/Olmo-3.1-32B-Instruct-SFT",
+   "depth": 3,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/dolma3_mix-5.5T-1125"
+   ],
+   "base_model": []
+  }
+ ],
+ "llama": [
+  {
+   "repo_id": "meta-llama/Llama-4-Scout-17B-16E",
+   "parent": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+   "depth": 1,
+   "gated": "manual",
+   "readme_source": "rendered_html",
+   "license": "other",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "gemma": [
+  {
+   "repo_id": "google/gemma-4-31B",
+   "parent": "google/gemma-4-31B-it",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "mistral": [],
+ "qwen": [],
+ "deepseek": [],
+ "phi": [
+  {
+   "repo_id": "microsoft/Phi-4-reasoning",
+   "parent": "microsoft/Phi-4-reasoning-vision-15B",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "mit",
+   "datasets": null,
+   "base_model": [
+    "microsoft/phi-4"
+   ]
+  },
+  {
+   "repo_id": "microsoft/phi-4",
+   "parent": "microsoft/Phi-4-reasoning",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "mit",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "smollm": [
+  {
+   "repo_id": "HuggingFaceTB/SmolLM3-3B-Base",
+   "parent": "HuggingFaceTB/SmolLM3-3B",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "falcon": [
+  {
+   "repo_id": "tiiuae/Falcon-H1-7B-Base",
+   "parent": "tiiuae/Falcon-H1R-7B",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "other",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "granite": [
+  {
+   "repo_id": "ibm-granite/granite-4.1-8b-base",
+   "parent": "ibm-granite/granite-4.2-8b",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "olmo_gguf": [
+  {
+   "repo_id": "allenai/Olmo-3-7B-Instruct",
+   "parent": "unsloth/Olmo-3-7B-Instruct-GGUF",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/Dolci-Instruct-RL-7B"
+   ],
+   "base_model": [
+    "allenai/Olmo-3-7B-Instruct-DPO"
+   ]
+  },
+  {
+   "repo_id": "allenai/Olmo-3-7B-Instruct-DPO",
+   "parent": "allenai/Olmo-3-7B-Instruct",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/Dolci-Think-DPO-7B"
+   ],
+   "base_model": [
+    "allenai/Olmo-3-7B-Instruct-SFT"
+   ]
+  },
+  {
+   "repo_id": "allenai/Olmo-3-7B-Instruct-SFT",
+   "parent": "allenai/Olmo-3-7B-Instruct-DPO",
+   "depth": 3,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/Dolci-Instruct-SFT",
+    "allenai/Dolci-Instruct-SFT-Tool-Use-SA"
+   ],
+   "base_model": [
+    "allenai/Olmo-3-1025-7B"
+   ]
+  },
+  {
+   "repo_id": "allenai/Olmo-3-1025-7B",
+   "parent": "allenai/Olmo-3-7B-Instruct-SFT",
+   "depth": 4,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": [
+    "allenai/dolma3_mix-6T-1025"
+   ],
+   "base_model": []
+  }
+ ],
+ "molmo2": [
+  {
+   "repo_id": "Qwen/Qwen3-8B",
+   "parent": "allenai/Molmo2-8B",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": [
+    "Qwen/Qwen3-8B-Base"
+   ]
+  },
+  {
+   "repo_id": "Qwen/Qwen3-8B-Base",
+   "parent": "Qwen/Qwen3-8B",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  },
+  {
+   "repo_id": "google/siglip-so400m-patch14-384",
+   "parent": "allenai/Molmo2-8B",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "internvl_gptoss": [
+  {
+   "repo_id": "OpenGVLab/InternViT-300M-448px-V2_5",
+   "parent": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "mit",
+   "datasets": null,
+   "base_model": [
+    "OpenGVLab/InternViT-300M-448px"
+   ]
+  },
+  {
+   "repo_id": "OpenGVLab/InternViT-300M-448px",
+   "parent": "OpenGVLab/InternViT-300M-448px-V2_5",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "mit",
+   "datasets": [
+    "laion/laion2B-en",
+    "laion/laion-coco",
+    "laion/laion2B-multi",
+    "kakaobrain/coyo-700m",
+    "conceptual_captions",
+    "wanng/wukong100m"
+   ],
+   "base_model": []
+  },
+  {
+   "repo_id": "openai/gpt-oss-20b",
+   "parent": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ],
+ "twil_smollm": [
+  {
+   "repo_id": "HuggingFaceTB/SmolLM3-3B",
+   "parent": "webAI-Official/TwIL-LM3",
+   "depth": 1,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": [
+    "HuggingFaceTB/SmolLM3-3B-Base"
+   ]
+  },
+  {
+   "repo_id": "HuggingFaceTB/SmolLM3-3B-Base",
+   "parent": "HuggingFaceTB/SmolLM3-3B",
+   "depth": 2,
+   "gated": false,
+   "readme_source": "raw",
+   "license": "apache-2.0",
+   "datasets": null,
+   "base_model": []
+  }
+ ]
+}

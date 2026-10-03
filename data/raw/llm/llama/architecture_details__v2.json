@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "architecture_details",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion for native multimodality. Llama 4 Scout has 16 experts, 17B activated parameters and 109B total parameters. The card does not state layers or attention type, and gives no detailed design rationale beyond enabling native multimodality and text and image understanding performance.",
+  "quotes": [
+   "Model Architecture: The Llama 4 models are auto-regressive language models that use a mixture-of-experts (MoE) architecture and incorporate early fusion for native multimodality.",
+   "Llama 4 Scout, a 17 billion parameter model with 16 experts",
+   "17B (Activated)\n 109B (Total)"
+  ],
+  "section": "Model Information"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9343,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 342
+ },
+ "cost_usd_list_price": 0.040796000000000006,
+ "duration_ms": 2727
+}

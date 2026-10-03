@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "0f84a520bd9bda0a",
+ "request_user": "Fact definition: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nExtracted value: Agentic systems and coding/development tools: designed for long-horizon, multi-step agentic tasks, with support for popular harnesses and development tools for integration into existing stacks\nQuotes given as evidence (separated by [...]): Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. [...] **Downstream Compatibility**: Broader support for popular harnesses and development tools, making it easier to integrate into your existing stack. [...] **Agent Execution**: Stronger autonomous planning and better handling of environment feedback, leading to more reliable end-to-end task completion.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes are about Qwen3.8 and support the main claims. They describe agentic use (autonomous planning, end-to-end task completion), design for complex multi-step tasks, and support for popular harnesses and development tools for integration into existing stacks. The quotes don't use the word \"long-horizon\", but the card says it elsewhere. The value answers the definition by naming the kinds of systems the model can be integrated into: agents and coding/dev tool harnesses."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 846,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 717
+ },
+ "cost_usd_list_price": 0.024640399999999996,
+ "duration_ms": 8750
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "target_systems",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: target_systems\nWhat to find: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nCard sections that often contain it: Intended Use, Use Cases, Downstream Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Can be used in chat assistants (Le Chat), coding agents (Vibe), and agentic systems with native function calling/tool use and JSON output; also supports system prompts and multimodal (text and image) input.",
+  "quotes": [
+   "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our\ncoding agent Vibe.",
+   "**Agentic**: Best-in-class agentic capabilities with native function calling and JSON output.",
+   "**System Prompt**: Strong adherence and support for system prompts."
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 564,
+  "cache_read_input_tokens": 9889,
+  "output_tokens": 324
+ },
+ "cost_usd_list_price": 0.007477800000000001,
+ "duration_ms": 2910
+}

@@ -1,0 +1,37 @@
+{
+ "kind": "automated second-model check, not human-verified",
+ "checker": "claude-opus-5-5",
+ "rows": 146,
+ "graded": 146,
+ "accuracy": 0.908,
+ "counts": {
+  "y": 120,
+  "partial": 25,
+  "n": 1
+ },
+ "by_status": {
+  "not_stated": 0.895,
+  "prose": 0.907,
+  "structured": 0.918
+ },
+ "by_model": {
+  "deepseek": 1.0,
+  "falcon": 0.9,
+  "gemma": 0.955,
+  "granite": 0.909,
+  "internvl_gptoss": 0.9,
+  "llama": 0.833,
+  "mistral": 0.95,
+  "molmo2": 0.95,
+  "olmo": 0.85,
+  "olmo_gguf": 0.95,
+  "phi": 0.773,
+  "qwen": 0.9,
+  "smollm": 0.909,
+  "twil_smollm": 0.95
+ },
+ "human_reviewed": 15,
+ "human_accuracy_on_mini": 0.667,
+ "checker_agreement_with_human": 1.0,
+ "note": "The mini sample over-represents rows the checker flagged, so human_accuracy_on_mini is not an estimate of overall accuracy. Use it to judge the checker."
+}

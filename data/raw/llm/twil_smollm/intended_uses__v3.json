@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "intended_uses",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: intended_uses\nWhat to find: Intended uses of the model.\nCard sections that often contain it: Intended Use, Uses, Direct Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Intended for formal-logic tasks: FOL translation, entailment labels, semantic parsing, Lean statements and Lean proof critique. Not intended as a general assistant or chat model.",
+  "quotes": [
+   "A 3B reasoning model for **formal logic** tasks, built from",
+   "**Structured formal output.** Tuned for the objects rather than the prose: FOL translation,\n  entailment labels, semantic parses, Lean statements and Lean proof critique.",
+   "It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3\ncarries, and instruction following regressed slightly.",
+   "**Not a chat model.** It was optimised against automatic verifiers on logic tasks."
+  ],
+  "section": "TwIL-LM3"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 350
+ },
+ "cost_usd_list_price": 0.0077792,
+ "duration_ms": 3284
+}

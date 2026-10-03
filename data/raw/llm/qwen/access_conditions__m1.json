@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "access_conditions",
+ "input_sha256": "f0353b4e44afe2481150ceafc871923f965ed112f0f4a67887f91c71ce820fb2",
+ "request_user": "Fact: access_conditions\nWhat to find: Conditions for accessing the weights (e.g. gated access requiring agreement or approval).\nThe card's machine-readable metadata gives: false\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18379,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 144
+ },
+ "cost_usd_list_price": 0.0750762,
+ "duration_ms": 2129
+}

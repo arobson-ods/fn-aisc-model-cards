@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Track A (in-domain formal logic lanes): lean_formalize, rule_induction, entailment_label, mcq_answer, semantic_parse, lean_critic, lm_corpus and math_corpus perplexity (plus procedural and fol_translation in summary metrics). Track B (held-out, 14 datasets): gsm8k, svamp, gsm_symbolic, arc_cot, logicbench, strategyqa, drop, csqa, musr, mmlu_redux, ifeval, rudas_ood, bbh_logic, math500.",
+  "quotes": [
+   "| lean_formalize token_f1 | 0.5869 |",
+   "| gsm8k | 0.8733 | 0.8833 | 0.8300 | 0.8767 | 0.9133 | 0.9567 | **0.9767** |",
+   "| rudas_ood | 0.0365 | 0.0209 | **0.0733** | 0.0017 | 0.0061 | 0.0468 | 0.0000 ¶ |",
+   "| bbh_logic | 0.6633 | 0.6667 | 0.5333 | 0.5713 | 0.7700 | 0.6367 | **0.9980** |",
+   "| math500 | 0.6900 | 0.7000 | 0.4233 | 0.7133 | 0.7800 | 0.6100 | **0.8433** |"
+  ],
+  "section": "Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 556
+ },
+ "cost_usd_list_price": 0.009845399999999999,
+ "duration_ms": 3511
+}

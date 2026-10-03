@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "knowledge_cutoff",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: knowledge_cutoff\nWhat to find: Data freshness / knowledge cutoff date of the training data.\nCard sections that often contain it: Training Data, Data Freshness, Cutoff\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 550,
+  "cache_read_input_tokens": 17929,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0069698,
+ "duration_ms": 2320
+}

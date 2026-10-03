@@ -1,0 +1,665 @@
+model: qwen
+repo_id: Qwen/Qwen3.8-2.4T-A95B
+retrieved_at: '2026-09-30T10:17:00+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Qwen Team
+    quote: author = {{Qwen Team}},
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: Qwen/Qwen3.8-2.4T-A95B
+    quote: api:id = "Qwen/Qwen3.8-2.4T-A95B"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: 207bd685a7e3696cfaff12ded7c6a7ea0f88c996
+    quote: api:sha = "207bd685a7e3696cfaff12ded7c6a7ea0f88c996"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+  - fact_id: model_version
+    status: prose_adds
+    value: Qwen3.8 (model Qwen3.8-2.4T-A95B); no repository revision or commit hash is stated in the text
+    quote: Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased
+      to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date.
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: 207bd685a7e3696cfaff12ded7c6a7ea0f88c996
+    quote: api:sha = "207bd685a7e3696cfaff12ded7c6a7ea0f88c996"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Causal Language Model with a hybrid Mixture-of-Experts architecture (Gated DeltaNet and Gated
+      Attention layers, each followed by MoE); 2.4T total / 95B activated parameters
+    quote: 'Type: Causal Language Model [...] Number of Parameters: 2.4T in total and 95B activated [...]
+      Hidden Layout: 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)) [...] Number of Experts:
+      512'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Causal language model with 2.4T total and 95B activated parameters; 92 layers; hidden layout
+      23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)); Mixture of Experts with 512 experts,
+      10 routed + 1 shared activated; hidden dimension 8192. Built on the architectural foundation of
+      Qwen3.5. The card gives no detailed rationale for the design choices.
+    quote: '- Type: Causal Language Model [...] Number of Parameters: 2.4T in total and 95B activated
+      [...] Number of Layers: 92 [...] Hidden Layout: 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention
+      → MoE)) [...] Number of Experts: 512 [...] Number of Activated Experts: 10 Routed + 1 Shared [...]
+      Hidden Dimension: 8192 [...] Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers
+      substantial gains across coding, professional work, research, and long-horizon agentic tasks.'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '262144'
+    quote: config:max_position_embeddings = 262144
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/config.json
+    source_type: repo_config
+  - fact_id: max_input_size
+    status: prose_adds
+    value: 262,144 tokens natively, extensible up to 1,010,000 tokens
+    quote: 'Context Length: 262,144 natively and extensible up to 1,010,000 tokens.'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/config.json
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_output_size
+    status: prose
+    value: Recommended maximum output length of 262,144 tokens for reasoning content and 131,072 tokens
+      for the final response (within the 1M context length)
+    quote: '**Reasoning Content:** Set the maximum output length to 262,144 tokens. [...] **Final Response:**
+      Set the maximum output length to 131,072 tokens.'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '2446182725504'
+    quote: api:safetensors.total = 2446182725504
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '2446182725504'
+    quote: api:safetensors.total = 2446182725504
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM,
+      SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app;
+      deployable with SGLang, vLLM, TokenSpeed
+    quote: 'This repository contains model weights and configuration files for the post-trained model
+      in the Hugging Face Transformers format. [...] These artifacts are compatible with vLLM, SGLang,
+      TokenSpeed, etc. [...] For users seeking managed, scalable inference without infrastructure maintenance,
+      the official Qwen API service is provided by [Qwen Cloud](https://www.qwencloud.com). [...] Qwen3.8
+      can be deployed with popular inference frameworks, e.g.:'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+    quote: derived:hub_url = "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM,
+      SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app;
+      deployable with SGLang, vLLM, TokenSpeed
+    quote: 'This repository contains model weights and configuration files for the post-trained model
+      in the Hugging Face Transformers format. [...] These artifacts are compatible with vLLM, SGLang,
+      TokenSpeed, etc. [...] For users seeking managed, scalable inference without infrastructure maintenance,
+      the official Qwen API service is provided by [Qwen Cloud](https://www.qwencloud.com). [...] Qwen3.8
+      can be deployed with popular inference frameworks, e.g.:'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: qwen3.8-max (other)
+    quote: card:license = "qwen3.8-max (other)"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: qwen3.8-max (other)
+    quote: card:license = "qwen3.8-max (other)"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: The card states the repository contains model weights and configuration files in Hugging Face
+      Transformers format (compatible with vLLM, SGLang, TokenSpeed). Deployment recipes/cookbooks are
+      linked for SGLang, vLLM and TokenSpeed. No training data, training code or evaluation code is mentioned.
+    quote: 'This repository contains model weights and configuration files for the post-trained model
+      in the Hugging Face Transformers format. [...] These artifacts are compatible with vLLM, SGLang,
+      TokenSpeed, etc. [...] - [SGLang](https://www.sglang.io/): [Qwen3.8 Cookbook](https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8)
+      [...] - [vLLM](https://vllm.ai/): [Qwen3.8 Recipe](https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B)'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Designed for coding, professional work, research, and long-horizon agentic tasks, carrying
+      complex multi-step tasks through to completion; text-only generation with thinking mode.
+    quote: Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across
+      coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions,
+      Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability.
+      [...] Qwen3.8-2.4T-A95B is a text-only model that requires thinking mode for all interactions.
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: target_systems
+    status: prose
+    value: 'Agentic systems and coding/development tools: designed for long-horizon, multi-step agentic
+      tasks, with support for popular harnesses and development tools for integration into existing stacks'
+    quote: 'Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks
+      through to completion with greater reliability. [...] **Downstream Compatibility**: Broader support
+      for popular harnesses and development tools, making it easier to integrate into your existing stack.
+      [...] **Agent Execution**: Stronger autonomous planning and better handling of environment feedback,
+      leading to more reliable end-to-end task completion.'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Hugging Face Transformers format weights compatible with vLLM, SGLang, TokenSpeed; deployable
+      via SGLang, vLLM and TokenSpeed; usable through the Chat Completions API (OpenAI Python SDK) including
+      Qwen Cloud; thinking mode required, with reasoning_effort (xhigh default, medium, low) and preserve_thinking
+      options.
+    quote: 'This repository contains model weights and configuration files for the post-trained model
+      in the Hugging Face Transformers format. [...] These artifacts are compatible with vLLM, SGLang,
+      TokenSpeed, etc. [...] Qwen3.8 can be deployed with popular inference frameworks, e.g.: [...] The
+      Chat Completions API can be used with most inference frameworks, as well as [Qwen Cloud](https://www.qwencloud.com).
+      [...] Qwen3.8 comes with official support for `reasoning_effort`, which can be used to adjust reasoning
+      depth and control cost: [...] Every response will automatically begin with reasoning enclosed in
+      `<think>\n...</think>\n\n` before the final output.'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: Weights are in Hugging Face Transformers format and are compatible with vLLM, SGLang, TokenSpeed;
+      no versions given beyond recommending the latest framework versions
+    quote: This repository contains model weights and configuration files for the post-trained model in
+      the Hugging Face Transformers format. [...] These artifacts are compatible with vLLM, SGLang, TokenSpeed,
+      etc. [...] We recommend using the latest framework versions to ensure optimal performance and compatibility.
+    source_url: https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Pre-training & Post-training (no further methods such as SFT, DPO, RL or distillation are detailed);
+      MTP (Multi-Token Prediction) trained with multiple steps
+    quote: '- Training Stage: Pre-training & Post-training [...] - MTP (Multi-Token Prediction): trained
+      with multiple steps'
+    source_url: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

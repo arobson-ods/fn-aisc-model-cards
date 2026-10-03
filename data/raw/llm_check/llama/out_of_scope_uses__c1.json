@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "aef57ae9757dd806",
+ "request_user": "Fact definition: Uses or AI systems the model is not intended or should not be used for.\nExtracted value: Out-of-scope: use in any manner that violates applicable laws or regulations (including trade compliance laws); use in any other way prohibited by the Acceptable Use Policy and Llama 4 Community License; use in languages or capabilities beyond those explicitly referenced as supported in the model card.\nQuotes given as evidence (separated by [...]): Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 4 Community License. Use in languages or capabilities beyond those explicitly referenced as supported in this model card**.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The value closely paraphrases the card's Out-of-scope section for Llama 4, which the quote reproduces word for word. It covers all three out-of-scope items: uses that break laws (including trade compliance), uses prohibited by the Acceptable Use Policy or the Llama 4 Community License, and languages or capabilities not listed as supported. This directly answers the fact definition. One minor gap is that the value leaves out the card's footnote saying developers may fine-tune for other languages if they follow the license and Acceptable Use Policy. That footnote is not part of the out-of-scope list itself, so leaving it out does not make the value wrong."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 828,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 395
+ },
+ "cost_usd_list_price": 0.0162266,
+ "duration_ms": 4920
+}

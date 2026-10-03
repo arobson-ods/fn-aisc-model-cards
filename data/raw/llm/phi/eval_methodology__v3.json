@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "eval_methodology",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: eval_methodology\nWhat to find: How evaluations were run (harness, settings, prompts, shots).\nCard sections that often contain it: Evaluation, Methodology\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluated with two open-source frameworks: Microsoft's Eureka ML Insights (internal development benchmarks/ablations; MathVista, MMMU-CoT, ScreenSpot/ScreenSpot-V2, ScreenSpot-Pro, V*Bench) and VLMEvalKit (standardized community benchmarks, e.g. AI2D TEST split, ChartQA TEST split, MathVista MINI split). WildVision used GPT-4o as judge. Shots, prompts and other settings are not stated; evaluation logs will be released publicly.",
+  "quotes": [
+   "Two evaluation frameworks were used: Microsoft's Eureka ML Insights for internal development benchmarks, and VLMEvalKit for standardized community benchmarks. Evaluation logs will be released publicly.",
+   "Used during development for internal benchmarks and ablation studies. The following benchmarks were evaluated through this framework:",
+   "Used for standardized community benchmark evaluation. The following benchmarks were evaluated through this framework:",
+   "**AI2D (TEST split):** Diagram understanding over ~5K illustrative diagrams from grade school natural sciences, evaluating the ability to interpret diagrammatic elements, relationships, and structure.",
+   "**WildVision:** Real-world human preference evaluation benchmark with 500 high-quality samples curated from 8,000 user submissions, using GPT-4o as judge."
+  ],
+  "section": "3. Quality and Performance Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 10433,
+  "output_tokens": 596
+ },
+ "cost_usd_list_price": 0.0102146,
+ "duration_ms": 4009
+}

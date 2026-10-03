@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Instruct model evaluated on AIME 2025, GSM-Plus, LiveCodeBench v4, GPQA Diamond, IFEval, MixEval Hard, BFCL, and Global MMLU. Base model evaluated on HellaSwag, ARC-CF, Winogrande, CommonsenseQA, MMLU-CF, MMLU Pro CF/MCF, PIQA, OpenBookQA, BoolQ, HumanEval+, MBPP+, MATH, GSM8k, and Ruler 32k/64k/128k. Multilingual benchmarks include MLMM Hellaswag, Belebele, Global MMLU (CF), and Flores-200. Evaluations use lighteval.",
+  "quotes": [
+   "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** |",
+   "| Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** |",
+   "| Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** |",
+   "| Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** |",
+   "| Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 |",
+   "| Alignment | MixEval Hard | 26.9 | <u>27.6</u> | 24.9 | 24.3 | **31.6** |",
+   "| Tool Calling | BFCL| <u>92.3</u> | - | <u>92.3</u> * | 89.5  | **95.0** |",
+   "In this section, we report the evaluation results of SmolLM3 model. All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them. "
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 9120,
+  "output_tokens": 800
+ },
+ "cost_usd_list_price": 0.011984,
+ "duration_ms": 4681
+}

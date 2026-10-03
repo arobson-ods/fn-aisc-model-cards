@@ -1,0 +1,611 @@
+model: falcon
+repo_id: tiiuae/Falcon-H1R-7B
+retrieved_at: '2026-09-30T10:17:01+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Technology Innovation Institute
+    quote: '- **Developed by:** [Technology Innovation Institute](https://www.tii.ae)'
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: tiiuae/Falcon-H1R-7B
+    quote: api:id = "tiiuae/Falcon-H1R-7B"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: a6f74bf181389908efd6970878d7ee2b42f5d417
+    quote: api:sha = "a6f74bf181389908efd6970878d7ee2b42f5d417"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: a6f74bf181389908efd6970878d7ee2b42f5d417
+    quote: api:sha = "a6f74bf181389908efd6970878d7ee2b42f5d417"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: tiiuae/Falcon-H1-7B-Base
+    quote: card:base_model = ["tiiuae/Falcon-H1-7B-Base"]
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Causal decoder-only, hybrid (Transformers + Mamba2) architecture
+    quote: '- **Model type:** Causal decoder-only [...] - **Architecture:** Hybrid (Transformers + Mamba2)
+      architecture'
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Causal decoder-only model with a hybrid architecture (Transformers + Mamba2), built on Falcon-H1-7B-Base.
+      The card does not state layers, attention type, experts, active parameters or rationale.
+    quote: '- **Model type:** Causal decoder-only [...] - **Architecture:** Hybrid (Transformers + Mamba2)
+      architecture [...] Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)'
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '262144'
+    quote: config:max_position_embeddings = 262144
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json
+    source_type: repo_config
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_output_size
+    status: prose
+    value: Recommended max new tokens up to 65536
+    quote: We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens
+      up to 65536.
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '7585648736'
+    quote: api:safetensors.total = 7585648736
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '7585648736'
+    quote: api:safetensors.total = 7585648736
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/tiiuae/Falcon-H1R-7B
+    quote: derived:hub_url = "https://huggingface.co/tiiuae/Falcon-H1R-7B"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: falcon-llm-license (other)
+    quote: card:license = "falcon-llm-license (other)"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: falcon-llm-license (other)
+    quote: card:license = "falcon-llm-license (other)"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Technical report (GitHub PDF and Hugging Face paper page) and a release/technical blogpost
+      are linked; base model Falcon-H1-7B-Base is on Hugging Face; TTS evaluated via DeepConf (external
+      GitHub code). Inference is supported via transformers, vLLM and SGLang.
+    quote: For more details about the training protocol of this model, please refer to the [Falcon-H1R
+      technical blogpost](https://falcon-lm.github.io/blog/falcon-h1r-7b) and [Technical Report](https://github.com/tiiuae/falcon-h1r/blob/main/tech_report.pdf).
+      [...] Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base) [...]
+      - View [our technical report](https://huggingface.co/papers/2601.02346).
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Can be used via Hugging Face `transformers`, `vLLM` or `SGLang`; vLLM and SGLang servers are
+      started with a reasoning parser and queried via an OpenAI-compatible client; the model generates
+      think content wrapped in a `<think>...</think>` block followed by the final response; recommended
+      temperature 0.6, top-p 0.95, max new tokens up to 65536.
+    quote: 'Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or
+      `SGLang` library. [...] Model will generate think content wrapped in a `<think>...</think>` block,
+      followed by the final response. [...] We recommend using a **temperature** of **0.6** and **top-p**
+      as **0.95** with max new tokens up to 65536. [...] For vLLM, simply start a server by executing
+      the command below: [...] For SGLang, simply start a server by executing the command below:'
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: Hugging Face `transformers`, `vLLM` or `SGLang` library; install transformers and mamba-ssm[causal-conv1d];
+      for vLLM, vllm>=0.11.0
+    quote: 'Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or
+      `SGLang` library. [...] pip install transformers
+
+      pip install mamba-ssm[causal-conv1d] [...] pip install "vllm>=0.11.0"'
+    source_url: https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Built on Falcon-H1-7B-Base; trained via cold-start supervised fine-tuning with long reasoning
+      traces, then further enhanced by scaling RL with GRPO.
+    quote: Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was
+      trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by
+      scaling RL with GRPO.
+    source_url: https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

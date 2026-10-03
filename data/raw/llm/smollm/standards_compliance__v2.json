@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "standards_compliance",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: standards_compliance\nWhat to find: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).\nCard sections that often contain it: Compliance, Responsibility, Safety\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "EU AI Act: the card says the Act requires GPAI models to provide a Public Summary of Training Content (per the EU template), and it provides a summary for this model.",
+  "quotes": [
+   "The EU AI Act requires all GPAI models to provide a Public Summary of Training Content according to a [given template](https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models).",
+   "You can find the summary for this model below, as well as in its [development Space](https://huggingface.co/spaces/hfmlsoc/smollm3-eu-data-transparency)."
+  ],
+  "section": "EU Summary of Public Content"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 570,
+  "cache_read_input_tokens": 9031,
+  "output_tokens": 327
+ },
+ "cost_usd_list_price": 0.0073602,
+ "duration_ms": 2523
+}

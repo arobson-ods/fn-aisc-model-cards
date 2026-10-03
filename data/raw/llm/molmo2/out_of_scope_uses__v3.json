@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "out_of_scope_uses",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: out_of_scope_uses\nWhat to find: Uses or AI systems the model is not intended or should not be used for.\nCard sections that often contain it: Out-of-Scope Use, Out of Scope, Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 8042,
+  "output_tokens": 401
+ },
+ "cost_usd_list_price": 0.0078464,
+ "duration_ms": 4281
+}

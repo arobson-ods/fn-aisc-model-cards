@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "integration_means",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "No Jinja chat template; a self-contained Python reference implementation of prompt encoding (encoding.py in the `encoding` folder) is provided. The deepseek-recipe Rust libraries with Python bindings convert Messages, Chat Completions and Responses API requests into DeepSeek V4/V4.1 prompts or token IDs and parse model output. A `inference` folder gives weight conversion and local inference instructions. Recommended sampling: temperature 1.0, top_p 0.95 or 1.0, context_window 1M tokens, max_tokens ≥ 256K. Library: transformers.",
+  "quotes": [
+   "This release does not include a Jinja-format chat template. The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.",
+   "It converts Messages, Chat Completions, and Responses API requests into the Conversation format, encodes them into DeepSeek V4 and V4.1 prompts or token IDs, and parses model output back into complete or streamed responses",
+   "Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally.",
+   "| `max_tokens` | ≥ 256K |"
+  ],
+  "section": "Prompt Encoding"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 7126,
+  "output_tokens": 568
+ },
+ "cost_usd_list_price": 0.0093612,
+ "duration_ms": 4022
+}

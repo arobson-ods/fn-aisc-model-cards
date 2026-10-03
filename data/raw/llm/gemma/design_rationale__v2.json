@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "design_rationale",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card gives rationale for some design choices. A hybrid attention design (local sliding window interleaved with global attention) gives the speed and low memory of a lightweight model without losing the awareness needed for long-context tasks. Global layers use unified Keys and Values and p-RoPE to optimize memory for long contexts. Training data sources were chosen for specific purposes: code for syntax and patterns, mathematics for logical reasoning, images for analysis and extraction, and web text for broad linguistic coverage. The card also describes data filtering (CSAM, sensitive data, quality and safety) as a safety measure.",
+  "quotes": [
+   "This hybrid design delivers the processing speed and low memory footprint of a lightweight model without sacrificing the deep awareness required for complex, long-context tasks. To optimize memory for long contexts, global layers feature unified Keys and Values, and apply Proportional RoPE (p-RoPE).",
+   "**Code**: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code and understand code-related questions.",
+   "**Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries.",
+   "**Images**: A wide range of images enables the model to perform image analysis and visual data extraction tasks."
+  ],
+  "section": "Models Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 664
+ },
+ "cost_usd_list_price": 0.0110024,
+ "duration_ms": 4866
+}

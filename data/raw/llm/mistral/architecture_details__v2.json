@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "architecture_details",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Dense 128B-parameter model with a 256k context window, handling instruction-following, reasoning and coding in a single set of weights (merged model). Multimodal input (text and image in, text out), with a vision encoder trained from scratch to handle variable image sizes and aspect ratios. Reasoning effort is configurable per request. The card does not state the number of layers, attention type, experts or active parameters.",
+  "quotes": [
+   "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights.",
+   "We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios.",
+   "- **Multimodal input**: Accepts both text and image input, with text output.",
+   "Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run."
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10170,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 402
+ },
+ "cost_usd_list_price": 0.044704,
+ "duration_ms": 3548
+}

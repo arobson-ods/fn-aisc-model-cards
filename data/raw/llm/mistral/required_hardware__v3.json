@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "required_hardware",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: required_hardware\nWhat to find: Hardware required to run the model (e.g. GPU memory, number of accelerators).\nCard sections that often contain it: Hardware, Requirements, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "No explicit GPU memory requirement is stated. The example serve commands use tensor parallelism of 8 (vLLM --tensor-parallel-size 8; SGLang --tp 8), which implies 8 accelerators.",
+  "quotes": [
+   "vllm serve mistralai/Mistral-Medium-3.5-128B --tensor-parallel-size 8 \\",
+   "  --tp 8 --tool-call-parser mistral --reasoning-parser mistral"
+  ],
+  "section": "vLLM (Recommended)"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 550,
+  "cache_read_input_tokens": 9701,
+  "output_tokens": 700
+ },
+ "cost_usd_list_price": 0.0111442,
+ "duration_ms": 5556
+}

@@ -1,0 +1,10 @@
+{
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "sha": "a2a9ae53f5a95087616b3f45ca96e9d2631344ee",
+ "api_url": "https://huggingface.co/api/models/unsloth/Olmo-3-7B-Instruct-GGUF",
+ "retrieved_at": "2026-09-30T10:17:03+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/unsloth/Olmo-3-7B-Instruct-GGUF/raw/a2a9ae53f5a95087616b3f45ca96e9d2631344ee/README.md"
+}

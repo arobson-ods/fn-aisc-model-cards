@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "base_model",
+ "input_sha256": "be06de2f0d25ce3aab5b250e75eda988d91cbcd1eff8f2021483350dc7943c81",
+ "request_user": "Fact: base_model\nWhat to find: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nThe card's machine-readable metadata gives: \"microsoft/Phi-4-reasoning\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Built on the Phi-4-Reasoning language model backbone (Phi-4-Reasoning listed as model dependency) and the SigLIP-2 vision encoder",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.",
+   "**Model Dependencies:** [Phi-4-Reasoning](https://huggingface.co/microsoft/Phi-4-reasoning)  "
+  ],
+  "agreement": "adds",
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 776,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 336
+ },
+ "cost_usd_list_price": 0.008495800000000001,
+ "duration_ms": 2939
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "7bae4345d39b5b08",
+ "request_user": "Fact definition: Intended uses of the model.\nExtracted value: Instruction-following, reasoning, and coding in a single model, including agentic use (function calling, JSON output, coding agent Vibe) and multimodal (text+image input) tasks; powers Le Chat; reasoning effort 'high' recommended for complex tasks and agentic coding.\nQuotes given as evidence (separated by [...]): It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights. [...] Use `reasoning_effort=\"high\"` for complex tasks and agentic coding. [...] **Agentic**: Best-in-class agentic capabilities with native function calling and JSON output. [...] **Multimodal input**: Accepts both text and image input, with text output.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes do support the main claims: instruction-following, reasoning and coding in a single set of weights; agentic use with function calling and JSON output; text and image input; and the 'high' reasoning effort recommendation for complex tasks and agentic coding. But the value also says the model powers Le Chat and is used in the coding agent Vibe. The card does say both things elsewhere, but none of the quoted evidence mentions Le Chat or Vibe, so those claims are unsupported by the quotes given."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 845,
+  "cache_read_input_tokens": 9306,
+  "output_tokens": 314
+ },
+ "cost_usd_list_price": 0.014909200000000001,
+ "duration_ms": 5060
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "autonomy",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: autonomy\nWhat to find: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nCard sections that often contain it: Intended Use, Safety, Agentic\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card describes the model as supporting autonomous agents and agentic workflows through native function calling. It does not state that human-in-the-loop oversight is required.",
+  "quotes": [
+   "**Enhanced Coding & Agentic Capabilities** – Achieves notable improvements in coding benchmarks alongside native function-calling support, powering highly capable autonomous agents.",
+   "**Function Calling** – Native support for structured tool use, enabling agentic workflows."
+  ],
+  "section": "Gemma 4 introduces key capability and architectural advancements"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 551,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 445
+ },
+ "cost_usd_list_price": 0.0089124,
+ "duration_ms": 3363
+}

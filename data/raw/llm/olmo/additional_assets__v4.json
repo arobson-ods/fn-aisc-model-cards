@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "additional_assets",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Code, checkpoints and training details are released: Open-Instruct (DPO and RLVR), OLMo-Core (pre-training and SFT) and OLMo-Eval (evaluation) on GitHub; checkpoints accessible via Hugging Face revisions (e.g. step_XXXX naming; only the final few checkpoints for this model); training datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO, Dolci-Instruct-RL) on Hugging Face; logs coming soon.",
+  "quotes": [
+   "- Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct",
+   "- OLMo-Core for pre-training and SFT: https://github.com/allenai/OLMo-core",
+   "- OLMo-Eval for evaluation: https://github.com/allenai/OLMo-Eval",
+   "We are releasing all code, checkpoints, logs (coming soon), and associated training details.",
+   "We have released checkpoints for these models. For post-training, the naming convention is `step_XXXX`.",
+   "To load a specific model revision with HuggingFace, simply add the argument `revision`:",
+   "- Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft), [Dolci-Instruct-SFT](https://huggingface.co/datasets/allenai/dolci-instruct-sft)"
+  ],
+  "section": "Model Sources"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7415,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 589
+ },
+ "cost_usd_list_price": 0.035554,
+ "duration_ms": 4529
+}

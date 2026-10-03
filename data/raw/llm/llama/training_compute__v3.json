@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "training_compute",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: training_compute\nWhat to find: Amount of computation used for training, in floating point operations.\nCard sections that often contain it: Compute, FLOPs, Training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state training compute in floating point operations. It gives only GPU hours (5.0M for Llama 4 Scout).",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 537,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 183
+ },
+ "cost_usd_list_price": 0.0057568,
+ "duration_ms": 2687
+}

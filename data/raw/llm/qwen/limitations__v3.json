@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "limitations",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card has no dedicated limitations or risks section. It does state some technical constraints. The model is text-only, multimodal inputs are not supported, and thinking cannot be disabled. Endless repetition can occur. Raising presence_penalty to reduce it may occasionally cause language mixing and a slight decrease in model performance.",
+  "quotes": [
+   "Qwen3.8-2.4T-A95B is a text-only model that requires thinking mode for all interactions. Multimodal inputs are not supported, and thinking cannot be disabled.",
+   "For supported frameworks, you can adjust the `presence_penalty` parameter between 0 and 2 to reduce endless repetition. However, using a higher value may occasionally result in language mixing and a slight decrease in model performance."
+  ],
+  "section": "API Usage"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 18018,
+  "output_tokens": 591
+ },
+ "cost_usd_list_price": 0.011677600000000002,
+ "duration_ms": 4454
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "limitations",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Testing has not covered all scenarios; outputs cannot be predicted in advance and the model may produce inaccurate or other objectionable responses, so developers should perform safety testing and tuning for their applications. Image understanding was tested only up to 5 input images; use beyond that requires extra risk mitigation and testing. Use in languages beyond the 12 supported is out-of-scope unless developers fine-tune and ensure safe use.",
+  "quotes": [
+   "Testing conducted to date has not covered, nor could it cover, all scenarios. For these reasons, as with all LLMs, Llama 4’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate or other objectionable responses to user prompts.",
+   "Therefore, before deploying any applications of Llama 4 models, developers should perform safety testing and tuning tailored to their specific applications of the model.",
+   "Llama 4 has been tested for image understanding up to 5 input images. If leveraging additional image understanding capabilities beyond this, Developers are responsible for ensuring that their deployments are mitigated for risks and should perform additional testing and tuning tailored to their specific applications.",
+   "Use in languages or capabilities beyond those explicitly referenced as supported in this model card**."
+  ],
+  "section": "Considerations and Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 529
+ },
+ "cost_usd_list_price": 0.009228799999999999,
+ "duration_ms": 3709
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "fad04ec792b48226",
+ "request_user": "Fact definition: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nExtracted value: Open weights/checkpoints distributed via Hugging Face (usable with the transformers library); code released on GitHub repositories. No API, cloud platform or app distribution is stated.\nQuotes given as evidence (separated by [...]): We are releasing all code, checkpoints, logs (coming soon), and associated training details. [...] You can use OLMo with the standard HuggingFace transformers library: [...] We have released checkpoints for these models. [...] OLMo-Core for pre-training and SFT: https://github.com/allenai/OLMo-core\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes say the code and checkpoints are released and can be used with the HuggingFace transformers library. The card's from_pretrained code and huggingface.co links show the weights are on Hugging Face, and the GitHub link supports the code release. The card really doesn't mention an API, cloud platform or app. The value answers the distribution-method definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 801,
+  "cache_read_input_tokens": 6275,
+  "output_tokens": 667
+ },
+ "cost_usd_list_price": 0.021011,
+ "duration_ms": 8808
+}

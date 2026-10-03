@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "personal_data",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: personal_data\nWhat to find: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).\nCard sections that often contain it: Training Data, Privacy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Training data includes information from Meta's products and services, including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. The card does not state how personal data was handled (e.g., anonymisation); it only refers readers to the Privacy Center.",
+  "quotes": [
+   "Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook and people’s interactions with Meta AI."
+  ],
+  "section": "Training Data"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 8785,
+  "output_tokens": 322
+ },
+ "cost_usd_list_price": 0.007189,
+ "duration_ms": 2801
+}

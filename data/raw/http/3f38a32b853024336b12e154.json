@@ -1,0 +1,11 @@
+{
+ "url": "https://huggingface.co/ibm-granite/granite-4.1-8b-base/raw/cbc32f94fbf8179ca4b22b664831f6a73965bb16/config.json",
+ "status": 200,
+ "retrieved_at": "2026-09-30T10:29:59+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "\"634d7cf6eb734ab13c54b5a37512a859460de60b\"",
+  "x-repo-commit": "cbc32f94fbf8179ca4b22b664831f6a73965bb16"
+ },
+ "body": "{\n  \"architectures\": [\n    \"GraniteForCausalLM\"\n  ],\n  \"attention_bias\": false,\n  \"attention_dropout\": 0.0,\n  \"attention_multiplier\": 0.0078125,\n  \"bos_token_id\": 100257,\n  \"embedding_multiplier\": 12.0,\n  \"eos_token_id\": 100257,\n  \"hidden_act\": \"silu\",\n  \"hidden_size\": 4096,\n  \"initializer_range\": 0.1,\n  \"intermediate_size\": 12800,\n  \"logits_scaling\": 16.0,\n  \"max_position_embeddings\": 131072,\n  \"mlp_bias\": false,\n  \"model_type\": \"granite\",\n  \"num_attention_heads\": 32,\n  \"num_hidden_layers\": 40,\n  \"num_key_value_heads\": 8,\n  \"pad_token_id\": 100256,\n  \"residual_multiplier\": 0.22,\n  \"rms_norm_eps\": 1e-05,\n  \"rope_scaling\": null,\n  \"rope_theta\": 10000000,\n  \"tie_word_embeddings\": true,\n  \"torch_dtype\": \"bfloat16\",\n  \"transformers_version\": \"4.53.3\",\n  \"use_cache\": true,\n  \"vocab_size\": 100352\n}\n"
+}

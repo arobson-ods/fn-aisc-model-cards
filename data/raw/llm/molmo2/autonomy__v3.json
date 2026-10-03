@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "autonomy",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: autonomy\nWhat to find: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nCard sections that often contain it: Intended Use, Safety, Agentic\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 551,
+  "cache_read_input_tokens": 8042,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0049964,
+ "duration_ms": 1330
+}

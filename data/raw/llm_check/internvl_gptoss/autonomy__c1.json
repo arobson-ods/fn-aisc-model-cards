@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "c1f3838c0232e5ef",
+ "request_user": "Fact definition: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The extractor is right: the card never says whether the model acts on its own or needs human-in-the-loop oversight. It lists agent-style capabilities: it \"supports novel capabilities such as GUI interaction and embodied agency,\" it reports results on \"agentic tasks,\" and its SFT data includes \"GUI-based interaction, embodied interaction.\" Those passages describe what the model can do and how it scores. None of them says how it operates, whether it runs autonomously, or whether humans must supervise or approve its actions. The deployment sections (DvD, LMDeploy, vLLM) only cover infrastructure and have no guidance on oversight."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 579,
+  "cache_read_input_tokens": 18938,
+  "output_tokens": 471
+ },
+ "cost_usd_list_price": 0.017847599999999998,
+ "duration_ms": 6322
+}

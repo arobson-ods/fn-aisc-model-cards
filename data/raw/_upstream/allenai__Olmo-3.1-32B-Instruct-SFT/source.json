@@ -1,0 +1,11 @@
+{
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct-SFT",
+ "sha": "152782ecc41a86c5cbe3fb6afa68bd90934de48a",
+ "api_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct-SFT",
+ "retrieved_at": "2026-09-30T10:29:54+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-SFT/raw/152782ecc41a86c5cbe3fb6afa68bd90934de48a/README.md",
+ "config_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-SFT/raw/152782ecc41a86c5cbe3fb6afa68bd90934de48a/config.json"
+}

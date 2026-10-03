@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Model is distributed via a Hugging Face repository and can be used with the Hugging Face transformers, vLLM or SGLang libraries.",
+  "quotes": [
+   "This repository presents **Falcon-H1R-7B**, a reasoning-specialized model introduced in the paper [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://huggingface.co/papers/2601.02346).",
+   "Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or `SGLang` library."
+  ],
+  "section": "Falcon-H1R-7B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 6507,
+  "output_tokens": 627
+ },
+ "cost_usd_list_price": 0.0097954,
+ "duration_ms": 4915
+}

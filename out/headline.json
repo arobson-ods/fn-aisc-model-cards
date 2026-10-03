@@ -1,0 +1,291 @@
+{
+ "median_eu_item_share_public": 0.578,
+ "median_eu_fact_share_public": 0.578,
+ "median_machine_readable_share_of_disclosed": 0.444,
+ "median_card_metadata_share_of_disclosed": 0.16999999999999998,
+ "control_model": "olmo",
+ "control_disclosed_facts_without_field": {
+  "spdx": [
+   "acceptable_use_policy",
+   "access_conditions",
+   "additional_assets",
+   "base_model_relation",
+   "data_scope",
+   "input_modalities",
+   "integration_means",
+   "knowledge_cutoff",
+   "languages",
+   "output_modalities",
+   "param_count",
+   "task",
+   "weights_precision"
+  ],
+  "cdx": [
+   "acceptable_use_policy",
+   "access_conditions",
+   "base_model_relation",
+   "data_scope",
+   "integration_means",
+   "knowledge_cutoff",
+   "languages",
+   "max_input_size",
+   "param_count",
+   "weights_precision"
+  ],
+  "eu": [
+   "access_conditions",
+   "eval_datasets",
+   "eval_results",
+   "knowledge_cutoff",
+   "languages",
+   "limitations",
+   "safety_evaluation",
+   "task",
+   "training_datasets",
+   "weights_precision"
+  ]
+ },
+ "schema_gap_facts": {
+  "spdx": 29,
+  "cdx": 33,
+  "eu": 16
+ },
+ "spotcheck": "full human spot-check not done",
+ "autocheck": {
+  "kind": "automated second-model check, not human-verified",
+  "checker": "claude-opus-5-5",
+  "rows": 146,
+  "graded": 146,
+  "accuracy": 0.887,
+  "counts": {
+   "y": 115,
+   "partial": 29,
+   "n": 2
+  },
+  "by_status": {
+   "not_stated": 0.898,
+   "prose": 0.873,
+   "structured": 0.894
+  },
+  "by_model": {
+   "deepseek": 0.95,
+   "falcon": 0.85,
+   "gemma": 0.818,
+   "granite": 0.864,
+   "internvl_gptoss": 0.9,
+   "llama": 0.792,
+   "mistral": 0.9,
+   "molmo2": 0.9,
+   "olmo": 0.95,
+   "olmo_gguf": 0.95,
+   "phi": 0.818,
+   "qwen": 0.95,
+   "smollm": 1.0,
+   "twil_smollm": 0.8
+  },
+  "human_reviewed": 15,
+  "human_accuracy_on_mini": 0.8,
+  "checker_agreement_with_human": 0.667,
+  "note": "The mini sample over-represents rows the checker flagged, so human_accuracy_on_mini is not an estimate of overall accuracy. Use it to judge the checker."
+ },
+ "pending_records": 0,
+ "per_model": {
+  "olmo": {
+   "eu_items_answered": 21,
+   "eu_items": 45,
+   "eu_item_share": 0.467,
+   "eu_fact_share": 0.467,
+   "facts_disclosed": 31,
+   "facts": 61,
+   "machine_readable_share": 0.548,
+   "card_metadata_share": 0.161,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "llama": {
+   "eu_items_answered": 37,
+   "eu_items": 45,
+   "eu_item_share": 0.822,
+   "eu_fact_share": 0.844,
+   "facts_disclosed": 49,
+   "facts": 61,
+   "machine_readable_share": 0.286,
+   "card_metadata_share": 0.082,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "gemma": {
+   "eu_items_answered": 28,
+   "eu_items": 45,
+   "eu_item_share": 0.622,
+   "eu_fact_share": 0.644,
+   "facts_disclosed": 40,
+   "facts": 61,
+   "machine_readable_share": 0.375,
+   "card_metadata_share": 0.15,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "mistral": {
+   "eu_items_answered": 23,
+   "eu_items": 45,
+   "eu_item_share": 0.511,
+   "eu_fact_share": 0.511,
+   "facts_disclosed": 29,
+   "facts": 61,
+   "machine_readable_share": 0.379,
+   "card_metadata_share": 0.069,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "qwen": {
+   "eu_items_answered": 21,
+   "eu_items": 45,
+   "eu_item_share": 0.467,
+   "eu_fact_share": 0.444,
+   "facts_disclosed": 28,
+   "facts": 61,
+   "machine_readable_share": 0.464,
+   "card_metadata_share": 0.179,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "deepseek": {
+   "eu_items_answered": 27,
+   "eu_items": 45,
+   "eu_item_share": 0.6,
+   "eu_fact_share": 0.578,
+   "facts_disclosed": 32,
+   "facts": 61,
+   "machine_readable_share": 0.406,
+   "card_metadata_share": 0.156,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "phi": {
+   "eu_items_answered": 32,
+   "eu_items": 45,
+   "eu_item_share": 0.711,
+   "eu_fact_share": 0.733,
+   "facts_disclosed": 43,
+   "facts": 61,
+   "machine_readable_share": 0.419,
+   "card_metadata_share": 0.186,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "smollm": {
+   "eu_items_answered": 26,
+   "eu_items": 45,
+   "eu_item_share": 0.578,
+   "eu_fact_share": 0.578,
+   "facts_disclosed": 36,
+   "facts": 61,
+   "machine_readable_share": 0.444,
+   "card_metadata_share": 0.111,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "falcon": {
+   "eu_items_answered": 19,
+   "eu_items": 45,
+   "eu_item_share": 0.422,
+   "eu_fact_share": 0.422,
+   "facts_disclosed": 27,
+   "facts": 61,
+   "machine_readable_share": 0.593,
+   "card_metadata_share": 0.259,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "granite": {
+   "eu_items_answered": 28,
+   "eu_items": 45,
+   "eu_item_share": 0.622,
+   "eu_fact_share": 0.622,
+   "facts_disclosed": 36,
+   "facts": 61,
+   "machine_readable_share": 0.444,
+   "card_metadata_share": 0.194,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "olmo_gguf": {
+   "eu_items_answered": 18,
+   "eu_items": 45,
+   "eu_item_share": 0.4,
+   "eu_fact_share": 0.4,
+   "facts_disclosed": 26,
+   "facts": 61,
+   "machine_readable_share": 0.423,
+   "card_metadata_share": 0.154,
+   "pending": 0,
+   "rejected_quotes": 1
+  },
+  "molmo2": {
+   "eu_items_answered": 25,
+   "eu_items": 45,
+   "eu_item_share": 0.556,
+   "eu_fact_share": 0.556,
+   "facts_disclosed": 31,
+   "facts": 61,
+   "machine_readable_share": 0.548,
+   "card_metadata_share": 0.258,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "internvl_gptoss": {
+   "eu_items_answered": 26,
+   "eu_items": 45,
+   "eu_item_share": 0.578,
+   "eu_fact_share": 0.6,
+   "facts_disclosed": 35,
+   "facts": 61,
+   "machine_readable_share": 0.486,
+   "card_metadata_share": 0.257,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "twil_smollm": {
+   "eu_items_answered": 26,
+   "eu_items": 45,
+   "eu_item_share": 0.578,
+   "eu_fact_share": 0.578,
+   "facts_disclosed": 34,
+   "facts": 61,
+   "machine_readable_share": 0.471,
+   "card_metadata_share": 0.206,
+   "pending": 0,
+   "rejected_quotes": 0
+  }
+ },
+ "metadata_vs_prose": {
+  "checked": 156,
+  "agreement": {
+   "not_stated": 61,
+   "agrees": 48,
+   "adds": 43,
+   "conflicts": 4
+  },
+  "by_source_type": {
+   "card_metadata": {
+    "adds": 29,
+    "agrees": 27,
+    "conflicts": 0,
+    "not_stated": 16
+   },
+   "hub_api": {
+    "adds": 8,
+    "agrees": 15,
+    "conflicts": 2,
+    "not_stated": 33
+   },
+   "repo_config": {
+    "adds": 6,
+    "agrees": 6,
+    "conflicts": 2,
+    "not_stated": 12
+   }
+  }
+ }
+}

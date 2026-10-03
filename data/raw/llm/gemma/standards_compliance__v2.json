@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "standards_compliance",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: standards_compliance\nWhat to find: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).\nCard sections that often contain it: Compliance, Responsibility, Safety\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card says its safety evaluations align with Google's AI principles and Google's safety policies. It names no external standard or regulation, such as ISO/IEC 42001 or the EU AI Act.",
+  "quotes": [
+   "These evaluations align with [Google’s AI principles](https://ai.google/principles/), as well as safety policies, which aim to prevent our generative AI models from generating harmful content, including:"
+  ],
+  "section": "Ethics and Safety"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 570,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 377
+ },
+ "cost_usd_list_price": 0.0083084,
+ "duration_ms": 3064
+}

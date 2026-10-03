@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "15c05fd8e875271c",
+ "request_user": "Fact definition: Training hyperparameters (learning rate, batch size, optimiser, epochs, sequence length).\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "I checked the whole card and the extractor is right: it does not give any training hyperparameters. There is no learning rate, batch size, optimiser, number of epochs, or training sequence length. The training details it does give are other kinds of facts: GPU hours (5.0M for Scout and 2.38M for Maverick), power use, emissions, token counts (~40T and ~22T), the data cutoff, and that Meta used \"custom training libraries\" on its own GPU clusters. The \"Context length\" figures (10M and 1M) are what the finished models can handle, not a stated training sequence length. The \"max_new_tokens=256\" in the code sample is a setting for generating text, not for training."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 582,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 381
+ },
+ "cost_usd_list_price": 0.0139786,
+ "duration_ms": 5621
+}

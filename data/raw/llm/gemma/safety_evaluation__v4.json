@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Automated and human evaluations were conducted with internal safety and responsible AI teams, aligned with Google's AI principles and safety policies. Results: major improvements in all content safety categories relative to previous Gemma models; Gemma 4 significantly outperforms Gemma 3 and 3n on safety while keeping unjustified refusals low; testing was conducted without safety filters; minimal policy violations for text-to-text and image-to-text across all model sizes.",
+  "quotes": [
+   "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety.",
+   "For all areas of safety testing, we saw major improvements in all categories of content safety relative to previous Gemma models. Overall, Gemma 4 models significantly outperform Gemma 3 and 3n models in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors.",
+   "For both text-to-text and image-to-text, and across all model sizes, the model produced minimal policy violations, and showed significant improvements over previous Gemma models' performance."
+  ],
+  "section": "Ethics and Safety"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 11549,
+  "output_tokens": 498
+ },
+ "cost_usd_list_price": 0.0095178,
+ "duration_ms": 3511
+}

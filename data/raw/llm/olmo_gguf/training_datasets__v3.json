@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "training_datasets",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: training_datasets\nWhat to find: Named training datasets (names or identifiers).\nCard sections that often contain it: Training Data, Datasets\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pre-trained on Dolma 3; post-trained on Dolci datasets, including Dolci-Think-SFT-7B, Dolci-Instruct-SFT-7B (SFT), Dolci-Think-DPO-7B, Dolci-Instruct-DPO-7B (DPO), Dolci-Think-RL-7B, Dolci-Instruct-RL-7B (RLVR).",
+  "quotes": [
+   "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+   "- Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft), [Dolci-Instruct-SFT-7B](https://huggingface.co/datasets/allenai/dolci-instruct-sft)",
+   "- Datasets: [Dolci-Think-DPO-7B](https://huggingface.co/datasets/allenai/dolci-thinking-dpo), [Dolci-Instruct-DPO-7B](https://huggingface.co/datasets/allenai/dolci-3-instruct-dpo-with-metadata)",
+   "- Datasets: [Dolci-Think-RL-7B](https://huggingface.co/datasets/allenai/Dolci-Think-RL-7B), [Dolci-Instruct-RL-7B](https://huggingface.co/datasets/allenai/Dolci-Instruct-RL-7B)"
+  ],
+  "section": "Model Card for Olmo 3 7B Instruct"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 532,
+  "cache_read_input_tokens": 6151,
+  "output_tokens": 615
+ },
+ "cost_usd_list_price": 0.0095122,
+ "duration_ms": 4063
+}

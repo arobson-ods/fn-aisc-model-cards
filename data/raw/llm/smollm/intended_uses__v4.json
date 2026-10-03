@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "intended_uses",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: intended_uses\nWhat to find: Intended uses of the model.\nCard sections that often contain it: Intended Use, Uses, Direct Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Should be used as assistive tools rather than definitive sources of information; users should verify important information. The model is an instruct model optimized for hybrid reasoning.",
+  "quotes": [
+   "These models should be used as assistive tools rather than definitive sources of information.",
+   "Users should always verify important information and critically evaluate any generated content.",
+   "Instruct model optimized for **hybrid reasoning**"
+  ],
+  "section": "Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 9308,
+  "output_tokens": 394
+ },
+ "cost_usd_list_price": 0.0079376,
+ "duration_ms": 3576
+}

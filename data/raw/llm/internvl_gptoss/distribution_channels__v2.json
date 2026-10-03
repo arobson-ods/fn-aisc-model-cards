@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open model weights released on Hugging Face and ModelScope (GitHub and HF formats); code on GitHub; deployable via LMDeploy and vLLM (vLLM recommended for the 20B-A4B model); chat demo available online.",
+  "quotes": [
+   "All models and code are publicly released.",
+   "| InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |",
+   "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS.",
+   "[\\[🗨️ Chat Demo\\]](https://chat.intern-ai.org.cn/)"
+  ],
+  "section": "InternVL3.5 Family"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 19261,
+  "output_tokens": 530
+ },
+ "cost_usd_list_price": 0.0113762,
+ "duration_ms": 3481
+}

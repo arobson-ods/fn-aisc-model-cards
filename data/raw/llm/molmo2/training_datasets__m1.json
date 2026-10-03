@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "training_datasets",
+ "input_sha256": "cf4d9a287436050f1f990728eeae71bb85d6a6334f8f68137ecb303796633052",
+ "request_user": "Fact: training_datasets\nWhat to find: Named training datasets (names or identifiers).\nThe card's machine-readable metadata gives: [\"allenai/Molmo2-Cap\", \"allenai/Molmo2-VideoCapQA\", \"allenai/Molmo2-VideoSubtitleQA\", \"allenai/Molmo2-AskModelAnything\", \"allenai/Molmo2-VideoPoint\", \"allenai/Molmo2-VideoTrack\", \"allenai/Molmo2-MultiImageQA\", \"allenai/Molmo2-SynMultiImageQA\", \"allenai/Molmo2-MultiImagePoint\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Trained on publicly available third party datasets referenced in the technical report and the \"Molmo2 data\" collection of highly-curated image-text and video-text pairs. Individual datasets are not named in the text.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs."
+  ],
+  "agreement": "adds",
+  "section": "Molmo2-8B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 917,
+  "cache_read_input_tokens": 7994,
+  "output_tokens": 574
+ },
+ "cost_usd_list_price": 0.0110108,
+ "duration_ms": 5004
+}

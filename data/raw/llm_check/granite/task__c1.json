@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "1536ab9f1ca7af06",
+ "request_user": "Fact definition: Primary task the model performs (e.g. text generation, image-text-to-text).\nValue taken from the model's structured metadata (card:pipeline_tag = \"text-generation\"): text-generation\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's pipeline_tag is \"text-generation\", and the rest of the card agrees: it describes a decoder-only causal LM (GraniteForCausalLM) that is used for text generation."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 601,
+  "cache_read_input_tokens": 16026,
+  "output_tokens": 135
+ },
+ "cost_usd_list_price": 0.0107212,
+ "duration_ms": 4366
+}

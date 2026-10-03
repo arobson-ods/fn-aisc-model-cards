@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "0b51af0981e6491a",
+ "request_user": "Fact definition: Named training datasets (names or identifiers).\nValue taken from the model's structured metadata (card:datasets = [\"allenai/Dolci-Instruct-RL\"]): [\"allenai/Dolci-Instruct-RL\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card names 'Dolci-Instruct-RL' as a Stage 3 RLVR training dataset for this Instruct model, matching the metadata value. The list is incomplete: the card also names other Dolci training datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO and the Dolci-Think variants) and Dolma 3 for pre-training. Still, the value is a correct, direct answer and nothing in the card contradicts it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6891,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 662
+ },
+ "cost_usd_list_price": 0.068376,
+ "duration_ms": 6992
+}

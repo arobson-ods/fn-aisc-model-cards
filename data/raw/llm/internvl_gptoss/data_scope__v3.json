@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "data_scope",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pre-training uses large-scale text and multimodal corpora; SFT data comes from three sources: InternVL3 instruction-following data, multimodal reasoning data in \"Thinking\" mode (covering expert domains such as mathematics and scientific disciplines), and capability-expansion datasets (GUI-based interaction, embodied interaction). Card metadata lists language as multilingual.",
+  "quotes": [
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+   "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks.",
+   "The questions in these datasets cover various expert domains, such as mathematics and scientific disciplines, thereby strengthening performance on different reasoning tasks.",
+   "(3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect"
+  ],
+  "section": "Pre-Training"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 19350,
+  "output_tokens": 435
+ },
+ "cost_usd_list_price": 0.010387999999999998,
+ "duration_ms": 3042
+}

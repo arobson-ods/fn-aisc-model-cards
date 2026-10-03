@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "hyperparameters",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: hyperparameters\nWhat to find: Training hyperparameters (learning rate, batch size, optimiser, epochs, sequence length).\nCard sections that often contain it: Training Hyperparameters, Training Procedure\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 558,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.005670400000000001,
+ "duration_ms": 2515
+}

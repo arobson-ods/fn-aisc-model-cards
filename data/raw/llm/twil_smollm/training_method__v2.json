@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "training_method",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: training_method\nWhat to find: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nCard sections that often contain it: Training, Training Procedure, Post-training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Four post-training stages on top of base SmolLM3-3B: (1) LoRA supervised fine-tuning on a synthetic formal-logic corpus; (2) checkpoint fusion (parameter-space averaging of intermediate SFT checkpoints selected by a diversity probe); (3) WiSE-FT interpolation toward the pretrained base with λ = 0.25; (4) MGPO, entropy-weighted GRPO reinforcement learning against a programmatic verifier (published checkpoint step 2071). No preference optimisation/DPO is stated.",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction).",
+   "2. **Checkpoint fusion** — parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe, rather than taking the final checkpoint.",
+   "3. **WiSE-FT interpolation** toward the pretrained base, `W = (1 − λ)·W_base + λ·W_finetuned`\n   with **λ = 0.25** — i.e. only a quarter of the fine-tuned delta is retained.",
+   "4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient. Published checkpoint is **step 2071**."
+  ],
+  "section": "How it was built"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 561,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 647
+ },
+ "cost_usd_list_price": 0.0108434,
+ "duration_ms": 4011
+}

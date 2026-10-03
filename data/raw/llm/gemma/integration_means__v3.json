@@ -1,0 +1,34 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "integration_means",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use with the latest Transformers library (pip install -U transformers torch accelerate), loading via AutoProcessor and AutoModelForMultimodalLM, with chat template via processor.apply_chat_template using system/user roles; thinking enabled via enable_thinking=True or the <|think|> token at start of system prompt; output parsed with processor.parse_response. Card notes libraries like Transformers and llama.cpp handle the chat template.",
+  "quotes": [
+   "You can use all Gemma 4 models with the latest version of Transformers. To get started, install the necessary dependencies in your environment:",
+   "`pip install -U transformers torch accelerate`",
+   "from transformers import AutoProcessor, AutoModelForMultimodalLM",
+   "To enable reasoning, set `enable_thinking=True` and the `parse_response` function will take care of parsing the thinking output.",
+   "**Trigger Thinking:** Thinking is enabled by including the `<|think|>` token at the start of the system prompt. To disable thinking, remove the token.",
+   "Note that many libraries like Transformers and llama.cpp handle the complexities of the chat template for you."
+  ],
+  "section": "Getting Started"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 479
+ },
+ "cost_usd_list_price": 0.0093182,
+ "duration_ms": 3703
+}

@@ -1,0 +1,671 @@
+model: olmo
+repo_id: allenai/Olmo-3.1-32B-Instruct
+retrieved_at: '2026-09-30T10:16:57+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Allen Institute for AI (Ai2)
+    quote: '- **Developed by:** Allen Institute for AI (Ai2)'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: allenai/Olmo-3.1-32B-Instruct
+    quote: api:id = "allenai/Olmo-3.1-32B-Instruct"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: ac0587e4a7744a551c059d8cd17ba220bc940dae
+    quote: api:sha = "ac0587e4a7744a551c059d8cd17ba220bc940dae"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: ac0587e4a7744a551c059d8cd17ba220bc940dae
+    quote: api:sha = "ac0587e4a7744a551c059d8cd17ba220bc940dae"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: allenai/Olmo-3.1-32B-Instruct-DPO
+    quote: card:base_model = "allenai/Olmo-3.1-32B-Instruct-DPO"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card_metadata
+  - fact_id: base_model
+    status: prose_adds
+    value: Base model Olmo-3-32B; the final Olmo-3.1-32B-Instruct (RLVR) follows the Olmo-3.1-32B-Instruct-DPO
+      stage.
+    quote: '| **Base Model**           | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) |
+      [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B)
+      | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) | [...] | **DPO**                  |
+      [Olmo-3-7B-Think-DPO](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO) | [Olmo-3-32B-Think-DPO](https://huggingface.co/allenai/Olmo-3-32B-Think-DPO)
+      | [Olmo-3-7B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO) | [Olmo-3.1-32B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO)
+      |'
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Transformer style autoregressive language model
+    quote: '- **Model type:** a Transformer style autoregressive language model.'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '65536'
+    quote: config:max_position_embeddings = 65536
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/config.json
+    source_type: repo_config
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '32233522176'
+    quote: api:safetensors.total = 32233522176
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '32233522176'
+    quote: api:safetensors.total = 32233522176
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights/checkpoints released on Hugging Face (loadable with the transformers library,
+      including intermediate revisions); code released on GitHub repositories.
+    quote: 'We are releasing all code, checkpoints, logs (coming soon), and associated training details.
+      [...] You can use OLMo with the standard HuggingFace transformers library: [...] We have released
+      checkpoints for these models. For post-training, the naming convention is `step_XXXX`. [...] Open-Instruct
+      for DPO and RLVR: https://github.com/allenai/open-instruct'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
+    quote: derived:hub_url = "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights/checkpoints released on Hugging Face (loadable with the transformers library,
+      including intermediate revisions); code released on GitHub repositories.
+    quote: 'We are releasing all code, checkpoints, logs (coming soon), and associated training details.
+      [...] You can use OLMo with the standard HuggingFace transformers library: [...] We have released
+      checkpoints for these models. For post-training, the naming convention is `step_XXXX`. [...] Open-Instruct
+      for DPO and RLVR: https://github.com/allenai/open-instruct'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible
+      Use Guidelines
+    quote: This model is licensed under Apache 2.0. It is intended for research and educational use in
+      accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use).
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible
+      Use Guidelines
+    quote: This model is licensed under Apache 2.0. It is intended for research and educational use in
+      accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use).
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: 'Code, checkpoints and training details are released: Open-Instruct (DPO and RLVR), OLMo-Core
+      (pre-training and SFT) and OLMo-Eval (evaluation) on GitHub; checkpoints accessible via Hugging
+      Face revisions (e.g. step_XXXX naming; only the final few checkpoints for this model); training
+      datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO, Dolci-Instruct-RL) on Hugging Face; logs coming
+      soon.'
+    quote: '- Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct [...] - OLMo-Core
+      for pre-training and SFT: https://github.com/allenai/OLMo-core [...] - OLMo-Eval for evaluation:
+      https://github.com/allenai/OLMo-Eval [...] We are releasing all code, checkpoints, logs (coming
+      soon), and associated training details. [...] We have released checkpoints for these models. For
+      post-training, the naming convention is `step_XXXX`. [...] To load a specific model revision with
+      HuggingFace, simply add the argument `revision`: [...] - Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft),
+      [Dolci-Instruct-SFT](https://huggingface.co/datasets/allenai/dolci-instruct-sft)'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: acceptable_use_policy
+    status: prose
+    value: Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's
+      Responsible Use Guidelines (https://allenai.org/responsible-use)
+    quote: This model is licensed under Apache 2.0. It is intended for research and educational use in
+      accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use).
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines.
+    quote: It is intended for research and educational use in accordance with Ai2's [Responsible Use Guidelines](https://allenai.org/responsible-use).
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Use with the HuggingFace transformers library (transformers 4.57.0 or higher) via AutoModelForCausalLM/AutoTokenizer;
+      optional 8-bit quantization with bitsandbytes; specific checkpoints loadable via the revision argument;
+      fine-tuning with the OLMo-core repository.
+    quote: 'Olmo 3 is supported in transformers 4.57.0 or higher: [...] You can use OLMo with the standard
+      HuggingFace transformers library: [...] olmo = AutoModelForCausalLM.from_pretrained("allenai/Olmo-3.1-32B-Instruct")
+      [...] load_in_8bit=True)  # Requires bitsandbytes [...] To load a specific model revision with HuggingFace,
+      simply add the argument `revision`: [...] 1. Fine-tune with the OLMo-core repository:'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: Olmo 3 is supported in transformers 4.57.0 or higher (HuggingFace transformers library)
+    quote: 'Olmo 3 is supported in transformers 4.57.0 or higher: [...] pip install transformers>=4.57.0'
+    source_url: https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: 'Pre-trained on the Dolma 3 dataset, then post-trained in three stages on Dolci datasets: Stage
+      1 SFT (supervised fine-tuning), Stage 2 DPO (direct preference optimization), Stage 3 RLVR (reinforcement
+      learning from verifiable rewards).'
+    quote: 'These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
+      [...] #### Stage 1: SFT [...] #### Stage 2:DPO [...] - direct preference optimization on the Dolci-Think-DPO-7B
+      dataset. This dataset consits of math, code, chat, and general knowledge queries. [...] #### Stage
+      3: RLVR [...] - reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset.
+      This dataset consits of math, code, instruction-following, and general chat queries.'
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: 'Pre-trained on the Dolma 3 dataset and post-trained on Dolci datasets; post-training data
+      covers math, code, chat, and general knowledge queries (SFT/DPO) and math, code, instruction-following,
+      and general chat queries (RLVR). Language: English.'
+    quote: These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.
+      [...] - supervised fine-tuning on the Dolci-Think-SFT-7B dataset. This dataset consits of math,
+      code, chat, and general knowledge queries. [...] - reinforcement learning from verifiable rewards
+      on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and
+      general chat queries. [...] - **Language(s) (NLP):** English
+    source_url: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

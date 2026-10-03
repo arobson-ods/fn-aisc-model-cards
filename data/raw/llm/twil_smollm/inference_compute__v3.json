@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "inference_compute",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: inference_compute\nWhat to find: Benchmarked computation (FLOPs) or energy used for inference, and how it was measured.\nCard sections that often contain it: Inference, Efficiency\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not report inference FLOPs or energy use. It reports only throughput (tok/s, ans/s) and generation length.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 548,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 273
+ },
+ "cost_usd_list_price": 0.0070691999999999994,
+ "duration_ms": 3463
+}

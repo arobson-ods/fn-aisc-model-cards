@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "provider_name",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: provider_name\nWhat to find: Legal or organisational name of the model provider (developer) that releases the model.\nCard sections that often contain it: Model Details, Model Information, Model developer\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "webAI (published under the webAI-Official organisation)",
+  "quotes": [
+   "model_id = \"webAI-Official/TwIL-LM3\"",
+   "Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this"
+  ],
+  "section": "Usage"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10914,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 636
+ },
+ "cost_usd_list_price": 0.050127,
+ "duration_ms": 5808
+}

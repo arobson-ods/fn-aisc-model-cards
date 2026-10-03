@@ -1,0 +1,11 @@
+{
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "sha": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+ "api_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+ "retrieved_at": "2026-09-30T10:17:06+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+ "config_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/config.json"
+}

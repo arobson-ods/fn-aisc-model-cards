@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "integration_means",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Weights are in Hugging Face Transformers format, compatible with vLLM, SGLang, TokenSpeed. Deployable via SGLang, vLLM, TokenSpeed; also usable via the Qwen Cloud API. Accessed through the OpenAI-compatible Chat Completions API (OpenAI Python SDK), with chat_template_kwargs enable_thinking/preserve_thinking and a reasoning_effort parameter (xhigh default, medium, low). Text-only, thinking mode required; responses begin with reasoning in <think>...</think>.",
+  "quotes": [
+   "These artifacts are compatible with vLLM, SGLang, TokenSpeed, etc.",
+   "Qwen3.8 can be deployed with popular inference frameworks, e.g.:",
+   "The Chat Completions API can be used with most inference frameworks, as well as [Qwen Cloud](https://www.qwencloud.com).",
+   "Qwen3.8-2.4T-A95B is a text-only model that requires thinking mode for all interactions. Multimodal inputs are not supported, and thinking cannot be disabled. Every response will automatically begin with reasoning enclosed in `<think>\\n...</think>\\n\\n` before the final output.",
+   "Qwen3.8 comes with official support for `reasoning_effort`, which can be used to adjust reasoning depth and control cost:"
+  ],
+  "section": "Quickstart"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 17929,
+  "output_tokens": 569
+ },
+ "cost_usd_list_price": 0.0115318,
+ "duration_ms": 3949
+}

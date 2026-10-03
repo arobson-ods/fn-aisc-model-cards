@@ -1,0 +1,836 @@
+model: phi
+repo_id: microsoft/Phi-4-reasoning-vision-15B
+retrieved_at: '2026-09-30T10:17:00+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Microsoft Corporation
+    quote: '**Developer:** Microsoft Corporation  '
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: microsoft/Phi-4-reasoning-vision-15B
+    quote: api:id = "microsoft/Phi-4-reasoning-vision-15B"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: c3e4fac79ddace21976ced56fbf1564b8bd8c89f
+    quote: api:sha = "c3e4fac79ddace21976ced56fbf1564b8bd8c89f"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: c3e4fac79ddace21976ced56fbf1564b8bd8c89f
+    quote: api:sha = "c3e4fac79ddace21976ced56fbf1564b8bd8c89f"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: release_date
+    status: prose
+    value: March 4, 2026
+    quote: '**Release Date:** March 4, 2026  '
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: microsoft/Phi-4-reasoning
+    quote: card:base_model = "microsoft/Phi-4-reasoning"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card_metadata
+  - fact_id: base_model
+    status: prose_adds
+    value: Built on the Phi-4-Reasoning language model backbone (Phi-4-Reasoning listed as model dependency)
+      and the SigLIP-2 vision encoder
+    quote: 'Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the
+      Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.
+      [...] **Model Dependencies:** [Phi-4-Reasoning](https://huggingface.co/microsoft/Phi-4-reasoning)  '
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+  - fact_id: base_model_relation
+    status: prose_adds
+    value: Built on the Phi-4-Reasoning language model backbone plus the SigLIP-2 vision encoder (mid-fusion),
+      and trained with Supervised Fine-Tuning (SFT); i.e. a fine-tuning-based derivation.
+    quote: Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the
+      Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.
+      [...] Phi-4-Reasoning-Vision-15B is trained with Supervised Fine-Tuning (SFT) on a carefully curated
+      mixture of reasoning and non-reasoning data.
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: 'Mid-fusion multimodal architecture: Phi-4-Reasoning language model backbone with a SigLIP-2
+      vision encoder, whose visual tokens are projected into the language model''s embedding space'
+    quote: Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the
+      Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.
+      [...] In this architecture, the vision encoder first converts images into visual tokens, which are
+      then projected into the language model's embedding space and injected into the pretrained language
+      model.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Mid-fusion architecture built on the Phi-4-Reasoning language model backbone and SigLIP-2 vision
+      encoder; the vision encoder converts images into visual tokens, which are projected into the language
+      model's embedding space and injected into the pretrained language model, leveraging both pretrained
+      components while keeping training and inference costs manageable. Dynamic resolution vision encoder
+      with up to 3,600 visual tokens for high-resolution understanding (GUI grounding, fine-grained document
+      analysis). Bidirectional attention is applied within images (intra-image) to improve spatial reasoning
+      without the overfitting risks of broader bidirectional schemes. 15B parameters.
+    quote: 'Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the
+      Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.
+      [...] In this architecture, the vision encoder first converts images into visual tokens, which are
+      then projected into the language model''s embedding space and injected into the pretrained language
+      model. This approach leverages the strengths of both pretrained components while keeping training
+      and inference costs manageable. [...] The model employs a dynamic resolution vision encoder with
+      up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such
+      as GUI grounding and fine-grained document analysis. [...] Bidirectional attention is applied within
+      images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader
+      bidirectional schemes. [...] **Parameters:** 15B  '
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text, image
+    quote: derived:pipeline_input_modalities = ["text", "image"]
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '32768'
+    quote: config:max_position_embeddings = 32768
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json
+    source_type: repo_config
+  - fact_id: max_input_size
+    status: prose_conflicts
+    value: Context length of 16,384 tokens
+    quote: '**Context Length:** 16,384 tokens  '
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '15119518144'
+    quote: api:safetensors.total = 15119518144
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '15119518144'
+    quote: api:safetensors.total = 15119518144
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based
+      access through Azure AI Foundry
+    quote: 'Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B)
+      [...] Public access through open-source code repositories: [GitHub](https://github.com/microsoft/Phi-4-vision)
+      [...] Enterprise or subscription-based access through [Azure AI Foundry](https://ai.azure.com)'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B
+    quote: derived:hub_url = "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based
+      access through Azure AI Foundry
+    quote: 'Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B)
+      [...] Public access through open-source code repositories: [GitHub](https://github.com/microsoft/Phi-4-vision)
+      [...] Enterprise or subscription-based access through [Azure AI Foundry](https://ai.azure.com)'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: mit
+    quote: card:license = "mit"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: mit
+    quote: card:license = "mit"
+    source_url: https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Code is on GitHub (microsoft/phi-4-reasoning-vision-15B); a data card describing the training
+      data is available; evaluation logs will be released publicly; a technical report is available.
+    quote: '[Github](https://github.com/microsoft/phi-4-reasoning-vision-15B)<br> [...] To learn more
+      about the training data used for Phi-4-Reasoning-Vision-15B please refer to the full data card:
+      https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md. [...] Evaluation
+      logs will be released publicly. [...] [Technical Report](https://aka.ms/Phi-4-reasoning-vision-15B-TR)<br>'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: acceptable_use_policy
+    status: prose
+    value: 'Card gives use restrictions: not suitable for medical diagnoses, legal advice, or financial
+      planning; should not be used for consequential decisions on legal status or allocation of resources/life
+      opportunities without further assessment and debiasing; developers must adhere to applicable laws
+      and regulations. No separate acceptable use policy link.'
+    quote: The model should not be used in scenarios that could have consequential impact on legal status
+      or the allocation of resources or life opportunities (e.g., housing, employment, credit) without
+      further assessments and additional debiasing techniques. It is not suitable for providing medical
+      diagnoses, legal advice, or financial planning. Developers should be aware of and adhere to applicable
+      laws or regulations (including privacy, trade compliance laws, etc.) that are relevant to their
+      use case.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: General-purpose multimodal AI systems and applications requiring vision-language understanding
+      with selective reasoning, particularly in memory- or compute-constrained environments; primary domains
+      are scientific and mathematical reasoning over visual inputs and computer-use agent (CUA) tasks;
+      also general multimodal tasks such as image captioning, visual question answering, optical character
+      recognition, object localization, and grounding.
+    quote: Phi-4-Reasoning-Vision-15B is designed for general-purpose multimodal AI systems and applications
+      that require vision-language understanding with selective reasoning capabilities, particularly in
+      memory- or compute-constrained environments. [...] **Computer-use agent (CUA) tasks:** such as interpreting
+      screen content, localizing interactive GUI elements, and selecting actions within graphical user
+      interfaces. [...] The model is also capable of general multimodal tasks including image captioning,
+      visual question answering, optical character recognition, object localization, and grounding.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: Not specifically designed or evaluated for all downstream purposes, particularly high-risk
+      scenarios. Should not be used in scenarios with consequential impact on legal status or allocation
+      of resources or life opportunities (e.g., housing, employment, credit) without further assessments
+      and additional debiasing techniques. Not suitable for medical diagnoses, legal advice, or financial
+      planning. Languages other than English may have degraded performance.
+    quote: Phi-4-Reasoning-Vision-15B is not specifically designed or evaluated for all downstream purposes.
+      [...] The model is trained primarily on English text and image-text pairs. Languages other than
+      English may experience degraded performance. [...] The model should not be used in scenarios that
+      could have consequential impact on legal status or the allocation of resources or life opportunities
+      (e.g., housing, employment, credit) without further assessments and additional debiasing techniques.
+      [...] It is not suitable for providing medical diagnoses, legal advice, or financial planning.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+  - fact_id: target_systems
+    status: prose
+    value: General-purpose multimodal AI systems and applications requiring vision-language understanding
+      with selective reasoning, particularly in memory- or compute-constrained environments; computer-use
+      agent (CUA) tasks; a building block for generative AI-powered features.
+    quote: Phi-4-Reasoning-Vision-15B is designed for general-purpose multimodal AI systems and applications
+      that require vision-language understanding with selective reasoning capabilities, particularly in
+      memory- or compute-constrained environments. [...] **Computer-use agent (CUA) tasks:** such as interpreting
+      screen content, localizing interactive GUI elements, and selecting actions within graphical user
+      interfaces. [...] making it suitable as a building block for generative AI-powered features across
+      a range of applications.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Use the chat template with the system prompt for inference; force thinking by appending `<think>`
+      or non-thinking by appending `<nothink>` to the generation template. Requires torch >= 2.7.1, transformers
+      >= 4.57.1, and vllm >= 0.15.2 (only if using vLLM). Recommended to host on a vLLM server using bf16
+      precision.
+    quote: 'Given the nature of the training data, always use chat template and system prompt for inference.
+      [...] To force a thinking response, append the `<think>` token to the generation template: [...]
+      To force a non-thinking response, append the `<nothink>` token to the generation template: [...]
+      - `torch >= 2.7.1` [...] - `transformers >= 4.57.1` [...] - `vllm >= 0.15.2` (only required if using
+      vLLM) [...] It is recommended that users host Phi-4-Reasoning-Vision-15B on a vLLM server using
+      bf16 precision.'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers 4.56.1
+    quote: config:transformers_version = "transformers 4.56.1"
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json
+    source_type: repo_config
+  - fact_id: required_software
+    status: prose_conflicts
+    value: torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only required if using vLLM)
+    quote: 'The following software packages are required for running Phi-4-Reasoning-Vision: [...] `torch
+      >= 2.7.1` [...] `transformers >= 4.57.1` [...] `vllm >= 0.15.2` (only required if using vLLM)'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Supervised Fine-Tuning (SFT) on a curated mixture of reasoning and non-reasoning data, built
+      on the Phi-4-Reasoning backbone with the SigLIP-2 vision encoder (mid-fusion); safety alignment
+      also via SFT.
+    quote: Phi-4-Reasoning-Vision-15B is trained with Supervised Fine-Tuning (SFT) on a carefully curated
+      mixture of reasoning and non-reasoning data. [...] Phi-4-Reasoning-Vision-15B is a compact open-weight
+      multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2
+      vision encoder, using a mid-fusion architecture. [...] The safety alignment is achieved through
+      Supervised Fine-Tuning (SFT) using data that includes both helpfulness and harmlessness examples,
+      as well as targeted questions and answers across multiple safety categories.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: Mid-fusion architecture combining the Phi-4-Reasoning backbone and SigLIP-2 vision encoder,
+      chosen to leverage both pretrained components while keeping training and inference costs manageable.
+      A dynamic resolution vision encoder (up to 3,600 visual tokens) enables high-resolution understanding
+      for GUI grounding and document analysis. Bidirectional attention is applied only within images to
+      improve spatial reasoning without the overfitting risks of broader bidirectional schemes. A single
+      model handles both reasoning and non-reasoning modes rather than separate models.
+    quote: This approach leverages the strengths of both pretrained components while keeping training
+      and inference costs manageable. [...] The model employs a dynamic resolution vision encoder with
+      up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such
+      as GUI grounding and fine-grained document analysis. [...] Bidirectional attention is applied within
+      images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader
+      bidirectional schemes. [...] Rather than training separate models for each mode, the model operates
+      as a single system that can invoke extended chain-of-thought reasoning (using `<think>...</think>`
+      blocks) for tasks like mathematical and scientific reasoning, or default to direct inference (tagged
+      with `<nothink>`) for perception-focused tasks such as captioning, object detection, and grounding.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_modality
+    status: prose
+    value: Text and images (English text and image-text pairs; vision-language data)
+    quote: The model is trained primarily on English text and image-text pairs. [...] The training data
+      consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented
+      by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: Primarily filtered and improved open-source vision-language datasets (public), supplemented
+      by domain-specific data from internal Microsoft teams and targeted data acquisitions; safety data
+      is a mix of open-source and in-house generated synthetic datasets.
+    quote: The training data consists primarily of meticulously filtered and improved open-source vision-language
+      datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted
+      data acquisitions. [...] Phi-4-Reasoning-Vision-15B has adopted a safety post-training approach
+      leveraging a combination of open-source and in-house generated synthetic datasets.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: Training data consists primarily of meticulously filtered and improved open-source vision-language
+      datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted
+      data acquisitions. Safety post-training used a combination of open-source and in-house generated
+      synthetic datasets. The card does not state how rights were obtained.
+    quote: The training data consists primarily of meticulously filtered and improved open-source vision-language
+      datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted
+      data acquisitions. [...] Phi-4-Reasoning-Vision-15B has adopted a safety post-training approach
+      leveraging a combination of open-source and in-house generated synthetic datasets.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: Training data is a curated mixture of reasoning and non-reasoning data, primarily filtered
+      and improved open-source vision-language datasets, supplemented by domain-specific data from internal
+      Microsoft teams and targeted data acquisitions. Modalities are text and images; trained primarily
+      on English text and image-text pairs.
+    quote: Phi-4-Reasoning-Vision-15B is trained with Supervised Fine-Tuning (SFT) on a carefully curated
+      mixture of reasoning and non-reasoning data. [...] The training data consists primarily of meticulously
+      filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific
+      data from internal Microsoft teams and targeted data acquisitions. [...] The model is trained primarily
+      on English text and image-text pairs.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_curation
+    status: prose
+    value: Training data consists primarily of meticulously filtered and improved open-source vision-language
+      datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted
+      data acquisitions.
+    quote: The training data consists primarily of meticulously filtered and improved open-source vision-language
+      datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted
+      data acquisitions.
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_bias_measures
+    status: prose
+    value: 'Known biases: model may over- or under-represent groups, erase representation of some groups,
+      or reinforce stereotypes due to differing representation and negative stereotypes in training data
+      reflecting societal biases, despite safety post-training. English language varieties with less representation
+      may perform worse. Training data was meticulously filtered and improved.'
+    quote: '**Representation of Harms & Perpetuation of Stereotypes:** The model may over- or under-represent
+      groups of people, erase representation of some groups, or reinforce demeaning or negative stereotypes.
+      Despite safety post-training, these limitations may still be present due to differing levels of
+      representation of different groups or prevalence of examples of negative stereotypes in training
+      data that reflect real-world patterns and societal biases. [...] English language varieties with
+      less representation in the training data might experience worse performance than standard American
+      English. [...] The training data consists primarily of meticulously filtered and improved open-source
+      vision-language datasets'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: answered
+  answers:
+  - fact_id: training_time
+    status: prose
+    value: 4 days (on 240 B200 GPUs)
+    quote: "**Training GPUs:** 240 B200s  \n**Training Time:** 4 days  "
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_hardware
+    status: prose
+    value: 240 NVIDIA B200 GPUs (trained for 4 days)
+    quote: '**Training GPUs:** 240 B200s   [...] moderate training compute requirements (240 NVIDIA B200
+      GPUs for 4 days)'
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+  - fact_id: training_time
+    status: prose
+    value: 4 days (on 240 B200 GPUs)
+    quote: "**Training GPUs:** 240 B200s  \n**Training Time:** 4 days  "
+    source_url: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md
+    source_type: card
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

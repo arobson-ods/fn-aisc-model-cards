@@ -1,0 +1,11 @@
+{
+ "repo_id": "microsoft/Phi-4-reasoning",
+ "sha": "1de18ec97600877ce63dbf60c73b998da99f0195",
+ "api_url": "https://huggingface.co/api/models/microsoft/Phi-4-reasoning",
+ "retrieved_at": "2026-09-30T10:29:56+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/microsoft/Phi-4-reasoning/raw/1de18ec97600877ce63dbf60c73b998da99f0195/README.md",
+ "config_url": "https://huggingface.co/microsoft/Phi-4-reasoning/raw/1de18ec97600877ce63dbf60c73b998da99f0195/config.json"
+}

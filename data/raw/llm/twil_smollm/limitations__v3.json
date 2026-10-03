@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "limitations",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Limitations stated: 4.4% of Track A generations hit the 2048-token cap (above the 2% rankable threshold), so the Track A macro gate is indicative rather than exact. It is tuned for formal logic only, and code generation and tool use were not evaluated. It is not a chat model: it has no safety tuning beyond what the base carries, no instruction-following alignment work, and IFEval regressed slightly. A short generation budget truncates the <think> reasoning and scores far worse.",
+  "quotes": [
+   "**Truncation.** At a 2048-token budget, 4.4% of Track A generations hit the cap — better than\nthe base's 17.4%, but still above the 2% threshold our protocol requires to mark a comparison\n`rankable`. The Track A macro gate should therefore be read as indicative rather than exact.",
+   "**Scope.** Tuned for formal logic. The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those.",
+   "**Not a chat model.** It was optimised against automatic verifiers on logic tasks. It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly.",
+   "The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse."
+  ],
+  "section": "Limitations and caveats"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 598
+ },
+ "cost_usd_list_price": 0.0102872,
+ "duration_ms": 4201
+}

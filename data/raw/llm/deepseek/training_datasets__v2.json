@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "training_datasets",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: training_datasets\nWhat to find: Named training datasets (names or identifiers).\nCard sections that often contain it: Training Data, Datasets\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card names no specific training datasets. It only describes the pre-training corpus generically as a multimodal corpus of 45T tokens.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7658,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 160
+ },
+ "cost_usd_list_price": 0.032236,
+ "duration_ms": 2327
+}

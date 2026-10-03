@@ -1,0 +1,11 @@
+{
+ "repo_id": "allenai/Molmo2-8B",
+ "sha": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+ "api_url": "https://huggingface.co/api/models/allenai/Molmo2-8B",
+ "retrieved_at": "2026-09-30T10:17:04+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md",
+ "config_url": "https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/config.json"
+}

@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "data_modality",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: data_modality\nWhat to find: Modalities of the training data (text, images, audio, video, other).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 532,
+  "cache_read_input_tokens": 18018,
+  "output_tokens": 168
+ },
+ "cost_usd_list_price": 0.0074156,
+ "duration_ms": 2201
+}

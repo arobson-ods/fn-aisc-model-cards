@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "acceptable_use_policy",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: acceptable_use_policy\nWhat to find: Acceptable use policy or use restrictions that apply to the model (link or text).\nCard sections that often contain it: Acceptable Use, License, Use Policy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use restrictions are stated in the Out-of-scope list: use that violates applicable laws or regulations (including trade compliance laws), use prohibited by the Acceptable Use Policy and Llama 4 Community License, and use in languages or capabilities beyond those explicitly referenced as supported. The card names the Acceptable Use Policy but gives no link to it. It gives the license link: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
+  "quotes": [
+   "Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 4 Community License. Use in languages or capabilities beyond those explicitly referenced as supported in this model card**.",
+   "License: A custom commercial license, the Llama 4 Community License Agreement, is available at: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
+  ],
+  "section": "Intended Use"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9338,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 445
+ },
+ "cost_usd_list_price": 0.041806,
+ "duration_ms": 3083
+}

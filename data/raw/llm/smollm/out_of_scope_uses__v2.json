@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "out_of_scope_uses",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: out_of_scope_uses\nWhat to find: Uses or AI systems the model is not intended or should not be used for.\nCard sections that often contain it: Out-of-Scope Use, Out of Scope, Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not list out-of-scope uses. The Limitations section only says outputs may be inaccurate and that the model should be used as an assistive tool.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 9031,
+  "output_tokens": 165
+ },
+ "cost_usd_list_price": 0.0056842,
+ "duration_ms": 2453
+}

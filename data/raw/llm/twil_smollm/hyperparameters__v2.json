@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "hyperparameters",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: hyperparameters\nWhat to find: Training hyperparameters (learning rate, batch size, optimiser, epochs, sequence length).\nCard sections that often contain it: Training Hyperparameters, Training Procedure\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state training hyperparameters (learning rate, batch size, optimiser, epochs, training sequence length). It gives only the WiSE-FT interpolation λ = 0.25 and the RL checkpoint step 2071, and eval settings.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 558,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 199
+ },
+ "cost_usd_list_price": 0.0063514,
+ "duration_ms": 2214
+}

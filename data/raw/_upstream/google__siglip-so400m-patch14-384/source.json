@@ -1,0 +1,11 @@
+{
+ "repo_id": "google/siglip-so400m-patch14-384",
+ "sha": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3",
+ "api_url": "https://huggingface.co/api/models/google/siglip-so400m-patch14-384",
+ "retrieved_at": "2026-09-30T10:17:04+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/google/siglip-so400m-patch14-384/raw/9fdffc58afc957d1a03a25b10dba0329ab15c2a3/README.md",
+ "config_url": "https://huggingface.co/google/siglip-so400m-patch14-384/raw/9fdffc58afc957d1a03a25b10dba0329ab15c2a3/config.json"
+}

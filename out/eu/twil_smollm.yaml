@@ -1,0 +1,776 @@
+model: twil_smollm
+repo_id: webAI-Official/TwIL-LM3
+retrieved_at: '2026-09-30T10:17:06+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: webAI (published under the webAI-Official organisation)
+    quote: model_id = "webAI-Official/TwIL-LM3" [...] Released under the **webAI Non-Commercial License
+      ver. 1.0** — see `LICENSE.md` in this
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: webAI-Official/TwIL-LM3
+    quote: api:id = "webAI-Official/TwIL-LM3"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: e4f94da572d9857a91ca0dca857cebb0cbe6755a
+    quote: api:sha = "e4f94da572d9857a91ca0dca857cebb0cbe6755a"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: e4f94da572d9857a91ca0dca857cebb0cbe6755a
+    quote: api:sha = "e4f94da572d9857a91ca0dca857cebb0cbe6755a"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: HuggingFaceTB/SmolLM3-3B
+    quote: card:base_model = "HuggingFaceTB/SmolLM3-3B"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: adapter
+    quote: derived:base_model_relation_tags = ["adapter"]
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+  - fact_id: base_model_relation
+    status: prose_conflicts
+    value: Fine-tune of SmolLM3-3B via LoRA SFT, checkpoint fusion, WiSE-FT interpolation and GRPO RL;
+      released as a full merged model rather than an adapter
+    quote: 'A 3B reasoning model for **formal logic** tasks, built from
+
+      [`HuggingFaceTB/SmolLM3-3B`](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) through LoRA
+
+      supervised fine-tuning, checkpoint fusion, WiSE-FT weight interpolation, and entropy-weighted
+
+      GRPO reinforcement learning. [...] Both repositories now ship full
+
+      merged models on `main`, loaded directly with `AutoModelForCausalLM`; the original LoRA-adapter
+
+      release is archived on that repository''s `TwIL-LM1` branch.'
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: SmolLM3 decoder-only transformer; 36 layers, hidden size 2048
+    quote: '| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                |'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: SmolLM3 decoder-only transformer; 36 layers, hidden size 2048; 3.08B total parameters; 128,256
+      vocabulary; 65,536-token context window. No rationale for the design choices is given.
+    quote: '| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                |
+      [...] | Total parameters          | 3.08B                                                                                       |
+      [...] | Tokenizer vocabulary size | 128,256                                                                                     |
+      [...] | Context window            | 65,536 tokens                                                                               |'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '65536'
+    quote: config:max_position_embeddings = 65536
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/config.json
+    source_type: repo_config
+  - fact_id: max_input_size
+    status: prose_adds
+    value: Context window of 65,536 tokens (inherited from base model; all scores measured within an 8,192-token
+      window)
+    quote: '| Context window            | 65,536 tokens                                                                               |
+      [...] The base model''s 65,536-token context is carried through unchanged, but every score on this
+      card
+
+      was measured inside an 8,192-token window; longer contexts are inherited rather than validated
+
+      here.'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/config.json
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '3075098624'
+    quote: api:safetensors.total = 3075098624
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '3075098624'
+    quote: api:safetensors.total = 3075098624
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K
+      / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released.
+    quote: 'Quantized GGUF builds ship in this repository alongside the safetensors weights. [...] Checkpoint
+      precision      | bfloat16 (5.73 GiB), plus Q4\_K\_M / Q5\_K\_M / Q6\_K / Q8\_0 / F16 GGUF builds
+      [...] **The weights will be released soon** — the
+
+      files in this repository are the current TwIL-LM3 release, not this one.'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/webAI-Official/TwIL-LM3
+    quote: derived:hub_url = "https://huggingface.co/webAI-Official/TwIL-LM3"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K
+      / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released.
+    quote: 'Quantized GGUF builds ship in this repository alongside the safetensors weights. [...] Checkpoint
+      precision      | bfloat16 (5.73 GiB), plus Q4\_K\_M / Q5\_K\_M / Q6\_K / Q8\_0 / F16 GGUF builds
+      [...] **The weights will be released soon** — the
+
+      files in this repository are the current TwIL-LM3 release, not this one.'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: webai-non-commercial-license-ver.-1.0 (other)
+    quote: card:license = "webai-non-commercial-license-ver.-1.0 (other)"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B
+      is Apache 2.0
+    quote: '| License                   | webAI Non-Commercial License ver. 1.0                                                       |
+      [...] Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this
+
+      repository. [...] is Apache 2.0; its licence text is retained as `apache-2.0-LICENSE.txt` and all
+      credit for the
+
+      base model goes to the HuggingFaceTB team.'
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: webai-non-commercial-license-ver.-1.0 (other)
+    quote: card:license = "webai-non-commercial-license-ver.-1.0 (other)"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B
+      is Apache 2.0
+    quote: '| License                   | webAI Non-Commercial License ver. 1.0                                                       |
+      [...] Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this
+
+      repository. [...] is Apache 2.0; its licence text is retained as `apache-2.0-LICENSE.txt` and all
+      credit for the
+
+      base model goes to the HuggingFaceTB team.'
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Quantized GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) ship in the same repository alongside
+      the safetensors weights; the TwIL-LM3* weights are unreleased ("will be released soon").
+    quote: Quantized GGUF builds ship in this repository alongside the safetensors weights. [...] **TwIL-LM3\***
+      is our latest version of TwIL-LM3. **The weights will be released soon** [...] | `TwIL-LM3-Q4_K_M.gguf`
+      | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or 4 GB of VRAM |
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: 'A 3B reasoning model for formal logic tasks: FOL translation, entailment labels, semantic
+      parses, Lean formalisation and Lean proof critique. It is not a general assistant or chat model.'
+    quote: "A 3B reasoning model for **formal logic** tasks, built from [...] Tuned for the objects rather\
+      \ than the prose: FOL translation,\n  entailment labels, semantic parses, Lean statements and Lean\
+      \ proof critique. [...] It is not a general assistant: there is no safety or preference tuning here\
+      \ beyond what SmolLM3\ncarries, and instruction following regressed slightly."
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: Not a general assistant or chat model; it is tuned for formal logic only. It has no safety
+      tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly).
+      No claim is made about code generation or tool use.
+    quote: 'It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3
+
+      carries, and instruction following regressed slightly. [...] **Not a chat model.** It was optimised
+      against automatic verifiers on logic tasks. It has had no
+
+      safety tuning beyond whatever the base model carries, and no instruction-following alignment
+
+      work — IFEval regressed slightly. [...] **Scope.** Tuned for formal logic. The Track B suite does
+      not cover code generation or tool use
+
+      (HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release
+
+      makes no claim about those.'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, bf16);
+      GGUF builds for llama.cpp (llama-cli); evaluated via vLLM backend; model emits a <think>…</think>
+      block before the answer; greedy decoding (do_sample=False) with ≥2048 new tokens recommended
+    quote: "model = AutoModelForCausalLM.from_pretrained(\n    model_id, torch_dtype=torch.bfloat16, device_map=\"\
+      auto\"\n) [...] inputs = tok.apply_chat_template( [...] Quantized GGUF builds ship in this repository\
+      \ alongside the safetensors weights. The `smollm3`\narchitecture is supported by llama.cpp, and\
+      \ the chat template, `<|im_end|>` EOS and BOS are\ncarried into the GGUF metadata, so chat mode\
+      \ works without extra flags. [...] llama-cli -m TwIL-LM3-Q4_K_M.gguf -cnv --temp 0 -n 2048 [...]\
+      \ The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation\
+      \ budget truncates reasoning and scores far worse. [...] The published Track A and Track B numbers\
+      \ were measured on the **bf16** weights through vLLM"
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_hardware
+    status: prose
+    value: Q4_K_M GGUF build (1.78 GiB) runs on CPU or 4 GB of VRAM
+    quote: '| `TwIL-LM3-Q4_K_M.gguf` | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or
+      4 GB of VRAM |'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: Hugging Face transformers (works on both 4.x and 5.x); llama.cpp is also supported for the
+      GGUF builds.
+    quote: '`return_dict=True` matters on transformers 5.x, where `apply_chat_template` returns a [...]
+      `BatchEncoding` rather than a bare tensor; the above works on both 4.x and 5.x. [...] architecture
+      is supported by llama.cpp, and the chat template, `<|im_end|>` EOS and BOS are'
+    source_url: https://huggingface.co/api/models/webAI-Official/TwIL-LM3
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: 'Four post-training stages on top of SmolLM3-3B: LoRA supervised fine-tuning on a synthetic
+      formal-logic corpus, checkpoint fusion (parameter-space averaging of intermediate SFT checkpoints),
+      WiSE-FT interpolation toward the base with λ = 0.25, and MGPO (entropy-weighted GRPO reinforcement
+      learning against a programmatic verifier), published checkpoint step 2071.'
+    quote: 'Four stages on top of the base model: [...] 1. **LoRA supervised fine-tuning** on a synthetic
+      formal-logic corpus covering the Track A [...] 2. **Checkpoint fusion** — parameter-space averaging
+      of intermediate SFT checkpoints selected [...] 3. **WiSE-FT interpolation** toward the pretrained
+      base, `W = (1 − λ)·W_base + λ·W_finetuned` [...] 4. **MGPO** — entropy-weighted GRPO reinforcement
+      learning against a programmatic verifier, with [...] partial credit for loose matches and token-F1
+      so that all-fail prompt groups still produce'
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: WiSE-FT interpolation toward the base with λ = 0.25 (only a quarter of the fine-tuned delta
+      retained), chosen by constrained optimisation (maximise in-domain score subject to minimal held-out
+      degradation) so held-out capability survives. Checkpoint fusion averaged intermediate SFT checkpoints
+      selected by a diversity probe rather than the final checkpoint. MGPO (entropy-weighted GRPO) used
+      partial credit for loose matches and token-F1 so all-fail prompt groups still produce gradient.
+      A sibling arm without the conservative interpolation scored higher in-domain but lost about twelve
+      points of held-out capability; this release is the balanced point of that trade.
+    quote: "parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe,\
+      \ rather than taking the final checkpoint. [...] with **λ = 0.25** — i.e. only a quarter of the\
+      \ fine-tuned delta is retained. λ was chosen by\n   constrained optimisation: maximise in-domain\
+      \ score subject to minimal degradation on held-out\n   benchmarks. This conservative λ is the direct\
+      \ reason held-out capability survives. [...] with\n   partial credit for loose matches and token-F1\
+      \ so that all-fail prompt groups still produce\n   gradient. [...] A sibling arm that skipped stage\
+      \ 3's conservative interpolation scores considerably higher\nin-domain (macro gate 0.515) but gives\
+      \ back roughly twelve points of held-out capability. This\nrelease is the balanced point of that\
+      \ trade; the other was not published."
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: 'Synthetic: LoRA SFT was done on a synthetic formal-logic corpus covering the Track A objectives.'
+    quote: "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n\
+      \   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n  \
+      \ formalisation and critique, procedural reasoning, rule induction)."
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: LoRA supervised fine-tuning used a synthetic formal-logic corpus covering the Track A objectives
+      (first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique,
+      procedural reasoning, rule induction). The RL stage (MGPO) used a programmatic verifier. The card
+      does not state how rights were obtained.
+    quote: "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n\
+      \   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n  \
+      \ formalisation and critique, procedural reasoning, rule induction). [...] 4. **MGPO** — entropy-weighted\
+      \ GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose\
+      \ matches and token-F1 so that all-fail prompt groups still produce\n   gradient."
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: 'LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic
+      translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural
+      reasoning, rule induction.'
+    quote: "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n\
+      \   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n  \
+      \ formalisation and critique, procedural reasoning, rule induction)."
+    source_url: https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

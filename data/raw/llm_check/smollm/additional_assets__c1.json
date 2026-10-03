@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "b00f1561b8f69bbf",
+ "request_user": "Fact definition: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nExtracted value: Pretraining datasets are available in a Hugging Face collection (mid-training and post-training datasets to be uploaded later); training and evaluation configs and code are in the huggingface/smollm GitHub repository; intermediate checkpoints (including mid-training and SFT checkpoints) are at HuggingFaceTB/SmolLM3-3B-checkpoints; quantized checkpoints are in a Hugging Face collection.\nQuotes given as evidence (separated by [...]): The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later  [...] The training and evaluation configs and code can be found in the [huggingface/smollm](https://github.com/huggingface/smollm) repository. [...] The training intermediate checkpoints (including the mid-training and SFT checkpoints) are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints) [...] You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes back up every claim in the value. The card says the pretraining datasets are in a Hugging Face collection and the mid-training and post-training datasets \"will be uploaded later\". It says the training and evaluation configs and code are in the huggingface/smollm repo. It says the intermediate checkpoints, including mid-training and SFT checkpoints, are at HuggingFaceTB/SmolLM3-3B-checkpoints. It also points to a collection of quantized checkpoints. All of these quotes describe SmolLM3, and together they answer what assets were released and where to find them."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1085,
+  "cache_read_input_tokens": 8726,
+  "output_tokens": 332
+ },
+ "cost_usd_list_price": 0.0170732,
+ "duration_ms": 6072
+}

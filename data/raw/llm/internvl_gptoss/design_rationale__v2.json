@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "design_rationale",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Cascade RL combines offline RL (MPO) as an efficient warm-up to reach satisfactory results and guarantee high-quality rollouts, then online RL (GSPO) to refine the output distribution using the model's own rollouts, giving significant gains at a fraction of the GPU time cost. GSPO was chosen without reference model constraints because it was found more effective for training both dense and MoE models. NTP loss is re-weighted by square averaging to mitigate bias toward longer or shorter responses. Reasoning data in Thinking mode is included to instill long-thinking capabilities, with incorrect-answer rollouts filtered out.",
+  "quotes": [
+   "Specifically, we first fine-tune the model using an offline RL algorithm as an efficient warm-up stage to reach a satisfied results, which can guarantee the high-quality rollouts for the latter stage.",
+   "Compared to the single offline or online RL stage, our cascaded RL achieves significant performance improvements at a fraction of the GPU time cost.",
+   "During the online RL stage, we employ GSPO, without reference model constraints, as our online RL algorithm, which we find more effective in training both dense and mixture-of-experts (MoE) models.",
+   "Additionally, to mitigate bias toward either longer or shorter responses during training, we adopt the square averaging to re-weight the NTP loss  as follows:",
+   "(2) Multimodal reasoning data in the \"Thinking\" mode, which are included to instill long-thinking capabilities in the model."
+  ],
+  "section": "Cascade Reinforcement Learning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 19261,
+  "output_tokens": 616
+ },
+ "cost_usd_list_price": 0.0121202,
+ "duration_ms": 5043
+}

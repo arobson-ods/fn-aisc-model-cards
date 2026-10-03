@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "eval_results",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Olmo 3.1 32B Instruct scores: MATH 93.4, AIME 2024 67.8, AIME 2025 57.9, OMEGA 42.2, BigBenchHard 84.0, ZebraLogic 61.7, AGI Eval English 79.5, HumanEvalPlus 86.7, MBPP+ 65.1, LiveCodeBench v3 54.7, IFEval 88.8, IFBench 39.7, MMLU 80.9, PopQA 25.0, GPQA 48.6, AlpacaEval 2 LC 59.8, Safety 89.5 (the card compares these with SFT, DPO and other models' scores, and gives no metric names beyond the benchmark names)",
+  "quotes": [
+   "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 |",
+   "| AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 |",
+   "| AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 |",
+   "| IFEval | 87.7 | 87.3 | 88.8 | 70.4 | 87.5 | 88.1 | 81.9 | 85.4 | 62.1 | 85.8 |",
+   "| **Safety** | 92.1 | 88.9 | 89.5 | 77.1 | 81.6 | 85.8 | 82.2 | 68.8 | 74.4 | 84.2 |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 6581,
+  "output_tokens": 708
+ },
+ "cost_usd_list_price": 0.010576200000000001,
+ "duration_ms": 4601
+}

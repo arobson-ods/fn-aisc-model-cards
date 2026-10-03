@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "additional_assets",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card links to a Hugging Face collection of Gemma 4 models, a GitHub organization (google-gemma), documentation, and a technical report on arXiv. It states that the release includes open-weights models in both pre-trained and instruction-tuned variants (base model google/gemma-4-31B). No training data or training code is stated as released.",
+  "quotes": [
+   "<a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> |",
+   "<a href=\"https://github.com/google-gemma\" target=\"_blank\">GitHub</a> |",
+   "<a href=\"https://arxiv.org/abs/2607.02770\" target=\"_blank\">Technical Report</a>",
+   "This release includes open-weights models in both pre-trained and instruction-tuned variants."
+  ],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11571,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 380
+ },
+ "cost_usd_list_price": 0.050195,
+ "duration_ms": 3303
+}

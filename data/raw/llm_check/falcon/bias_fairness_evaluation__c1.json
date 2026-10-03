@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "6d6d8fd34dca684c",
+ "request_user": "Fact definition: Bias or fairness evaluation of the model's outputs and its results.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card doesn't mention any bias or fairness evaluation. Its evaluation sections only report benchmark scores for math (AIME24/25, HMMT25, AMO-BENCH, MATH500), code (LCBv5-v6, SciCode), general knowledge (GPQA-D, MMLU-Pro, HLE, IFBench), agentic tasks (τ²-Bench Telecom, Terminal-Bench Hard) and test-time scaling results. None of these is a bias or fairness assessment, and the card has no discussion of bias, fairness or safety. The extractor is correct."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 572,
+  "cache_read_input_tokens": 6115,
+  "output_tokens": 269
+ },
+ "cost_usd_list_price": 0.011186999999999999,
+ "duration_ms": 7199
+}

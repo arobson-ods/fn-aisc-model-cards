@@ -1,0 +1,1198 @@
+[
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/provider_name__v3.json",
+  "status": "prose",
+  "value": "Google DeepMind",
+  "quote": "Gemma is a family of open models built by Google DeepMind.",
+  "quotes": [
+   "Gemma is a family of open models built by Google DeepMind."
+  ],
+  "section": "",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "google/gemma-4-31B-it",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "api:id = \"google/gemma-4-31B-it\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "google/gemma-4-31B-it",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "api:sha = \"842da3794eaa0b77d5f08bae87a17459d91ff475\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "api:sha = \"842da3794eaa0b77d5f08bae87a17459d91ff475\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/eu_release_date__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "card:license_link",
+    "value": "https://ai.google.dev/gemma/docs/gemma_4_license",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/acceptable_use_policy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/additional_assets__v3.json",
+  "status": "prose",
+  "value": "The card releases open-weights models in both pre-trained and instruction-tuned variants; the base model google/gemma-4-31B is listed. The card also links a Hugging Face collection, GitHub (google-gemma), documentation and a technical report. Training data and training code are not stated as released.",
+  "quote": "This release includes open-weights models in both pre-trained and instruction-tuned variants. [...] <a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> | [...] <a href=\"https://github.com/google-gemma\" target=\"_blank\">GitHub</a> | [...] <a href=\"https://arxiv.org/abs/2607.02770\" target=\"_blank\">Technical Report</a>",
+  "quotes": [
+   "This release includes open-weights models in both pre-trained and instruction-tuned variants.",
+   "<a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> |",
+   "<a href=\"https://github.com/google-gemma\" target=\"_blank\">GitHub</a> |",
+   "<a href=\"https://arxiv.org/abs/2607.02770\" target=\"_blank\">Technical Report</a>"
+  ],
+  "section": "",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/architecture_family__v3.json",
+  "status": "prose",
+  "value": "Dense architecture (31B Dense) with a hybrid attention mechanism interleaving local sliding window attention with full global attention; the Gemma 4 family includes both Dense and Mixture-of-Experts variants.",
+  "quote": "Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. [...] The models employ a hybrid attention mechanism that interleaves local sliding window attention with full global attention, ensuring the final layer is always global. [...] | Property | E2B | E4B | 12B Unified | 31B Dense |",
+  "quotes": [
+   "Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning.",
+   "The models employ a hybrid attention mechanism that interleaves local sliding window attention with full global attention, ensuring the final layer is always global.",
+   "| Property | E2B | E4B | 12B Unified | 31B Dense |"
+  ],
+  "section": "Models Overview",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/architecture_details__v3.json",
+  "status": "prose",
+  "value": "31B Dense model: 30.7B total parameters, 60 layers, 1024-token sliding window, 256K context, 262K vocabulary. It uses a hybrid attention mechanism interleaving local sliding window attention with full global attention (final layer always global), to deliver the speed and low memory footprint of a lightweight model without sacrificing deep awareness for complex long-context tasks. Global layers use unified Keys and Values and Proportional RoPE (p-RoPE) to optimize memory for long contexts.",
+  "quote": "The models employ a hybrid attention mechanism that interleaves local sliding window attention with full global attention, ensuring the final layer is always global. This hybrid design delivers the processing speed and low memory footprint of a lightweight model without sacrificing the deep awareness required for complex, long-context tasks. To optimize memory for long contexts, global layers feature unified Keys and Values, and apply Proportional RoPE (p-RoPE).  [...] | **Total Parameters** | 2.3B effective <br> (5.1B with embeddings) | 4.5B effective <br> (8B with embeddings) | 11.95B | 30.7B | [...] | **Layers** | 35 | 42 | 48 | 60 | [...] | **Sliding Window** | 512 tokens | 512 tokens | 1024 tokens | 1024 tokens | [...] | **Context Length** | 128K tokens | 128K tokens | 256K tokens  | 256K tokens  | [...] | **Vocabulary Size** | 262K | 262K | 262K | 262K |",
+  "quotes": [
+   "The models employ a hybrid attention mechanism that interleaves local sliding window attention with full global attention, ensuring the final layer is always global. This hybrid design delivers the processing speed and low memory footprint of a lightweight model without sacrificing the deep awareness required for complex, long-context tasks. To optimize memory for long contexts, global layers feature unified Keys and Values, and apply Proportional RoPE (p-RoPE). ",
+   "| **Total Parameters** | 2.3B effective <br> (5.1B with embeddings) | 4.5B effective <br> (8B with embeddings) | 11.95B | 30.7B |",
+   "| **Layers** | 35 | 42 | 48 | 60 |",
+   "| **Sliding Window** | 512 tokens | 512 tokens | 1024 tokens | 1024 tokens |",
+   "| **Context Length** | 128K tokens | 128K tokens | 256K tokens  | 256K tokens  |",
+   "| **Vocabulary Size** | 262K | 262K | 262K | 262K |"
+  ],
+  "section": "Models Overview",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": 31273088876,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "api:safetensors.total = 31273088876",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 31273088876,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": [
+   "text",
+   "image"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "derived:pipeline_input_modalities = [\"text\", \"image\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text",
+     "image"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": 262144,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+  "quote": "config:text_config.max_position_embeddings = 262144",
+  "section": "config:text_config.max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:text_config.max_position_embeddings",
+    "value": 262144,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/max_output_size__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "image-text-to-text",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "card:pipeline_tag = \"image-text-to-text\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "image-text-to-text",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+  "quote": "config:dtype = \"bfloat16\"",
+  "section": "config:dtype",
+  "evidence": [
+   {
+    "path": "config:dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_datasets__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_modality__v3.json",
+  "status": "prose",
+  "value": "Pre-training data includes web documents, code, images, and audio (also mathematics text); text, images and audio are covered. Video is not listed as a training data modality.",
+  "quote": "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025. [...] **Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries.",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+   "**Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+  ],
+  "section": "Training Dataset",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_provenance__v3.json",
+  "status": "prose",
+  "value": "Pre-training data is a large-scale, diverse collection including web documents (web text in over 140 languages), code, mathematics, images and audio, with a cutoff date of January 2025. The card does not state licensed/private, user data, or synthetic sources.",
+  "quote": "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025. [...] **Web Documents**: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages. [...] **Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries.",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+   "**Web Documents**: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages.",
+   "**Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+  ],
+  "section": "Training Dataset",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_acquisition__v3.json",
+  "status": "prose",
+  "value": "The pre-training dataset is a large-scale, diverse collection of web documents, code, mathematics, images and audio, with a cutoff date of January 2025; web text covers over 140 languages. Data was filtered for CSAM, certain personal/sensitive information, and content quality and safety. The card does not describe annotation, synthetic-data generation or how rights were obtained.",
+  "quote": "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025. [...] **Web Documents**: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages. [...] **Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets. [...] **Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf).",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+   "**Web Documents**: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages.",
+   "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.",
+   "**Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf)."
+  ],
+  "section": "Training Dataset",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_data_size__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_scope__v3.json",
+  "status": "prose",
+  "value": "Large-scale, diverse pre-training dataset spanning many domains and modalities: web documents, code, mathematics, images, and audio, with a cutoff date of January 2025. Web content covers over 140 languages.",
+  "quote": "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025. [...] The training dataset includes content in over 140 languages. [...] **Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries.",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+   "The training dataset includes content in over 140 languages.",
+   "**Mathematics**: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+  ],
+  "section": "Training Dataset",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/knowledge_cutoff__v3.json",
+  "status": "prose",
+  "value": "January 2025 (cutoff date of the pre-training dataset)",
+  "quote": "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025.",
+  "quotes": [
+   "Our pre-training dataset is a large-scale, diverse collection of data encompassing a wide range of domains and modalities, which includes web documents, code, images, audio, with a cutoff date of January 2025."
+  ],
+  "section": "Training Dataset",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_curation__v3.json",
+  "status": "prose",
+  "value": "Training data was cleaned and filtered with CSAM filtering applied at multiple stages, automated filtering of certain personal information and other sensitive data, and additional filtering based on content quality and safety in line with Google's policies. No deduplication, normalisation or augmentation is stated.",
+  "quote": "**CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content. [...] **Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets. [...] **Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf).",
+  "quotes": [
+   "**CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content.",
+   "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.",
+   "**Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf)."
+  ],
+  "section": "Data Preprocessing",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/unsuitable_data_measures__v3.json",
+  "status": "prose",
+  "value": "CSAM filtering applied at multiple stages of data preparation; automated techniques used to filter certain personal information and other sensitive data; additional filtering based on content quality and safety in line with Google's policies.",
+  "quote": "**CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content. [...] **Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets. [...] **Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf).",
+  "quotes": [
+   "**CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content.",
+   "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.",
+   "**Additional methods**: Filtering based on content quality and safety in line with [our policies](https://ai.google/static/documents/ai-responsibility-update-published-february-2025.pdf)."
+  ],
+  "section": "Data Preprocessing",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/personal_data__v3.json",
+  "status": "prose",
+  "value": "The card does not say whether the training data contains personal information. It says automated techniques were used to filter out certain personal information and other sensitive data from the training sets, and that the models were trained on data filtered for removal of certain personal information and other sensitive data.",
+  "quote": "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets. [...] **Privacy violations**: Models were trained on data filtered for removal of certain personal information and other sensitive data.",
+  "quotes": [
+   "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.",
+   "**Privacy violations**: Models were trained on data filtered for removal of certain personal information and other sensitive data."
+  ],
+  "section": "Data Preprocessing",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/data_bias_measures__v3.json",
+  "status": "prose",
+  "value": "The card acknowledges that VLMs trained on large-scale real-world text and image data can reflect socio-cultural biases. Mitigation: careful scrutiny, input data pre-processing, and post-training evaluations. It also notes that biases or gaps in training data can limit responses, and encourages continuous monitoring (evaluation metrics, human review) and exploration of de-biasing techniques.",
+  "quote": "VLMs trained on large-scale, real-world text and image data can reflect socio-cultural biases embedded in the training material. Gemma 4 models underwent careful scrutiny, input data pre-processing, and post-training evaluations as reported in this card to help mitigate the risk of these biases. [...] Biases or gaps in the training data can lead to limitations in the model's responses. [...] **Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases.",
+  "quotes": [
+   "VLMs trained on large-scale, real-world text and image data can reflect socio-cultural biases embedded in the training material. Gemma 4 models underwent careful scrutiny, input data pre-processing, and post-training evaluations as reported in this card to help mitigate the risk of these biases.",
+   "Biases or gaps in the training data can lead to limitations in the model's responses.",
+   "**Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases."
+  ],
+  "section": "Ethical Considerations and Risks",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_method__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/design_rationale__v3.json",
+  "status": "prose",
+  "value": "The card gives rationale for some design choices. Hybrid attention (local sliding window interleaved with global attention) gives the speed and low memory footprint of a lightweight model without losing awareness for long-context tasks. Global layers use unified Keys and Values and p-RoPE to optimize memory for long contexts. Training data includes code so the model learns programming syntax and patterns, and includes mathematical text to help it learn logical reasoning.",
+  "quote": "This hybrid design delivers the processing speed and low memory footprint of a lightweight model without sacrificing the deep awareness required for complex, long-context tasks. [...] To optimize memory for long contexts, global layers feature unified Keys and Values, and apply Proportional RoPE (p-RoPE). [...] Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code and understand code-related questions. [...] Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries.",
+  "quotes": [
+   "This hybrid design delivers the processing speed and low memory footprint of a lightweight model without sacrificing the deep awareness required for complex, long-context tasks.",
+   "To optimize memory for long contexts, global layers feature unified Keys and Values, and apply Proportional RoPE (p-RoPE).",
+   "Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code and understand code-related questions.",
+   "Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+  ],
+  "section": "Models Overview",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/hyperparameters__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_hardware__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_time__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/compute_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/training_energy__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/energy_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/carbon_emissions__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/inference_compute__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/intended_uses__v3.json",
+  "status": "prose",
+  "value": "Intended uses include content creation and communication (text generation, chatbots and conversational AI, text summarization, image data extraction, audio processing and interaction for E2B, E4B, and 12B models) and research and education (NLP and VLM research, language learning tools, knowledge exploration). The card says the list is not comprehensive.",
+  "quote": "The following list of potential uses is not comprehensive. [...] **Text Generation**: These models can be used to generate creative text formats such as poems, scripts, code, marketing copy, and email drafts. [...] **Chatbots and Conversational AI**: Power conversational interfaces for customer service, virtual assistants, or interactive applications. [...] **Text Summarization**: Generate concise summaries of a text corpus, research papers, or reports. [...] **Image Data Extraction**: These models can be used to extract, interpret, and summarize visual data for text communications. [...] **Audio Processing and Interaction**: The E2B, E4B, and 12B models can analyze and interpret audio inputs, enabling voice-driven interactions and transcriptions. [...] **Natural Language Processing (NLP) and VLM Research**: These models can serve as a foundation for researchers to experiment with VLM and NLP techniques, develop algorithms, and contribute to the advancement of the field. [...] **Language Learning Tools**: Support interactive language learning experiences, aiding in grammar correction or providing writing practice.",
+  "quotes": [
+   "The following list of potential uses is not comprehensive.",
+   "**Text Generation**: These models can be used to generate creative text formats such as poems, scripts, code, marketing copy, and email drafts.",
+   "**Chatbots and Conversational AI**: Power conversational interfaces for customer service, virtual assistants, or interactive applications.",
+   "**Text Summarization**: Generate concise summaries of a text corpus, research papers, or reports.",
+   "**Image Data Extraction**: These models can be used to extract, interpret, and summarize visual data for text communications.",
+   "**Audio Processing and Interaction**: The E2B, E4B, and 12B models can analyze and interpret audio inputs, enabling voice-driven interactions and transcriptions.",
+   "**Natural Language Processing (NLP) and VLM Research**: These models can serve as a foundation for researchers to experiment with VLM and NLP techniques, develop algorithms, and contribute to the advancement of the field.",
+   "**Language Learning Tools**: Support interactive language learning experiences, aiding in grammar correction or providing writing practice."
+  ],
+  "section": "Intended Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/out_of_scope_uses__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/target_systems__v3.json",
+  "status": "prose",
+  "value": "Can be integrated into chatbots/conversational AI (customer service, virtual assistants, interactive applications), agentic workflows/autonomous agents via native function calling, and text generation, summarization, and image data extraction applications.",
+  "quote": "**Chatbots and Conversational AI**: Power conversational interfaces for customer service, virtual assistants, or interactive applications. [...] **Function Calling** – Native support for structured tool use, enabling agentic workflows. [...] **Enhanced Coding & Agentic Capabilities** – Achieves notable improvements in coding benchmarks alongside native function-calling support, powering highly capable autonomous agents. [...] **Text Summarization**: Generate concise summaries of a text corpus, research papers, or reports.",
+  "quotes": [
+   "**Chatbots and Conversational AI**: Power conversational interfaces for customer service, virtual assistants, or interactive applications.",
+   "**Function Calling** – Native support for structured tool use, enabling agentic workflows.",
+   "**Enhanced Coding & Agentic Capabilities** – Achieves notable improvements in coding benchmarks alongside native function-calling support, powering highly capable autonomous agents.",
+   "**Text Summarization**: Generate concise summaries of a text corpus, research papers, or reports."
+  ],
+  "section": "Intended Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/integration_means__v3.json",
+  "status": "prose",
+  "value": "Use with the latest Transformers library (pip install -U transformers torch accelerate), loading via AutoProcessor and AutoModelForMultimodalLM, with chat template via processor.apply_chat_template using system/user roles; thinking enabled via enable_thinking=True or the <|think|> token at start of system prompt; output parsed with processor.parse_response. Card notes libraries like Transformers and llama.cpp handle the chat template.",
+  "quote": "You can use all Gemma 4 models with the latest version of Transformers. To get started, install the necessary dependencies in your environment: [...] `pip install -U transformers torch accelerate` [...] from transformers import AutoProcessor, AutoModelForMultimodalLM [...] To enable reasoning, set `enable_thinking=True` and the `parse_response` function will take care of parsing the thinking output. [...] **Trigger Thinking:** Thinking is enabled by including the `<|think|>` token at the start of the system prompt. To disable thinking, remove the token. [...] Note that many libraries like Transformers and llama.cpp handle the complexities of the chat template for you.",
+  "quotes": [
+   "You can use all Gemma 4 models with the latest version of Transformers. To get started, install the necessary dependencies in your environment:",
+   "`pip install -U transformers torch accelerate`",
+   "from transformers import AutoProcessor, AutoModelForMultimodalLM",
+   "To enable reasoning, set `enable_thinking=True` and the `parse_response` function will take care of parsing the thinking output.",
+   "**Trigger Thinking:** Thinking is enabled by including the `<|think|>` token at the start of the system prompt. To disable thinking, remove the token.",
+   "Note that many libraries like Transformers and llama.cpp handle the complexities of the chat template for you."
+  ],
+  "section": "Getting Started",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/required_hardware__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 5.5.0.dev0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/limitations__v3.json",
+  "status": "prose",
+  "value": "Limitations: training data quality/diversity and gaps or biases affect responses; open-ended or highly complex tasks may be challenging; performance is influenced by amount of context; may struggle with subtle nuances, sarcasm, or figurative language; may generate incorrect or outdated factual statements; may lack common sense reasoning in certain situations. Risks: generation of harmful content, misuse for malicious purposes, privacy violations, perpetuation of biases.",
+  "quote": "The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses. [...] Models perform well on tasks that can be framed with clear prompts and instructions. Open-ended or highly complex tasks might be challenging. [...] A model's performance can be influenced by the amount of context provided (longer context generally leads to better outputs, up to a certain point). [...] Models might struggle to grasp subtle nuances, sarcasm, or figurative language. [...] They may generate incorrect or outdated factual statements. [...] They might lack the ability to apply common sense reasoning in certain situations. [...] **Generation of harmful content**: Mechanisms and guidelines for content safety are essential. [...] **Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases.",
+  "quotes": [
+   "The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses.",
+   "Models perform well on tasks that can be framed with clear prompts and instructions. Open-ended or highly complex tasks might be challenging.",
+   "A model's performance can be influenced by the amount of context provided (longer context generally leads to better outputs, up to a certain point).",
+   "Models might struggle to grasp subtle nuances, sarcasm, or figurative language.",
+   "They may generate incorrect or outdated factual statements.",
+   "They might lack the ability to apply common sense reasoning in certain situations.",
+   "**Generation of harmful content**: Mechanisms and guidelines for content safety are essential.",
+   "**Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases."
+  ],
+  "section": "Usage and Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/languages__v3.json",
+  "status": "prose",
+  "value": "Multilingual support in over 140 languages; out-of-the-box support for 35+ languages, pre-trained on 140+ languages",
+  "quote": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. [...] **Multilingual** – Out-of-the-box support for 35+ languages, pre-trained on 140+ languages.",
+  "quotes": [
+   "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.",
+   "**Multilingual** – Out-of-the-box support for 35+ languages, pre-trained on 140+ languages."
+  ],
+  "section": "Gemma 4 (introduction)",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/eval_results__v3.json",
+  "status": "prose",
+  "value": "Gemma 4 31B (instruction-tuned) scores: MMLU Pro 85.2%; AIME 2026 no tools 89.2%; LiveCodeBench v6 80.0%; Codeforces ELO 2150; GPQA Diamond 84.3%; MMMU Pro 76.9%; MMMLU 88.4%; MRCR v2 8 needle 128k (average) 66.4%",
+  "quote": "| MMLU Pro | 85.2% | 82.6% | 77.2% | 69.4% | 60.0% | 67.6% | [...] | AIME 2026 no tools | 89.2% | 88.3% | 77.5% | 42.5% | 37.5% | 20.8% | [...] | LiveCodeBench v6 | 80.0% | 77.1% | 72.0% | 52.0% | 44.0% | 29.1% | [...] | Codeforces ELO | 2150 | 1718 | 1659 | 940 | 633 | 110 | [...] | GPQA Diamond | 84.3% | 82.3% | 78.8% | 58.6% | 43.4% | 42.4% | [...] | MMMLU | 88.4% | 86.3% | 83.4% | 76.6% | 67.4% | 70.7% | [...] | MMMU Pro | 76.9% | 73.8% | 69.1% | 52.6% | 44.2% | 49.7% | [...] | MRCR v2 8 needle 128k (average) | 66.4% | 44.1%  | 43.4% | 25.4% | 19.1% | 13.5% |",
+  "quotes": [
+   "| MMLU Pro | 85.2% | 82.6% | 77.2% | 69.4% | 60.0% | 67.6% |",
+   "| AIME 2026 no tools | 89.2% | 88.3% | 77.5% | 42.5% | 37.5% | 20.8% |",
+   "| LiveCodeBench v6 | 80.0% | 77.1% | 72.0% | 52.0% | 44.0% | 29.1% |",
+   "| Codeforces ELO | 2150 | 1718 | 1659 | 940 | 633 | 110 |",
+   "| GPQA Diamond | 84.3% | 82.3% | 78.8% | 58.6% | 43.4% | 42.4% |",
+   "| MMMLU | 88.4% | 86.3% | 83.4% | 76.6% | 67.4% | 70.7% |",
+   "| MMMU Pro | 76.9% | 73.8% | 69.1% | 52.6% | 44.2% | 49.7% |",
+   "| MRCR v2 8 needle 128k (average) | 66.4% | 44.1%  | 43.4% | 25.4% | 19.1% | 13.5% |"
+  ],
+  "section": "Benchmark Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/eval_datasets__v3.json",
+  "status": "prose",
+  "value": "Benchmarks include MMLU Pro, AIME 2026 no tools, LiveCodeBench v6, Codeforces ELO, GPQA Diamond, Tau2, HLE, BigBench Extra Hard, MMMLU; vision: MMMU Pro, OmniDocBench 1.5, MATH-Vision, MedXPertQA MM; audio: CoVoST, FLEURS; long context: MRCR v2 8 needle 128k",
+  "quote": "| MMLU Pro | 85.2% | 82.6% | 77.2% | 69.4% | 60.0% | 67.6% | [...] | AIME 2026 no tools | 89.2% | 88.3% | 77.5% | 42.5% | 37.5% | 20.8% | [...] | LiveCodeBench v6 | 80.0% | 77.1% | 72.0% | 52.0% | 44.0% | 29.1% | [...] | Codeforces ELO | 2150 | 1718 | 1659 | 940 | 633 | 110 | [...] | GPQA Diamond | 84.3% | 82.3% | 78.8% | 58.6% | 43.4% | 42.4% | [...] | BigBench Extra Hard | 74.4% | 64.8% | 53.0% | 33.1% | 21.9% | 19.3% | [...] | MMMLU | 88.4% | 86.3% | 83.4% | 76.6% | 67.4% | 70.7% | [...] | MMMU Pro | 76.9% | 73.8% | 69.1% | 52.6% | 44.2% | 49.7% | [...] | MATH-Vision | 85.6% | 82.4% | 79.7% | 59.5% | 52.4% | 46.0% | [...] | MRCR v2 8 needle 128k (average) | 66.4% | 44.1%  | 43.4% | 25.4% | 19.1% | 13.5% |",
+  "quotes": [
+   "| MMLU Pro | 85.2% | 82.6% | 77.2% | 69.4% | 60.0% | 67.6% |",
+   "| AIME 2026 no tools | 89.2% | 88.3% | 77.5% | 42.5% | 37.5% | 20.8% |",
+   "| LiveCodeBench v6 | 80.0% | 77.1% | 72.0% | 52.0% | 44.0% | 29.1% |",
+   "| Codeforces ELO | 2150 | 1718 | 1659 | 940 | 633 | 110 |",
+   "| GPQA Diamond | 84.3% | 82.3% | 78.8% | 58.6% | 43.4% | 42.4% |",
+   "| BigBench Extra Hard | 74.4% | 64.8% | 53.0% | 33.1% | 21.9% | 19.3% |",
+   "| MMMLU | 88.4% | 86.3% | 83.4% | 76.6% | 67.4% | 70.7% |",
+   "| MMMU Pro | 76.9% | 73.8% | 69.1% | 52.6% | 44.2% | 49.7% |",
+   "| MATH-Vision | 85.6% | 82.4% | 79.7% | 59.5% | 52.4% | 46.0% |",
+   "| MRCR v2 8 needle 128k (average) | 66.4% | 44.1%  | 43.4% | 25.4% | 19.1% | 13.5% |"
+  ],
+  "section": "**Benchmark Results**",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/eval_methodology__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/safety_evaluation__v3.json",
+  "status": "rejected_quote",
+  "value": "Gemma 4 models were developed with internal safety and responsible AI teams and underwent automated and human evaluations aligned with Google's AI principles and safety policies. Results: major improvements in all content safety categories relative to previous Gemma models; significantly outperform Gemma 3 and 3n in safety while keeping unjustified refusals low; minimal policy violations for text-to-text and image-to-text across all model sizes. Testing was conducted without safety filters.",
+  "quote": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety. [...] For all areas of safety testing, we saw major improvements in all categories of content safety relative to previous Gemma models. Overall, Gemma 4 models significantly outperform Gemma 3 and 3n in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors. [...] For both text-to-text and image-to-text, and across all model sizes, the model produced minimal policy violations, and showed significant improvements over previous Gemma models' performance.",
+  "quotes": [
+   "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety.",
+   "For all areas of safety testing, we saw major improvements in all categories of content safety relative to previous Gemma models. Overall, Gemma 4 models significantly outperform Gemma 3 and 3n in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors.",
+   "For both text-to-text and image-to-text, and across all model sizes, the model produced minimal policy violations, and showed significant improvements over previous Gemma models' performance."
+  ],
+  "section": "Ethics and Safety",
+  "quote_check": "not_found",
+  "failed_quotes": [
+   "For all areas of safety testing, we saw major improvements in all categories of content safety relative to previous Gemma models. Overall, Gemma 4 models significantly outperform Gemma 3 and 3n in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors."
+  ],
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/bias_fairness_evaluation__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/autonomy__v3.json",
+  "status": "prose",
+  "value": "The card describes native function-calling support that powers highly capable autonomous agents and enables agentic workflows. It does not state a human-in-the-loop oversight requirement.",
+  "quote": "**Enhanced Coding & Agentic Capabilities** – Achieves notable improvements in coding benchmarks alongside native function-calling support, powering highly capable autonomous agents. [...] **Function Calling** – Native support for structured tool use, enabling agentic workflows.",
+  "quotes": [
+   "**Enhanced Coding & Agentic Capabilities** – Achieves notable improvements in coding benchmarks alongside native function-calling support, powering highly capable autonomous agents.",
+   "**Function Calling** – Native support for structured tool use, enabling agentic workflows."
+  ],
+  "section": "",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/explainability__v3.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/standards_compliance__v3.json",
+  "status": "prose",
+  "value": "No formal external standard or regulation (e.g. ISO/IEC 42001, AI Act) is named. The card says safety evaluations align with Google's AI principles and safety policies.",
+  "quote": "These evaluations align with [Google’s AI principles](https://ai.google/principles/), as well as safety policies, which aim to prevent our generative AI models from generating harmful content, including:",
+  "quotes": [
+   "These evaluations align with [Google’s AI principles](https://ai.google/principles/), as well as safety policies, which aim to prevent our generative AI models from generating harmful content, including:"
+  ],
+  "section": "Ethics and Safety",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": [
+   "google/gemma-4-31B"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "card:base_model = [\"google/gemma-4-31B\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "google/gemma-4-31B"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/google/gemma-4-31B-it/raw/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+  "llm_cache": "data/raw/llm/gemma/distribution_channels__v3.json",
+  "status": "prose",
+  "value": "Distributed as open-weights models (pre-trained and instruction-tuned variants), available via Hugging Face (collection) and usable with the Transformers library; GitHub also linked.",
+  "quote": "This release includes open-weights models in both pre-trained and instruction-tuned variants. [...] You can use all Gemma 4 models with the latest version of Transformers. [...] <a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> |",
+  "quotes": [
+   "This release includes open-weights models in both pre-trained and instruction-tuned variants.",
+   "You can use all Gemma 4 models with the latest version of Transformers.",
+   "<a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> |"
+  ],
+  "section": "Model card header",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "gemma",
+  "repo_id": "google/gemma-4-31B-it",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/google/gemma-4-31B-it",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+  "quote": "derived:hub_url = \"https://huggingface.co/google/gemma-4-31B-it\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/google/gemma-4-31B-it",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

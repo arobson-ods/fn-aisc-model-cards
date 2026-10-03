@@ -1,0 +1,11 @@
+{
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "sha": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+ "api_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+ "retrieved_at": "2026-09-30T10:17:01+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+ "config_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json"
+}

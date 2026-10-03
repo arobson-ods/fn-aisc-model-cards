@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "eval_results",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card has a benchmark table with a Qwen3.8-Max column, covering coding agent, general agent and general capability benchmarks (for example GPQA Diamond 92.6). Terminal Bench 2.1 was evaluated with Claude Code (avg@10).",
+  "quotes": [
+   "<td style=\"padding:7px 7px;padding-left:20px;border-bottom:1px solid rgba(128, 128, 128, 0.15);\">GPQA Diamond</td>",
+   "<td style=\"padding:7px 7px;text-align:center;border-bottom:1px solid rgba(128, 128, 128, 0.15);background:rgba(10, 46, 254, 0.08);\">92.6</td>",
+   "2. Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072."
+  ],
+  "section": "Benchmark Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 1227
+ },
+ "cost_usd_list_price": 0.0180912,
+ "duration_ms": 9755
+}

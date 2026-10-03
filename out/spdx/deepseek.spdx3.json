@@ -1,0 +1,219 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:00Z",
+   "createdBy": [
+    "urn:model-cards:deepseek#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:deepseek#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for deepseek (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:deepseek#model"
+   ],
+   "element": [
+    "urn:model-cards:deepseek#agent",
+    "urn:model-cards:deepseek#supplier",
+    "urn:model-cards:deepseek#model",
+    "urn:model-cards:deepseek#training-data",
+    "urn:model-cards:deepseek#rel-4",
+    "urn:model-cards:deepseek#dependency-software",
+    "urn:model-cards:deepseek#rel-6",
+    "urn:model-cards:deepseek#evalset-Base-model-AGIEval-MMLU-Pro-C-Eval-MultiLoKo-SimpleQA-Verified-SuperGPQA-BBH-BBEH-DROP-HellaSwag-BigCodeBench-HumanEval-GSM8K-MATH-MGSM-LongBench-V2-MMMU-Pro-CVBench-DocVQA-RefCOCO-avg.-Instruct-model-GPQA-Diamond-HLE-Codeforces-MathArena-Apex-Terminal-Bench-2.1-3.0-4.0-DeepSWE-v1.1-ProgramBench-NL2Repo-Bench-CyberGym-SEC-Bench-Pro-ExploitGym-AutomationBench-Agent-s-Last-Exam-Chartography-BabyVision-ZeroBench.",
+    "urn:model-cards:deepseek#rel-8",
+    "urn:model-cards:deepseek#licence-ek-model",
+    "urn:model-cards:deepseek#rel-10",
+    "urn:model-cards:deepseek#rel-11"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:deepseek#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:deepseek#supplier",
+   "name": "DeepSeek-AI",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:deepseek#model",
+   "name": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:deepseek#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "dba1be0a40aa45a94ad051997016db3960a90277",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "dba1be0a40aa45a94ad051997016db3960a90277",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Multimodal Mixture-of-Experts (MoE) with a Causal Encoder-Decoder (CED) architecture: a 40-layer Transformer (20-layer causal encoder followed by a 20-layer decoder)"
+   ],
+   "ai_domain": [
+    "image-text-to-text"
+   ],
+   "ai_informationAboutApplication": "Target systems: Agentic workloads/agent systems (code agents, visual agents, agent scaffolds such as Claude Code, Codex, OpenCode, mini-SWE, DeepSeek Harness), with tool calling and chat/API-based prompt encoding",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "DS-V4.1-Flash (max reasoning effort): GPQA Diamond (Pass@1) 90.9; Codeforces (Rating) 3471; Terminal-Bench 2.1 (Pass@1) 90.6; DeepSWE v1.1 (Resolved) 74.2. Base model DeepSeek-V4.1-Flash-Base: MMLU-Pro (EM, 5-shot) 74.1; HumanEval (Pass@1, 0-shot) 79.4."
+    }
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open model weights on Hugging Face under the MIT License (with local inference instructions); a chat app at chat.deepseek.com; prompt-encoding toolkit deepseek-recipe on GitHub."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+   "releaseTime": "2026-09-10T02:17:58Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "763205315794"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text, image"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "1048576"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "fp8"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "trainingHyperparameters",
+     "value": "Only sequence length is stated: sparse attention trained at a sequence length of 64K, with context extended to 1M tokens at 34T tokens (45T-token corpus). Learning rate, batch size, optimiser and epochs are not given."
+    }
+   ],
+   "ai_informationAboutTraining": "Pre-trained from scratch on a multimodal corpus of 45T tokens (sparse attention at 64K sequence length, context extended to 1M at 34T tokens); post-training follows SFT → RL → on-policy distillation (OPD), with changes in the data pipeline (large-scale automated synthesis of agent tasks and environments).",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: Released alongside the model: a technical report PDF; an `encoding` folder with a Python reference implementation (encoding.py) and test cases for prompt encoding; the deepseek-recipe Rust libraries with Python bindings (GitHub); an `inference` folder with instructions for weight conversion and running inference locally; an `evaluation` folder with instructions for reproducing DeepSWE v1.1 results (dsh-minimal and mini-swe-agent), including a patch for integrating dsh-minimal with Pier.\narchitecture_details: Multimodal MoE with 552B backbone parameters, up to one million tokens context. Causal Encoder-Decoder: 40-layer Transformer (20-layer causal encoder, 20-layer decoder); decoder's global KV cache projected from final encoder hidden states, so only 8B parameters active per token in prefill and 16B in decode, improving cost efficiency for input-heavy agentic workloads. 1 shared expert and 384 routed experts per MoE layer, 6 routed experts active per token. Uses CSA2 (Full, Reindex, Reuse modes) with FP4 main KV caching, reducing global KV cache to 890 bytes per token (roughly 1/4 of DeepSeek-V4-Flash).\ndesign_rationale: Post-training follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications, with all substantive changes in the data pipeline (large-scale automated synthesis of agent tasks and environments, progressive scaling of data, tasks, and rollouts). Architecturally, the Causal Encoder-Decoder projects the decoder's global KV cache from final encoder hidden states, activating only 8B parameters per token during prefill and 16B during decode to improve cost efficiency for input-heavy agentic workloads.\nintegration_means: No Jinja chat template; a Python reference prompt-encoding implementation (encoding.py in the encoding folder) is provided, plus deepseek-recipe (Rust libraries with Python bindings) for production prompt encoding/parsing of Messages, Chat Completions and Responses API requests. Local inference instructions (weight conversion and running) are in the inference folder. Recommended sampling: temperature 1.0, top_p 0.95 or 1.0.\neval_methodology: Base models evaluated in an internal framework under the same settings, with few-shot counts per benchmark (e.g. 5-shot MMLU-Pro, 0-shot HumanEval). Instruct results use max reasoning effort (reasoning_effort=100) with temperature=1.0, top_p=0.95. Code agent benchmarks use the Minimal mode of DeepSeek Harness with a 1M-token context window; mini-SWE harness for DeepSWE v1.1; Claude Code harness for SEC-Bench Pro; visual agent benchmarks use Claude Code harness with 512k-token context."
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:deepseek#training-data",
+   "name": "Training data of deepseek-ai/DeepSeek-V4.1-Flash (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "image",
+    "text"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Synthetic: post-training data pipeline uses large-scale automated synthesis of agent tasks and environments. Pre-training is on a multimodal corpus of 45T tokens, with no provenance categories given.\nPre-training on a multimodal corpus of 45T tokens; post-training data pipeline uses large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. Card does not state how rights were obtained.",
+   "comment": "training_data_size: 45T tokens (multimodal corpus)\ndata_scope: Multimodal corpus (images and text) comprising 45T tokens; trained from scratch",
+   "dataset_dataPreprocessing": [
+    "Only post-training data processing is described: large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. No cleaning, filtering or deduplication details are given."
+   ]
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:deepseek#rel-4",
+   "from": "urn:model-cards:deepseek#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:deepseek#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:deepseek#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:deepseek#rel-6",
+   "from": "urn:model-cards:deepseek#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:deepseek#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:deepseek#evalset-Base-model-AGIEval-MMLU-Pro-C-Eval-MultiLoKo-SimpleQA-Verified-SuperGPQA-BBH-BBEH-DROP-HellaSwag-BigCodeBench-HumanEval-GSM8K-MATH-MGSM-LongBench-V2-MMMU-Pro-CVBench-DocVQA-RefCOCO-avg.-Instruct-model-GPQA-Diamond-HLE-Codeforces-MathArena-Apex-Terminal-Bench-2.1-3.0-4.0-DeepSWE-v1.1-ProgramBench-NL2Repo-Bench-CyberGym-SEC-Bench-Pro-ExploitGym-AutomationBench-Agent-s-Last-Exam-Chartography-BabyVision-ZeroBench.",
+   "name": "Base model: AGIEval, MMLU-Pro, C-Eval, MultiLoKo, SimpleQA-Verified, SuperGPQA, BBH, BBEH, DROP, HellaSwag, BigCodeBench, HumanEval, GSM8K, MATH, MGSM, LongBench-V2, MMMU-Pro, CVBench, DocVQA, RefCOCO-avg. Instruct model: GPQA Diamond, HLE, Codeforces, MathArena Apex, Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, ProgramBench, NL2Repo-Bench, CyberGym, SEC-Bench Pro, ExploitGym, AutomationBench, Agent's Last Exam, Chartography, BabyVision, ZeroBench.",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:deepseek#rel-8",
+   "from": "urn:model-cards:deepseek#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:deepseek#evalset-Base-model-AGIEval-MMLU-Pro-C-Eval-MultiLoKo-SimpleQA-Verified-SuperGPQA-BBH-BBEH-DROP-HellaSwag-BigCodeBench-HumanEval-GSM8K-MATH-MGSM-LongBench-V2-MMMU-Pro-CVBench-DocVQA-RefCOCO-avg.-Instruct-model-GPQA-Diamond-HLE-Codeforces-MathArena-Apex-Terminal-Bench-2.1-3.0-4.0-DeepSWE-v1.1-ProgramBench-NL2Repo-Bench-CyberGym-SEC-Bench-Pro-ExploitGym-AutomationBench-Agent-s-Last-Exam-Chartography-BabyVision-ZeroBench."
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:deepseek#licence-ek-model",
+   "simplelicensing_licenseExpression": "MIT",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:deepseek#rel-10",
+   "from": "urn:model-cards:deepseek#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:deepseek#licence-ek-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:deepseek#rel-11",
+   "from": "urn:model-cards:deepseek#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

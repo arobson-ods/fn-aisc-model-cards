@@ -1,0 +1,571 @@
+source: 'EU GPAI Code of Practice, Transparency chapter: Model Documentation Form (DOCX)'
+source_url: https://ec.europa.eu/newsroom/dae/redirection/document/118118
+audience_key:
+  AIO: AI Office (on request)
+  NCA: national competent authorities (via AIO request)
+  DP: downstream providers (proactively)
+generated_by: pipeline/parse_eu_form.py — automated parse; spot-check against the form before relying
+  on it
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  description: ''
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: model_name
+  section: General information
+  item: Model name
+  description: The unique identifier for the model (e.g. Llama 3.1-405B), including the identifier for
+    the collection of models where applicable, and a list of the names of the publicly available versions
+    of the concerned model covered by the Model Documentation.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  description: Evidence that establishes the provenance and authenticity of the model (e.g. a secure hash
+    if binaries are distributed, or the URL endpoint in the case of a service), where available.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: release_date
+  section: General information
+  item: Release date
+  description: Date when the model was first released through any distribution channel.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  description: Date when the model was placed on the Union market.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  description: If the model is the result of a modification or fine-tuning of one or more general-purpose
+    AI models previously placed on the market, list the model name(s) (and relevant version(s) if more
+    than one version has been placed on the market) of those model(s). Otherwise write ‘N/A’.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  description: A general description of the model architecture, e.g. a transformer architecture. [Recommended
+    20 words]
+  recommended_length: 20 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  description: 'A general description of the key design specifications of the model, including rationale
+    and assumptions made, to provide basic insight into how the model was designed. [Recommended 100 words]
+    If any other please specify:'
+  recommended_length: 100 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  description: '☐Text ☐Images ☐Audio ☐Video If any other please specify:'
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  description: 'Maximum size: … Maximum size: … Maximum size: … Maximum size: … Maximum size: …'
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  public: false
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  description: 'Output modalities: For each selected modality please include maximum output size or write
+    ''N/A'' if not defined'
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+  review_note: 'stacked checkboxes read top=modalities: AIO, NCA, DP all ticked (checked 2026-09-30)'
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  description: 'Output modalities: For each selected modality please include maximum output size or write
+    ''N/A'' if not defined Maximum size:…'
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+  review_note: 'stacked checkboxes read bottom=maximum size: DP only ticked (checked 2026-09-30)'
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  description: The total number of parameters of the model, recorded with at least two significant figures,
+    e.g. 7.3*10^10 parameters.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  public: false
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  part: 2
+  description: The range within which the total number of parameters falls. ☐1—500M ☐500M—5B ☐ 5B—15B
+    ☐15B—50B ☐50B—100B ☐100B—500B ☐500B—1T ☐>1T
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  public: false
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  description: A list of the methods of distribution (e.g. enterprise or subscription-based access through
+    existing software suites or enterprise-specific solutions; public or subscription-based access through
+    an API; public or proprietary access through integrated development environments, device-specific
+    applications or firmware, open-source repositories) through which the model has been made available
+    for distribution or use in the Union market. For each listed method of distribution, please include
+    a link to information about how the model can be accessed, where available, and the level of model
+    access (e.g. weights-level access, black-box access).
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  part: 2
+  description: A list of the methods of distribution (e.g. enterprise or subscription-based access through
+    existing software suites or enterprise-specific solutions; public or subscription-based access through
+    an API; public or proprietary access through integrated development environments, device-specific
+    applications or firmware, open-source repositories) through which the model can be made available
+    to downstream providers.
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  description: A link to model license(s) (otherwise provide a copy of the license(s) upon a request from
+    the AIO pursuant to Article 91) or indicate that no model license exists.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  part: 2
+  description: The type or category of licence(s) under which the model can be made available to downstream
+    providers such as free and open source licences where models can be openly shared and providers can
+    freely access, use, modify and redistribute them or modified versions thereof; less permissive licenses
+    that impose certain restrictions on the use (e.g. to ensure ethical use), or proprietary licences
+    that restrict access to the model's source code and impose limitations on usage, distribution, and
+    modification. In the absence of a license, describe how access to the model is provided for downstream
+    use, such as through terms of service.
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  part: 3
+  description: A list of additional assets (e.g. training data, data processing code, model training code,
+    model inference code, model evaluation code), if any, that are made available with a description of
+    how each can be accessed and what licenses, if any, relate to their use.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  public: false
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  description: Provide a link to the acceptable use policy applicable (or attach a copy to this document)
+    or indicate that none exists.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  description: A description of either (i) the uses that are intended by the provider (e.g. productivity
+    enhancement, translation, creative content generation, data analysis, data visualisation, programming
+    assistance, scheduling, customer support, variety of natural language tasks, etc..) or (ii) the uses
+    that are restricted and/or prohibited by the provider (beyond those prohibited by EU or international
+    law, including Article 5 AI Act), in both cases as specified in the information supplied by the provider
+    in the instructions for use, terms and conditions, promotional or sales materials and statements,
+    as well as in the technical documentation. If specifying (i) or (ii) is incompatible with the nature
+    of the license under which the model is provided, then 'N/A' can be entered. [Recommended 200 words]
+  recommended_length: 200 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  description: A list or description of either (i) the type and nature of AI systems into which the general-purpose
+    AI model can be integrated or (ii) the type and nature of AI systems into which the general-purpose
+    AI model should not be integrated. Examples may include autonomous systems, conversational assistants,
+    decision support systems, creative AI systems, predictive systems, cybersecurity, surveillance, or
+    human-AI collaboration. [Recommended up to 300 words]
+  recommended_length: up to 300 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  description: A general description of the technical means (e.g. instructions for use, infrastructure,
+    tools) required for the general-purpose AI model to be integrated into AI systems. [Recommended 100
+    words]
+  recommended_length: 100 words
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  description: A description of any hardware, including the version, required to use the model, where
+    applicable. If not applicable (e.g. model offered via an API), 'N/A' should be entered. [Recommended
+    100 words]
+  recommended_length: 100 words
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+- id: required_software
+  section: Use
+  item: Required software
+  description: A description of any software, including the version, required to use the model where applicable.
+    If not applicable, 'N/A' should be entered. [Recommended 100 words]
+  recommended_length: 100 words
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  public: false
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  description: A general description of the main steps or stages involved in the training process, including
+    training methodologies and techniques, the key design choices, assumptions made and what the model
+    is designed to optimise for, and the relevance of different parameters, as applicable. For example,
+    “the model is initialized with randomly selected weights and optimised using gradient-based optimization
+    via the Adam optimizer in two steps. First, the model is trained to predict the next word on a large
+    pretraining corpus using the cross-entropy loss, passing over the data for a single epoch. Second,
+    the model is post-trained on a dataset of human preferences for 10 epochs to align the model with
+    human values and make it more useful in responding to user prompts“. [Recommended 400 words]
+  recommended_length: 400 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  description: A description of how and why key design choices were made in model training. [Recommended
+    200 words]
+  recommended_length: 200 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  description: '☐Text ☐Images ☐Audio ☐Video If any other please specify:'
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  description: '☐Web crawling ☐Private non-publicly available datasets obtained from third parties ☐User
+    data ☐Publicly available datasets ☐Data collected through other means ☐Synthetic data that is not
+    publicly accessible (when created directly by or on behalf of the provider) If any other please specify:'
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  description: A description of the methods used to obtain and select training, testing, and validation
+    data, including methods and resources used to annotate data, and models and methods used to generate
+    synthetic data where applicable. For data previously obtained from third parties, a description of
+    how the provider obtained the rights to the data if not already disclosed in the public summary of
+    training data published in accordance with Article 53(1), point (d). [Recommended 300 words]
+  recommended_length: 300 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  description: The size (in number of data points) of the training, testing, and validation data respectively,
+    together with the definition of the unit of data points (e.g. tokens or documents, images, hours of
+    video or frames), recorded with at least one significant figure (e.g. 3x1013 tokens).
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  public: false
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  part: 2
+  description: The size (in number of data points) of the training, testing, and validation data respectively,
+    together with the definition of the unit of data points (e.g. tokens or documents, images, hours of
+    video or frames), recorded with at least two significant figures (e.g. 1.5x1013 tokens).
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  public: false
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  description: A general description of the scope and main characteristics of the training, testing and
+    validation data, such as domain (e.g. healthcare, science, law,...), geography (e.g. global, restricted
+    to a certain region,...), language, modality coverage, where applicable. [Recommended 200 words]
+  recommended_length: 200 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  description: General description of the data processing involved in transforming the acquired data into
+    training, testing, and validation data for the model, such as cleaning (e.g. filtering out irrelevant
+    content such as advertisements), normalisation (e.g. tokenizing), augmentation (e.g. back-translation).
+    [Recommended 300 words]
+  recommended_length: 300 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  public: false
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  description: A description of any methods implemented in data acquisition or processing, if any, to
+    detect the presence of unsuitable data sources considering the model’s intended uses, including but
+    not limited to illegal content, child sexual abuse material (CSAM), non-consensual intimate imagery
+    (NCII), and personal data leading to its unlawful processing. [Recommended 400 words]
+  recommended_length: 400 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  description: A description of any methods implemented in data acquisition or processing, if any, to
+    address the prevalence of identifiable biases in the training data. [Recommended 200 words]
+  recommended_length: 200 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  description: 'A description of what period is being measured along with the range that its duration
+    falls under, within the following ranges: less than 1 month, 1—3 months, 3—6 months, more than 6 months.'
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  public: false
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  part: 2
+  description: A description of what period is being measured along with the duration in wall clock days
+    (e.g. 9x101 days) and in hardware days (e.g. 4x105 Nvidia A100 days and 2x105 Nvidia H100 days), both
+    recorded with at least one significant figure.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  public: false
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  description: Measured or estimated amount of computation used for training, reported in floating point
+    operations and recorded up to its order of magnitude (e.g. 1024 floating point operations).
+  recommended_length: null
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  public: false
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  part: 2
+  description: Measured or estimated amount of computation used for training, reported in computational
+    operations and recorded with at least two significant figures (e.g. 2.4x1025 floating point operations).
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  public: false
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  description: In the absence of a delegated act adopted in accordance with Article 53(5) AI Act to detail
+    measurement and calculation methodologies, describe the methodology used to measure or estimate the
+    amount of computation used for training.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  description: Measured or estimated amount of energy used for training, reported in Megawatt-hours and
+    recorded with at least two significant figures (e.g. 1.0x102 MWh). If the amount of energy used for
+    training cannot be estimated due to the lack of critical information from a compute or hardware provider,
+    enter ‘N/A’.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  description: In the absence of a delegated act adopted in accordance with Article 53(5) AI Act to detail
+    measurement and calculation methodologies, describe the methodology used to measure or estimate the
+    amount of energy used for training. Where the energy consumption of the model is unknown, the energy
+    consumption may be estimated based on information about computational resources used. If the amount
+    of energy used for training cannot be estimated due to a lack of critical information from a compute
+    or hardware provider, the provider should disclose the type of information they lack. [Recommended
+    100 words]
+  recommended_length: 100 words
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  description: Benchmarked amount of computation used for inference, reported in floating point operations,
+    recorded with at least two significant figures (e.g. 5.1x1017 floating point operations).
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  description: In the absence of a delegated act adopted in accordance with Article 53(5) AI Act to detail
+    measurement and calculation methodologies, provide a description of a computational task (e.g. generating
+    100000 tokens) and the hardware (e.g. 64 Nvidia A100s) used to measure or estimate the amount of computation
+    used for inference.
+  recommended_length: null
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  public: false

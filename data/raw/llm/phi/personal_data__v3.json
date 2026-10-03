@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "personal_data",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: personal_data\nWhat to find: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).\nCard sections that often contain it: Training Data, Privacy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state whether the training data includes personal or sensitive personal information, or how it was handled (e.g. anonymisation). It refers readers to a separate data card for training data details.",
+  "quotes": [
+   "To learn more about the training data used for Phi-4-Reasoning-Vision-15B please refer to the full data card: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md."
+  ],
+  "section": "4. Data Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 10433,
+  "output_tokens": 262
+ },
+ "cost_usd_list_price": 0.0069186000000000004,
+ "duration_ms": 2422
+}

@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "additional_assets",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Released alongside the model: a technical report PDF in the repo; an `encoding` folder with a Python reference implementation (encoding.py) and tests for prompt encoding; the deepseek-recipe Rust libraries with Python bindings (GitHub) for production prompt encoding/parsing; an `inference` folder with instructions for weight conversion and running local inference; and an `evaluation` folder with instructions for reproducing DeepSWE v1.1 results (dsh-minimal and mini-swe-agent, plus a patch for integrating dsh-minimal with Pier). No training data or training code is stated.",
+  "quotes": [
+   "<a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf\"><b>Technical Report</b> 👁️</a>",
+   "The [`encoding`](encoding/README.md) folder contains a self-contained Python reference implementation (`encoding.py`) with test cases for multi-turn conversations, tool calling, thinking mode, numeric reasoning effort, mid-conversation system messages, and interleaved image content.",
+   "For production use, we additionally release [deepseek-recipe](https://github.com/deepseek-ai/deepseek-recipe), a set of Rust libraries with Python bindings that provides the same prompt format as a maintained, protocol-aware toolkit.",
+   "Please refer to the [`inference`](inference/README.md) folder for instructions on weight conversion and running inference locally.",
+   "The [`evaluation`](evaluation/README.md) folder contains step-by-step instructions for reproducing the DeepSWE v1.1 benchmark results, covering both the `dsh-minimal` agent and the official `mini-swe-agent`. The patch required to integrate `dsh-minimal` with [Pier](https://github.com/datacurve-ai/pier) is also included there."
+  ],
+  "section": "Prompt Encoding"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7683,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 756
+ },
+ "cost_usd_list_price": 0.038296,
+ "duration_ms": 4455
+}

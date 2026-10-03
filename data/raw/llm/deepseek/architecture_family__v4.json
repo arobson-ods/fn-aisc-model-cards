@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "architecture_family",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: architecture_family\nWhat to find: Model architecture family or type (e.g. transformer decoder, mixture-of-experts).\nCard sections that often contain it: Model Architecture, Model Details, Model Summary\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Multimodal Mixture-of-Experts (MoE) with a Causal Encoder-Decoder (CED) architecture: a 40-layer Transformer (20-layer causal encoder followed by a 20-layer decoder)",
+  "quotes": [
+   "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens.",
+   "DeepSeek-V4.1-Flash adopts a **Causal Encoder-Decoder (CED)** architecture: a 40-layer Transformer organized as a 20-layer causal encoder followed by a 20-layer decoder."
+  ],
+  "section": "Introduction"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7423,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 343
+ },
+ "cost_usd_list_price": 0.033233,
+ "duration_ms": 2722
+}

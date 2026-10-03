@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "design_rationale",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card describes the training stages (SFT, DPO, RLVR) and datasets, but does not explain how or why key design choices were made.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 6151,
+  "output_tokens": 160
+ },
+ "cost_usd_list_price": 0.0049382,
+ "duration_ms": 2077
+}

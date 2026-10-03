@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "base_model_relation",
+ "input_sha256": "dc6915345003b4b60991732c929f905c64e5d9f5ce5a32c01fefa87ba85402db",
+ "request_user": "Fact: base_model_relation\nWhat to find: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nThe card's machine-readable metadata gives: [\"finetune\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 767,
+  "cache_read_input_tokens": 11512,
+  "output_tokens": 232
+ },
+ "cost_usd_list_price": 0.0076944000000000005,
+ "duration_ms": 2960
+}

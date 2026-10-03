@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "d6062e266da2c61f",
+ "request_user": "Fact definition: Energy used for training (e.g. MWh or kWh).\nExtracted value: The card reports training energy use only as compute, not in kWh/MWh: cumulative 7.38M GPU hours of pre-training on H100-80GB (TDP of 700W) hardware. This total covers both Llama 4 models in the table.\nQuotes given as evidence (separated by [...]): Training Energy Use: Model pre-training utilized a cumulative of 7.38M GPU hours of computation on H100-80GB (TDP of 700W) type hardware, per the table below.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quote supports 7.38M cumulative GPU hours on H100-80GB (700W TDP), and the value correctly says the card gives no kWh/MWh figure. But the definition asks for energy in kWh/MWh, and the value only reports compute (GPU hours), so it only partly answers the definition. The claim that the total covers both models is supported by the card's table (5.0M + 2.38M = 7.38M), but the quote itself only says 'per the table below' and doesn't show the per-model split."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 770,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 747
+ },
+ "cost_usd_list_price": 0.0228026,
+ "duration_ms": 13164
+}

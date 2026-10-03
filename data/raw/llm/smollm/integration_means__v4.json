@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "integration_means",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template; /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch.",
+  "quotes": [
+   "The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade your transformers version.",
+   "For choosing between enabling, you can provide the `/think` and `/no_think` flags through the system prompt",
+   "We also provide the option of specifying the whether to use extended thinking through the `enable_thinking` kwarg",
+   "Under the argument `xml_tools` for standard tool-calling: these tools will be called as JSON blobs within XML tags",
+   "Or under `python_tools`: then the model will call tools like python functions in a `<code>` snippet",
+   "For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`.",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format."
+  ],
+  "section": "How to use"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 9308,
+  "output_tokens": 538
+ },
+ "cost_usd_list_price": 0.0094976,
+ "duration_ms": 4267
+}

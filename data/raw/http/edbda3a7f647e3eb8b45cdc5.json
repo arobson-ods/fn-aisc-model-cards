@@ -1,0 +1,11 @@
+{
+ "url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json",
+ "status": 200,
+ "retrieved_at": "2026-09-30T10:17:02+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "W/\"7454063c122c6077f51fa1dce6d1b45c47cf69da\"",
+  "x-repo-commit": "a6f74bf181389908efd6970878d7ee2b42f5d417"
+ },
+ "body": "{\n  \"architectures\": [\n    \"FalconH1ForCausalLM\"\n  ],\n  \"attention_bias\": false,\n  \"attention_dropout\": 0.0,\n  \"attention_in_multiplier\": 1.0,\n  \"attention_out_multiplier\": 0.10416666666666669,\n  \"attn_layer_indices\": null,\n  \"bos_token_id\": 1,\n  \"embedding_multiplier\": 5.656854249492381,\n  \"eos_token_id\": 11,\n  \"head_dim\": 128,\n  \"hidden_act\": \"silu\",\n  \"hidden_size\": 3072,\n  \"initializer_range\": 0.02,\n  \"intermediate_size\": 12288,\n  \"key_multiplier\": 0.030690398488999456,\n  \"lm_head_multiplier\": 0.013020833333333334,\n  \"mamba_chunk_size\": 128,\n  \"mamba_conv_bias\": true,\n  \"mamba_d_conv\": 4,\n  \"mamba_d_head\": 128,\n  \"mamba_d_ssm\": 3072,\n  \"mamba_d_state\": 256,\n  \"mamba_expand\": 2,\n  \"mamba_n_groups\": 1,\n  \"mamba_n_heads\": 24,\n  \"mamba_norm_before_gate\": false,\n  \"mamba_proj_bias\": false,\n  \"mamba_rms_norm\": true,\n  \"mamba_use_mlp\": true,\n  \"max_position_embeddings\": 262144,\n  \"mlp_bias\": false,\n  \"mlp_expansion_factor\": 8,\n  \"mlp_multipliers\": [\n    0.2946278254943948,\n    0.032552083333333336\n  ],\n  \"model_type\": \"falcon_h1\",\n  \"num_attention_heads\": 12,\n  \"num_hidden_layers\": 44,\n  \"num_key_value_heads\": 2,\n  \"num_logits_to_keep\": 1,\n  \"pad_token_id\": 0,\n  \"projectors_bias\": false,\n  \"rms_norm_eps\": 1e-05,\n  \"rope_scaling\": null,\n  \"rope_theta\": 100000000000,\n  \"ssm_in_multiplier\": 0.4166666666666667,\n  \"ssm_multipliers\": [\n    0.3535533905932738,\n    0.25,\n    0.1767766952966369,\n    0.5,\n    0.3535533905932738\n  ],\n  \"ssm_out_multiplier\": 0.11785113019775792,\n  \"tie_word_embeddings\": false,\n  \"torch_dtype\": \"bfloat16\",\n  \"transformers_version\": \"4.52.0.dev0\",\n  \"use_cache\": true,\n  \"vocab_size\": 130048\n}"
+}

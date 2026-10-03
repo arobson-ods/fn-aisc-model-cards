@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "data_bias_measures",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: data_bias_measures\nWhat to find: Measures to detect or address identifiable biases in the training data, or known biases.\nCard sections that often contain it: Bias, Risks and Limitations, Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 6418,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0046756,
+ "duration_ms": 1915
+}

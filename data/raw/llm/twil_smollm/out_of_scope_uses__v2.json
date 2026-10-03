@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "out_of_scope_uses",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: out_of_scope_uses\nWhat to find: Uses or AI systems the model is not intended or should not be used for.\nCard sections that often contain it: Out-of-Scope Use, Out of Scope, Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Not a general assistant or chat model: it has no safety or preference tuning beyond what SmolLM3 carries and no instruction-following alignment (IFEval regressed slightly). It is tuned for formal logic only. The card makes no claim about code generation or tool use, which were not evaluated.",
+  "quotes": [
+   "It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3",
+   "**Not a chat model.** It was optimised against automatic verifiers on logic tasks. It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly.",
+   "**Scope.** Tuned for formal logic. The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those."
+  ],
+  "section": "Limitations and caveats"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 411
+ },
+ "cost_usd_list_price": 0.0084634,
+ "duration_ms": 2934
+}

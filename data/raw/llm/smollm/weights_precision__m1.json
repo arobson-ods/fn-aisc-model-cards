@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "weights_precision",
+ "input_sha256": "318295275d0d09441028bd5bccbdf33c5a6d9ea555018f9c751d524a7130e385",
+ "request_user": "Fact: weights_precision\nWhat to find: Numeric precision or quantisation of the released weights (e.g. bf16, FP8, GGUF Q4_K_M).\nThe card's machine-readable metadata gives: \"bfloat16\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "bfloat16",
+  "quotes": [
+   "- **Precision:** bfloat16"
+  ],
+  "agreement": "agrees",
+  "section": "Training"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9468,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 161
+ },
+ "cost_usd_list_price": 0.039602200000000004,
+ "duration_ms": 2035
+}

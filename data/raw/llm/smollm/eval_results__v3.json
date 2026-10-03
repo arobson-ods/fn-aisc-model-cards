@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "eval_results",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "SmolLM3-3B (no extended thinking): AIME 2025 9.3, GSM-Plus 72.8, LiveCodeBench v4 15.2, GPQA Diamond 35.7, IFEval 76.7, MixEval Hard 26.9, BFCL 92.3, Global MMLU 53.5. Extended thinking: AIME 2025 36.7, GSM-Plus 83.4, LiveCodeBench v4 30.0, GPQA Diamond 41.7, IFEval 71.2. Evaluations are zero-shot unless stated otherwise, run with lighteval.",
+  "quotes": [
+   "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them.",
+   "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** |",
+   "| Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** |",
+   "| Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** |",
+   "| Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** |",
+   "| Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 |",
+   "| High school math competition | AIME 2025 | <u>36.7</u> | 30.7 | **58.8** |",
+   "| Graduate-level reasoning | GPQA Diamond | <u>41.7</u> | 39.9 | **55.3** |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 9120,
+  "output_tokens": 723
+ },
+ "cost_usd_list_price": 0.011234000000000001,
+ "duration_ms": 4183
+}

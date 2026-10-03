@@ -1,0 +1,11 @@
+{
+ "repo_id": "ibm-granite/granite-4.1-8b-base",
+ "sha": "cbc32f94fbf8179ca4b22b664831f6a73965bb16",
+ "api_url": "https://huggingface.co/api/models/ibm-granite/granite-4.1-8b-base",
+ "retrieved_at": "2026-09-30T10:29:58+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/ibm-granite/granite-4.1-8b-base/raw/cbc32f94fbf8179ca4b22b664831f6a73965bb16/README.md",
+ "config_url": "https://huggingface.co/ibm-granite/granite-4.1-8b-base/raw/cbc32f94fbf8179ca4b22b664831f6a73965bb16/config.json"
+}

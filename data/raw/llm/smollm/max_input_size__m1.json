@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "max_input_size",
+ "input_sha256": "0cf8099386ba69cc88bba0c5ccf1d60fc3b2e49492888e2467e00f9b5317e859",
+ "request_user": "Fact: max_input_size\nWhat to find: Maximum input size (context length in tokens, or maximum image/audio size).\nThe card's machine-readable metadata gives: 65536\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Current config.json is set for context length up to 65,536 tokens; trained on 64k context and supports up to 128k tokens using YARN extrapolation",
+  "quotes": [
+   "The current `config.json` is set for context length up to 65,536 tokens.",
+   "**Long context:** Trained on 64k context and supports up to **128k tokens** using YARN extrapolation"
+  ],
+  "agreement": "adds",
+  "section": "Long context processing"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9447,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 254
+ },
+ "cost_usd_list_price": 0.040448200000000004,
+ "duration_ms": 2435
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights/checkpoints released on Hugging Face (usable via the transformers library, with revisions loadable via huggingface_hub); code in GitHub repositories",
+  "quotes": [
+   "We are releasing all code, checkpoints, logs (coming soon), and associated training details.",
+   "You can use OLMo with the standard HuggingFace transformers library:",
+   "We have released checkpoints for these models.",
+   "- Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct"
+  ],
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 6339,
+  "output_tokens": 275
+ },
+ "cost_usd_list_price": 0.0062418000000000005,
+ "duration_ms": 2816
+}

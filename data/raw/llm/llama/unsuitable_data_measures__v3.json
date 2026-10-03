@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "unsuitable_data_measures",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: unsuitable_data_measures\nWhat to find: Measures to detect or remove unsuitable data (illegal content, CSAM, NCII, unlawful personal data, harmful content).\nCard sections that often contain it: Training Data, Data Filtering, Safety\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Child Safety risk is mitigated in pre-training via data filtering as a first step. For safety fine-tuning, LLM-based classifiers are used to select high-quality prompts and responses.",
+  "quotes": [
+   "We leverage pre-training methods like data filtering as a first step in mitigating Child Safety risk in our model.",
+   "We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control."
+  ],
+  "section": "Critical Risks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 572,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 273
+ },
+ "cost_usd_list_price": 0.0067968,
+ "duration_ms": 2367
+}

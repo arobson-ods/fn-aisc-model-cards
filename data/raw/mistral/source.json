@@ -1,0 +1,11 @@
+{
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "sha": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+ "api_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+ "retrieved_at": "2026-09-30T10:16:59+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+ "config_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json"
+}

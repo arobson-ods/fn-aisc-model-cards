@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "c70bd0fafe88067e",
+ "request_user": "Fact definition: Amount of computation used for training, in floating point operations.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card never gives a training compute figure in FLOPs. The training section only says the model was trained with cold-start SFT on long reasoning traces followed by RL with GRPO, and sends readers to the blogpost and technical report for more detail. No compute figure appears anywhere else in the card."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 567,
+  "cache_read_input_tokens": 6115,
+  "output_tokens": 165
+ },
+ "cost_usd_list_price": 0.009067,
+ "duration_ms": 3519
+}

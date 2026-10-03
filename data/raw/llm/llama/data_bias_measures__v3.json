@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "data_bias_measures",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: data_bias_measures\nWhat to find: Measures to detect or address identifiable biases in the training data, or known biases.\nCard sections that often contain it: Bias, Risks and Limitations, Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not describe measures to detect or address identifiable biases in the training data, and it does not list known training-data biases. It mentions data filtering only for Child Safety risk, and it does not call that a bias measure.",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 350
+ },
+ "cost_usd_list_price": 0.0074868,
+ "duration_ms": 3163
+}

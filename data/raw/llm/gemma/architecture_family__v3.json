@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "architecture_family",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: architecture_family\nWhat to find: Model architecture family or type (e.g. transformer decoder, mixture-of-experts).\nCard sections that often contain it: Model Architecture, Model Details, Model Summary\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Dense architecture (31B Dense) with a hybrid attention mechanism interleaving local sliding window attention with full global attention; the Gemma 4 family includes both Dense and Mixture-of-Experts variants.",
+  "quotes": [
+   "Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning.",
+   "The models employ a hybrid attention mechanism that interleaves local sliding window attention with full global attention, ensuring the final layer is always global.",
+   "| Property | E2B | E4B | 12B Unified | 31B Dense |"
+  ],
+  "section": "Models Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11916,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 324
+ },
+ "cost_usd_list_price": 0.050907999999999995,
+ "duration_ms": 3110
+}

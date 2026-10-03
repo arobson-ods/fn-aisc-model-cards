@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "training_datasets",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: training_datasets\nWhat to find: Named training datasets (names or identifiers).\nCard sections that often contain it: Training Data, Datasets\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card names no specific training datasets. It describes data sources only generically and refers readers to the GitHub repository for a full listing.",
+  "quotes": [
+   "A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models)."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16860,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 217
+ },
+ "cost_usd_list_price": 0.069614,
+ "duration_ms": 2732
+}

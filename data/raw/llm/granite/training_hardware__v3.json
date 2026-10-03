@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "training_hardware",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: training_hardware\nWhat to find: Hardware used for training (accelerator type and count, cluster).\nCard sections that often contain it: Hardware, Training Infrastructure, Compute\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Trained on an NVIDIA GB200 NVL72 cluster hosted in CoreWeave (72-GPU NVLink domain intra-rack; NDR 400 Gb/s InfiniBand Fat-Tree inter-rack). Total accelerator count not stated.",
+  "quotes": [
+   "We trained the Granite 4.2 Language Models utilizing an NVIDIA GB200 NVL72 cluster hosted in CoreWeave. Intra-rack communication occurs via the 72-GPU NVLink domain, and a non-blocking, full Fat-Tree NDR 400 Gb/s InfiniBand network provides inter-rack communication."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 546,
+  "cache_read_input_tokens": 16417,
+  "output_tokens": 334
+ },
+ "cost_usd_list_price": 0.0088114,
+ "duration_ms": 2769
+}

@@ -1,0 +1,11 @@
+{
+ "repo_id": "OpenGVLab/InternViT-300M-448px",
+ "sha": "fe158954b3b9bbc92a37fd24a78912173910558a",
+ "api_url": "https://huggingface.co/api/models/OpenGVLab/InternViT-300M-448px",
+ "retrieved_at": "2026-09-30T10:30:01+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/OpenGVLab/InternViT-300M-448px/raw/fe158954b3b9bbc92a37fd24a78912173910558a/README.md",
+ "config_url": "https://huggingface.co/OpenGVLab/InternViT-300M-448px/raw/fe158954b3b9bbc92a37fd24a78912173910558a/config.json"
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Distributed as open-weights models (pre-trained and instruction-tuned variants), available via Hugging Face (collection) and usable with the Transformers library; GitHub also linked.",
+  "quotes": [
+   "This release includes open-weights models in both pre-trained and instruction-tuned variants.",
+   "You can use all Gemma 4 models with the latest version of Transformers.",
+   "<a href=\"https://huggingface.co/collections/google/gemma-4\" target=\"_blank\">Hugging Face</a> |"
+  ],
+  "section": "Model card header"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 279
+ },
+ "cost_usd_list_price": 0.0072862,
+ "duration_ms": 2782
+}

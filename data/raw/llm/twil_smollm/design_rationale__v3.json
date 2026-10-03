@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "design_rationale",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card explains its training choices. WiSE-FT interpolation toward the base uses λ = 0.25, so only a quarter of the fine-tuned delta is kept. λ was chosen by constrained optimisation: maximise in-domain score subject to minimal degradation on held-out benchmarks. The card says this conservative λ is the direct reason held-out capability survives. Checkpoint fusion averages intermediate SFT checkpoints selected by a diversity probe, instead of taking the final checkpoint. MGPO (entropy-weighted GRPO) uses a programmatic verifier with partial credit for loose matches and token-F1, so that all-fail prompt groups still produce gradient. A sibling arm without the conservative interpolation scored higher in-domain but lost roughly twelve points of held-out capability, so this release is the balanced point of that trade.",
+  "quotes": [
+   "**Checkpoint fusion** — parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe, rather than taking the final checkpoint.",
+   "**WiSE-FT interpolation** toward the pretrained base, `W = (1 − λ)·W_base + λ·W_finetuned`\n   with **λ = 0.25** — i.e. only a quarter of the fine-tuned delta is retained. λ was chosen by\n   constrained optimisation: maximise in-domain score subject to minimal degradation on held-out\n   benchmarks. This conservative λ is the direct reason held-out capability survives.",
+   "**MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient.",
+   "A sibling arm that skipped stage 3's conservative interpolation scores considerably higher\nin-domain (macro gate 0.515) but gives back roughly twelve points of held-out capability. This\nrelease is the balanced point of that trade; the other was not published."
+  ],
+  "section": "How it was built"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 778
+ },
+ "cost_usd_list_price": 0.0120312,
+ "duration_ms": 4626
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "04f13b52d03b8ef5",
+ "request_user": "Fact definition: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nValue taken from the model's structured metadata (card:base_model = [\"meta-llama/Llama-4-Scout-17B-16E\"]): [\"meta-llama/Llama-4-Scout-17B-16E\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's usage example loads meta-llama/Llama-4-Scout-17B-16E-Instruct, so this appears to be the instruction-tuned Scout model. The card separates pretrained from instruction-tuned models, which fits the Instruct model being fine-tuned from the pretrained Llama-4-Scout-17B-16E. The metadata value agrees with the card and nothing contradicts it, though the card text never names a base model directly."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 643,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 563
+ },
+ "cost_usd_list_price": 0.0181066,
+ "duration_ms": 9141
+}

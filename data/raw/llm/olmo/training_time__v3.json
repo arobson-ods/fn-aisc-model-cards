@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "training_time",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: training_time\nWhat to find: Duration of training (wall-clock days, GPU/accelerator hours).\nCard sections that often contain it: Training, Hardware, Compute, GPU hours\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 548,
+  "cache_read_input_tokens": 6670,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.004710000000000001,
+ "duration_ms": 1622
+}

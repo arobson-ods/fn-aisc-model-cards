@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "provider_name",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: provider_name\nWhat to find: Legal or organisational name of the model provider (developer) that releases the model.\nCard sections that often contain it: Model Details, Model Information, Model developer\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9665,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 308
+ },
+ "cost_usd_list_price": 0.041744,
+ "duration_ms": 3237
+}

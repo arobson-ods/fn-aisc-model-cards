@@ -1,0 +1,10 @@
+{
+ "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct/raw/92f3b1597a195b523d8d9e5700e57e4fbb8f20d3/config.json",
+ "status": 401,
+ "retrieved_at": "2026-09-30T10:16:58+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "W/\"95-AE4P7uia4f7M5yi3EgB/g8CWQhA\""
+ },
+ "body": "Access to model meta-llama/Llama-4-Scout-17B-16E-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in."
+}

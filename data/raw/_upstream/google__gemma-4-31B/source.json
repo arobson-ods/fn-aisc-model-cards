@@ -1,0 +1,11 @@
+{
+ "repo_id": "google/gemma-4-31B",
+ "sha": "5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89",
+ "api_url": "https://huggingface.co/api/models/google/gemma-4-31B",
+ "retrieved_at": "2026-09-30T10:29:56+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/google/gemma-4-31B/raw/5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89/README.md",
+ "config_url": "https://huggingface.co/google/gemma-4-31B/raw/5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89/config.json"
+}

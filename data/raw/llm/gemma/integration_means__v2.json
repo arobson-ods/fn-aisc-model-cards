@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "integration_means",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use with the Hugging Face Transformers library (pip install -U transformers torch accelerate), loading via AutoProcessor and AutoModelForMultimodalLM, with processor.apply_chat_template, model.generate and processor.parse_response. Chat format uses system, assistant and user roles; thinking is enabled with the <|think|> token at the start of the system prompt (or enable_thinking=True). Recommended sampling: temperature=1.0, top_p=0.95, top_k=64. Card also notes libraries like Transformers and llama.cpp handle the chat template.",
+  "quotes": [
+   "`pip install -U transformers torch accelerate`",
+   "from transformers import AutoProcessor, AutoModelForMultimodalLM",
+   "Compared to Gemma 3, the models use standard `system`, `assistant`, and `user` roles.",
+   "**Trigger Thinking:** Thinking is enabled by including the `<|think|>` token at the start of the system prompt.",
+   "Note that many libraries like Transformers and llama.cpp handle the complexities of the chat template for you."
+  ],
+  "section": "Getting Started"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 466
+ },
+ "cost_usd_list_price": 0.0091704,
+ "duration_ms": 3330
+}

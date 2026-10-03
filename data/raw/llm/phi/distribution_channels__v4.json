@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based access through Azure AI Foundry",
+  "quotes": [
+   "Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B)",
+   "Public access through open-source code repositories: [GitHub](https://github.com/microsoft/Phi-4-vision)",
+   "Enterprise or subscription-based access through [Azure AI Foundry](https://ai.azure.com)"
+  ],
+  "section": "2.3 Distribution Channels"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 10621,
+  "output_tokens": 300
+ },
+ "cost_usd_list_price": 0.007348199999999999,
+ "duration_ms": 2773
+}

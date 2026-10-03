@@ -1,0 +1,164 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:a708231b-2604-5d1f-a670-8a5d5f9c6422",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:00Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "qwen:model",
+   "name": "Qwen/Qwen3.8-2.4T-A95B",
+   "supplier": {
+    "name": "Qwen Team"
+   },
+   "version": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "name": "qwen3.8-max",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/LICENSE"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Hugging Face Transformers format weights compatible with vLLM, SGLang, TokenSpeed; deployable via SGLang, vLLM and TokenSpeed; usable through the Chat Completions API (OpenAI Python SDK) including Qwen Cloud; thinking mode required, with reasoning_effort (xhigh default, medium, low) and preserve_thinking options."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app; deployable with SGLang, vLLM, TokenSpeed"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Causal Language Model with a hybrid Mixture-of-Experts architecture (Gated DeltaNet and Gated Attention layers, each followed by MoE); 2.4T total / 95B activated parameters",
+     "modelArchitecture": "Causal language model with 2.4T total and 95B activated parameters; 92 layers; hidden layout 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)); Mixture of Experts with 512 experts, 10 routed + 1 shared activated; hidden dimension 8192. Built on the architectural foundation of Qwen3.5. The card gives no detailed rationale for the design choices.",
+     "inputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "text-generation",
+     "datasets": [
+      {
+       "ref": "qwen:evalset-Evaluated-on-benchmarks-including-Terminal-Bench-2.1-SWE-bench-Pro-DeepSWE-1.1-NL2Repo-Bench-FrontierSWE-MLS-Bench-Lite-PaperBench-AndroidBench-SkillsBench-v1.1-Automation-Bench-WideSearch-OneMillion-Bench-PLawBench-plus-in-house-QwenSWEBench-QwenQoderBench-QwenReactBench-QwenSVGBench-and-CoWorkBench-the-table-also-lists-others-e.g.-GPQA-Diamond-HLE-IFBench-HealthBench-MRCR-v2-LongBench-v2-."
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "The card has a benchmark table with a Qwen3.8-Max column, covering coding agent, general agent and general capability benchmarks (for example GPQA Diamond 92.6). Terminal Bench 2.1 was evaluated with Claude Code (avg@10)."
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Designed for coding, professional work, research, and long-horizon agentic tasks, carrying complex multi-step tasks through to completion; text-only generation with thinking mode.",
+      "Agentic systems and coding/development tools: designed for long-horizon, multi-step agentic tasks, with support for popular harnesses and development tools for integration into existing stacks"
+     ],
+     "technicalLimitations": [
+      "No dedicated limitations section. The card notes that the model is text-only, with no multimodal input, and that thinking cannot be disabled. It also notes that a higher presence_penalty (used to reduce endless repetition) may occasionally cause language mixing and a slight decrease in model performance."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "2446182725504"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "262144"
+     },
+     {
+      "name": "model-cards:max_output_size",
+      "value": "Recommended maximum output length of 262,144 tokens for reasoning content and 131,072 tokens for the final response (within the 1M context length)"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Benchmark footnotes give per-benchmark settings. Terminal Bench 2.1 was run with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. SWE-bench Pro used the Claude Code harness, temp=1.0, top_p=0.95 and a 256K context window. QwenSWEBench used the Claude Code harness, avg@3, an 8-hour timeout, max_tokens=32,768, temperature=1.0 and a 256K-token context window."
+     },
+     {
+      "name": "model-cards:autonomy",
+      "value": "The card describes autonomous agentic behaviour: stronger autonomous planning and handling of environment feedback, designed to carry complex multi-step tasks through to completion. It states no human-in-the-loop oversight requirement."
+     }
+    ]
+   }
+  },
+  {
+   "type": "library",
+   "bom-ref": "qwen:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "qwen:evalset-Evaluated-on-benchmarks-including-Terminal-Bench-2.1-SWE-bench-Pro-DeepSWE-1.1-NL2Repo-Bench-FrontierSWE-MLS-Bench-Lite-PaperBench-AndroidBench-SkillsBench-v1.1-Automation-Bench-WideSearch-OneMillion-Bench-PLawBench-plus-in-house-QwenSWEBench-QwenQoderBench-QwenReactBench-QwenSVGBench-and-CoWorkBench-the-table-also-lists-others-e.g.-GPQA-Diamond-HLE-IFBench-HealthBench-MRCR-v2-LongBench-v2-.",
+   "name": "Evaluated on benchmarks including Terminal Bench 2.1, SWE-bench Pro, DeepSWE 1.1, NL2Repo-Bench, FrontierSWE, MLS-Bench-Lite, PaperBench, AndroidBench, SkillsBench v1.1, Automation-Bench, WideSearch, $OneMillion-Bench, PLawBench, plus in-house QwenSWEBench, QwenQoderBench, QwenReactBench, QwenSVGBench and CoWorkBench (the table also lists others, e.g. GPQA Diamond, HLE, IFBench, HealthBench, MRCR v2, LongBench v2).",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Evaluated on benchmarks including Terminal Bench 2.1, SWE-bench Pro, DeepSWE 1.1, NL2Repo-Bench, FrontierSWE, MLS-Bench-Lite, PaperBench, AndroidBench, SkillsBench v1.1, Automation-Bench, WideSearch, $OneMillion-Bench, PLawBench, plus in-house QwenSWEBench, QwenQoderBench, QwenReactBench, QwenSVGBench and CoWorkBench (the table also lists others, e.g. GPQA Diamond, HLE, IFBench, HealthBench, MRCR v2, LongBench v2)."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "qwen:model",
+   "dependsOn": [
+    "qwen:dependency-software"
+   ]
+  },
+  {
+   "ref": "qwen:dependency-software"
+  }
+ ]
+}

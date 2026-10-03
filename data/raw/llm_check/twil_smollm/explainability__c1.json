@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "32949f3ce48ccbda",
+ "request_user": "Fact definition: Explainability or interpretability mechanisms for the model's outputs.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card describes no explainability or interpretability mechanism. The only related item is the reasoning format (\"Emits a `<think>…</think>` block before the answer\"). The card discusses this only as reasoning that affects the token budget and accuracy, not as a way to explain or interpret outputs. No attribution, interpretability tooling or explanation features are mentioned."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 572,
+  "cache_read_input_tokens": 10326,
+  "output_tokens": 660
+ },
+ "cost_usd_list_price": 0.019849199999999997,
+ "duration_ms": 8687
+}

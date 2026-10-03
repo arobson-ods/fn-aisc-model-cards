@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "additional_assets",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "An EAGLE model (for speeding up local inference with vLLM or SGLang) is released at huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE. The card does not state that training data or training code was released.",
+  "quotes": [
+   "To speed up local inference using vLLM or SGLang, check out our released [EAGLE model](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE)."
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10258,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 275
+ },
+ "cost_usd_list_price": 0.043786,
+ "duration_ms": 3299
+}

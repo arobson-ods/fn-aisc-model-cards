@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "required_software",
+ "input_sha256": "e0ca3998e5750fb637d449727a9a8d0213a9c3d1e39a34001e4e0144ddb7236d",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nThe card's machine-readable metadata gives: \"transformers 5.6.0.dev0\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "vllm nightly (which should automatically install mistral_common >= 1.11.1 and transformers >= 5.4.0); SGLang also requires transformers >= 5.4.0",
+  "quotes": [
+   "Make sure to install **vllm nightly**:",
+   "Doing so should automatically install [`mistral_common >= 1.11.1`](https://github.com/mistralai/mistral-common/releases/tag/v1.11.0) and `transformers >= 5.4.0`.",
+   "Or follow the [SGLang installation guide](https://docs.sglang.io/docs/get-started/install). Requires `transformers >= 5.4.0`."
+  ],
+  "agreement": "adds",
+  "section": "vLLM (Recommended)"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10005,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 350
+ },
+ "cost_usd_list_price": 0.0436402,
+ "duration_ms": 3155
+}

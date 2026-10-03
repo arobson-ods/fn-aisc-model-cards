@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "22afb0551c87fdb4",
+ "request_user": "Fact definition: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nExtracted value: Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required for the 20B version), and deployable with LMDeploy (pipeline, OpenAI-compatible api_server) or vLLM (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode is enabled via a system prompt (R1_SYSTEM_PROMPT) with do_sample=True and temperature=0.6.\nQuotes given as evidence (separated by [...]): > In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS. [...] > Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version of our model, transformers>=4.55.0 is required. [...] from transformers import AutoTokenizer, AutoModelForImageTextToText [...] To enable thinking mode, please set the system prompt to our Thinking System Prompt. When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition. [...] LMDeploy's `api_server` enables models to be easily packed into services with a single command. The provided RESTful APIs are compatible with OpenAI's interfaces. Below are an example of service startup:\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "All claims supported: transformers AutoModelForImageTextToText with transformers>=4.55.0 for the 20B version, LMDeploy pipeline/OpenAI-compatible api_server, vLLM recommended for 20B-A4B because lmdeploy lacks GPT-OSS support (qualifier preserved), and thinking mode via R1 system prompt with do_sample=True, temperature=0.6. Fully answers the integration definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1155,
+  "cache_read_input_tokens": 18938,
+  "output_tokens": 831
+ },
+ "cost_usd_list_price": 0.029655599999999997,
+ "duration_ms": 9290
+}

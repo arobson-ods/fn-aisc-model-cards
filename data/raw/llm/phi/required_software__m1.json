@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "required_software",
+ "input_sha256": "fd19d12a7c8850c84bf8062ceccfce818961a0983aff0f09336ecbda67360968",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nThe card's machine-readable metadata gives: \"transformers 4.56.1\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only required if using vLLM)",
+  "quotes": [
+   "The following software packages are required for running Phi-4-Reasoning-Vision:",
+   "`torch >= 2.7.1`",
+   "`transformers >= 4.57.1`",
+   "`vllm >= 0.15.2` (only required if using vLLM)"
+  ],
+  "agreement": "conflicts",
+  "section": "2.5 Technical Requirements and Integration Guidance"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 759,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 409
+ },
+ "cost_usd_list_price": 0.0091578,
+ "duration_ms": 3799
+}

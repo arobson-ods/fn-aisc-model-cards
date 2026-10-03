@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "architecture_details",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Mid-fusion architecture built on the Phi-4-Reasoning language model backbone and SigLIP-2 vision encoder. The vision encoder converts images into visual tokens, which are projected into the language model's embedding space and injected into the pretrained LM; rationale: leverages the strengths of both pretrained components while keeping training and inference costs manageable. Uses a dynamic resolution vision encoder with up to 3,600 visual tokens (enabling high-resolution understanding for GUI grounding and fine-grained document analysis). Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. Parameters: 15B. Layers, experts and active parameters are not stated.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.",
+   "In this architecture, the vision encoder first converts images into visual tokens, which are then projected into the language model's embedding space and injected into the pretrained language model. This approach leverages the strengths of both pretrained components while keeping training and inference costs manageable.",
+   "The model employs a dynamic resolution vision encoder with up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such as GUI grounding and fine-grained document analysis.",
+   "Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader bidirectional schemes.",
+   "**Parameters:** 15B  "
+  ],
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10902,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 674
+ },
+ "cost_usd_list_price": 0.050352,
+ "duration_ms": 4378
+}

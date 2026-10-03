@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app; deployable with SGLang, vLLM, TokenSpeed",
+  "quotes": [
+   "This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format.",
+   "These artifacts are compatible with vLLM, SGLang, TokenSpeed, etc.",
+   "For users seeking managed, scalable inference without infrastructure maintenance, the official Qwen API service is provided by [Qwen Cloud](https://www.qwencloud.com).",
+   "Qwen3.8 can be deployed with popular inference frameworks, e.g.:"
+  ],
+  "section": "Qwen3.8-2.4T-A95B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 394
+ },
+ "cost_usd_list_price": 0.0098052,
+ "duration_ms": 3120
+}

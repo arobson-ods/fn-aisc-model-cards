@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "target_systems",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: target_systems\nWhat to find: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nCard sections that often contain it: Intended Use, Use Cases, Downstream Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Agentic workflows and agentic coding harnesses (e.g. OpenCode, Pi, OpenHands) as backbone model; tool-calling/function-calling systems; multilingual dialog/chat assistants; reasoning-intensive tasks. Can be used alongside Granite Guardian for safety.",
+  "quotes": [
+   "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog |",
+   "Granite-4.2-8B can be used as the backbone model for agentic coding tools.",
+   "**512K Context Window:** Supports long documents, multi-turn conversations, and complex agentic workflows.",
+   "To enhance safety in deployments, we recommend using Granite 4.2 alongside [Granite Guardian](https://huggingface.co/ibm-granite/granite-guardian-4.1-8b) to detect and flag risks across key dimensions outlined in the IBM AI Risk Atlas."
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 564,
+  "cache_read_input_tokens": 16328,
+  "output_tokens": 434
+ },
+ "cost_usd_list_price": 0.009865599999999999,
+ "duration_ms": 3091
+}

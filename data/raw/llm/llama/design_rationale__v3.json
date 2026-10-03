@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "design_rationale",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Safety fine-tuning was designed to give developers a readily available, safe and powerful model that reduces the workload needed to deploy safe AI systems, and to give researchers a resource for studying safety fine-tuning robustness. Design choices: data collection combined human-generated vendor data with synthetic data to mitigate safety risks; LLM-based classifiers were used to select high-quality prompts and responses; there was emphasis on driving down refusals to benign prompts, including borderline and adversarial prompts in the safety data.",
+  "quotes": [
+   "The primary objective of conducting safety fine-tuning is to offer developers a readily available, safe, and powerful model for various applications, reducing the workload needed to deploy safe AI systems.",
+   "We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks.",
+   "We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control.",
+   "We included both borderline and adversarial prompts in our safety data strategy, and modified our safety data responses to follow tone guidelines."
+  ],
+  "section": "Model level fine tuning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 500
+ },
+ "cost_usd_list_price": 0.0088828,
+ "duration_ms": 4126
+}

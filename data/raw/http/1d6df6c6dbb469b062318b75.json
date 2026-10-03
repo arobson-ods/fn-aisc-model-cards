@@ -1,0 +1,11 @@
+{
+ "url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json",
+ "status": 200,
+ "retrieved_at": "2026-09-30T10:17:01+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "W/\"89d60a3d8d1fcf0be75e3b899482e783d94fba05\"",
+  "x-repo-commit": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f"
+ },
+ "body": "{\n  \"architectures\": [\n    \"Phi4ForCausalLMV\"\n  ],\n  \"auto_map\": {\n    \"AutoConfig\": \"modeling_phi4_visionr.Phi4VisionR\",\n    \"AutoModelForCausalLM\": \"modeling_phi4_visionr.Phi4ForCausalLMV\",\n    \"AutoProcessor\": \"processing_phi4_visionr.Phi4VisionRProcessor\"\n  },\n  \"attention_bias\": false,\n  \"attention_dropout\": 0.0,\n  \"bos_token_id\": 100257,\n  \"dtype\": \"bfloat16\",\n  \"embd_pdrop\": 0.0,\n  \"eos_token_id\": 100265,\n  \"freeze_mm_mlp_adapter\": false,\n  \"hidden_act\": \"silu\",\n  \"hidden_size\": 5120,\n  \"image_aspect_ratio\": \"square\",\n  \"initializer_range\": 0.02,\n  \"intermediate_size\": 17920,\n  \"max_num_patches\": 3600,\n  \"max_position_embeddings\": 32768,\n  \"min_num_patches\": 256,\n  \"mm_hidden_size\": 1152,\n  \"mm_projector_lr\": null,\n  \"mm_projector_type\": \"mlp2x_gelu\",\n  \"mm_vision_tower\": \"google/siglip2-so400m-patch16-naflex\",\n  \"model_type\": \"phi4-siglip\",\n  \"num_attention_heads\": 40,\n  \"num_hidden_layers\": 40,\n  \"num_key_value_heads\": 10,\n  \"original_max_position_embeddings\": 32768,\n  \"pad_token_id\": 100349,\n  \"partial_rotary_factor\": 1.0,\n  \"resid_pdrop\": 0.0,\n  \"rms_norm_eps\": 1e-05,\n  \"rope_scaling\": null,\n  \"rope_theta\": 500000,\n  \"sliding_window\": null,\n  \"tie_word_embeddings\": false,\n  \"tokenizer_model_max_length\": 16384,\n  \"tokenizer_padding_side\": \"right\",\n  \"transformers_version\": \"4.56.1\",\n  \"tune_mm_mlp_adapter\": false,\n  \"unfreeze_vision_tower\": true,\n  \"use_cache\": true,\n  \"use_mm_proj\": true,\n  \"use_s2\": false,\n  \"vocab_size\": 100352,\n  \"vision_config\": {\n    \"hidden_size\": 1152,\n    \"intermediate_size\": 4304,\n    \"model_type\": \"siglip2_vision_model\",\n    \"num_attention_heads\": 16,\n    \"num_hidden_layers\": 27\n  }\n}\n"
+}

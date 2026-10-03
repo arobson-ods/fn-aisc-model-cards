@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "design_rationale",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card describes the training approach only briefly (cold-start SFT with long reasoning traces, then RL scaling with GRPO) and does not explain how or why key design choices were made; it defers to external blogpost/technical report.",
+  "quotes": [
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO.",
+   "For more details about the training protocol of this model, please refer to the [Falcon-H1R technical blogpost](https://falcon-lm.github.io/blog/falcon-h1r-7b) and [Technical Report](https://github.com/tiiuae/falcon-h1r/blob/main/tech_report.pdf)."
+  ],
+  "section": "Falcon-H1R-7B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 6418,
+  "output_tokens": 398
+ },
+ "cost_usd_list_price": 0.0073716,
+ "duration_ms": 3231
+}

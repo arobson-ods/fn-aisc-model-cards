@@ -1,0 +1,716 @@
+model: mistral
+repo_id: mistralai/Mistral-Medium-3.5-128B
+retrieved_at: '2026-09-30T10:16:59+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Mistral AI
+    quote: For optimal performance, we recommend using the Mistral AI API if local serving is subpar.
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: mistralai/Mistral-Medium-3.5-128B
+    quote: api:id = "mistralai/Mistral-Medium-3.5-128B"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: 22b2b868a15677cfa6061277ed2f653d1349a9ab
+    quote: api:sha = "22b2b868a15677cfa6061277ed2f653d1349a9ab"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+  - fact_id: model_version
+    status: prose_adds
+    value: Mistral Medium 3.5 (128B); it replaces its predecessor Mistral Medium 3.1
+    quote: Mistral Medium 3.5 is our first flagship merged model. [...] Mistral Medium 3.5 replaces its
+      predecessor Mistral Medium 3.1 and Magistral in Le Chat.
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: card
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: 22b2b868a15677cfa6061277ed2f653d1349a9ab
+    quote: api:sha = "22b2b868a15677cfa6061277ed2f653d1349a9ab"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Dense 128B model (dense, not mixture-of-experts), multimodal with a vision encoder trained
+      from scratch
+    quote: It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,
+      [...] - **Dense 128B parameters**. [...] We trained the vision encoder from
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Dense 128B parameter model with a 256k context window; multimodal input (text and image) with
+      text output; vision encoder trained from scratch to handle variable image sizes and aspect ratios;
+      instruct and reasoning in a single set of weights, with reasoning effort configurable per request.
+    quote: 'It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,
+
+      and coding in a single set of weights. [...] We trained the vision encoder from
+
+      scratch to handle variable image sizes and aspect ratios. [...] **Multimodal input**: Accepts both
+      text and image input, with text output. [...] **Instruct and Reasoning functionalities** with function
+      calls (reasoning effort configurable per request).'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: prose
+    value: Text and image input (with text output)
+    quote: '**Multimodal input**: Accepts both text and image input, with text output.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '262144'
+    quote: config:text_config.max_position_embeddings = 262144
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json
+    source_type: repo_config
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: prose
+    value: Text output (accepts text and image input, with text output)
+    quote: '- **Multimodal input**: Accepts both text and image input, with text output.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '127704210176'
+    quote: api:safetensors.total = 127704210176
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '127704210176'
+    quote: api:safetensors.total = 127704210176
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral
+      Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama.
+    quote: 'We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**:
+      Open-source license for both commercial and non-commercial use with exceptions for companies with
+      large revenue. [...] > For optimal performance, we recommend using the Mistral AI API if local serving
+      is subpar. [...] Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in
+      Le Chat. [...] - [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).
+      [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF)
+      for Unsloth''s GGUFs. [...] - [`Ollama`](https://ollama.com//): See [here](https://ollama.com/library/mistral-medium-3.5).
+      [...] - [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang). [...] - [`transformers`](https://github.com/huggingface/transformers):
+      See [here](#transformers).'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
+    quote: derived:hub_url = "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral
+      Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama.
+    quote: 'We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**:
+      Open-source license for both commercial and non-commercial use with exceptions for companies with
+      large revenue. [...] > For optimal performance, we recommend using the Mistral AI API if local serving
+      is subpar. [...] Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in
+      Le Chat. [...] - [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).
+      [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF)
+      for Unsloth''s GGUFs. [...] - [`Ollama`](https://ollama.com//): See [here](https://ollama.com/library/mistral-medium-3.5).
+      [...] - [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang). [...] - [`transformers`](https://github.com/huggingface/transformers):
+      See [here](#transformers).'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: other
+    quote: card:license = "other"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Modified MIT License (open-source license for commercial and non-commercial use, with exceptions
+      for companies with large revenue)
+    quote: 'We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**:
+      Open-source license for both commercial and non-commercial use with exceptions for companies with
+      large revenue. [...] This model is licensed under a [Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE).'
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: card
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: other
+    quote: card:license = "other"
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Modified MIT License (open-source license for commercial and non-commercial use, with exceptions
+      for companies with large revenue)
+    quote: 'We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**:
+      Open-source license for both commercial and non-commercial use with exceptions for companies with
+      large revenue. [...] This model is licensed under a [Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE).'
+    source_url: https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B
+    source_type: card
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: An EAGLE model (to speed up local inference with vLLM or SGLang) is released at huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE;
+      Unsloth GGUFs are available at huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF.
+    quote: 'To speed up local inference using vLLM or SGLang, check out our released [EAGLE model](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE).
+      [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF)
+      for Unsloth''s GGUFs.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: acceptable_use_policy
+    status: prose
+    value: 'Released under a Modified MIT License (open-source for commercial and non-commercial use,
+      with exceptions for companies with large revenue). Use restriction: the model must not be used in
+      a manner that infringes, misappropriates, or otherwise violates any third party''s rights, including
+      intellectual property rights.'
+    quote: '*You must not use this model in a manner that infringes, misappropriates, or otherwise violates
+      any third party’s rights, including intellectual property rights.* [...] We release this model under
+      a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**:
+      Open-source license for both commercial and non-commercial use with exceptions for companies with
+      large revenue.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Instruction-following, reasoning, and coding tasks (including agentic coding and function calling)
+      in a single unified model, with text and image input.
+    quote: 'It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,
+
+      and coding in a single set of weights. [...] Reasoning effort is configurable per request, so the
+      same model can answer a quick chat reply or work through a complex agentic run. [...] Use `reasoning_effort="high"`
+      for complex tasks and agentic coding.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: Must not be used in a manner that infringes, misappropriates, or otherwise violates any third
+      party's rights, including intellectual property rights.
+    quote: You must not use this model in a manner that infringes, misappropriates, or otherwise violates
+      any third party’s rights, including intellectual property rights.
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+  - fact_id: target_systems
+    status: prose
+    value: Can be used in chat assistants (Le Chat), coding agents (Vibe), and agentic systems with native
+      function calling/tool use and JSON output; also supports system prompts and multimodal (text and
+      image) input.
+    quote: 'Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It
+      also replaces Devstral 2 in our
+
+      coding agent Vibe. [...] **Agentic**: Best-in-class agentic capabilities with native function calling
+      and JSON output. [...] **System Prompt**: Strong adherence and support for system prompts.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Deployable via vLLM (recommended), llama.cpp, LM Studio, Ollama, SGLang and transformers; usable
+      in Mistral Vibe via the Mistral API or a local vLLM server; fine-tuning via Axolotl and Unsloth.
+      vLLM serving uses an OpenAI-compatible client with reasoning_effort set to 'none' or 'high'.
+    quote: '- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).
+      [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF)
+      for Unsloth''s GGUFs. [...] - [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang).
+      [...] - [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers).
+      [...] Mistral Medium 3.5 can be selected by starting `vibe`. If it is the first time you launch
+      `vibe`, it will: [...] - [`Axolotl`](https://github.com/axolotl-ai-cloud/axolotl): See [here](https://docs.axolotl.ai/docs/models/mistral-medium-3_5.html).
+      [...] REASONING_EFFORT = "none" # Toggle reasoning with ''high''.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_hardware
+    status: prose
+    value: The card's serve command uses tensor parallelism across 8 GPUs (--tensor-parallel-size 8 for
+      vLLM; --tp 8 for SGLang). No GPU memory requirement is stated.
+    quote: vllm serve mistralai/Mistral-Medium-3.5-128B --tensor-parallel-size 8 \ [...]   --tp 8 --tool-call-parser
+      mistral --reasoning-parser mistral
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers 5.6.0.dev0
+    quote: config:transformers_version = "transformers 5.6.0.dev0"
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json
+    source_type: repo_config
+  - fact_id: required_software
+    status: prose_adds
+    value: vllm nightly (which should automatically install mistral_common >= 1.11.1 and transformers
+      >= 5.4.0); SGLang also requires transformers >= 5.4.0
+    quote: 'Make sure to install **vllm nightly**: [...] Doing so should automatically install [`mistral_common
+      >= 1.11.1`](https://github.com/mistralai/mistral-common/releases/tag/v1.11.0) and `transformers
+      >= 5.4.0`. [...] Or follow the [SGLang installation guide](https://docs.sglang.io/docs/get-started/install).
+      Requires `transformers >= 5.4.0`.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Described as a merged model (a flagship merged model); the card gives no further detail on
+      pretraining, SFT, preference optimisation or RL stages.
+    quote: Mistral Medium 3.5 is our first flagship merged model.
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: 'The card gives limited rationale: a single merged model handles instruction-following, reasoning
+      and coding in one set of weights (a unified model aimed at better performance than previous models),
+      and the vision encoder was trained from scratch to handle variable image sizes and aspect ratios.'
+    quote: 'Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k
+      context window, handling instruction-following, reasoning,
+
+      and coding in a single set of weights. [...] We trained the vision encoder from
+
+      scratch to handle variable image sizes and aspect ratios.'
+    source_url: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

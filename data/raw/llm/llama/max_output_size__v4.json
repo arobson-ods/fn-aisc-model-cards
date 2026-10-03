@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "max_output_size",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: max_output_size\nWhat to find: Maximum output size (e.g. maximum generated tokens).\nCard sections that often contain it: Output, Generation, Context Length\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 167
+ },
+ "cost_usd_list_price": 0.0057138,
+ "duration_ms": 2198
+}

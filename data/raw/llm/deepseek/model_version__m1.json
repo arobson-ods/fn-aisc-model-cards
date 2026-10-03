@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "model_version",
+ "input_sha256": "40674f0e7f45f381e341ae4d9df12b3cd6aa814552ed6801a0d03189d078c504",
+ "request_user": "Fact: model_version\nWhat to find: Version identifier of this model release (named version or repository revision).\nThe card's machine-readable metadata gives: \"dba1be0a40aa45a94ad051997016db3960a90277\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "DeepSeek-V4.1-Flash",
+  "quotes": [
+   "We introduce **DeepSeek-V4.1-Flash**, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens."
+  ],
+  "agreement": "adds",
+  "section": "Introduction"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7606,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 227
+ },
+ "cost_usd_list_price": 0.0328142,
+ "duration_ms": 2339
+}

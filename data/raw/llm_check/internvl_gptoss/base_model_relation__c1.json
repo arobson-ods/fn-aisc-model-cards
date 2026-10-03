@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "2fc273a6555185cd",
+ "request_user": "Fact definition: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nValue taken from the model's structured metadata (card:base_model_relation = \"merge\"): merge\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card metadata explicitly states base_model_relation: merge, listing two base models (InternViT-300M-448px-V2_5 and gpt-oss-20b). The body says the model combines a vision encoder initialized from InternViT and a language model initialized from GPT-OSS (the 'ViT–MLP–LLM' design), which fits the merge label. The card also describes further training (pre-training, supervised fine-tuning, RL), but nothing contradicts the declared relation."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 600,
+  "cache_read_input_tokens": 18938,
+  "output_tokens": 719
+ },
+ "cost_usd_list_price": 0.0229756,
+ "duration_ms": 11470
+}

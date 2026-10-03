@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "98fac9be6e430b58",
+ "request_user": "Fact definition: Intended uses of the model.\nExtracted value: The card describes no dedicated intended-use section, but it says the model is designed for coding, professional work, research, and long-horizon agentic tasks, and that it carries complex multi-step tasks through to completion.\nQuotes given as evidence (separated by [...]): Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes are about Qwen3.8 and support the value. It is true that the card has no dedicated intended-use section. Coding, professional work, research and long-horizon agentic tasks come from the 'delivers substantial gains across' sentence. Calling the model 'designed for' these is a small but fair reframing. The multi-step task claim closely paraphrases 'designed to carry complex, multi-step tasks through to completion.' Leaving out 'with greater reliability' doesn't change the intended use."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18411,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 739
+ },
+ "cost_usd_list_price": 0.162076,
+ "duration_ms": 9525
+}

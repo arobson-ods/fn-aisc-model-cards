@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "access_conditions",
+ "input_sha256": "3b02665763b9343b477db413503a87cae24dd2af05475b701d78102ba2ab9f6c",
+ "request_user": "Fact: access_conditions\nWhat to find: Conditions for accessing the weights (e.g. gated access requiring agreement or approval).\nThe card's machine-readable metadata gives: false\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Public access through open-source repositories (Hugging Face and GitHub), with MIT license; enterprise or subscription-based access also available through Azure AI Foundry. No gating or approval requirement is mentioned.",
+  "quotes": [
+   "Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B)",
+   "Enterprise or subscription-based access through [Azure AI Foundry](https://ai.azure.com)",
+   "**License:** [MIT](https://opensource.org/licenses/MIT)"
+  ],
+  "agreement": "agrees",
+  "section": "2.3 Distribution Channels"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10318,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 504
+ },
+ "cost_usd_list_price": 0.04643220000000001,
+ "duration_ms": 4175
+}

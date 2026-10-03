@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "additional_assets",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The Molmo2 datasets are released and available via the Molmo2 data collection on Hugging Face (https://huggingface.co/collections/allenai/molmo2-data). Other artifacts (training code, evaluations, intermediate checkpoints) are not yet released and will be made available at a later date. Other Molmo2 family models are in the collection at https://huggingface.co/collections/allenai/molmo2.",
+  "quotes": [
+   "Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data). ",
+   "All other artifacts used in creating Molmo2 (training code, evaluations, intermediate checkpoints) will be made available at a later date, furthering our commitment to open-source AI development and reproducibility.",
+   "You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2)."
+  ],
+  "section": "Molmo2-8B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8510,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 416
+ },
+ "cost_usd_list_price": 0.038204,
+ "duration_ms": 3284
+}

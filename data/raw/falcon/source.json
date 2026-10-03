@@ -1,0 +1,11 @@
+{
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "sha": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+ "api_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+ "retrieved_at": "2026-09-30T10:17:01+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+ "config_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json"
+}

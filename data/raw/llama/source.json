@@ -1,0 +1,11 @@
+{
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "sha": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+ "api_url": "https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "retrieved_at": "2026-09-30T10:16:58+00:00",
+ "gated": "manual",
+ "readme_status": 401,
+ "readme_source": "rendered_html",
+ "readme_url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "config_status": 401
+}

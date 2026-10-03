@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "data_modality",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: data_modality\nWhat to find: Modalities of the training data (text, images, audio, video, other).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Multimodal corpus (images and text); pre-training on 45T tokens",
+  "quotes": [
+   "DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens.",
+   "The model natively processes images and text, and generates text autoregressively."
+  ],
+  "section": "Introduction"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 532,
+  "cache_read_input_tokens": 7215,
+  "output_tokens": 244
+ },
+ "cost_usd_list_price": 0.0060149999999999995,
+ "duration_ms": 2800
+}

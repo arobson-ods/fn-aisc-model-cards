@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "data_scope",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Training data is a curated mixture of reasoning and non-reasoning data, primarily filtered and improved open-source vision-language datasets, supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions. Modalities are text and images; trained primarily on English text and image-text pairs.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is trained with Supervised Fine-Tuning (SFT) on a carefully curated mixture of reasoning and non-reasoning data.",
+   "The training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions.",
+   "The model is trained primarily on English text and image-text pairs."
+  ],
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 10621,
+  "output_tokens": 376
+ },
+ "cost_usd_list_price": 0.008052199999999999,
+ "duration_ms": 3343
+}

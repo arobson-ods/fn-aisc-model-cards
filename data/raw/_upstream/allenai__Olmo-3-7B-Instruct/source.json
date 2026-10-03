@@ -1,0 +1,11 @@
+{
+ "repo_id": "allenai/Olmo-3-7B-Instruct",
+ "sha": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+ "api_url": "https://huggingface.co/api/models/allenai/Olmo-3-7B-Instruct",
+ "retrieved_at": "2026-09-30T10:17:03+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/raw/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
+ "config_url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/raw/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/config.json"
+}

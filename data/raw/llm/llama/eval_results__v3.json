@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "eval_results",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Llama 4 Scout instruction-tuned results: MMMU 69.4 (accuracy, 0-shot); MathVista 70.7 (accuracy, 0-shot); ChartQA 88.8 (relaxed_accuracy, 0-shot); DocVQA (test) 94.4 (anls, 0-shot); LiveCodeBench (10/01/2024-02/01/2025) 32.8 (pass@1, 0-shot); MMLU Pro 74.3 (macro_avg/acc, 0-shot); GPQA Diamond 57.2 (accuracy, 0-shot); MGSM 90.6 (average/em, 0-shot). Pre-trained Llama 4 Scout: MMLU 79.6 (macro_avg/acc_char, 5-shot).",
+  "quotes": [
+   "Image Reasoning | \nMMMU | \n0 | \naccuracy | \nNo multimodal support | \n | \n69.4 | \n73.4 | ",
+   "MathVista | \n0 | \naccuracy | \n | \n | \n70.7 | \n73.7 | ",
+   "Image Understanding | \nChartQA | \n0 | \nrelaxed_accuracy | \n | \n | \n88.8 | \n90.0 | ",
+   "GPQA Diamond | \n0 | \naccuracy | \n50.5 | \n49.0 | \n57.2 | \n69.8 | ",
+   "Reasoning & Knowledge | \nMMLU | \n5 | \nmacro_avg/acc_char | \n79.3 | \n85.2 | \n79.6 | \n85.5 | "
+  ],
+  "section": "Benchmarks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 659
+ },
+ "cost_usd_list_price": 0.0105448,
+ "duration_ms": 4106
+}

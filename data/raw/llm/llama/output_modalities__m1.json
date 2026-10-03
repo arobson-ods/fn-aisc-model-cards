@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "output_modalities",
+ "input_sha256": "337f0a87045559ea18bbf09df6dfa31e1861cc33863ff33a875a6fc53ee63294",
+ "request_user": "Fact: output_modalities\nWhat to find: Output modalities produced (text, images, audio, video).\nThe card's machine-readable metadata gives: [\"text\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Multilingual text and code",
+  "quotes": [
+   "Llama 4 Scout (17Bx16E) | \n A mix of publicly available, licensed data and information from Meta's products and services. This includes publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. Learn more in our Privacy Center (https://www.facebook.com/privacy/guide/genai/).\n | \n 17B (Activated)\n 109B (Total)\n | \n Multilingual text and image | \n Multilingual text and code | \n 10M | \n ~40T | \n August 2024 |"
+  ],
+  "agreement": "adds",
+  "section": "Model Information"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9616,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 332
+ },
+ "cost_usd_list_price": 0.041904199999999996,
+ "duration_ms": 3093
+}

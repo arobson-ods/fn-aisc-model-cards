@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "f608beedf3f09316",
+ "request_user": "Fact definition: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nExtracted value: Pretraining on ~40 trillion tokens of multimodal data (Llama 4 Scout), followed by safety fine-tuning using human-generated and synthetic data. Architecture is auto-regressive MoE with early fusion. The card does not detail SFT, DPO, RL, distillation or merging stages.\nQuotes given as evidence (separated by [...]): Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on ~22 trillion tokens of multimodal data [...] The primary objective of conducting safety fine-tuning is to offer developers a readily available, safe, and powerful model for various applications [...] We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks. [...] The Llama 4 models are auto-regressive language models that use a mixture-of-experts (MoE) architecture and incorporate early fusion for native multimodality.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "Quotes support pretraining, safety fine-tuning with human and synthetic data, and the MoE/early-fusion architecture. The value is right that SFT, DPO, RL, distillation and merging stages aren't detailed. But it gives only Scout's ~40T tokens and drops Maverick's ~22T, even though the quote includes it. It also ignores the card's distinction between pretrained and instruction-tuned models, framing post-training as safety fine-tuning only. The architecture detail is not a training stage."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 959,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 783
+ },
+ "cost_usd_list_price": 0.025034600000000004,
+ "duration_ms": 7972
+}

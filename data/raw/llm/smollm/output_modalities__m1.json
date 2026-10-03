@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "output_modalities",
+ "input_sha256": "747b226a57bc9c7fba23249449a53baf8c8d68467e6bba4f0b80a9c997b490ec",
+ "request_user": "Fact: output_modalities\nWhat to find: Output modalities produced (text, images, audio, video).\nThe card's machine-readable metadata gives: [\"text\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Text",
+  "quotes": [
+   "SmolLM3 can produce text on a variety of topics, but the generated content may not always be factually accurate, logically consistent, or free from biases present in the training data."
+  ],
+  "agreement": "agrees",
+  "section": "Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9442,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 333
+ },
+ "cost_usd_list_price": 0.0412182,
+ "duration_ms": 3553
+}

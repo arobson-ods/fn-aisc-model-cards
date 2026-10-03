@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "integration_means",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required for the 20B version), and deployable with LMDeploy (pipeline, OpenAI-compatible api_server) or vLLM (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode is enabled via a system prompt (R1_SYSTEM_PROMPT) with do_sample=True and temperature=0.6.",
+  "quotes": [
+   "> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS.",
+   "> Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version of our model, transformers>=4.55.0 is required.",
+   "from transformers import AutoTokenizer, AutoModelForImageTextToText",
+   "To enable thinking mode, please set the system prompt to our Thinking System Prompt. When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition.",
+   "LMDeploy's `api_server` enables models to be easily packed into services with a single command. The provided RESTful APIs are compatible with OpenAI's interfaces. Below are an example of service startup:"
+  ],
+  "section": "Quick Start"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 19538,
+  "output_tokens": 626
+ },
+ "cost_usd_list_price": 0.0124236,
+ "duration_ms": 4361
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "data_bias_measures",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: data_bias_measures\nWhat to find: Measures to detect or address identifiable biases in the training data, or known biases.\nCard sections that often contain it: Bias, Risks and Limitations, Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card acknowledges that VLMs trained on large-scale real-world data can reflect socio-cultural biases, and that biases or gaps in training data can limit responses. Stated measures: careful scrutiny, input data pre-processing and post-training evaluations to help mitigate bias; filtering of training data based on content quality and safety; continuous monitoring and de-biasing techniques encouraged.",
+  "quotes": [
+   "VLMs trained on large-scale, real-world text and image data can reflect socio-cultural biases embedded in the training material. Gemma 4 models underwent careful scrutiny, input data pre-processing, and post-training evaluations as reported in this card to help mitigate the risk of these biases.",
+   "The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses.",
+   "**Additional methods**: Filtering based on content quality and safety in line with [our policies]",
+   "**Perpetuation of biases**: It's encouraged to perform continuous monitoring (using evaluation metrics, human review) and the exploration of de-biasing techniques during model training, fine-tuning, and other use cases."
+  ],
+  "section": "Ethical Considerations and Risks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 11272,
+  "output_tokens": 504
+ },
+ "cost_usd_list_price": 0.0095064,
+ "duration_ms": 5277
+}

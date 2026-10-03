@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "training_method",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: training_method\nWhat to find: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nCard sections that often contain it: Training, Training Procedure, Post-training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Training pipeline has stages: Multimodal Continual Pre-Training (CPT), Supervised Fine-Tuning (SFT), and Cascade Reinforcement Learning (CascadeRL). In CascadeRL, the model is first fine-tuned with Mixed Preference Optimization (MPO) under offline RL, followed by GSPO under online RL. The Flash version additionally has Visual Consistency Learning (ViCO).",
+  "quotes": [
+   "Our training pipeline comprises four stages: Multimodal Continual Pre-Training (**CPT**), Supervised Fine-Tuning (**SFT**), and Cascade Reinforcement Learning (**CascadeRL**). In CascadeRL, we first fine-tune the model using Mixed Preference Optimization (**MPO**) under an offline RL setting, followed by **GSPO** under an oneline RL setting.",
+   "For the Flash version of InternVL3.5, we additionally introduce a lightweight training stage, termed Visual Consistency Learning (**ViCO**), which reduces the token cost required to represent an image patch."
+  ],
+  "section": "InternVL3.5 Family"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 561,
+  "cache_read_input_tokens": 19350,
+  "output_tokens": 484
+ },
+ "cost_usd_list_price": 0.010957999999999999,
+ "duration_ms": 3246
+}

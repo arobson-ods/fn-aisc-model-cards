@@ -1,0 +1,220 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:d4789972-1c90-5178-834a-f40ffab20d99",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:16:57Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "olmo:model",
+   "name": "allenai/Olmo-3.1-32B-Instruct",
+   "supplier": {
+    "name": "Allen Institute for AI (Ai2)"
+   },
+   "version": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "ac0587e4a7744a551c059d8cd17ba220bc940dae"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)"
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Use with the HuggingFace transformers library (transformers 4.57.0 or higher) via AutoModelForCausalLM/AutoTokenizer; optional 8-bit quantization with bitsandbytes; specific checkpoints loadable via the revision argument; fine-tuning with the OLMo-core repository."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights/checkpoints released on Hugging Face (loadable with the transformers library, including intermediate revisions); code released on GitHub repositories."
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "olmo:ancestor-allenai/Olmo-3.1-32B-Instruct-DPO",
+      "name": "allenai/Olmo-3.1-32B-Instruct-DPO",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO"
+       }
+      ],
+      "version": "fc84a4f699916fcf585aa54371f47897fa934d5c"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Transformer style autoregressive language model",
+     "inputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "text-generation",
+     "datasets": [
+      {
+       "ref": "olmo:dataset-allenai/Dolci-Instruct-RL"
+      },
+      {
+       "ref": "olmo:training-data"
+      },
+      {
+       "ref": "olmo:evalset-MATH-AIME-2024-AIME-2025-OMEGA-BigBenchHard-ZebraLogic-AGI-Eval-English-HumanEvalPlus-MBPP-LiveCodeBench-v3-IFEval-IFBench-MMLU-PopQA-GPQA-AlpacaEval-2-LC-Safety"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Olmo 3.1 32B Instruct scores: MATH 93.4, AIME 2024 67.8, AIME 2025 57.9, OMEGA 42.2, BigBenchHard 84.0, ZebraLogic 61.7, AGI Eval English 79.5, HumanEvalPlus 86.7, MBPP+ 65.1, LiveCodeBench v3 54.7, IFEval 88.8, IFBench 39.7, MMLU 80.9, PopQA 25.0, GPQA 48.6, AlpacaEval 2 LC 59.8, Safety 89.5"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines."
+     ],
+     "technicalLimitations": [
+      "Without safety filtering, the models can easily be prompted by users to generate harmful and sensitive content; such content may also be produced unintentionally, especially involving bias. Many statements from OLMo or any LLM are often inaccurate, so facts should be verified."
+     ],
+     "ethicalConsiderations": [
+      {
+       "name": "The evaluation table includes a Safety score for Olmo 3.1 32B Instruct of 89.5 (SFT 92.1, DPO 88.9), compared with other models (e.g., Apertus 70B 77.1, Qwen 3 32B (No Think) 81.6, Gemma 3 27B 68.8, OLMo 2 32B 84.2). No red-teaming is described."
+      }
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "32233522176"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "65536"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "olmo:dataset-allenai/Dolci-Instruct-RL",
+   "name": "allenai/Dolci-Instruct-RL",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "allenai/Dolci-Instruct-RL"
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/datasets/allenai/Dolci-Instruct-RL"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "olmo:training-data",
+   "name": "Training data of allenai/Olmo-3.1-32B-Instruct (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_scope: Pre-trained on the Dolma 3 dataset and post-trained on Dolci datasets; post-training data covers math, code, chat, and general knowledge queries (SFT/DPO) and math, code, instruction-following, and general chat queries (RLVR). Language: English."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:knowledge_cutoff",
+     "value": "Dec. 2024"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "olmo:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "olmo:evalset-MATH-AIME-2024-AIME-2025-OMEGA-BigBenchHard-ZebraLogic-AGI-Eval-English-HumanEvalPlus-MBPP-LiveCodeBench-v3-IFEval-IFBench-MMLU-PopQA-GPQA-AlpacaEval-2-LC-Safety",
+   "name": "MATH, AIME 2024, AIME 2025, OMEGA, BigBenchHard, ZebraLogic, AGI Eval English, HumanEvalPlus, MBPP+, LiveCodeBench v3, IFEval, IFBench, MMLU, PopQA, GPQA, AlpacaEval 2 LC, Safety",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "MATH, AIME 2024, AIME 2025, OMEGA, BigBenchHard, ZebraLogic, AGI Eval English, HumanEvalPlus, MBPP+, LiveCodeBench v3, IFEval, IFBench, MMLU, PopQA, GPQA, AlpacaEval 2 LC, Safety"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "olmo:model",
+   "dependsOn": [
+    "olmo:dependency-software"
+   ]
+  },
+  {
+   "ref": "olmo:dependency-software"
+  }
+ ]
+}

@@ -1,0 +1,263 @@
+{
+ "median_eu_item_share_public": 0.578,
+ "median_eu_fact_share_public": 0.6,
+ "median_machine_readable_share_of_disclosed": 0.438,
+ "median_card_metadata_share_of_disclosed": 0.16749999999999998,
+ "control_model": "olmo",
+ "control_disclosed_facts_without_field": {
+  "spdx": [
+   "acceptable_use_policy",
+   "access_conditions",
+   "additional_assets",
+   "base_model_relation",
+   "data_scope",
+   "input_modalities",
+   "integration_means",
+   "knowledge_cutoff",
+   "languages",
+   "output_modalities",
+   "param_count",
+   "task",
+   "weights_precision"
+  ],
+  "cdx": [
+   "acceptable_use_policy",
+   "access_conditions",
+   "base_model_relation",
+   "data_provenance",
+   "data_scope",
+   "integration_means",
+   "knowledge_cutoff",
+   "languages",
+   "max_input_size",
+   "param_count",
+   "weights_precision"
+  ],
+  "eu": [
+   "access_conditions",
+   "eval_datasets",
+   "eval_results",
+   "knowledge_cutoff",
+   "languages",
+   "limitations",
+   "safety_evaluation",
+   "task",
+   "training_datasets",
+   "weights_precision"
+  ]
+ },
+ "schema_gap_facts": {
+  "spdx": 29,
+  "cdx": 33,
+  "eu": 16
+ },
+ "spotcheck": "full human spot-check not done",
+ "autocheck": {
+  "kind": "automated second-model check, not human-verified",
+  "checker": "claude-opus-5-5",
+  "rows": 146,
+  "graded": 146,
+  "accuracy": 0.908,
+  "counts": {
+   "y": 120,
+   "partial": 25,
+   "n": 1
+  },
+  "by_status": {
+   "not_stated": 0.895,
+   "prose": 0.907,
+   "structured": 0.918
+  },
+  "by_model": {
+   "deepseek": 1.0,
+   "falcon": 0.9,
+   "gemma": 0.955,
+   "granite": 0.909,
+   "internvl_gptoss": 0.9,
+   "llama": 0.833,
+   "mistral": 0.95,
+   "molmo2": 0.95,
+   "olmo": 0.85,
+   "olmo_gguf": 0.95,
+   "phi": 0.773,
+   "qwen": 0.9,
+   "smollm": 0.909,
+   "twil_smollm": 0.95
+  },
+  "human_reviewed": 15,
+  "human_accuracy_on_mini": 0.667,
+  "checker_agreement_with_human": 1.0,
+  "note": "The mini sample over-represents rows the checker flagged, so human_accuracy_on_mini is not an estimate of overall accuracy. Use it to judge the checker."
+ },
+ "pending_records": 0,
+ "per_model": {
+  "olmo": {
+   "eu_items_answered": 22,
+   "eu_items": 45,
+   "eu_item_share": 0.489,
+   "eu_fact_share": 0.489,
+   "facts_disclosed": 32,
+   "facts": 61,
+   "machine_readable_share": 0.531,
+   "card_metadata_share": 0.156,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "llama": {
+   "eu_items_answered": 38,
+   "eu_items": 45,
+   "eu_item_share": 0.844,
+   "eu_fact_share": 0.867,
+   "facts_disclosed": 51,
+   "facts": 61,
+   "machine_readable_share": 0.275,
+   "card_metadata_share": 0.078,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "gemma": {
+   "eu_items_answered": 28,
+   "eu_items": 45,
+   "eu_item_share": 0.622,
+   "eu_fact_share": 0.644,
+   "facts_disclosed": 39,
+   "facts": 61,
+   "machine_readable_share": 0.385,
+   "card_metadata_share": 0.154,
+   "pending": 0,
+   "rejected_quotes": 1
+  },
+  "mistral": {
+   "eu_items_answered": 23,
+   "eu_items": 45,
+   "eu_item_share": 0.511,
+   "eu_fact_share": 0.511,
+   "facts_disclosed": 29,
+   "facts": 61,
+   "machine_readable_share": 0.379,
+   "card_metadata_share": 0.069,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "qwen": {
+   "eu_items_answered": 21,
+   "eu_items": 45,
+   "eu_item_share": 0.467,
+   "eu_fact_share": 0.444,
+   "facts_disclosed": 28,
+   "facts": 61,
+   "machine_readable_share": 0.464,
+   "card_metadata_share": 0.179,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "deepseek": {
+   "eu_items_answered": 28,
+   "eu_items": 45,
+   "eu_item_share": 0.622,
+   "eu_fact_share": 0.6,
+   "facts_disclosed": 33,
+   "facts": 61,
+   "machine_readable_share": 0.394,
+   "card_metadata_share": 0.152,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "phi": {
+   "eu_items_answered": 33,
+   "eu_items": 45,
+   "eu_item_share": 0.733,
+   "eu_fact_share": 0.756,
+   "facts_disclosed": 44,
+   "facts": 61,
+   "machine_readable_share": 0.409,
+   "card_metadata_share": 0.182,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "smollm": {
+   "eu_items_answered": 26,
+   "eu_items": 45,
+   "eu_item_share": 0.578,
+   "eu_fact_share": 0.6,
+   "facts_disclosed": 37,
+   "facts": 61,
+   "machine_readable_share": 0.432,
+   "card_metadata_share": 0.108,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "falcon": {
+   "eu_items_answered": 20,
+   "eu_items": 45,
+   "eu_item_share": 0.444,
+   "eu_fact_share": 0.444,
+   "facts_disclosed": 28,
+   "facts": 61,
+   "machine_readable_share": 0.571,
+   "card_metadata_share": 0.25,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "granite": {
+   "eu_items_answered": 28,
+   "eu_items": 45,
+   "eu_item_share": 0.622,
+   "eu_fact_share": 0.622,
+   "facts_disclosed": 36,
+   "facts": 61,
+   "machine_readable_share": 0.444,
+   "card_metadata_share": 0.194,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "olmo_gguf": {
+   "eu_items_answered": 20,
+   "eu_items": 45,
+   "eu_item_share": 0.444,
+   "eu_fact_share": 0.444,
+   "facts_disclosed": 29,
+   "facts": 61,
+   "machine_readable_share": 0.379,
+   "card_metadata_share": 0.138,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "molmo2": {
+   "eu_items_answered": 25,
+   "eu_items": 45,
+   "eu_item_share": 0.556,
+   "eu_fact_share": 0.556,
+   "facts_disclosed": 32,
+   "facts": 61,
+   "machine_readable_share": 0.531,
+   "card_metadata_share": 0.25,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "internvl_gptoss": {
+   "eu_items_answered": 26,
+   "eu_items": 45,
+   "eu_item_share": 0.578,
+   "eu_fact_share": 0.6,
+   "facts_disclosed": 35,
+   "facts": 61,
+   "machine_readable_share": 0.486,
+   "card_metadata_share": 0.257,
+   "pending": 0,
+   "rejected_quotes": 0
+  },
+  "twil_smollm": {
+   "eu_items_answered": 27,
+   "eu_items": 45,
+   "eu_item_share": 0.6,
+   "eu_fact_share": 0.6,
+   "facts_disclosed": 35,
+   "facts": 61,
+   "machine_readable_share": 0.457,
+   "card_metadata_share": 0.2,
+   "pending": 0,
+   "rejected_quotes": 0
+  }
+ }
+}

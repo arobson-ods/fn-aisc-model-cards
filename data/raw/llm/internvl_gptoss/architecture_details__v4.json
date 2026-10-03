@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "architecture_details",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Follows the \"ViT–MLP–LLM\" paradigm; language model initialized from the Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; retains the Dynamic High Resolution strategy from InternVL1.5. This 20B-A4B model: 0.3B vision params, 20.9B language params, 21.2B total with 4B active (A4B).",
+  "quotes": [
+   "This series of models follow the \"ViT–MLP–LLM\" paradigm adopted in previous versions of InternVL.",
+   "We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder using InternViT-300M and InternViT-6B.",
+   "The Dynamic High Resolution strategy introduced in InternVL1.5 is also retained in our design.",
+   "| InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |"
+  ],
+  "section": "Model Architecture"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19561,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 544
+ },
+ "cost_usd_list_price": 0.083795,
+ "duration_ms": 4068
+}

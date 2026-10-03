@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "design_rationale",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card gives rationale only for safety fine-tuning choices. Safety fine-tuning aims to give developers a ready, safe and powerful model and to reduce their workload in deploying safe AI systems. Meta put great emphasis on reducing refusals to benign prompts, building on Llama 3. It also targeted removing preachy, overly moralizing language and fixed formatting issues so the model sounds more natural.",
+  "quotes": [
+   "The primary objective of conducting safety fine-tuning is to offer developers a readily available, safe, and powerful model for various applications, reducing the workload needed to deploy safe AI systems.",
+   "Building on the work we started with our Llama 3 models, we put a great emphasis on driving down model refusals to benign prompts for Llama 4.",
+   "We expanded our work on the refusal tone from Llama 3 so that the model sounds more natural. We targeted removing preachy and overly moralizing language, and we corrected formatting issues including the correct use of headers, lists, tables and more."
+  ],
+  "section": "Model level fine tuning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 8785,
+  "output_tokens": 678
+ },
+ "cost_usd_list_price": 0.010645,
+ "duration_ms": 4826
+}

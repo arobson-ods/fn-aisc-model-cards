@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "data_scope",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data collection): highly-curated image-text and video-text pairs. The model supports image, video and multi-image understanding and grounding. Datasets are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs.",
+   "Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding.",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "Molmo2-8B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 8042,
+  "output_tokens": 401
+ },
+ "cost_usd_list_price": 0.0077864,
+ "duration_ms": 3924
+}

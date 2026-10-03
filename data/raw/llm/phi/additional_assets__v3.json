@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "additional_assets",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "A GitHub code repository (github.com/microsoft/phi-4-reasoning-vision-15B), a technical report, and a full data card describing the training data are linked. Evaluation logs are said to be released publicly later. The card says the model is on Hugging Face and Azure AI Foundry.",
+  "quotes": [
+   "[Github](https://github.com/microsoft/phi-4-reasoning-vision-15B)<br>",
+   "[Technical Report](https://aka.ms/Phi-4-reasoning-vision-15B-TR)<br>",
+   "To learn more about the training data used for Phi-4-Reasoning-Vision-15B please refer to the full data card: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md.",
+   "Evaluation logs will be released publicly.",
+   "Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B)"
+  ],
+  "section": "Phi-4-Reasoning-Vision-15B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10990,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 456
+ },
+ "cost_usd_list_price": 0.048524,
+ "duration_ms": 3706
+}

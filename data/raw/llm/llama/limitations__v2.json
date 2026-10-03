@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "limitations",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Testing has not covered all scenarios; outputs cannot be predicted in advance and the model may produce inaccurate or other objectionable responses, so developers should do safety testing and tuning for their applications. Image understanding was tested only up to 5 input images. Use in languages beyond the 12 supported is out-of-scope (developers responsible for safe use if fine-tuning).",
+  "quotes": [
+   "Testing conducted to date has not covered, nor could it cover, all scenarios.",
+   "Llama 4’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate or other objectionable responses to user prompts.",
+   "developers should perform safety testing and tuning tailored to their specific applications of the model",
+   "Llama 4 has been tested for image understanding up to 5 input images.",
+   "Use in languages or capabilities beyond those explicitly referenced as supported in this model card**."
+  ],
+  "section": "Considerations and Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 8785,
+  "output_tokens": 409
+ },
+ "cost_usd_list_price": 0.008010999999999999,
+ "duration_ms": 3514
+}

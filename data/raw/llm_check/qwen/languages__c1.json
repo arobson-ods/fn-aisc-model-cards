@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "0baa8c4e3b75dbe5",
+ "request_user": "Fact definition: Natural languages the model supports.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The extractor is right: the card never lists the natural languages the model supports. The only language mentions are about other things. Footnotes 12 and 13 describe QwenReactBench and QwenSVGBench as \"bilingual (EN/CN)\", which is a property of those benchmarks, not a statement of what the model supports. The Best Practices section warns that a higher presence_penalty \"may occasionally result in language mixing\", which is a caveat about output quality, not a list of languages. There is no section or statement about multilingual support."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 560,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 472
+ },
+ "cost_usd_list_price": 0.0174524,
+ "duration_ms": 7769
+}

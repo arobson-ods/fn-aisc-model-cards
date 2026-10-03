@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "acceptable_use_policy",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: acceptable_use_policy\nWhat to find: Acceptable use policy or use restrictions that apply to the model (link or text).\nCard sections that often contain it: Acceptable Use, License, Use Policy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Licensed under Apache 2.0 and intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use). Trained on third party datasets subject to academic and non-commercial research use only; users should review the sources to determine whether the model is appropriate for their use case.",
+  "quotes": [
+   "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only. Please review the sources to determine if this model is appropriate for your use case."
+  ],
+  "section": "License and Use"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8595,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 340
+ },
+ "cost_usd_list_price": 0.037784,
+ "duration_ms": 3833
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "78ecd2be406ca8d3",
+ "request_user": "Fact definition: Hardware required to run the model (e.g. GPU memory, number of accelerators).\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The card never states hardware requirements such as GPU memory or number of accelerators for running the model. It only hints at them. Inference: the CUDA lines are commented out as \"# optional verifying cuda\", and the 8-bit quantization snippet says \"load_in_8bit=True) # Requires bitsandbytes\" with advice to \"pass the inputs directly to CUDA\". Fine-tuning: the command \"torchrun --nproc-per-node=8 ...\" implies 8 processes per node, but that is for fine-tuning, not running the model. No memory or accelerator requirement is given for inference."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 577,
+  "cache_read_input_tokens": 6275,
+  "output_tokens": 746
+ },
+ "cost_usd_list_price": 0.020798999999999998,
+ "duration_ms": 9719
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "model_version",
+ "input_sha256": "e9c7b9f434b29fb08fe8bc5ce293e9b0257300e6029ff31f2b5a958d54ff6e4a",
+ "request_user": "Fact: model_version\nWhat to find: Version identifier of this model release (named version or repository revision).\nThe card's machine-readable metadata gives: \"207bd685a7e3696cfaff12ded7c6a7ea0f88c996\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Qwen3.8 (model Qwen3.8-2.4T-A95B); no repository revision or commit hash is stated in the text",
+  "quotes": [
+   "Following the widespread community adoption of the Qwen3.5 and Qwen3.6 series, we are pleased to introduce Qwen3.8, the most capable generation in the Qwen open-model family to date."
+  ],
+  "agreement": "adds",
+  "section": "Qwen3.8-2.4T-A95B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18395,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 549
+ },
+ "cost_usd_list_price": 0.0791902,
+ "duration_ms": 4874
+}

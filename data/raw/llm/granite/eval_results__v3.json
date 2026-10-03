@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "eval_results",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Granite-4.2-8B (8B Dense) scores: SWE Bench Multilingual 30.78, SWE Bench Pro 19.11, SWE Bench Verified 47.67, Terminal-Bench 2.1 20.56, τ³-bench (AVG) 58.06, BFCL (v4) 52.39, AIME25 86.67, HMMT Feb25 78.33, GPQA 64.14, LiveCodeBench v6 73.24, MMLU-Pro 74.04, Arena-Hard-V2 65.19, IFBench (prompt) 79.33, RULER 64K 80.99, RULER 128K 71.41. Metric units are not specified in the card.",
+  "quotes": [
+   "<td>SWE Bench Multilingual</td>\n    <td style=\"text-align:center;\">NA</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">30.78</td>",
+   "<td>AIME25</td>\n    <td style=\"text-align:center;\">78.33</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">86.67</td>",
+   "<td>GPQA</td>\n    <td style=\"text-align:center;\">54.80</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">64.14</td>",
+   "<td>MMLU-Pro</td>\n    <td style=\"text-align:center;\">67.84</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">74.04</td>",
+   "Evaluations are run with an evaluation framework based on NeMo [Evaluator SDK](https://github.com/NVIDIA-NeMo/Evaluator)."
+  ],
+  "section": "Evaluation Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 16417,
+  "output_tokens": 701
+ },
+ "cost_usd_list_price": 0.012473400000000003,
+ "duration_ms": 4438
+}

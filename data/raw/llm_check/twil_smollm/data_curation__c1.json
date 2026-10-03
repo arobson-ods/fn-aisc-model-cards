@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "6c792798b3f7ecf2",
+ "request_user": "Fact definition: Data processing and curation (cleaning, filtering, deduplication, normalisation, augmentation).\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card never describes processing or curating the training data (no cleaning, filtering, deduplication, normalisation or augmentation). Its only mention of training data is 'LoRA supervised fine-tuning on a synthetic formal-logic corpus covering the Track A objectives', which gives the data's source and scope, not how it was processed. The 'diversity probe' in stage 2 selects checkpoints, not data. The sampling and retry rules in the evaluation protocol apply to evaluation, not training-data curation."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 582,
+  "cache_read_input_tokens": 10326,
+  "output_tokens": 610
+ },
+ "cost_usd_list_price": 0.0189292,
+ "duration_ms": 6695
+}

@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights on Hugging Face (Modified MIT License); available via the Mistral AI API and in Le Chat and the Vibe coding agent; deployable with vllm (recommended), llama.cpp (Unsloth GGUFs), Ollama, SGLang, and transformers.",
+  "quotes": [
+   "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat.",
+   "For optimal performance, we recommend using the Mistral AI API if local serving is subpar.",
+   "- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).",
+   "- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs.",
+   "- [`Ollama`](https://ollama.com//): See [here](https://ollama.com/library/mistral-medium-3.5).",
+   "- [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang).",
+   "- [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers).",
+   "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue."
+  ],
+  "section": "Inference"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 9701,
+  "output_tokens": 622
+ },
+ "cost_usd_list_price": 0.0103842,
+ "duration_ms": 4323
+}

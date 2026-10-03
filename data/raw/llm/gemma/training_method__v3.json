@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "training_method",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: training_method\nWhat to find: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nCard sections that often contain it: Training, Training Procedure, Post-training\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not describe training stages or methods (e.g., SFT, DPO, RL, distillation, merging). It only describes the pre-training dataset and data preprocessing, and notes that pre-trained and instruction-tuned variants exist.",
+  "quotes": [
+   "This release includes open-weights models in both pre-trained and instruction-tuned variants."
+  ],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 561,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 222
+ },
+ "cost_usd_list_price": 0.0067402,
+ "duration_ms": 2413
+}

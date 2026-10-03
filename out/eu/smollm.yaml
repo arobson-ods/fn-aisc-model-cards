@@ -1,0 +1,727 @@
+model: smollm
+repo_id: HuggingFaceTB/SmolLM3-3B
+retrieved_at: '2026-09-30T10:17:01+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: HuggingFaceTB/SmolLM3-3B
+    quote: api:id = "HuggingFaceTB/SmolLM3-3B"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: a07cc9a04f16550a088caea529712d1d335b0ac1
+    quote: api:sha = "a07cc9a04f16550a088caea529712d1d335b0ac1"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: a07cc9a04f16550a088caea529712d1d335b0ac1
+    quote: api:sha = "a07cc9a04f16550a088caea529712d1d335b0ac1"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: HuggingFaceTB/SmolLM3-3B-Base
+    quote: card:base_model = ["HuggingFaceTB/SmolLM3-3B-Base"]
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Decoder-only transformer using GQA and NoPE (3:1 ratio)
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Decoder-only transformer using GQA and NoPE (with 3:1 ratio); 3B parameters. The card gives
+      no layer count, experts or active parameters, and no stated rationale beyond the design aim of pushing
+      the boundaries of small models.
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] SmolLM3 is
+      a 3B parameter language model designed to push the boundaries of small models.
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '65536'
+    quote: config:max_position_embeddings = 65536
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json
+    source_type: repo_config
+  - fact_id: max_input_size
+    status: prose_adds
+    value: Current config.json is set for context length up to 65,536 tokens; trained on 64k context and
+      supports up to 128k tokens using YARN extrapolation
+    quote: The current `config.json` is set for context length up to 65,536 tokens. [...] **Long context:**
+      Trained on 64k context and supports up to **128k tokens** using YARN extrapolation
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '3075098624'
+    quote: api:safetensors.total = 3075098624
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '3075098624'
+    quote: api:safetensors.total = 3075098624
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be
+      deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX,
+      MLX, MLC and ExecuTorch.
+    quote: '**Fully open model**: open weights + full training details including public data mixture and
+      training configs [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`.
+      You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)
+      [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+    quote: derived:hub_url = "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be
+      deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX,
+      MLX, MLC and ExecuTorch.
+    quote: '**Fully open model**: open weights + full training details including public data mixture and
+      training configs [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`.
+      You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)
+      [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Pretraining datasets are available in a Hugging Face collection (mid-training and post-training
+      datasets to be uploaded later); training and evaluation configs and code are in the huggingface/smollm
+      GitHub repository; intermediate checkpoints (including mid-training and SFT checkpoints) are at
+      HuggingFaceTB/SmolLM3-3B-checkpoints; quantized checkpoints are in a Hugging Face collection.
+    quote: The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9)
+      and those used in mid-training and post-training will be uploaded later  [...] The training and
+      evaluation configs and code can be found in the [huggingface/smollm](https://github.com/huggingface/smollm)
+      repository. [...] The training intermediate checkpoints (including the mid-training and SFT checkpoints)
+      are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints)
+      [...] You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Should be used as assistive tools rather than definitive sources of information; users should
+      verify important information. The model is an instruct model optimized for hybrid reasoning.
+    quote: These models should be used as assistive tools rather than definitive sources of information.
+      [...] Users should always verify important information and critically evaluate any generated content.
+      [...] Instruct model optimized for **hybrid reasoning**
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: The model should be used as an assistive tool rather than a definitive source of information;
+      users should verify important information.
+    quote: These models should be used as assistive tools rather than definitive sources of information.
+      [...] Users should always verify important information and critically evaluate any generated content.
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+  - fact_id: target_systems
+    status: prose
+    value: Can be used in agentic systems with tool calling (xml_tools or python_tools), as an instruct/hybrid
+      reasoning model, and deployed via vLLM and SGLang as an OpenAI-compatible API; should be used as
+      an assistive tool.
+    quote: SmolLM3 supports tool calling! [...] You can use vLLM and SGLang to deploy the model in an
+      API compatible with OpenAI format. [...] These models should be used as assistive tools rather than
+      definitive sources of information. [...] Instruct model optimized for **hybrid reasoning**
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template;
+      /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or
+      python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp,
+      ONNX, MLX, MLC and ExecuTorch.
+    quote: 'The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade
+      your transformers version. [...] For choosing between enabling, you can provide the `/think` and
+      `/no_think` flags through the system prompt [...] We also provide the option of specifying the whether
+      to use extended thinking through the `enable_thinking` kwarg [...] Under the argument `xml_tools`
+      for standard tool-calling: these tools will be called as JSON blobs within XML tags [...] Or under
+      `python_tools`: then the model will call tools like python functions in a `<code>` snippet [...]
+      For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. [...] You can
+      use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: transformers v4.53.0 or later (upgrade transformers); can also be loaded with the latest vllm,
+      which uses transformers as a backend
+    quote: The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade
+      your transformers version. You can also load the model with the latest `vllm` which uses transformers
+      as a backend.
+    source_url: https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data;
+      post-training included midtraining on 140B reasoning tokens, followed by supervised fine-tuning
+      and alignment via Anchored Preference Optimization (APO).
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included
+      midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored
+      Preference Optimization (APO).
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: Pretraining used a staged curriculum of web, code, math and reasoning data, with a public data
+      mixture; pretraining datasets are in a public collection. Mid-training used 140B reasoning tokens;
+      mid-training and post-training datasets will be uploaded later.
+    quote: 'it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning
+      data. [...] **Fully open model**: open weights + full training details including public data mixture
+      and training configs [...] The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9)
+      and those used in mid-training and post-training will be uploaded later'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data;
+      post-training included midtraining on 140B reasoning tokens, then supervised fine-tuning and alignment
+      via Anchored Preference Optimization (APO). Pretraining datasets are public in a collection; mid-training
+      and post-training datasets will be uploaded later.
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included
+      midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored
+      Preference Optimization (APO). [...] The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9)
+      and those used in mid-training and post-training will be uploaded later
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: answered
+  answers:
+  - fact_id: training_data_size
+    status: prose
+    value: 11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on
+      140B reasoning tokens
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] - **Pretraining
+      tokens:** 11T [...] Post-training included midtraining on 140B reasoning tokens followed by supervised
+      fine-tuning and alignment via Anchored Preference Optimization (APO).
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_data_size
+    status: prose
+    value: 11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on
+      140B reasoning tokens
+    quote: The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] - **Pretraining
+      tokens:** 11T [...] Post-training included midtraining on 140B reasoning tokens followed by supervised
+      fine-tuning and alignment via Anchored Preference Optimization (APO).
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data;
+      midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese
+      as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data.
+    quote: 'The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained
+      on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included
+      midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored
+      Preference Optimization (APO). [...] The model has also been trained on Arabic (standard), Chinese
+      and Russian data, but has seen fewer tokens in these languages compared to the 6 above. [...] **Multilingual**:
+      6 natively supported (English, French, Spanish, German, Italian, and Portuguese)'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_hardware
+    status: prose
+    value: 384 H100 GPUs
+    quote: '- **GPUs:** 384 H100'
+    source_url: https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md
+    source_type: card
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "3ec35a12758b1c78",
+ "request_user": "Fact definition: Date the model was first released.\nExtracted value: August 25, 2026\nQuotes given as evidence (separated by [...]): | **Release Date** | August 25, 2026 |\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's Model Summary table has a row for this model that reads \"Release Date | August 25, 2026\". That matches the extracted value exactly and answers the definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16669,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 124
+ },
+ "cost_usd_list_price": 0.13584,
+ "duration_ms": 3347
+}

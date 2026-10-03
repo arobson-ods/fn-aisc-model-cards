@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "data_scope",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data.",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+   "The model has also been trained on Arabic (standard), Chinese and Russian data, but has seen fewer tokens in these languages compared to the 6 above.",
+   "**Multilingual**: 6 natively supported (English, French, Spanish, German, Italian, and Portuguese)"
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 9308,
+  "output_tokens": 440
+ },
+ "cost_usd_list_price": 0.008429599999999999,
+ "duration_ms": 3328
+}

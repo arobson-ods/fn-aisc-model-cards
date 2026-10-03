@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "data_bias_measures",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: data_bias_measures\nWhat to find: Measures to detect or address identifiable biases in the training data, or known biases.\nCard sections that often contain it: Bias, Risks and Limitations, Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Known biases: model may over- or under-represent groups, erase representation of some groups, or reinforce stereotypes due to differing representation and negative stereotypes in training data reflecting societal biases, despite safety post-training. English language varieties with less representation may perform worse. Training data was meticulously filtered and improved.",
+  "quotes": [
+   "**Representation of Harms & Perpetuation of Stereotypes:** The model may over- or under-represent groups of people, erase representation of some groups, or reinforce demeaning or negative stereotypes. Despite safety post-training, these limitations may still be present due to differing levels of representation of different groups or prevalence of examples of negative stereotypes in training data that reflect real-world patterns and societal biases.",
+   "English language varieties with less representation in the training data might experience worse performance than standard American English.",
+   "The training data consists primarily of meticulously filtered and improved open-source vision-language datasets"
+  ],
+  "section": "2.6 Responsible AI Considerations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 10621,
+  "output_tokens": 421
+ },
+ "cost_usd_list_price": 0.0085462,
+ "duration_ms": 3568
+}

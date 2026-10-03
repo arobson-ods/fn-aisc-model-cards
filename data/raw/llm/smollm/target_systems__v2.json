@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "target_systems",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: target_systems\nWhat to find: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nCard sections that often contain it: Intended Use, Use Cases, Downstream Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Can be used in agentic systems with tool calling (XML JSON tool calls or Python-style tool calls), as an assistive tool, and deployed via OpenAI-compatible API servers (vLLM, SGLang).",
+  "quotes": [
+   "SmolLM3 supports tool calling!",
+   "These models should be used as assistive tools rather than definitive sources of information.",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format."
+  ],
+  "section": "How to use"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 564,
+  "cache_read_input_tokens": 9031,
+  "output_tokens": 262
+ },
+ "cost_usd_list_price": 0.006686200000000001,
+ "duration_ms": 2594
+}

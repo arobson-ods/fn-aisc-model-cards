@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "design_rationale",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card gives limited rationale: a single merged model handles instruction-following, reasoning and coding in one set of weights (a unified model aimed at better performance than previous models), and the vision encoder was trained from scratch to handle variable image sizes and aspect ratios.",
+  "quotes": [
+   "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights.",
+   "We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios."
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 9889,
+  "output_tokens": 313
+ },
+ "cost_usd_list_price": 0.0072158,
+ "duration_ms": 2796
+}

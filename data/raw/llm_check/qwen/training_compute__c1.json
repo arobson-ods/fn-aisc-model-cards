@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "e300113ee9e78869",
+ "request_user": "Fact definition: Amount of computation used for training, in floating point operations.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The extractor is correct: the card never gives the training compute in FLOPs. It lists the parameter counts (\"2.4T in total and 95B activated\"), the architecture details, the training stage (\"Pre-training & Post-training\"), the context length and the benchmark results. It gives no training FLOPs, GPU-hours or other compute budget. The inference settings (timeouts, max_tokens) are not training compute."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 567,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 205
+ },
+ "cost_usd_list_price": 0.0121684,
+ "duration_ms": 4981
+}

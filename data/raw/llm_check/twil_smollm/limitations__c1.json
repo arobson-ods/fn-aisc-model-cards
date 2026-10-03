@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "680bbc146eb7b272",
+ "request_user": "Fact definition: Known technical limitations, risks and failure modes.\nExtracted value: Truncation: 4.4% of Track A generations hit the 2048-token cap, so the macro gate is indicative rather than exact. Scope is limited to formal logic; code generation and tool use not evaluated. Not a chat model: no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). A short generation budget truncates the <think> reasoning and scores far worse.\nQuotes given as evidence (separated by [...]): At a 2048-token budget, 4.4% of Track A generations hit the cap — better than\nthe base's 17.4%, but still above the 2% threshold our protocol requires to mark a comparison\n`rankable`. [...] The Track A macro gate should therefore be read as indicative rather than exact. [...] The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those. [...] It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly. [...] The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "All claims (truncation 4.4% / indicative gate, formal-logic scope with no code/tool-use evaluation, no safety tuning beyond the base and no instruction-following alignment with IFEval regressing slightly, short budget truncating <think> reasoning) come straight from the card's Limitations and Usage sections and answer the definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1017,
+  "cache_read_input_tokens": 10326,
+  "output_tokens": 625
+ },
+ "cost_usd_list_price": 0.0227092,
+ "duration_ms": 6455
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "06bc30f895a199b1",
+ "request_user": "Fact definition: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nExtracted value: Integrates via Hugging Face Transformers (AutoModelForCausalLM with tokenizer.apply_chat_template, supporting enable_thinking / low_effort / truncate_history_thinking flags), served with vLLM (v0.20+; granite_thinking_parser reasoning parser, qwen3_coder tool-call parser) or SGLang (v0.5.18+; --reasoning-parser auto, --tool-call-parser auto), both exposing an OpenAI-compatible API. Also usable with agentic coding harnesses (OpenCode, Pi, OpenHands). Chat format uses <|im_start|>assistant with <think>...</think> reasoning and <tool_call> function calls with OpenAI function definition schema for tools.\nQuotes given as evidence (separated by [...]): Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm). [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference. [...] text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True) [...] Granite-4.2-8B can be used as the backbone model for agentic coding tools. [...] - **Thinking enabled** — The generation prompt ends with `<|im_start|>assistant\\n<think>\\n`, causing the model to reason until it emits `</think>`, then produce the final answer. [...] Tools are defined using the [OpenAI function definition schema](https://platform.openai.com/docs/guides/function-calling).\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "Every claim is accurate against the card and the value answers the definition. However, the quotes only support vLLM, SGLang v0.5.18+, apply_chat_template with enable_thinking, agentic tools in general, the <|im_start|>/<think> format and the OpenAI tool schema. The quotes don't cover vLLM v0.20+, the granite_thinking_parser/qwen3_coder parsers, the SGLang auto parsers, the OpenAI-compatible API, the low_effort/truncate_history_thinking flags, the named harnesses (OpenCode, Pi, OpenHands) or the <tool_call> format. The card does support these, but the evidence given does not."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1186,
+  "cache_read_input_tokens": 16026,
+  "output_tokens": 895
+ },
+ "cost_usd_list_price": 0.0306012,
+ "duration_ms": 9804
+}

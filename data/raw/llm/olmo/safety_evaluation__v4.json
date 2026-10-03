@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The evaluation table includes a Safety score for Olmo 3.1 32B Instruct of 89.5 (SFT 92.1, DPO 88.9), compared with other models (e.g., Apertus 70B 77.1, Qwen 3 32B (No Think) 81.6, Gemma 3 27B 68.8, OLMo 2 32B 84.2). No red-teaming is described.",
+  "quotes": [
+   "| **Safety** | 92.1 | 88.9 | 89.5 | 77.1 | 81.6 | 85.8 | 82.2 | 68.8 | 74.4 | 84.2 |",
+   "| Metric | **Olmo 3.1 32B Instruct SFT** | **Olmo 3.1 32B Instruct DPO** | **Olmo 3.1 32B Instruct** | Apertus 70B | Qwen 3 32B (No Think) | Qwen 3 VL 32B Instruct | Qwen 2.5 32B | Gemma 3 27B | Gemma 2 27B | OLMo 2 32B |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 6858,
+  "output_tokens": 467
+ },
+ "cost_usd_list_price": 0.0082696,
+ "duration_ms": 3356
+}

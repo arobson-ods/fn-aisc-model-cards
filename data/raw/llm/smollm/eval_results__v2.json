@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "eval_results",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Card reports zero-shot results (via lighteval) for SmolLM3-3B versus Qwen2.5-3B, Llama3.1-3B, Qwen3-1.7B and Qwen3-4B. No extended thinking: AIME 2025 9.3, GSM-Plus 72.8, LiveCodeBench v4 15.2, GPQA Diamond 35.7, IFEval 76.7, MixEval Hard 26.9, BFCL 92.3, Global MMLU 53.5. Extended thinking: AIME 2025 36.7, GSM-Plus 83.4, LiveCodeBench v4 30.0, GPQA Diamond 41.7, IFEval 71.2, MixEval Hard 30.8, BFCL 88.8, Global MMLU 64.1. Base model results are also given, e.g. HellaSwag 76.15, ARC-CF (Average) 65.61, Winogrande 58.88, MATH (4-shot) 46.10, GSM8k (5-shot) 67.63, Ruler 64k 67.85, plus multilingual benchmarks.",
+  "quotes": [
+   "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them.",
+   "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** |",
+   "| Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 |",
+   "| High school math competition | AIME 2025 | <u>36.7</u> | 30.7 | **58.8** |",
+   "| Reasoning & Commonsense| HellaSwag | **76.15** | 74.19 |<u>75.52</u> | 60.52 | 74.37 |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 9031,
+  "output_tokens": 735
+ },
+ "cost_usd_list_price": 0.011336200000000001,
+ "duration_ms": 4746
+}

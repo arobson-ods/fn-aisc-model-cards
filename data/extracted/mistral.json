@@ -1,0 +1,1180 @@
+[
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/provider_name__v4.json",
+  "status": "prose",
+  "value": "Mistral AI",
+  "quote": "For optimal performance, we recommend using the Mistral AI API if local serving is subpar.",
+  "quotes": [
+   "For optimal performance, we recommend using the Mistral AI API if local serving is subpar."
+  ],
+  "section": "Inference",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "mistralai/Mistral-Medium-3.5-128B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "api:id = \"mistralai/Mistral-Medium-3.5-128B\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "mistralai/Mistral-Medium-3.5-128B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "api:sha = \"22b2b868a15677cfa6061277ed2f653d1349a9ab\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Mistral Medium 3.5 (128B); it replaces its predecessor Mistral Medium 3.1",
+   "quotes": [
+    "Mistral Medium 3.5 is our first flagship merged model.",
+    "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat."
+   ],
+   "agreement": "adds",
+   "section": "Mistral Medium 3.5 128B",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "api:sha = \"22b2b868a15677cfa6061277ed2f653d1349a9ab\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "other",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "card:license = \"other\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "other",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Modified MIT License (open-source license for commercial and non-commercial use, with exceptions for companies with large revenue)",
+   "quotes": [
+    "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue.",
+    "This model is licensed under a [Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)."
+   ],
+   "agreement": "adds",
+   "section": "Key Features",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/acceptable_use_policy__v4.json",
+  "status": "prose",
+  "value": "Released under a Modified MIT License (open-source for commercial and non-commercial use, with exceptions for companies with large revenue). Use restriction: the model must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights.",
+  "quote": "*You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights.* [...] We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue.",
+  "quotes": [
+   "*You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights.*",
+   "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue."
+  ],
+  "section": "License",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/additional_assets__v4.json",
+  "status": "prose",
+  "value": "An EAGLE model (to speed up local inference with vLLM or SGLang) is released at huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE; Unsloth GGUFs are available at huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF.",
+  "quote": "To speed up local inference using vLLM or SGLang, check out our released [EAGLE model](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE). [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs.",
+  "quotes": [
+   "To speed up local inference using vLLM or SGLang, check out our released [EAGLE model](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE).",
+   "- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Dense 128B model (dense, not mixture-of-experts), multimodal with a vision encoder trained from scratch",
+  "quote": "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning, [...] - **Dense 128B parameters**. [...] We trained the vision encoder from",
+  "quotes": [
+   "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,",
+   "- **Dense 128B parameters**.",
+   "We trained the vision encoder from"
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/architecture_details__v4.json",
+  "status": "prose",
+  "value": "Dense 128B parameter model with a 256k context window; multimodal input (text and image) with text output; vision encoder trained from scratch to handle variable image sizes and aspect ratios; instruct and reasoning in a single set of weights, with reasoning effort configurable per request.",
+  "quote": "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights. [...] We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios. [...] **Multimodal input**: Accepts both text and image input, with text output. [...] **Instruct and Reasoning functionalities** with function calls (reasoning effort configurable per request).",
+  "quotes": [
+   "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights.",
+   "We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios.",
+   "**Multimodal input**: Accepts both text and image input, with text output.",
+   "**Instruct and Reasoning functionalities** with function calls (reasoning effort configurable per request)."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": 127704210176,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "api:safetensors.total = 127704210176",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 127704210176,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Dense 128B parameters",
+   "quotes": [
+    "- **Dense 128B parameters**."
+   ],
+   "agreement": "agrees",
+   "section": "Key Features",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/input_modalities__v4.json",
+  "status": "prose",
+  "value": "Text and image input (with text output)",
+  "quote": "**Multimodal input**: Accepts both text and image input, with text output.",
+  "quotes": [
+   "**Multimodal input**: Accepts both text and image input, with text output."
+  ],
+  "section": "Key Features",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": 262144,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json",
+  "quote": "config:text_config.max_position_embeddings = 262144",
+  "section": "config:text_config.max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:text_config.max_position_embeddings",
+    "value": 262144,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "256k context length (256k context window)",
+   "quotes": [
+    "**256k context length**.",
+    "**Large Context Window**: Supports a 256k context window."
+   ],
+   "agreement": "agrees",
+   "section": "Key Features",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/output_modalities__v4.json",
+  "status": "prose",
+  "value": "Text output (accepts text and image input, with text output)",
+  "quote": "- **Multimodal input**: Accepts both text and image input, with text output.",
+  "quotes": [
+   "- **Multimodal input**: Accepts both text and image input, with text output."
+  ],
+  "section": "Key Features",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/max_output_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "source_type": null,
+  "source_url": null,
+  "note": null,
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "fp8",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json",
+  "quote": "config:quantization_config.quant_method = \"fp8\"",
+  "section": "config:quantization_config.quant_method",
+  "evidence": [
+   {
+    "path": "config:quantization_config.quant_method",
+    "value": "fp8",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_provenance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_acquisition__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_scope__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_method__v4.json",
+  "status": "prose",
+  "value": "Described as a merged model (a flagship merged model); the card gives no further detail on pretraining, SFT, preference optimisation or RL stages.",
+  "quote": "Mistral Medium 3.5 is our first flagship merged model.",
+  "quotes": [
+   "Mistral Medium 3.5 is our first flagship merged model."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/design_rationale__v4.json",
+  "status": "prose",
+  "value": "The card gives limited rationale: a single merged model handles instruction-following, reasoning and coding in one set of weights (a unified model aimed at better performance than previous models), and the vision encoder was trained from scratch to handle variable image sizes and aspect ratios.",
+  "quote": "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights. [...] We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios.",
+  "quotes": [
+   "Mistral Medium 3.5 is our first flagship merged model. It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights.",
+   "We trained the vision encoder from\nscratch to handle variable image sizes and aspect ratios."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/intended_uses__v4.json",
+  "status": "prose",
+  "value": "Instruction-following, reasoning, and coding tasks (including agentic coding and function calling) in a single unified model, with text and image input.",
+  "quote": "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights. [...] Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run. [...] Use `reasoning_effort=\"high\"` for complex tasks and agentic coding.",
+  "quotes": [
+   "It is a dense 128B model with a 256k context window, handling instruction-following, reasoning,\nand coding in a single set of weights.",
+   "Reasoning effort is configurable per request, so the same model can answer a quick chat reply or work through a complex agentic run.",
+   "Use `reasoning_effort=\"high\"` for complex tasks and agentic coding."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/out_of_scope_uses__v4.json",
+  "status": "prose",
+  "value": "Must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights.",
+  "quote": "You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights.",
+  "quotes": [
+   "You must not use this model in a manner that infringes, misappropriates, or otherwise violates any third party’s rights, including intellectual property rights."
+  ],
+  "section": "License",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/target_systems__v4.json",
+  "status": "prose",
+  "value": "Can be used in chat assistants (Le Chat), coding agents (Vibe), and agentic systems with native function calling/tool use and JSON output; also supports system prompts and multimodal (text and image) input.",
+  "quote": "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our\ncoding agent Vibe. [...] **Agentic**: Best-in-class agentic capabilities with native function calling and JSON output. [...] **System Prompt**: Strong adherence and support for system prompts.",
+  "quotes": [
+   "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. It also replaces Devstral 2 in our\ncoding agent Vibe.",
+   "**Agentic**: Best-in-class agentic capabilities with native function calling and JSON output.",
+   "**System Prompt**: Strong adherence and support for system prompts."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/integration_means__v4.json",
+  "status": "prose",
+  "value": "Deployable via vLLM (recommended), llama.cpp, LM Studio, Ollama, SGLang and transformers; usable in Mistral Vibe via the Mistral API or a local vLLM server; fine-tuning via Axolotl and Unsloth. vLLM serving uses an OpenAI-compatible client with reasoning_effort set to 'none' or 'high'.",
+  "quote": "- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended). [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs. [...] - [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang). [...] - [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers). [...] Mistral Medium 3.5 can be selected by starting `vibe`. If it is the first time you launch `vibe`, it will: [...] - [`Axolotl`](https://github.com/axolotl-ai-cloud/axolotl): See [here](https://docs.axolotl.ai/docs/models/mistral-medium-3_5.html). [...] REASONING_EFFORT = \"none\" # Toggle reasoning with 'high'.",
+  "quotes": [
+   "- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).",
+   "- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs.",
+   "- [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang).",
+   "- [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers).",
+   "Mistral Medium 3.5 can be selected by starting `vibe`. If it is the first time you launch `vibe`, it will:",
+   "- [`Axolotl`](https://github.com/axolotl-ai-cloud/axolotl): See [here](https://docs.axolotl.ai/docs/models/mistral-medium-3_5.html).",
+   "REASONING_EFFORT = \"none\" # Toggle reasoning with 'high'."
+  ],
+  "section": "Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/required_hardware__v4.json",
+  "status": "prose",
+  "value": "The card's serve command uses tensor parallelism across 8 GPUs (--tensor-parallel-size 8 for vLLM; --tp 8 for SGLang). No GPU memory requirement is stated.",
+  "quote": "vllm serve mistralai/Mistral-Medium-3.5-128B --tensor-parallel-size 8 \\ [...]   --tp 8 --tool-call-parser mistral --reasoning-parser mistral",
+  "quotes": [
+   "vllm serve mistralai/Mistral-Medium-3.5-128B --tensor-parallel-size 8 \\",
+   "  --tp 8 --tool-call-parser mistral --reasoning-parser mistral"
+  ],
+  "section": "vLLM (Recommended)",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "transformers 5.6.0.dev0",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/config.json",
+  "quote": "config:transformers_version = \"transformers 5.6.0.dev0\"",
+  "section": "config:transformers_version",
+  "evidence": [
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 5.6.0.dev0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "vllm nightly (which should automatically install mistral_common >= 1.11.1 and transformers >= 5.4.0); SGLang also requires transformers >= 5.4.0",
+   "quotes": [
+    "Make sure to install **vllm nightly**:",
+    "Doing so should automatically install [`mistral_common >= 1.11.1`](https://github.com/mistralai/mistral-common/releases/tag/v1.11.0) and `transformers >= 5.4.0`.",
+    "Or follow the [SGLang installation guide](https://docs.sglang.io/docs/get-started/install). Requires `transformers >= 5.4.0`."
+   ],
+   "agreement": "adds",
+   "section": "vLLM (Recommended)",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/limitations__v4.json",
+  "status": "prose",
+  "value": "The card has no dedicated limitations section. It warns that an incorrect Transformers config entry caused long-context performance degradation, which also affects GGUFs generated from the pre-fix config. It also says frameworks that rely on the Transformers config will show subpar performance, especially in long-context sessions, unless they include the fix.",
+  "quote": "The Transformers config originally had an incorrect entry that caused long-context performance degradation. [...] GGUFs generated using the Transformers config prior to this commit are also affected. [...] Otherwise, you will experience subpar performance, especially in long-context sessions.",
+  "quotes": [
+   "The Transformers config originally had an incorrect entry that caused long-context performance degradation.",
+   "GGUFs generated using the Transformers config prior to this commit are also affected.",
+   "Otherwise, you will experience subpar performance, especially in long-context sessions."
+  ],
+  "section": "Mistral Medium 3.5 128B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "pt",
+   "it",
+   "ja",
+   "ko",
+   "ru",
+   "zh",
+   "ar",
+   "fa",
+   "id",
+   "ms",
+   "ne",
+   "pl",
+   "ro",
+   "sr",
+   "sv",
+   "tr",
+   "uk",
+   "vi",
+   "hi",
+   "bn"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "card:language = [\"en\", \"fr\", \"de\", \"es\", \"pt\", \"it\", \"ja\", \"ko\", \"ru\", \"zh\", \"ar\", \"fa\", \"id\", \"ms\", \"ne\", \"pl\", \"ro\", \"sr\", \"sv\", \"tr\", \"uk\", \"vi\", \"hi\", \"bn\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en",
+     "fr",
+     "de",
+     "es",
+     "pt",
+     "it",
+     "ja",
+     "ko",
+     "ru",
+     "zh",
+     "ar",
+     "fa",
+     "id",
+     "ms",
+     "ne",
+     "pl",
+     "ro",
+     "sr",
+     "sv",
+     "tr",
+     "uk",
+     "vi",
+     "hi",
+     "bn"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, and Arabic.",
+   "quotes": [
+    "**Multilingual**: Supports dozens of languages, including English, French, Spanish, German, Italian, Portuguese, Dutch, Chinese, Japanese, Korean, and Arabic."
+   ],
+   "agreement": "adds",
+   "section": "Key Features",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/eval_results__v4.json",
+  "status": "prose",
+  "value": "91.4% on τ³-Telecom and 77.6% on SWE-Bench Verified",
+  "quote": "It scores **91.4%** on τ³-Telecom and **77.6%** on SWE-Bench Verified.",
+  "quotes": [
+   "It scores **91.4%** on τ³-Telecom and **77.6%** on SWE-Bench Verified."
+  ],
+  "section": "Benchmarks",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "τ³-Telecom and SWE-Bench Verified (agentic benchmarks)",
+  "quote": "It scores **91.4%** on τ³-Telecom and **77.6%** on SWE-Bench Verified.",
+  "quotes": [
+   "It scores **91.4%** on τ³-Telecom and **77.6%** on SWE-Bench Verified."
+  ],
+  "section": "Benchmarks",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/eval_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/base_model__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/base_model_relation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/raw/22b2b868a15677cfa6061277ed2f653d1349a9ab/README.md",
+  "llm_cache": "data/raw/llm/mistral/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama.",
+  "quote": "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue. [...] > For optimal performance, we recommend using the Mistral AI API if local serving is subpar. [...] Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat. [...] - [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended). [...] - [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs. [...] - [`Ollama`](https://ollama.com//): See [here](https://ollama.com/library/mistral-medium-3.5). [...] - [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang). [...] - [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers).",
+  "quotes": [
+   "We release this model under a **[Modified MIT License](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/blob/main/LICENSE)**: Open-source license for both commercial and non-commercial use with exceptions for companies with large revenue.",
+   "> For optimal performance, we recommend using the Mistral AI API if local serving is subpar.",
+   "Mistral Medium 3.5 replaces its predecessor Mistral Medium 3.1 and Magistral in Le Chat.",
+   "- [`vllm (recommended)`](https://github.com/vllm-project/vllm): See [here](#vllm-recommended).",
+   "- [`llama.cpp`](https://github.com/ggml-org/llama.cpp): See [here](https://huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF) for Unsloth's GGUFs.",
+   "- [`Ollama`](https://ollama.com//): See [here](https://ollama.com/library/mistral-medium-3.5).",
+   "- [`SGLang`](https://github.com/sgl-project/sglang): See [here](#sglang).",
+   "- [`transformers`](https://github.com/huggingface/transformers): See [here](#transformers)."
+  ],
+  "section": "Inference",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "mistral",
+  "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:16:59+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/mistralai/Mistral-Medium-3.5-128B",
+  "quote": "derived:hub_url = \"https://huggingface.co/mistralai/Mistral-Medium-3.5-128B\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

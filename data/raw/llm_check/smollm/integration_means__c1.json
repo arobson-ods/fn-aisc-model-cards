@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "2155c0d55969a32e",
+ "request_user": "Fact definition: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nExtracted value: Load with Hugging Face transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and the chat template (apply_chat_template); /think and /no_think system-prompt flags or enable_thinking kwarg toggle extended thinking; tool calling via xml_tools or python_tools; deploy with vLLM or SGLang in an OpenAI-compatible API (chat_template_kwargs supported); local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch; YaRN rope_scaling config for longer context.\nQuotes given as evidence (separated by [...]): The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade your transformers version. [...] you can provide the `/think` and `/no_think` flags through the system prompt [...] We also provide the option of specifying the whether to use extended thinking through the `enable_thinking` kwarg [...] Under the argument `xml_tools` for standard tool-calling [...] Or under `python_tools`: then the model will call tools like python functions in a `<code>` snippet [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format. [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes support these claims: transformers v4.53.0, the /think and /no_think flags, the enable_thinking kwarg, xml_tools and python_tools, vLLM/SGLang in an OpenAI-compatible API, and local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch. The value also claims AutoModelForCausalLM/AutoTokenizer, apply_chat_template, chat_template_kwargs support and the YaRN rope_scaling config. The card supports these, but the quoted evidence does not."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9813,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 722
+ },
+ "cost_usd_list_price": 0.092952,
+ "duration_ms": 8806
+}

@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "design_rationale",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Mid-fusion architecture (SigLIP-2 vision encoder projected into the Phi-4-Reasoning backbone) chosen to leverage both pretrained components while keeping training and inference costs manageable. A dynamic resolution encoder with up to 3,600 visual tokens enables high-resolution understanding for GUI grounding and fine-grained document analysis. Bidirectional attention is applied only within images to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. A single hybrid model uses SFT on a mix of reasoning and non-reasoning data, rather than separate models per mode, invoking chain-of-thought for math/science and direct inference for perception tasks. The data-centric approach (filtered open-source data plus domain-specific data) with moderate compute distinguishes it from models relying on far more data and compute.",
+  "quotes": [
+   "In this architecture, the vision encoder first converts images into visual tokens, which are then projected into the language model's embedding space and injected into the pretrained language model. This approach leverages the strengths of both pretrained components while keeping training and inference costs manageable.",
+   "The model employs a dynamic resolution vision encoder with up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such as GUI grounding and fine-grained document analysis.",
+   "Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader bidirectional schemes.",
+   "Rather than training separate models for each mode, the model operates as a single system that can invoke extended chain-of-thought reasoning (using `<think>...</think>` blocks) for tasks like mathematical and scientific reasoning, or default to direct inference (tagged with `<nothink>`) for perception-focused tasks such as captioning, object detection, and grounding.",
+   "This data-centric approach, combined with moderate training compute requirements (240 NVIDIA B200 GPUs for 4 days), distinguishes Phi-4-Reasoning-Vision-15B from models that rely on substantially more training data and compute."
+  ],
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 10344,
+  "output_tokens": 807
+ },
+ "cost_usd_list_price": 0.012246800000000002,
+ "duration_ms": 4997
+}

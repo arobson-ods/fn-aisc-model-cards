@@ -1,0 +1,258 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:06Z",
+   "createdBy": [
+    "urn:model-cards:twil_smollm#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:twil_smollm#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for twil_smollm (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:twil_smollm#model"
+   ],
+   "element": [
+    "urn:model-cards:twil_smollm#agent",
+    "urn:model-cards:twil_smollm#supplier",
+    "urn:model-cards:twil_smollm#model",
+    "urn:model-cards:twil_smollm#training-data",
+    "urn:model-cards:twil_smollm#rel-4",
+    "urn:model-cards:twil_smollm#dependency-software",
+    "urn:model-cards:twil_smollm#rel-6",
+    "urn:model-cards:twil_smollm#evalset-Track-A-in-domain-formal-logic-lanes-lean_formalize-rule_induction-entailment_label-mcq_answer-semantic_parse-lean_critic-plus-lm_corpus-and-math_corpus-perplexity.-Track-B-held-out-benchmarks-gsm8k-svamp-gsm_symbolic-arc_cot-logicbench-strategyqa-drop-csqa-musr-mmlu_redux-ifeval-rudas_ood-bbh_logic-math500.",
+    "urn:model-cards:twil_smollm#rel-8",
+    "urn:model-cards:twil_smollm#model-HuggingFaceTB-SmolLM3-3B",
+    "urn:model-cards:twil_smollm#rel-10",
+    "urn:model-cards:twil_smollm#rel-11",
+    "urn:model-cards:twil_smollm#rel-12",
+    "urn:model-cards:twil_smollm#licence-lm-model",
+    "urn:model-cards:twil_smollm#rel-14",
+    "urn:model-cards:twil_smollm#rel-15"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:twil_smollm#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:twil_smollm#supplier",
+   "name": "webAI (published under the webAI-Official organisation)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:twil_smollm#model",
+   "name": "webAI-Official/TwIL-LM3",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:twil_smollm#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "SmolLM3 decoder-only transformer; 36 layers, hidden size 2048"
+   ],
+   "ai_domain": [
+    "text-generation",
+    "en"
+   ],
+   "ai_informationAboutApplication": "Intended uses: A 3B reasoning model for formal logic tasks: FOL translation, entailment labels, semantic parses, Lean formalisation and Lean proof critique. It is not a general assistant or chat model.\nOut of scope: Not a general assistant or chat model; it is tuned for formal logic only. It has no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). No claim is made about code generation or tool use.",
+   "ai_limitation": "Truncation: 4.4% of Track A generations hit the 2048-token cap, so the macro gate is indicative rather than exact. Scope is limited to formal logic; code generation and tool use not evaluated. Not a chat model: no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). A short generation budget truncates the <think> reasoning and scores far worse.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "TwIL-LM3 Track A (in-domain): lean_formalize token_f1 0.5869; rule_induction derivation 0.3192; entailment_label accuracy 0.5750; semantic_parse token_f1 0.4416; lean_critic accuracy 0.6600; macro gate 0.4218; strict-7 0.1971. Track B (held-out): gsm8k 0.8733; svamp 0.8500; macro (10 CoT datasets) 0.7339; macro (all 14) 0.6694."
+    }
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/webAI-Official/TwIL-LM3",
+   "releaseTime": "2026-08-03T20:53:55Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "3075098624"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "65536"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Four post-training stages on top of SmolLM3-3B: LoRA supervised fine-tuning on a synthetic formal-logic corpus, checkpoint fusion (parameter-space averaging of intermediate SFT checkpoints), WiSE-FT interpolation toward the base with λ = 0.25, and MGPO (entropy-weighted GRPO reinforcement learning against a programmatic verifier), published checkpoint step 2071.",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: Quantized GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) ship in the same repository alongside the safetensors weights; the TwIL-LM3* weights are unreleased (\"will be released soon\").\narchitecture_details: SmolLM3 decoder-only transformer; 36 layers, hidden size 2048; 3.08B total parameters; 128,256 vocabulary; 65,536-token context window. No rationale for the design choices is given.\ndesign_rationale: WiSE-FT interpolation toward the base with λ = 0.25 (only a quarter of the fine-tuned delta retained), chosen by constrained optimisation (maximise in-domain score subject to minimal held-out degradation) so held-out capability survives. Checkpoint fusion averaged intermediate SFT checkpoints selected by a diversity probe rather than the final checkpoint. MGPO (entropy-weighted GRPO) used partial credit for loose matches and token-F1 so all-fail prompt groups still produce gradient. A sibling arm without the conservative interpolation scored higher in-domain but lost about twelve points of held-out capability; this release is the balanced point of that trade.\nintegration_means: Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, bf16); GGUF builds for llama.cpp (llama-cli); evaluated via vLLM backend; model emits a <think>…</think> block before the answer; greedy decoding (do_sample=False) with ≥2048 new tokens recommended\nrequired_hardware: Q4_K_M GGUF build (1.78 GiB) runs on CPU or 4 GB of VRAM\neval_methodology: Track A: n = 200 per objective, greedy (temperature = 0), max_new_tokens = 2048, one retry at 4096 for truncated rows, max_seq_len = 8192, seed 42. Track B: 300 examples per task, greedy, max_gen_toks = 4096, max_model_len = 8192, repetition_penalty = 1.0, chat template applied, vLLM backend. Same protocol for model and base in a paired run over identical sampled rows.\nbase_model_relation: adapter"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:twil_smollm#training-data",
+   "name": "Training data of webAI-Official/TwIL-LM3 (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Synthetic: LoRA SFT was done on a synthetic formal-logic corpus covering the Track A objectives.\nLoRA supervised fine-tuning used a synthetic formal-logic corpus covering the Track A objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction). The RL stage (MGPO) used a programmatic verifier. The card does not state how rights were obtained.",
+   "comment": "data_scope: LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction."
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-4",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:twil_smollm#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:twil_smollm#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-6",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:twil_smollm#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:twil_smollm#evalset-Track-A-in-domain-formal-logic-lanes-lean_formalize-rule_induction-entailment_label-mcq_answer-semantic_parse-lean_critic-plus-lm_corpus-and-math_corpus-perplexity.-Track-B-held-out-benchmarks-gsm8k-svamp-gsm_symbolic-arc_cot-logicbench-strategyqa-drop-csqa-musr-mmlu_redux-ifeval-rudas_ood-bbh_logic-math500.",
+   "name": "Track A (in-domain formal logic lanes): lean_formalize, rule_induction, entailment_label, mcq_answer, semantic_parse, lean_critic, plus lm_corpus and math_corpus perplexity. Track B (held-out benchmarks): gsm8k, svamp, gsm_symbolic, arc_cot, logicbench, strategyqa, drop, csqa, musr, mmlu_redux, ifeval, rudas_ood, bbh_logic, math500.",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-8",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:twil_smollm#evalset-Track-A-in-domain-formal-logic-lanes-lean_formalize-rule_induction-entailment_label-mcq_answer-semantic_parse-lean_critic-plus-lm_corpus-and-math_corpus-perplexity.-Track-B-held-out-benchmarks-gsm8k-svamp-gsm_symbolic-arc_cot-logicbench-strategyqa-drop-csqa-musr-mmlu_redux-ifeval-rudas_ood-bbh_logic-math500."
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:twil_smollm#model-HuggingFaceTB-SmolLM3-3B",
+   "name": "HuggingFaceTB/SmolLM3-3B",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-10",
+   "from": "urn:model-cards:twil_smollm#model-HuggingFaceTB-SmolLM3-3B",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-11",
+   "from": "urn:model-cards:twil_smollm#model-HuggingFaceTB-SmolLM3-3B",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-12",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:twil_smollm#model-HuggingFaceTB-SmolLM3-3B"
+   ],
+   "comment": "Relation declared: adapter",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:twil_smollm#licence-lm-model",
+   "simplelicensing_licenseExpression": "LicenseRef-webai-non-commercial-license-ver.-1.0",
+   "creationInfo": "_:creationinfo",
+   "comment": "Licence link from card: https://huggingface.co/webAI-Official/TwIL-LM3/blob/main/LICENSE.md"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-14",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:twil_smollm#licence-lm-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:twil_smollm#rel-15",
+   "from": "urn:model-cards:twil_smollm#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

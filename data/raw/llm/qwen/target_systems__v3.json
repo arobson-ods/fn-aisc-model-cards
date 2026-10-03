@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "target_systems",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: target_systems\nWhat to find: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).\nCard sections that often contain it: Intended Use, Use Cases, Downstream Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Agentic systems and coding/development tool integrations: designed for complex multi-step, long-horizon agentic tasks, with broad support for popular harnesses and development tools; deployable via inference frameworks (vLLM, SGLang, TokenSpeed) and text-only chat completions.",
+  "quotes": [
+   "Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability.",
+   "**Downstream Compatibility**: Broader support for popular harnesses and development tools, making it easier to integrate into your existing stack.",
+   "**Agent Execution**: Stronger autonomous planning and better handling of environment feedback, leading to more reliable end-to-end task completion.",
+   "These artifacts are compatible with vLLM, SGLang, TokenSpeed, etc."
+  ],
+  "section": "Qwen3.8 Highlights"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 564,
+  "cache_read_input_tokens": 18018,
+  "output_tokens": 393
+ },
+ "cost_usd_list_price": 0.0097936,
+ "duration_ms": 3195
+}

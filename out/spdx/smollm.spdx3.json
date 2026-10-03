@@ -1,0 +1,268 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:01Z",
+   "createdBy": [
+    "urn:model-cards:smollm#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:smollm#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for smollm (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:smollm#model"
+   ],
+   "element": [
+    "urn:model-cards:smollm#agent",
+    "urn:model-cards:smollm#supplier",
+    "urn:model-cards:smollm#model",
+    "urn:model-cards:smollm#training-data",
+    "urn:model-cards:smollm#rel-4",
+    "urn:model-cards:smollm#dependency-software",
+    "urn:model-cards:smollm#rel-6",
+    "urn:model-cards:smollm#evalset-Instruction-model-AIME-2025-GSM-Plus-LiveCodeBench-v4-GPQA-Diamond-IFEval-MixEval-Hard-BFCL-Global-MMLU.-Base-model-HellaSwag-ARC-CF-Winogrande-CommonsenseQA-MMLU-CF-MMLU-Pro-CF-MCF-PIQA-OpenBookQA-BoolQ-HumanEval-MBPP-MATH-4-shot-GSM8k-5-shot-Ruler-32k-64k-128k-multilingual-MLMM-Hellaswag-Belebele-Global-MMLU-CF-Flores-200-5-shot-.",
+    "urn:model-cards:smollm#rel-8",
+    "urn:model-cards:smollm#model-HuggingFaceTB-SmolLM3-3B-Base",
+    "urn:model-cards:smollm#rel-10",
+    "urn:model-cards:smollm#rel-11",
+    "urn:model-cards:smollm#rel-12",
+    "urn:model-cards:smollm#licence-lm-model",
+    "urn:model-cards:smollm#rel-14",
+    "urn:model-cards:smollm#rel-15"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:smollm#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:smollm#supplier",
+   "name": "HuggingFaceTB",
+   "creationInfo": "_:creationinfo",
+   "comment": "Provider not stated in the card; this is the Hugging Face account name."
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:smollm#model",
+   "name": "HuggingFaceTB/SmolLM3-3B",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:smollm#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Decoder-only transformer using GQA and NoPE (3:1 ratio)"
+   ],
+   "ai_domain": [
+    "text-generation",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ar",
+    "ru"
+   ],
+   "ai_informationAboutApplication": "Intended uses: Should be used as assistive tools rather than definitive sources of information; users should verify important information. The model is an instruct model optimized for hybrid reasoning.\nOut of scope: The model should be used as an assistive tool rather than a definitive source of information; users should verify important information.\nTarget systems: Can be used in agentic systems with tool calling (xml_tools or python_tools), as an instruct/hybrid reasoning model, and deployed via vLLM and SGLang as an OpenAI-compatible API; should be used as an assistive tool.",
+   "ai_limitation": "Generated content may not always be factually accurate, logically consistent, or free from biases present in the training data; should be used as assistive tools rather than definitive sources, and users should verify important information.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "SmolLM3-3B (no extended thinking): AIME 2025 9.3, GSM-Plus 72.8, LiveCodeBench v4 15.2, GPQA Diamond 35.7, IFEval 76.7, MixEval Hard 26.9, BFCL 92.3, Global MMLU 53.5. Extended thinking: AIME 2025 36.7, GSM-Plus 83.4, LiveCodeBench v4 30.0, GPQA Diamond 41.7, IFEval 71.2, MixEval Hard 30.8, BFCL 88.8, Global MMLU 64.1. All evaluations zero-shot unless stated otherwise, run with lighteval."
+    }
+   ],
+   "ai_standardCompliance": [
+    "EU AI Act: the card provides a Public Summary of Training Content for GPAI models, following the EU template"
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+   "releaseTime": "2025-07-08T10:11:45Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "3075098624"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "65536"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).\ntraining_hardware: 384 H100 GPUs",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: Pretraining datasets are available in a Hugging Face collection (mid-training and post-training datasets to be uploaded later); training and evaluation configs and code are in the huggingface/smollm GitHub repository; intermediate checkpoints (including mid-training and SFT checkpoints) are at HuggingFaceTB/SmolLM3-3B-checkpoints; quantized checkpoints are in a Hugging Face collection.\narchitecture_details: Decoder-only transformer using GQA and NoPE (with 3:1 ratio); 3B parameters. The card gives no layer count, experts or active parameters, and no stated rationale beyond the design aim of pushing the boundaries of small models.\nintegration_means: Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template; /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch.\neval_methodology: Evaluations run with lighteval; all zero-shot unless stated otherwise (e.g., MATH 4-shot, GSM8k 5-shot, Flores-200 5-shot). For Ruler 64k, YaRN applied to Qwen models with 32k context to extrapolate context length.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:smollm#training-data",
+   "name": "Training data of HuggingFaceTB/SmolLM3-3B (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Pretraining used a staged curriculum of web, code, math and reasoning data, with a public data mixture; pretraining datasets are in a public collection. Mid-training used 140B reasoning tokens; mid-training and post-training datasets will be uploaded later.\nPretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, then supervised fine-tuning and alignment via Anchored Preference Optimization (APO). Pretraining datasets are public in a collection; mid-training and post-training datasets will be uploaded later.",
+   "comment": "training_data_size: 11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on 140B reasoning tokens\ndata_scope: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data."
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-4",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:smollm#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:smollm#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-6",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:smollm#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:smollm#evalset-Instruction-model-AIME-2025-GSM-Plus-LiveCodeBench-v4-GPQA-Diamond-IFEval-MixEval-Hard-BFCL-Global-MMLU.-Base-model-HellaSwag-ARC-CF-Winogrande-CommonsenseQA-MMLU-CF-MMLU-Pro-CF-MCF-PIQA-OpenBookQA-BoolQ-HumanEval-MBPP-MATH-4-shot-GSM8k-5-shot-Ruler-32k-64k-128k-multilingual-MLMM-Hellaswag-Belebele-Global-MMLU-CF-Flores-200-5-shot-.",
+   "name": "Instruction model: AIME 2025, GSM-Plus, LiveCodeBench v4, GPQA Diamond, IFEval, MixEval Hard, BFCL, Global MMLU. Base model: HellaSwag, ARC-CF, Winogrande, CommonsenseQA, MMLU-CF, MMLU Pro CF/MCF, PIQA, OpenBookQA, BoolQ, HumanEval+, MBPP+, MATH (4-shot), GSM8k (5-shot), Ruler 32k/64k/128k; multilingual: MLMM Hellaswag, Belebele, Global MMLU (CF), Flores-200 (5-shot).",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-8",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:smollm#evalset-Instruction-model-AIME-2025-GSM-Plus-LiveCodeBench-v4-GPQA-Diamond-IFEval-MixEval-Hard-BFCL-Global-MMLU.-Base-model-HellaSwag-ARC-CF-Winogrande-CommonsenseQA-MMLU-CF-MMLU-Pro-CF-MCF-PIQA-OpenBookQA-BoolQ-HumanEval-MBPP-MATH-4-shot-GSM8k-5-shot-Ruler-32k-64k-128k-multilingual-MLMM-Hellaswag-Belebele-Global-MMLU-CF-Flores-200-5-shot-."
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:smollm#model-HuggingFaceTB-SmolLM3-3B-Base",
+   "name": "HuggingFaceTB/SmolLM3-3B-Base",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "d78a42f79198603e614095753484a04c10c2b940",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-10",
+   "from": "urn:model-cards:smollm#model-HuggingFaceTB-SmolLM3-3B-Base",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-11",
+   "from": "urn:model-cards:smollm#model-HuggingFaceTB-SmolLM3-3B-Base",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-12",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:smollm#model-HuggingFaceTB-SmolLM3-3B-Base"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:smollm#licence-lm-model",
+   "simplelicensing_licenseExpression": "Apache-2.0",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-14",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:smollm#licence-lm-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:smollm#rel-15",
+   "from": "urn:model-cards:smollm#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Automated red teaming was performed on Azure across risk categories including disallowed content (sexual, violent, hateful, self-harm), copyright/IP, and jailbreak susceptibility, plus groundedness. Results: defect rate 1.4% for Text to Text Safety and 4.5% for Image to Text Safety.",
+  "quotes": [
+   "Automated red teaming was performed on Azure to assess safety risks across multiple risk categories, including disallowed content (sexual, violent, hateful, or self-harm content), copyright content and intellectual property, and jailbreak susceptibility.",
+   "| Text to Text Safety | Automated content safety evaluation measuring safety policies | 1.4% |",
+   "| Image to Text Safety | Automated content safety evaluation measuring safety policies | 4.5% |"
+  ],
+  "section": "3.1 Safety Evaluation and Red-Teaming"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 10621,
+  "output_tokens": 392
+ },
+ "cost_usd_list_price": 0.0082722,
+ "duration_ms": 2913
+}

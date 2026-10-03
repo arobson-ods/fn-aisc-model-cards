@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "693d17f49e8372c6",
+ "request_user": "Fact definition: Numeric precision or quantisation of the released weights (e.g. bf16, FP8, GGUF Q4_K_M).\nValue taken from the model's structured metadata (config:torch_dtype = \"bfloat16\"): bfloat16\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The value comes from the model's config (torch_dtype = \"bfloat16\"), which directly records the precision of the released weights. The card agrees with it. Its loading examples use torch_dtype=torch.bfloat16 under a \"16-bit (bf16 / fp16)\" heading, and it describes BF16 visual features in deployment. Nothing in the card conflicts with this value."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 618,
+  "cache_read_input_tokens": 18938,
+  "output_tokens": 280
+ },
+ "cost_usd_list_price": 0.014339600000000001,
+ "duration_ms": 5337
+}

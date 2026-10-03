@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "energy_methodology",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: energy_methodology\nWhat to find: Methodology used to measure or estimate training energy.\nCard sections that often contain it: Environmental Impact, Energy, Carbon\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Training time is total GPU time required for training each model; power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency. The card says a fuller methodology is available at a link, but it gives no details.",
+  "quotes": [
+   "Training time is the total GPU time required for training each model and power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency.",
+   "The methodology used to determine training energy use and greenhouse gas emissions can be found here."
+  ],
+  "section": "Hardware and Software"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 542,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 521
+ },
+ "cost_usd_list_price": 0.0091568,
+ "duration_ms": 3909
+}

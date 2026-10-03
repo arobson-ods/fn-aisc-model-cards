@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "490eeebd9f500e94",
+ "request_user": "Fact definition: How evaluations were run (harness, settings, prompts, shots).\nExtracted value: Benchmark footnotes give per-benchmark methodology. Terminal Bench 2.1 was evaluated with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. SWE-bench Pro was evaluated with the Claude Code harness, temp=1.0, top_p=0.95 and a 256K context window. QwenSWEBench was evaluated with the Claude Code harness, avg@3, an 8-hour timeout, max_tokens=32,768, temperature=1.0 and a 256K-token context window. SkillsBench was evaluated on OpenCode for the Qwen-series (public v1.1, 87 tasks, average over three runs per task). WideSearch used the Qwen-Agent harness for Qwen's own model, reporting average item-F1 over four runs.\nQuotes given as evidence (separated by [...]): 2. Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072. [...] 3. SWE-bench Pro: Evaluated with the Claude Code harness, temp=1.0, top_p=0.95, and a 256K context window. [...] 10. QwenSWEBench: Inhouse coding benchmark to evaluate models' software engineering capabilities. Evaluated with the Claude Code harness. Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K-token context window. [...] 15. SkillsBench: Evaluated on the public SkillsBench v1.1 benchmark across 87 tasks, reporting the average score over three runs per task. [...] 17. WideSearch: Evaluated with the Claude Code harness for external models and the Qwen-Agent harness for ours, reporting the average item-F1 over four runs.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes are about this model and support the claims for Terminal Bench 2.1, SWE-bench Pro, QwenSWEBench and WideSearch, and the value answers the fact definition. One claim isn't covered by the quotes: that the Qwen-series was evaluated on OpenCode for SkillsBench. The quoted SkillsBench footnote stops before that sentence. The full card does say \"the Qwen-series are evaluated on OpenCode,\" so the claim is true, but the quotes as given don't back every claim."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1230,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 477
+ },
+ "cost_usd_list_price": 0.0229124,
+ "duration_ms": 7622
+}

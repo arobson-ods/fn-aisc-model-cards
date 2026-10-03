@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "5538daf54cf8052e",
+ "request_user": "Fact definition: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nExtracted value: Open-source repositories on Hugging Face and GitHub (public access), and enterprise/subscription-based access through Azure AI Foundry. The card says these are some of the channels.\nQuotes given as evidence (separated by [...]): Some of Phi-4-Reasoning-Vision-15B's distribution channels include: [...] Public access through open-source repositories: [Hugging Face](https://huggingface.co/microsoft/Phi-4-Reasoning-Vision-15B) [...] Public access through open-source code repositories: [GitHub](https://github.com/microsoft/Phi-4-vision) [...] Enterprise or subscription-based access through [Azure AI Foundry](https://ai.azure.com)\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes come straight from Section 2.3 of this model's card. They support each channel named in the value: public open-source repositories on Hugging Face and GitHub, and enterprise or subscription access through Azure AI Foundry. The value also keeps the qualifier that these are only \"some\" of the channels. Together this answers the fact definition about methods of distribution."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 858,
+  "cache_read_input_tokens": 10037,
+  "output_tokens": 187
+ },
+ "cost_usd_list_price": 0.012619400000000001,
+ "duration_ms": 4940
+}

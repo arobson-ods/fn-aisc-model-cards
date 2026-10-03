@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "MMLU Pro, AIME 2026 no tools, LiveCodeBench v6, Codeforces ELO, GPQA Diamond, Tau2, HLE, BigBench Extra Hard, MMMLU, MMMU Pro, OmniDocBench 1.5, MATH-Vision, MedXPertQA MM, CoVoST, FLEURS, MRCR v2 8 needle 128k",
+  "quotes": [
+   "| MMLU Pro | 85.2% | 82.6% | 77.2% | 69.4% | 60.0% | 67.6% |",
+   "| AIME 2026 no tools | 89.2% | 88.3% | 77.5% | 42.5% | 37.5% | 20.8% |",
+   "| LiveCodeBench v6 | 80.0% | 77.1% | 72.0% | 52.0% | 44.0% | 29.1% |",
+   "| Codeforces ELO | 2150 | 1718 | 1659 | 940 | 633 | 110 |",
+   "| GPQA Diamond | 84.3% | 82.3% | 78.8% | 58.6% | 43.4% | 42.4% |",
+   "| BigBench Extra Hard | 74.4% | 64.8% | 53.0% | 33.1% | 21.9% | 19.3% |",
+   "| MMMLU | 88.4% | 86.3% | 83.4% | 76.6% | 67.4% | 70.7% |",
+   "| MRCR v2 8 needle 128k (average) | 66.4% | 44.1%  | 43.4% | 25.4% | 19.1% | 13.5% |"
+  ],
+  "section": "Benchmark Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 11549,
+  "output_tokens": 648
+ },
+ "cost_usd_list_price": 0.0109498,
+ "duration_ms": 4033
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "languages",
+ "input_sha256": "dc77fc1c895c47d393f8d947a1f9b213a434a51c218ddd986797acdf5838586c",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nThe card's machine-readable metadata gives: [\"en\", \"de\", \"es\", \"fr\", \"ja\", \"pt\", \"ar\", \"cs\", \"it\", \"ko\", \"nl\", \"zh\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Tested languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese (other languages may work but have not been fully tested)",
+  "quotes": [
+   "| **Tested Languages** | English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese (other languages may work but have not been fully tested) |"
+  ],
+  "agreement": "agrees",
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 783,
+  "cache_read_input_tokens": 16522,
+  "output_tokens": 290
+ },
+ "cost_usd_list_price": 0.009340399999999999,
+ "duration_ms": 3069
+}

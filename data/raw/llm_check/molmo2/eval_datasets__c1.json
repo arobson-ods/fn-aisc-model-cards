@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "9d9990284efcdfc3",
+ "request_user": "Fact definition: Datasets or benchmarks used for evaluation.\nExtracted value: Average score on 15 Academic Benchmarks (individual benchmarks not named in the card; details refer to the main video results table in the technical report)\nQuotes given as evidence (separated by [...]): We report the Average Score on 15 Academic Benchmarks here. [...] For details on the evals, refer to the main video results table in our [technical report](https://allenai.org/papers/molmo2).\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card only says Molmo2-8B was evaluated as an \"Average Score on 15 Academic Benchmarks\" and points to the main video results table in the technical report for details. The extracted value says exactly this and correctly notes that the individual benchmarks are not named. Both quotes are about this model and support every part of the value. That answers the definition as fully as the card allows."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 736,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 265
+ },
+ "cost_usd_list_price": 0.012727,
+ "duration_ms": 6033
+}

@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "weights_precision",
+ "input_sha256": "d0bac2cdee2602b5f2e27fdb2aef63910e95fb325f3048d8a4e464f50f04049a",
+ "request_user": "Fact: weights_precision\nWhat to find: Numeric precision or quantisation of the released weights (e.g. bf16, FP8, GGUF Q4_K_M).\nThe card's machine-readable metadata gives: [\"gguf\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6528,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 236
+ },
+ "cost_usd_list_price": 0.028592199999999998,
+ "duration_ms": 2667
+}

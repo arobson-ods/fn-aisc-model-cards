@@ -1,0 +1,34 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "architecture_details",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Decoder-only dense transformer (GraniteForCausalLM) with Grouped Query Attention (32 attention heads, 8 KV heads), RoPE (θ = 10,000,000), SwiGLU MLP (hidden size 12800), RMSNorm (ε = 1e-5), untied input/output embeddings; 8B dense parameters, 40 layers, embedding size 4096, attention head size 128, sequence length 131072. No experts (dense). The card does not state a rationale for these design choices.",
+  "quotes": [
+   "Granite-4.2-8B is built on a decoder-only dense transformer architecture with the following core components:",
+   "* **Attention:** Grouped Query Attention (GQA) with 32 attention heads and 8 KV heads",
+   "* **Position Embedding:** Rotary Position Embedding (RoPE) with θ = 10,000,000",
+   "* **Feed-Forward:** MLP with SwiGLU activation (hidden size 12800)",
+   "* **Normalization:** RMSNorm (ε = 1e-5)",
+   "* **Embeddings:** Separate input/output embeddings (not tied)"
+  ],
+  "section": "Model Design"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16886,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 480
+ },
+ "cost_usd_list_price": 0.07234800000000001,
+ "duration_ms": 3991
+}

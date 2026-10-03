@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "data_scope",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction. Language is English.",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction)."
+  ],
+  "section": "How it was built"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 10627,
+  "output_tokens": 298
+ },
+ "cost_usd_list_price": 0.0072734,
+ "duration_ms": 2555
+}

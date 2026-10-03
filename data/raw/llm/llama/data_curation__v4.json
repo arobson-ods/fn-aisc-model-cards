@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "data_curation",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: data_curation\nWhat to find: Data processing and curation (cleaning, filtering, deduplication, normalisation, augmentation).\nCard sections that often contain it: Training Data, Data Processing, Preprocessing\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Safety fine-tuning data combines human-generated vendor data with synthetic data, and LLM-based classifiers select high-quality prompts and responses. Pre-training uses data filtering as a first step in mitigating Child Safety risk. No further curation details (e.g., deduplication) are given.",
+  "quotes": [
+   "We employ a multi-faceted approach to data collection, combining human-generated data from our vendors with synthetic data to mitigate potential safety risks.",
+   "We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control.",
+   "We leverage pre-training methods like data filtering as a first step in mitigating Child Safety risk in our model."
+  ],
+  "section": "Model level fine tuning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 557,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 666
+ },
+ "cost_usd_list_price": 0.010771800000000002,
+ "duration_ms": 4594
+}

@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "output_modalities",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: output_modalities\nWhat to find: Output modalities produced (text, images, audio, video).\nCard sections that often contain it: Output, Modalities\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Text output (accepts text and image input, with text output)",
+  "quotes": [
+   "**Multimodal input**: Accepts both text and image input, with text output."
+  ],
+  "section": "Key Features"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 9701,
+  "output_tokens": 159
+ },
+ "cost_usd_list_price": 0.0056662,
+ "duration_ms": 2232
+}

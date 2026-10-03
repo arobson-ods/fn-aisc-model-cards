@@ -1,0 +1,359 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:fc79ee5d-1853-5cd7-ad5d-913feba3791a",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:00Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "phi:model",
+   "name": "microsoft/Phi-4-reasoning-vision-15B",
+   "supplier": {
+    "name": "Microsoft Corporation"
+   },
+   "version": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:release_date",
+     "value": "March 4, 2026"
+    },
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Card gives use restrictions: not suitable for medical diagnoses, legal advice, or financial planning; should not be used for consequential decisions on legal status or allocation of resources/life opportunities without further assessment and debiasing; developers must adhere to applicable laws and regulations. No separate acceptable use policy link."
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Use the chat template with the system prompt for inference; force thinking by appending `<think>` or non-thinking by appending `<nothink>` to the generation template. Requires torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only if using vLLM). Recommended to host on a vLLM server using bf16 precision."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based access through Azure AI Foundry"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "phi:ancestor-microsoft/Phi-4-reasoning",
+      "name": "microsoft/Phi-4-reasoning",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/microsoft/Phi-4-reasoning"
+       }
+      ],
+      "version": "1de18ec97600877ce63dbf60c73b998da99f0195"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Mid-fusion multimodal architecture: Phi-4-Reasoning language model backbone with a SigLIP-2 vision encoder, whose visual tokens are projected into the language model's embedding space",
+     "modelArchitecture": "Mid-fusion architecture built on the Phi-4-Reasoning language model backbone and SigLIP-2 vision encoder; the vision encoder converts images into visual tokens, which are projected into the language model's embedding space and injected into the pretrained language model, leveraging both pretrained components while keeping training and inference costs manageable. Dynamic resolution vision encoder with up to 3,600 visual tokens for high-resolution understanding (GUI grounding, fine-grained document analysis). Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. 15B parameters.",
+     "inputs": [
+      {
+       "format": "text"
+      },
+      {
+       "format": "image"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "image-text-to-text",
+     "datasets": [
+      {
+       "ref": "phi:training-data"
+      },
+      {
+       "ref": "phi:evalset-AI2D"
+      },
+      {
+       "ref": "phi:evalset-ChartQA"
+      },
+      {
+       "ref": "phi:evalset-MMMU"
+      },
+      {
+       "ref": "phi:evalset-MathVista-MINI-"
+      },
+      {
+       "ref": "phi:evalset-OCRBench"
+      },
+      {
+       "ref": "phi:evalset-ScreenSpot-V2"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "accuracy",
+       "value": "84.8",
+       "slice": "AI2D"
+      },
+      {
+       "type": "accuracy",
+       "value": "83.3",
+       "slice": "ChartQA"
+      },
+      {
+       "type": "accuracy",
+       "value": "75.2",
+       "slice": "MathVista (MINI)"
+      },
+      {
+       "type": "accuracy",
+       "value": "54.3",
+       "slice": "MMMU"
+      },
+      {
+       "type": "accuracy",
+       "value": "76",
+       "slice": "OCRBench"
+      },
+      {
+       "type": "accuracy",
+       "value": "88.2",
+       "slice": "ScreenSpot-V2"
+      }
+     ]
+    },
+    "considerations": {
+     "fairnessAssessments": [
+      {
+       "harms": "Known biases: model may over- or under-represent groups, erase representation of some groups, or reinforce stereotypes due to differing representation and negative stereotypes in training data reflecting societal biases, despite safety post-training. English language varieties with less representation may perform worse. Training data was meticulously filtered and improved."
+      }
+     ],
+     "environmentalConsiderations": {
+      "properties": [
+       {
+        "name": "model-cards:training_hardware",
+        "value": "240 NVIDIA B200 GPUs (trained for 4 days)"
+       }
+      ]
+     },
+     "useCases": [
+      "General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; primary domains are scientific and mathematical reasoning over visual inputs and computer-use agent (CUA) tasks; also general multimodal tasks such as image captioning, visual question answering, optical character recognition, object localization, and grounding.",
+      "General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; computer-use agent (CUA) tasks; a building block for generative AI-powered features."
+     ],
+     "technicalLimitations": [
+      "Trained primarily on English, so other languages and less-represented English varieties may perform worse; may over- or under-represent groups or reinforce stereotypes; may produce inappropriate or offensive content; may generate nonsensical or fabricated, inaccurate or outdated content; not suitable for medical, legal or financial advice or for consequential decisions without further assessment.",
+      "out_of_scope_uses: Not specifically designed or evaluated for all downstream purposes, particularly high-risk scenarios. Should not be used in scenarios with consequential impact on legal status or allocation of resources or life opportunities (e.g., housing, employment, credit) without further assessments and additional debiasing techniques. Not suitable for medical diagnoses, legal advice, or financial planning. Languages other than English may have degraded performance."
+     ],
+     "ethicalConsiderations": [
+      {
+       "name": "Automated red teaming was performed on Azure across risk categories including disallowed content (sexual, violent, hateful, self-harm), copyright/IP, and jailbreak susceptibility, plus groundedness. Results: defect rate 1.4% for Text to Text Safety and 4.5% for Image to Text Safety."
+      }
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "15119518144"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "32768"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "Mid-fusion architecture combining the Phi-4-Reasoning backbone and SigLIP-2 vision encoder, chosen to leverage both pretrained components while keeping training and inference costs manageable. A dynamic resolution vision encoder (up to 3,600 visual tokens) enables high-resolution understanding for GUI grounding and document analysis. Bidirectional attention is applied only within images to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. A single model handles both reasoning and non-reasoning modes rather than separate models."
+     },
+     {
+      "name": "model-cards:training_time",
+      "value": "4 days (on 240 B200 GPUs)"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Evaluated with two open-source frameworks: Microsoft's Eureka ML Insights (internal development benchmarks and ablations; MathVista, MMMU-CoT, ScreenSpot/ScreenSpot-V2, ScreenSpot-Pro, V*Bench) and VLMEvalKit (standardized community benchmarks such as AI2D, ChartQA, DocVQA, MMMU, OCRBench). Comparisons were also run with forced nothink/thinking modes. Shots and prompts are not stated."
+     },
+     {
+      "name": "model-cards:standards_compliance",
+      "value": "Microsoft's Responsible AI Policy (safety training data for refusals is based on it); no formal external standard such as ISO/IEC 42001 is named"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:training-data",
+   "name": "Training data of microsoft/Phi-4-reasoning-vision-15B (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_modality: Text and images (English text and image-text pairs; vision-language data)\ndata_provenance: Primarily filtered and improved open-source vision-language datasets (public), supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions; safety data is a mix of open-source and in-house generated synthetic datasets.\ndata_acquisition: Training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions. Safety post-training used a combination of open-source and in-house generated synthetic datasets. The card does not state how rights were obtained.\ndata_scope: Training data is a curated mixture of reasoning and non-reasoning data, primarily filtered and improved open-source vision-language datasets, supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions. Modalities are text and images; trained primarily on English text and image-text pairs.\ndata_curation: Training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions."
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "phi:dependency-software",
+   "name": "transformers 4.56.1"
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-AI2D",
+   "name": "AI2D",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "AI2D"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-ChartQA",
+   "name": "ChartQA",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "ChartQA"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-MMMU",
+   "name": "MMMU",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "MMMU"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-MathVista-MINI-",
+   "name": "MathVista (MINI)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "MathVista (MINI)"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-OCRBench",
+   "name": "OCRBench",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "OCRBench"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "bom-ref": "phi:evalset-ScreenSpot-V2",
+   "name": "ScreenSpot-V2",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "ScreenSpot-V2"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "phi:model",
+   "dependsOn": [
+    "phi:dependency-software"
+   ]
+  },
+  {
+   "ref": "phi:dependency-software"
+  }
+ ]
+}

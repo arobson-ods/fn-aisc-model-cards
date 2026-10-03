@@ -1,0 +1,1226 @@
+[
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/provider_name__v4.json",
+  "status": "prose",
+  "value": "Allen Institute for AI (Ai2)",
+  "quote": "- **Developed by:** Allen Institute for AI (Ai2)",
+  "quotes": [
+   "- **Developed by:** Allen Institute for AI (Ai2)"
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "allenai/Olmo-3.1-32B-Instruct",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:id = \"allenai/Olmo-3.1-32B-Instruct\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "allenai/Olmo-3.1-32B-Instruct",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:sha = \"ac0587e4a7744a551c059d8cd17ba220bc940dae\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:sha = \"ac0587e4a7744a551c059d8cd17ba220bc940dae\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines",
+   "quotes": [
+    "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use)."
+   ],
+   "agreement": "adds",
+   "section": "License",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/acceptable_use_policy__v4.json",
+  "status": "prose",
+  "value": "Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)",
+  "quote": "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use).",
+  "quotes": [
+   "This model is licensed under Apache 2.0. It is intended for research and educational use in accordance with [Ai2's Responsible Use Guidelines](https://allenai.org/responsible-use)."
+  ],
+  "section": "License",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/additional_assets__v4.json",
+  "status": "prose",
+  "value": "Code, checkpoints and training details are released: Open-Instruct (DPO and RLVR), OLMo-Core (pre-training and SFT) and OLMo-Eval (evaluation) on GitHub; checkpoints accessible via Hugging Face revisions (e.g. step_XXXX naming; only the final few checkpoints for this model); training datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO, Dolci-Instruct-RL) on Hugging Face; logs coming soon.",
+  "quote": "- Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct [...] - OLMo-Core for pre-training and SFT: https://github.com/allenai/OLMo-core [...] - OLMo-Eval for evaluation: https://github.com/allenai/OLMo-Eval [...] We are releasing all code, checkpoints, logs (coming soon), and associated training details. [...] We have released checkpoints for these models. For post-training, the naming convention is `step_XXXX`. [...] To load a specific model revision with HuggingFace, simply add the argument `revision`: [...] - Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft), [Dolci-Instruct-SFT](https://huggingface.co/datasets/allenai/dolci-instruct-sft)",
+  "quotes": [
+   "- Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct",
+   "- OLMo-Core for pre-training and SFT: https://github.com/allenai/OLMo-core",
+   "- OLMo-Eval for evaluation: https://github.com/allenai/OLMo-Eval",
+   "We are releasing all code, checkpoints, logs (coming soon), and associated training details.",
+   "We have released checkpoints for these models. For post-training, the naming convention is `step_XXXX`.",
+   "To load a specific model revision with HuggingFace, simply add the argument `revision`:",
+   "- Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft), [Dolci-Instruct-SFT](https://huggingface.co/datasets/allenai/dolci-instruct-sft)"
+  ],
+  "section": "Model Sources",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Transformer style autoregressive language model",
+  "quote": "- **Model type:** a Transformer style autoregressive language model.",
+  "quotes": [
+   "- **Model type:** a Transformer style autoregressive language model."
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/architecture_details__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": 32233522176,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:safetensors.total = 32233522176",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 32233522176,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "32B (approximate, from the model name and family description; no exact count)",
+   "quotes": [
+    "We introduce Olmo 3, a new family of 7B and 32B models both Instruct and Think variants.",
+    "# Model Card for Olmo-3.1-32B-Instruct"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "derived:pipeline_input_modalities = [\"text\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": 65536,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/config.json",
+  "quote": "config:max_position_embeddings = 65536",
+  "section": "config:max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:max_position_embeddings",
+    "value": 65536,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/max_output_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "text-generation",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "api:pipeline_tag = \"text-generation\"",
+  "section": "api:pipeline_tag",
+  "evidence": [
+   {
+    "path": "api:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/config.json",
+  "quote": "config:dtype = \"bfloat16\"",
+  "section": "config:dtype",
+  "evidence": [
+   {
+    "path": "config:dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": [
+   "allenai/Dolci-Instruct-RL"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "card:datasets = [\"allenai/Dolci-Instruct-RL\"]",
+  "section": "card:datasets",
+  "evidence": [
+   {
+    "path": "card:datasets",
+    "value": [
+     "allenai/Dolci-Instruct-RL"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Pre-trained on Dolma 3 and post-trained on Dolci datasets; listed datasets include Dolci-Think-SFT-7B, Dolci-Instruct-SFT, Dolci-Think-DPO-7B, Dolci-Instruct-DPO, Dolci-Think-RL-7B, and Dolci-Instruct-RL.",
+   "quotes": [
+    "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+    "- Datasets: [Dolci-Think-SFT-7B](https://huggingface.co/datasets/allenai/dolci-thinking-sft), [Dolci-Instruct-SFT](https://huggingface.co/datasets/allenai/dolci-instruct-sft)",
+    "- Datasets: [Dolci-Think-DPO-7B](https://huggingface.co/datasets/allenai/dolci-thinking-dpo), [Dolci-Instruct-DPO](https://huggingface.co/datasets/allenai/dolci-3-instruct-dpo-with-metadata)",
+    "- Datasets: [Dolci-Think-RL-7B](https://huggingface.co/datasets/allenai/Dolci-Think-RL-7B), [Dolci-Instruct-RL](https://huggingface.co/datasets/allenai/Dolci-Instruct-RL-7B)"
+   ],
+   "agreement": "adds",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_provenance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_acquisition__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_scope__v4.json",
+  "status": "prose",
+  "value": "Pre-trained on the Dolma 3 dataset and post-trained on Dolci datasets; post-training data covers math, code, chat, and general knowledge queries (SFT/DPO) and math, code, instruction-following, and general chat queries (RLVR). Language: English.",
+  "quote": "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. [...] - supervised fine-tuning on the Dolci-Think-SFT-7B dataset. This dataset consits of math, code, chat, and general knowledge queries. [...] - reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and general chat queries. [...] - **Language(s) (NLP):** English",
+  "quotes": [
+   "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+   "- supervised fine-tuning on the Dolci-Think-SFT-7B dataset. This dataset consits of math, code, chat, and general knowledge queries.",
+   "- reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and general chat queries.",
+   "- **Language(s) (NLP):** English"
+  ],
+  "section": "Model Details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/knowledge_cutoff__v4.json",
+  "status": "prose",
+  "value": "Dec. 2024",
+  "quote": "- **Date cutoff:** Dec. 2024.",
+  "quotes": [
+   "- **Date cutoff:** Dec. 2024."
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_method__v4.json",
+  "status": "prose",
+  "value": "Pre-trained on the Dolma 3 dataset, then post-trained in three stages on Dolci datasets: Stage 1 SFT (supervised fine-tuning), Stage 2 DPO (direct preference optimization), Stage 3 RLVR (reinforcement learning from verifiable rewards).",
+  "quote": "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets. [...] #### Stage 1: SFT [...] #### Stage 2:DPO [...] - direct preference optimization on the Dolci-Think-DPO-7B dataset. This dataset consits of math, code, chat, and general knowledge queries. [...] #### Stage 3: RLVR [...] - reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and general chat queries.",
+  "quotes": [
+   "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets.",
+   "#### Stage 1: SFT",
+   "#### Stage 2:DPO",
+   "- direct preference optimization on the Dolci-Think-DPO-7B dataset. This dataset consits of math, code, chat, and general knowledge queries.",
+   "#### Stage 3: RLVR",
+   "- reinforcement learning from verifiable rewards on the Dolci-Think-RL-7B dataset. This dataset consits of math, code, instruction-following, and general chat queries."
+  ],
+  "section": "Model Details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/design_rationale__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/intended_uses__v4.json",
+  "status": "prose",
+  "value": "Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines.",
+  "quote": "It is intended for research and educational use in accordance with Ai2's [Responsible Use Guidelines](https://allenai.org/responsible-use).",
+  "quotes": [
+   "It is intended for research and educational use in accordance with Ai2's [Responsible Use Guidelines](https://allenai.org/responsible-use)."
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/out_of_scope_uses__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/target_systems__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/integration_means__v4.json",
+  "status": "prose",
+  "value": "Use with the HuggingFace transformers library (transformers 4.57.0 or higher) via AutoModelForCausalLM/AutoTokenizer; optional 8-bit quantization with bitsandbytes; specific checkpoints loadable via the revision argument; fine-tuning with the OLMo-core repository.",
+  "quote": "Olmo 3 is supported in transformers 4.57.0 or higher: [...] You can use OLMo with the standard HuggingFace transformers library: [...] olmo = AutoModelForCausalLM.from_pretrained(\"allenai/Olmo-3.1-32B-Instruct\") [...] load_in_8bit=True)  # Requires bitsandbytes [...] To load a specific model revision with HuggingFace, simply add the argument `revision`: [...] 1. Fine-tune with the OLMo-core repository:",
+  "quotes": [
+   "Olmo 3 is supported in transformers 4.57.0 or higher:",
+   "You can use OLMo with the standard HuggingFace transformers library:",
+   "olmo = AutoModelForCausalLM.from_pretrained(\"allenai/Olmo-3.1-32B-Instruct\")",
+   "load_in_8bit=True)  # Requires bitsandbytes",
+   "To load a specific model revision with HuggingFace, simply add the argument `revision`:",
+   "1. Fine-tune with the OLMo-core repository:"
+  ],
+  "section": "Inference",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/required_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.57.1",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Olmo 3 is supported in transformers 4.57.0 or higher (HuggingFace transformers library)",
+   "quotes": [
+    "Olmo 3 is supported in transformers 4.57.0 or higher:",
+    "pip install transformers>=4.57.0"
+   ],
+   "agreement": "adds",
+   "section": "Installation",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/limitations__v4.json",
+  "status": "prose",
+  "value": "Without safety filtering, the models can easily be prompted by users to generate harmful and sensitive content; such content may also be produced unintentionally, especially involving bias. Many statements from OLMo or any LLM are often inaccurate, so facts should be verified.",
+  "quote": "Like any base language model or fine-tuned model without safety filtering, these models can easily be prompted by users to generate harmful and sensitive content. Such content may also be produced unintentionally, especially in cases involving bias, so we recommend that users consider the risks when applying this technology. Additionally, many statements from OLMo or any LLM are often inaccurate, so facts should be verified.",
+  "quotes": [
+   "Like any base language model or fine-tuned model without safety filtering, these models can easily be prompted by users to generate harmful and sensitive content. Such content may also be produced unintentionally, especially in cases involving bias, so we recommend that users consider the risks when applying this technology. Additionally, many statements from OLMo or any LLM are often inaccurate, so facts should be verified."
+  ],
+  "section": "Bias, Risks, and Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": [
+   "en"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "card:language = [\"en\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "English",
+   "quotes": [
+    "- **Language(s) (NLP):** English"
+   ],
+   "agreement": "agrees",
+   "section": "Model Description",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/eval_results__v4.json",
+  "status": "prose",
+  "value": "Olmo 3.1 32B Instruct scores: MATH 93.4, AIME 2024 67.8, AIME 2025 57.9, OMEGA 42.2, BigBenchHard 84.0, ZebraLogic 61.7, AGI Eval English 79.5, HumanEvalPlus 86.7, MBPP+ 65.1, LiveCodeBench v3 54.7, IFEval 88.8, IFBench 39.7, MMLU 80.9, PopQA 25.0, GPQA 48.6, AlpacaEval 2 LC 59.8, Safety 89.5",
+  "quote": "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 | [...] | AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 | [...] | AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 | [...] | OMEGA | 15.5 | 33.3 | 42.2 | 5.6 | 23.4 | 44.0 | 19.2 | 24.0 | 9.1 | 9.8 | [...] | BigBenchHard | 69.0 | 82.1 | 84.0 | 57.0 | 80.4 | 89.0 | 80.9 | 82.4 | 66.0 | 65.6 | [...] | ZebraLogic | 30.6 | 51.1 | 61.7 | 9.0 | 28.4 | 86.7 | 24.1 | 24.8 | 17.2 | 13.3 | [...] | IFEval | 87.7 | 87.3 | 88.8 | 70.4 | 87.5 | 88.1 | 81.9 | 85.4 | 62.1 | 85.8 | [...] | MMLU | 79.0 | 81.9 | 80.9 | 70.2 | 85.8 | 88.7 | 84.6 | 74.6 | 76.1 | 77.1 |",
+  "quotes": [
+   "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 |",
+   "| AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 |",
+   "| AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 |",
+   "| OMEGA | 15.5 | 33.3 | 42.2 | 5.6 | 23.4 | 44.0 | 19.2 | 24.0 | 9.1 | 9.8 |",
+   "| BigBenchHard | 69.0 | 82.1 | 84.0 | 57.0 | 80.4 | 89.0 | 80.9 | 82.4 | 66.0 | 65.6 |",
+   "| ZebraLogic | 30.6 | 51.1 | 61.7 | 9.0 | 28.4 | 86.7 | 24.1 | 24.8 | 17.2 | 13.3 |",
+   "| IFEval | 87.7 | 87.3 | 88.8 | 70.4 | 87.5 | 88.1 | 81.9 | 85.4 | 62.1 | 85.8 |",
+   "| MMLU | 79.0 | 81.9 | 80.9 | 70.2 | 85.8 | 88.7 | 84.6 | 74.6 | 76.1 | 77.1 |"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "MATH, AIME 2024, AIME 2025, OMEGA, BigBenchHard, ZebraLogic, AGI Eval English, HumanEvalPlus, MBPP+, LiveCodeBench v3, IFEval, IFBench, MMLU, PopQA, GPQA, AlpacaEval 2 LC, Safety",
+  "quote": "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 | [...] | AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 | [...] | AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 | [...] | OMEGA | 15.5 | 33.3 | 42.2 | 5.6 | 23.4 | 44.0 | 19.2 | 24.0 | 9.1 | 9.8 | [...] | BigBenchHard | 69.0 | 82.1 | 84.0 | 57.0 | 80.4 | 89.0 | 80.9 | 82.4 | 66.0 | 65.6 | [...] | ZebraLogic | 30.6 | 51.1 | 61.7 | 9.0 | 28.4 | 86.7 | 24.1 | 24.8 | 17.2 | 13.3 | [...] | AGI Eval English | 71.7 | 79.4 | 79.5 | 61.6 | 82.4 | 89.4 | 78.9 | 76.9 | 70.9 | 68.4 | [...] | HumanEvalPlus | 80.8 | 85.7 | 86.7 | 42.9 | 83.9 | 89.3 | 82.6 | 79.2 | 67.5 | 44.4 | [...] | MBPP+ | 61.5 | 63.6 | 65.1 | 45.8 | 67.9 | 69.0 | 66.6 | 65.7 | 61.2 | 49.0 | [...] | LiveCodeBench v3 | 35.4 | 49.6 | 54.7 | 9.7 | 57.5 | 70.2 | 49.9 | 39.0 | 28.7 | 10.6 | [...] | IFEval | 87.7 | 87.3 | 88.8 | 70.4 | 87.5 | 88.1 | 81.9 | 85.4 | 62.1 | 85.8 | [...] | IFBench | 29.7 | 36.3 | 39.7 | 26.0 | 31.3 | 37.2 | 36.7 | 31.3 | 27.8 | 36.4 |",
+  "quotes": [
+   "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 |",
+   "| AIME 2024 | 12.7 | 35.2 | 67.8 | 0.31 | 27.9 | 75.4 | 15.7 | 28.9 | 4.7 | 4.6 |",
+   "| AIME 2025 | 8.2 | 23.3 | 57.9 | 0.1 | 21.3 | 64.2 | 13.4 | 22.9 | 0.9 | 0.9 |",
+   "| OMEGA | 15.5 | 33.3 | 42.2 | 5.6 | 23.4 | 44.0 | 19.2 | 24.0 | 9.1 | 9.8 |",
+   "| BigBenchHard | 69.0 | 82.1 | 84.0 | 57.0 | 80.4 | 89.0 | 80.9 | 82.4 | 66.0 | 65.6 |",
+   "| ZebraLogic | 30.6 | 51.1 | 61.7 | 9.0 | 28.4 | 86.7 | 24.1 | 24.8 | 17.2 | 13.3 |",
+   "| AGI Eval English | 71.7 | 79.4 | 79.5 | 61.6 | 82.4 | 89.4 | 78.9 | 76.9 | 70.9 | 68.4 |",
+   "| HumanEvalPlus | 80.8 | 85.7 | 86.7 | 42.9 | 83.9 | 89.3 | 82.6 | 79.2 | 67.5 | 44.4 |",
+   "| MBPP+ | 61.5 | 63.6 | 65.1 | 45.8 | 67.9 | 69.0 | 66.6 | 65.7 | 61.2 | 49.0 |",
+   "| LiveCodeBench v3 | 35.4 | 49.6 | 54.7 | 9.7 | 57.5 | 70.2 | 49.9 | 39.0 | 28.7 | 10.6 |",
+   "| IFEval | 87.7 | 87.3 | 88.8 | 70.4 | 87.5 | 88.1 | 81.9 | 85.4 | 62.1 | 85.8 |",
+   "| IFBench | 29.7 | 36.3 | 39.7 | 26.0 | 31.3 | 37.2 | 36.7 | 31.3 | 27.8 | 36.4 |"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/eval_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/safety_evaluation__v4.json",
+  "status": "prose",
+  "value": "The evaluation table includes a Safety score for Olmo 3.1 32B Instruct of 89.5 (SFT 92.1, DPO 88.9), compared with other models (e.g., Apertus 70B 77.1, Qwen 3 32B (No Think) 81.6, Gemma 3 27B 68.8, OLMo 2 32B 84.2). No red-teaming is described.",
+  "quote": "| **Safety** | 92.1 | 88.9 | 89.5 | 77.1 | 81.6 | 85.8 | 82.2 | 68.8 | 74.4 | 84.2 | [...] | Metric | **Olmo 3.1 32B Instruct SFT** | **Olmo 3.1 32B Instruct DPO** | **Olmo 3.1 32B Instruct** | Apertus 70B | Qwen 3 32B (No Think) | Qwen 3 VL 32B Instruct | Qwen 2.5 32B | Gemma 3 27B | Gemma 2 27B | OLMo 2 32B |",
+  "quotes": [
+   "| **Safety** | 92.1 | 88.9 | 89.5 | 77.1 | 81.6 | 85.8 | 82.2 | 68.8 | 74.4 | 84.2 |",
+   "| Metric | **Olmo 3.1 32B Instruct SFT** | **Olmo 3.1 32B Instruct DPO** | **Olmo 3.1 32B Instruct** | Apertus 70B | Qwen 3 32B (No Think) | Qwen 3 VL 32B Instruct | Qwen 2.5 32B | Gemma 3 27B | Gemma 2 27B | OLMo 2 32B |"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "allenai/Olmo-3.1-32B-Instruct-DPO",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "card:base_model = \"allenai/Olmo-3.1-32B-Instruct-DPO\"",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": "allenai/Olmo-3.1-32B-Instruct-DPO",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Base model Olmo-3-32B; the final Olmo-3.1-32B-Instruct (RLVR) follows the Olmo-3.1-32B-Instruct-DPO stage.",
+   "quotes": [
+    "| **Base Model**           | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) |",
+    "| **DPO**                  | [Olmo-3-7B-Think-DPO](https://huggingface.co/allenai/Olmo-3-7B-Think-DPO) | [Olmo-3-32B-Think-DPO](https://huggingface.co/allenai/Olmo-3-32B-Think-DPO) | [Olmo-3-7B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO) | [Olmo-3.1-32B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO) |"
+   ],
+   "agreement": "adds",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Fine-tuned from base model Olmo-3-32B via post-training stages: SFT, then DPO, then RLVR (final model)",
+   "quotes": [
+    "| **Base Model**           | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) |",
+    "#### Stage 1: SFT",
+    "#### Stage 2:DPO",
+    "#### Stage 3: RLVR"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/raw/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+  "llm_cache": "data/raw/llm/olmo/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights/checkpoints released on Hugging Face (loadable with the transformers library, including intermediate revisions); code released on GitHub repositories.",
+  "quote": "We are releasing all code, checkpoints, logs (coming soon), and associated training details. [...] You can use OLMo with the standard HuggingFace transformers library: [...] We have released checkpoints for these models. For post-training, the naming convention is `step_XXXX`. [...] Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct",
+  "quotes": [
+   "We are releasing all code, checkpoints, logs (coming soon), and associated training details.",
+   "You can use OLMo with the standard HuggingFace transformers library:",
+   "We have released checkpoints for these models. For post-training, the naming convention is `step_XXXX`.",
+   "Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct"
+  ],
+  "section": "Model Details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "olmo",
+  "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:16:57+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+  "quote": "derived:hub_url = \"https://huggingface.co/allenai/Olmo-3.1-32B-Instruct\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

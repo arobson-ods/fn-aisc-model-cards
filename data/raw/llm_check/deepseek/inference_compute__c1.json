@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "dedf55ed5da1ca77",
+ "request_user": "Fact definition: Benchmarked computation (FLOPs) or energy used for inference, and how it was measured.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The extractor is right: the card gives no measured inference FLOPs or energy use, and says nothing about how either would be measured. The closest it gets is related efficiency figures. It lists activated parameters (\"8B parameters per token during prefill and 16B during decode\") and KV cache memory (\"890 bytes per token\"). It also makes qualitative claims such as \"substantially improving cost efficiency\" and says reasoning effort \"trades inference cost for accuracy\". None of these is a benchmarked compute or energy figure."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 580,
+  "cache_read_input_tokens": 6817,
+  "output_tokens": 369
+ },
+ "cost_usd_list_price": 0.013391400000000001,
+ "duration_ms": 5169
+}

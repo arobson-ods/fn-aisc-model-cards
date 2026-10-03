@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "intended_uses",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: intended_uses\nWhat to find: Intended uses of the model.\nCard sections that often contain it: Intended Use, Uses, Direct Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card describes no dedicated intended-use section, but it says the model is designed for coding, professional work, research, and long-horizon agentic tasks, and that it carries complex multi-step tasks through to completion.",
+  "quotes": [
+   "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability."
+  ],
+  "section": "Qwen3.8-2.4T-A95B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 17929,
+  "output_tokens": 301
+ },
+ "cost_usd_list_price": 0.008731800000000001,
+ "duration_ms": 2665
+}

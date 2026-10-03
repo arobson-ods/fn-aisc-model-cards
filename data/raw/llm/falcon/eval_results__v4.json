@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "eval_results",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Falcon-H1R-7B scores: AIME24 88.1, AIME25 83.1, HMMT25 64.9, AMO-BENCH 36.3, MATH500 97.4, LCBv5-v6 68.6, GPQA-D 61.3, MMLU-Pro 72.1, HLE 11.1, IFBench 53.4, Terminal-Bench Hard 4.9. With test-time scaling (DeepConf): AIME24 96.7, AIME25 96.7, GPQA-D 70.2, AMO-Bench* 35.9.",
+  "quotes": [
+   "<td>AIME24</td>\n            <td><b>88.1</b></td>",
+   "TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf)."
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 6695,
+  "output_tokens": 392
+ },
+ "cost_usd_list_price": 0.007438999999999999,
+ "duration_ms": 3307
+}

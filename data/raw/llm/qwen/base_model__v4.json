@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "base_model",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: base_model\nWhat to find: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).\nCard sections that often contain it: Model Details, Base Model, Finetuned from\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 554,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 243
+ },
+ "cost_usd_list_price": 0.0082912,
+ "duration_ms": 2574
+}

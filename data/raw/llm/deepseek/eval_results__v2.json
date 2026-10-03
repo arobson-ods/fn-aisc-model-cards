@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "eval_results",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "DeepSeek-V4.1-Flash (max reasoning effort) scores include: GPQA Diamond (Pass@1) 90.9; HLE (Pass@1) 36.8 (39.1† text-only subset); Codeforces (Rating) 3471; MathArena Apex (Pass@1) 65.6; Terminal-Bench 2.1 (Pass@1) 90.6; DeepSWE v1.1 (Resolved) 74.2; CyberGym (Pass@1) 88.1; HLE w/ tools (Pass@1) 63.9. Base model (DeepSeek-V4.1-Flash-Base): MMLU-Pro (EM, 5-shot) 74.1; HumanEval (Pass@1, 0-shot) 79.4; GSM8K (EM, 8-shot) 93.0; MMMU-Pro (EM, 4-shot) 56.5; DocVQA (LLM-Judge, 4-shot) 95.6.",
+  "quotes": [
+   "| GPQA Diamond (Pass@1) | 93.4 | **94.1** | 92.9 | 88.1 | 92.4 | 89.9 | 90.9 |",
+   "| HLE (Pass@1) | **56.3** | 44.5 | 43.5 | 42.0† | 42.7† | 37.8† | 36.8 (39.1†) |",
+   "| Codeforces (Rating) | — | — | — | — | 3348 | 3289 | **3471** |",
+   "| MathArena Apex (Pass@1) | — | — | **65.6** | — | 65.3 | 58.6 | **65.6** |",
+   "| Terminal-Bench 2.1 (Pass@1) | 89.1 | 88.8 | 88.3 | 88.2 | 87.9 | 82.7 | **90.6** |"
+  ],
+  "section": "Evaluation Results"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 7126,
+  "output_tokens": 724
+ },
+ "cost_usd_list_price": 0.0108452,
+ "duration_ms": 4244
+}

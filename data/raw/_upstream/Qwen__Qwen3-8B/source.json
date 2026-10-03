@@ -1,0 +1,11 @@
+{
+ "repo_id": "Qwen/Qwen3-8B",
+ "sha": "b968826d9c46dd6066d109eabc6255188de91218",
+ "api_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+ "retrieved_at": "2026-09-30T10:17:04+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+ "config_url": "https://huggingface.co/Qwen/Qwen3-8B/raw/b968826d9c46dd6066d109eabc6255188de91218/config.json"
+}

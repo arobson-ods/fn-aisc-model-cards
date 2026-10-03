@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "ff6c013c25590556",
+ "request_user": "Fact definition: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).\nExtracted value: Pre-trained from scratch on a multimodal corpus of 45T tokens (sparse attention at 64K sequence length, context extended to 1M at 34T tokens); post-training follows SFT → RL → on-policy distillation (OPD), with changes in the data pipeline (large-scale automated synthesis of agent tasks and environments).\nQuotes given as evidence (separated by [...]): **Pre-training.** DeepSeek-V4.1-Flash is trained from scratch on a multimodal corpus comprising **45T tokens**, with sparse attention trained at a sequence length of 64K and context extended to 1M tokens at 34T tokens. [...] **Post-training.** The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes come straight from the DeepSeek-V4.1-Flash card and support every claim in the value. Pre-training is covered: trained from scratch on a 45T-token multimodal corpus, with sparse attention trained at 64K and context extended to 1M at 34T tokens. Post-training is covered: the SFT → RL → on-policy distillation (OPD) pipeline, with changes made in the data pipeline through large-scale automated synthesis of agent tasks and environments. Together these answer the fact definition about the main training stages and methods. The value leaves out two small details, 'without algorithmic modifications' and 'progressive scaling of data, tasks, and rollouts'. Neither omission changes the meaning."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7778,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 381
+ },
+ "cost_usd_list_price": 0.069852,
+ "duration_ms": 4833
+}

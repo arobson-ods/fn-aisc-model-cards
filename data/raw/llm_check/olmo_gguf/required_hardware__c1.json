@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "9d2e2339f5ad17b1",
+ "request_user": "Fact definition: Hardware required to run the model (e.g. GPU memory, number of accelerators).\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card never says what hardware is needed to run the model. It gives no GPU memory amount, no number of accelerators, and no minimum spec. The only hardware-related text is in the code examples. The inference snippet has commented-out, optional lines (\"# optional verifying cuda\", \"olmo.to('cuda')\"). The 8-bit quantization example notes \"Requires bitsandbytes\" and suggests passing inputs \"directly to CUDA\". These show that a CUDA GPU can be used, but they are usage tips, not hardware requirements. The extractor was right that this fact is not stated."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 577,
+  "cache_read_input_tokens": 5752,
+  "output_tokens": 417
+ },
+ "cost_usd_list_price": 0.0141144,
+ "duration_ms": 5603
+}

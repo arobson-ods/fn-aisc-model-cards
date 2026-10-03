@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v1",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quote and section.",
+ "answer": {
+  "status": "stated",
+  "value": "MATH, AIME 2024, AIME 2025, OMEGA, BigBenchHard, ZebraLogic, AGI Eval English, HumanEvalPlus, MBPP+, LiveCodeBench v3, IFEval, IFBench, MMLU, PopQA, GPQA, AlpacaEval 2 LC, Safety",
+  "quote": "| MATH | 74.4 | 86.6 | 93.4 | 36.2 | 84.3 | 95.1 | 80.2 | 87.4 | 51.5 | 49.2 |",
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 538,
+  "cache_read_input_tokens": 6493,
+  "output_tokens": 299
+ },
+ "cost_usd_list_price": 0.0064446,
+ "duration_ms": 2971
+}

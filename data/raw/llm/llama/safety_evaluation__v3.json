@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Meta ran recurring red teaming (adversarial prompting by experts in cybersecurity, adversarial ML, integrity and multilingual content) and dedicated adversarial evaluations of systems composed of Llama models and Llama Guard 3. Critical risk areas (CBRNE, child safety, cyber attack enablement) got additional evaluation. For cyber, the card reports that Llama 4 models do not introduce risk plausibly enabling catastrophic cyber outcomes.",
+  "quotes": [
+   "We built dedicated, adversarial evaluation datasets and evaluated systems composed of Llama models and Llama Guard 3 to filter input prompt and output response.",
+   "We conduct recurring red teaming exercises with the goal of discovering risks via adversarial prompting and we use the learnings to improve our benchmarks and safety tuning datasets.",
+   "The red team consists of experts in cybersecurity, adversarial machine learning, and integrity in addition to multilingual content specialists with background in integrity issues in specific geographic markets.",
+   "Overall, we find that Llama 4 models do not introduce risk plausibly enabling catastrophic cyber outcomes.",
+   "We spend additional focus on the following critical risk areas:"
+  ],
+  "section": "Evaluations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 8874,
+  "output_tokens": 517
+ },
+ "cost_usd_list_price": 0.0091728,
+ "duration_ms": 4137
+}

@@ -1,0 +1,11 @@
+{
+ "repo_id": "allenai/Olmo-3-1025-7B",
+ "sha": "a81bae42db3975be1671e27b9c9a56da1a9f980f",
+ "api_url": "https://huggingface.co/api/models/allenai/Olmo-3-1025-7B",
+ "retrieved_at": "2026-09-30T10:30:00+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/allenai/Olmo-3-1025-7B/raw/a81bae42db3975be1671e27b9c9a56da1a9f980f/README.md",
+ "config_url": "https://huggingface.co/allenai/Olmo-3-1025-7B/raw/a81bae42db3975be1671e27b9c9a56da1a9f980f/config.json"
+}

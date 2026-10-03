@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only.",
+  "quotes": [
+   "Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), ",
+   "a collection of datasets with highly-curated image-text and video-text pairs.",
+   "This model is trained on third party datasets that are subject to academic and non-commercial research use only."
+  ],
+  "section": "Molmo2-8B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 8230,
+  "output_tokens": 338
+ },
+ "cost_usd_list_price": 0.0072499999999999995,
+ "duration_ms": 3303
+}

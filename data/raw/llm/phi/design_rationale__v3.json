@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "design_rationale",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Mid-fusion architecture combining the Phi-4-Reasoning backbone and SigLIP-2 vision encoder, chosen to leverage the strengths of both pretrained components while keeping training and inference costs manageable. A dynamic resolution vision encoder (up to 3,600 visual tokens) enables high-resolution understanding for GUI grounding and fine-grained document analysis. Intra-image bidirectional attention improves spatial reasoning without the overfitting risks of broader bidirectional schemes. A single model mixes reasoning and non-reasoning data via SFT, rather than separate models per mode, invoking chain-of-thought for math/science and direct inference for perception tasks.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.",
+   "This approach leverages the strengths of both pretrained components while keeping training and inference costs manageable.",
+   "The model employs a dynamic resolution vision encoder with up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such as GUI grounding and fine-grained document analysis.",
+   "Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader bidirectional schemes.",
+   "Rather than training separate models for each mode, the model operates as a single system that can invoke extended chain-of-thought reasoning (using `<think>...</think>` blocks) for tasks like mathematical and scientific reasoning, or default to direct inference (tagged with `<nothink>`) for perception-focused tasks such as captioning, object detection, and grounding."
+  ],
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 10433,
+  "output_tokens": 708
+ },
+ "cost_usd_list_price": 0.0112746,
+ "duration_ms": 4718
+}

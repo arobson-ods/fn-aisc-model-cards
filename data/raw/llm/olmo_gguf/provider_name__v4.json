@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "provider_name",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: provider_name\nWhat to find: Legal or organisational name of the model provider (developer) that releases the model.\nCard sections that often contain it: Model Details, Model Information, Model developer\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Allen Institute for AI (Ai2)",
+  "quotes": [
+   "- **Developed by:** Allen Institute for AI (Ai2)"
+  ],
+  "section": "Model Description"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6349,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 159
+ },
+ "cost_usd_list_price": 0.027097,
+ "duration_ms": 2095
+}

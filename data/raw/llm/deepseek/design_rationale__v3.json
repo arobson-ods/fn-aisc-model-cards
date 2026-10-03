@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+ "fact_id": "design_rationale",
+ "readme_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card gives some rationale for design choices. CED projects the decoder's global KV cache from the final encoder hidden states, so only 8B parameters are active per token in prefill and 16B in decode, which improves cost efficiency for input-heavy agentic workloads. SWA Bounded Replay avoids persisting SWA KV to SSD and cuts the persistent KV cache footprint to roughly 1/8 of DeepSeek-V4-Flash. The Hierarchical Sparse Indexer bounds deeper indexer cost independently of context length. For post-training, the standard SFT → RL → OPD paradigm is used without algorithmic modifications, and all changes are in the data pipeline (large-scale automated synthesis of agent tasks and environments).",
+  "quotes": [
+   "With CED, the decoder's global KV cache is projected from the final encoder hidden states rather than derived from each decoder layer's own hidden states. This allows the model to activate only **8B parameters per token during prefill** and **16B during decode**, substantially improving cost efficiency for input-heavy agentic workloads.",
+   "**SWA Bounded Replay** reconstructs missing SWA KV states by replaying only the most recent *n*_win tokens, avoiding the need to persist SWA KV to SSD and reducing the persistent KV cache footprint to roughly **1/8** of that of DeepSeek-V4-Flash.",
+   "In the decoder, a **Hierarchical Sparse Indexer** further restricts later indexing layers to a candidate pool constructed by the first Full Mode layer, bounding deeper indexer cost independently of context length.",
+   "The post-training recipe follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications. All substantive changes lie instead in the data pipeline: large-scale automated synthesis of agent tasks and environments with progressive scaling of data, tasks, and rollouts."
+  ],
+  "section": "Introduction"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 7215,
+  "output_tokens": 749
+ },
+ "cost_usd_list_price": 0.011041,
+ "duration_ms": 4654
+}

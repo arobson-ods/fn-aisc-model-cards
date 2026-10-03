@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "847e884b016cb3d8",
+ "request_user": "Fact definition: Maximum input size (context length in tokens, or maximum image/audio size).\nValue taken from the model's structured metadata (config:text_config.max_position_embeddings = 131072): 131072\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The value comes from config text_config.max_position_embeddings = 131072, which is the architectural maximum context length of the language model. The card says SFT used a 32K context window, and its LMDeploy examples set session_len=32768. Neither is stated as a maximum input limit, so neither conflicts with the metadata value."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 601,
+  "cache_read_input_tokens": 18938,
+  "output_tokens": 661
+ },
+ "cost_usd_list_price": 0.0218236,
+ "duration_ms": 8904
+}

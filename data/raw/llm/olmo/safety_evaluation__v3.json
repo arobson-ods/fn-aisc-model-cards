@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "safety_evaluation",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: safety_evaluation\nWhat to find: Safety evaluation, red-teaming or risk assessment performed and its results.\nCard sections that often contain it: Safety, Responsibility, Red Teaming, Risks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card reports a Safety benchmark score in its evaluation table: 89.5 for Olmo 3.1 32B Instruct (92.1 SFT, 88.9 DPO). The comparison models scored 77.1 (Apertus 70B), 81.6 (Qwen 3 32B No Think), 85.8 (Qwen 3 VL 32B Instruct), 82.2 (Qwen 2.5 32B), 68.8 (Gemma 3 27B), 74.4 (Gemma 2 27B) and 84.2 (OLMo 2 32B). The card describes no red-teaming or further risk assessment. Its risk section only warns that the models can easily be prompted to generate harmful content.",
+  "quotes": [
+   "| **Safety** | 92.1 | 88.9 | 89.5 | 77.1 | 81.6 | 85.8 | 82.2 | 68.8 | 74.4 | 84.2 |",
+   "Like any base language model or fine-tuned model without safety filtering, these models can easily be prompted by users to generate harmful and sensitive content."
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 6670,
+  "output_tokens": 469
+ },
+ "cost_usd_list_price": 0.008251999999999999,
+ "duration_ms": 3316
+}

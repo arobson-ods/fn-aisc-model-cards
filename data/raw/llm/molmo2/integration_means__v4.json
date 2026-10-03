@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "integration_means",
+ "readme_sha256": "87490109abd281cf2bc3e0a6498a931e18286b8b441dcf82c1a960c15ca05c2a",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True), with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using chat messages containing text, video or image content; supports video QA, video pointing, tracking, multi-image QA and multi-image pointing.",
+  "quotes": [
+   "pip install transformers==4.57.1",
+   "pip install torch pillow einops torchvision accelerate decord2 molmo_utils",
+   "from transformers import AutoProcessor, AutoModelForImageTextToText",
+   "inputs = processor.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n    return_tensors=\"pt\",\n    return_dict=True,\n)",
+   "### Tracking Video QA (best with max_fps=8)"
+  ],
+  "section": "Quick Start"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 8230,
+  "output_tokens": 409
+ },
+ "cost_usd_list_price": 0.007991999999999999,
+ "duration_ms": 3462
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card says pretraining used a staged curriculum of web, code, math and reasoning data, with a public data mixture; pretraining datasets are in a public collection, while mid-training and post-training datasets will be uploaded later. Mid-training used 140B reasoning tokens. The card gives no details on annotation, synthetic-data generation or how rights were obtained, and points to an EU public summary of training content.",
+  "quotes": [
+   "it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+   "**Fully open model**: open weights + full training details including public data mixture and training configs",
+   "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later",
+   "The EU AI Act requires all GPAI models to provide a Public Summary of Training Content according to a [given template](https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models)."
+  ],
+  "section": "Model Summary"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 9120,
+  "output_tokens": 550
+ },
+ "cost_usd_list_price": 0.009548000000000001,
+ "duration_ms": 4496
+}

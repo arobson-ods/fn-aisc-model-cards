@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "languages",
+ "input_sha256": "dfa3818e9774d28c8de53006fd52d110714ee38d7144e5021585e9609e68e564",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nThe card's machine-readable metadata gives: [\"en\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Trained primarily on English text and image-text pairs; languages other than English may experience degraded performance; not intended to support multilingual use.",
+  "quotes": [
+   "The model is trained primarily on English text and image-text pairs. Languages other than English may experience degraded performance.",
+   "Phi-4-Reasoning-Vision-15B is not intended to support multilingual use."
+  ],
+  "agreement": "agrees",
+  "section": "2.2 Out-of-Scope Use Cases"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 742,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 266
+ },
+ "cost_usd_list_price": 0.0076598000000000005,
+ "duration_ms": 2756
+}

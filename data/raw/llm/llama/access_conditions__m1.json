@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "access_conditions",
+ "input_sha256": "6a4184097346904738c99ea18fad87c627e2f84da634c8a152fd8820b7b7932a",
+ "request_user": "Fact: access_conditions\nWhat to find: Conditions for accessing the weights (e.g. gated access requiring agreement or approval).\nThe card's machine-readable metadata gives: \"manual\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9627,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 227
+ },
+ "cost_usd_list_price": 0.0408982,
+ "duration_ms": 2708
+}

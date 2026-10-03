@@ -1,0 +1,249 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:f06d5f3a-9067-5fb1-beff-a68433b66586",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:16:58Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "llama:model",
+   "name": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+   "supplier": {
+    "name": "Meta"
+   },
+   "version": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:release_date",
+     "value": "April 5, 2025"
+    },
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Out-of-scope uses include use that violates applicable laws or regulations (including trade compliance laws), use prohibited by the Acceptable Use Policy and Llama 4 Community License, and use in languages or capabilities beyond those explicitly supported. License: Llama 4 Community License Agreement (https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE)"
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "manual"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Use with Hugging Face transformers (v4.51.0 or later) via AutoProcessor and Llama4ForConditionalGeneration, with processor.apply_chat_template for chat-format messages (text and image inputs) and model.generate; the card also points to the Llama cookbook for generation parameters and recipes."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Model weights released (Llama 4 Scout as BF16 weights, with on-the-fly int4 quantization code provided) under the Llama 4 Community License; usable via the transformers library with the model id meta-llama/Llama-4-Scout-17B-16E-Instruct. Quantized checkpoints are also provided."
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "name": "llama4"
+     }
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "llama:ancestor-meta-llama/Llama-4-Scout-17B-16E",
+      "name": "meta-llama/Llama-4-Scout-17B-16E",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E"
+       }
+      ],
+      "version": "14d516bdff6ac06cec40678529222f193386189c"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion for native multimodality",
+     "modelArchitecture": "Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion for native multimodality; Llama 4 Scout has 16 experts, 17B activated parameters and 109B total parameters.",
+     "inputs": [
+      {
+       "format": "text"
+      },
+      {
+       "format": "image"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "image-text-to-text",
+     "datasets": [
+      {
+       "ref": "llama:training-data"
+      },
+      {
+       "ref": "llama:evalset-Pre-trained-MMLU-MMLU-Pro-MATH-MBPP-TydiQA-ChartQA-DocVQA.-Instruction-tuned-MMMU-MMMU-Pro-MathVista-ChartQA-DocVQA-test-LiveCodeBench-MMLU-Pro-GPQA-Diamond-MGSM-MTOB-half-book-and-full-book-."
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "Llama 4 Scout (instruction tuned): MMMU 69.4 accuracy; MathVista 70.7 accuracy; ChartQA 88.8 relaxed_accuracy; DocVQA (test) 94.4 anls; MMLU Pro 74.3 macro_avg/acc; GPQA Diamond 57.2 accuracy; MGSM 90.6 average/em. Pre-trained Llama 4 Scout: MMLU 79.6 macro_avg/acc_char (5 shots)."
+      }
+     ]
+    },
+    "considerations": {
+     "environmentalConsiderations": {
+      "properties": [
+       {
+        "name": "model-cards:training_hardware",
+        "value": "H100-80GB (TDP of 700W) GPUs on Meta's custom built GPU clusters; 7.38M cumulative GPU hours for pre-training (5.0M for Llama 4 Scout). GPU count not stated."
+       },
+       {
+        "name": "model-cards:energy_methodology",
+        "value": "Training time is the total GPU time required for training each model, and power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency; the methodology is detailed in the linked paper (https://arxiv.org/pdf/2204.05149)."
+       }
+      ]
+     },
+     "useCases": [
+      "Commercial and research use in multiple languages. Instruction tuned models are intended for assistant-like chat and visual reasoning tasks; pretrained models can be adapted for natural language generation. Vision uses include visual recognition, image reasoning, captioning, and answering general questions about an image. Also supports using model outputs to improve other models, including synthetic data generation and distillation.",
+      "Assistant-like chat and visual reasoning systems (instruction tuned models); also natural language generation (pretrained models), image recognition/captioning/question answering, synthetic data generation and distillation to improve other models; should be deployed as part of an overall AI system with additional guardrails."
+     ],
+     "technicalLimitations": [
+      "Testing has not covered all scenarios, so outputs cannot be predicted in advance and the model may produce inaccurate or other objectionable responses; developers should do safety testing and tuning for their applications. Image understanding was tested only up to 5 input images, and use in languages beyond the 12 supported ones is out-of-scope unless developers fine-tune and ensure safe use.",
+      "out_of_scope_uses: Use in any manner that violates applicable laws or regulations (including trade compliance laws); use prohibited by the Acceptable Use Policy and Llama 4 Community License; use in languages or capabilities beyond those explicitly referenced as supported in the model card."
+     ],
+     "ethicalConsiderations": [
+      {
+       "name": "Meta ran common-use-case evaluations with dedicated adversarial datasets (systems of Llama models plus Llama Guard 3), capability evaluations, recurring red teaming, and critical-risk assessments (CBRNE, child safety, cyber attack enablement). For cyber, it found Llama 4 models do not introduce risk plausibly enabling catastrophic cyber outcomes."
+      }
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "108641793536"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "Llama 4 Scout (17Bx16E): context length 10M; tested for image understanding up to 5 input images"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "Llama 4 Scout is released as BF16 weights, and can fit within a single H100 GPU with on-the-fly int4 quantization"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "Safety fine-tuning was done to give developers a readily available, safe, and powerful model and reduce their deployment workload. The card says it put great emphasis on driving down refusals to benign prompts, and targeted removing preachy, overly moralizing language and fixing formatting issues."
+     },
+     {
+      "name": "model-cards:training_time",
+      "value": "Llama 4 Scout: 5.0M GPU hours (H100-80GB); 7.38M GPU hours cumulative for Scout and Maverick"
+     },
+     {
+      "name": "model-cards:compute_methodology",
+      "value": "Training computation is reported as GPU hours on H100-80GB (TDP 700W) hardware, defined as the total GPU time required for training each model. The card points to a linked methodology (arxiv.org/pdf/2204.05149) for training energy use and greenhouse gas emissions."
+     },
+     {
+      "name": "model-cards:required_hardware",
+      "value": "Llama 4 Scout is released as BF16 weights but can fit within a single H100 GPU with on-the-fly int4 quantization (Maverick FP8 weights fit on a single H100 DGX host)."
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "ar, de, en, es, fr, hi, id, it, pt, th, tl, vi"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "All reported evaluations and testing were conducted on bf16 models; benchmark tables report number of shots (e.g., MMLU 5-shot, MATH 4-shot, MBPP 3-shot, TydiQA 1-shot, instruction-tuned benchmarks 0-shot) and metrics (e.g., macro_avg/acc_char, em_maj1@1, pass@1). No harness named."
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "llama:training-data",
+   "name": "Training data of meta-llama/Llama-4-Scout-17B-16E-Instruct (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_modality: Multimodal data (text and images implied by multimodal); card states pretraining on multimodal data from publicly available, licensed data and Meta product/service information\ndata_provenance: A mix of publicly available data, licensed data, and information from Meta's products and services (including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI).\ndata_acquisition: Pretraining data is a mix of publicly available data, licensed data, and information from Meta's products and services (including publicly shared Instagram and Facebook posts and people's interactions with Meta AI). For safety fine-tuning, data combines human-generated data from vendors with synthetic data, with LLM-based classifiers used to select high-quality prompts and responses.\ndata_scope: Llama 4 Scout was pretrained on ~40 trillion tokens (Maverick ~22 trillion) of multimodal data from a mix of publicly available, licensed data and information from Meta's products and services, including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. Pre-training includes 200 total languages; 12 languages are supported. Data cutoff is August 2024.\ndata_curation: Safety fine-tuning data combines human-generated vendor data with synthetic data, and LLM-based classifiers select high-quality prompts and responses. Pre-training uses data filtering as a first step in mitigating Child Safety risk. No further curation details (e.g., deduplication) are given.\nunsuitable_data_measures: For Child Safety risk, pre-training methods like data filtering are used as a first step; LLM-based classifiers are used to select high-quality prompts and responses in safety fine-tuning data.",
+     "sensitiveData": [
+      "Training data includes information from Meta's products and services, including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. The card does not describe anonymisation or other handling of personal data."
+     ]
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:training_data_size",
+     "value": "~40 trillion tokens (Llama 4 Scout)"
+    },
+    {
+     "name": "model-cards:knowledge_cutoff",
+     "value": "August 2024"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "llama:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "llama:evalset-Pre-trained-MMLU-MMLU-Pro-MATH-MBPP-TydiQA-ChartQA-DocVQA.-Instruction-tuned-MMMU-MMMU-Pro-MathVista-ChartQA-DocVQA-test-LiveCodeBench-MMLU-Pro-GPQA-Diamond-MGSM-MTOB-half-book-and-full-book-.",
+   "name": "Pre-trained: MMLU, MMLU-Pro, MATH, MBPP, TydiQA, ChartQA, DocVQA. Instruction tuned: MMMU, MMMU Pro, MathVista, ChartQA, DocVQA (test), LiveCodeBench, MMLU Pro, GPQA Diamond, MGSM, MTOB (half book and full book).",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Pre-trained: MMLU, MMLU-Pro, MATH, MBPP, TydiQA, ChartQA, DocVQA. Instruction tuned: MMMU, MMMU Pro, MathVista, ChartQA, DocVQA (test), LiveCodeBench, MMLU Pro, GPQA Diamond, MGSM, MTOB (half book and full book)."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "llama:model",
+   "dependsOn": [
+    "llama:dependency-software"
+   ]
+  },
+  {
+   "ref": "llama:dependency-software"
+  }
+ ]
+}

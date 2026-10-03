@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "limitations",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Multilingual performance may vary compared to English (few-shot examples can help); the model may occasionally produce inaccurate, biased, or unsafe responses; content within <think>...</think> tags is internal reasoning that may be unpolished or intermediate and not final conclusions.",
+  "quotes": [
+   "Although this model handles multilingual dialog, its performance may vary compared to English. Few-shot examples can help in such cases.",
+   "While aligned for safety, the model may occasionally produce inaccurate, biased, or unsafe responses.",
+   "The content within `<think>...</think>` tags represents internal reasoning and may contain unpolished or intermediate thoughts that do not represent final conclusions."
+  ],
+  "section": "Ethical Considerations and Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 16605,
+  "output_tokens": 344
+ },
+ "cost_usd_list_price": 0.008925,
+ "duration_ms": 2978
+}

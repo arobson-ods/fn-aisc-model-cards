@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "26beeebedd7d66f2",
+ "request_user": "Fact definition: How evaluations were run (harness, settings, prompts, shots).\nExtracted value: Base models evaluated in an internal framework under the same settings, with few-shot counts per benchmark (e.g. 5-shot MMLU-Pro, 0-shot HumanEval). Instruct results use max reasoning effort (reasoning_effort=100) with temperature=1.0, top_p=0.95. Code agent benchmarks use the Minimal mode of DeepSeek Harness with a 1M-token context window; mini-SWE harness for DeepSWE v1.1; Claude Code harness for SEC-Bench Pro; visual agent benchmarks use Claude Code harness with 512k-token context.\nQuotes given as evidence (separated by [...]): All base models are evaluated in our internal framework under the same evaluation settings. [...] All instruct results below use the maximum effort setting (`reasoning_effort=100`). Evaluations use `temperature=1.0, top_p=0.95`. [...] For code agent benchmarks (Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, NL2Repo-Bench, ProgramBench), the model is evaluated with the Minimal mode of DeepSeek Harness and a 1M-token context window. [...] To align with official setup requirements, the mini-SWE harness is used for DeepSWE v1.1, and the Claude Code harness for SEC-Bench Pro. [...] Visual agent benchmarks (Chartography, BabyVision, ZeroBench) use the Claude Code harness with a 512k-token context window.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes support the internal base-model framework, reasoning_effort=100, temperature 1.0 / top_p 0.95, DeepSeek Harness Minimal mode with 1M context for code agents, mini-SWE for DeepSWE v1.1, Claude Code for SEC-Bench Pro, and Claude Code with 512k context for visual agents. The per-benchmark shot counts (5-shot MMLU-Pro, 0-shot HumanEval) appear only in the card's table, not in the quotes, so that part of the value is unsupported by the evidence. Minor details are also omitted, such as the official scaffolds for Agent's Last Exam and AutomationBench."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7937,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1018
+ },
+ "cost_usd_list_price": 0.083864,
+ "duration_ms": 9728
+}

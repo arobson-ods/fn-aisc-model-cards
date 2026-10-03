@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "carbon_emissions",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: carbon_emissions\nWhat to find: Greenhouse gas emissions from training (e.g. tCO2eq).\nCard sections that often contain it: Environmental Impact, Carbon, Greenhouse Gas\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Llama 4 Scout: 1,354 tons CO2eq location-based and 0 tons CO2eq market-based (Scout and Maverick combined: 1,999 tons location-based, 0 market-based).",
+  "quotes": [
+   "Llama 4 Scout | \n5.0M | \n700 | \n1,354 | \n0 |",
+   "Estimated total location-based greenhouse gas emissions were 1,999 tons CO2eq for training."
+  ],
+  "section": "Hardware and Software"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 558,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 262
+ },
+ "cost_usd_list_price": 0.0067358,
+ "duration_ms": 2705
+}

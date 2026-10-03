@@ -1,0 +1,200 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:5fff684d-367d-568c-a3ce-a28f51cba05d",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:06Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "twil_smollm:model",
+   "name": "webAI-Official/TwIL-LM3",
+   "supplier": {
+    "name": "webAI (published under the webAI-Official organisation)"
+   },
+   "version": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "e4f94da572d9857a91ca0dca857cebb0cbe6755a"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "name": "webai-non-commercial-license-ver.-1.0",
+      "url": "https://huggingface.co/webAI-Official/TwIL-LM3/blob/main/LICENSE.md"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, bf16); GGUF builds for llama.cpp (llama-cli); evaluated via vLLM backend; model emits a <think>…</think> block before the answer; greedy decoding (do_sample=False) with ≥2048 new tokens recommended"
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released."
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "twil_smollm:ancestor-HuggingFaceTB/SmolLM3-3B",
+      "name": "HuggingFaceTB/SmolLM3-3B",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+       }
+      ],
+      "version": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+     }
+    ],
+    "notes": "base_model_relation: adapter"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/webAI-Official/TwIL-LM3"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/webAI-Official/TwIL-LM3"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "SmolLM3 decoder-only transformer; 36 layers, hidden size 2048",
+     "modelArchitecture": "SmolLM3 decoder-only transformer; 36 layers, hidden size 2048; 3.08B total parameters; 128,256 vocabulary; 65,536-token context window. No rationale for the design choices is given.",
+     "inputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "text-generation",
+     "datasets": [
+      {
+       "ref": "twil_smollm:training-data"
+      },
+      {
+       "ref": "twil_smollm:evalset-Track-A-in-domain-formal-logic-lanes-lean_formalize-rule_induction-entailment_label-mcq_answer-semantic_parse-lean_critic-plus-lm_corpus-and-math_corpus-perplexity.-Track-B-held-out-benchmarks-gsm8k-svamp-gsm_symbolic-arc_cot-logicbench-strategyqa-drop-csqa-musr-mmlu_redux-ifeval-rudas_ood-bbh_logic-math500."
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "TwIL-LM3 Track A (in-domain): lean_formalize token_f1 0.5869; rule_induction derivation 0.3192; entailment_label accuracy 0.5750; semantic_parse token_f1 0.4416; lean_critic accuracy 0.6600; macro gate 0.4218; strict-7 0.1971. Track B (held-out): gsm8k 0.8733; svamp 0.8500; macro (10 CoT datasets) 0.7339; macro (all 14) 0.6694."
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "A 3B reasoning model for formal logic tasks: FOL translation, entailment labels, semantic parses, Lean formalisation and Lean proof critique. It is not a general assistant or chat model."
+     ],
+     "technicalLimitations": [
+      "Truncation: 4.4% of Track A generations hit the 2048-token cap, so the macro gate is indicative rather than exact. Scope is limited to formal logic; code generation and tool use not evaluated. Not a chat model: no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). A short generation budget truncates the <think> reasoning and scores far worse.",
+      "out_of_scope_uses: Not a general assistant or chat model; it is tuned for formal logic only. It has no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). No claim is made about code generation or tool use."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "3075098624"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "65536"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "WiSE-FT interpolation toward the base with λ = 0.25 (only a quarter of the fine-tuned delta retained), chosen by constrained optimisation (maximise in-domain score subject to minimal held-out degradation) so held-out capability survives. Checkpoint fusion averaged intermediate SFT checkpoints selected by a diversity probe rather than the final checkpoint. MGPO (entropy-weighted GRPO) used partial credit for loose matches and token-F1 so all-fail prompt groups still produce gradient. A sibling arm without the conservative interpolation scored higher in-domain but lost about twelve points of held-out capability; this release is the balanced point of that trade."
+     },
+     {
+      "name": "model-cards:required_hardware",
+      "value": "Q4_K_M GGUF build (1.78 GiB) runs on CPU or 4 GB of VRAM"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Track A: n = 200 per objective, greedy (temperature = 0), max_new_tokens = 2048, one retry at 4096 for truncated rows, max_seq_len = 8192, seed 42. Track B: 300 examples per task, greedy, max_gen_toks = 4096, max_model_len = 8192, repetition_penalty = 1.0, chat template applied, vLLM backend. Same protocol for model and base in a paired run over identical sampled rows."
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "twil_smollm:training-data",
+   "name": "Training data of webAI-Official/TwIL-LM3 (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_provenance: Synthetic: LoRA SFT was done on a synthetic formal-logic corpus covering the Track A objectives.\ndata_acquisition: LoRA supervised fine-tuning used a synthetic formal-logic corpus covering the Track A objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction). The RL stage (MGPO) used a programmatic verifier. The card does not state how rights were obtained.\ndata_scope: LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction."
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "twil_smollm:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "twil_smollm:evalset-Track-A-in-domain-formal-logic-lanes-lean_formalize-rule_induction-entailment_label-mcq_answer-semantic_parse-lean_critic-plus-lm_corpus-and-math_corpus-perplexity.-Track-B-held-out-benchmarks-gsm8k-svamp-gsm_symbolic-arc_cot-logicbench-strategyqa-drop-csqa-musr-mmlu_redux-ifeval-rudas_ood-bbh_logic-math500.",
+   "name": "Track A (in-domain formal logic lanes): lean_formalize, rule_induction, entailment_label, mcq_answer, semantic_parse, lean_critic, plus lm_corpus and math_corpus perplexity. Track B (held-out benchmarks): gsm8k, svamp, gsm_symbolic, arc_cot, logicbench, strategyqa, drop, csqa, musr, mmlu_redux, ifeval, rudas_ood, bbh_logic, math500.",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Track A (in-domain formal logic lanes): lean_formalize, rule_induction, entailment_label, mcq_answer, semantic_parse, lean_critic, plus lm_corpus and math_corpus perplexity. Track B (held-out benchmarks): gsm8k, svamp, gsm_symbolic, arc_cot, logicbench, strategyqa, drop, csqa, musr, mmlu_redux, ifeval, rudas_ood, bbh_logic, math500."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "twil_smollm:model",
+   "dependsOn": [
+    "twil_smollm:dependency-software"
+   ]
+  },
+  {
+   "ref": "twil_smollm:dependency-software"
+  }
+ ]
+}

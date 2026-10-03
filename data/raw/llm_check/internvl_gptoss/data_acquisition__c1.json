@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "6821794b0e8734f8",
+ "request_user": "Fact definition: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nExtracted value: SFT data comes from three sources: reused InternVL3 instruction-following data; multimodal \"Thinking\" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning rollouts, with rollouts with incorrect final answers filtered out; and capability-expansion datasets. Rights acquisition is not described.\nQuotes given as evidence (separated by [...]): (1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks. [...] To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. Rollouts with an incorrect final answer are filtered out. [...] (3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes support every claim: InternVL3 instruction-following data is reused; Thinking reasoning data is built with InternVL3-78B image descriptions plus DeepSeek-R1 rollouts, and rollouts with incorrect final answers are filtered out; and capability-expansion datasets are used. The card never describes how rights were obtained, so the value correctly says so. Pre-training data is described only vaguely in the card. The text is about the InternVL3.5 family, which includes this model."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19875,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 826
+ },
+ "cost_usd_list_price": 0.17552800000000002,
+ "duration_ms": 9438
+}

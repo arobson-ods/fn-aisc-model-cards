@@ -1,0 +1,543 @@
+# Canonical fact list: the comparison frame for model cards vs SPDX 3.0.1 / CycloneDX 1.7.2 / EU form.
+#
+# Per target, `kind` is:
+#   field        the standard defines a property/relationship whose meaning covers this fact
+#   escape_hatch the fact can only be put in a generic bag (SPDX comment/description/extension,
+#                CycloneDX properties, a DictionaryEntry/externalRef whose definition doesn't cover it)
+#                -> counted as a SCHEMA gap, flagged escape_hatch
+#   none         no place at all -> SCHEMA gap
+# `fit: coarse` marks a real field that is lossy for this fact (enum too narrow, one string for
+# many facts, wrong unit). It still counts as a field; reported separately.
+# `eu.items` are ids in targets/eu_form.yaml; `eu: null` means the form does not ask for the fact.
+#
+# hf.structured sources, tried in order (pass 1):
+#   card:<path>    cardData (card YAML front matter)          -> source_type card_metadata
+#   api:<path>     HF API field computed by the Hub           -> source_type hub_api
+#   config:<path>  config.json in the repo                    -> source_type repo_config
+#   tags:<prefix>  HF tags starting with prefix (value after it) -> source_type card_metadata
+#   derived:<name> deterministic lookup implemented in pipeline/extract.py (documented there)
+# Alternatives within one source are separated by '|'. hf.prose: false skips the LLM pass.
+#
+# Status: DRAFT (AI-drafted 2026-09-30). Every row needs human review; set reviewed: true.
+
+version: 1
+facts:
+
+# ---------------------------------------------------------------- identity & provider
+- id: provider_name
+  group: identity
+  description: Legal or organisational name of the model provider (developer) that releases the model.
+  hf: {structured: [], prose_hint: [Model Details, Model Information, Model developer]}
+  spdx: {kind: field, path: 'suppliedBy -> Organization.name'}
+  cdx: {kind: field, path: 'components[].supplier.name'}
+  eu: {items: [legal_name_for_the_model_provider]}
+  note: "HF author handle (api.author) is an account name, not a legal name, so it is not used."
+
+- id: model_name
+  group: identity
+  description: Unique model identifier / name.
+  hf: {structured: ['api:id'], prose: false}
+  spdx: {kind: field, path: 'ai_AIPackage.name'}
+  cdx: {kind: field, path: 'components[].name'}
+  eu: {items: [model_name]}
+
+- id: model_version
+  group: identity
+  description: Version identifier of this model release (named version or repository revision).
+  hf: {structured: ['api:sha'], prose_hint: [Model Details]}
+  spdx: {kind: field, path: 'ai_AIPackage.software_packageVersion'}
+  cdx: {kind: field, path: 'components[].version'}
+  eu: {items: [model_name]}
+  note: "api.sha is the Hub git commit; platform-supplied, not lab-declared."
+
+- id: model_authenticity
+  group: identity
+  description: Evidence of provenance/authenticity, e.g. a secure hash of the distributed weights.
+  hf: {structured: ['api:sha'], prose: false}
+  spdx: {kind: field, path: 'ai_AIPackage.verifiedUsing[] -> Hash'}
+  cdx: {kind: field, path: 'components[].hashes[]'}
+  eu: {items: [model_authenticity]}
+  note: "Git commit SHA-1 of the repo (Hub-supplied). Per-file sha256 exists in LFS metadata but is not a card field."
+
+- id: release_date
+  group: identity
+  description: Date the model was first released.
+  hf: {structured: [], prose_hint: [Model Details, Model Release Date, Release]}
+  spdx: {kind: field, path: 'ai_AIPackage.releaseTime'}
+  cdx: {kind: escape_hatch, path: 'components[].properties[name=releaseDate]'}
+  eu: {items: [release_date]}
+  note: "api.createdAt is repo creation time, not a declared release date; used only to satisfy SPDX's required releaseTime, flagged in the document."
+
+- id: eu_release_date
+  group: identity
+  description: Date the model was placed on the EU market.
+  hf: {structured: [], prose_hint: []}
+  spdx: {kind: none, path: null}
+  cdx: {kind: none, path: null}
+  eu: {items: [union_market_release_date]}
+
+# ---------------------------------------------------------------- licensing
+- id: license
+  group: licensing
+  description: Licence(s) under which the model weights are made available (identifier, name or link).
+  hf: {structured: ['card:license', 'card:license_name', 'card:license_link'], prose_hint: [License]}
+  spdx: {kind: field, path: 'Relationship(hasDeclaredLicense) -> simplelicensing_LicenseExpression'}
+  cdx: {kind: field, path: 'components[].licenses[]'}
+  eu: {items: [license, license_2]}
+  note: "HF 'other' means a custom licence; license_name/license_link then carry it."
+
+- id: acceptable_use_policy
+  group: licensing
+  description: Acceptable use policy or use restrictions that apply to the model (link or text).
+  hf: {structured: [], prose_hint: [Acceptable Use, License, Use Policy]}
+  spdx: {kind: escape_hatch, path: 'externalRef[externalRefType=other]'}
+  cdx: {kind: escape_hatch, path: 'components[].externalReferences[type=other]'}
+  eu: {items: [acceptable_use_policy]}
+
+- id: access_conditions
+  group: licensing
+  description: Conditions for accessing the weights (e.g. gated access requiring agreement or approval).
+  hf: {structured: ['api:gated', 'card:extra_gated_prompt'], prose_hint: []}
+  spdx: {kind: escape_hatch, path: 'comment'}
+  cdx: {kind: escape_hatch, path: 'components[].properties[name=accessConditions]'}
+  eu: null
+
+- id: additional_assets
+  group: licensing
+  description: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.
+  hf: {structured: [], prose_hint: [Model Sources, Resources, Links]}
+  spdx: {kind: escape_hatch, path: 'Relationship(other) -> software_Package'}
+  cdx: {kind: field, path: 'components[].externalReferences[type=vcs|distribution|build-meta]'}
+  eu: {items: [license_3]}
+
+# ---------------------------------------------------------------- architecture & size
+- id: architecture_family
+  group: architecture
+  description: Model architecture family or type (e.g. transformer decoder, mixture-of-experts).
+  hf: {structured: [], prose_hint: [Model Architecture, Model Details, Model Summary]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_typeOfModel[]'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.architectureFamily'}
+  eu: {items: [model_architecture]}
+  note: "Not taken from config.architectures: that is a code class name (e.g. Olmo3ForCausalLM), not an architecture family (auto-check 2026-09-30)."
+
+- id: architecture_details
+  group: architecture
+  description: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.
+  hf: {structured: [], prose_hint: [Model Architecture, Model Summary, Architecture]}
+  spdx: {kind: escape_hatch, path: 'description'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.modelArchitecture'}
+  eu: {items: [design_specifications_of_the_model]}
+
+- id: param_count
+  group: architecture
+  description: Total number of parameters.
+  hf: {structured: ['api:safetensors.total', 'api:gguf.total'], prose_hint: [Model Details, Model Summary, Parameters]}
+  spdx: {kind: escape_hatch, path: 'ai_hyperparameter[key=parameterCount]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=parameterCount]'}
+  eu: {items: [total_model_size, total_model_size_2]}
+  note: "A parameter count is not a hyperparameter per SPDX's definition; OWASP also puts it in properties."
+
+- id: input_modalities
+  group: architecture
+  description: Input modalities accepted (text, images, audio, video).
+  hf: {structured: ['derived:pipeline_input_modalities'], prose_hint: [Input, Modalities, Model Information]}
+  spdx: {kind: escape_hatch, path: 'ai_hyperparameter[key=inputModality]'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.inputs[].format'}
+  eu: {items: [input_modalities]}
+
+- id: max_input_size
+  group: architecture
+  description: Maximum input size (context length in tokens, or maximum image/audio size).
+  hf: {structured: ['config:max_position_embeddings|text_config.max_position_embeddings'], prose_hint: [Context Length, Model Details]}
+  spdx: {kind: field, path: 'ai_hyperparameter[key=contextLength]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=contextLength]'}
+  eu: {items: [input_modalities_maximum_size]}
+  note: "config max_position_embeddings is the positional limit, which some cards say differs from the supported context."
+
+- id: output_modalities
+  group: architecture
+  description: Output modalities produced (text, images, audio, video).
+  hf: {structured: ['derived:pipeline_output_modalities'], prose_hint: [Output, Modalities]}
+  spdx: {kind: escape_hatch, path: 'ai_hyperparameter[key=outputModality]'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.outputs[].format'}
+  eu: {items: [output_modalities_modalities]}
+
+- id: max_output_size
+  group: architecture
+  description: Maximum output size (e.g. maximum generated tokens).
+  hf: {structured: [], prose_hint: [Output, Generation, Context Length]}
+  spdx: {kind: escape_hatch, path: 'ai_hyperparameter[key=maxOutputTokens]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=maxOutputSize]'}
+  eu: {items: [output_modalities_maximum_size]}
+
+- id: task
+  group: architecture
+  description: Primary task the model performs (e.g. text generation, image-text-to-text).
+  hf: {structured: ['card:pipeline_tag', 'api:pipeline_tag'], prose: false}
+  spdx: {kind: escape_hatch, path: 'ai_domain[]'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.task'}
+  eu: null
+  note: "SPDX software_primaryPurpose is fixed to 'model'; ai_domain is the application domain, not the task."
+
+- id: weights_precision
+  group: architecture
+  description: Numeric precision or quantisation of the released weights (e.g. bf16, FP8, GGUF Q4_K_M).
+  hf: {structured: ['config:quantization_config.quant_method|torch_dtype|dtype', 'tags:gguf'], prose_hint: [Quantization, Precision]}
+  spdx: {kind: escape_hatch, path: 'ai_hyperparameter[key=precision]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=precision]'}
+  eu: null
+
+# ---------------------------------------------------------------- training data
+- id: training_datasets
+  group: training_data
+  description: Named training datasets (names or identifiers).
+  hf: {structured: ['card:datasets'], prose_hint: [Training Data, Datasets]}
+  spdx: {kind: field, path: 'Relationship(trainedOn) -> dataset_DatasetPackage'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.datasets[] -> components[type=data]'}
+  eu: null
+  note: "The Model Documentation Form does not ask for a dataset list; that belongs to the separate public training-data summary (Art. 53(1)(d))."
+
+- id: data_modality
+  group: training_data
+  description: Modalities of the training data (text, images, audio, video, other).
+  hf: {structured: [], prose_hint: [Training Data]}
+  spdx: {kind: field, path: 'dataset_DatasetPackage.dataset_datasetType[]'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].classification'}
+  eu: {items: [data_type_modality_select_all_that_apply]}
+
+- id: data_provenance
+  group: training_data
+  description: Provenance categories of training data (web crawl, licensed/third-party private, user data, public datasets, synthetic, other).
+  hf: {structured: [], prose_hint: [Training Data, Data Sources]}
+  spdx: {kind: field, fit: coarse, path: 'dataset_DatasetPackage.dataset_dataCollectionProcess'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].description'}
+  eu: {items: [data_provenance_select_all_that_apply]}
+  note: "SPDX has a free-text collection-process string, no provenance categories."
+
+- id: data_acquisition
+  group: training_data
+  description: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.
+  hf: {structured: [], prose_hint: [Training Data, Data Collection]}
+  spdx: {kind: field, path: 'dataset_DatasetPackage.dataset_dataCollectionProcess'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].description'}
+  eu: {items: [how_data_was_obtained_and_selected]}
+
+- id: training_data_size
+  group: training_data
+  description: Size of the training data with its unit (e.g. number of tokens).
+  hf: {structured: [], prose_hint: [Training Data, Pretraining, Tokens]}
+  spdx: {kind: escape_hatch, path: 'dataset_DatasetPackage.dataset_datasetSize'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].properties[name=size]'}
+  eu: {items: [number_of_data_points, number_of_data_points_2]}
+  note: "SPDX datasetSize is in bytes; token counts do not fit without conversion."
+
+- id: data_scope
+  group: training_data
+  description: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).
+  hf: {structured: [], prose_hint: [Training Data]}
+  spdx: {kind: escape_hatch, path: 'dataset_DatasetPackage.description'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].description'}
+  eu: {items: [scope_and_main_characteristics]}
+
+- id: knowledge_cutoff
+  group: training_data
+  description: Data freshness / knowledge cutoff date of the training data.
+  hf: {structured: [], prose_hint: [Training Data, Data Freshness, Cutoff]}
+  spdx: {kind: escape_hatch, path: 'dataset_DatasetPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].properties[name=knowledgeCutoff]'}
+  eu: null
+
+- id: data_curation
+  group: training_data
+  description: Data processing and curation (cleaning, filtering, deduplication, normalisation, augmentation).
+  hf: {structured: [], prose_hint: [Training Data, Data Processing, Preprocessing]}
+  spdx: {kind: field, path: 'dataset_DatasetPackage.dataset_dataPreprocessing[] / ai_modelDataPreprocessing[]'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].description'}
+  eu: {items: [data_curation_methodologies]}
+
+- id: unsuitable_data_measures
+  group: training_data
+  description: Measures to detect or remove unsuitable data (illegal content, CSAM, NCII, unlawful personal data, harmful content).
+  hf: {structured: [], prose_hint: [Training Data, Data Filtering, Safety]}
+  spdx: {kind: escape_hatch, path: 'dataset_DatasetPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'components[type=data].data[].description'}
+  eu: {items: [measures_to_detect_unsuitability_of_data_sources]}
+
+- id: personal_data
+  group: training_data
+  description: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).
+  hf: {structured: [], prose_hint: [Training Data, Privacy]}
+  spdx: {kind: field, path: 'dataset_hasSensitivePersonalInformation / dataset_anonymizationMethodUsed / ai_useSensitivePersonalInformation'}
+  cdx: {kind: field, path: 'components[type=data].data[].sensitiveData[]'}
+  eu: {items: [measures_to_detect_unsuitability_of_data_sources]}
+
+- id: data_bias_measures
+  group: training_data
+  description: Measures to detect or address identifiable biases in the training data, or known biases.
+  hf: {structured: [], prose_hint: [Bias, Risks and Limitations, Training Data]}
+  spdx: {kind: field, fit: coarse, path: 'dataset_DatasetPackage.dataset_knownBias[]'}
+  cdx: {kind: field, fit: coarse, path: 'modelCard.considerations.fairnessAssessments[]'}
+  eu: {items: [measures_to_detect_identifiable_biases]}
+  note: "Both targets hold known biases or fairness results, not the detection methods the form asks for."
+
+# ---------------------------------------------------------------- training process & compute
+- id: training_method
+  group: training_process
+  description: Main stages and methods of training (pretraining, SFT, preference optimisation/DPO, RL, distillation, merging).
+  hf: {structured: [], prose_hint: [Training, Training Procedure, Post-training]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_informationAboutTraining'}
+  cdx: {kind: field, fit: coarse, path: 'modelCard.modelParameters.approach.type'}
+  eu: {items: [design_specifications_of_the_training_process]}
+  note: "CycloneDX approach.type is a 5-value enum (supervised, self-supervised, ...)."
+
+- id: design_rationale
+  group: training_process
+  description: How and why key design choices in training were made.
+  hf: {structured: [], prose_hint: [Training, Design]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=designRationale]'}
+  eu: {items: [decision_rationale]}
+
+- id: hyperparameters
+  group: training_process
+  description: Training hyperparameters (learning rate, batch size, optimiser, epochs, sequence length).
+  hf: {structured: [], prose_hint: [Training Hyperparameters, Training Procedure]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_hyperparameter[]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=hyperparameter:*]'}
+  eu: {items: [design_specifications_of_the_training_process]}
+
+- id: training_hardware
+  group: training_process
+  description: Hardware used for training (accelerator type and count, cluster).
+  hf: {structured: [], prose_hint: [Hardware, Training Infrastructure, Compute]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.ai_informationAboutTraining'}
+  cdx: {kind: escape_hatch, path: 'modelCard.considerations.environmentalConsiderations.properties[]'}
+  eu: {items: [training_time_2]}
+  note: "The form asks for hardware-days in the precise training-time item."
+
+- id: training_time
+  group: training_process
+  description: Duration of training (wall-clock days, GPU/accelerator hours).
+  hf: {structured: [], prose_hint: [Training, Hardware, Compute, GPU hours]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.ai_informationAboutTraining'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=trainingTime]'}
+  eu: {items: [training_time, training_time_2]}
+
+- id: training_compute
+  group: training_process
+  description: Amount of computation used for training, in floating point operations.
+  hf: {structured: [], prose_hint: [Compute, FLOPs, Training]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.ai_informationAboutTraining'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=trainingCompute]'}
+  eu: {items: [amount_of_computation_used_for_training, amount_of_computation_used_for_training_2]}
+
+- id: compute_methodology
+  group: training_process
+  description: Methodology used to measure or estimate training computation.
+  hf: {structured: [], prose_hint: [Compute, FLOPs]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=trainingComputeMethodology]'}
+  eu: {items: [amount_of_computation_used_for_training_2_methodology]}
+
+# ---------------------------------------------------------------- energy
+- id: training_energy
+  group: energy
+  description: Energy used for training (e.g. MWh or kWh).
+  hf: {structured: [], prose_hint: [Environmental Impact, Energy, Carbon, Greenhouse Gas]}
+  spdx: {kind: field, path: 'ai_energyConsumption.ai_trainingEnergyConsumption[] (energyQuantity, energyUnit)'}
+  cdx: {kind: field, path: 'modelCard.considerations.environmentalConsiderations.energyConsumptions[activity=training].activityEnergyCost'}
+  eu: {items: [amount_of_energy_used_for_training]}
+
+- id: energy_methodology
+  group: energy
+  description: Methodology used to measure or estimate training energy.
+  hf: {structured: [], prose_hint: [Environmental Impact, Energy, Carbon]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.considerations.environmentalConsiderations.properties[]'}
+  eu: {items: [amount_of_energy_used_for_training_methodology]}
+
+- id: carbon_emissions
+  group: energy
+  description: Greenhouse gas emissions from training (e.g. tCO2eq).
+  hf: {structured: ['card:co2_eq_emissions'], prose_hint: [Environmental Impact, Carbon, Greenhouse Gas]}
+  spdx: {kind: none, path: null}
+  cdx: {kind: field, path: 'modelCard.considerations.environmentalConsiderations.energyConsumptions[].co2CostEquivalent'}
+  eu: null
+
+- id: inference_compute
+  group: energy
+  description: Benchmarked computation (FLOPs) or energy used for inference, and how it was measured.
+  hf: {structured: [], prose_hint: [Inference, Efficiency]}
+  spdx: {kind: escape_hatch, path: 'ai_energyConsumption.ai_inferenceEnergyConsumption[]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.considerations.environmentalConsiderations.energyConsumptions[activity=inference]'}
+  eu: {items: [benchmarked_amount_of_computation_used_for_inferen, benchmarked_amount_of_computation_used_for_inferen_methodology]}
+  note: "Both targets hold inference energy, not FLOPs; the form asks for FLOPs."
+
+# ---------------------------------------------------------------- intended use & limitations
+- id: intended_uses
+  group: use
+  description: Intended uses of the model.
+  hf: {structured: [], prose_hint: [Intended Use, Uses, Direct Use]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_informationAboutApplication'}
+  cdx: {kind: field, path: 'modelCard.considerations.useCases[]'}
+  eu: {items: [intended_uses]}
+
+- id: out_of_scope_uses
+  group: use
+  description: Uses or AI systems the model is not intended or should not be used for.
+  hf: {structured: [], prose_hint: [Out-of-Scope Use, Out of Scope, Limitations]}
+  spdx: {kind: field, fit: coarse, path: 'ai_AIPackage.ai_informationAboutApplication'}
+  cdx: {kind: escape_hatch, path: 'modelCard.considerations.technicalLimitations[]'}
+  eu: {items: [type_and_nature_of_ai_systems_in_which_the_general]}
+
+- id: target_systems
+  group: use
+  description: Type and nature of AI systems the model can be integrated into (e.g. assistants, agents, RAG, decision support).
+  hf: {structured: [], prose_hint: [Intended Use, Use Cases, Downstream Use]}
+  spdx: {kind: field, fit: coarse, path: 'ai_AIPackage.ai_informationAboutApplication'}
+  cdx: {kind: field, fit: coarse, path: 'modelCard.considerations.useCases[]'}
+  eu: {items: [type_and_nature_of_ai_systems_in_which_the_general]}
+
+- id: integration_means
+  group: use
+  description: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).
+  hf: {structured: [], prose_hint: [How to Use, Quickstart, Usage, Deployment]}
+  spdx: {kind: escape_hatch, path: 'externalRef[externalRefType=documentation]'}
+  cdx: {kind: escape_hatch, path: 'components[].externalReferences[type=documentation]'}
+  eu: {items: [technical_means_for_model_integration]}
+
+- id: required_hardware
+  group: use
+  description: Hardware required to run the model (e.g. GPU memory, number of accelerators).
+  hf: {structured: [], prose_hint: [Hardware, Requirements, Deployment]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=requiredHardware]'}
+  eu: {items: [required_hardware]}
+
+- id: required_software
+  group: use
+  description: Software required to run the model (libraries/frameworks and versions).
+  hf: {structured: ['card:library_name', 'api:library_name', 'config:transformers_version'], prose_hint: [Requirements, How to Use, Usage]}
+  spdx: {kind: field, path: 'Relationship(dependsOn) -> software_Package'}
+  cdx: {kind: field, path: 'dependencies[] -> components[type=library|framework]'}
+  eu: {items: [required_software]}
+
+- id: limitations
+  group: use
+  description: Known technical limitations, risks and failure modes.
+  hf: {structured: [], prose_hint: [Limitations, Bias, Risks and Limitations]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_limitation'}
+  cdx: {kind: field, path: 'modelCard.considerations.technicalLimitations[]'}
+  eu: null
+
+- id: languages
+  group: use
+  description: Natural languages the model supports.
+  hf: {structured: ['card:language'], prose_hint: [Languages, Model Details]}
+  spdx: {kind: escape_hatch, path: 'ai_domain[] / comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=language]'}
+  eu: null
+
+# ---------------------------------------------------------------- evaluation
+- id: eval_results
+  group: evaluation
+  description: Benchmark evaluation results (benchmark, metric, score).
+  hf: {structured: ['card:model-index', 'api:model-index'], prose_hint: [Evaluation, Benchmarks, Results]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_metric[]'}
+  cdx: {kind: field, path: 'modelCard.quantitativeAnalysis.performanceMetrics[]'}
+  eu: null
+
+- id: eval_datasets
+  group: evaluation
+  description: Datasets or benchmarks used for evaluation.
+  hf: {structured: ['derived:model_index_datasets'], prose_hint: [Evaluation, Benchmarks]}
+  spdx: {kind: field, path: 'Relationship(testedOn) -> dataset_DatasetPackage'}
+  cdx: {kind: field, path: 'modelCard.modelParameters.datasets[] -> components[type=data]'}
+  eu: null
+  note: "CycloneDX modelParameters.datasets covers both training and evaluation datasets without distinguishing them."
+
+- id: eval_methodology
+  group: evaluation
+  description: How evaluations were run (harness, settings, prompts, shots).
+  hf: {structured: [], prose_hint: [Evaluation, Methodology]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.comment'}
+  cdx: {kind: escape_hatch, path: 'modelCard.quantitativeAnalysis.properties'}
+  eu: null
+
+# ---------------------------------------------------------------- safety
+- id: safety_evaluation
+  group: safety
+  description: Safety evaluation, red-teaming or risk assessment performed and its results.
+  hf: {structured: [], prose_hint: [Safety, Responsibility, Red Teaming, Risks]}
+  spdx: {kind: field, fit: coarse, path: 'ai_AIPackage.ai_safetyRiskAssessment'}
+  cdx: {kind: field, fit: coarse, path: 'modelCard.considerations.ethicalConsiderations[]'}
+  eu: null
+  note: "SPDX safetyRiskAssessment is an EU-AI-Act-style 4-level enum (serious/high/medium/low)."
+
+- id: bias_fairness_evaluation
+  group: safety
+  description: Bias or fairness evaluation of the model's outputs and its results.
+  hf: {structured: [], prose_hint: [Bias, Fairness, Risks and Limitations]}
+  spdx: {kind: escape_hatch, path: 'ai_AIPackage.ai_limitation'}
+  cdx: {kind: field, path: 'modelCard.considerations.fairnessAssessments[]'}
+  eu: null
+
+- id: autonomy
+  group: safety
+  description: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.
+  hf: {structured: [], prose_hint: [Intended Use, Safety, Agentic]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_autonomyType'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=autonomyType]'}
+  eu: null
+
+- id: explainability
+  group: safety
+  description: Explainability or interpretability mechanisms for the model's outputs.
+  hf: {structured: [], prose_hint: [Explainability, Interpretability, Model Examination]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_modelExplainability[]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=explainability]'}
+  eu: null
+
+- id: standards_compliance
+  group: safety
+  description: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).
+  hf: {structured: [], prose_hint: [Compliance, Responsibility, Safety]}
+  spdx: {kind: field, path: 'ai_AIPackage.ai_standardCompliance[]'}
+  cdx: {kind: escape_hatch, path: 'modelCard.properties[name=standardCompliance]'}
+  eu: null
+
+# ---------------------------------------------------------------- lineage
+- id: base_model
+  group: lineage
+  description: Model(s) this model was derived from (fine-tuned, quantised, merged or adapted from).
+  hf: {structured: ['card:base_model'], prose_hint: [Model Details, Base Model, Finetuned from]}
+  spdx: {kind: field, path: 'Relationship(descendantOf) -> ai_AIPackage'}
+  cdx: {kind: field, path: 'components[].pedigree.ancestors[]'}
+  eu: {items: [model_dependencies]}
+
+- id: base_model_relation
+  group: lineage
+  description: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).
+  hf: {structured: ['card:base_model_relation', 'derived:base_model_relation_tags'], prose_hint: [Model Details]}
+  spdx: {kind: escape_hatch, path: 'Relationship(descendantOf).comment'}
+  cdx: {kind: escape_hatch, path: 'components[].pedigree.notes'}
+  eu: {items: [model_dependencies]}
+  note: "SPDX descendantOf/hasVariant and CycloneDX ancestors/variants do not say how a model was derived."
+
+# ---------------------------------------------------------------- distribution
+- id: distribution_channels
+  group: distribution
+  description: Methods of distribution (open weights on repositories, API, cloud platforms, apps).
+  hf: {structured: [], prose_hint: [Model Sources, Availability, Distribution, Access]}
+  spdx: {kind: field, fit: coarse, path: 'software_downloadLocation + externalRef[]'}
+  cdx: {kind: field, path: 'components[].externalReferences[type=distribution]'}
+  eu: {items: [distribution_channels, distribution_channels_2]}
+
+- id: download_location
+  group: distribution
+  description: Location from which the weights can be downloaded.
+  hf: {structured: ['derived:hub_url'], prose: false}
+  spdx: {kind: field, path: 'ai_AIPackage.software_downloadLocation'}
+  cdx: {kind: field, path: 'components[].externalReferences[type=distribution].url'}
+  eu: {items: [distribution_channels]}
+  note: "Hub-supplied: the repo URL itself."

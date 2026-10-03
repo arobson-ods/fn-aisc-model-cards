@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "architecture_family",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: architecture_family\nWhat to find: Model architecture family or type (e.g. transformer decoder, mixture-of-experts).\nCard sections that often contain it: Model Architecture, Model Details, Model Summary\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Mid-fusion multimodal architecture: Phi-4-Reasoning language model backbone plus SigLIP-2 vision encoder, with visual tokens projected into the language model's embedding space; dynamic resolution vision encoder with up to 3,600 visual tokens and intra-image bidirectional attention.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.",
+   "In this architecture, the vision encoder first converts images into visual tokens, which are then projected into the language model's embedding space and injected into the pretrained language model.",
+   "The model employs a dynamic resolution vision encoder with up to 3,600 visual tokens, enabling high-resolution image understanding critical for tasks such as GUI grounding and fine-grained document analysis.",
+   "Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks observed with broader bidirectional schemes."
+  ],
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10988,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 482
+ },
+ "cost_usd_list_price": 0.048776,
+ "duration_ms": 3619
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "SFT data comes from three sources: reused InternVL3 instruction-following data; multimodal \"Thinking\" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning rollouts, with rollouts with incorrect final answers filtered out; and capability-expansion datasets. Rights acquisition is not described.",
+  "quotes": [
+   "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks.",
+   "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. Rollouts with an incorrect final answer are filtered out.",
+   "(3) Capability-expansion datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction, and scalable vect"
+  ],
+  "section": "Supervised Fine-Tuning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 19538,
+  "output_tokens": 418
+ },
+ "cost_usd_list_price": 0.0103116,
+ "duration_ms": 3484
+}

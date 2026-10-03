@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "integration_means",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Can be served with vLLM (custom granite_thinking_parser reasoning parser, qwen3_coder tool-call parser) and SGLang (v0.5.18+), via OpenAI-compatible API; also usable with Hugging Face Transformers via tokenizer.apply_chat_template with enable_thinking, low_effort and tools options; ChatML-style prompt format with <think>...</think> reasoning.",
+  "quotes": [
+   "Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).",
+   "Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference.",
+   "> **Tool calling parser:** Use `qwen3_coder`.",
+   "text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True)",
+   "- **Thinking enabled** — The generation prompt ends with `<|im_start|>assistant\\n<think>\\n`, causing the model to reason until it emits `</think>`, then produce the final answer."
+  ],
+  "section": "Serving with vLLM"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 16605,
+  "output_tokens": 500
+ },
+ "cost_usd_list_price": 0.010577000000000001,
+ "duration_ms": 3616
+}

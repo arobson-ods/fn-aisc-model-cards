@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not describe how training data was obtained or selected, annotation or synthetic-data generation methods, or how rights were obtained. It only names the datasets used (Dolma 3 for pre-training; Dolci datasets for post-training).",
+  "quotes": [
+   "These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets."
+  ],
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 6151,
+  "output_tokens": 232
+ },
+ "cost_usd_list_price": 0.0057742,
+ "duration_ms": 2551
+}

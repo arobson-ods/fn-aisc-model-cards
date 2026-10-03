@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "5a7b6601969be010",
+ "request_user": "Fact definition: Numeric precision or quantisation of the released weights (e.g. bf16, FP8, GGUF Q4_K_M).\nExtracted value: Llama 4 Scout is released as BF16 weights, and can fit within a single H100 GPU with on-the-fly int4 quantization.\nQuotes given as evidence (separated by [...]): The Llama 4 Scout model is released as BF16 weights, but can fit within a single H100 GPU with on-the-fly int4 quantization\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quote matches the card's text word for word and supports both parts of the value: Scout is released as BF16 weights, and it fits on a single H100 with on-the-fly int4 quantization. The card's usage example loads the Scout model (Llama-4-Scout-17B-16E-Instruct), so Scout is the right model to report on. The value directly answers the definition, which asks for the numeric precision of the released weights."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 745,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 318
+ },
+ "cost_usd_list_price": 0.0140226,
+ "duration_ms": 5653
+}

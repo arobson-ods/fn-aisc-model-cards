@@ -1,0 +1,1183 @@
+[
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/provider_name__v4.json",
+  "status": "prose",
+  "value": "Technology Innovation Institute",
+  "quote": "- **Developed by:** [Technology Innovation Institute](https://www.tii.ae)",
+  "quotes": [
+   "- **Developed by:** [Technology Innovation Institute](https://www.tii.ae)"
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "tiiuae/Falcon-H1R-7B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "api:id = \"tiiuae/Falcon-H1R-7B\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "tiiuae/Falcon-H1R-7B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "api:sha = \"a6f74bf181389908efd6970878d7ee2b42f5d417\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "api:sha = \"a6f74bf181389908efd6970878d7ee2b42f5d417\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "falcon-llm-license (other)",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "card:license = \"falcon-llm-license (other)\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "other",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "card:license_name",
+    "value": "falcon-llm-license",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "card:license_link",
+    "value": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Falcon-LLM License (https://falconllm.tii.ae/falcon-terms-and-conditions.html)",
+   "quotes": [
+    "- **License:** [Falcon-LLM License](https://falconllm.tii.ae/falcon-terms-and-conditions.html)"
+   ],
+   "agreement": "agrees",
+   "section": "Model Description",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/acceptable_use_policy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/additional_assets__v4.json",
+  "status": "prose",
+  "value": "Technical report (GitHub PDF and Hugging Face paper page) and a release/technical blogpost are linked; base model Falcon-H1-7B-Base is on Hugging Face; TTS evaluated via DeepConf (external GitHub code). Inference is supported via transformers, vLLM and SGLang.",
+  "quote": "For more details about the training protocol of this model, please refer to the [Falcon-H1R technical blogpost](https://falcon-lm.github.io/blog/falcon-h1r-7b) and [Technical Report](https://github.com/tiiuae/falcon-h1r/blob/main/tech_report.pdf). [...] Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base) [...] - View [our technical report](https://huggingface.co/papers/2601.02346).",
+  "quotes": [
+   "For more details about the training protocol of this model, please refer to the [Falcon-H1R technical blogpost](https://falcon-lm.github.io/blog/falcon-h1r-7b) and [Technical Report](https://github.com/tiiuae/falcon-h1r/blob/main/tech_report.pdf).",
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)",
+   "- View [our technical report](https://huggingface.co/papers/2601.02346)."
+  ],
+  "section": "Training details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Causal decoder-only, hybrid (Transformers + Mamba2) architecture",
+  "quote": "- **Model type:** Causal decoder-only [...] - **Architecture:** Hybrid (Transformers + Mamba2) architecture",
+  "quotes": [
+   "- **Model type:** Causal decoder-only",
+   "- **Architecture:** Hybrid (Transformers + Mamba2) architecture"
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/architecture_details__v4.json",
+  "status": "prose",
+  "value": "Causal decoder-only model with a hybrid architecture (Transformers + Mamba2), built on Falcon-H1-7B-Base. The card does not state layers, attention type, experts, active parameters or rationale.",
+  "quote": "- **Model type:** Causal decoder-only [...] - **Architecture:** Hybrid (Transformers + Mamba2) architecture [...] Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)",
+  "quotes": [
+   "- **Model type:** Causal decoder-only",
+   "- **Architecture:** Hybrid (Transformers + Mamba2) architecture",
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)"
+  ],
+  "section": "Model Description",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": 7585648736,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "api:safetensors.total = 7585648736",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 7585648736,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "derived:pipeline_input_modalities = [\"text\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": 262144,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json",
+  "quote": "config:max_position_embeddings = 262144",
+  "section": "config:max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:max_position_embeddings",
+    "value": 262144,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Default --max-model-len is 262144 (vLLM)",
+   "quotes": [
+    "You can reduce `--max-model-len` to preserve memory. Default value is `262144` which is quite large but not necessary for most scenarios."
+   ],
+   "agreement": "agrees",
+   "section": "vLLM",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/max_output_size__v4.json",
+  "status": "prose",
+  "value": "Recommended max new tokens up to 65536",
+  "quote": "We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536.",
+  "quotes": [
+   "We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536."
+  ],
+  "section": "Sampling Parameters",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "text-generation",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "card:pipeline_tag = \"text-generation\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json",
+  "quote": "config:torch_dtype = \"bfloat16\"",
+  "section": "config:torch_dtype",
+  "evidence": [
+   {
+    "path": "config:torch_dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_provenance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_acquisition__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_scope__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_method__v4.json",
+  "status": "prose",
+  "value": "Built on Falcon-H1-7B-Base; trained via cold-start supervised fine-tuning with long reasoning traces, then further enhanced by scaling RL with GRPO.",
+  "quote": "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO.",
+  "quotes": [
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO."
+  ],
+  "section": "Falcon-H1R-7B",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/design_rationale__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/intended_uses__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/out_of_scope_uses__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/target_systems__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/integration_means__v4.json",
+  "status": "prose",
+  "value": "Can be used via Hugging Face `transformers`, `vLLM` or `SGLang`; vLLM and SGLang servers are started with a reasoning parser and queried via an OpenAI-compatible client; the model generates think content wrapped in a `<think>...</think>` block followed by the final response; recommended temperature 0.6, top-p 0.95, max new tokens up to 65536.",
+  "quote": "Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or `SGLang` library. [...] Model will generate think content wrapped in a `<think>...</think>` block, followed by the final response. [...] We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536. [...] For vLLM, simply start a server by executing the command below: [...] For SGLang, simply start a server by executing the command below:",
+  "quotes": [
+   "Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or `SGLang` library.",
+   "Model will generate think content wrapped in a `<think>...</think>` block, followed by the final response.",
+   "We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536.",
+   "For vLLM, simply start a server by executing the command below:",
+   "For SGLang, simply start a server by executing the command below:"
+  ],
+  "section": "Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/required_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.52.0.dev0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Hugging Face `transformers`, `vLLM` or `SGLang` library; install transformers and mamba-ssm[causal-conv1d]; for vLLM, vllm>=0.11.0",
+   "quotes": [
+    "Currently to use this model, you can either rely on Hugging Face `transformers`, `vLLM` or `SGLang` library.",
+    "pip install transformers\npip install mamba-ssm[causal-conv1d]",
+    "pip install \"vllm>=0.11.0\""
+   ],
+   "agreement": "adds",
+   "section": "Usage",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/limitations__v4.json",
+  "status": "prose",
+  "value": "The card has no dedicated limitations section. It mentions only one failure mode: endless repetitions, which can be reduced by adjusting the repetition_penalty and presence_penalty parameters in supported frameworks.",
+  "quote": "For supported frameworks, you can adjust the repetition_penalty and presence_penalty parameters to reduce endless repetitions.",
+  "quotes": [
+   "For supported frameworks, you can adjust the repetition_penalty and presence_penalty parameters to reduce endless repetitions."
+  ],
+  "section": "Sampling Parameters",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "en"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "card:language = [\"en\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "English, Multilingual",
+   "quotes": [
+    "- **Language(s):** English, Multilingual"
+   ],
+   "agreement": "adds",
+   "section": "Model Description",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/eval_results__v4.json",
+  "status": "prose",
+  "value": "Falcon-H1R-7B scores: AIME24 88.1, AIME25 83.1, HMMT25 64.9, AMO-BENCH 36.3, MATH500 97.4, LCBv5-v6 68.6, GPQA-D 61.3, MMLU-Pro 72.1, HLE 11.1, IFBench 53.4, Terminal-Bench Hard 4.9. With test-time scaling (DeepConf): AIME24 96.7, AIME25 96.7, GPQA-D 70.2, AMO-Bench* 35.9.",
+  "quote": "<td>AIME24</td>\n            <td><b>88.1</b></td> [...] TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf).",
+  "quotes": [
+   "<td>AIME24</td>\n            <td><b>88.1</b></td>",
+   "TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf)."
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "AIME24, AIME25, HMMT25, AMO-BENCH, MATH500, LCBv5-v6, SciCode, GPQA-D, MMLU-Pro, HLE, IFBench, 𝜏²-Bench Telecom, Terminal-Bench Hard",
+  "quote": "<td>AIME24</td> [...] <td>AIME25</td> [...] <td>HMMT25</td> [...] <td>AMO-BENCH</td> [...] <td>MATH500</td> [...] <td>LCBv5-v6</td> [...] <td>SciCode (sub/main)</td> [...] <td>GPQA-D</td> [...] <td>MMLU-Pro</td> [...] <td>HLE</td> [...] <td>IFBench</td> [...] <td>𝜏²-Bench Telecom</td> [...] <td>Terminal-Bench Hard</td>",
+  "quotes": [
+   "<td>AIME24</td>",
+   "<td>AIME25</td>",
+   "<td>HMMT25</td>",
+   "<td>AMO-BENCH</td>",
+   "<td>MATH500</td>",
+   "<td>LCBv5-v6</td>",
+   "<td>SciCode (sub/main)</td>",
+   "<td>GPQA-D</td>",
+   "<td>MMLU-Pro</td>",
+   "<td>HLE</td>",
+   "<td>IFBench</td>",
+   "<td>𝜏²-Bench Telecom</td>",
+   "<td>Terminal-Bench Hard</td>"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/eval_methodology__v4.json",
+  "status": "prose",
+  "value": "Test-time scaling (TTS) results on a few benchmarks were evaluated via DeepConf; AMO-Bench* is limited to the parser-verifiable subset of 39 problems. Recommended sampling: temperature 0.6, top-p 0.95, max new tokens up to 65536.",
+  "quote": "TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf). Note that AMO-Bench* is limited to the parser-verifiable subset which comprises 39 problems. [...] We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536.",
+  "quotes": [
+   "TTS represents test time scaling results on few of the benchmarks that we evaluated via [DeepConf](https://github.com/facebookresearch/deepconf). Note that AMO-Bench* is limited to the parser-verifiable subset which comprises 39 problems.",
+   "We recommend using a **temperature** of **0.6** and **top-p** as **0.95** with max new tokens up to 65536."
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "tiiuae/Falcon-H1-7B-Base"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "card:base_model = [\"tiiuae/Falcon-H1-7B-Base\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "tiiuae/Falcon-H1-7B-Base"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Falcon-H1-7B-Base (trained via cold-start supervised fine-tuning with long reasoning traces, then RL with GRPO)",
+   "quotes": [
+    "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO."
+   ],
+   "agreement": "agrees",
+   "section": "Falcon-H1R-7B",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Fine-tune of Falcon-H1-7B-Base: trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO",
+   "quotes": [
+    "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base), it was trained via cold-start supervised fine-tuning with long reasoning traces and further enhanced by scaling RL with GRPO."
+   ],
+   "agreement": "agrees",
+   "section": "Falcon-H1R-7B",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/tiiuae/Falcon-H1R-7B/raw/a6f74bf181389908efd6970878d7ee2b42f5d417/README.md",
+  "llm_cache": "data/raw/llm/falcon/distribution_channels__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "falcon",
+  "repo_id": "tiiuae/Falcon-H1R-7B",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/tiiuae/Falcon-H1R-7B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/tiiuae/Falcon-H1R-7B",
+  "quote": "derived:hub_url = \"https://huggingface.co/tiiuae/Falcon-H1R-7B\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/tiiuae/Falcon-H1R-7B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

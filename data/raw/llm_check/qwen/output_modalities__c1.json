@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "cf98ec010409ad63",
+ "request_user": "Fact definition: Output modalities produced (text, images, audio, video).\nValue taken from the model's structured metadata (derived:pipeline_output_modalities = [\"text\"]): [\"text\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card's pipeline_tag is text-generation, and it calls the model \"a text-only model\", noting that \"Multimodal inputs are not supported\". Responses are described as text, with reasoning in <think> tags followed by the final output. So [\"text\"] is a correct answer for output modalities."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 597,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 164
+ },
+ "cost_usd_list_price": 0.011588399999999999,
+ "duration_ms": 3739
+}

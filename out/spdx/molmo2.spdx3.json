@@ -1,0 +1,476 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:04Z",
+   "createdBy": [
+    "urn:model-cards:molmo2#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:molmo2#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for molmo2 (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:molmo2#model"
+   ],
+   "element": [
+    "urn:model-cards:molmo2#agent",
+    "urn:model-cards:molmo2#supplier",
+    "urn:model-cards:molmo2#model",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-Cap",
+    "urn:model-cards:molmo2#rel-4",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoCapQA",
+    "urn:model-cards:molmo2#rel-6",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoSubtitleQA",
+    "urn:model-cards:molmo2#rel-8",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-AskModelAnything",
+    "urn:model-cards:molmo2#rel-10",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoPoint",
+    "urn:model-cards:molmo2#rel-12",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoTrack",
+    "urn:model-cards:molmo2#rel-14",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImageQA",
+    "urn:model-cards:molmo2#rel-16",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-SynMultiImageQA",
+    "urn:model-cards:molmo2#rel-18",
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImagePoint",
+    "urn:model-cards:molmo2#rel-20",
+    "urn:model-cards:molmo2#training-data",
+    "urn:model-cards:molmo2#rel-22",
+    "urn:model-cards:molmo2#dependency-software",
+    "urn:model-cards:molmo2#rel-24",
+    "urn:model-cards:molmo2#model-Qwen-Qwen3-8B",
+    "urn:model-cards:molmo2#rel-26",
+    "urn:model-cards:molmo2#rel-27",
+    "urn:model-cards:molmo2#model-google-siglip-so400m-patch14-384",
+    "urn:model-cards:molmo2#rel-29",
+    "urn:model-cards:molmo2#rel-30",
+    "urn:model-cards:molmo2#rel-31",
+    "urn:model-cards:molmo2#licence-o2-model",
+    "urn:model-cards:molmo2#rel-33",
+    "urn:model-cards:molmo2#rel-34"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:molmo2#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:molmo2#supplier",
+   "name": "Allen Institute for AI (Ai2)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:molmo2#model",
+   "name": "allenai/Molmo2-8B",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:molmo2#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Vision-language model based on Qwen3-8B (language model) with SigLIP 2 as vision backbone"
+   ],
+   "ai_domain": [
+    "image-text-to-text",
+    "en"
+   ],
+   "ai_informationAboutApplication": "Intended uses: Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines.\nOut of scope: No explicit out-of-scope list. The card says the model is intended for research and educational use. Its training datasets are subject to academic and non-commercial research use only, and users should review the sources to decide whether the model suits their use case.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "Average Score on 15 Academic Benchmarks: Molmo2-8B 63.1 (also Molmo2-4B 62.8, Molmo2-7B 59.7, GPT-5 70.6, Gemini 2.5 Pro 71.2, Qwen3-VL-8B 59.5)"
+    }
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets available on Hugging Face"
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/allenai/Molmo2-8B",
+   "releaseTime": "2025-12-14T22:59:12Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "8661703120"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text, image"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "36864"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "float32"
+    }
+   ],
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\nacceptable_use_policy: Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use); trained on third party datasets subject to academic and non-commercial research use only.\naccess_conditions: false\nadditional_assets: The Molmo2 datasets are available in the Molmo2 data collection on Hugging Face; the other artifacts (training code, evaluations, intermediate checkpoints) will be made available at a later date. All models in the Molmo2 family are in a Hugging Face collection.\narchitecture_details: Molmo2-8B is based on Qwen3-8B (language model) and uses SigLIP 2 as vision backbone. The card does not state layers, attention type, experts, active parameters, or design rationale.\nintegration_means: Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True), with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using chat messages containing text, video or image content; supports video QA, video pointing, tracking, multi-image QA and multi-image pointing.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-Cap",
+   "name": "allenai/Molmo2-Cap",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-Cap"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-4",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-Cap"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoCapQA",
+   "name": "allenai/Molmo2-VideoCapQA",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-VideoCapQA"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-6",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoCapQA"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoSubtitleQA",
+   "name": "allenai/Molmo2-VideoSubtitleQA",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-VideoSubtitleQA"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-8",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoSubtitleQA"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-AskModelAnything",
+   "name": "allenai/Molmo2-AskModelAnything",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-AskModelAnything"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-10",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-AskModelAnything"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoPoint",
+   "name": "allenai/Molmo2-VideoPoint",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-VideoPoint"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-12",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoPoint"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoTrack",
+   "name": "allenai/Molmo2-VideoTrack",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-VideoTrack"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-14",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-VideoTrack"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImageQA",
+   "name": "allenai/Molmo2-MultiImageQA",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-MultiImageQA"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-16",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImageQA"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-SynMultiImageQA",
+   "name": "allenai/Molmo2-SynMultiImageQA",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-SynMultiImageQA"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-18",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-SynMultiImageQA"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImagePoint",
+   "name": "allenai/Molmo2-MultiImagePoint",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Molmo2-MultiImagePoint"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-20",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#dataset-allenai-Molmo2-MultiImagePoint"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:molmo2#training-data",
+   "name": "Training data of allenai/Molmo2-8B (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "image",
+    "text",
+    "video"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Public datasets: trained on publicly available third party datasets (as referenced in the technical report and the Molmo2 data collection of curated image-text and video-text pairs); the card notes these are subject to academic and non-commercial research use only.\nTrained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only.",
+   "comment": "data_scope: Trained on publicly available third party datasets, a collection of highly-curated image-text and video-text pairs; the model supports image, video and multi-image understanding and grounding. The datasets are subject to academic and non-commercial research use only."
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-22",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:molmo2#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:molmo2#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-24",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:molmo2#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:molmo2#model-Qwen-Qwen3-8B",
+   "name": "Qwen/Qwen3-8B",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/Qwen/Qwen3-8B",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "b968826d9c46dd6066d109eabc6255188de91218",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-26",
+   "from": "urn:model-cards:molmo2#model-Qwen-Qwen3-8B",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-27",
+   "from": "urn:model-cards:molmo2#model-Qwen-Qwen3-8B",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:molmo2#model-google-siglip-so400m-patch14-384",
+   "name": "google/siglip-so400m-patch14-384",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/google/siglip-so400m-patch14-384",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "9fdffc58afc957d1a03a25b10dba0329ab15c2a3",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-29",
+   "from": "urn:model-cards:molmo2#model-google-siglip-so400m-patch14-384",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-30",
+   "from": "urn:model-cards:molmo2#model-google-siglip-so400m-patch14-384",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-31",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:molmo2#model-Qwen-Qwen3-8B",
+    "urn:model-cards:molmo2#model-google-siglip-so400m-patch14-384"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:molmo2#licence-o2-model",
+   "simplelicensing_licenseExpression": "Apache-2.0",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-33",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:molmo2#licence-o2-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:molmo2#rel-34",
+   "from": "urn:model-cards:molmo2#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

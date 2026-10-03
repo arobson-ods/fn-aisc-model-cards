@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "data_provenance",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: data_provenance\nWhat to find: Provenance categories of training data (web crawl, licensed/third-party private, user data, public datasets, synthetic, other).\nCard sections that often contain it: Training Data, Data Sources\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Only partial provenance is given. The SFT multimodal reasoning data is model-generated (synthetic): InternVL3-78B described images and DeepSeek-R1 sampled reasoning rollouts. SFT also reuses instruction-following data from InternVL3. Pre-training uses \"large-scale text and multimodal corpora\" with no sources given. The metadata lists the datasets OpenGVLab/MMPR-v1.2 and OpenGVLab/MMPR-Tiny. The card gives no web-crawl, licensed, or user-data categories.",
+  "quotes": [
+   "To construct such data, we first use InternVL3-78B to describe the image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes.",
+   "(1) Instruction-following data from InternVL3, which are reused to preserve broad coverage of vision–language tasks.",
+   "During the pre-training stage, we update all model parameters jointly using the combination of large-scale text and multimodal corpora.",
+   "  - OpenGVLab/MMPR-v1.2",
+   "  - OpenGVLab/MMPR-Tiny"
+  ],
+  "section": "Supervised Fine-Tuning"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 558,
+  "cache_read_input_tokens": 19261,
+  "output_tokens": 874
+ },
+ "cost_usd_list_price": 0.0148282,
+ "duration_ms": 5930
+}

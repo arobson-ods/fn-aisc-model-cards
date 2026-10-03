@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "max_output_size",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: max_output_size\nWhat to find: Maximum output size (e.g. maximum generated tokens).\nCard sections that often contain it: Output, Generation, Context Length\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7121,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 162
+ },
+ "cost_usd_list_price": 0.030108,
+ "duration_ms": 2202
+}

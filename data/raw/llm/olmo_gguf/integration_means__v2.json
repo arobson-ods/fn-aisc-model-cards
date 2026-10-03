@@ -1,0 +1,34 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "integration_means",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: integration_means\nWhat to find: Technical means for integrating the model (usage instructions, APIs, serving frameworks, prompt/chat format).\nCard sections that often contain it: How to Use, Quickstart, Usage, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Supported in HuggingFace transformers 4.57.0 or higher (AutoModelForCausalLM/AutoTokenizer for inference); optional 8-bit quantization via bitsandbytes (load_in_8bit=True); specific revisions loadable via the `revision` argument (e.g. step_300); ChatML-style chat template (<|im_start|>system/user/assistant ... <|im_end|>) with a default system prompt \"You are a helpful function-calling AI assistant. You do not currently have access to any functions.\"",
+  "quotes": [
+   "Olmo 3 is supported in transformers 4.57.0 or higher:",
+   "You can use OLMo with the standard HuggingFace transformers library:",
+   "load_in_8bit=True)  # Requires bitsandbytes",
+   "olmo = AutoModelForCausalLM.from_pretrained(\"allenai/Olmo-3-7B-Instruct\", revision=\"step_300\")",
+   "The chat template for this model is formatted as:",
+   "You do not currently have access to any functions. <functions></functions><|im_end|>"
+  ],
+  "section": "Installation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 563,
+  "cache_read_input_tokens": 6062,
+  "output_tokens": 459
+ },
+ "cost_usd_list_price": 0.0080584,
+ "duration_ms": 3539
+}

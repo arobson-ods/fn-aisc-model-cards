@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "required_software",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nCard sections that often contain it: Requirements, How to Use, Usage\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "transformers 4.57.0 or higher (HuggingFace transformers library); bitsandbytes is required for optional 8-bit quantization",
+  "quotes": [
+   "Olmo 3 is supported in transformers 4.57.0 or higher:",
+   "pip install transformers>=4.57.0",
+   "load_in_8bit=True)  # Requires bitsandbytes"
+  ],
+  "section": "Installation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 6151,
+  "output_tokens": 229
+ },
+ "cost_usd_list_price": 0.0056842,
+ "duration_ms": 2323
+}

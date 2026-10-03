@@ -1,0 +1,37 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "eval_datasets",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: eval_datasets\nWhat to find: Datasets or benchmarks used for evaluation.\nCard sections that often contain it: Evaluation, Benchmarks\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Pre-trained: MMLU, MMLU-Pro, MATH, MBPP, TydiQA, ChartQA, DocVQA. Instruction tuned: MMMU, MMMU Pro, MathVista, ChartQA, DocVQA (test), LiveCodeBench, MMLU Pro, GPQA Diamond, MGSM, MTOB (half book and full book).",
+  "quotes": [
+   "Reasoning & Knowledge | \nMMLU | \n5 | \nmacro_avg/acc_char | \n79.3 | \n85.2 | \n79.6 | \n85.5 |",
+   "MMLU-Pro | \n5 | \nmacro_avg/em |",
+   "MATH | \n4 | \nem_maj1@1 |",
+   "MBPP | \n3 | \npass@1 |",
+   "TydiQA | \n1 | \naverage/f1 |",
+   "DocVQA | \n0 | \nanls |",
+   "MMMU | \n0 | \naccuracy |",
+   "MathVista | \n0 | \naccuracy |",
+   "GPQA Diamond | \n0 | \naccuracy |"
+  ],
+  "section": "Benchmarks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 539,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 480
+ },
+ "cost_usd_list_price": 0.0088398,
+ "duration_ms": 3958
+}

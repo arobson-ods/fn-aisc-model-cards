@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "4985cfbaab927a20",
+ "request_user": "Fact definition: Provenance categories of training data (web crawl, licensed/third-party private, user data, public datasets, synthetic, other).\nExtracted value: SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data (reasoning, tool calling, chain-of-thought), agentic traces collected across diverse tasks, and a curated selection of human-authored data. Base model pre-trained on a large-scale English and multilingual corpus (no provenance breakdown given).\nQuotes given as evidence (separated by [...]): the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data. [...] which was pre-trained on a large-scale English as well as multilingual corpus.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes match the card word for word. They are about this model: the SFT text covers the 3B, 8B and 30B models, and the pre-training text is about the base model this one is built on. Every claim in the value is supported. The value lists the SFT provenance categories (public datasets, synthetic data, agentic traces, human-authored data), so it answers the definition. It also correctly notes that the card gives no provenance breakdown for pre-training."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16927,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 212
+ },
+ "cost_usd_list_price": 0.139664,
+ "duration_ms": 3624
+}

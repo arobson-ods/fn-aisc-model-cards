@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "training_energy",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: training_energy\nWhat to find: Energy used for training (e.g. MWh or kWh).\nCard sections that often contain it: Environmental Impact, Energy, Carbon, Greenhouse Gas\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 553,
+  "cache_read_input_tokens": 9701,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0053362,
+ "duration_ms": 1938
+}

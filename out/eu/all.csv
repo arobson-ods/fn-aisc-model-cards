@@ -1,0 +1,631 @@
+model,item,section,status,AIO,NCA,DP,precision,value
+olmo,legal_name_for_the_model_provider,General information,answered,True,True,True,,Allen Institute for AI (Ai2)
+olmo,model_name,General information,answered,True,True,True,,allenai/Olmo-3.1-32B-Instruct | ac0587e4a7744a551c059d8cd17ba220bc940dae
+olmo,model_authenticity,General information,answered,True,True,False,,ac0587e4a7744a551c059d8cd17ba220bc940dae
+olmo,release_date,General information,not_stated,True,True,True,,
+olmo,union_market_release_date,General information,not_stated,True,True,True,,
+olmo,model_dependencies,General information,answered,True,True,True,,allenai/Olmo-3.1-32B-Instruct-DPO | Base model Olmo-3-32B; the final Olmo-3.1-32B-Instruct (RLVR) follows the Olmo-3.1-32B-Instruct-DPO stage. | finetune
+olmo,model_architecture,Model properties,answered,True,True,True,,Transformer style autoregressive language model
+olmo,design_specifications_of_the_model,Model properties,not_stated,True,True,False,,
+olmo,input_modalities,Model properties,answered,True,True,True,,text
+olmo,input_modalities_maximum_size,Model properties,answered,True,False,True,,65536
+olmo,output_modalities_modalities,Model properties,answered,True,True,True,,text
+olmo,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+olmo,total_model_size,Model properties,answered,True,False,False,exact,32233522176
+olmo,total_model_size_2,Model properties,answered,False,True,True,range,32233522176
+olmo,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights/checkpoints released on Hugging Face (loadable with the transformers library, including intermediate revisions); code released on GitHub repositories. | https://huggingface.co/allenai/Olmo-3.1-32B-Instruct"
+olmo,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights/checkpoints released on Hugging Face (loadable with the transformers library, including intermediate revisions); code released on GitHub repositories."
+olmo,license,Methods of distribution and licenses,answered,True,True,False,,"apache-2.0 | Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines"
+olmo,license_2,Methods of distribution and licenses,answered,False,False,True,,"apache-2.0 | Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines"
+olmo,license_3,Methods of distribution and licenses,answered,True,False,True,,"Code, checkpoints and training details are released: Open-Instruct (DPO and RLVR), OLMo-Core (pre-training and SFT) and OLMo-Eval (evaluation) on GitHub; checkpoints accessible via Hugging Face revisions (e.g. step_XXXX naming; only the final few checkpoints for this model); training datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO, Dolci-Instruct-RL) on Hugging Face; logs coming soon."
+olmo,acceptable_use_policy,Use,answered,True,True,True,,Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)
+olmo,intended_uses,Use,answered,True,True,True,,Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines.
+olmo,type_and_nature_of_ai_systems_in_which_the_general,Use,not_stated,True,True,True,,
+olmo,technical_means_for_model_integration,Use,answered,False,False,True,,Use with the HuggingFace transformers library (transformers 4.57.0 or higher) via AutoModelForCausalLM/AutoTokenizer; optional 8-bit quantization with bitsandbytes; specific checkpoints loadable via the revision argument; fine-tuning with the OLMo-core repository.
+olmo,required_hardware,Use,not_stated,False,False,True,,
+olmo,required_software,Use,answered,False,False,True,,transformers | Olmo 3 is supported in transformers 4.57.0 or higher (HuggingFace transformers library)
+olmo,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pre-trained on the Dolma 3 dataset, then post-trained in three stages on Dolci datasets: Stage 1 SFT (supervised fine-tuning), Stage 2 DPO (direct preference optimization), Stage 3 RLVR (reinforcement learning from verifiable rewards)."
+olmo,decision_rationale,Training process,not_stated,True,True,False,,
+olmo,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+olmo,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+olmo,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pre-trained on the Dolma 3 dataset and post-trained on Dolci datasets; post-training data covers math, code, chat, and general knowledge queries (SFT/DPO) and math, code, instruction-following, and general chat queries (RLVR). Language: English."
+olmo,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo,training_time,Computational resources (during training),not_stated,False,True,False,range,
+olmo,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+olmo,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+olmo,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+olmo,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+olmo,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+llama,legal_name_for_the_model_provider,General information,answered,True,True,True,,Meta
+llama,model_name,General information,answered,True,True,True,,meta-llama/Llama-4-Scout-17B-16E-Instruct | 92f3b1597a195b523d8d9e5700e57e4fbb8f20d3
+llama,model_authenticity,General information,answered,True,True,False,,92f3b1597a195b523d8d9e5700e57e4fbb8f20d3
+llama,release_date,General information,answered,True,True,True,,"April 5, 2025"
+llama,union_market_release_date,General information,not_stated,True,True,True,,
+llama,model_dependencies,General information,answered,True,True,True,,meta-llama/Llama-4-Scout-17B-16E | finetune
+llama,model_architecture,Model properties,answered,True,True,True,,Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion for native multimodality
+llama,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion for native multimodality; Llama 4 Scout has 16 experts, 17B activated parameters and 109B total parameters."
+llama,input_modalities,Model properties,answered,True,True,True,,"text, image"
+llama,input_modalities_maximum_size,Model properties,answered,True,False,True,,Llama 4 Scout (17Bx16E): context length 10M; tested for image understanding up to 5 input images
+llama,output_modalities_modalities,Model properties,answered,True,True,True,,text | Multilingual text and code
+llama,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+llama,total_model_size,Model properties,answered,True,False,False,exact,108641793536
+llama,total_model_size_2,Model properties,answered,False,True,True,range,108641793536
+llama,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Model weights released (Llama 4 Scout as BF16 weights, with on-the-fly int4 quantization code provided) under the Llama 4 Community License; usable via the transformers library with the model id meta-llama/Llama-4-Scout-17B-16E-Instruct. Quantized checkpoints are also provided. | https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+llama,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Model weights released (Llama 4 Scout as BF16 weights, with on-the-fly int4 quantization code provided) under the Llama 4 Community License; usable via the transformers library with the model id meta-llama/Llama-4-Scout-17B-16E-Instruct. Quantized checkpoints are also provided."
+llama,license,Methods of distribution and licenses,answered,True,True,False,,llama4 (other)
+llama,license_2,Methods of distribution and licenses,answered,False,False,True,,llama4 (other)
+llama,license_3,Methods of distribution and licenses,answered,True,False,True,,"Quantized checkpoints are provided (Scout as BF16 weights, on-the-fly int4 quantization code provided); technical info and recipes for using Llama 4 in applications are in the llama-cookbook repo (https://github.com/meta-llama/llama-cookbook); system-level protections (Llama Guard, Prompt Guard, Code Shield) are available, with reference implementation at https://github.com/meta-llama/llama-agentic-system; Purple Llama GitHub repo for trust tools."
+llama,acceptable_use_policy,Use,answered,True,True,True,,"Out-of-scope uses include use that violates applicable laws or regulations (including trade compliance laws), use prohibited by the Acceptable Use Policy and Llama 4 Community License, and use in languages or capabilities beyond those explicitly supported. License: Llama 4 Community License Agreement (https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE)"
+llama,intended_uses,Use,answered,True,True,True,,"Commercial and research use in multiple languages. Instruction tuned models are intended for assistant-like chat and visual reasoning tasks; pretrained models can be adapted for natural language generation. Vision uses include visual recognition, image reasoning, captioning, and answering general questions about an image. Also supports using model outputs to improve other models, including synthetic data generation and distillation."
+llama,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Use in any manner that violates applicable laws or regulations (including trade compliance laws); use prohibited by the Acceptable Use Policy and Llama 4 Community License; use in languages or capabilities beyond those explicitly referenced as supported in the model card. | Assistant-like chat and visual reasoning systems (instruction tuned models); also natural language generation (pretrained models), image recognition/captioning/question answering, synthetic data generation and distillation to improve other models; should be deployed as part of an overall AI system with additional guardrails."
+llama,technical_means_for_model_integration,Use,answered,False,False,True,,"Use with Hugging Face transformers (v4.51.0 or later) via AutoProcessor and Llama4ForConditionalGeneration, with processor.apply_chat_template for chat-format messages (text and image inputs) and model.generate; the card also points to the Llama cookbook for generation parameters and recipes."
+llama,required_hardware,Use,answered,False,False,True,,Llama 4 Scout is released as BF16 weights but can fit within a single H100 GPU with on-the-fly int4 quantization (Maverick FP8 weights fit on a single H100 DGX host).
+llama,required_software,Use,answered,False,False,True,,transformers | transformers v4.51.0 (install it or upgrade with pip install -U transformers)
+llama,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pretraining on ~40 trillion tokens of multimodal data (Llama 4 Scout), followed by safety fine-tuning using human-generated and synthetic data; the card does not detail other post-training stages (e.g., SFT, DPO, RL)."
+llama,decision_rationale,Training process,answered,True,True,False,,"Safety fine-tuning was done to give developers a readily available, safe, and powerful model and reduce their deployment workload. The card says it put great emphasis on driving down refusals to benign prompts, and targeted removing preachy, overly moralizing language and fixing formatting issues."
+llama,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Multimodal data (text and images implied by multimodal); card states pretraining on multimodal data from publicly available, licensed data and Meta product/service information"
+llama,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"A mix of publicly available data, licensed data, and information from Meta's products and services (including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI)."
+llama,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pretraining data is a mix of publicly available data, licensed data, and information from Meta's products and services (including publicly shared Instagram and Facebook posts and people's interactions with Meta AI). For safety fine-tuning, data combines human-generated data from vendors with synthetic data, with LLM-based classifiers used to select high-quality prompts and responses."
+llama,number_of_data_points,"Information on the data used for training, testing, and validation",answered,False,True,False,range,~40 trillion tokens (Llama 4 Scout)
+llama,number_of_data_points_2,"Information on the data used for training, testing, and validation",answered,True,False,False,exact,~40 trillion tokens (Llama 4 Scout)
+llama,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Llama 4 Scout was pretrained on ~40 trillion tokens (Maverick ~22 trillion) of multimodal data from a mix of publicly available, licensed data and information from Meta's products and services, including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. Pre-training includes 200 total languages; 12 languages are supported. Data cutoff is August 2024."
+llama,data_curation_methodologies,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Safety fine-tuning data combines human-generated vendor data with synthetic data, and LLM-based classifiers select high-quality prompts and responses. Pre-training uses data filtering as a first step in mitigating Child Safety risk. No further curation details (e.g., deduplication) are given."
+llama,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",answered,True,True,False,,"For Child Safety risk, pre-training methods like data filtering are used as a first step; LLM-based classifiers are used to select high-quality prompts and responses in safety fine-tuning data. | Training data includes information from Meta's products and services, including publicly shared posts from Instagram and Facebook and people's interactions with Meta AI. The card does not describe anonymisation or other handling of personal data."
+llama,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+llama,training_time,Computational resources (during training),answered,False,True,False,range,Llama 4 Scout: 5.0M GPU hours (H100-80GB); 7.38M GPU hours cumulative for Scout and Maverick
+llama,training_time_2,Computational resources (during training),answered,True,False,False,exact,H100-80GB (TDP of 700W) GPUs on Meta's custom built GPU clusters; 7.38M cumulative GPU hours for pre-training (5.0M for Llama 4 Scout). GPU count not stated. | Llama 4 Scout: 5.0M GPU hours (H100-80GB); 7.38M GPU hours cumulative for Scout and Maverick
+llama,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+llama,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+llama,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),answered,True,True,False,,"Training computation is reported as GPU hours on H100-80GB (TDP 700W) hardware, defined as the total GPU time required for training each model. The card points to a linked methodology (arxiv.org/pdf/2204.05149) for training energy use and greenhouse gas emissions."
+llama,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+llama,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),answered,True,True,False,,"Training time is the total GPU time required for training each model, and power consumption is the peak power capacity per GPU device used, adjusted for power usage efficiency; the methodology is detailed in the linked paper (https://arxiv.org/pdf/2204.05149)."
+llama,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+llama,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+gemma,legal_name_for_the_model_provider,General information,answered,True,True,True,,Google DeepMind
+gemma,model_name,General information,answered,True,True,True,,google/gemma-4-31B-it | 842da3794eaa0b77d5f08bae87a17459d91ff475 | Gemma 4 (31B Dense variant); no repository revision or hash is given in the text
+gemma,model_authenticity,General information,answered,True,True,False,,842da3794eaa0b77d5f08bae87a17459d91ff475
+gemma,release_date,General information,not_stated,True,True,True,,
+gemma,union_market_release_date,General information,not_stated,True,True,True,,
+gemma,model_dependencies,General information,answered,True,True,True,,google/gemma-4-31B | finetune
+gemma,model_architecture,Model properties,answered,True,True,True,,Dense architecture (31B Dense) with hybrid attention interleaving local sliding window attention and full global attention; the Gemma 4 family includes Dense and Mixture-of-Experts variants
+gemma,design_specifications_of_the_model,Model properties,answered,True,True,False,,"31B Dense model: 30.7B parameters, 60 layers, 1024-token sliding window, 256K context, 262K vocabulary. Hybrid attention interleaves local sliding window attention with full global attention (final layer always global), giving the speed and low memory footprint of a lightweight model without sacrificing deep awareness for complex, long-context tasks. Global layers use unified Keys and Values and Proportional RoPE (p-RoPE) to optimize memory for long contexts."
+gemma,input_modalities,Model properties,answered,True,True,True,,"text, image | 31B Dense supports text and image input (no audio); video is also processed as frames (up to 60 seconds at one frame per second)."
+gemma,input_modalities_maximum_size,Model properties,answered,True,False,True,,262144
+gemma,output_modalities_modalities,Model properties,answered,True,True,True,,text
+gemma,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+gemma,total_model_size,Model properties,answered,True,False,False,exact,31273088876 | 30.7B total parameters (31B Dense column)
+gemma,total_model_size_2,Model properties,answered,False,True,True,range,31273088876 | 30.7B total parameters (31B Dense column)
+gemma,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open-weights models (pre-trained and instruction-tuned variants) available on Hugging Face, loadable with the Transformers library | https://huggingface.co/google/gemma-4-31B-it"
+gemma,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open-weights models (pre-trained and instruction-tuned variants) available on Hugging Face, loadable with the Transformers library"
+gemma,license,Methods of distribution and licenses,answered,True,True,False,,apache-2.0
+gemma,license_2,Methods of distribution and licenses,answered,False,False,True,,apache-2.0
+gemma,license_3,Methods of distribution and licenses,answered,True,False,True,,"The card links to a Hugging Face collection of Gemma 4 models, a GitHub organization (google-gemma), documentation, and a technical report on arXiv. It states that the release includes open-weights models in both pre-trained and instruction-tuned variants (base model google/gemma-4-31B). No training data or training code is stated as released."
+gemma,acceptable_use_policy,Use,not_stated,True,True,True,,
+gemma,intended_uses,Use,answered,True,True,True,,"Content creation and communication (text generation, chatbots and conversational AI, text summarization, image data extraction, audio processing and interaction for E2B/E4B/12B) and research and education (NLP and VLM research, language learning tools, knowledge exploration)."
+gemma,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Chatbots/conversational AI (customer service, virtual assistants, interactive applications), and agentic workflows/autonomous agents via native function calling; also research foundation for VLM/NLP"
+gemma,technical_means_for_model_integration,Use,answered,False,False,True,,"Usable with the Hugging Face Transformers library (pip install -U transformers torch accelerate; load via AutoProcessor and AutoModelForMultimodalLM). Chat format uses system, assistant and user roles; thinking is enabled with the <|think|> token at the start of the system prompt."
+gemma,required_hardware,Use,not_stated,False,False,True,,
+gemma,required_software,Use,answered,False,False,True,,"transformers | Latest version of Transformers; install dependencies with pip: transformers, torch, accelerate"
+gemma,design_specifications_of_the_training_process,Training process,not_stated,True,True,False,,
+gemma,decision_rationale,Training process,answered,True,True,False,,"The card gives rationales for some design choices. Hybrid attention (local sliding window interleaved with global) gives the speed and low memory footprint of a lightweight model without losing deep awareness for long-context tasks. Training data includes code to learn programming syntax and patterns, and mathematical text to learn logical reasoning, symbolic representation and to address mathematical queries."
+gemma,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Web documents, code, images, audio (also mathematics text)"
+gemma,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Web documents (web crawl) in over 140 languages, code, mathematics, images, and audio; cutoff January 2025. No synthetic, licensed or user data categories stated."
+gemma,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pre-training data is a large-scale, diverse collection spanning web documents, code, mathematics and images (audio also listed), with a January 2025 cutoff; web text covers over 140 languages. Filtering applied: CSAM filtering, automated sensitive/personal data filtering, and content quality and safety filtering. The card does not describe annotation, synthetic data generation, or how rights were obtained."
+gemma,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+gemma,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+gemma,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Large-scale, diverse pre-training dataset spanning multiple domains and modalities: web documents, code, mathematics, images, and audio, with a cutoff date of January 2025. Web content covers over 140 languages."
+gemma,data_curation_methodologies,"Information on the data used for training, testing, and validation",answered,True,True,True,,CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies.
+gemma,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",answered,True,True,False,,CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies. | Training data was filtered with automated techniques to remove certain personal information and other sensitive data; CSAM filtering was also applied.
+gemma,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",answered,True,True,False,,"The card acknowledges that VLMs trained on real-world data can reflect socio-cultural biases; mitigation consists of careful scrutiny, input data pre-processing, and post-training evaluations. Training data was filtered for CSAM, certain personal/sensitive data, and by content quality and safety. It also notes biases or gaps in training data can limit responses, and encourages continuous monitoring and exploration of de-biasing techniques."
+gemma,training_time,Computational resources (during training),not_stated,False,True,False,range,
+gemma,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+gemma,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+gemma,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+gemma,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+gemma,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+gemma,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+gemma,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+gemma,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+mistral,legal_name_for_the_model_provider,General information,answered,True,True,True,,Mistral AI
+mistral,model_name,General information,answered,True,True,True,,mistralai/Mistral-Medium-3.5-128B | 22b2b868a15677cfa6061277ed2f653d1349a9ab | Mistral Medium 3.5 (128B); it replaces its predecessor Mistral Medium 3.1
+mistral,model_authenticity,General information,answered,True,True,False,,22b2b868a15677cfa6061277ed2f653d1349a9ab
+mistral,release_date,General information,not_stated,True,True,True,,
+mistral,union_market_release_date,General information,not_stated,True,True,True,,
+mistral,model_dependencies,General information,not_stated,True,True,True,,
+mistral,model_architecture,Model properties,answered,True,True,True,,"Dense 128B model (dense, not mixture-of-experts), multimodal with a vision encoder trained from scratch"
+mistral,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Dense 128B parameter model with a 256k context window; multimodal input (text and image) with text output; vision encoder trained from scratch to handle variable image sizes and aspect ratios; instruct and reasoning in a single set of weights, with reasoning effort configurable per request."
+mistral,input_modalities,Model properties,answered,True,True,True,,Text and image input (with text output)
+mistral,input_modalities_maximum_size,Model properties,answered,True,False,True,,262144
+mistral,output_modalities_modalities,Model properties,answered,True,True,True,,"Text output (accepts text and image input, with text output)"
+mistral,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+mistral,total_model_size,Model properties,answered,True,False,False,exact,127704210176
+mistral,total_model_size_2,Model properties,answered,False,True,True,range,127704210176
+mistral,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama. | https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
+mistral,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama."
+mistral,license,Methods of distribution and licenses,answered,True,True,False,,"other | Modified MIT License (open-source license for commercial and non-commercial use, with exceptions for companies with large revenue)"
+mistral,license_2,Methods of distribution and licenses,answered,False,False,True,,"other | Modified MIT License (open-source license for commercial and non-commercial use, with exceptions for companies with large revenue)"
+mistral,license_3,Methods of distribution and licenses,answered,True,False,True,,An EAGLE model (to speed up local inference with vLLM or SGLang) is released at huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE; Unsloth GGUFs are available at huggingface.co/unsloth/Mistral-Medium-3.5-128B-GGUF.
+mistral,acceptable_use_policy,Use,answered,True,True,True,,"Released under a Modified MIT License (open-source for commercial and non-commercial use, with exceptions for companies with large revenue). Use restriction: the model must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights."
+mistral,intended_uses,Use,answered,True,True,True,,"Instruction-following, reasoning, and coding tasks (including agentic coding and function calling) in a single unified model, with text and image input."
+mistral,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights. | Can be used in chat assistants (Le Chat), coding agents (Vibe), and agentic systems with native function calling/tool use and JSON output; also supports system prompts and multimodal (text and image) input."
+mistral,technical_means_for_model_integration,Use,answered,False,False,True,,"Deployable via vLLM (recommended), llama.cpp, LM Studio, Ollama, SGLang and transformers; usable in Mistral Vibe via the Mistral API or a local vLLM server; fine-tuning via Axolotl and Unsloth. vLLM serving uses an OpenAI-compatible client with reasoning_effort set to 'none' or 'high'."
+mistral,required_hardware,Use,answered,False,False,True,,The card's serve command uses tensor parallelism across 8 GPUs (--tensor-parallel-size 8 for vLLM; --tp 8 for SGLang). No GPU memory requirement is stated.
+mistral,required_software,Use,answered,False,False,True,,transformers 5.6.0.dev0 | vllm nightly (which should automatically install mistral_common >= 1.11.1 and transformers >= 5.4.0); SGLang also requires transformers >= 5.4.0
+mistral,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Described as a merged model (a flagship merged model); the card gives no further detail on pretraining, SFT, preference optimisation or RL stages."
+mistral,decision_rationale,Training process,answered,True,True,False,,"The card gives limited rationale: a single merged model handles instruction-following, reasoning and coding in one set of weights (a unified model aimed at better performance than previous models), and the vision encoder was trained from scratch to handle variable image sizes and aspect ratios."
+mistral,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+mistral,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+mistral,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+mistral,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+mistral,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+mistral,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+mistral,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+mistral,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+mistral,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+mistral,training_time,Computational resources (during training),not_stated,False,True,False,range,
+mistral,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+mistral,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+mistral,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+mistral,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+mistral,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+mistral,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+mistral,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+mistral,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+qwen,legal_name_for_the_model_provider,General information,answered,True,True,True,,Qwen Team
+qwen,model_name,General information,answered,True,True,True,,Qwen/Qwen3.8-2.4T-A95B | 207bd685a7e3696cfaff12ded7c6a7ea0f88c996 | Qwen3.8 (model Qwen3.8-2.4T-A95B); no repository revision or commit hash is stated in the text
+qwen,model_authenticity,General information,answered,True,True,False,,207bd685a7e3696cfaff12ded7c6a7ea0f88c996
+qwen,release_date,General information,not_stated,True,True,True,,
+qwen,union_market_release_date,General information,not_stated,True,True,True,,
+qwen,model_dependencies,General information,not_stated,True,True,True,,
+qwen,model_architecture,Model properties,answered,True,True,True,,"Causal Language Model with a hybrid Mixture-of-Experts architecture (Gated DeltaNet and Gated Attention layers, each followed by MoE); 2.4T total / 95B activated parameters"
+qwen,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Causal language model with 2.4T total and 95B activated parameters; 92 layers; hidden layout 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)); Mixture of Experts with 512 experts, 10 routed + 1 shared activated; hidden dimension 8192. Built on the architectural foundation of Qwen3.5. The card gives no detailed rationale for the design choices."
+qwen,input_modalities,Model properties,answered,True,True,True,,text
+qwen,input_modalities_maximum_size,Model properties,answered,True,False,True,,"262144 | 262,144 tokens natively, extensible up to 1,010,000 tokens"
+qwen,output_modalities_modalities,Model properties,answered,True,True,True,,text
+qwen,output_modalities_maximum_size,Model properties,answered,False,False,True,,"Recommended maximum output length of 262,144 tokens for reasoning content and 131,072 tokens for the final response (within the 1M context length)"
+qwen,total_model_size,Model properties,answered,True,False,False,exact,2446182725504
+qwen,total_model_size_2,Model properties,answered,False,True,True,range,2446182725504
+qwen,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app; deployable with SGLang, vLLM, TokenSpeed | https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+qwen,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed); official Qwen API service via Qwen Cloud (Qwen3.8-Max); Qwen Studio chat app; deployable with SGLang, vLLM, TokenSpeed"
+qwen,license,Methods of distribution and licenses,answered,True,True,False,,qwen3.8-max (other)
+qwen,license_2,Methods of distribution and licenses,answered,False,False,True,,qwen3.8-max (other)
+qwen,license_3,Methods of distribution and licenses,answered,True,False,True,,"The card states the repository contains model weights and configuration files in Hugging Face Transformers format (compatible with vLLM, SGLang, TokenSpeed). Deployment recipes/cookbooks are linked for SGLang, vLLM and TokenSpeed. No training data, training code or evaluation code is mentioned."
+qwen,acceptable_use_policy,Use,not_stated,True,True,True,,
+qwen,intended_uses,Use,answered,True,True,True,,"Designed for coding, professional work, research, and long-horizon agentic tasks, carrying complex multi-step tasks through to completion; text-only generation with thinking mode."
+qwen,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Agentic systems and coding/development tools: designed for long-horizon, multi-step agentic tasks, with support for popular harnesses and development tools for integration into existing stacks"
+qwen,technical_means_for_model_integration,Use,answered,False,False,True,,"Hugging Face Transformers format weights compatible with vLLM, SGLang, TokenSpeed; deployable via SGLang, vLLM and TokenSpeed; usable through the Chat Completions API (OpenAI Python SDK) including Qwen Cloud; thinking mode required, with reasoning_effort (xhigh default, medium, low) and preserve_thinking options."
+qwen,required_hardware,Use,not_stated,False,False,True,,
+qwen,required_software,Use,answered,False,False,True,,"transformers | Weights are in Hugging Face Transformers format and are compatible with vLLM, SGLang, TokenSpeed; no versions given beyond recommending the latest framework versions"
+qwen,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pre-training & Post-training (no further methods such as SFT, DPO, RL or distillation are detailed); MTP (Multi-Token Prediction) trained with multiple steps"
+qwen,decision_rationale,Training process,not_stated,True,True,False,,
+qwen,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+qwen,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+qwen,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+qwen,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+qwen,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+qwen,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+qwen,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+qwen,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+qwen,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+qwen,training_time,Computational resources (during training),not_stated,False,True,False,range,
+qwen,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+qwen,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+qwen,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+qwen,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+qwen,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+qwen,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+qwen,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+qwen,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+deepseek,legal_name_for_the_model_provider,General information,answered,True,True,True,,DeepSeek-AI
+deepseek,model_name,General information,answered,True,True,True,,deepseek-ai/DeepSeek-V4.1-Flash | dba1be0a40aa45a94ad051997016db3960a90277 | DeepSeek-V4.1-Flash
+deepseek,model_authenticity,General information,answered,True,True,False,,dba1be0a40aa45a94ad051997016db3960a90277
+deepseek,release_date,General information,not_stated,True,True,True,,
+deepseek,union_market_release_date,General information,not_stated,True,True,True,,
+deepseek,model_dependencies,General information,not_stated,True,True,True,,
+deepseek,model_architecture,Model properties,answered,True,True,True,,Multimodal Mixture-of-Experts (MoE) with a Causal Encoder-Decoder (CED) architecture: a 40-layer Transformer (20-layer causal encoder followed by a 20-layer decoder)
+deepseek,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Multimodal MoE with 552B backbone parameters, up to one million tokens context. Causal Encoder-Decoder: 40-layer Transformer (20-layer causal encoder, 20-layer decoder); decoder's global KV cache projected from final encoder hidden states, so only 8B parameters active per token in prefill and 16B in decode, improving cost efficiency for input-heavy agentic workloads. 1 shared expert and 384 routed experts per MoE layer, 6 routed experts active per token. Uses CSA2 (Full, Reindex, Reuse modes) with FP4 main KV caching, reducing global KV cache to 890 bytes per token (roughly 1/4 of DeepSeek-V4-Flash)."
+deepseek,input_modalities,Model properties,answered,True,True,True,,"text, image"
+deepseek,input_modalities_maximum_size,Model properties,answered,True,False,True,,1048576
+deepseek,output_modalities_modalities,Model properties,answered,True,True,True,,text
+deepseek,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+deepseek,total_model_size,Model properties,answered,True,False,False,exact,763205315794
+deepseek,total_model_size_2,Model properties,answered,False,True,True,range,763205315794
+deepseek,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,Open model weights on Hugging Face under the MIT License (with local inference instructions); a chat app at chat.deepseek.com; prompt-encoding toolkit deepseek-recipe on GitHub. | https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+deepseek,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,Open model weights on Hugging Face under the MIT License (with local inference instructions); a chat app at chat.deepseek.com; prompt-encoding toolkit deepseek-recipe on GitHub.
+deepseek,license,Methods of distribution and licenses,answered,True,True,False,,mit
+deepseek,license_2,Methods of distribution and licenses,answered,False,False,True,,mit
+deepseek,license_3,Methods of distribution and licenses,answered,True,False,True,,"Released alongside the model: a technical report PDF; an `encoding` folder with a Python reference implementation (encoding.py) and test cases for prompt encoding; the deepseek-recipe Rust libraries with Python bindings (GitHub); an `inference` folder with instructions for weight conversion and running inference locally; an `evaluation` folder with instructions for reproducing DeepSWE v1.1 results (dsh-minimal and mini-swe-agent), including a patch for integrating dsh-minimal with Pier."
+deepseek,acceptable_use_policy,Use,not_stated,True,True,True,,
+deepseek,intended_uses,Use,not_stated,True,True,True,,
+deepseek,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Agentic workloads/agent systems (code agents, visual agents, agent scaffolds such as Claude Code, Codex, OpenCode, mini-SWE, DeepSeek Harness), with tool calling and chat/API-based prompt encoding"
+deepseek,technical_means_for_model_integration,Use,answered,False,False,True,,"No Jinja chat template; a Python reference prompt-encoding implementation (encoding.py in the encoding folder) is provided, plus deepseek-recipe (Rust libraries with Python bindings) for production prompt encoding/parsing of Messages, Chat Completions and Responses API requests. Local inference instructions (weight conversion and running) are in the inference folder. Recommended sampling: temperature 1.0, top_p 0.95 or 1.0."
+deepseek,required_hardware,Use,not_stated,False,False,True,,
+deepseek,required_software,Use,answered,False,False,True,,transformers
+deepseek,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pre-trained from scratch on a multimodal corpus of 45T tokens (sparse attention at 64K sequence length, context extended to 1M at 34T tokens); post-training follows SFT → RL → on-policy distillation (OPD), with changes in the data pipeline (large-scale automated synthesis of agent tasks and environments). | Only sequence length is stated: sparse attention trained at a sequence length of 64K, with context extended to 1M tokens at 34T tokens (45T-token corpus). Learning rate, batch size, optimiser and epochs are not given."
+deepseek,decision_rationale,Training process,answered,True,True,False,,"Post-training follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications, with all substantive changes in the data pipeline (large-scale automated synthesis of agent tasks and environments, progressive scaling of data, tasks, and rollouts). Architecturally, the Causal Encoder-Decoder projects the decoder's global KV cache from final encoder hidden states, activating only 8B parameters per token during prefill and 16B during decode to improve cost efficiency for input-heavy agentic workloads."
+deepseek,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,Multimodal corpus of text and images (45T tokens)
+deepseek,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Synthetic: post-training data pipeline uses large-scale automated synthesis of agent tasks and environments. Pre-training is on a multimodal corpus of 45T tokens, with no provenance categories given."
+deepseek,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pre-training on a multimodal corpus of 45T tokens; post-training data pipeline uses large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. Card does not state how rights were obtained."
+deepseek,number_of_data_points,"Information on the data used for training, testing, and validation",answered,False,True,False,range,45T tokens (multimodal corpus)
+deepseek,number_of_data_points_2,"Information on the data used for training, testing, and validation",answered,True,False,False,exact,45T tokens (multimodal corpus)
+deepseek,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,Multimodal corpus (images and text) comprising 45T tokens; trained from scratch
+deepseek,data_curation_methodologies,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Only post-training data processing is described: large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. No cleaning, filtering or deduplication details are given."
+deepseek,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+deepseek,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+deepseek,training_time,Computational resources (during training),not_stated,False,True,False,range,
+deepseek,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+deepseek,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+deepseek,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+deepseek,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+deepseek,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+deepseek,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+deepseek,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+deepseek,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+phi,legal_name_for_the_model_provider,General information,answered,True,True,True,,Microsoft Corporation
+phi,model_name,General information,answered,True,True,True,,microsoft/Phi-4-reasoning-vision-15B | c3e4fac79ddace21976ced56fbf1564b8bd8c89f
+phi,model_authenticity,General information,answered,True,True,False,,c3e4fac79ddace21976ced56fbf1564b8bd8c89f
+phi,release_date,General information,answered,True,True,True,,"March 4, 2026"
+phi,union_market_release_date,General information,not_stated,True,True,True,,
+phi,model_dependencies,General information,answered,True,True,True,,"microsoft/Phi-4-reasoning | Built on the Phi-4-Reasoning language model backbone (Phi-4-Reasoning listed as model dependency) and the SigLIP-2 vision encoder | finetune | Built on the Phi-4-Reasoning language model backbone plus the SigLIP-2 vision encoder (mid-fusion), and trained with Supervised Fine-Tuning (SFT); i.e. a fine-tuning-based derivation."
+phi,model_architecture,Model properties,answered,True,True,True,,"Mid-fusion multimodal architecture: Phi-4-Reasoning language model backbone with a SigLIP-2 vision encoder, whose visual tokens are projected into the language model's embedding space"
+phi,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Mid-fusion architecture built on the Phi-4-Reasoning language model backbone and SigLIP-2 vision encoder; the vision encoder converts images into visual tokens, which are projected into the language model's embedding space and injected into the pretrained language model, leveraging both pretrained components while keeping training and inference costs manageable. Dynamic resolution vision encoder with up to 3,600 visual tokens for high-resolution understanding (GUI grounding, fine-grained document analysis). Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. 15B parameters."
+phi,input_modalities,Model properties,answered,True,True,True,,"text, image"
+phi,input_modalities_maximum_size,Model properties,answered,True,False,True,,"32768 | Context length of 16,384 tokens"
+phi,output_modalities_modalities,Model properties,answered,True,True,True,,text
+phi,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+phi,total_model_size,Model properties,answered,True,False,False,exact,15119518144
+phi,total_model_size_2,Model properties,answered,False,True,True,range,15119518144
+phi,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based access through Azure AI Foundry | https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B
+phi,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based access through Azure AI Foundry
+phi,license,Methods of distribution and licenses,answered,True,True,False,,mit
+phi,license_2,Methods of distribution and licenses,answered,False,False,True,,mit
+phi,license_3,Methods of distribution and licenses,answered,True,False,True,,Code is on GitHub (microsoft/phi-4-reasoning-vision-15B); a data card describing the training data is available; evaluation logs will be released publicly; a technical report is available.
+phi,acceptable_use_policy,Use,answered,True,True,True,,"Card gives use restrictions: not suitable for medical diagnoses, legal advice, or financial planning; should not be used for consequential decisions on legal status or allocation of resources/life opportunities without further assessment and debiasing; developers must adhere to applicable laws and regulations. No separate acceptable use policy link."
+phi,intended_uses,Use,answered,True,True,True,,"General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; primary domains are scientific and mathematical reasoning over visual inputs and computer-use agent (CUA) tasks; also general multimodal tasks such as image captioning, visual question answering, optical character recognition, object localization, and grounding."
+phi,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Not specifically designed or evaluated for all downstream purposes, particularly high-risk scenarios. Should not be used in scenarios with consequential impact on legal status or allocation of resources or life opportunities (e.g., housing, employment, credit) without further assessments and additional debiasing techniques. Not suitable for medical diagnoses, legal advice, or financial planning. Languages other than English may have degraded performance. | General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; computer-use agent (CUA) tasks; a building block for generative AI-powered features."
+phi,technical_means_for_model_integration,Use,answered,False,False,True,,"Use the chat template with the system prompt for inference; force thinking by appending `<think>` or non-thinking by appending `<nothink>` to the generation template. Requires torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only if using vLLM). Recommended to host on a vLLM server using bf16 precision."
+phi,required_hardware,Use,not_stated,False,False,True,,
+phi,required_software,Use,answered,False,False,True,,"transformers 4.56.1 | torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only required if using vLLM)"
+phi,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Supervised Fine-Tuning (SFT) on a curated mixture of reasoning and non-reasoning data, built on the Phi-4-Reasoning backbone with the SigLIP-2 vision encoder (mid-fusion); safety alignment also via SFT."
+phi,decision_rationale,Training process,answered,True,True,False,,"Mid-fusion architecture combining the Phi-4-Reasoning backbone and SigLIP-2 vision encoder, chosen to leverage both pretrained components while keeping training and inference costs manageable. A dynamic resolution vision encoder (up to 3,600 visual tokens) enables high-resolution understanding for GUI grounding and document analysis. Bidirectional attention is applied only within images to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. A single model handles both reasoning and non-reasoning modes rather than separate models."
+phi,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,Text and images (English text and image-text pairs; vision-language data)
+phi,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Primarily filtered and improved open-source vision-language datasets (public), supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions; safety data is a mix of open-source and in-house generated synthetic datasets."
+phi,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions. Safety post-training used a combination of open-source and in-house generated synthetic datasets. The card does not state how rights were obtained."
+phi,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+phi,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+phi,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Training data is a curated mixture of reasoning and non-reasoning data, primarily filtered and improved open-source vision-language datasets, supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions. Modalities are text and images; trained primarily on English text and image-text pairs."
+phi,data_curation_methodologies,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions."
+phi,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+phi,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Known biases: model may over- or under-represent groups, erase representation of some groups, or reinforce stereotypes due to differing representation and negative stereotypes in training data reflecting societal biases, despite safety post-training. English language varieties with less representation may perform worse. Training data was meticulously filtered and improved."
+phi,training_time,Computational resources (during training),answered,False,True,False,range,4 days (on 240 B200 GPUs)
+phi,training_time_2,Computational resources (during training),answered,True,False,False,exact,240 NVIDIA B200 GPUs (trained for 4 days) | 4 days (on 240 B200 GPUs)
+phi,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+phi,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+phi,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+phi,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+phi,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+phi,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+phi,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+smollm,legal_name_for_the_model_provider,General information,not_stated,True,True,True,,
+smollm,model_name,General information,answered,True,True,True,,HuggingFaceTB/SmolLM3-3B | a07cc9a04f16550a088caea529712d1d335b0ac1
+smollm,model_authenticity,General information,answered,True,True,False,,a07cc9a04f16550a088caea529712d1d335b0ac1
+smollm,release_date,General information,not_stated,True,True,True,,
+smollm,union_market_release_date,General information,not_stated,True,True,True,,
+smollm,model_dependencies,General information,answered,True,True,True,,HuggingFaceTB/SmolLM3-3B-Base | finetune
+smollm,model_architecture,Model properties,answered,True,True,True,,Decoder-only transformer using GQA and NoPE (3:1 ratio)
+smollm,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Decoder-only transformer using GQA and NoPE (with 3:1 ratio); 3B parameters. The card gives no layer count, experts or active parameters, and no stated rationale beyond the design aim of pushing the boundaries of small models."
+smollm,input_modalities,Model properties,answered,True,True,True,,text
+smollm,input_modalities_maximum_size,Model properties,answered,True,False,True,,"65536 | Current config.json is set for context length up to 65,536 tokens; trained on 64k context and supports up to 128k tokens using YARN extrapolation"
+smollm,output_modalities_modalities,Model properties,answered,True,True,True,,text
+smollm,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+smollm,total_model_size,Model properties,answered,True,False,False,exact,3075098624
+smollm,total_model_size_2,Model properties,answered,False,True,True,range,3075098624
+smollm,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch. | https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+smollm,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch."
+smollm,license,Methods of distribution and licenses,answered,True,True,False,,apache-2.0
+smollm,license_2,Methods of distribution and licenses,answered,False,False,True,,apache-2.0
+smollm,license_3,Methods of distribution and licenses,answered,True,False,True,,Pretraining datasets are available in a Hugging Face collection (mid-training and post-training datasets to be uploaded later); training and evaluation configs and code are in the huggingface/smollm GitHub repository; intermediate checkpoints (including mid-training and SFT checkpoints) are at HuggingFaceTB/SmolLM3-3B-checkpoints; quantized checkpoints are in a Hugging Face collection.
+smollm,acceptable_use_policy,Use,not_stated,True,True,True,,
+smollm,intended_uses,Use,answered,True,True,True,,Should be used as assistive tools rather than definitive sources of information; users should verify important information. The model is an instruct model optimized for hybrid reasoning.
+smollm,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"The model should be used as an assistive tool rather than a definitive source of information; users should verify important information. | Can be used in agentic systems with tool calling (xml_tools or python_tools), as an instruct/hybrid reasoning model, and deployed via vLLM and SGLang as an OpenAI-compatible API; should be used as an assistive tool."
+smollm,technical_means_for_model_integration,Use,answered,False,False,True,,"Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template; /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch."
+smollm,required_hardware,Use,not_stated,False,False,True,,
+smollm,required_software,Use,answered,False,False,True,,"transformers | transformers v4.53.0 or later (upgrade transformers); can also be loaded with the latest vllm, which uses transformers as a backend"
+smollm,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO)."
+smollm,decision_rationale,Training process,not_stated,True,True,False,,
+smollm,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+smollm,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Pretraining used a staged curriculum of web, code, math and reasoning data, with a public data mixture; pretraining datasets are in a public collection. Mid-training used 140B reasoning tokens; mid-training and post-training datasets will be uploaded later."
+smollm,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, then supervised fine-tuning and alignment via Anchored Preference Optimization (APO). Pretraining datasets are public in a collection; mid-training and post-training datasets will be uploaded later."
+smollm,number_of_data_points,"Information on the data used for training, testing, and validation",answered,False,True,False,range,11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on 140B reasoning tokens
+smollm,number_of_data_points_2,"Information on the data used for training, testing, and validation",answered,True,False,False,exact,11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on 140B reasoning tokens
+smollm,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data."
+smollm,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+smollm,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+smollm,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+smollm,training_time,Computational resources (during training),not_stated,False,True,False,range,
+smollm,training_time_2,Computational resources (during training),answered,True,False,False,exact,384 H100 GPUs
+smollm,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+smollm,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+smollm,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+smollm,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+smollm,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+smollm,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+smollm,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+falcon,legal_name_for_the_model_provider,General information,answered,True,True,True,,Technology Innovation Institute
+falcon,model_name,General information,answered,True,True,True,,tiiuae/Falcon-H1R-7B | a6f74bf181389908efd6970878d7ee2b42f5d417
+falcon,model_authenticity,General information,answered,True,True,False,,a6f74bf181389908efd6970878d7ee2b42f5d417
+falcon,release_date,General information,not_stated,True,True,True,,
+falcon,union_market_release_date,General information,not_stated,True,True,True,,
+falcon,model_dependencies,General information,answered,True,True,True,,tiiuae/Falcon-H1-7B-Base | finetune
+falcon,model_architecture,Model properties,answered,True,True,True,,"Causal decoder-only, hybrid (Transformers + Mamba2) architecture"
+falcon,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Causal decoder-only model with a hybrid architecture (Transformers + Mamba2), built on Falcon-H1-7B-Base. The card does not state layers, attention type, experts, active parameters or rationale."
+falcon,input_modalities,Model properties,answered,True,True,True,,text
+falcon,input_modalities_maximum_size,Model properties,answered,True,False,True,,262144
+falcon,output_modalities_modalities,Model properties,answered,True,True,True,,text
+falcon,output_modalities_maximum_size,Model properties,answered,False,False,True,,Recommended max new tokens up to 65536
+falcon,total_model_size,Model properties,answered,True,False,False,exact,7585648736
+falcon,total_model_size_2,Model properties,answered,False,True,True,range,7585648736
+falcon,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,https://huggingface.co/tiiuae/Falcon-H1R-7B
+falcon,distribution_channels_2,Methods of distribution and licenses,not_stated,False,False,True,,
+falcon,license,Methods of distribution and licenses,answered,True,True,False,,falcon-llm-license (other)
+falcon,license_2,Methods of distribution and licenses,answered,False,False,True,,falcon-llm-license (other)
+falcon,license_3,Methods of distribution and licenses,answered,True,False,True,,"Technical report (GitHub PDF and Hugging Face paper page) and a release/technical blogpost are linked; base model Falcon-H1-7B-Base is on Hugging Face; TTS evaluated via DeepConf (external GitHub code). Inference is supported via transformers, vLLM and SGLang."
+falcon,acceptable_use_policy,Use,not_stated,True,True,True,,
+falcon,intended_uses,Use,not_stated,True,True,True,,
+falcon,type_and_nature_of_ai_systems_in_which_the_general,Use,not_stated,True,True,True,,
+falcon,technical_means_for_model_integration,Use,answered,False,False,True,,"Can be used via Hugging Face `transformers`, `vLLM` or `SGLang`; vLLM and SGLang servers are started with a reasoning parser and queried via an OpenAI-compatible client; the model generates think content wrapped in a `<think>...</think>` block followed by the final response; recommended temperature 0.6, top-p 0.95, max new tokens up to 65536."
+falcon,required_hardware,Use,not_stated,False,False,True,,
+falcon,required_software,Use,answered,False,False,True,,"transformers | Hugging Face `transformers`, `vLLM` or `SGLang` library; install transformers and mamba-ssm[causal-conv1d]; for vLLM, vllm>=0.11.0"
+falcon,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Built on Falcon-H1-7B-Base; trained via cold-start supervised fine-tuning with long reasoning traces, then further enhanced by scaling RL with GRPO."
+falcon,decision_rationale,Training process,not_stated,True,True,False,,
+falcon,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+falcon,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+falcon,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+falcon,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+falcon,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+falcon,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+falcon,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+falcon,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+falcon,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+falcon,training_time,Computational resources (during training),not_stated,False,True,False,range,
+falcon,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+falcon,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+falcon,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+falcon,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+falcon,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+falcon,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+falcon,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+falcon,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+granite,legal_name_for_the_model_provider,General information,answered,True,True,True,,"Granite Team, IBM"
+granite,model_name,General information,answered,True,True,True,,"ibm-granite/granite-4.2-8b | f8de16cdcdbc6c779ca517604e050d82cc119e44 | Named version Granite-4.2-8B, part of the Granite 4.2 family/generation (no repository revision stated)"
+granite,model_authenticity,General information,answered,True,True,False,,f8de16cdcdbc6c779ca517604e050d82cc119e44
+granite,release_date,General information,answered,True,True,True,,"August 25, 2026"
+granite,union_market_release_date,General information,not_stated,True,True,True,,
+granite,model_dependencies,General information,answered,True,True,True,,ibm-granite/granite-4.1-8b-base | finetune
+granite,model_architecture,Model properties,answered,True,True,True,,Decoder-only Dense Transformer (GraniteForCausalLM)
+granite,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Decoder-only dense transformer (GraniteForCausalLM) with 8B parameters; Grouped Query Attention with 32 attention heads and 8 KV heads; RoPE (θ = 10,000,000); SwiGLU MLP (hidden size 12800); RMSNorm (ε = 1e-5); untied input/output embeddings; 40 layers; embedding size 4096. Dense model (no experts). No rationale for the design choices is stated."
+granite,input_modalities,Model properties,answered,True,True,True,,text
+granite,input_modalities_maximum_size,Model properties,answered,True,False,True,,131072 | Natively supports 128K context (long-context extension to 512K); sequence length 131072
+granite,output_modalities_modalities,Model properties,answered,True,True,True,,text
+granite,output_modalities_maximum_size,Model properties,answered,False,False,True,,max_new_tokens is set to 8192 in thinking mode (increase for complex reasoning) and 2048 in non-thinking mode
+granite,total_model_size,Model properties,answered,True,False,False,exact,8791592960
+granite,total_model_size_2,Model properties,answered,False,True,True,range,8791592960
+granite,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM and SGLang; GitHub repository available | https://huggingface.co/ibm-granite/granite-4.2-8b"
+granite,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM and SGLang; GitHub repository available"
+granite,license,Methods of distribution and licenses,answered,True,True,False,,apache-2.0
+granite,license_2,Methods of distribution and licenses,answered,False,False,True,,apache-2.0
+granite,license_3,Methods of distribution and licenses,answered,True,False,True,,"A GitHub repository (ibm-granite/granite-4.2-language-models) lists the full training datasets; a technical blog, documentation, an HF collection of Granite 4.2 models, and an SGLang cookbook (deployment recipe) are also linked. The custom granite_thinking_parser is included in the model repository."
+granite,acceptable_use_policy,Use,not_stated,True,True,True,,
+granite,intended_uses,Use,answered,True,True,True,,"Reasoning, code generation, tool calling, agentic workflows, and multilingual dialog; also usable as the backbone model for agentic coding tools. Designed for enterprise and research use (Granite family)."
+granite,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Agentic workflows and agentic coding harnesses (backbone model for agentic coding tools), tool-calling systems, and multilingual dialog/chat"
+granite,technical_means_for_model_integration,Use,answered,False,False,True,,"Can be served with vLLM (custom granite_thinking_parser reasoning parser, qwen3_coder tool-call parser) and SGLang (v0.5.18+), via OpenAI-compatible API; also usable with Hugging Face Transformers via tokenizer.apply_chat_template with enable_thinking, low_effort and tools options; ChatML-style prompt format with <think>...</think> reasoning."
+granite,required_hardware,Use,not_stated,False,False,True,,
+granite,required_software,Use,answered,False,False,True,,transformers | vLLM (v0.20+ for the custom granite_thinking_parser) or SGLang (v0.5.18+) for serving; transformers and accelerate (plus torch) for the Transformers quick start
+granite,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Post-trained from Granite-4.1-8B-Base (pre-trained on a large-scale English and multilingual corpus) in stages: supervised fine-tuning (SFT) on instruction-following, chain-of-thought and reasoning data, then multi-phase, multi-environment reinforcement learning using GRPO, followed by a preference-alignment (RLHF) phase."
+granite,decision_rationale,Training process,answered,True,True,False,,"The card gives some rationale for training choices: SFT uses instruction-following, chain-of-thought and reasoning data to cultivate reasoning and thinking abilities; hyperparameters were tuned before scaling to all three model sizes; for the 30B model a second SFT phase up-sampled agentic data while retaining a smaller share of general replay data. RL uses GRPO across multiple environments, with verifiable rewards where available and a generative reward model for open-ended prompts; an RLHF phase tunes helpfulness, conversational quality, and safety."
+granite,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+granite,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data (reasoning, tool calling, chain-of-thought), agentic traces collected across diverse tasks, and a curated selection of human-authored data. Base model pre-trained on a large-scale English and multilingual corpus (no provenance breakdown given)."
+granite,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic traces collected across diverse tasks, and a curated selection of human-authored data. Pre-training data details are deferred to the Granite 4.1 Technical Blog."
+granite,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+granite,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+granite,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling and chain-of-thought, agentic traces across diverse tasks, and curated human-authored data. Finetuned mostly on English instruction-response pairs plus multilingual data covering the supported languages. Base model pre-trained on a large-scale English and multilingual corpus."
+granite,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+granite,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+granite,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+granite,training_time,Computational resources (during training),not_stated,False,True,False,range,
+granite,training_time_2,Computational resources (during training),answered,True,False,False,exact,NVIDIA GB200 NVL72 cluster hosted in CoreWeave (72-GPU NVLink domain intra-rack; NDR 400 Gb/s InfiniBand Fat-Tree inter-rack); total GPU count not stated
+granite,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+granite,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+granite,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+granite,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+granite,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+granite,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+granite,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo_gguf,legal_name_for_the_model_provider,General information,answered,True,True,True,,Allen Institute for AI (Ai2)
+olmo_gguf,model_name,General information,answered,True,True,True,,unsloth/Olmo-3-7B-Instruct-GGUF | a2a9ae53f5a95087616b3f45ca96e9d2631344ee
+olmo_gguf,model_authenticity,General information,answered,True,True,False,,a2a9ae53f5a95087616b3f45ca96e9d2631344ee
+olmo_gguf,release_date,General information,not_stated,True,True,True,,
+olmo_gguf,union_market_release_date,General information,not_stated,True,True,True,,
+olmo_gguf,model_dependencies,General information,answered,True,True,True,,"allenai/Olmo-3-7B-Instruct | The card's table lists Olmo-3-7B as the base model for Olmo 3 7B Instruct (followed by SFT, DPO and RLVR stages, with final model Olmo-3-7B-Instruct) | quantized"
+olmo_gguf,model_architecture,Model properties,answered,True,True,True,,Transformer style autoregressive language model
+olmo_gguf,design_specifications_of_the_model,Model properties,not_stated,True,True,False,,
+olmo_gguf,input_modalities,Model properties,not_stated,True,True,True,,
+olmo_gguf,input_modalities_maximum_size,Model properties,not_stated,True,False,True,,
+olmo_gguf,output_modalities_modalities,Model properties,not_stated,True,True,True,,
+olmo_gguf,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+olmo_gguf,total_model_size,Model properties,answered,True,False,False,exact,7298011136
+olmo_gguf,total_model_size_2,Model properties,answered,False,True,True,range,7298011136
+olmo_gguf,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,"Open weights/checkpoints released on Hugging Face (usable via the transformers library, with revisions loadable via huggingface_hub); code in GitHub repositories | https://huggingface.co/unsloth/Olmo-3-7B-Instruct-GGUF"
+olmo_gguf,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,"Open weights/checkpoints released on Hugging Face (usable via the transformers library, with revisions loadable via huggingface_hub); code in GitHub repositories"
+olmo_gguf,license,Methods of distribution and licenses,answered,True,True,False,,"apache-2.0 | Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines"
+olmo_gguf,license_2,Methods of distribution and licenses,answered,False,False,True,,"apache-2.0 | Apache 2.0, intended for research and educational use in accordance with Ai2's Responsible Use Guidelines"
+olmo_gguf,license_3,Methods of distribution and licenses,answered,True,False,True,,"Code, checkpoints and training details are released (logs coming soon). Repositories: Open-Instruct (DPO and RLVR) at https://github.com/allenai/open-instruct; OLMo-Core (pre-training and SFT) at https://github.com/allenai/OLMo-core; OLMo-Eval (evaluation) at https://github.com/allenai/OLMo-Eval. Checkpoints are accessible via the HuggingFace `revision` argument (naming `step_XXXX`). Datasets include Dolci-Instruct-SFT-7B, Dolci-Instruct-DPO-7B and Dolci-Instruct-RL-7B on Hugging Face."
+olmo_gguf,acceptable_use_policy,Use,answered,True,True,True,,Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)
+olmo_gguf,intended_uses,Use,answered,True,True,True,,"Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines"
+olmo_gguf,type_and_nature_of_ai_systems_in_which_the_general,Use,not_stated,True,True,True,,
+olmo_gguf,technical_means_for_model_integration,Use,answered,False,False,True,,Use with the HuggingFace transformers library (version 4.57.0 or higher) via AutoModelForCausalLM and AutoTokenizer; optional 8-bit quantization with bitsandbytes; ChatML-style chat template with <|im_start|>/<|im_end|> tags and a default system message.
+olmo_gguf,required_hardware,Use,not_stated,False,False,True,,
+olmo_gguf,required_software,Use,answered,False,False,True,,transformers 4.57.0 or higher (HuggingFace transformers library); bitsandbytes required for 8-bit quantization
+olmo_gguf,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Pre-trained on the Dolma 3 dataset, then post-trained in three stages: SFT (supervised fine-tuning), DPO (direct preference optimization), and RLVR (reinforcement learning from verifiable rewards), using Dolci datasets."
+olmo_gguf,decision_rationale,Training process,not_stated,True,True,False,,
+olmo_gguf,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo_gguf,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo_gguf,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo_gguf,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+olmo_gguf,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+olmo_gguf,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets; SFT/DPO data consist of math, code, chat, and general knowledge queries; RLVR data consist of math, code, instruction-following, and general chat queries. Language: English."
+olmo_gguf,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+olmo_gguf,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo_gguf,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+olmo_gguf,training_time,Computational resources (during training),not_stated,False,True,False,range,
+olmo_gguf,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+olmo_gguf,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+olmo_gguf,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+olmo_gguf,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+olmo_gguf,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo_gguf,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo_gguf,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+olmo_gguf,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+molmo2,legal_name_for_the_model_provider,General information,answered,True,True,True,,Allen Institute for AI (Ai2)
+molmo2,model_name,General information,answered,True,True,True,,allenai/Molmo2-8B | e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b
+molmo2,model_authenticity,General information,answered,True,True,False,,e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b
+molmo2,release_date,General information,not_stated,True,True,True,,
+molmo2,union_market_release_date,General information,not_stated,True,True,True,,
+molmo2,model_dependencies,General information,answered,True,True,True,,"Qwen/Qwen3-8B, google/siglip-so400m-patch14-384 | finetune"
+molmo2,model_architecture,Model properties,answered,True,True,True,,Vision-language model based on Qwen3-8B (language model) with SigLIP 2 as vision backbone
+molmo2,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Molmo2-8B is based on Qwen3-8B (language model) and uses SigLIP 2 as vision backbone. The card does not state layers, attention type, experts, active parameters, or design rationale."
+molmo2,input_modalities,Model properties,answered,True,True,True,,"text, image | Image, video and multi-image understanding and grounding (image and video inputs)"
+molmo2,input_modalities_maximum_size,Model properties,answered,True,False,True,,36864
+molmo2,output_modalities_modalities,Model properties,answered,True,True,True,,text
+molmo2,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+molmo2,total_model_size,Model properties,answered,True,False,False,exact,8661703120
+molmo2,total_model_size_2,Model properties,answered,False,True,True,range,8661703120
+molmo2,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets available on Hugging Face | https://huggingface.co/allenai/Molmo2-8B
+molmo2,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets available on Hugging Face
+molmo2,license,Methods of distribution and licenses,answered,True,True,False,,"apache-2.0 | Apache 2.0; intended for research and educational use, and trained on third party datasets subject to academic and non-commercial research use only"
+molmo2,license_2,Methods of distribution and licenses,answered,False,False,True,,"apache-2.0 | Apache 2.0; intended for research and educational use, and trained on third party datasets subject to academic and non-commercial research use only"
+molmo2,license_3,Methods of distribution and licenses,answered,True,False,True,,"The Molmo2 datasets are available in the Molmo2 data collection on Hugging Face; the other artifacts (training code, evaluations, intermediate checkpoints) will be made available at a later date. All models in the Molmo2 family are in a Hugging Face collection."
+molmo2,acceptable_use_policy,Use,answered,True,True,True,,Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use); trained on third party datasets subject to academic and non-commercial research use only.
+molmo2,intended_uses,Use,answered,True,True,True,,"Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines."
+molmo2,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"No explicit out-of-scope list. The card says the model is intended for research and educational use. Its training datasets are subject to academic and non-commercial research use only, and users should review the sources to decide whether the model suits their use case."
+molmo2,technical_means_for_model_integration,Use,answered,False,False,True,,"Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True), with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using chat messages containing text, video or image content; supports video QA, video pointing, tracking, multi-image QA and multi-image pointing."
+molmo2,required_hardware,Use,not_stated,False,False,True,,
+molmo2,required_software,Use,answered,False,False,True,,"transformers | Python 3.11 conda environment with transformers==4.57.1, plus torch, pillow, einops, torchvision, accelerate, decord2 and molmo_utils"
+molmo2,design_specifications_of_the_training_process,Training process,not_stated,True,True,False,,
+molmo2,decision_rationale,Training process,not_stated,True,True,False,,
+molmo2,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Image-text and video-text pairs (images, video, multi-image)"
+molmo2,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,Public datasets: trained on publicly available third party datasets (as referenced in the technical report and the Molmo2 data collection of curated image-text and video-text pairs); the card notes these are subject to academic and non-commercial research use only.
+molmo2,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only."
+molmo2,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+molmo2,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+molmo2,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Trained on publicly available third party datasets, a collection of highly-curated image-text and video-text pairs; the model supports image, video and multi-image understanding and grounding. The datasets are subject to academic and non-commercial research use only."
+molmo2,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+molmo2,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+molmo2,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+molmo2,training_time,Computational resources (during training),not_stated,False,True,False,range,
+molmo2,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+molmo2,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+molmo2,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+molmo2,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+molmo2,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+molmo2,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+molmo2,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+molmo2,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+internvl_gptoss,legal_name_for_the_model_provider,General information,not_stated,True,True,True,,
+internvl_gptoss,model_name,General information,answered,True,True,True,,OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF | 49b11e8d5e9d4c822de52dee190f95c988009559 | InternVL3.5 family (named version InternVL3.5); no repository revision or hash is stated
+internvl_gptoss,model_authenticity,General information,answered,True,True,False,,49b11e8d5e9d4c822de52dee190f95c988009559
+internvl_gptoss,release_date,General information,not_stated,True,True,True,,
+internvl_gptoss,union_market_release_date,General information,not_stated,True,True,True,,
+internvl_gptoss,model_dependencies,General information,answered,True,True,True,,"OpenGVLab/InternViT-300M-448px-V2_5, openai/gpt-oss-20b | The language model is initialized from the Qwen3 series and GPT-OSS, and the vision encoder from InternViT-300M and InternViT-6B. | merge"
+internvl_gptoss,model_architecture,Model properties,answered,True,True,True,,"""ViT–MLP–LLM"" paradigm (vision encoder + MLP + language model); language model initialized from Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; the 20B-A4B variant is a mixture-of-experts-style ""A4B"" model (21.2B-A4B)"
+internvl_gptoss,design_specifications_of_the_model,Model properties,answered,True,True,False,,"Follows the ""ViT–MLP–LLM"" paradigm; language model initialized from the Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; retains the Dynamic High Resolution strategy from InternVL1.5. This 20B-A4B model: 0.3B vision params, 20.9B language params, 21.2B total with 4B active (A4B)."
+internvl_gptoss,input_modalities,Model properties,answered,True,True,True,,"text, image"
+internvl_gptoss,input_modalities_maximum_size,Model properties,answered,True,False,True,,131072
+internvl_gptoss,output_modalities_modalities,Model properties,answered,True,True,True,,text
+internvl_gptoss,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+internvl_gptoss,total_model_size,Model properties,answered,True,False,False,exact,21232768704
+internvl_gptoss,total_model_size_2,Model properties,answered,False,True,True,range,21232768704
+internvl_gptoss,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,Open model weights released publicly on Hugging Face (GitHub and HF formats) and ModelScope; all models and code publicly released. Deployable via LMDeploy and vLLM (vLLM recommended for the 20B-A4B model). | https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+internvl_gptoss,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,Open model weights released publicly on Hugging Face (GitHub and HF formats) and ModelScope; all models and code publicly released. Deployable via LMDeploy and vLLM (vLLM recommended for the 20B-A4B model).
+internvl_gptoss,license,Methods of distribution and licenses,answered,True,True,False,,apache-2.0
+internvl_gptoss,license_2,Methods of distribution and licenses,answered,False,False,True,,apache-2.0
+internvl_gptoss,license_3,Methods of distribution and licenses,answered,True,False,True,,"Code on GitHub (OpenGVLab/InternVL); model weights from different training stages (Pretrained, Instruct, MPO, final) open-sourced on Hugging Face and ModelScope; GitHub-format and HF-format checkpoints with conversion scripts (custom2hf, hf2custom); all models and code publicly released."
+internvl_gptoss,acceptable_use_policy,Use,not_stated,True,True,True,,
+internvl_gptoss,intended_uses,Use,not_stated,True,True,True,,
+internvl_gptoss,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,"Multimodal (vision-language) models supporting GUI interaction and embodied agency; deployable as online-served multimodal LLM services (e.g., via OpenAI-compatible API servers)."
+internvl_gptoss,technical_means_for_model_integration,Use,answered,False,False,True,,"Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required for the 20B version), and deployable with LMDeploy (pipeline, OpenAI-compatible api_server) or vLLM (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode is enabled via a system prompt (R1_SYSTEM_PROMPT) with do_sample=True and temperature=0.6."
+internvl_gptoss,required_hardware,Use,answered,False,False,True,,Models with up to 30B parameters can be deployed on a single A100 GPU; the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs.
+internvl_gptoss,required_software,Use,answered,False,False,True,,"transformers | transformers>=4.52.1 is required; for the 20B version, transformers>=4.55.0 is required. vLLM is recommended for deployment of InternVL3.5-20B-A4B since lmdeploy has not yet supported GPT-OSS (LMDeploy and vLLM can otherwise be used)."
+internvl_gptoss,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Training pipeline: Multimodal Continual Pre-Training (CPT), Supervised Fine-Tuning (SFT), and Cascade Reinforcement Learning (CascadeRL). CascadeRL first uses Mixed Preference Optimization (MPO) under offline RL, followed by GSPO under online RL. The Flash version additionally uses Visual Consistency Learning (ViCO). | Only partial: during the SFT stage the context window is set to 32K tokens. The card does not state learning rate, batch size, optimiser or epochs."
+internvl_gptoss,decision_rationale,Training process,answered,True,True,False,,"Cascade RL combines offline RL (MPO) as an efficient warm-up for stable convergence and high-quality rollouts, then online RL (GSPO) to refine the output distribution from the model's own rollouts, achieving significant gains at a fraction of the GPU time cost. GSPO was chosen because it is more effective for training both dense and MoE models. Square averaging re-weights the NTP loss to mitigate bias toward longer or shorter responses."
+internvl_gptoss,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,Text and multimodal (image-text) data; pre-training uses large-scale text and multimodal corpora
+internvl_gptoss,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Only partly described: SFT data includes synthetic multimodal reasoning data (image descriptions from InternVL3-78B fed to DeepSeek-R1 to sample reasoning rollouts), plus reused InternVL3 instruction-following data; pre-training uses ""large-scale text and multimodal corpora"" with no further provenance given."
+internvl_gptoss,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"SFT data comes from three sources: reused InternVL3 instruction-following data; multimodal ""Thinking"" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning rollouts, with rollouts with incorrect final answers filtered out; and capability-expansion datasets. Rights acquisition is not described."
+internvl_gptoss,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+internvl_gptoss,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+internvl_gptoss,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"Pre-training uses large-scale text and multimodal corpora; SFT data includes instruction-following data from InternVL3, multimodal reasoning data in ""Thinking"" mode (covering expert domains such as mathematics and scientific disciplines), and capability-expansion datasets (e.g., GUI-based interaction, embodied interaction). Card metadata lists language as multilingual."
+internvl_gptoss,data_curation_methodologies,"Information on the data used for training, testing, and validation",answered,True,True,True,,"Reasoning SFT data was built by having InternVL3-78B describe images and feeding the descriptions to DeepSeek-R1 to sample rollouts; rollouts with an incorrect final answer were filtered out. Random JPEG compression is included in pre-training as augmentation, and NTP loss is re-weighted by square averaging."
+internvl_gptoss,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+internvl_gptoss,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+internvl_gptoss,training_time,Computational resources (during training),not_stated,False,True,False,range,
+internvl_gptoss,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+internvl_gptoss,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+internvl_gptoss,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+internvl_gptoss,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+internvl_gptoss,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+internvl_gptoss,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+internvl_gptoss,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+internvl_gptoss,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+twil_smollm,legal_name_for_the_model_provider,General information,answered,True,True,True,,webAI (published under the webAI-Official organisation)
+twil_smollm,model_name,General information,answered,True,True,True,,webAI-Official/TwIL-LM3 | e4f94da572d9857a91ca0dca857cebb0cbe6755a
+twil_smollm,model_authenticity,General information,answered,True,True,False,,e4f94da572d9857a91ca0dca857cebb0cbe6755a
+twil_smollm,release_date,General information,not_stated,True,True,True,,
+twil_smollm,union_market_release_date,General information,not_stated,True,True,True,,
+twil_smollm,model_dependencies,General information,answered,True,True,True,,"HuggingFaceTB/SmolLM3-3B | adapter | Fine-tune of SmolLM3-3B via LoRA SFT, checkpoint fusion, WiSE-FT interpolation and GRPO RL; released as a full merged model rather than an adapter"
+twil_smollm,model_architecture,Model properties,answered,True,True,True,,"SmolLM3 decoder-only transformer; 36 layers, hidden size 2048"
+twil_smollm,design_specifications_of_the_model,Model properties,answered,True,True,False,,"SmolLM3 decoder-only transformer; 36 layers, hidden size 2048; 3.08B total parameters; 128,256 vocabulary; 65,536-token context window. No rationale for the design choices is given."
+twil_smollm,input_modalities,Model properties,answered,True,True,True,,text
+twil_smollm,input_modalities_maximum_size,Model properties,answered,True,False,True,,"65536 | Context window of 65,536 tokens (inherited from base model; all scores measured within an 8,192-token window)"
+twil_smollm,output_modalities_modalities,Model properties,answered,True,True,True,,text
+twil_smollm,output_modalities_maximum_size,Model properties,not_stated,False,False,True,,
+twil_smollm,total_model_size,Model properties,answered,True,False,False,exact,3075098624
+twil_smollm,total_model_size_2,Model properties,answered,False,True,True,range,3075098624
+twil_smollm,distribution_channels,Methods of distribution and licenses,answered,True,True,False,,Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released. | https://huggingface.co/webAI-Official/TwIL-LM3
+twil_smollm,distribution_channels_2,Methods of distribution and licenses,answered,False,False,True,,Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released.
+twil_smollm,license,Methods of distribution and licenses,answered,True,True,False,,webai-non-commercial-license-ver.-1.0 (other) | webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B is Apache 2.0
+twil_smollm,license_2,Methods of distribution and licenses,answered,False,False,True,,webai-non-commercial-license-ver.-1.0 (other) | webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B is Apache 2.0
+twil_smollm,license_3,Methods of distribution and licenses,answered,True,False,True,,"Quantized GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) ship in the same repository alongside the safetensors weights; the TwIL-LM3* weights are unreleased (""will be released soon"")."
+twil_smollm,acceptable_use_policy,Use,not_stated,True,True,True,,
+twil_smollm,intended_uses,Use,answered,True,True,True,,"A 3B reasoning model for formal logic tasks: FOL translation, entailment labels, semantic parses, Lean formalisation and Lean proof critique. It is not a general assistant or chat model."
+twil_smollm,type_and_nature_of_ai_systems_in_which_the_general,Use,answered,True,True,True,,Not a general assistant or chat model; it is tuned for formal logic only. It has no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). No claim is made about code generation or tool use.
+twil_smollm,technical_means_for_model_integration,Use,answered,False,False,True,,"Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, bf16); GGUF builds for llama.cpp (llama-cli); evaluated via vLLM backend; model emits a <think>…</think> block before the answer; greedy decoding (do_sample=False) with ≥2048 new tokens recommended"
+twil_smollm,required_hardware,Use,answered,False,False,True,,Q4_K_M GGUF build (1.78 GiB) runs on CPU or 4 GB of VRAM
+twil_smollm,required_software,Use,answered,False,False,True,,transformers | Hugging Face transformers (works on both 4.x and 5.x); llama.cpp is also supported for the GGUF builds.
+twil_smollm,design_specifications_of_the_training_process,Training process,answered,True,True,False,,"Four post-training stages on top of SmolLM3-3B: LoRA supervised fine-tuning on a synthetic formal-logic corpus, checkpoint fusion (parameter-space averaging of intermediate SFT checkpoints), WiSE-FT interpolation toward the base with λ = 0.25, and MGPO (entropy-weighted GRPO reinforcement learning against a programmatic verifier), published checkpoint step 2071."
+twil_smollm,decision_rationale,Training process,answered,True,True,False,,"WiSE-FT interpolation toward the base with λ = 0.25 (only a quarter of the fine-tuned delta retained), chosen by constrained optimisation (maximise in-domain score subject to minimal held-out degradation) so held-out capability survives. Checkpoint fusion averaged intermediate SFT checkpoints selected by a diversity probe rather than the final checkpoint. MGPO (entropy-weighted GRPO) used partial credit for loose matches and token-F1 so all-fail prompt groups still produce gradient. A sibling arm without the conservative interpolation scored higher in-domain but lost about twelve points of held-out capability; this release is the balanced point of that trade."
+twil_smollm,data_type_modality_select_all_that_apply,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+twil_smollm,data_provenance_select_all_that_apply,"Information on the data used for training, testing, and validation",answered,True,True,True,,Synthetic: LoRA SFT was done on a synthetic formal-logic corpus covering the Track A objectives.
+twil_smollm,how_data_was_obtained_and_selected,"Information on the data used for training, testing, and validation",answered,True,True,False,,"LoRA supervised fine-tuning used a synthetic formal-logic corpus covering the Track A objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction). The RL stage (MGPO) used a programmatic verifier. The card does not state how rights were obtained."
+twil_smollm,number_of_data_points,"Information on the data used for training, testing, and validation",not_stated,False,True,False,range,
+twil_smollm,number_of_data_points_2,"Information on the data used for training, testing, and validation",not_stated,True,False,False,exact,
+twil_smollm,scope_and_main_characteristics,"Information on the data used for training, testing, and validation",answered,True,True,False,,"LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction."
+twil_smollm,data_curation_methodologies,"Information on the data used for training, testing, and validation",not_stated,True,True,True,,
+twil_smollm,measures_to_detect_unsuitability_of_data_sources,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+twil_smollm,measures_to_detect_identifiable_biases,"Information on the data used for training, testing, and validation",not_stated,True,True,False,,
+twil_smollm,training_time,Computational resources (during training),not_stated,False,True,False,range,
+twil_smollm,training_time_2,Computational resources (during training),not_stated,True,False,False,exact,
+twil_smollm,amount_of_computation_used_for_training,Computational resources (during training),not_stated,False,True,False,range,
+twil_smollm,amount_of_computation_used_for_training_2,Computational resources (during training),not_stated,True,False,False,exact,
+twil_smollm,amount_of_computation_used_for_training_2_methodology,Computational resources (during training),not_stated,True,True,False,,
+twil_smollm,amount_of_energy_used_for_training,Energy consumption (during training and inference),not_stated,True,True,False,,
+twil_smollm,amount_of_energy_used_for_training_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,
+twil_smollm,benchmarked_amount_of_computation_used_for_inferen,Energy consumption (during training and inference),not_stated,True,True,False,,
+twil_smollm,benchmarked_amount_of_computation_used_for_inferen_methodology,Energy consumption (during training and inference),not_stated,True,True,False,,

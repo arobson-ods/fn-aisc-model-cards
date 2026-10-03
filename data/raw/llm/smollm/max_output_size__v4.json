@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "max_output_size",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: max_output_size\nWhat to find: Maximum output size (e.g. maximum generated tokens).\nCard sections that often contain it: Output, Generation, Context Length\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9313,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 178
+ },
+ "cost_usd_list_price": 0.039143,
+ "duration_ms": 2290
+}

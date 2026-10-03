@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "autonomy",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: autonomy\nWhat to find: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nCard sections that often contain it: Intended Use, Safety, Agentic\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card describes autonomous agentic behaviour: stronger autonomous planning and handling of environment feedback, designed to carry complex multi-step tasks through to completion. It states no human-in-the-loop oversight requirement.",
+  "quotes": [
+   "**Agent Execution**: Stronger autonomous planning and better handling of environment feedback, leading to more reliable end-to-end task completion.",
+   "Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability."
+  ],
+  "section": "Qwen3.8 Highlights"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 551,
+  "cache_read_input_tokens": 18206,
+  "output_tokens": 417
+ },
+ "cost_usd_list_price": 0.010019199999999999,
+ "duration_ms": 3533
+}

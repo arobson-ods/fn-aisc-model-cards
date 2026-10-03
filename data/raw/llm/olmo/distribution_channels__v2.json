@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "distribution_channels",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: distribution_channels\nWhat to find: Methods of distribution (open weights on repositories, API, cloud platforms, apps).\nCard sections that often contain it: Model Sources, Availability, Distribution, Access\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Open weights/checkpoints released on Hugging Face (usable via the transformers library, with revisions/checkpoints as branches); code released on GitHub repositories (Open-Instruct, OLMo-Core, OLMo-Eval).",
+  "quotes": [
+   "We are releasing all code, checkpoints, logs (coming soon), and associated training details.",
+   "olmo = AutoModelForCausalLM.from_pretrained(\"allenai/Olmo-3.1-32B-Instruct\")",
+   "Open-Instruct for DPO and RLVR: https://github.com/allenai/open-instruct",
+   "OLMo-Core for pre-training and SFT: https://github.com/allenai/OLMo-core"
+  ],
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 6581,
+  "output_tokens": 345
+ },
+ "cost_usd_list_price": 0.0069902,
+ "duration_ms": 3066
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "data_acquisition",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: data_acquisition\nWhat to find: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nCard sections that often contain it: Training Data, Data Collection\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic traces collected across diverse tasks, and a curated selection of human-authored data. Pre-training data details are deferred to the Granite 4.1 Technical Blog.",
+  "quotes": [
+   "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data.",
+   "For full pre-training details (data composition, training recipe, and infrastructure), refer to our [Granite 4.1 Technical Blog](https://huggingface.co/blog/ibm-granite/granite-4-1)."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 555,
+  "cache_read_input_tokens": 16605,
+  "output_tokens": 433
+ },
+ "cost_usd_list_price": 0.009875,
+ "duration_ms": 3219
+}

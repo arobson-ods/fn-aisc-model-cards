@@ -1,0 +1,28 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Molmo2-8B",
+ "fact_id": "model_version",
+ "input_sha256": "7acd606200f2e1681cd76ea432b13727dcfda13a979783c8a003b160dffea2ef",
+ "request_user": "Fact: model_version\nWhat to find: Version identifier of this model release (named version or repository revision).\nThe card's machine-readable metadata gives: \"e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "agreement": "not_stated",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8192,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 188
+ },
+ "cost_usd_list_price": 0.0347682,
+ "duration_ms": 2342
+}

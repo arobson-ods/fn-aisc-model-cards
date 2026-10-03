@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "base_model_relation",
+ "input_sha256": "995bdd731a4cc98ff58ff15027403779b154fe1b44cd39b2bcb7e6fe9b3cb604",
+ "request_user": "Fact: base_model_relation\nWhat to find: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nThe card's machine-readable metadata gives: [\"finetune\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Fine-tuned from base model Olmo-3-32B via post-training stages: SFT, then DPO, then RLVR (final model)",
+  "quotes": [
+   "| **Base Model**           | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) | [Olmo-3-7B](https://huggingface.co/allenai/Olmo-3-1025-7B) | [Olmo-3-32B](https://huggingface.co/allenai/Olmo-3-1125-32B) |",
+   "#### Stage 1: SFT",
+   "#### Stage 2:DPO",
+   "#### Stage 3: RLVR"
+  ],
+  "agreement": "agrees",
+  "section": "Model Details"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 767,
+  "cache_read_input_tokens": 6825,
+  "output_tokens": 388
+ },
+ "cost_usd_list_price": 0.008317,
+ "duration_ms": 3700
+}

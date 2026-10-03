@@ -1,0 +1,876 @@
+model: llama
+repo_id: meta-llama/Llama-4-Scout-17B-16E-Instruct
+retrieved_at: '2026-09-30T10:16:58+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Meta
+    quote: 'Model developer: Meta'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: meta-llama/Llama-4-Scout-17B-16E-Instruct
+    quote: api:id = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: 92f3b1597a195b523d8d9e5700e57e4fbb8f20d3
+    quote: api:sha = "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: 92f3b1597a195b523d8d9e5700e57e4fbb8f20d3
+    quote: api:sha = "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: release_date
+    status: prose
+    value: April 5, 2025
+    quote: 'Model Release Date: April 5, 2025'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: meta-llama/Llama-4-Scout-17B-16E
+    quote: card:base_model = ["meta-llama/Llama-4-Scout-17B-16E"]
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion
+      for native multimodality
+    quote: 'Model Architecture: The Llama 4 models are auto-regressive language models that use a mixture-of-experts
+      (MoE) architecture and incorporate early fusion for native multimodality.'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Auto-regressive language model using a mixture-of-experts (MoE) architecture with early fusion
+      for native multimodality; Llama 4 Scout has 16 experts, 17B activated parameters and 109B total
+      parameters.
+    quote: "Model Architecture: The Llama 4 models are auto-regressive language models that use a mixture-of-experts\
+      \ (MoE) architecture and incorporate early fusion for native multimodality. [...] Llama 4 Scout,\
+      \ a 17 billion parameter model with 16 experts [...] 17B (Activated)\n 109B (Total)"
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text, image
+    quote: derived:pipeline_input_modalities = ["text", "image"]
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: prose
+    value: 'Llama 4 Scout (17Bx16E): context length 10M; tested for image understanding up to 5 input
+      images'
+    quote: Llama 4 Scout (17Bx16E) [...] 10M [...] Llama 4 has been tested for image understanding up
+      to 5 input images.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+  - fact_id: output_modalities
+    status: prose_adds
+    value: Multilingual text and code
+    quote: "Llama 4 Scout (17Bx16E) | \n A mix of publicly available, licensed data and information from\
+      \ Meta's products and services. This includes publicly shared posts from Instagram and Facebook\
+      \ and people's interactions with Meta AI. Learn more in our Privacy Center (https://www.facebook.com/privacy/guide/genai/).\n\
+      \ | \n 17B (Activated)\n 109B (Total)\n | \n Multilingual text and image | \n Multilingual text\
+      \ and code | \n 10M | \n ~40T | \n August 2024 |"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '108641793536'
+    quote: api:safetensors.total = 108641793536
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '108641793536'
+    quote: api:safetensors.total = 108641793536
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Model weights released (Llama 4 Scout as BF16 weights, with on-the-fly int4 quantization code
+      provided) under the Llama 4 Community License; usable via the transformers library with the model
+      id meta-llama/Llama-4-Scout-17B-16E-Instruct. Quantized checkpoints are also provided.
+    quote: 'The Llama 4 Scout model is released as BF16 weights, but can fit within a single H100 GPU
+      with on-the-fly int4 quantization [...] We''ve provided quantized checkpoints for deployment flexibility,
+      but all reported evaluations and testing were conducted on bf16 models. [...] model_id = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      [...] License: A custom commercial license, the Llama 4 Community License Agreement, is available
+      at: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    quote: derived:hub_url = "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Model weights released (Llama 4 Scout as BF16 weights, with on-the-fly int4 quantization code
+      provided) under the Llama 4 Community License; usable via the transformers library with the model
+      id meta-llama/Llama-4-Scout-17B-16E-Instruct. Quantized checkpoints are also provided.
+    quote: 'The Llama 4 Scout model is released as BF16 weights, but can fit within a single H100 GPU
+      with on-the-fly int4 quantization [...] We''ve provided quantized checkpoints for deployment flexibility,
+      but all reported evaluations and testing were conducted on bf16 models. [...] model_id = "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+      [...] License: A custom commercial license, the Llama 4 Community License Agreement, is available
+      at: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: llama4 (other)
+    quote: card:license = "llama4 (other)"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: llama4 (other)
+    quote: card:license = "llama4 (other)"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Quantized checkpoints are provided (Scout as BF16 weights, on-the-fly int4 quantization code
+      provided); technical info and recipes for using Llama 4 in applications are in the llama-cookbook
+      repo (https://github.com/meta-llama/llama-cookbook); system-level protections (Llama Guard, Prompt
+      Guard, Code Shield) are available, with reference implementation at https://github.com/meta-llama/llama-agentic-system;
+      Purple Llama GitHub repo for trust tools.
+    quote: We've provided quantized checkpoints for deployment flexibility, but all reported evaluations
+      and testing were conducted on bf16 models. [...] We provide code for on-the-fly int4 quantization
+      which minimizes performance degradation as well. [...] For more technical information about generation
+      parameters and recipes for how to use Llama 4 in applications, please go here (https://github.com/meta-llama/llama-cookbook).
+      [...] We provide the community with system level protections (https://llama.meta.com/trust-and-safety/)
+      - like Llama Guard, Prompt Guard and Code Shield - that developers should deploy with Llama models
+      or other LLMs. [...] Our Trust tools are open sourced for the community to use and widely distributed
+      across ecosystem partners including cloud service providers.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: acceptable_use_policy
+    status: prose
+    value: 'Out-of-scope uses include use that violates applicable laws or regulations (including trade
+      compliance laws), use prohibited by the Acceptable Use Policy and Llama 4 Community License, and
+      use in languages or capabilities beyond those explicitly supported. License: Llama 4 Community License
+      Agreement (https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE)'
+    quote: 'Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade
+      compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama
+      4 Community License. Use in languages or capabilities beyond those explicitly referenced as supported
+      in this model card**. [...] License: A custom commercial license, the Llama 4 Community License
+      Agreement, is available at: https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Commercial and research use in multiple languages. Instruction tuned models are intended for
+      assistant-like chat and visual reasoning tasks; pretrained models can be adapted for natural language
+      generation. Vision uses include visual recognition, image reasoning, captioning, and answering general
+      questions about an image. Also supports using model outputs to improve other models, including synthetic
+      data generation and distillation.
+    quote: Llama 4 is intended for commercial and research use in multiple languages. Instruction tuned
+      models are intended for assistant-like chat and visual reasoning tasks, whereas pretrained models
+      can be adapted for natural language generation. For vision, Llama 4 models are also optimized for
+      visual recognition, image reasoning, captioning, and answering general questions about an image.
+      The Llama 4 model collection also supports the ability to leverage the outputs of its models to
+      improve other models including synthetic data generation and distillation.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: Use in any manner that violates applicable laws or regulations (including trade compliance
+      laws); use prohibited by the Acceptable Use Policy and Llama 4 Community License; use in languages
+      or capabilities beyond those explicitly referenced as supported in the model card.
+    quote: 'Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade
+      compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama
+      4 Community License. Use in languages or capabilities beyond those explicitly referenced as supported
+      in this model card**.'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+  - fact_id: target_systems
+    status: prose
+    value: Assistant-like chat and visual reasoning systems (instruction tuned models); also natural language
+      generation (pretrained models), image recognition/captioning/question answering, synthetic data
+      generation and distillation to improve other models; should be deployed as part of an overall AI
+      system with additional guardrails.
+    quote: Instruction tuned models are intended for assistant-like chat and visual reasoning tasks, whereas
+      pretrained models can be adapted for natural language generation. [...] The Llama 4 model collection
+      also supports the ability to leverage the outputs of its models to improve other models including
+      synthetic data generation and distillation. [...] Large language models, including Llama 4, are
+      not designed to be deployed in isolation but instead should be deployed as part of an overall AI
+      system with additional guardrails as required.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Use with Hugging Face transformers (v4.51.0 or later) via AutoProcessor and Llama4ForConditionalGeneration,
+      with processor.apply_chat_template for chat-format messages (text and image inputs) and model.generate;
+      the card also points to the Llama cookbook for generation parameters and recipes.
+    quote: Please, make sure you have transformers v4.51.0 installed, or upgrade using pip install -U
+      transformers. [...] from transformers import AutoProcessor, Llama4ForConditionalGeneration [...]
+      inputs = processor.apply_chat_template( [...] outputs = model.generate( [...] For more technical
+      information about generation parameters and recipes for how to use Llama 4 in applications, please
+      go here (https://github.com/meta-llama/llama-cookbook).
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_hardware
+    status: prose
+    value: Llama 4 Scout is released as BF16 weights but can fit within a single H100 GPU with on-the-fly
+      int4 quantization (Maverick FP8 weights fit on a single H100 DGX host).
+    quote: The Llama 4 Scout model is released as BF16 weights, but can fit within a single H100 GPU with
+      on-the-fly int4 quantization; the Llama 4 Maverick model is released as both BF16 and FP8 quantized
+      weights. The FP8 quantized weights fit on a single H100 DGX host while still maintaining quality.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: transformers v4.51.0 (install it or upgrade with pip install -U transformers)
+    quote: Please, make sure you have transformers v4.51.0 installed, or upgrade using pip install -U
+      transformers.
+    source_url: https://huggingface.co/api/models/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: Pretraining on ~40 trillion tokens of multimodal data (Llama 4 Scout), followed by safety fine-tuning
+      using human-generated and synthetic data; the card does not detail other post-training stages (e.g.,
+      SFT, DPO, RL).
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services. [...] We employ a multi-faceted approach to data collection,
+      combining human-generated data from our vendors with synthetic data to mitigate potential safety
+      risks.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: Safety fine-tuning was done to give developers a readily available, safe, and powerful model
+      and reduce their deployment workload. The card says it put great emphasis on driving down refusals
+      to benign prompts, and targeted removing preachy, overly moralizing language and fixing formatting
+      issues.
+    quote: The primary objective of conducting safety fine-tuning is to offer developers a readily available,
+      safe, and powerful model for various applications, reducing the workload needed to deploy safe AI
+      systems. [...] Building on the work we started with our Llama 3 models, we put a great emphasis
+      on driving down model refusals to benign prompts for Llama 4. [...] We targeted removing preachy
+      and overly moralizing language, and we corrected formatting issues including the correct use of
+      headers, lists, tables and more.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_modality
+    status: prose
+    value: Multimodal data (text and images implied by multimodal); card states pretraining on multimodal
+      data from publicly available, licensed data and Meta product/service information
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: A mix of publicly available data, licensed data, and information from Meta's products and services
+      (including publicly shared posts from Instagram and Facebook and people's interactions with Meta
+      AI).
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook
+      and people’s interactions with Meta AI.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: Pretraining data is a mix of publicly available data, licensed data, and information from Meta's
+      products and services (including publicly shared Instagram and Facebook posts and people's interactions
+      with Meta AI). For safety fine-tuning, data combines human-generated data from vendors with synthetic
+      data, with LLM-based classifiers used to select high-quality prompts and responses.
+    quote: 'Overview: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained
+      on ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook
+      and people’s interactions with Meta AI. [...] We employ a multi-faceted approach to data collection,
+      combining human-generated data from our vendors with synthetic data to mitigate potential safety
+      risks. We’ve developed many large language model (LLM)-based classifiers that enable us to thoughtfully
+      select high-quality prompts and responses, enhancing data quality control.'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: answered
+  answers:
+  - fact_id: training_data_size
+    status: prose
+    value: ~40 trillion tokens (Llama 4 Scout)
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_data_size
+    status: prose
+    value: ~40 trillion tokens (Llama 4 Scout)
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: Llama 4 Scout was pretrained on ~40 trillion tokens (Maverick ~22 trillion) of multimodal data
+      from a mix of publicly available, licensed data and information from Meta's products and services,
+      including publicly shared posts from Instagram and Facebook and people's interactions with Meta
+      AI. Pre-training includes 200 total languages; 12 languages are supported. Data cutoff is August
+      2024.
+    quote: 'Overview: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained
+      on ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook
+      and people’s interactions with Meta AI. [...] Data Freshness: The pretraining data has a cutoff
+      of August 2024. [...] Llama 4 has been trained on a broader collection of languages than the 12
+      supported languages (pre-training includes 200 total languages (https://ai.meta.com/research/no-language-left-behind/)).'
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_curation
+    status: prose
+    value: Safety fine-tuning data combines human-generated vendor data with synthetic data, and LLM-based
+      classifiers select high-quality prompts and responses. Pre-training uses data filtering as a first
+      step in mitigating Child Safety risk. No further curation details (e.g., deduplication) are given.
+    quote: We employ a multi-faceted approach to data collection, combining human-generated data from
+      our vendors with synthetic data to mitigate potential safety risks. [...] We’ve developed many large
+      language model (LLM)-based classifiers that enable us to thoughtfully select high-quality prompts
+      and responses, enhancing data quality control. [...] We leverage pre-training methods like data
+      filtering as a first step in mitigating Child Safety risk in our model.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: unsuitable_data_measures
+    status: prose
+    value: For Child Safety risk, pre-training methods like data filtering are used as a first step; LLM-based
+      classifiers are used to select high-quality prompts and responses in safety fine-tuning data.
+    quote: We leverage pre-training methods like data filtering as a first step in mitigating Child Safety
+      risk in our model. [...] We’ve developed many large language model (LLM)-based classifiers that
+      enable us to thoughtfully select high-quality prompts and responses, enhancing data quality control.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+  - fact_id: personal_data
+    status: prose
+    value: Training data includes information from Meta's products and services, including publicly shared
+      posts from Instagram and Facebook and people's interactions with Meta AI. The card does not describe
+      anonymisation or other handling of personal data.
+    quote: Llama 4 Scout was pretrained on ~40 trillion tokens and Llama 4 Maverick was pretrained on
+      ~22 trillion tokens of multimodal data from a mix of publicly available, licensed data and information
+      from Meta’s products and services. This includes publicly shared posts from Instagram and Facebook
+      and people’s interactions with Meta AI.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: answered
+  answers:
+  - fact_id: training_time
+    status: prose
+    value: 'Llama 4 Scout: 5.0M GPU hours (H100-80GB); 7.38M GPU hours cumulative for Scout and Maverick'
+    quote: "Model pre-training utilized a cumulative of 7.38M GPU hours of computation on H100-80GB (TDP\
+      \ of 700W) type hardware, per the table below. [...] Llama 4 Scout | \n5.0M | \n700 | \n1,354 |\
+      \ \n0 |"
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_hardware
+    status: prose
+    value: H100-80GB (TDP of 700W) GPUs on Meta's custom built GPU clusters; 7.38M cumulative GPU hours
+      for pre-training (5.0M for Llama 4 Scout). GPU count not stated.
+    quote: "Training Factors: We used custom training libraries, Meta's custom built GPU clusters, and\
+      \ production infrastructure for pretraining. [...] Model pre-training utilized a cumulative of 7.38M\
+      \ GPU hours of computation on H100-80GB (TDP of 700W) type hardware, per the table below. [...]\
+      \ Llama 4 Scout | \n5.0M | \n700 | \n1,354 | \n0 |"
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+  - fact_id: training_time
+    status: prose
+    value: 'Llama 4 Scout: 5.0M GPU hours (H100-80GB); 7.38M GPU hours cumulative for Scout and Maverick'
+    quote: "Model pre-training utilized a cumulative of 7.38M GPU hours of computation on H100-80GB (TDP\
+      \ of 700W) type hardware, per the table below. [...] Llama 4 Scout | \n5.0M | \n700 | \n1,354 |\
+      \ \n0 |"
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: compute_methodology
+    status: prose
+    value: Training computation is reported as GPU hours on H100-80GB (TDP 700W) hardware, defined as
+      the total GPU time required for training each model. The card points to a linked methodology (arxiv.org/pdf/2204.05149)
+      for training energy use and greenhouse gas emissions.
+    quote: Training time is the total GPU time required for training each model and power consumption
+      is the peak power capacity per GPU device used, adjusted for power usage efficiency. [...] The methodology
+      used to determine training energy use and greenhouse gas emissions can be found here (https://arxiv.org/pdf/2204.05149).
+      [...] Model pre-training utilized a cumulative of 7.38M GPU hours of computation on H100-80GB (TDP
+      of 700W) type hardware, per the table below.
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: energy_methodology
+    status: prose
+    value: Training time is the total GPU time required for training each model, and power consumption
+      is the peak power capacity per GPU device used, adjusted for power usage efficiency; the methodology
+      is detailed in the linked paper (https://arxiv.org/pdf/2204.05149).
+    quote: Training time is the total GPU time required for training each model and power consumption
+      is the peak power capacity per GPU device used, adjusted for power usage efficiency. [...] The methodology
+      used to determine training energy use and greenhouse gas emissions can be found here (https://arxiv.org/pdf/2204.05149).
+    source_url: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
+    source_type: card
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

@@ -1,0 +1,1299 @@
+[
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/provider_name__v4.json",
+  "status": "prose",
+  "value": "webAI (published under the webAI-Official organisation)",
+  "quote": "model_id = \"webAI-Official/TwIL-LM3\" [...] Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this",
+  "quotes": [
+   "model_id = \"webAI-Official/TwIL-LM3\"",
+   "Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this"
+  ],
+  "section": "Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "webAI-Official/TwIL-LM3",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "api:id = \"webAI-Official/TwIL-LM3\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "webAI-Official/TwIL-LM3",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "api:sha = \"e4f94da572d9857a91ca0dca857cebb0cbe6755a\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "api:sha = \"e4f94da572d9857a91ca0dca857cebb0cbe6755a\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "e4f94da572d9857a91ca0dca857cebb0cbe6755a",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "webai-non-commercial-license-ver.-1.0 (other)",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "card:license = \"webai-non-commercial-license-ver.-1.0 (other)\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "other",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "card:license_name",
+    "value": "webai-non-commercial-license-ver.-1.0",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "card:license_link",
+    "value": "https://huggingface.co/webAI-Official/TwIL-LM3/blob/main/LICENSE.md",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B is Apache 2.0",
+   "quotes": [
+    "| License                   | webAI Non-Commercial License ver. 1.0                                                       |",
+    "Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this\nrepository.",
+    "is Apache 2.0; its licence text is retained as `apache-2.0-LICENSE.txt` and all credit for the\nbase model goes to the HuggingFaceTB team."
+   ],
+   "agreement": "adds",
+   "section": "License and attribution",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/acceptable_use_policy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/additional_assets__v4.json",
+  "status": "prose",
+  "value": "Quantized GGUF builds (Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16) ship in the same repository alongside the safetensors weights; the TwIL-LM3* weights are unreleased (\"will be released soon\").",
+  "quote": "Quantized GGUF builds ship in this repository alongside the safetensors weights. [...] **TwIL-LM3\\*** is our latest version of TwIL-LM3. **The weights will be released soon** [...] | `TwIL-LM3-Q4_K_M.gguf` | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or 4 GB of VRAM |",
+  "quotes": [
+   "Quantized GGUF builds ship in this repository alongside the safetensors weights.",
+   "**TwIL-LM3\\*** is our latest version of TwIL-LM3. **The weights will be released soon**",
+   "| `TwIL-LM3-Q4_K_M.gguf` | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or 4 GB of VRAM |"
+  ],
+  "section": "Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/architecture_family__v4.json",
+  "status": "prose",
+  "value": "SmolLM3 decoder-only transformer; 36 layers, hidden size 2048",
+  "quote": "| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                |",
+  "quotes": [
+   "| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                |"
+  ],
+  "section": "Model Details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/architecture_details__v4.json",
+  "status": "prose",
+  "value": "SmolLM3 decoder-only transformer; 36 layers, hidden size 2048; 3.08B total parameters; 128,256 vocabulary; 65,536-token context window. No rationale for the design choices is given.",
+  "quote": "| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                | [...] | Total parameters          | 3.08B                                                                                       | [...] | Tokenizer vocabulary size | 128,256                                                                                     | [...] | Context window            | 65,536 tokens                                                                               |",
+  "quotes": [
+   "| Architecture              | SmolLM3 decoder-only transformer; 36 layers, hidden size 2048                                |",
+   "| Total parameters          | 3.08B                                                                                       |",
+   "| Tokenizer vocabulary size | 128,256                                                                                     |",
+   "| Context window            | 65,536 tokens                                                                               |"
+  ],
+  "section": "Model Details",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": 3075098624,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "api:safetensors.total = 3075098624",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 3075098624,
+    "source_type": "hub_api"
+   },
+   {
+    "path": "api:gguf.total",
+    "value": 3075098624,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "3.08B total parameters",
+   "quotes": [
+    "| Total parameters          | 3.08B                                                                                       |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "derived:pipeline_input_modalities = [\"text\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Text input, text output",
+   "quotes": [
+    "| Input / output            | Text / text                                                                                 |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": 65536,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/config.json",
+  "quote": "config:max_position_embeddings = 65536",
+  "section": "config:max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:max_position_embeddings",
+    "value": 65536,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Context window of 65,536 tokens (inherited from base model; all scores measured within an 8,192-token window)",
+   "quotes": [
+    "| Context window            | 65,536 tokens                                                                               |",
+    "The base model's 65,536-token context is carried through unchanged, but every score on this card\nwas measured inside an 8,192-token window; longer contexts are inherited rather than validated\nhere."
+   ],
+   "agreement": "adds",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Text output (input/output: Text / text)",
+   "quotes": [
+    "| Input / output            | Text / text                                                                                 |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/max_output_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "text-generation",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "card:pipeline_tag = \"text-generation\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/config.json",
+  "quote": "config:torch_dtype = \"bfloat16\"",
+  "section": "config:torch_dtype",
+  "evidence": [
+   {
+    "path": "config:torch_dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   },
+   {
+    "path": "tags:gguf",
+    "value": [
+     "gguf"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Checkpoint precision is bfloat16 (5.73 GiB), plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds",
+   "quotes": [
+    "| Checkpoint precision      | bfloat16 (5.73 GiB), plus Q4\\_K\\_M / Q5\\_K\\_M / Q6\\_K / Q8\\_0 / F16 GGUF builds              |"
+   ],
+   "agreement": "adds",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_provenance__v4.json",
+  "status": "prose",
+  "value": "Synthetic: LoRA SFT was done on a synthetic formal-logic corpus covering the Track A objectives.",
+  "quote": "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction).",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction)."
+  ],
+  "section": "How it was built",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_acquisition__v4.json",
+  "status": "prose",
+  "value": "LoRA supervised fine-tuning used a synthetic formal-logic corpus covering the Track A objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction). The RL stage (MGPO) used a programmatic verifier. The card does not state how rights were obtained.",
+  "quote": "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction). [...] 4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient.",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction).",
+   "4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient."
+  ],
+  "section": "How it was built",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_scope__v4.json",
+  "status": "prose",
+  "value": "LoRA SFT used a synthetic formal-logic corpus covering the Track A objectives: first-order-logic translation, entailment labelling, semantic parsing, Lean formalisation and critique, procedural reasoning, rule induction.",
+  "quote": "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction).",
+  "quotes": [
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A\n   objectives (first-order-logic translation, entailment labelling, semantic parsing, Lean\n   formalisation and critique, procedural reasoning, rule induction)."
+  ],
+  "section": "How it was built",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_method__v4.json",
+  "status": "prose",
+  "value": "Four post-training stages on top of SmolLM3-3B: LoRA supervised fine-tuning on a synthetic formal-logic corpus, checkpoint fusion (parameter-space averaging of intermediate SFT checkpoints), WiSE-FT interpolation toward the base with λ = 0.25, and MGPO (entropy-weighted GRPO reinforcement learning against a programmatic verifier), published checkpoint step 2071.",
+  "quote": "Four stages on top of the base model: [...] 1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A [...] 2. **Checkpoint fusion** — parameter-space averaging of intermediate SFT checkpoints selected [...] 3. **WiSE-FT interpolation** toward the pretrained base, `W = (1 − λ)·W_base + λ·W_finetuned` [...] 4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with [...] partial credit for loose matches and token-F1 so that all-fail prompt groups still produce",
+  "quotes": [
+   "Four stages on top of the base model:",
+   "1. **LoRA supervised fine-tuning** on a synthetic formal-logic corpus covering the Track A",
+   "2. **Checkpoint fusion** — parameter-space averaging of intermediate SFT checkpoints selected",
+   "3. **WiSE-FT interpolation** toward the pretrained base, `W = (1 − λ)·W_base + λ·W_finetuned`",
+   "4. **MGPO** — entropy-weighted GRPO reinforcement learning against a programmatic verifier, with",
+   "partial credit for loose matches and token-F1 so that all-fail prompt groups still produce"
+  ],
+  "section": "How it was built",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/design_rationale__v4.json",
+  "status": "prose",
+  "value": "WiSE-FT interpolation toward the base with λ = 0.25 (only a quarter of the fine-tuned delta retained), chosen by constrained optimisation (maximise in-domain score subject to minimal held-out degradation) so held-out capability survives. Checkpoint fusion averaged intermediate SFT checkpoints selected by a diversity probe rather than the final checkpoint. MGPO (entropy-weighted GRPO) used partial credit for loose matches and token-F1 so all-fail prompt groups still produce gradient. A sibling arm without the conservative interpolation scored higher in-domain but lost about twelve points of held-out capability; this release is the balanced point of that trade.",
+  "quote": "parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe, rather than taking the final checkpoint. [...] with **λ = 0.25** — i.e. only a quarter of the fine-tuned delta is retained. λ was chosen by\n   constrained optimisation: maximise in-domain score subject to minimal degradation on held-out\n   benchmarks. This conservative λ is the direct reason held-out capability survives. [...] with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient. [...] A sibling arm that skipped stage 3's conservative interpolation scores considerably higher\nin-domain (macro gate 0.515) but gives back roughly twelve points of held-out capability. This\nrelease is the balanced point of that trade; the other was not published.",
+  "quotes": [
+   "parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe, rather than taking the final checkpoint.",
+   "with **λ = 0.25** — i.e. only a quarter of the fine-tuned delta is retained. λ was chosen by\n   constrained optimisation: maximise in-domain score subject to minimal degradation on held-out\n   benchmarks. This conservative λ is the direct reason held-out capability survives.",
+   "with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient.",
+   "A sibling arm that skipped stage 3's conservative interpolation scores considerably higher\nin-domain (macro gate 0.515) but gives back roughly twelve points of held-out capability. This\nrelease is the balanced point of that trade; the other was not published."
+  ],
+  "section": "How it was built",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/intended_uses__v4.json",
+  "status": "prose",
+  "value": "A 3B reasoning model for formal logic tasks: FOL translation, entailment labels, semantic parses, Lean formalisation and Lean proof critique. It is not a general assistant or chat model.",
+  "quote": "A 3B reasoning model for **formal logic** tasks, built from [...] Tuned for the objects rather than the prose: FOL translation,\n  entailment labels, semantic parses, Lean statements and Lean proof critique. [...] It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3\ncarries, and instruction following regressed slightly.",
+  "quotes": [
+   "A 3B reasoning model for **formal logic** tasks, built from",
+   "Tuned for the objects rather than the prose: FOL translation,\n  entailment labels, semantic parses, Lean statements and Lean proof critique.",
+   "It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3\ncarries, and instruction following regressed slightly."
+  ],
+  "section": "TwIL-LM3",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/out_of_scope_uses__v4.json",
+  "status": "prose",
+  "value": "Not a general assistant or chat model; it is tuned for formal logic only. It has no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). No claim is made about code generation or tool use.",
+  "quote": "It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3\ncarries, and instruction following regressed slightly. [...] **Not a chat model.** It was optimised against automatic verifiers on logic tasks. It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly. [...] **Scope.** Tuned for formal logic. The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those.",
+  "quotes": [
+   "It is not a general assistant: there is no safety or preference tuning here beyond what SmolLM3\ncarries, and instruction following regressed slightly.",
+   "**Not a chat model.** It was optimised against automatic verifiers on logic tasks. It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly.",
+   "**Scope.** Tuned for formal logic. The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those."
+  ],
+  "section": "Limitations and caveats",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/target_systems__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/integration_means__v4.json",
+  "status": "prose",
+  "value": "Hugging Face transformers (AutoModelForCausalLM/AutoTokenizer with apply_chat_template, bf16); GGUF builds for llama.cpp (llama-cli); evaluated via vLLM backend; model emits a <think>…</think> block before the answer; greedy decoding (do_sample=False) with ≥2048 new tokens recommended",
+  "quote": "model = AutoModelForCausalLM.from_pretrained(\n    model_id, torch_dtype=torch.bfloat16, device_map=\"auto\"\n) [...] inputs = tok.apply_chat_template( [...] Quantized GGUF builds ship in this repository alongside the safetensors weights. The `smollm3`\narchitecture is supported by llama.cpp, and the chat template, `<|im_end|>` EOS and BOS are\ncarried into the GGUF metadata, so chat mode works without extra flags. [...] llama-cli -m TwIL-LM3-Q4_K_M.gguf -cnv --temp 0 -n 2048 [...] The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse. [...] The published Track A and Track B numbers were measured on the **bf16** weights through vLLM",
+  "quotes": [
+   "model = AutoModelForCausalLM.from_pretrained(\n    model_id, torch_dtype=torch.bfloat16, device_map=\"auto\"\n)",
+   "inputs = tok.apply_chat_template(",
+   "Quantized GGUF builds ship in this repository alongside the safetensors weights. The `smollm3`\narchitecture is supported by llama.cpp, and the chat template, `<|im_end|>` EOS and BOS are\ncarried into the GGUF metadata, so chat mode works without extra flags.",
+   "llama-cli -m TwIL-LM3-Q4_K_M.gguf -cnv --temp 0 -n 2048",
+   "The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse.",
+   "The published Track A and Track B numbers were measured on the **bf16** weights through vLLM"
+  ],
+  "section": "Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/required_hardware__v4.json",
+  "status": "prose",
+  "value": "Q4_K_M GGUF build (1.78 GiB) runs on CPU or 4 GB of VRAM",
+  "quote": "| `TwIL-LM3-Q4_K_M.gguf` | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or 4 GB of VRAM |",
+  "quotes": [
+   "| `TwIL-LM3-Q4_K_M.gguf` | Q4_K_M | 1.78 GiB | 4.96 | recommended default; runs on CPU or 4 GB of VRAM |"
+  ],
+  "section": "GGUF / llama.cpp",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 5.5.0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Hugging Face transformers (works on both 4.x and 5.x); llama.cpp is also supported for the GGUF builds.",
+   "quotes": [
+    "`return_dict=True` matters on transformers 5.x, where `apply_chat_template` returns a",
+    "`BatchEncoding` rather than a bare tensor; the above works on both 4.x and 5.x.",
+    "architecture is supported by llama.cpp, and the chat template, `<|im_end|>` EOS and BOS are"
+   ],
+   "agreement": "adds",
+   "section": "Usage",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/limitations__v4.json",
+  "status": "prose",
+  "value": "Truncation: 4.4% of Track A generations hit the 2048-token cap, so the macro gate is indicative rather than exact. Scope is limited to formal logic; code generation and tool use not evaluated. Not a chat model: no safety tuning beyond the base model's and no instruction-following alignment (IFEval regressed slightly). A short generation budget truncates the <think> reasoning and scores far worse.",
+  "quote": "At a 2048-token budget, 4.4% of Track A generations hit the cap — better than\nthe base's 17.4%, but still above the 2% threshold our protocol requires to mark a comparison\n`rankable`. [...] The Track A macro gate should therefore be read as indicative rather than exact. [...] The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those. [...] It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly. [...] The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse.",
+  "quotes": [
+   "At a 2048-token budget, 4.4% of Track A generations hit the cap — better than\nthe base's 17.4%, but still above the 2% threshold our protocol requires to mark a comparison\n`rankable`.",
+   "The Track A macro gate should therefore be read as indicative rather than exact.",
+   "The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those.",
+   "It has had no\nsafety tuning beyond whatever the base model carries, and no instruction-following alignment\nwork — IFEval regressed slightly.",
+   "The model opens a `<think>...</think>` reasoning block\nbefore answering, so a short generation budget truncates reasoning and scores far worse."
+  ],
+  "section": "Limitations and caveats",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": [
+   "en"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "card:language = [\"en\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "English",
+   "quotes": [
+    "| Language                  | English                                                                                     |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Details",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/eval_results__v4.json",
+  "status": "prose",
+  "value": "TwIL-LM3 Track A (in-domain): lean_formalize token_f1 0.5869; rule_induction derivation 0.3192; entailment_label accuracy 0.5750; semantic_parse token_f1 0.4416; lean_critic accuracy 0.6600; macro gate 0.4218; strict-7 0.1971. Track B (held-out): gsm8k 0.8733; svamp 0.8500; macro (10 CoT datasets) 0.7339; macro (all 14) 0.6694.",
+  "quote": "| lean_formalize token_f1 | 0.5869 | **0.6456** | 0.4347 | 0.3690 | 0.1321 | 0.4655 | 0.4022 | 0.6306 | [...] | rule_induction derivation | 0.3192 | **0.9644** | 0.1029 | 0.0825 | 0.0615 | 0.1936 | 0.3680 | 0.6518 | [...] | entailment_label accuracy | 0.5750 | 0.6867 | 0.3750 | 0.3300 | 0.4700 | 0.5400 | 0.5800 | **0.7750** | [...] | semantic_parse token_f1 | 0.4416 | **0.8762** | 0.4149 | 0.3102 | 0.3665 | 0.3778 | 0.4257 | 0.4331 | [...] | lean_critic accuracy | 0.6600 | 0.5200 | 0.6500 | 0.5300 | 0.5900 | 0.5500 | **0.7950** | 0.5550 | [...] | **macro gate** | 0.4218 | **0.5896** | 0.3466 † | 0.2925 | 0.3473 | 0.3757 | 0.5336 | — | [...] | **strict-7** | 0.1971 | **0.3290** | 0.1493 | 0.1229 | 0.1579 | 0.1714 | 0.2093 | — | [...] | gsm8k | 0.8733 | 0.8833 | 0.8300 | 0.8767 | 0.9133 | 0.9567 | **0.9767** | [...] | svamp | 0.8500 | 0.8567 | 0.8200 | 0.9000 | 0.9133 | **0.9400** | **0.9400** | [...] | **macro (10 CoT datasets)** | 0.7339 | 0.7193 | 0.6997 | 0.7523 | 0.7884 | 0.8493 | **0.8689** | [...] | **macro (all 14)** | 0.6694 | 0.6612 | 0.6245 | 0.6814 | 0.7378 | 0.7591 | **0.8086** |",
+  "quotes": [
+   "| lean_formalize token_f1 | 0.5869 | **0.6456** | 0.4347 | 0.3690 | 0.1321 | 0.4655 | 0.4022 | 0.6306 |",
+   "| rule_induction derivation | 0.3192 | **0.9644** | 0.1029 | 0.0825 | 0.0615 | 0.1936 | 0.3680 | 0.6518 |",
+   "| entailment_label accuracy | 0.5750 | 0.6867 | 0.3750 | 0.3300 | 0.4700 | 0.5400 | 0.5800 | **0.7750** |",
+   "| semantic_parse token_f1 | 0.4416 | **0.8762** | 0.4149 | 0.3102 | 0.3665 | 0.3778 | 0.4257 | 0.4331 |",
+   "| lean_critic accuracy | 0.6600 | 0.5200 | 0.6500 | 0.5300 | 0.5900 | 0.5500 | **0.7950** | 0.5550 |",
+   "| **macro gate** | 0.4218 | **0.5896** | 0.3466 † | 0.2925 | 0.3473 | 0.3757 | 0.5336 | — |",
+   "| **strict-7** | 0.1971 | **0.3290** | 0.1493 | 0.1229 | 0.1579 | 0.1714 | 0.2093 | — |",
+   "| gsm8k | 0.8733 | 0.8833 | 0.8300 | 0.8767 | 0.9133 | 0.9567 | **0.9767** |",
+   "| svamp | 0.8500 | 0.8567 | 0.8200 | 0.9000 | 0.9133 | **0.9400** | **0.9400** |",
+   "| **macro (10 CoT datasets)** | 0.7339 | 0.7193 | 0.6997 | 0.7523 | 0.7884 | 0.8493 | **0.8689** |",
+   "| **macro (all 14)** | 0.6694 | 0.6612 | 0.6245 | 0.6814 | 0.7378 | 0.7591 | **0.8086** |"
+  ],
+  "section": "Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "Track A (in-domain formal logic lanes): lean_formalize, rule_induction, entailment_label, mcq_answer, semantic_parse, lean_critic, plus lm_corpus and math_corpus perplexity. Track B (held-out benchmarks): gsm8k, svamp, gsm_symbolic, arc_cot, logicbench, strategyqa, drop, csqa, musr, mmlu_redux, ifeval, rudas_ood, bbh_logic, math500.",
+  "quote": "| lean_formalize token_f1 | 0.5869 | **0.6456** | 0.4347 | 0.3690 | 0.1321 | 0.4655 | 0.4022 | 0.6306 | [...] | rule_induction derivation | 0.3192 | **0.9644** | 0.1029 | 0.0825 | 0.0615 | 0.1936 | 0.3680 | 0.6518 | [...] | entailment_label accuracy | 0.5750 | 0.6867 | 0.3750 | 0.3300 | 0.4700 | 0.5400 | 0.5800 | **0.7750** | [...] | mcq_answer accuracy | 0.1100 | **0.5200** | 0.0000 | 0.0000 | 0.0150 | 0.0750 | 0.0000 | 0.0700 | [...] | semantic_parse token_f1 | 0.4416 | **0.8762** | 0.4149 | 0.3102 | 0.3665 | 0.3778 | 0.4257 | 0.4331 | [...] | lean_critic accuracy | 0.6600 | 0.5200 | 0.6500 | 0.5300 | 0.5900 | 0.5500 | **0.7950** | 0.5550 | [...] | lm_corpus perplexity ↓ | 2.8972 | 3.1284 | 3.1818 | 2.8478 | 4.3815 | 4.9472 | **2.5440** | 912.23 § | [...] | math_corpus perplexity ↓ | 3.8229 | **3.5245** | 4.0685 | 4.7531 | 6.7472 | 8.3323 | 4.0083 | 1045.63 § | [...] | gsm8k | 0.8733 | 0.8833 | 0.8300 | 0.8767 | 0.9133 | 0.9567 | **0.9767** | [...] | svamp | 0.8500 | 0.8567 | 0.8200 | 0.9000 | 0.9133 | **0.9400** | **0.9400** | [...] | gsm_symbolic | 0.7567 | 0.7633 | 0.8067 | **0.9767** | 0.9267 | 0.8133 | 0.8467 | [...] | arc_cot | 0.8467 | 0.8400 | 0.7967 | 0.8667 | 0.9033 | 0.9633 | **0.9667** | [...] | logicbench | 0.7167 | 0.6467 | 0.5733 | 0.6267 | 0.7200 | **0.8567** | 0.8533 | [...] | strategyqa | 0.6500 | 0.6333 | 0.6533 | 0.6433 | 0.6667 | 0.7400 | **0.7867** | [...] | drop | 0.7467 | 0.7000 | 0.6733 | 0.6900 | 0.6633 | **0.8833** | 0.8500 | [...] | csqa | 0.7367 | 0.7067 | 0.7500 | 0.7433 | 0.7700 | **0.8633** | 0.8367 | [...] | musr | 0.4957 | 0.4997 | 0.4932 | 0.4867 | 0.5703 | 0.6301 | **0.6852** | [...] | mmlu_redux | 0.6667 | 0.6633 | 0.6000 | 0.7133 | 0.8367 | 0.8500 | **0.9467** | [...] | ifeval | 0.6433 | 0.6767 | 0.7167 | 0.7300 | **0.8900** | 0.8400 | 0.7900 | [...] | rudas_ood | 0.0365 | 0.0209 | **0.0733** | 0.0017 | 0.0061 | 0.0468 | 0.0000 ¶ | [...] | bbh_logic | 0.6633 | 0.6667 | 0.5333 | 0.5713 | 0.7700 | 0.6367 | **0.9980** | [...] | math500 | 0.6900 | 0.7000 | 0.4233 | 0.7133 | 0.7800 | 0.6100 | **0.8433** |",
+  "quotes": [
+   "| lean_formalize token_f1 | 0.5869 | **0.6456** | 0.4347 | 0.3690 | 0.1321 | 0.4655 | 0.4022 | 0.6306 |",
+   "| rule_induction derivation | 0.3192 | **0.9644** | 0.1029 | 0.0825 | 0.0615 | 0.1936 | 0.3680 | 0.6518 |",
+   "| entailment_label accuracy | 0.5750 | 0.6867 | 0.3750 | 0.3300 | 0.4700 | 0.5400 | 0.5800 | **0.7750** |",
+   "| mcq_answer accuracy | 0.1100 | **0.5200** | 0.0000 | 0.0000 | 0.0150 | 0.0750 | 0.0000 | 0.0700 |",
+   "| semantic_parse token_f1 | 0.4416 | **0.8762** | 0.4149 | 0.3102 | 0.3665 | 0.3778 | 0.4257 | 0.4331 |",
+   "| lean_critic accuracy | 0.6600 | 0.5200 | 0.6500 | 0.5300 | 0.5900 | 0.5500 | **0.7950** | 0.5550 |",
+   "| lm_corpus perplexity ↓ | 2.8972 | 3.1284 | 3.1818 | 2.8478 | 4.3815 | 4.9472 | **2.5440** | 912.23 § |",
+   "| math_corpus perplexity ↓ | 3.8229 | **3.5245** | 4.0685 | 4.7531 | 6.7472 | 8.3323 | 4.0083 | 1045.63 § |",
+   "| gsm8k | 0.8733 | 0.8833 | 0.8300 | 0.8767 | 0.9133 | 0.9567 | **0.9767** |",
+   "| svamp | 0.8500 | 0.8567 | 0.8200 | 0.9000 | 0.9133 | **0.9400** | **0.9400** |",
+   "| gsm_symbolic | 0.7567 | 0.7633 | 0.8067 | **0.9767** | 0.9267 | 0.8133 | 0.8467 |",
+   "| arc_cot | 0.8467 | 0.8400 | 0.7967 | 0.8667 | 0.9033 | 0.9633 | **0.9667** |",
+   "| logicbench | 0.7167 | 0.6467 | 0.5733 | 0.6267 | 0.7200 | **0.8567** | 0.8533 |",
+   "| strategyqa | 0.6500 | 0.6333 | 0.6533 | 0.6433 | 0.6667 | 0.7400 | **0.7867** |",
+   "| drop | 0.7467 | 0.7000 | 0.6733 | 0.6900 | 0.6633 | **0.8833** | 0.8500 |",
+   "| csqa | 0.7367 | 0.7067 | 0.7500 | 0.7433 | 0.7700 | **0.8633** | 0.8367 |",
+   "| musr | 0.4957 | 0.4997 | 0.4932 | 0.4867 | 0.5703 | 0.6301 | **0.6852** |",
+   "| mmlu_redux | 0.6667 | 0.6633 | 0.6000 | 0.7133 | 0.8367 | 0.8500 | **0.9467** |",
+   "| ifeval | 0.6433 | 0.6767 | 0.7167 | 0.7300 | **0.8900** | 0.8400 | 0.7900 |",
+   "| rudas_ood | 0.0365 | 0.0209 | **0.0733** | 0.0017 | 0.0061 | 0.0468 | 0.0000 ¶ |",
+   "| bbh_logic | 0.6633 | 0.6667 | 0.5333 | 0.5713 | 0.7700 | 0.6367 | **0.9980** |",
+   "| math500 | 0.6900 | 0.7000 | 0.4233 | 0.7133 | 0.7800 | 0.6100 | **0.8433** |"
+  ],
+  "section": "Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/eval_methodology__v4.json",
+  "status": "prose",
+  "value": "Track A: n = 200 per objective, greedy (temperature = 0), max_new_tokens = 2048, one retry at 4096 for truncated rows, max_seq_len = 8192, seed 42. Track B: 300 examples per task, greedy, max_gen_toks = 4096, max_model_len = 8192, repetition_penalty = 1.0, chat template applied, vLLM backend. Same protocol for model and base in a paired run over identical sampled rows.",
+  "quote": "- Track A: `n = 200` per objective, greedy (`temperature = 0`), `max_new_tokens = 2048`, one\n  retry at 4096 for truncated rows, `max_seq_len = 8192`, seed 42. [...] - Track B: 300 examples per task, greedy, `max_gen_toks = 4096`, `max_model_len = 8192`,\n  `repetition_penalty = 1.0`, chat template applied, vLLM backend. [...] - Both tracks use the same protocol for the model and its base, in a paired run over identical\n  sampled rows.",
+  "quotes": [
+   "- Track A: `n = 200` per objective, greedy (`temperature = 0`), `max_new_tokens = 2048`, one\n  retry at 4096 for truncated rows, `max_seq_len = 8192`, seed 42.",
+   "- Track B: 300 examples per task, greedy, `max_gen_toks = 4096`, `max_model_len = 8192`,\n  `repetition_penalty = 1.0`, chat template applied, vLLM backend.",
+   "- Both tracks use the same protocol for the model and its base, in a paired run over identical\n  sampled rows."
+  ],
+  "section": "Evaluation protocol",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "HuggingFaceTB/SmolLM3-3B",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "card:base_model = \"HuggingFaceTB/SmolLM3-3B\"",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": "HuggingFaceTB/SmolLM3-3B",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "HuggingFaceTB/SmolLM3-3B (fine-tuned via LoRA SFT, checkpoint fusion, WiSE-FT interpolation and GRPO-based RL)",
+   "quotes": [
+    "A 3B reasoning model for **formal logic** tasks, built from\n[`HuggingFaceTB/SmolLM3-3B`](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) through LoRA\nsupervised fine-tuning, checkpoint fusion, WiSE-FT weight interpolation, and entropy-weighted\nGRPO reinforcement learning.",
+    "| Base model                | [`HuggingFaceTB/SmolLM3-3B`](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)                |"
+   ],
+   "agreement": "agrees",
+   "section": "# TwIL-LM3",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": [
+   "adapter"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "derived:base_model_relation_tags = [\"adapter\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "adapter"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Fine-tune of SmolLM3-3B via LoRA SFT, checkpoint fusion, WiSE-FT interpolation and GRPO RL; released as a full merged model rather than an adapter",
+   "quotes": [
+    "A 3B reasoning model for **formal logic** tasks, built from\n[`HuggingFaceTB/SmolLM3-3B`](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) through LoRA\nsupervised fine-tuning, checkpoint fusion, WiSE-FT weight interpolation, and entropy-weighted\nGRPO reinforcement learning.",
+    "Both repositories now ship full\nmerged models on `main`, loaded directly with `AutoModelForCausalLM`; the original LoRA-adapter\nrelease is archived on that repository's `TwIL-LM1` branch."
+   ],
+   "agreement": "conflicts",
+   "section": "TwIL-LM3",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/webAI-Official/TwIL-LM3/raw/e4f94da572d9857a91ca0dca857cebb0cbe6755a/README.md",
+  "llm_cache": "data/raw/llm/twil_smollm/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face in this repository (safetensors bf16 plus Q4_K_M / Q5_K_M / Q6_K / Q8_0 / F16 GGUF builds for llama.cpp); the TwIL-LM3* weights are not yet released.",
+  "quote": "Quantized GGUF builds ship in this repository alongside the safetensors weights. [...] Checkpoint precision      | bfloat16 (5.73 GiB), plus Q4\\_K\\_M / Q5\\_K\\_M / Q6\\_K / Q8\\_0 / F16 GGUF builds [...] **The weights will be released soon** — the\nfiles in this repository are the current TwIL-LM3 release, not this one.",
+  "quotes": [
+   "Quantized GGUF builds ship in this repository alongside the safetensors weights.",
+   "Checkpoint precision      | bfloat16 (5.73 GiB), plus Q4\\_K\\_M / Q5\\_K\\_M / Q6\\_K / Q8\\_0 / F16 GGUF builds",
+   "**The weights will be released soon** — the\nfiles in this repository are the current TwIL-LM3 release, not this one."
+  ],
+  "section": "GGUF / llama.cpp",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "twil_smollm",
+  "repo_id": "webAI-Official/TwIL-LM3",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:06+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/webAI-Official/TwIL-LM3",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/webAI-Official/TwIL-LM3",
+  "quote": "derived:hub_url = \"https://huggingface.co/webAI-Official/TwIL-LM3\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/webAI-Official/TwIL-LM3",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

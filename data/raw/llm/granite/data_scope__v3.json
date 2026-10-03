@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "data_scope",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: data_scope\nWhat to find: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nCard sections that often contain it: Training Data\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The SFT corpus draws on four sources: publicly available permissively licensed datasets, internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic traces across diverse tasks, and curated human-authored data. The base model was pre-trained on a large-scale English as well as multilingual corpus. Fine-tuning data is mostly English, with some multilingual data covering the supported languages.",
+  "quotes": [
+   "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data.",
+   "Granite-4.2-8B builds on [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base), which was pre-trained on a large-scale English as well as multilingual corpus.",
+   "Granite 4.2 models are primarily finetuned using instruction-response pairs mostly in English, but also multilingual data covering the supported languages listed above."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 16417,
+  "output_tokens": 517
+ },
+ "cost_usd_list_price": 0.0106214,
+ "duration_ms": 3457
+}

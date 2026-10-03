@@ -1,0 +1,38 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "eval_results",
+ "input_sha256": "c7080861e74994fc13d20a8b21e09f0081e7b92cb4959f30a9f8f70bd6b9aaa3",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nThe card's machine-readable metadata gives: [{\"name\": \"Phi-4-Reasoning-Vision-15B\", \"results\": [{\"task\": {\"type\": \"visual-question-answering\"}, \"dataset\": {\"name\": \"AI2D\", \"type\": \"ai2d\"}, \"metrics\": [{\"type\": \"accuracy\", \"value\": 84.8, \"verified\": false}]}, {\"task\": {\"type\": \"visual-question-answering\"}, \"dataset\": {\"name\": \"ChartQA\", \"type\": \"chartqa\"}, \"metrics\": [{\"type\": \"accuracy\", \"value\": 83.3, \"verified\": false}]}, {\"task\": {\"type\": \"visual-question-answering\"}, \"dataset\": {\"name\": \"MathVista (MINI)\", \"type\": \"mathvista\"}, \"metri\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Table 1 reports Phi-4-reasoning-vision-15B scores: AI2D_TEST 84.8, ChartQA_TEST 83.3, MathVista_MINI 75.2, MMMU_VAL 54.3, MMStar 64.5, OCRBench 76, ScreenSpot_v2 88.2 (also HallusionBench 64.4, MathVerse_MINI 44.9, MathVision_MINI 36.2). Safety defect rates: text to text 1.4%, image to text 4.5%.",
+  "quotes": [
+   "| AI2D_TEST | 84.8 | 84.7 | 68.6 | 84.6 | 80.4 | 82.7 | 83 | 84.8 | 85 |",
+   "| ChartQA_TEST | 83.3 | 76.5 | 23.5 | 87 | 39 | 83.1 | 83.2 | 84.3 | 84 |",
+   "| MathVista_MINI | 75.2 | 68.7 | 50.5 | 67.1 | 57.4 | 77.1 | 76.4 | 82.5 | 81.8 |",
+   "| MMMU_VAL | 54.3 | 52 | 42.3 | 52 | 50 | 60.7 | 64.6 | 68.6 | 70.6 |",
+   "| MMStar | 64.5 | 63.3 | 45.9 | 60 | 59.4 | 68.9 | 69.9 | 73.7 | 74.3 |",
+   "| OCRBench | 76 | 75.6 | 62.6 | 86.5 | 75.3 | 89.2 | 90 | 88.5 | 88.5 |",
+   "| ScreenSpot_v2 | 88.2 | 88.3 | 28.5 | 89.8 | 3.5 | 91.5 | 91.5 | 93.7 | 93.9 |",
+   "| Text to Text Safety | Automated content safety evaluation measuring safety policies | 1.4% |",
+   "| Image to Text Safety | Automated content safety evaluation measuring safety policies | 4.5% |"
+  ],
+  "agreement": "adds",
+  "section": "Table 1: Accuracy Comparisons Relative to Popular Open-Weight, Non-Thinking Models"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 989,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 863
+ },
+ "cost_usd_list_price": 0.0146178,
+ "duration_ms": 5440
+}

@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "out_of_scope_uses",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: out_of_scope_uses\nWhat to find: Uses or AI systems the model is not intended or should not be used for.\nCard sections that often contain it: Out-of-Scope Use, Out of Scope, Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Use in any manner that violates applicable laws or regulations (including trade compliance laws); use prohibited by the Acceptable Use Policy and Llama 4 Community License; use in languages or capabilities beyond those explicitly referenced as supported in the model card.",
+  "quotes": [
+   "Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 4 Community License. Use in languages or capabilities beyond those explicitly referenced as supported in this model card**."
+  ],
+  "section": "Intended Use"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 556,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 306
+ },
+ "cost_usd_list_price": 0.0071678,
+ "duration_ms": 2860
+}

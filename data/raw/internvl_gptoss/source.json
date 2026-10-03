@@ -1,0 +1,11 @@
+{
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "sha": "49b11e8d5e9d4c822de52dee190f95c988009559",
+ "api_url": "https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "retrieved_at": "2026-09-30T10:17:05+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md",
+ "config_url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/config.json"
+}

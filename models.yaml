@@ -1,0 +1,158 @@
+# Selected models. Chosen 2026-09-30 as the latest general-purpose release in each family
+# (HF API, sort=createdAt), preferring the flagship instruct model over derived repos.
+# retrieved_at, sha, gated, readme_source, base_models are written by pipeline.fetch.
+models:
+- key: olmo
+  repo_id: allenai/Olmo-3.1-32B-Instruct
+  family: OLMo
+  lab: Allen Institute for AI
+  role: control
+  retrieved_at: '2026-09-30T10:16:57+00:00'
+  sha: ac0587e4a7744a551c059d8cd17ba220bc940dae
+  gated: false
+  readme_source: raw
+  base_models:
+  - allenai/Olmo-3.1-32B-Instruct-DPO
+- key: llama
+  repo_id: meta-llama/Llama-4-Scout-17B-16E-Instruct
+  family: Llama
+  lab: Meta
+  role: major
+  retrieved_at: '2026-09-30T10:16:58+00:00'
+  sha: 92f3b1597a195b523d8d9e5700e57e4fbb8f20d3
+  gated: manual
+  readme_source: rendered_html
+  base_models:
+  - meta-llama/Llama-4-Scout-17B-16E
+- key: gemma
+  repo_id: google/gemma-4-31B-it
+  family: Gemma
+  lab: Google
+  role: major
+  retrieved_at: '2026-09-30T10:16:59+00:00'
+  sha: 842da3794eaa0b77d5f08bae87a17459d91ff475
+  gated: false
+  readme_source: raw
+  base_models:
+  - google/gemma-4-31B
+- key: mistral
+  repo_id: mistralai/Mistral-Medium-3.5-128B
+  family: Mistral
+  lab: Mistral AI
+  role: major
+  retrieved_at: '2026-09-30T10:16:59+00:00'
+  sha: 22b2b868a15677cfa6061277ed2f653d1349a9ab
+  gated: false
+  readme_source: raw
+- key: qwen
+  repo_id: Qwen/Qwen3.8-2.4T-A95B
+  family: Qwen
+  lab: Alibaba
+  role: major
+  retrieved_at: '2026-09-30T10:17:00+00:00'
+  sha: 207bd685a7e3696cfaff12ded7c6a7ea0f88c996
+  gated: false
+  readme_source: raw
+- key: deepseek
+  repo_id: deepseek-ai/DeepSeek-V4.1-Flash
+  family: DeepSeek
+  lab: DeepSeek
+  role: major
+  retrieved_at: '2026-09-30T10:17:00+00:00'
+  sha: dba1be0a40aa45a94ad051997016db3960a90277
+  gated: false
+  readme_source: raw
+- key: phi
+  repo_id: microsoft/Phi-4-reasoning-vision-15B
+  family: Phi
+  lab: Microsoft
+  role: major
+  retrieved_at: '2026-09-30T10:17:00+00:00'
+  sha: c3e4fac79ddace21976ced56fbf1564b8bd8c89f
+  gated: false
+  readme_source: raw
+  base_models:
+  - microsoft/Phi-4-reasoning
+- key: smollm
+  repo_id: HuggingFaceTB/SmolLM3-3B
+  family: SmolLM
+  lab: Hugging Face
+  role: major
+  retrieved_at: '2026-09-30T10:17:01+00:00'
+  sha: a07cc9a04f16550a088caea529712d1d335b0ac1
+  gated: false
+  readme_source: raw
+  base_models:
+  - HuggingFaceTB/SmolLM3-3B-Base
+- key: falcon
+  repo_id: tiiuae/Falcon-H1R-7B
+  family: Falcon
+  lab: Technology Innovation Institute
+  role: major
+  retrieved_at: '2026-09-30T10:17:01+00:00'
+  sha: a6f74bf181389908efd6970878d7ee2b42f5d417
+  gated: false
+  readme_source: raw
+  base_models:
+  - tiiuae/Falcon-H1-7B-Base
+- key: granite
+  repo_id: ibm-granite/granite-4.2-8b
+  family: Granite
+  lab: IBM
+  role: major
+  retrieved_at: '2026-09-30T10:17:02+00:00'
+  sha: f8de16cdcdbc6c779ca517604e050d82cc119e44
+  gated: false
+  readme_source: raw
+  base_models:
+  - ibm-granite/granite-4.1-8b-base
+- key: olmo_gguf
+  repo_id: unsloth/Olmo-3-7B-Instruct-GGUF
+  family: OLMo
+  lab: Unsloth
+  role: lineage
+  relation: quantized
+  retrieved_at: '2026-09-30T10:17:03+00:00'
+  sha: a2a9ae53f5a95087616b3f45ca96e9d2631344ee
+  gated: false
+  readme_source: raw
+  base_models:
+  - allenai/Olmo-3-7B-Instruct
+- key: molmo2
+  repo_id: allenai/Molmo2-8B
+  family: Molmo
+  lab: Allen Institute for AI
+  role: lineage
+  relation: finetune
+  retrieved_at: '2026-09-30T10:17:04+00:00'
+  sha: e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b
+  gated: false
+  readme_source: raw
+  base_models:
+  - Qwen/Qwen3-8B
+  - google/siglip-so400m-patch14-384
+- key: internvl_gptoss
+  repo_id: OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+  family: InternVL
+  lab: Shanghai AI Laboratory (OpenGVLab)
+  role: lineage
+  relation: merge
+  retrieved_at: '2026-09-30T10:17:05+00:00'
+  sha: 49b11e8d5e9d4c822de52dee190f95c988009559
+  gated: false
+  readme_source: raw
+  base_models:
+  - OpenGVLab/InternViT-300M-448px-V2_5
+  - openai/gpt-oss-20b
+- key: twil_smollm
+  repo_id: webAI-Official/TwIL-LM3
+  family: SmolLM
+  lab: webAI
+  role: lineage
+  relation: adapter
+  retrieved_at: '2026-09-30T10:17:06+00:00'
+  sha: e4f94da572d9857a91ca0dca857cebb0cbe6755a
+  gated: false
+  readme_source: raw
+  base_models:
+  - HuggingFaceTB/SmolLM3-3B

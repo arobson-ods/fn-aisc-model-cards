@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "3213b67e866c2688",
+ "request_user": "Fact definition: Unique model identifier / name.\nValue taken from the model's structured metadata (api:id = \"unsloth/Olmo-3-7B-Instruct-GGUF\"): unsloth/Olmo-3-7B-Instruct-GGUF\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The value is the model's repository ID from the structured metadata (api:id), which directly answers \"unique model identifier / name.\" The card agrees with it: it has the \"unsloth\" tag, promotes Unsloth Dynamic 2.0 GGUF quants, and lists allenai/Olmo-3-7B-Instruct as its base model. That makes it an Unsloth GGUF repackaging of Olmo 3 7B Instruct, so \"unsloth/Olmo-3-7B-Instruct-GGUF\" is a correct identifier and nothing in the card contradicts it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 620,
+  "cache_read_input_tokens": 5752,
+  "output_tokens": 352
+ },
+ "cost_usd_list_price": 0.0131584,
+ "duration_ms": 5040
+}

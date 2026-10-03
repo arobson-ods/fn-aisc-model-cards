@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "eee15daf8b897741",
+ "request_user": "Fact definition: Scope and main characteristics of the training data (domains, languages, geography, modality coverage).\nExtracted value: Trained on publicly available third-party datasets (referenced in the technical report and the Molmo2 data collection), which contain highly-curated image-text and video-text pairs; the model supports image, video and multi-image understanding and grounding. The card notes the third-party datasets are subject to academic and non-commercial research use only. Languages and geography are not stated beyond the metadata language tag \"en\".\nQuotes given as evidence (separated by [...]): Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data), \na collection of datasets with highly-curated image-text and video-text pairs. [...] Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support image, video and multi-image understanding and grounding. [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "Quotes support each claim: the model is trained on publicly available third-party datasets referenced in the tech report and the Molmo2 data collection (highly-curated image-text and video-text pairs); it supports image, video and multi-image understanding and grounding; and the datasets are subject to academic, non-commercial use. The note that language and geography aren't stated beyond the 'en' metadata tag is accurate to the card. The only minor issue is that the 'highly-curated' wording in the card describes the Molmo2 data collection, not necessarily every third-party dataset."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 957,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 885
+ },
+ "cost_usd_list_price": 0.026895000000000002,
+ "duration_ms": 12551
+}

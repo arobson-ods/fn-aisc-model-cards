@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v1",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "inference_compute",
+ "readme_sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b",
+ "request_user": "Fact: inference_compute\nWhat to find: Benchmarked computation (FLOPs) or energy used for inference, and how it was measured.\nCard sections that often contain it: Inference, Efficiency\n\nAnswer with status, value, quote and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quote": "",
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 547,
+  "cache_read_input_tokens": 6493,
+  "output_tokens": 115
+ },
+ "cost_usd_list_price": 0.0046406,
+ "duration_ms": 1517
+}

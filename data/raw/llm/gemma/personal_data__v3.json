@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "personal_data",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: personal_data\nWhat to find: Whether training data includes personal or sensitive personal information, and how it was handled (e.g. anonymisation).\nCard sections that often contain it: Training Data, Privacy\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card does not say whether the training data contains personal information. It says automated techniques were used to filter out certain personal information and other sensitive data from the training sets, and that the models were trained on data filtered for removal of certain personal information and other sensitive data.",
+  "quotes": [
+   "**Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.",
+   "**Privacy violations**: Models were trained on data filtered for removal of certain personal information and other sensitive data."
+  ],
+  "section": "Data Preprocessing"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 552,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 301
+ },
+ "cost_usd_list_price": 0.0074941999999999995,
+ "duration_ms": 2648
+}

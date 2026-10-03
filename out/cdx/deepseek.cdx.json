@@ -1,0 +1,183 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:db79113f-11c1-5e53-b589-8bdc1229c8f2",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:00Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "deepseek:model",
+   "name": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "supplier": {
+    "name": "DeepSeek-AI"
+   },
+   "version": "dba1be0a40aa45a94ad051997016db3960a90277",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "dba1be0a40aa45a94ad051997016db3960a90277"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "No Jinja chat template; a Python reference prompt-encoding implementation (encoding.py in the encoding folder) is provided, plus deepseek-recipe (Rust libraries with Python bindings) for production prompt encoding/parsing of Messages, Chat Completions and Responses API requests. Local inference instructions (weight conversion and running) are in the inference folder. Recommended sampling: temperature 1.0, top_p 0.95 or 1.0."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open model weights on Hugging Face under the MIT License (with local inference instructions); a chat app at chat.deepseek.com; prompt-encoding toolkit deepseek-recipe on GitHub."
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Multimodal Mixture-of-Experts (MoE) with a Causal Encoder-Decoder (CED) architecture: a 40-layer Transformer (20-layer causal encoder followed by a 20-layer decoder)",
+     "modelArchitecture": "Multimodal MoE with 552B backbone parameters, up to one million tokens context. Causal Encoder-Decoder: 40-layer Transformer (20-layer causal encoder, 20-layer decoder); decoder's global KV cache projected from final encoder hidden states, so only 8B parameters active per token in prefill and 16B in decode, improving cost efficiency for input-heavy agentic workloads. 1 shared expert and 384 routed experts per MoE layer, 6 routed experts active per token. Uses CSA2 (Full, Reindex, Reuse modes) with FP4 main KV caching, reducing global KV cache to 890 bytes per token (roughly 1/4 of DeepSeek-V4-Flash).",
+     "inputs": [
+      {
+       "format": "text"
+      },
+      {
+       "format": "image"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "image-text-to-text",
+     "datasets": [
+      {
+       "ref": "deepseek:training-data"
+      },
+      {
+       "ref": "deepseek:evalset-Base-model-AGIEval-MMLU-Pro-C-Eval-MultiLoKo-SimpleQA-Verified-SuperGPQA-BBH-BBEH-DROP-HellaSwag-BigCodeBench-HumanEval-GSM8K-MATH-MGSM-LongBench-V2-MMMU-Pro-CVBench-DocVQA-RefCOCO-avg.-Instruct-model-GPQA-Diamond-HLE-Codeforces-MathArena-Apex-Terminal-Bench-2.1/3.0/4.0-DeepSWE-v1.1-ProgramBench-NL2Repo-Bench-CyberGym-SEC-Bench-Pro-ExploitGym-AutomationBench-Agent-s-Last-Exam-Chartography-BabyVision-ZeroBench."
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "DS-V4.1-Flash (max reasoning effort): GPQA Diamond (Pass@1) 90.9; Codeforces (Rating) 3471; Terminal-Bench 2.1 (Pass@1) 90.6; DeepSWE v1.1 (Resolved) 74.2. Base model DeepSeek-V4.1-Flash-Base: MMLU-Pro (EM, 5-shot) 74.1; HumanEval (Pass@1, 0-shot) 79.4."
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Agentic workloads/agent systems (code agents, visual agents, agent scaffolds such as Claude Code, Codex, OpenCode, mini-SWE, DeepSeek Harness), with tool calling and chat/API-based prompt encoding"
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "763205315794"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "1048576"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "fp8"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "Post-training follows the standard SFT → RL → on-policy distillation (OPD) paradigm without algorithmic modifications, with all substantive changes in the data pipeline (large-scale automated synthesis of agent tasks and environments, progressive scaling of data, tasks, and rollouts). Architecturally, the Causal Encoder-Decoder projects the decoder's global KV cache from final encoder hidden states, activating only 8B parameters per token during prefill and 16B during decode to improve cost efficiency for input-heavy agentic workloads."
+     },
+     {
+      "name": "model-cards:hyperparameters",
+      "value": "Only sequence length is stated: sparse attention trained at a sequence length of 64K, with context extended to 1M tokens at 34T tokens (45T-token corpus). Learning rate, batch size, optimiser and epochs are not given."
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Base models evaluated in an internal framework under the same settings, with few-shot counts per benchmark (e.g. 5-shot MMLU-Pro, 0-shot HumanEval). Instruct results use max reasoning effort (reasoning_effort=100) with temperature=1.0, top_p=0.95. Code agent benchmarks use the Minimal mode of DeepSeek Harness with a 1M-token context window; mini-SWE harness for DeepSWE v1.1; Claude Code harness for SEC-Bench Pro; visual agent benchmarks use Claude Code harness with 512k-token context."
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "deepseek:training-data",
+   "name": "Training data of deepseek-ai/DeepSeek-V4.1-Flash (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_modality: Multimodal corpus of text and images (45T tokens)\ndata_provenance: Synthetic: post-training data pipeline uses large-scale automated synthesis of agent tasks and environments. Pre-training is on a multimodal corpus of 45T tokens, with no provenance categories given.\ndata_acquisition: Pre-training on a multimodal corpus of 45T tokens; post-training data pipeline uses large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. Card does not state how rights were obtained.\ndata_scope: Multimodal corpus (images and text) comprising 45T tokens; trained from scratch\ndata_curation: Only post-training data processing is described: large-scale automated synthesis of agent tasks and environments, with progressive scaling of data, tasks, and rollouts. No cleaning, filtering or deduplication details are given."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:training_data_size",
+     "value": "45T tokens (multimodal corpus)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "deepseek:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "deepseek:evalset-Base-model-AGIEval-MMLU-Pro-C-Eval-MultiLoKo-SimpleQA-Verified-SuperGPQA-BBH-BBEH-DROP-HellaSwag-BigCodeBench-HumanEval-GSM8K-MATH-MGSM-LongBench-V2-MMMU-Pro-CVBench-DocVQA-RefCOCO-avg.-Instruct-model-GPQA-Diamond-HLE-Codeforces-MathArena-Apex-Terminal-Bench-2.1/3.0/4.0-DeepSWE-v1.1-ProgramBench-NL2Repo-Bench-CyberGym-SEC-Bench-Pro-ExploitGym-AutomationBench-Agent-s-Last-Exam-Chartography-BabyVision-ZeroBench.",
+   "name": "Base model: AGIEval, MMLU-Pro, C-Eval, MultiLoKo, SimpleQA-Verified, SuperGPQA, BBH, BBEH, DROP, HellaSwag, BigCodeBench, HumanEval, GSM8K, MATH, MGSM, LongBench-V2, MMMU-Pro, CVBench, DocVQA, RefCOCO-avg. Instruct model: GPQA Diamond, HLE, Codeforces, MathArena Apex, Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, ProgramBench, NL2Repo-Bench, CyberGym, SEC-Bench Pro, ExploitGym, AutomationBench, Agent's Last Exam, Chartography, BabyVision, ZeroBench.",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Base model: AGIEval, MMLU-Pro, C-Eval, MultiLoKo, SimpleQA-Verified, SuperGPQA, BBH, BBEH, DROP, HellaSwag, BigCodeBench, HumanEval, GSM8K, MATH, MGSM, LongBench-V2, MMMU-Pro, CVBench, DocVQA, RefCOCO-avg. Instruct model: GPQA Diamond, HLE, Codeforces, MathArena Apex, Terminal-Bench 2.1/3.0/4.0, DeepSWE v1.1, ProgramBench, NL2Repo-Bench, CyberGym, SEC-Bench Pro, ExploitGym, AutomationBench, Agent's Last Exam, Chartography, BabyVision, ZeroBench."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "deepseek:model",
+   "dependsOn": [
+    "deepseek:dependency-software"
+   ]
+  },
+  {
+   "ref": "deepseek:dependency-software"
+  }
+ ]
+}

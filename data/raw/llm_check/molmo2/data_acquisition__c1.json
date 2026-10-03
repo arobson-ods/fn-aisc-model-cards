@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "119508e61bc7300c",
+ "request_user": "Fact definition: How training data was obtained and selected, including annotation and synthetic-data generation methods and how rights were obtained.\nExtracted value: Trained on publicly available third party datasets (referenced in the technical report and Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the third party datasets are subject to academic and non-commercial research use only.\nQuotes given as evidence (separated by [...]): Molmo2 models are trained on publicly available third party datasets as referenced in [our technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),  [...] a collection of datasets with highly-curated image-text and video-text pairs. [...] This model is trained on third party datasets that are subject to academic and non-commercial research use only.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quotes are about this model and support every claim: publicly available third-party datasets referenced in the technical report and Molmo2 data, a collection of highly-curated image-text and video-text pairs, and the restriction to academic and non-commercial research use. The value covers sources, selection and rights. The card doesn't describe annotation or synthetic-data generation methods, so nothing the card says is missing."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 862,
+  "cache_read_input_tokens": 7655,
+  "output_tokens": 614
+ },
+ "cost_usd_list_price": 0.020714999999999997,
+ "duration_ms": 7489
+}

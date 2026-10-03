@@ -1,0 +1,35 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "additional_assets",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "A GitHub repository (ibm-granite/granite-4.2-language-models) lists the full training datasets; a technical blog, documentation, an HF collection of Granite 4.2 models, and an SGLang cookbook (deployment recipe) are also linked. The custom granite_thinking_parser is included in the model repository.",
+  "quotes": [
+   "A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models).",
+   "- **GitHub:** https://github.com/ibm-granite/granite-4.2-language-models",
+   "- **HF Collection:** https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+   "- **Technical Blog:** https://huggingface.co/blog/ibm-granite/granite-4-2",
+   "- **Documentation:** https://www.ibm.com/granite/docs/",
+   "> **Reasoning parser:** Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+).",
+   "For a full deployment recipe (Docker, H200/B200 launch matrix, thinking-mode examples, and benchmark data), see the [SGLang Granite 4.2 cookbook](https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2)."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16627,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 559
+ },
+ "cost_usd_list_price": 0.072209,
+ "duration_ms": 4286
+}

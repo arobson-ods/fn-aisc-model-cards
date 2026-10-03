@@ -1,0 +1,763 @@
+model: granite
+repo_id: ibm-granite/granite-4.2-8b
+retrieved_at: '2026-09-30T10:17:02+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Granite Team, IBM
+    quote: '| **Developers** | Granite Team, IBM |'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: ibm-granite/granite-4.2-8b
+    quote: api:id = "ibm-granite/granite-4.2-8b"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: f8de16cdcdbc6c779ca517604e050d82cc119e44
+    quote: api:sha = "f8de16cdcdbc6c779ca517604e050d82cc119e44"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+  - fact_id: model_version
+    status: prose_adds
+    value: Named version Granite-4.2-8B, part of the Granite 4.2 family/generation (no repository revision
+      stated)
+    quote: '**Granite-4.2-8B** is the mid-size reasoning model in the Granite 4.2 family. [...] The Granite
+      4.2 generation introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step
+      chain-of-thought reasoning before producing final answers.'
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: f8de16cdcdbc6c779ca517604e050d82cc119e44
+    quote: api:sha = "f8de16cdcdbc6c779ca517604e050d82cc119e44"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: release_date
+    status: prose
+    value: August 25, 2026
+    quote: '| **Release Date** | August 25, 2026 |'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: ibm-granite/granite-4.1-8b-base
+    quote: card:base_model = ["ibm-granite/granite-4.1-8b-base"]
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Decoder-only Dense Transformer (GraniteForCausalLM)
+    quote: '| **Model Type** | Decoder-only Dense Transformer (Reasoning) | [...] | **Architecture** |
+      GraniteForCausalLM |'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Decoder-only dense transformer (GraniteForCausalLM) with 8B parameters; Grouped Query Attention
+      with 32 attention heads and 8 KV heads; RoPE (θ = 10,000,000); SwiGLU MLP (hidden size 12800); RMSNorm
+      (ε = 1e-5); untied input/output embeddings; 40 layers; embedding size 4096. Dense model (no experts).
+      No rationale for the design choices is stated.
+    quote: 'Granite-4.2-8B is built on a decoder-only dense transformer architecture with the following
+      core components: [...] * **Attention:** Grouped Query Attention (GQA) with 32 attention heads and
+      8 KV heads [...] * **Position Embedding:** Rotary Position Embedding (RoPE) with θ = 10,000,000
+      [...] * **Feed-Forward:** MLP with SwiGLU activation (hidden size 12800) [...] * **Normalization:**
+      RMSNorm (ε = 1e-5) [...] * **Embeddings:** Separate input/output embeddings (not tied) [...] | **Architecture**
+      | GraniteForCausalLM |'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_input_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '131072'
+    quote: config:max_position_embeddings = 131072
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/config.json
+    source_type: repo_config
+  - fact_id: max_input_size
+    status: prose_adds
+    value: Natively supports 128K context (long-context extension to 512K); sequence length 131072
+    quote: "| **Context Length** | Natively Supports 128K (Long-context extension to 512K) | [...] <td\
+      \ style=\"text-align:left;\">Sequence length</td>\n    <td style=\"text-align:center;\">131072</td>"
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/config.json
+    source_type: card
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_output_size
+    status: prose
+    value: max_new_tokens is set to 8192 in thinking mode (increase for complex reasoning) and 2048 in
+      non-thinking mode
+    quote: '| `max_new_tokens` | `8192` | Thinking mode (increase for complex reasoning) | [...] | `max_new_tokens`
+      | `2048` | Non-thinking mode |'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '8791592960'
+    quote: api:safetensors.total = 8791592960
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '8791592960'
+    quote: api:safetensors.total = 8791592960
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM
+      and SGLang; GitHub repository available
+    quote: '| **HF Collection** | [Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+      | [...] Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).
+      [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+)
+      for high-throughput inference.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/ibm-granite/granite-4.2-8b
+    quote: derived:hub_url = "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM
+      and SGLang; GitHub repository available
+    quote: '| **HF Collection** | [Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+      | [...] Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).
+      [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+)
+      for high-throughput inference.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: A GitHub repository (ibm-granite/granite-4.2-language-models) lists the full training datasets;
+      a technical blog, documentation, an HF collection of Granite 4.2 models, and an SGLang cookbook
+      (deployment recipe) are also linked. The custom granite_thinking_parser is included in the model
+      repository.
+    quote: A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models).
+      [...] - **GitHub:** https://github.com/ibm-granite/granite-4.2-language-models [...] - **HF Collection:**
+      https://huggingface.co/collections/ibm-granite/granite-42-language-models [...] - **Technical Blog:**
+      https://huggingface.co/blog/ibm-granite/granite-4-2 [...] - **Documentation:** https://www.ibm.com/granite/docs/
+      [...] > **Reasoning parser:** Use the custom `granite_thinking_parser` included in this repository
+      (requires vLLM v0.20+). [...] For a full deployment recipe (Docker, H200/B200 launch matrix, thinking-mode
+      examples, and benchmark data), see the [SGLang Granite 4.2 cookbook](https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2).
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Reasoning, code generation, tool calling, agentic workflows, and multilingual dialog; also
+      usable as the backbone model for agentic coding tools. Designed for enterprise and research use
+      (Granite family).
+    quote: '| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual
+      Dialog | [...] Granite-4.2-8B can be used as the backbone model for agentic coding tools. [...]
+      Granite is a family of open-source large language models developed by IBM, designed for enterprise
+      and research use.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: target_systems
+    status: prose
+    value: Agentic workflows and agentic coding harnesses (backbone model for agentic coding tools), tool-calling
+      systems, and multilingual dialog/chat
+    quote: '| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual
+      Dialog | [...] Granite-4.2-8B can be used as the backbone model for agentic coding tools. [...]
+      **512K Context Window:** Supports long documents, multi-turn conversations, and complex agentic
+      workflows.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Can be served with vLLM (custom granite_thinking_parser reasoning parser, qwen3_coder tool-call
+      parser) and SGLang (v0.5.18+), via OpenAI-compatible API; also usable with Hugging Face Transformers
+      via tokenizer.apply_chat_template with enable_thinking, low_effort and tools options; ChatML-style
+      prompt format with <think>...</think> reasoning.
+    quote: Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).
+      [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+)
+      for high-throughput inference. [...] > **Tool calling parser:** Use `qwen3_coder`. [...] text =
+      tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True)
+      [...] - **Thinking enabled** — The generation prompt ends with `<|im_start|>assistant\n<think>\n`,
+      causing the model to reason until it emits `</think>`, then produce the final answer.
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: vLLM (v0.20+ for the custom granite_thinking_parser) or SGLang (v0.5.18+) for serving; transformers
+      and accelerate (plus torch) for the Transformers quick start
+    quote: 'Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+).
+      [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+)
+      for high-throughput inference. [...] pip install torch torchvision torchaudio
+
+      pip install accelerate transformers'
+    source_url: https://huggingface.co/api/models/ibm-granite/granite-4.2-8b
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: 'Post-trained from Granite-4.1-8B-Base (pre-trained on a large-scale English and multilingual
+      corpus) in stages: supervised fine-tuning (SFT) on instruction-following, chain-of-thought and reasoning
+      data, then multi-phase, multi-environment reinforcement learning using GRPO, followed by a preference-alignment
+      (RLHF) phase.'
+    quote: Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base)
+      through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following
+      capabilities. [...] Granite-4.2-8B builds on [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base),
+      which was pre-trained on a large-scale English as well as multilingual corpus. [...] The SFT stage
+      draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning
+      and thinking abilities. [...] The final stage of training applies multi-phase, multi-environment
+      reinforcement learning using Group Relative Policy Optimization (GRPO). [...] After the reward-driven
+      phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety.
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: 'The card gives some rationale for training choices: SFT uses instruction-following, chain-of-thought
+      and reasoning data to cultivate reasoning and thinking abilities; hyperparameters were tuned before
+      scaling to all three model sizes; for the 30B model a second SFT phase up-sampled agentic data while
+      retaining a smaller share of general replay data. RL uses GRPO across multiple environments, with
+      verifiable rewards where available and a generative reward model for open-ended prompts; an RLHF
+      phase tunes helpfulness, conversational quality, and safety.'
+    quote: The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate
+      the model's reasoning and thinking abilities. [...] Hyperparameters were tuned before training was
+      scaled to all three model sizes. [...] For the 30B model, we conducted a second SFT phase, in which
+      the agentic data was up-sampled while a smaller share of general replay data was retained. [...]
+      Most environments provide verifiable rewards, while open-ended prompts are scored by a generative
+      reward model. [...] After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness,
+      conversational quality, and safety.
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: 'SFT corpus comprises four sources: publicly available datasets under permissive licenses,
+      internally generated synthetic data (reasoning, tool calling, chain-of-thought), agentic traces
+      collected across diverse tasks, and a curated selection of human-authored data. Base model pre-trained
+      on a large-scale English and multilingual corpus (no provenance breakdown given).'
+    quote: 'the training corpus comprises four sources: (1) publicly available datasets under permissive
+      licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought
+      capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection
+      of human-authored data. [...] which was pre-trained on a large-scale English as well as multilingual
+      corpus.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: 'SFT corpus comprises four sources: publicly available datasets under permissive licenses,
+      internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic
+      traces collected across diverse tasks, and a curated selection of human-authored data. Pre-training
+      data details are deferred to the Granite 4.1 Technical Blog.'
+    quote: 'For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1)
+      publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting
+      reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across
+      a diverse range of tasks, and (4) a curated selection of human-authored data. [...] For full pre-training
+      details (data composition, training recipe, and infrastructure), refer to our [Granite 4.1 Technical
+      Blog](https://huggingface.co/blog/ibm-granite/granite-4-1).'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: 'SFT corpus comprises four sources: publicly available datasets under permissive licenses,
+      internally generated synthetic data targeting reasoning, tool calling and chain-of-thought, agentic
+      traces across diverse tasks, and curated human-authored data. Finetuned mostly on English instruction-response
+      pairs plus multilingual data covering the supported languages. Base model pre-trained on a large-scale
+      English and multilingual corpus.'
+    quote: 'For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1)
+      publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting
+      reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across
+      a diverse range of tasks, and (4) a curated selection of human-authored data. [...] Granite 4.2
+      models are primarily finetuned using instruction-response pairs mostly in English, but also multilingual
+      data covering the supported languages listed above. [...] which was pre-trained on a large-scale
+      English as well as multilingual corpus.'
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: training_hardware
+    status: prose
+    value: NVIDIA GB200 NVL72 cluster hosted in CoreWeave (72-GPU NVLink domain intra-rack; NDR 400 Gb/s
+      InfiniBand Fat-Tree inter-rack); total GPU count not stated
+    quote: We trained the Granite 4.2 Language Models utilizing an NVIDIA GB200 NVL72 cluster hosted in
+      CoreWeave. Intra-rack communication occurs via the 72-GPU NVLink domain, and a non-blocking, full
+      Fat-Tree NDR 400 Gb/s InfiniBand network provides inter-rack communication.
+    source_url: https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md
+    source_type: card
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

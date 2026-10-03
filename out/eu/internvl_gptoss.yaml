@@ -1,0 +1,764 @@
+model: internvl_gptoss
+repo_id: OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+retrieved_at: '2026-09-30T10:17:05+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    quote: api:id = "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: 49b11e8d5e9d4c822de52dee190f95c988009559
+    quote: api:sha = "49b11e8d5e9d4c822de52dee190f95c988009559"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+  - fact_id: model_version
+    status: prose_adds
+    value: InternVL3.5 family (named version InternVL3.5); no repository revision or hash is stated
+    quote: We introduce *InternVL3.5*, a new family of open-source multimodal models that significantly
+      advances versatility, reasoning capability, and inference efficiency along the InternVL series.
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: 49b11e8d5e9d4c822de52dee190f95c988009559
+    quote: api:sha = "49b11e8d5e9d4c822de52dee190f95c988009559"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: OpenGVLab/InternViT-300M-448px-V2_5, openai/gpt-oss-20b
+    quote: card:base_model = ["OpenGVLab/InternViT-300M-448px-V2_5", "openai/gpt-oss-20b"]
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+  - fact_id: base_model
+    status: prose_adds
+    value: The language model is initialized from the Qwen3 series and GPT-OSS, and the vision encoder
+      from InternViT-300M and InternViT-6B.
+    quote: We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder
+      using InternViT-300M and InternViT-6B.
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card
+  - fact_id: base_model_relation
+    status: structured
+    value: merge
+    quote: card:base_model_relation = "merge"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: '"ViT–MLP–LLM" paradigm (vision encoder + MLP + language model); language model initialized
+      from Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; the 20B-A4B
+      variant is a mixture-of-experts-style "A4B" model (21.2B-A4B)'
+    quote: This series of models follow the "ViT–MLP–LLM" paradigm adopted in previous versions of InternVL.
+      [...] We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder
+      using InternViT-300M and InternViT-6B.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: 'Follows the "ViT–MLP–LLM" paradigm; language model initialized from the Qwen3 series and GPT-OSS,
+      vision encoder from InternViT-300M and InternViT-6B; retains the Dynamic High Resolution strategy
+      from InternVL1.5. This 20B-A4B model: 0.3B vision params, 20.9B language params, 21.2B total with
+      4B active (A4B).'
+    quote: This series of models follow the "ViT–MLP–LLM" paradigm adopted in previous versions of InternVL.
+      [...] We initialize the language model using the Qwen3 series and GPT-OSS, and the vision encoder
+      using InternViT-300M and InternViT-6B. [...] The Dynamic High Resolution strategy introduced in
+      InternVL1.5 is also retained in our design. [...] | InternVL3.5-20B-A4B-HF   | 0.3B          | 20.9B           |
+      21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF)
+      | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text, image
+    quote: derived:pipeline_input_modalities = ["text", "image"]
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '131072'
+    quote: config:text_config.max_position_embeddings = 131072
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/config.json
+    source_type: repo_config
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '21232768704'
+    quote: api:safetensors.total = 21232768704
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '21232768704'
+    quote: api:safetensors.total = 21232768704
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open model weights released publicly on Hugging Face (GitHub and HF formats) and ModelScope;
+      all models and code publicly released. Deployable via LMDeploy and vLLM (vLLM recommended for the
+      20B-A4B model).
+    quote: All models and code are publicly released. [...] | InternVL3.5-20B-A4B-HF   | 0.3B          |
+      20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF)
+      | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |
+      [...] > In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm)
+      can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since
+      lmdeploy has not yet supported GPT-OSS.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    quote: derived:hub_url = "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open model weights released publicly on Hugging Face (GitHub and HF formats) and ModelScope;
+      all models and code publicly released. Deployable via LMDeploy and vLLM (vLLM recommended for the
+      20B-A4B model).
+    quote: All models and code are publicly released. [...] | InternVL3.5-20B-A4B-HF   | 0.3B          |
+      20.9B           | 21.2B-A4B    | [🤗 link](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF)
+      | [🤖 link](https://www.modelscope.cn/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) |
+      [...] > In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm)
+      can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since
+      lmdeploy has not yet supported GPT-OSS.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: Code on GitHub (OpenGVLab/InternVL); model weights from different training stages (Pretrained,
+      Instruct, MPO, final) open-sourced on Hugging Face and ModelScope; GitHub-format and HF-format checkpoints
+      with conversion scripts (custom2hf, hf2custom); all models and code publicly released.
+    quote: All models and code are publicly released. [...] Here, we also open-source the model weights
+      after different training stages for potential research usage. [...] If you want to convert the checkpoint
+      between these two formats, please refer to the scripts about [custom2hf](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_custom2hf.py)
+      and [hf2custom](https://github.com/OpenGVLab/InternVL/blob/main/internvl_chat/tools/internvl_hf2custom.py).
+      [...] [\[📂 GitHub\]](https://github.com/OpenGVLab/InternVL)
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: target_systems
+    status: prose
+    value: Multimodal (vision-language) models supporting GUI interaction and embodied agency; deployable
+      as online-served multimodal LLM services (e.g., via OpenAI-compatible API servers).
+    quote: In addition, InternVL3.5 supports novel capabilities such as GUI interaction and embodied agency.
+      [...] LMDeploy's `api_server` enables models to be easily packed into services with a single command.
+      The provided RESTful APIs are compatible with OpenAI's interfaces.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required
+      for the 20B version), and deployable with LMDeploy (pipeline, OpenAI-compatible api_server) or vLLM
+      (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode
+      is enabled via a system prompt (R1_SYSTEM_PROMPT) with do_sample=True and temperature=0.6.
+    quote: '> In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy) and [vLLM](https://github.com/vllm-project/vllm)
+      can be used for model deployment. However, for InternVL3.5-20B-A4B, we recommend using vLLM since
+      lmdeploy has not yet supported GPT-OSS. [...] > Please use transformers>=4.52.1 to ensure the model
+      works normally. For the 20B version of our model, transformers>=4.55.0 is required. [...] from transformers
+      import AutoTokenizer, AutoModelForImageTextToText [...] To enable thinking mode, please set the
+      system prompt to our Thinking System Prompt. When enabling Thinking mode, we recommend setting `do_sample=True`
+      and `temperature=0.6` to mitigate undesired repetition. [...] LMDeploy''s `api_server` enables models
+      to be easily packed into services with a single command. The provided RESTful APIs are compatible
+      with OpenAI''s interfaces. Below are an example of service startup:'
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_hardware
+    status: prose
+    value: Models with up to 30B parameters can be deployed on a single A100 GPU; the 38B model requires
+      two A100 GPUs and the 235B model requires eight A100 GPUs.
+    quote: Please note that our models with up to 30B parameters can be deployed on a single A100 GPU,
+      while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: transformers>=4.52.1 is required; for the 20B version, transformers>=4.55.0 is required. vLLM
+      is recommended for deployment of InternVL3.5-20B-A4B since lmdeploy has not yet supported GPT-OSS
+      (LMDeploy and vLLM can otherwise be used).
+    quote: '> Please use transformers>=4.52.1 to ensure the model works normally. For the 20B version
+      of our model, transformers>=4.55.0 is required. [...] > In most cases, both [LMDeploy](https://github.com/InternLM/lmdeploy)
+      and [vLLM](https://github.com/vllm-project/vllm) can be used for model deployment. However, for
+      InternVL3.5-20B-A4B, we recommend using vLLM since lmdeploy has not yet supported GPT-OSS.'
+    source_url: https://huggingface.co/api/models/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: training_method
+    status: prose
+    value: 'Training pipeline: Multimodal Continual Pre-Training (CPT), Supervised Fine-Tuning (SFT),
+      and Cascade Reinforcement Learning (CascadeRL). CascadeRL first uses Mixed Preference Optimization
+      (MPO) under offline RL, followed by GSPO under online RL. The Flash version additionally uses Visual
+      Consistency Learning (ViCO).'
+    quote: 'Our training pipeline comprises four stages: Multimodal Continual Pre-Training (**CPT**),
+      Supervised Fine-Tuning (**SFT**), and Cascade Reinforcement Learning (**CascadeRL**). In CascadeRL,
+      we first fine-tune the model using Mixed Preference Optimization (**MPO**) under an offline RL setting,
+      followed by **GSPO** under an oneline RL setting. [...] For the Flash version of InternVL3.5, we
+      additionally introduce a lightweight training stage, termed Visual Consistency Learning (**ViCO**),
+      which reduces the token cost required to represent an image patch.'
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+  - fact_id: hyperparameters
+    status: prose
+    value: 'Only partial: during the SFT stage the context window is set to 32K tokens. The card does
+      not state learning rate, batch size, optimiser or epochs.'
+    quote: In this stage, the context window is set to 32K tokens to adapt long-context information.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: design_rationale
+    status: prose
+    value: Cascade RL combines offline RL (MPO) as an efficient warm-up for stable convergence and high-quality
+      rollouts, then online RL (GSPO) to refine the output distribution from the model's own rollouts,
+      achieving significant gains at a fraction of the GPU time cost. GSPO was chosen because it is more
+      effective for training both dense and MoE models. Square averaging re-weights the NTP loss to mitigate
+      bias toward longer or shorter responses.
+    quote: 'Cascade RL aims to combine the benefits of offline RL and online RL to progressively facilitate
+      the post-training of MLLMs in an efficient manner. [...] Specifically, we first fine-tune the model
+      using an offline RL algorithm as an efficient warm-up stage to reach a satisfied results, which
+      can guarantee the high-quality rollouts for the latter stage. [...] Subsequently, we employ an online
+      RL algorithm to further refine the output distribution based on rollouts generated by the model
+      itself.  Compared to the single offline or online RL stage, our cascaded RL achieves significant
+      performance improvements at a fraction of the GPU time cost. [...] During the online RL stage, we
+      employ GSPO, without reference model constraints, as our online RL algorithm, which we find more
+      effective in training both dense and mixture-of-experts (MoE) models. [...] Additionally, to mitigate
+      bias toward either longer or shorter responses during training, we adopt the square averaging to
+      re-weight the NTP loss  as follows:'
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_modality
+    status: prose
+    value: Text and multimodal (image-text) data; pre-training uses large-scale text and multimodal corpora
+    quote: During the pre-training stage, we update all model parameters jointly using the combination
+      of large-scale text and multimodal corpora. [...] where \\(x_i\\) is the predicted token and  prefix
+      tokens in \\(\{x_1, x_2, \ldots, x_{i-1}\}\\) can be either  text tokens or  image tokens.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: 'Only partly described: SFT data includes synthetic multimodal reasoning data (image descriptions
+      from InternVL3-78B fed to DeepSeek-R1 to sample reasoning rollouts), plus reused InternVL3 instruction-following
+      data; pre-training uses "large-scale text and multimodal corpora" with no further provenance given.'
+    quote: (2) Multimodal reasoning data in the "Thinking" mode, which are included to instill long-thinking
+      capabilities in the model. To construct such data, we first use InternVL3-78B to describe the image
+      and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning processes.
+      [...] (1) Instruction-following data from InternVL3, which are reused to preserve broad coverage
+      of vision–language tasks. [...] During the pre-training stage, we update all model parameters jointly
+      using the combination of large-scale text and multimodal corpora.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: 'SFT data comes from three sources: reused InternVL3 instruction-following data; multimodal
+      "Thinking" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning
+      rollouts, with rollouts with incorrect final answers filtered out; and capability-expansion datasets.
+      Rights acquisition is not described.'
+    quote: (1) Instruction-following data from InternVL3, which are reused to preserve broad coverage
+      of vision–language tasks. [...] To construct such data, we first use InternVL3-78B to describe the
+      image and then input the description into DeepSeek-R1 to sample rollouts with detailed reasoning
+      processes. Rollouts with an incorrect final answer are filtered out. [...] (3) Capability-expansion
+      datasets, which endow InternVL3.5 with new skills, including GUI-based interaction, embodied interaction,
+      and scalable vect
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: Pre-training uses large-scale text and multimodal corpora; SFT data includes instruction-following
+      data from InternVL3, multimodal reasoning data in "Thinking" mode (covering expert domains such
+      as mathematics and scientific disciplines), and capability-expansion datasets (e.g., GUI-based interaction,
+      embodied interaction). Card metadata lists language as multilingual.
+    quote: During the pre-training stage, we update all model parameters jointly using the combination
+      of large-scale text and multimodal corpora. [...] (1) Instruction-following data from InternVL3,
+      which are reused to preserve broad coverage of vision–language tasks. [...] The questions in these
+      datasets cover various expert domains, such as mathematics and scientific disciplines, thereby strengthening
+      performance on different reasoning tasks. [...] (3) Capability-expansion datasets, which endow InternVL3.5
+      with new skills, including GUI-based interaction, embodied interaction, and scalable vect
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_curation
+    status: prose
+    value: Reasoning SFT data was built by having InternVL3-78B describe images and feeding the descriptions
+      to DeepSeek-R1 to sample rollouts; rollouts with an incorrect final answer were filtered out. Random
+      JPEG compression is included in pre-training as augmentation, and NTP loss is re-weighted by square
+      averaging.
+    quote: To construct such data, we first use InternVL3-78B to describe the image and then input the
+      description into DeepSeek-R1 to sample rollouts with detailed reasoning processes. Rollouts with
+      an incorrect final answer are filtered out. [...] The random JPEG compression is also included to
+      enhance the model's real-world performance.
+    source_url: https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF/raw/49b11e8d5e9d4c822de52dee190f95c988009559/README.md
+    source_type: card
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

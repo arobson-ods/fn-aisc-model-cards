@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "eval_results",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Llama 4 Scout (instruction tuned): MMMU 69.4 accuracy; MathVista 70.7 accuracy; ChartQA 88.8 relaxed_accuracy; DocVQA (test) 94.4 anls; MMLU Pro 74.3 macro_avg/acc; GPQA Diamond 57.2 accuracy; MGSM 90.6 average/em. Pre-trained Llama 4 Scout: MMLU 79.6 macro_avg/acc_char (5 shots).",
+  "quotes": [
+   "MMMU | \n0 | \naccuracy | \nNo multimodal support | \n | \n69.4 | \n73.4 |",
+   "MathVista | \n0 | \naccuracy | \n | \n | \n70.7 | \n73.7 |",
+   "MMLU Pro | \n0 | \nmacro_avg/acc | \n68.9 | \n73.4 | \n74.3 | \n80.5 |",
+   "GPQA Diamond | \n0 | \naccuracy | \n50.5 | \n49.0 | \n57.2 | \n69.8 |"
+  ],
+  "section": "Benchmarks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 9399,
+  "output_tokens": 486
+ },
+ "cost_usd_list_price": 0.008919799999999999,
+ "duration_ms": 3853
+}

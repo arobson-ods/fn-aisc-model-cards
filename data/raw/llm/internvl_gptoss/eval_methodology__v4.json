@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "eval_methodology",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: eval_methodology\nWhat to find: How evaluations were run (harness, settings, prompts, shots).\nCard sections that often contain it: Evaluation, Methodology\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluation conducted with VLMEvalkit. Thinking mode enabled by setting the system prompt to R1_SYSTEM_PROMPT; in Thinking mode, do_sample=True and temperature=0.6 recommended. Reported results are obtained without test-time scaling unless otherwise specified.",
+  "quotes": [
+   "> We conduct the evaluation with [VLMEvalkit](https://github.com/open-compass/VLMEvalKit). ***To enable the Thinking mode of our model, please set the system prompt to [R1_SYSTEM_PROMPT](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/vlm/internvl/internvl_chat.py#L38).*** When enabling Thinking mode, we recommend setting `do_sample=True` and `temperature=0.6` to mitigate undesired repetition.",
+   "> Notably, unless otherwise specified, the experimental results reported in our paper are obtained without applying TTS."
+  ],
+  "section": "InternVL3.5 Family"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 541,
+  "cache_read_input_tokens": 19538,
+  "output_tokens": 449
+ },
+ "cost_usd_list_price": 0.010565599999999998,
+ "duration_ms": 3676
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "f4e60ccbf09aed32",
+ "request_user": "Fact definition: Location from which the weights can be downloaded.\nValue taken from the model's structured metadata (derived:hub_url = \"https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B\"): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The URL comes from the model's metadata (hub_url), and the card supports it. The card says \"This repository contains model weights and configuration files\" in Hugging Face Transformers format, and its code example uses the model ID \"Qwen/Qwen3.8-2.4T-A95B\", which matches the URL's path. So the Hugging Face repository URL correctly answers where the weights can be downloaded. Nothing in the card contradicts it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18262,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 298
+ },
+ "cost_usd_list_price": 0.152064,
+ "duration_ms": 3778
+}

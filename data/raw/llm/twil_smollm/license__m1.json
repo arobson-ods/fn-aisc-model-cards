@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "license",
+ "input_sha256": "22f637e04bd88df7439e8b40751075c5aae00a9ed409068e2a2e3a9eaacb1c6f",
+ "request_user": "Fact: license\nWhat to find: Licence(s) under which the model weights are made available (identifier, name or link).\nThe card's machine-readable metadata gives: \"webai-non-commercial-license-ver.-1.0 (other)\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "webAI Non-Commercial License ver. 1.0 (see LICENSE.md in the repository); the base model SmolLM3-3B is Apache 2.0",
+  "quotes": [
+   "| License                   | webAI Non-Commercial License ver. 1.0                                                       |",
+   "Released under the **webAI Non-Commercial License ver. 1.0** — see `LICENSE.md` in this\nrepository.",
+   "is Apache 2.0; its licence text is retained as `apache-2.0-LICENSE.txt` and all credit for the\nbase model goes to the HuggingFaceTB team."
+  ],
+  "agreement": "adds",
+  "section": "License and attribution"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10947,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 331
+ },
+ "cost_usd_list_price": 0.0472182,
+ "duration_ms": 3017
+}

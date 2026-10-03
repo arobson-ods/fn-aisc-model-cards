@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "a60a3c038f6718c7",
+ "request_user": "Fact definition: Location from which the weights can be downloaded.\nValue taken from the model's structured metadata (derived:hub_url = \"https://huggingface.co/ibm-granite/granite-4.2-8b\"): https://huggingface.co/ibm-granite/granite-4.2-8b\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card loads the weights using the Hugging Face repo ID \"ibm-granite/granite-4.2-8b\" in several places, including from_pretrained(model_path), vllm serve, and SGLang --model-path. That ID matches the hub URL https://huggingface.co/ibm-granite/granite-4.2-8b, where the weights are downloaded from. Nothing in the card contradicts it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 630,
+  "cache_read_input_tokens": 16026,
+  "output_tokens": 280
+ },
+ "cost_usd_list_price": 0.0138532,
+ "duration_ms": 7528
+}

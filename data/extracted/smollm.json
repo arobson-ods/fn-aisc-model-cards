@@ -1,0 +1,1255 @@
+[
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/provider_name__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "HuggingFaceTB/SmolLM3-3B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:id = \"HuggingFaceTB/SmolLM3-3B\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "HuggingFaceTB/SmolLM3-3B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:sha = \"a07cc9a04f16550a088caea529712d1d335b0ac1\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:sha = \"a07cc9a04f16550a088caea529712d1d335b0ac1\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Apache 2.0",
+   "quotes": [
+    "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+   ],
+   "agreement": "agrees",
+   "section": "License",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/acceptable_use_policy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/additional_assets__v4.json",
+  "status": "prose",
+  "value": "Pretraining datasets are available in a Hugging Face collection (mid-training and post-training datasets to be uploaded later); training and evaluation configs and code are in the huggingface/smollm GitHub repository; intermediate checkpoints (including mid-training and SFT checkpoints) are at HuggingFaceTB/SmolLM3-3B-checkpoints; quantized checkpoints are in a Hugging Face collection.",
+  "quote": "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later  [...] The training and evaluation configs and code can be found in the [huggingface/smollm](https://github.com/huggingface/smollm) repository. [...] The training intermediate checkpoints (including the mid-training and SFT checkpoints) are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints) [...] You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)",
+  "quotes": [
+   "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later ",
+   "The training and evaluation configs and code can be found in the [huggingface/smollm](https://github.com/huggingface/smollm) repository.",
+   "The training intermediate checkpoints (including the mid-training and SFT checkpoints) are available at [HuggingFaceTB/SmolLM3-3B-checkpoints](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints)",
+   "You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)"
+  ],
+  "section": "Open resources",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Decoder-only transformer using GQA and NoPE (3:1 ratio)",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/architecture_details__v4.json",
+  "status": "prose",
+  "value": "Decoder-only transformer using GQA and NoPE (with 3:1 ratio); 3B parameters. The card gives no layer count, experts or active parameters, and no stated rationale beyond the design aim of pushing the boundaries of small models.",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] SmolLM3 is a 3B parameter language model designed to push the boundaries of small models.",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.",
+   "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": 3075098624,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:safetensors.total = 3075098624",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 3075098624,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "3B parameters",
+   "quotes": [
+    "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models."
+   ],
+   "agreement": "agrees",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "derived:pipeline_input_modalities = [\"text\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": 65536,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json",
+  "quote": "config:max_position_embeddings = 65536",
+  "section": "config:max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:max_position_embeddings",
+    "value": 65536,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Current config.json is set for context length up to 65,536 tokens; trained on 64k context and supports up to 128k tokens using YARN extrapolation",
+   "quotes": [
+    "The current `config.json` is set for context length up to 65,536 tokens.",
+    "**Long context:** Trained on 64k context and supports up to **128k tokens** using YARN extrapolation"
+   ],
+   "agreement": "adds",
+   "section": "Long context processing",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Text",
+   "quotes": [
+    "SmolLM3 can produce text on a variety of topics, but the generated content may not always be factually accurate, logically consistent, or free from biases present in the training data."
+   ],
+   "agreement": "agrees",
+   "section": "Limitations",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/max_output_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "text-generation",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "api:pipeline_tag = \"text-generation\"",
+  "section": "api:pipeline_tag",
+  "evidence": [
+   {
+    "path": "api:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/config.json",
+  "quote": "config:torch_dtype = \"bfloat16\"",
+  "section": "config:torch_dtype",
+  "evidence": [
+   {
+    "path": "config:torch_dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "bfloat16",
+   "quotes": [
+    "- **Precision:** bfloat16"
+   ],
+   "agreement": "agrees",
+   "section": "Training",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_provenance__v4.json",
+  "status": "prose",
+  "value": "Pretraining used a staged curriculum of web, code, math and reasoning data, with a public data mixture; pretraining datasets are in a public collection. Mid-training used 140B reasoning tokens; mid-training and post-training datasets will be uploaded later.",
+  "quote": "it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] **Fully open model**: open weights + full training details including public data mixture and training configs [...] The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later",
+  "quotes": [
+   "it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.",
+   "**Fully open model**: open weights + full training details including public data mixture and training configs",
+   "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_acquisition__v4.json",
+  "status": "prose",
+  "value": "Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, then supervised fine-tuning and alignment via Anchored Preference Optimization (APO). Pretraining datasets are public in a collection; mid-training and post-training datasets will be uploaded later.",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO). [...] The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+   "The datasets used for pretraining can be found in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm3-pretraining-datasets-685a7353fdc01aecde51b1d9) and those used in mid-training and post-training will be uploaded later"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_data_size__v4.json",
+  "status": "prose",
+  "value": "11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on 140B reasoning tokens",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. [...] - **Pretraining tokens:** 11T [...] Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data.",
+   "- **Pretraining tokens:** 11T",
+   "Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO)."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_scope__v4.json",
+  "status": "prose",
+  "value": "Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data.",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO). [...] The model has also been trained on Arabic (standard), Chinese and Russian data, but has seen fewer tokens in these languages compared to the 6 above. [...] **Multilingual**: 6 natively supported (English, French, Spanish, German, Italian, and Portuguese)",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+   "The model has also been trained on Arabic (standard), Chinese and Russian data, but has seen fewer tokens in these languages compared to the 6 above.",
+   "**Multilingual**: 6 natively supported (English, French, Spanish, German, Italian, and Portuguese)"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_method__v4.json",
+  "status": "prose",
+  "value": "Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+  "quote": "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO).",
+  "quotes": [
+   "The model is a decoder-only transformer using GQA and NoPE (with 3:1 ratio), it was pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data. Post-training included midtraining on 140B reasoning tokens followed by supervised fine-tuning and alignment via Anchored Preference Optimization (APO)."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/design_rationale__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_hardware__v4.json",
+  "status": "prose",
+  "value": "384 H100 GPUs",
+  "quote": "- **GPUs:** 384 H100",
+  "quotes": [
+   "- **GPUs:** 384 H100"
+  ],
+  "section": "Training",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/intended_uses__v4.json",
+  "status": "prose",
+  "value": "Should be used as assistive tools rather than definitive sources of information; users should verify important information. The model is an instruct model optimized for hybrid reasoning.",
+  "quote": "These models should be used as assistive tools rather than definitive sources of information. [...] Users should always verify important information and critically evaluate any generated content. [...] Instruct model optimized for **hybrid reasoning**",
+  "quotes": [
+   "These models should be used as assistive tools rather than definitive sources of information.",
+   "Users should always verify important information and critically evaluate any generated content.",
+   "Instruct model optimized for **hybrid reasoning**"
+  ],
+  "section": "Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/out_of_scope_uses__v4.json",
+  "status": "prose",
+  "value": "The model should be used as an assistive tool rather than a definitive source of information; users should verify important information.",
+  "quote": "These models should be used as assistive tools rather than definitive sources of information. [...] Users should always verify important information and critically evaluate any generated content.",
+  "quotes": [
+   "These models should be used as assistive tools rather than definitive sources of information.",
+   "Users should always verify important information and critically evaluate any generated content."
+  ],
+  "section": "Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/target_systems__v4.json",
+  "status": "prose",
+  "value": "Can be used in agentic systems with tool calling (xml_tools or python_tools), as an instruct/hybrid reasoning model, and deployed via vLLM and SGLang as an OpenAI-compatible API; should be used as an assistive tool.",
+  "quote": "SmolLM3 supports tool calling! [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format. [...] These models should be used as assistive tools rather than definitive sources of information. [...] Instruct model optimized for **hybrid reasoning**",
+  "quotes": [
+   "SmolLM3 supports tool calling!",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.",
+   "These models should be used as assistive tools rather than definitive sources of information.",
+   "Instruct model optimized for **hybrid reasoning**"
+  ],
+  "section": "Agentic Usage",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/integration_means__v4.json",
+  "status": "prose",
+  "value": "Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template; /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch.",
+  "quote": "The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade your transformers version. [...] For choosing between enabling, you can provide the `/think` and `/no_think` flags through the system prompt [...] We also provide the option of specifying the whether to use extended thinking through the `enable_thinking` kwarg [...] Under the argument `xml_tools` for standard tool-calling: these tools will be called as JSON blobs within XML tags [...] Or under `python_tools`: then the model will call tools like python functions in a `<code>` snippet [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.",
+  "quotes": [
+   "The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade your transformers version.",
+   "For choosing between enabling, you can provide the `/think` and `/no_think` flags through the system prompt",
+   "We also provide the option of specifying the whether to use extended thinking through the `enable_thinking` kwarg",
+   "Under the argument `xml_tools` for standard tool-calling: these tools will be called as JSON blobs within XML tags",
+   "Or under `python_tools`: then the model will call tools like python functions in a `<code>` snippet",
+   "For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`.",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format."
+  ],
+  "section": "How to use",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/required_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.54.0.dev0",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "transformers v4.53.0 or later (upgrade transformers); can also be loaded with the latest vllm, which uses transformers as a backend",
+   "quotes": [
+    "The modeling code for SmolLM3 is available in transformers `v4.53.0`, so make sure to upgrade your transformers version. You can also load the model with the latest `vllm` which uses transformers as a backend."
+   ],
+   "agreement": "adds",
+   "section": "How to use",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/limitations__v4.json",
+  "status": "prose",
+  "value": "Generated content may not always be factually accurate, logically consistent, or free from biases present in the training data; should be used as assistive tools rather than definitive sources, and users should verify important information.",
+  "quote": "SmolLM3 can produce text on a variety of topics, but the generated content may not always be factually accurate, logically consistent, or free from biases present in the training data. These models should be used as assistive tools rather than definitive sources of information. Users should always verify important information and critically evaluate any generated content.",
+  "quotes": [
+   "SmolLM3 can produce text on a variety of topics, but the generated content may not always be factually accurate, logically consistent, or free from biases present in the training data. These models should be used as assistive tools rather than definitive sources of information. Users should always verify important information and critically evaluate any generated content."
+  ],
+  "section": "Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "en",
+   "fr",
+   "es",
+   "it",
+   "pt",
+   "zh",
+   "ar",
+   "ru"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "card:language = [\"en\", \"fr\", \"es\", \"it\", \"pt\", \"zh\", \"ar\", \"ru\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en",
+     "fr",
+     "es",
+     "it",
+     "pt",
+     "zh",
+     "ar",
+     "ru"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "6 natively supported languages: English, French, Spanish, German, Italian, and Portuguese; also trained on Arabic (standard), Chinese and Russian data, with fewer tokens in these.",
+   "quotes": [
+    "**Multilingual**: 6 natively supported (English, French, Spanish, German, Italian, and Portuguese)",
+    "The model has also been trained on Arabic (standard), Chinese and Russian data, but has seen fewer tokens in these languages compared to the 6 above."
+   ],
+   "agreement": "adds",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/eval_results__v4.json",
+  "status": "prose",
+  "value": "SmolLM3-3B (no extended thinking): AIME 2025 9.3, GSM-Plus 72.8, LiveCodeBench v4 15.2, GPQA Diamond 35.7, IFEval 76.7, MixEval Hard 26.9, BFCL 92.3, Global MMLU 53.5. Extended thinking: AIME 2025 36.7, GSM-Plus 83.4, LiveCodeBench v4 30.0, GPQA Diamond 41.7, IFEval 71.2, MixEval Hard 30.8, BFCL 88.8, Global MMLU 64.1. All evaluations zero-shot unless stated otherwise, run with lighteval.",
+  "quote": "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them. [...] | High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** | [...] | Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** | [...] | Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** | [...] | Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** | [...] | Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 | [...] | High school math competition | AIME 2025 | <u>36.7</u> | 30.7 | **58.8** | [...] | Multilingual Q&A | Global MMLU | <u>64.1</u> | 62.3 | **73.3** |",
+  "quotes": [
+   "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them.",
+   "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** |",
+   "| Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** |",
+   "| Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** |",
+   "| Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** |",
+   "| Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 |",
+   "| High school math competition | AIME 2025 | <u>36.7</u> | 30.7 | **58.8** |",
+   "| Multilingual Q&A | Global MMLU | <u>64.1</u> | 62.3 | **73.3** |"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "Instruction model: AIME 2025, GSM-Plus, LiveCodeBench v4, GPQA Diamond, IFEval, MixEval Hard, BFCL, Global MMLU. Base model: HellaSwag, ARC-CF, Winogrande, CommonsenseQA, MMLU-CF, MMLU Pro CF/MCF, PIQA, OpenBookQA, BoolQ, HumanEval+, MBPP+, MATH (4-shot), GSM8k (5-shot), Ruler 32k/64k/128k; multilingual: MLMM Hellaswag, Belebele, Global MMLU (CF), Flores-200 (5-shot).",
+  "quote": "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** | [...] | Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** | [...] | Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** | [...] | Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** | [...] | Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 | [...] | Alignment | MixEval Hard | 26.9 | <u>27.6</u> | 24.9 | 24.3 | **31.6** | [...] | Tool Calling | BFCL| <u>92.3</u> | - | <u>92.3</u> * | 89.5  | **95.0** | [...] | Multilingual Q&A | Global MMLU | <u>53.5</u> | 50.54 | 46.8 | 49.5 | **65.1** |",
+  "quotes": [
+   "| High school math competition | AIME 2025 | <u>9.3</u> | 2.9 | 0.3 | 8.0 | **17.1** |",
+   "| Math problem-solving | GSM-Plus | 72.8 | <u>74.1</u> | 59.2 | 68.3 | **82.1** |",
+   "| Competitive programming | LiveCodeBench v4 | <u>15.2</u> | 10.5 | 3.4 | 15.0 | **24.9** |",
+   "| Graduate-level reasoning | GPQA Diamond | <u>35.7</u> | 32.2 | 29.4 | 31.8 | **44.4** |",
+   "| Instruction following | IFEval | **76.7** | 65.6 | 71.6 | <u>74.0</u> | 68.9 |",
+   "| Alignment | MixEval Hard | 26.9 | <u>27.6</u> | 24.9 | 24.3 | **31.6** |",
+   "| Tool Calling | BFCL| <u>92.3</u> | - | <u>92.3</u> * | 89.5  | **95.0** |",
+   "| Multilingual Q&A | Global MMLU | <u>53.5</u> | 50.54 | 46.8 | 49.5 | **65.1** |"
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/eval_methodology__v4.json",
+  "status": "prose",
+  "value": "Evaluations run with lighteval; all zero-shot unless stated otherwise (e.g., MATH 4-shot, GSM8k 5-shot, Flores-200 5-shot). For Ruler 64k, YaRN applied to Qwen models with 32k context to extrapolate context length.",
+  "quote": "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them. [...] For Ruler 64k evaluation, we apply YaRN to the Qwen models with 32k context to extrapolate the context length. [...] | | MATH (4-shot) | <u>46.10</u> | 40.10 | 7.44 | 41.64 | **51.20** | [...] | | GSM8k (5-shot) | 67.63 | <u>70.13</u> | 25.92 | 65.88 | **74.14** | ",
+  "quotes": [
+   "All evaluations are zero-shot unless stated otherwise, and we use [lighteval](https://github.com/huggingface/lighteval) to run them.",
+   "For Ruler 64k evaluation, we apply YaRN to the Qwen models with 32k context to extrapolate the context length.",
+   "| | MATH (4-shot) | <u>46.10</u> | 40.10 | 7.44 | 41.64 | **51.20** |",
+   "| | GSM8k (5-shot) | 67.63 | <u>70.13</u> | 25.92 | 65.88 | **74.14** | "
+  ],
+  "section": "Evaluation",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/autonomy__v4.json",
+  "status": "prose",
+  "value": "The card positions the model as an assistive tool requiring human verification of outputs (not a definitive source); it also supports tool calling.",
+  "quote": "These models should be used as assistive tools rather than definitive sources of information. Users should always verify important information and critically evaluate any generated content. [...] SmolLM3 supports tool calling!",
+  "quotes": [
+   "These models should be used as assistive tools rather than definitive sources of information. Users should always verify important information and critically evaluate any generated content.",
+   "SmolLM3 supports tool calling!"
+  ],
+  "section": "Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/standards_compliance__v4.json",
+  "status": "prose",
+  "value": "EU AI Act: the card provides a Public Summary of Training Content for GPAI models, following the EU template",
+  "quote": "The EU AI Act requires all GPAI models to provide a Public Summary of Training Content according to a [given template](https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models). [...] You can find the summary for this model below, as well as in its [development Space](https://huggingface.co/spaces/hfmlsoc/smollm3-eu-data-transparency).",
+  "quotes": [
+   "The EU AI Act requires all GPAI models to provide a Public Summary of Training Content according to a [given template](https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models).",
+   "You can find the summary for this model below, as well as in its [development Space](https://huggingface.co/spaces/hfmlsoc/smollm3-eu-data-transparency)."
+  ],
+  "section": "EU Summary of Public Content",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "HuggingFaceTB/SmolLM3-3B-Base"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "card:base_model = [\"HuggingFaceTB/SmolLM3-3B-Base\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "HuggingFaceTB/SmolLM3-3B-Base"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/raw/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+  "llm_cache": "data/raw/llm/smollm/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch.",
+  "quote": "**Fully open model**: open weights + full training details including public data mixture and training configs [...] For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23) [...] You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format.",
+  "quotes": [
+   "**Fully open model**: open weights + full training details including public data mixture and training configs",
+   "For local inference, you can use `llama.cpp`, `ONNX`, `MLX`, `MLC` and `ExecuTorch`. You can find quantized checkpoints in this collection (https://huggingface.co/collections/HuggingFaceTB/smollm3-686d33c1fdffe8e635317e23)",
+   "You can use vLLM and SGLang to deploy the model in an API compatible with OpenAI format."
+  ],
+  "section": "How to use",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "smollm",
+  "repo_id": "HuggingFaceTB/SmolLM3-3B",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:01+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM3-3B",
+  "quote": "derived:hub_url = \"https://huggingface.co/HuggingFaceTB/SmolLM3-3B\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

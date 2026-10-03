@@ -1,0 +1,11 @@
+{
+ "url": "https://huggingface.co/OpenGVLab/InternViT-300M-448px/raw/fe158954b3b9bbc92a37fd24a78912173910558a/config.json",
+ "status": 200,
+ "retrieved_at": "2026-09-30T10:30:02+00:00",
+ "headers": {
+  "content-type": "text/plain; charset=utf-8",
+  "etag": "\"c68c7b42b5873fdbdd11c02e795fae0947c0c6ba\"",
+  "x-repo-commit": "fe158954b3b9bbc92a37fd24a78912173910558a"
+ },
+ "body": "{\n  \"architectures\": [\n    \"InternVisionModel\"\n  ],\n  \"auto_map\": {\n    \"AutoConfig\": \"configuration_intern_vit.InternVisionConfig\",\n    \"AutoModel\": \"modeling_intern_vit.InternVisionModel\"\n  },\n  \"attention_dropout\": 0.0,\n  \"drop_path_rate\": 0.1,\n  \"dropout\": 0.0,\n  \"hidden_act\": \"gelu\",\n  \"hidden_size\": 1024,\n  \"image_size\": 448,\n  \"initializer_factor\": 1.0,\n  \"initializer_range\": 0.02,\n  \"intermediate_size\": 4096,\n  \"layer_norm_eps\": 1e-06,\n  \"model_type\": \"intern_vit_6b\",\n  \"norm_type\": \"layer_norm\",\n  \"num_attention_heads\": 16,\n  \"num_channels\": 3,\n  \"num_hidden_layers\": 24,\n  \"patch_size\": 14,\n  \"qk_normalization\": false,\n  \"qkv_bias\": true,\n  \"torch_dtype\": \"bfloat16\",\n  \"transformers_version\": \"4.37.2\",\n  \"use_flash_attn\": true\n}\n"
+}

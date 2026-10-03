@@ -1,0 +1,340 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:05Z",
+   "createdBy": [
+    "urn:model-cards:internvl_gptoss#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:internvl_gptoss#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for internvl_gptoss (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:internvl_gptoss#model"
+   ],
+   "element": [
+    "urn:model-cards:internvl_gptoss#agent",
+    "urn:model-cards:internvl_gptoss#supplier",
+    "urn:model-cards:internvl_gptoss#model",
+    "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-v1.2",
+    "urn:model-cards:internvl_gptoss#rel-4",
+    "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-Tiny",
+    "urn:model-cards:internvl_gptoss#rel-6",
+    "urn:model-cards:internvl_gptoss#training-data",
+    "urn:model-cards:internvl_gptoss#rel-8",
+    "urn:model-cards:internvl_gptoss#dependency-software",
+    "urn:model-cards:internvl_gptoss#rel-10",
+    "urn:model-cards:internvl_gptoss#evalset-Average-scores-reported-on-multimodal-general-reasoning-text-and-agentic-benchmarks-including-MMBench-v1.1-en-MMStar-BLINK-HallusionBench-AI2D-OCRBench-MMVet-MME-RealWorld-en-MVBench-VideoMME-MMMU-MathVista-MathVision-MathVerse-DynaMath-WeMath-LogicVista-MATH500-AIME24-AIME25-GPQA-MMLU-Pro-GAOKAO-IFEval-SGP-Bench-VSI-Bench-ERQA-SpaCE-10-and-OmniSpatial-evaluation-conducted-with-VLMEvalkit.",
+    "urn:model-cards:internvl_gptoss#rel-12",
+    "urn:model-cards:internvl_gptoss#model-OpenGVLab-InternViT-300M-448px-V2_5",
+    "urn:model-cards:internvl_gptoss#rel-14",
+    "urn:model-cards:internvl_gptoss#rel-15",
+    "urn:model-cards:internvl_gptoss#model-openai-gpt-oss-20b",
+    "urn:model-cards:internvl_gptoss#rel-17",
+    "urn:model-cards:internvl_gptoss#rel-18",
+    "urn:model-cards:internvl_gptoss#rel-19",
+    "urn:model-cards:internvl_gptoss#licence-ss-model",
+    "urn:model-cards:internvl_gptoss#rel-21",
+    "urn:model-cards:internvl_gptoss#rel-22"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:internvl_gptoss#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:internvl_gptoss#supplier",
+   "name": "OpenGVLab",
+   "creationInfo": "_:creationinfo",
+   "comment": "Provider not stated in the card; this is the Hugging Face account name."
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#model",
+   "name": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:internvl_gptoss#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "49b11e8d5e9d4c822de52dee190f95c988009559",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "49b11e8d5e9d4c822de52dee190f95c988009559",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "\"ViT–MLP–LLM\" paradigm (vision encoder + MLP + language model); language model initialized from Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; the 20B-A4B variant is a mixture-of-experts-style \"A4B\" model (21.2B-A4B)"
+   ],
+   "ai_domain": [
+    "image-text-to-text",
+    "multilingual"
+   ],
+   "ai_informationAboutApplication": "Target systems: Multimodal (vision-language) models supporting GUI interaction and embodied agency; deployable as online-served multimodal LLM services (e.g., via OpenAI-compatible API servers).",
+   "ai_limitation": "The card has no dedicated limitations section. It notes undesired repetition in Thinking mode, mitigated by do_sample=True and temperature=0.6. It also says lmdeploy has not yet supported GPT-OSS, so vLLM is recommended for InternVL3.5-20B-A4B.",
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open model weights released publicly on Hugging Face (GitHub and HF formats) and ModelScope; all models and code publicly released. Deployable via LMDeploy and vLLM (vLLM recommended for the 20B-A4B model)."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+   "releaseTime": "2025-08-29T13:16:54Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "21232768704"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text, image"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "131072"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "trainingHyperparameters",
+     "value": "Only partial: during the SFT stage the context window is set to 32K tokens. The card does not state learning rate, batch size, optimiser or epochs."
+    }
+   ],
+   "ai_informationAboutTraining": "Training pipeline: Multimodal Continual Pre-Training (CPT), Supervised Fine-Tuning (SFT), and Cascade Reinforcement Learning (CascadeRL). CascadeRL first uses Mixed Preference Optimization (MPO) under offline RL, followed by GSPO under online RL. The Flash version additionally uses Visual Consistency Learning (ViCO).",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: Code on GitHub (OpenGVLab/InternVL); model weights from different training stages (Pretrained, Instruct, MPO, final) open-sourced on Hugging Face and ModelScope; GitHub-format and HF-format checkpoints with conversion scripts (custom2hf, hf2custom); all models and code publicly released.\narchitecture_details: Follows the \"ViT–MLP–LLM\" paradigm; language model initialized from the Qwen3 series and GPT-OSS, vision encoder from InternViT-300M and InternViT-6B; retains the Dynamic High Resolution strategy from InternVL1.5. This 20B-A4B model: 0.3B vision params, 20.9B language params, 21.2B total with 4B active (A4B).\ndesign_rationale: Cascade RL combines offline RL (MPO) as an efficient warm-up for stable convergence and high-quality rollouts, then online RL (GSPO) to refine the output distribution from the model's own rollouts, achieving significant gains at a fraction of the GPU time cost. GSPO was chosen because it is more effective for training both dense and MoE models. Square averaging re-weights the NTP loss to mitigate bias toward longer or shorter responses.\nintegration_means: Usable via Hugging Face transformers (AutoModelForImageTextToText; transformers>=4.55.0 required for the 20B version), and deployable with LMDeploy (pipeline, OpenAI-compatible api_server) or vLLM (recommended for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS). Thinking mode is enabled via a system prompt (R1_SYSTEM_PROMPT) with do_sample=True and temperature=0.6.\nrequired_hardware: Models with up to 30B parameters can be deployed on a single A100 GPU; the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs.\neval_methodology: Evaluation conducted with VLMEvalkit. Thinking mode enabled by setting the system prompt to R1_SYSTEM_PROMPT; in Thinking mode, do_sample=True and temperature=0.6 recommended. Reported results are obtained without test-time scaling unless otherwise specified.\nbase_model_relation: merge"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-v1.2",
+   "name": "OpenGVLab/MMPR-v1.2",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/OpenGVLab/MMPR-v1.2"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-4",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-v1.2"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-Tiny",
+   "name": "OpenGVLab/MMPR-Tiny",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/OpenGVLab/MMPR-Tiny"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-6",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:internvl_gptoss#dataset-OpenGVLab-MMPR-Tiny"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#training-data",
+   "name": "Training data of OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "image",
+    "text"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Only partly described: SFT data includes synthetic multimodal reasoning data (image descriptions from InternVL3-78B fed to DeepSeek-R1 to sample reasoning rollouts), plus reused InternVL3 instruction-following data; pre-training uses \"large-scale text and multimodal corpora\" with no further provenance given.\nSFT data comes from three sources: reused InternVL3 instruction-following data; multimodal \"Thinking\" reasoning data built by having InternVL3-78B describe images and DeepSeek-R1 sample reasoning rollouts, with rollouts with incorrect final answers filtered out; and capability-expansion datasets. Rights acquisition is not described.",
+   "comment": "data_scope: Pre-training uses large-scale text and multimodal corpora; SFT data includes instruction-following data from InternVL3, multimodal reasoning data in \"Thinking\" mode (covering expert domains such as mathematics and scientific disciplines), and capability-expansion datasets (e.g., GUI-based interaction, embodied interaction). Card metadata lists language as multilingual.",
+   "dataset_dataPreprocessing": [
+    "Reasoning SFT data was built by having InternVL3-78B describe images and feeding the descriptions to DeepSeek-R1 to sample rollouts; rollouts with an incorrect final answer were filtered out. Random JPEG compression is included in pre-training as augmentation, and NTP loss is re-weighted by square averaging."
+   ]
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-8",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:internvl_gptoss#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:internvl_gptoss#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-10",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:internvl_gptoss#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#evalset-Average-scores-reported-on-multimodal-general-reasoning-text-and-agentic-benchmarks-including-MMBench-v1.1-en-MMStar-BLINK-HallusionBench-AI2D-OCRBench-MMVet-MME-RealWorld-en-MVBench-VideoMME-MMMU-MathVista-MathVision-MathVerse-DynaMath-WeMath-LogicVista-MATH500-AIME24-AIME25-GPQA-MMLU-Pro-GAOKAO-IFEval-SGP-Bench-VSI-Bench-ERQA-SpaCE-10-and-OmniSpatial-evaluation-conducted-with-VLMEvalkit.",
+   "name": "Average scores reported on multimodal general, reasoning, text, and agentic benchmarks including MMBench v1.1 (en), MMStar, BLINK, HallusionBench, AI2D, OCRBench, MMVet, MME-RealWorld (en), MVBench, VideoMME, MMMU, MathVista, MathVision, MathVerse, DynaMath, WeMath, LogicVista, MATH500, AIME24, AIME25, GPQA, MMLU-Pro, GAOKAO, IFEval, SGP-Bench, VSI-Bench, ERQA, SpaCE-10, and OmniSpatial; evaluation conducted with VLMEvalkit.",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-12",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:internvl_gptoss#evalset-Average-scores-reported-on-multimodal-general-reasoning-text-and-agentic-benchmarks-including-MMBench-v1.1-en-MMStar-BLINK-HallusionBench-AI2D-OCRBench-MMVet-MME-RealWorld-en-MVBench-VideoMME-MMMU-MathVista-MathVision-MathVerse-DynaMath-WeMath-LogicVista-MATH500-AIME24-AIME25-GPQA-MMLU-Pro-GAOKAO-IFEval-SGP-Bench-VSI-Bench-ERQA-SpaCE-10-and-OmniSpatial-evaluation-conducted-with-VLMEvalkit."
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#model-OpenGVLab-InternViT-300M-448px-V2_5",
+   "name": "OpenGVLab/InternViT-300M-448px-V2_5",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/OpenGVLab/InternViT-300M-448px-V2_5",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "8f86a5e87697180b439811ca69fabbfccd38d996",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-14",
+   "from": "urn:model-cards:internvl_gptoss#model-OpenGVLab-InternViT-300M-448px-V2_5",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-15",
+   "from": "urn:model-cards:internvl_gptoss#model-OpenGVLab-InternViT-300M-448px-V2_5",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:internvl_gptoss#model-openai-gpt-oss-20b",
+   "name": "openai/gpt-oss-20b",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/openai/gpt-oss-20b",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "6cee5e81ee83917806bbde320786a8fb61efebee",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-17",
+   "from": "urn:model-cards:internvl_gptoss#model-openai-gpt-oss-20b",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-18",
+   "from": "urn:model-cards:internvl_gptoss#model-openai-gpt-oss-20b",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-19",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:internvl_gptoss#model-OpenGVLab-InternViT-300M-448px-V2_5",
+    "urn:model-cards:internvl_gptoss#model-openai-gpt-oss-20b"
+   ],
+   "comment": "Relation declared: merge",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:internvl_gptoss#licence-ss-model",
+   "simplelicensing_licenseExpression": "Apache-2.0",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-21",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:internvl_gptoss#licence-ss-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:internvl_gptoss#rel-22",
+   "from": "urn:model-cards:internvl_gptoss#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

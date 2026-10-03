@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "design_rationale",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: design_rationale\nWhat to find: How and why key design choices in training were made.\nCard sections that often contain it: Training, Design\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card gives some rationale for training choices: a multi-stage pipeline (pre-training base, SFT, RL) \"progressively unlocks reasoning, tool use, and instruction-following capabilities\". SFT uses instruction-following, chain-of-thought and reasoning data to cultivate reasoning and thinking abilities. For the 30B model, a second SFT phase up-sampled agentic data with a smaller share of general replay data. RL uses GRPO across many environments, with verifiable rewards where possible and a generative reward model for open-ended prompts. Asynchronous RL runs generation and policy updates on separate GPU pools rather than in lockstep. A final RLHF phase tunes helpfulness, conversational quality, and safety.",
+  "quotes": [
+   "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities.",
+   "The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning and thinking abilities.",
+   "For the 30B model, we conducted a second SFT phase, in which the agentic data was up-sampled while a smaller share of general replay data was retained.",
+   "Most environments provide verifiable rewards, while open-ended prompts are scored by a generative reward model. Training runs asynchronously: generation and policy updates occupy separate GPU pools rather than proceeding in lockstep, and weights are refreshed in flight.",
+   "After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 526,
+  "cache_read_input_tokens": 16328,
+  "output_tokens": 699
+ },
+ "cost_usd_list_price": 0.012363599999999999,
+ "duration_ms": 4247
+}

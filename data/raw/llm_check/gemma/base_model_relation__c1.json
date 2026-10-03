@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "fed84d0c16167204",
+ "request_user": "Fact definition: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nValue taken from the model's structured metadata (derived:base_model_relation_tags = [\"finetune\"]): [\"finetune\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card metadata lists base_model google/gemma-4-31B. The card describes instruction-tuned variants, and its code loads google/gemma-4-31B-it. An instruction-tuned model built from a pre-trained base is a fine-tune. Nothing in the card mentions quantisation, merging or adapters, so \"finetune\" fits and nothing contradicts it."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11586,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 302
+ },
+ "cost_usd_list_price": 0.098736,
+ "duration_ms": 10408
+}

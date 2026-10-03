@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "base_model_relation",
+ "input_sha256": "8f3ac75c268b0c2bc82708240a8637deca89538256dd26ca4108e2b03ec71e66",
+ "request_user": "Fact: base_model_relation\nWhat to find: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nThe card's machine-readable metadata gives: [\"finetune\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Built on the Phi-4-Reasoning language model backbone plus the SigLIP-2 vision encoder (mid-fusion), and trained with Supervised Fine-Tuning (SFT); i.e. a fine-tuning-based derivation.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder, using a mid-fusion architecture.",
+   "Phi-4-Reasoning-Vision-15B is trained with Supervised Fine-Tuning (SFT) on a carefully curated mixture of reasoning and non-reasoning data."
+  ],
+  "agreement": "adds",
+  "section": "1. Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 767,
+  "cache_read_input_tokens": 10139,
+  "output_tokens": 702
+ },
+ "cost_usd_list_price": 0.0121198,
+ "duration_ms": 5314
+}

@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "autonomy",
+ "readme_sha256": "faf53d500a4cb1ce4fd9454e2a87e1adcb0ac9f5e409abddf060c715e2df5af4",
+ "request_user": "Fact: autonomy\nWhat to find: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nCard sections that often contain it: Intended Use, Safety, Agentic\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card says the model is not designed to be deployed in isolation but as part of an overall AI system with additional guardrails as required; it recommends developers perform safety testing and tuning before deployment. It does not explicitly require human-in-the-loop oversight.",
+  "quotes": [
+   "Large language models, including Llama 4, are not designed to be deployed in isolation but instead should be deployed as part of an overall AI system with additional guardrails as required.",
+   "Therefore, before deploying any applications of Llama 4 models, developers should perform safety testing and tuning tailored to their specific applications of the model."
+  ],
+  "section": "Safeguards"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 551,
+  "cache_read_input_tokens": 8785,
+  "output_tokens": 301
+ },
+ "cost_usd_list_price": 0.006975,
+ "duration_ms": 2718
+}

@@ -1,0 +1,231 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:01Z",
+   "createdBy": [
+    "urn:model-cards:falcon#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:falcon#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for falcon (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:falcon#model"
+   ],
+   "element": [
+    "urn:model-cards:falcon#agent",
+    "urn:model-cards:falcon#supplier",
+    "urn:model-cards:falcon#model",
+    "urn:model-cards:falcon#dependency-software",
+    "urn:model-cards:falcon#rel-4",
+    "urn:model-cards:falcon#evalset-AIME24-AIME25-HMMT25-AMO-BENCH-MATH500-LCBv5-v6-SciCode-GPQA-D-MMLU-Pro-HLE-IFBench--Bench-Telecom-Terminal-Bench-Hard",
+    "urn:model-cards:falcon#rel-6",
+    "urn:model-cards:falcon#model-tiiuae-Falcon-H1-7B-Base",
+    "urn:model-cards:falcon#rel-8",
+    "urn:model-cards:falcon#rel-9",
+    "urn:model-cards:falcon#rel-10",
+    "urn:model-cards:falcon#licence-on-model",
+    "urn:model-cards:falcon#rel-12",
+    "urn:model-cards:falcon#rel-13"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:falcon#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:falcon#supplier",
+   "name": "Technology Innovation Institute",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:falcon#model",
+   "name": "tiiuae/Falcon-H1R-7B",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:falcon#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Causal decoder-only, hybrid (Transformers + Mamba2) architecture"
+   ],
+   "ai_domain": [
+    "text-generation",
+    "en"
+   ],
+   "ai_limitation": "The card has no dedicated limitations section. It mentions only one failure mode: endless repetitions, which can be reduced by adjusting the repetition_penalty and presence_penalty parameters in supported frameworks.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "Falcon-H1R-7B scores: AIME24 88.1, AIME25 83.1, HMMT25 64.9, AMO-BENCH 36.3, MATH500 97.4, LCBv5-v6 68.6, GPQA-D 61.3, MMLU-Pro 72.1, HLE 11.1, IFBench 53.4, Terminal-Bench Hard 4.9. With test-time scaling (DeepConf): AIME24 96.7, AIME25 96.7, GPQA-D 70.2, AMO-Bench* 35.9."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/tiiuae/Falcon-H1R-7B",
+   "releaseTime": "2025-10-29T13:00:11Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "7585648736"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "262144"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "max_output_size",
+     "value": "Recommended max new tokens up to 65536"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Built on Falcon-H1-7B-Base; trained via cold-start supervised fine-tuning with long reasoning traces, then further enhanced by scaling RL with GRPO.",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: Technical report (GitHub PDF and Hugging Face paper page) and a release/technical blogpost are linked; base model Falcon-H1-7B-Base is on Hugging Face; TTS evaluated via DeepConf (external GitHub code). Inference is supported via transformers, vLLM and SGLang.\narchitecture_details: Causal decoder-only model with a hybrid architecture (Transformers + Mamba2), built on Falcon-H1-7B-Base. The card does not state layers, attention type, experts, active parameters or rationale.\nintegration_means: Can be used via Hugging Face `transformers`, `vLLM` or `SGLang`; vLLM and SGLang servers are started with a reasoning parser and queried via an OpenAI-compatible client; the model generates think content wrapped in a `<think>...</think>` block followed by the final response; recommended temperature 0.6, top-p 0.95, max new tokens up to 65536.\neval_methodology: Test-time scaling (TTS) results on a few benchmarks were evaluated via DeepConf; AMO-Bench* is limited to the parser-verifiable subset of 39 problems. Recommended sampling: temperature 0.6, top-p 0.95, max new tokens up to 65536.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:falcon#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-4",
+   "from": "urn:model-cards:falcon#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:falcon#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:falcon#evalset-AIME24-AIME25-HMMT25-AMO-BENCH-MATH500-LCBv5-v6-SciCode-GPQA-D-MMLU-Pro-HLE-IFBench--Bench-Telecom-Terminal-Bench-Hard",
+   "name": "AIME24, AIME25, HMMT25, AMO-BENCH, MATH500, LCBv5-v6, SciCode, GPQA-D, MMLU-Pro, HLE, IFBench, 𝜏²-Bench Telecom, Terminal-Bench Hard",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-6",
+   "from": "urn:model-cards:falcon#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:falcon#evalset-AIME24-AIME25-HMMT25-AMO-BENCH-MATH500-LCBv5-v6-SciCode-GPQA-D-MMLU-Pro-HLE-IFBench--Bench-Telecom-Terminal-Bench-Hard"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:falcon#model-tiiuae-Falcon-H1-7B-Base",
+   "name": "tiiuae/Falcon-H1-7B-Base",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/tiiuae/Falcon-H1-7B-Base",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "c9a4cbb95c01b1ede39f69eda083d03d8903b8f0",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-8",
+   "from": "urn:model-cards:falcon#model-tiiuae-Falcon-H1-7B-Base",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-9",
+   "from": "urn:model-cards:falcon#model-tiiuae-Falcon-H1-7B-Base",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-10",
+   "from": "urn:model-cards:falcon#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:falcon#model-tiiuae-Falcon-H1-7B-Base"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:falcon#licence-on-model",
+   "simplelicensing_licenseExpression": "LicenseRef-falcon-llm-license",
+   "creationInfo": "_:creationinfo",
+   "comment": "Licence link from card: https://falconllm.tii.ae/falcon-terms-and-conditions.html"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-12",
+   "from": "urn:model-cards:falcon#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:falcon#licence-on-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:falcon#rel-13",
+   "from": "urn:model-cards:falcon#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

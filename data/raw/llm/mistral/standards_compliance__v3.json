@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "standards_compliance",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: standards_compliance\nWhat to find: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).\nCard sections that often contain it: Compliance, Responsibility, Safety\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 570,
+  "cache_read_input_tokens": 9701,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0054042,
+ "duration_ms": 1976
+}

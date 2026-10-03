@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "additional_assets",
+ "readme_sha256": "e498820afb35532693f1e146de49ad1c99bb8d5134d3cf0276d3593ff4cd668f",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Quantized checkpoints are provided (Scout as BF16 weights, on-the-fly int4 quantization code provided); technical info and recipes for using Llama 4 in applications are in the llama-cookbook repo (https://github.com/meta-llama/llama-cookbook); system-level protections (Llama Guard, Prompt Guard, Code Shield) are available, with reference implementation at https://github.com/meta-llama/llama-agentic-system; Purple Llama GitHub repo for trust tools.",
+  "quotes": [
+   "We've provided quantized checkpoints for deployment flexibility, but all reported evaluations and testing were conducted on bf16 models.",
+   "We provide code for on-the-fly int4 quantization which minimizes performance degradation as well.",
+   "For more technical information about generation parameters and recipes for how to use Llama 4 in applications, please go here (https://github.com/meta-llama/llama-cookbook).",
+   "We provide the community with system level protections (https://llama.meta.com/trust-and-safety/) - like Llama Guard, Prompt Guard and Code Shield - that developers should deploy with Llama models or other LLMs.",
+   "Our Trust tools are open sourced for the community to use and widely distributed across ecosystem partners including cloud service providers."
+  ],
+  "section": "Benchmarks"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9956,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 534
+ },
+ "cost_usd_list_price": 0.045168,
+ "duration_ms": 4116
+}

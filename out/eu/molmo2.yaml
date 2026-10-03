@@ -1,0 +1,706 @@
+model: molmo2
+repo_id: allenai/Molmo2-8B
+retrieved_at: '2026-09-30T10:17:04+00:00'
+note: Unofficial fill of the EU GPAI Code of Practice Model Documentation Form from the public model card.
+  No official machine-readable schema exists. This is a yardstick, not a compliance assessment.
+items:
+- id: legal_name_for_the_model_provider
+  section: General information
+  item: Legal name for the model provider
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: provider_name
+    status: prose
+    value: Allen Institute for AI (Ai2)
+    quote: Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2)
+      that support image, video and multi-image understanding and grounding.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: model_name
+  section: General information
+  item: Model name
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_name
+    status: structured
+    value: allenai/Molmo2-8B
+    quote: api:id = "allenai/Molmo2-8B"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+  - fact_id: model_version
+    status: structured
+    value: e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b
+    quote: api:sha = "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: model_authenticity
+  section: General information
+  item: Model authenticity
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: model_authenticity
+    status: structured
+    value: e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b
+    quote: api:sha = "e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: release_date
+  section: General information
+  item: Release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: union_market_release_date
+  section: General information
+  item: Union market release date
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: model_dependencies
+  section: General information
+  item: Model dependencies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: base_model
+    status: structured
+    value: Qwen/Qwen3-8B, google/siglip-so400m-patch14-384
+    quote: card:base_model = ["Qwen/Qwen3-8B", "google/siglip-so400m-patch14-384"]
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+  - fact_id: base_model_relation
+    status: structured
+    value: finetune
+    quote: derived:base_model_relation_tags = ["finetune"]
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: model_architecture
+  section: Model properties
+  item: Model architecture
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_family
+    status: prose
+    value: Vision-language model based on Qwen3-8B (language model) with SigLIP 2 as vision backbone
+    quote: Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384)
+      as vision backbone.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: design_specifications_of_the_model
+  section: Model properties
+  item: Design specifications of the model
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: architecture_details
+    status: prose
+    value: Molmo2-8B is based on Qwen3-8B (language model) and uses SigLIP 2 as vision backbone. The card
+      does not state layers, attention type, experts, active parameters, or design rationale.
+    quote: Molmo2-8B is based on [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) and uses [SigLIP 2](https://huggingface.co/google/siglip-so400m-patch14-384)
+      as vision backbone.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: input_modalities
+  section: Model properties
+  item: Input modalities
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: input_modalities
+    status: structured
+    value: text, image
+    quote: derived:pipeline_input_modalities = ["text", "image"]
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+  - fact_id: input_modalities
+    status: prose_adds
+    value: Image, video and multi-image understanding and grounding (image and video inputs)
+    quote: Molmo2 is a family of open vision-language models developed by the Allen Institute for AI (Ai2)
+      that support image, video and multi-image understanding and grounding.
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card
+- id: input_modalities_maximum_size
+  section: Model properties
+  item: Input modalities (maximum size)
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: max_input_size
+    status: structured
+    value: '36864'
+    quote: config:text_config.max_position_embeddings = 36864
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/config.json
+    source_type: repo_config
+- id: output_modalities_modalities
+  section: Model properties
+  item: Output modalities (modalities)
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: output_modalities
+    status: structured
+    value: text
+    quote: derived:pipeline_output_modalities = ["text"]
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+- id: output_modalities_maximum_size
+  section: Model properties
+  item: Output modalities (maximum size)
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: total_model_size
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '8661703120'
+    quote: api:safetensors.total = 8661703120
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: total_model_size_2
+  section: Model properties
+  item: Total model size
+  audience:
+    AIO: false
+    NCA: true
+    DP: true
+  precision: range
+  status: answered
+  answers:
+  - fact_id: param_count
+    status: structured
+    value: '8661703120'
+    quote: api:safetensors.total = 8661703120
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: distribution_channels
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets
+      available on Hugging Face
+    quote: You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2).
+      [...] - 💬 [Demo](https://playground.allenai.org/?model=molmo2-8b) [...] Ai2 is commited to open
+      science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data).
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+  - fact_id: download_location
+    status: structured
+    value: https://huggingface.co/allenai/Molmo2-8B
+    quote: derived:hub_url = "https://huggingface.co/allenai/Molmo2-8B"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: hub_api
+- id: distribution_channels_2
+  section: Methods of distribution and licenses
+  item: Distribution channels
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: distribution_channels
+    status: prose
+    value: Open weights on Hugging Face (transformers library); an online demo/playground; Molmo2 datasets
+      available on Hugging Face
+    quote: You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2).
+      [...] - 💬 [Demo](https://playground.allenai.org/?model=molmo2-8b) [...] Ai2 is commited to open
+      science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data).
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: license
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Apache 2.0; intended for research and educational use, and trained on third party datasets
+      subject to academic and non-commercial research use only
+    quote: This model is licensed under Apache 2.0. It is intended for research and educational use in
+      accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use). [...] This
+      model is trained on third party datasets that are subject to academic and non-commercial research
+      use only.
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card
+- id: license_2
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: license
+    status: structured
+    value: apache-2.0
+    quote: card:license = "apache-2.0"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+  - fact_id: license
+    status: prose_adds
+    value: Apache 2.0; intended for research and educational use, and trained on third party datasets
+      subject to academic and non-commercial research use only
+    quote: This model is licensed under Apache 2.0. It is intended for research and educational use in
+      accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use). [...] This
+      model is trained on third party datasets that are subject to academic and non-commercial research
+      use only.
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card
+- id: license_3
+  section: Methods of distribution and licenses
+  item: License
+  audience:
+    AIO: true
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: additional_assets
+    status: prose
+    value: The Molmo2 datasets are available in the Molmo2 data collection on Hugging Face; the other
+      artifacts (training code, evaluations, intermediate checkpoints) will be made available at a later
+      date. All models in the Molmo2 family are in a Hugging Face collection.
+    quote: Ai2 is commited to open science. The Molmo2 datasets are available [here](https://huggingface.co/collections/allenai/molmo2-data).  [...]
+      All other artifacts used in creating Molmo2 (training code, evaluations, intermediate checkpoints)
+      will be made available at a later date, furthering our commitment to open-source AI development
+      and reproducibility. [...] You can find all models in the Molmo2 family [here](https://huggingface.co/collections/allenai/molmo2).
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: acceptable_use_policy
+  section: Use
+  item: Acceptable Use Policy
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: acceptable_use_policy
+    status: prose
+    value: Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines
+      (https://allenai.org/responsible-use); trained on third party datasets subject to academic and non-commercial
+      research use only.
+    quote: It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).
+      [...] This model is trained on third party datasets that are subject to academic and non-commercial
+      research use only.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: intended_uses
+  section: Use
+  item: Intended uses
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: intended_uses
+    status: prose
+    value: Intended for research and educational use, in accordance with Ai2's Responsible Use Guidelines.
+    quote: It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: type_and_nature_of_ai_systems_in_which_the_general
+  section: Use
+  item: Type and nature of AI systems in which the general-purpose AI model can be integrated
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: out_of_scope_uses
+    status: prose
+    value: No explicit out-of-scope list. The card says the model is intended for research and educational
+      use. Its training datasets are subject to academic and non-commercial research use only, and users
+      should review the sources to decide whether the model suits their use case.
+    quote: It is intended for research and educational use in accordance with Ai2’s [Responsible Use Guidelines](https://allenai.org/responsible-use).
+      [...] This model is trained on third party datasets that are subject to academic and non-commercial
+      research use only. Please review the sources to determine if this model is appropriate for your
+      use case.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: technical_means_for_model_integration
+  section: Use
+  item: Technical means for model integration
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: integration_means
+    status: prose
+    value: Used via Hugging Face transformers (AutoProcessor and AutoModelForImageTextToText with trust_remote_code=True),
+      with transformers==4.57.1 and molmo_utils; inputs built with processor.apply_chat_template using
+      chat messages containing text, video or image content; supports video QA, video pointing, tracking,
+      multi-image QA and multi-image pointing.
+    quote: "pip install transformers==4.57.1 [...] pip install torch pillow einops torchvision accelerate\
+      \ decord2 molmo_utils [...] from transformers import AutoProcessor, AutoModelForImageTextToText\
+      \ [...] inputs = processor.apply_chat_template(\n    messages,\n    tokenize=True,\n    add_generation_prompt=True,\n\
+      \    return_tensors=\"pt\",\n    return_dict=True,\n) [...] ### Tracking Video QA (best with max_fps=8)"
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: required_hardware
+  section: Use
+  item: Required hardware
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: required_software
+  section: Use
+  item: Required software
+  audience:
+    AIO: false
+    NCA: false
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: required_software
+    status: structured
+    value: transformers
+    quote: card:library_name = "transformers"
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card_metadata
+  - fact_id: required_software
+    status: prose_adds
+    value: Python 3.11 conda environment with transformers==4.57.1, plus torch, pillow, einops, torchvision,
+      accelerate, decord2 and molmo_utils
+    quote: conda create --name transformers4571 python=3.11 [...] pip install transformers==4.57.1 [...]
+      pip install torch pillow einops torchvision accelerate decord2 molmo_utils
+    source_url: https://huggingface.co/api/models/allenai/Molmo2-8B
+    source_type: card
+- id: design_specifications_of_the_training_process
+  section: Training process
+  item: Design specifications of the training process
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: decision_rationale
+  section: Training process
+  item: Decision rationale
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: data_type_modality_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: 'Data type/modality: Select all that apply.'
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_modality
+    status: prose
+    value: Image-text and video-text pairs (images, video, multi-image)
+    quote: a collection of datasets with highly-curated image-text and video-text pairs.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: data_provenance_select_all_that_apply
+  section: Information on the data used for training, testing, and validation
+  item: Data provenance:Select all that apply
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_provenance
+    status: prose
+    value: 'Public datasets: trained on publicly available third party datasets (as referenced in the
+      technical report and the Molmo2 data collection of curated image-text and video-text pairs); the
+      card notes these are subject to academic and non-commercial research use only.'
+    quote: Molmo2 models are trained on publicly available third party datasets as referenced in [our
+      technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),  [...]
+      This model is trained on third party datasets that are subject to academic and non-commercial research
+      use only.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: how_data_was_obtained_and_selected
+  section: Information on the data used for training, testing, and validation
+  item: How data was obtained and selected
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_acquisition
+    status: prose
+    value: Trained on publicly available third party datasets (referenced in the technical report and
+      Molmo2 data), a collection of datasets with highly-curated image-text and video-text pairs; the
+      third party datasets are subject to academic and non-commercial research use only.
+    quote: Molmo2 models are trained on publicly available third party datasets as referenced in [our
+      technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),  [...]
+      a collection of datasets with highly-curated image-text and video-text pairs. [...] This model is
+      trained on third party datasets that are subject to academic and non-commercial research use only.
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: number_of_data_points
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: number_of_data_points_2
+  section: Information on the data used for training, testing, and validation
+  item: Number of data points
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: scope_and_main_characteristics
+  section: Information on the data used for training, testing, and validation
+  item: Scope and main characteristics
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: answered
+  answers:
+  - fact_id: data_scope
+    status: prose
+    value: Trained on publicly available third party datasets, a collection of highly-curated image-text
+      and video-text pairs; the model supports image, video and multi-image understanding and grounding.
+      The datasets are subject to academic and non-commercial research use only.
+    quote: "Molmo2 models are trained on publicly available third party datasets as referenced in [our\
+      \ technical report](https://allenai.org/papers/molmo2) and [Molmo2 data](https://huggingface.co/collections/allenai/molmo2-data),\
+      \ \na collection of datasets with highly-curated image-text and video-text pairs. [...] Molmo2 is\
+      \ a family of open vision-language models developed by the Allen Institute for AI (Ai2) that support\
+      \ image, video and multi-image understanding and grounding. [...] This model is trained on third\
+      \ party datasets that are subject to academic and non-commercial research use only."
+    source_url: https://huggingface.co/allenai/Molmo2-8B/raw/e28fa28597e5ec5e0cca2201dd8ab33d48bc4a1b/README.md
+    source_type: card
+- id: data_curation_methodologies
+  section: Information on the data used for training, testing, and validation
+  item: Data curation methodologies
+  audience:
+    AIO: true
+    NCA: true
+    DP: true
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_unsuitability_of_data_sources
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect unsuitability of data sources
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: measures_to_detect_identifiable_biases
+  section: Information on the data used for training, testing, and validation
+  item: Measures to detect identifiable biases
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: training_time
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: training_time_2
+  section: Computational resources (during training)
+  item: Training time
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: false
+    NCA: true
+    DP: false
+  precision: range
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2
+  section: Computational resources (during training)
+  item: Amount of computation used for training
+  audience:
+    AIO: true
+    NCA: false
+    DP: false
+  precision: exact
+  status: not_stated
+  answers: []
+- id: amount_of_computation_used_for_training_2_methodology
+  section: Computational resources (during training)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training
+  section: Energy consumption (during training and inference)
+  item: Amount of energy used for training
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: amount_of_energy_used_for_training_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen
+  section: Energy consumption (during training and inference)
+  item: Benchmarked amount of computation used for inference
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []
+- id: benchmarked_amount_of_computation_used_for_inferen_methodology
+  section: Energy consumption (during training and inference)
+  item: Measurement methodology
+  audience:
+    AIO: true
+    NCA: true
+    DP: false
+  precision: null
+  status: not_stated
+  answers: []

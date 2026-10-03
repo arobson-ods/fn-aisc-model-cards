@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "b17654eb2d3c2806",
+ "request_user": "Fact definition: Uses or AI systems the model is not intended or should not be used for.\nThe extractor answered that the card does NOT state this fact.\n\nSearch the whole card. Grade \"y\" if the card really does not state it; \"n\" if it does (quote the passage in your reason); \"partial\" if the card only hints at it or states it for a different model.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The card never lists uses the model shouldn't be put to or is not intended for. It only hints at limits through its intended-use statement: \"It is intended for research and educational use in accordance with Ai2's Responsible Use Guidelines.\" This implies that other uses are outside scope, and the real restrictions are left to an external guidelines document. The Bias section warns that the model \"can easily be prompted by users to generate harmful and sensitive content\" and that \"facts should be verified.\" Those are risk warnings, not stated out-of-scope uses. So the extractor's \"not stated\" is mostly right, but the card does hint at the fact."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 571,
+  "cache_read_input_tokens": 5752,
+  "output_tokens": 468
+ },
+ "cost_usd_list_price": 0.0150864,
+ "duration_ms": 6709
+}

@@ -1,0 +1,176 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:b0644abc-b9df-59da-8dcd-c711d23f223d",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:16:59Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "mistral:model",
+   "name": "mistralai/Mistral-Medium-3.5-128B",
+   "supplier": {
+    "name": "Mistral AI"
+   },
+   "version": "22b2b868a15677cfa6061277ed2f653d1349a9ab",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "22b2b868a15677cfa6061277ed2f653d1349a9ab"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "name": "other"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:acceptable_use_policy",
+     "value": "Released under a Modified MIT License (open-source for commercial and non-commercial use, with exceptions for companies with large revenue). Use restriction: the model must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights."
+    },
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Deployable via vLLM (recommended), llama.cpp, LM Studio, Ollama, SGLang and transformers; usable in Mistral Vibe via the Mistral API or a local vLLM server; fine-tuning via Axolotl and Unsloth. vLLM serving uses an OpenAI-compatible client with reasoning_effort set to 'none' or 'high'."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights on Hugging Face under a Modified MIT License; Mistral AI API; Le Chat; Mistral Vibe; deployable via vLLM, SGLang, transformers, llama.cpp (Unsloth GGUFs) and Ollama."
+    }
+   ],
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Dense 128B model (dense, not mixture-of-experts), multimodal with a vision encoder trained from scratch",
+     "modelArchitecture": "Dense 128B parameter model with a 256k context window; multimodal input (text and image) with text output; vision encoder trained from scratch to handle variable image sizes and aspect ratios; instruct and reasoning in a single set of weights, with reasoning effort configurable per request.",
+     "inputs": [
+      {
+       "format": "Text"
+      },
+      {
+       "format": "image input (with text output)"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "Text output (accepts text"
+      },
+      {
+       "format": "image input"
+      },
+      {
+       "format": "with text output)"
+      }
+     ],
+     "datasets": [
+      {
+       "ref": "mistral:evalset---Telecom-and-SWE-Bench-Verified-agentic-benchmarks-"
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "91.4% on τ³-Telecom and 77.6% on SWE-Bench Verified"
+      }
+     ]
+    },
+    "considerations": {
+     "useCases": [
+      "Instruction-following, reasoning, and coding tasks (including agentic coding and function calling) in a single unified model, with text and image input.",
+      "Can be used in chat assistants (Le Chat), coding agents (Vibe), and agentic systems with native function calling/tool use and JSON output; also supports system prompts and multimodal (text and image) input."
+     ],
+     "technicalLimitations": [
+      "The card has no dedicated limitations section. It warns that an incorrect Transformers config entry caused long-context performance degradation, which also affects GGUFs generated from the pre-fix config. It also says frameworks that rely on the Transformers config will show subpar performance, especially in long-context sessions, unless they include the fix.",
+      "out_of_scope_uses: Must not be used in a manner that infringes, misappropriates, or otherwise violates any third party's rights, including intellectual property rights."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "127704210176"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "262144"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "fp8"
+     },
+     {
+      "name": "model-cards:design_rationale",
+      "value": "The card gives limited rationale: a single merged model handles instruction-following, reasoning and coding in one set of weights (a unified model aimed at better performance than previous models), and the vision encoder was trained from scratch to handle variable image sizes and aspect ratios."
+     },
+     {
+      "name": "model-cards:required_hardware",
+      "value": "The card's serve command uses tensor parallelism across 8 GPUs (--tensor-parallel-size 8 for vLLM; --tp 8 for SGLang). No GPU memory requirement is stated."
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en, fr, de, es, pt, it, ja, ko, ru, zh, ar, fa, id, ms, ne, pl, ro, sr, sv, tr, uk, vi, hi, bn"
+     }
+    ]
+   }
+  },
+  {
+   "type": "library",
+   "bom-ref": "mistral:dependency-software",
+   "name": "transformers 5.6.0.dev0"
+  },
+  {
+   "type": "data",
+   "bom-ref": "mistral:evalset---Telecom-and-SWE-Bench-Verified-agentic-benchmarks-",
+   "name": "τ³-Telecom and SWE-Bench Verified (agentic benchmarks)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "τ³-Telecom and SWE-Bench Verified (agentic benchmarks)"
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "mistral:model",
+   "dependsOn": [
+    "mistral:dependency-software"
+   ]
+  },
+  {
+   "ref": "mistral:dependency-software"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "model_version",
+ "input_sha256": "68debeecaf97a40acd9fbe2bacb1a10a0bece323fcef70bd3084aaa7100b4301",
+ "request_user": "Fact: model_version\nWhat to find: Version identifier of this model release (named version or repository revision).\nThe card's machine-readable metadata gives: \"f8de16cdcdbc6c779ca517604e050d82cc119e44\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Named version Granite-4.2-8B, part of the Granite 4.2 family/generation (no repository revision stated)",
+  "quotes": [
+   "**Granite-4.2-8B** is the mid-size reasoning model in the Granite 4.2 family.",
+   "The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers."
+  ],
+  "agreement": "adds",
+  "section": "Description"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16715,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 692
+ },
+ "cost_usd_list_price": 0.0739002,
+ "duration_ms": 5826
+}

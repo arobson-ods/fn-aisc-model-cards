@@ -1,0 +1,1292 @@
+[
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "provider_name",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/provider_name__v4.json",
+  "status": "prose",
+  "value": "Granite Team, IBM",
+  "quote": "| **Developers** | Granite Team, IBM |",
+  "quotes": [
+   "| **Developers** | Granite Team, IBM |"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "model_name",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "ibm-granite/granite-4.2-8b",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "api:id = \"ibm-granite/granite-4.2-8b\"",
+  "section": "api:id",
+  "evidence": [
+   {
+    "path": "api:id",
+    "value": "ibm-granite/granite-4.2-8b",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "model_version",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "api:sha = \"f8de16cdcdbc6c779ca517604e050d82cc119e44\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Named version Granite-4.2-8B, part of the Granite 4.2 family/generation (no repository revision stated)",
+   "quotes": [
+    "**Granite-4.2-8B** is the mid-size reasoning model in the Granite 4.2 family.",
+    "The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers."
+   ],
+   "agreement": "adds",
+   "section": "Description",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "model_authenticity",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "api:sha = \"f8de16cdcdbc6c779ca517604e050d82cc119e44\"",
+  "section": "api:sha",
+  "evidence": [
+   {
+    "path": "api:sha",
+    "value": "f8de16cdcdbc6c779ca517604e050d82cc119e44",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "release_date",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/release_date__v4.json",
+  "status": "prose",
+  "value": "August 25, 2026",
+  "quote": "| **Release Date** | August 25, 2026 |",
+  "quotes": [
+   "| **Release Date** | August 25, 2026 |"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "eu_release_date",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/eu_release_date__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "license",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "apache-2.0",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "card:license = \"apache-2.0\"",
+  "section": "card:license",
+  "evidence": [
+   {
+    "path": "card:license",
+    "value": "apache-2.0",
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Apache 2.0",
+   "quotes": [
+    "| **License** | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) |",
+    "All Granite models are released under the Apache 2.0 license, enabling unrestricted commercial and academic use."
+   ],
+   "agreement": "agrees",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "acceptable_use_policy",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/acceptable_use_policy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "access_conditions",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": false,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "api:gated = false",
+  "section": "api:gated",
+  "evidence": [
+   {
+    "path": "api:gated",
+    "value": false,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "additional_assets",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/additional_assets__v4.json",
+  "status": "prose",
+  "value": "A GitHub repository (ibm-granite/granite-4.2-language-models) lists the full training datasets; a technical blog, documentation, an HF collection of Granite 4.2 models, and an SGLang cookbook (deployment recipe) are also linked. The custom granite_thinking_parser is included in the model repository.",
+  "quote": "A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models). [...] - **GitHub:** https://github.com/ibm-granite/granite-4.2-language-models [...] - **HF Collection:** https://huggingface.co/collections/ibm-granite/granite-42-language-models [...] - **Technical Blog:** https://huggingface.co/blog/ibm-granite/granite-4-2 [...] - **Documentation:** https://www.ibm.com/granite/docs/ [...] > **Reasoning parser:** Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+). [...] For a full deployment recipe (Docker, H200/B200 launch matrix, thinking-mode examples, and benchmark data), see the [SGLang Granite 4.2 cookbook](https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2).",
+  "quotes": [
+   "A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models).",
+   "- **GitHub:** https://github.com/ibm-granite/granite-4.2-language-models",
+   "- **HF Collection:** https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+   "- **Technical Blog:** https://huggingface.co/blog/ibm-granite/granite-4-2",
+   "- **Documentation:** https://www.ibm.com/granite/docs/",
+   "> **Reasoning parser:** Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+).",
+   "For a full deployment recipe (Docker, H200/B200 launch matrix, thinking-mode examples, and benchmark data), see the [SGLang Granite 4.2 cookbook](https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2)."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "architecture_family",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/architecture_family__v4.json",
+  "status": "prose",
+  "value": "Decoder-only Dense Transformer (GraniteForCausalLM)",
+  "quote": "| **Model Type** | Decoder-only Dense Transformer (Reasoning) | [...] | **Architecture** | GraniteForCausalLM |",
+  "quotes": [
+   "| **Model Type** | Decoder-only Dense Transformer (Reasoning) |",
+   "| **Architecture** | GraniteForCausalLM |"
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "architecture_details",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/architecture_details__v4.json",
+  "status": "prose",
+  "value": "Decoder-only dense transformer (GraniteForCausalLM) with 8B parameters; Grouped Query Attention with 32 attention heads and 8 KV heads; RoPE (θ = 10,000,000); SwiGLU MLP (hidden size 12800); RMSNorm (ε = 1e-5); untied input/output embeddings; 40 layers; embedding size 4096. Dense model (no experts). No rationale for the design choices is stated.",
+  "quote": "Granite-4.2-8B is built on a decoder-only dense transformer architecture with the following core components: [...] * **Attention:** Grouped Query Attention (GQA) with 32 attention heads and 8 KV heads [...] * **Position Embedding:** Rotary Position Embedding (RoPE) with θ = 10,000,000 [...] * **Feed-Forward:** MLP with SwiGLU activation (hidden size 12800) [...] * **Normalization:** RMSNorm (ε = 1e-5) [...] * **Embeddings:** Separate input/output embeddings (not tied) [...] | **Architecture** | GraniteForCausalLM |",
+  "quotes": [
+   "Granite-4.2-8B is built on a decoder-only dense transformer architecture with the following core components:",
+   "* **Attention:** Grouped Query Attention (GQA) with 32 attention heads and 8 KV heads",
+   "* **Position Embedding:** Rotary Position Embedding (RoPE) with θ = 10,000,000",
+   "* **Feed-Forward:** MLP with SwiGLU activation (hidden size 12800)",
+   "* **Normalization:** RMSNorm (ε = 1e-5)",
+   "* **Embeddings:** Separate input/output embeddings (not tied)",
+   "| **Architecture** | GraniteForCausalLM |"
+  ],
+  "section": "Model Design",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "param_count",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": 8791592960,
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "api:safetensors.total = 8791592960",
+  "section": "api:safetensors.total",
+  "evidence": [
+   {
+    "path": "api:safetensors.total",
+    "value": 8791592960,
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "8B",
+   "quotes": [
+    "| **Parameters** | 8B |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "input_modalities",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "derived:pipeline_input_modalities = [\"text\"]",
+  "section": "derived:pipeline_input_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_input_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "max_input_size",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": 131072,
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/config.json",
+  "quote": "config:max_position_embeddings = 131072",
+  "section": "config:max_position_embeddings",
+  "evidence": [
+   {
+    "path": "config:max_position_embeddings",
+    "value": 131072,
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Natively supports 128K context (long-context extension to 512K); sequence length 131072",
+   "quotes": [
+    "| **Context Length** | Natively Supports 128K (Long-context extension to 512K) |",
+    "<td style=\"text-align:left;\">Sequence length</td>\n    <td style=\"text-align:center;\">131072</td>"
+   ],
+   "agreement": "adds",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "output_modalities",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": [
+   "text"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "derived:pipeline_output_modalities = [\"text\"]",
+  "section": "derived:pipeline_output_modalities",
+  "evidence": [
+   {
+    "path": "derived:pipeline_output_modalities",
+    "value": [
+     "text"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "not_stated",
+   "agreement": "not_stated"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "max_output_size",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/max_output_size__v4.json",
+  "status": "prose",
+  "value": "max_new_tokens is set to 8192 in thinking mode (increase for complex reasoning) and 2048 in non-thinking mode",
+  "quote": "| `max_new_tokens` | `8192` | Thinking mode (increase for complex reasoning) | [...] | `max_new_tokens` | `2048` | Non-thinking mode |",
+  "quotes": [
+   "| `max_new_tokens` | `8192` | Thinking mode (increase for complex reasoning) |",
+   "| `max_new_tokens` | `2048` | Non-thinking mode |"
+  ],
+  "section": "Generation Parameters",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "task",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "text-generation",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "card:pipeline_tag = \"text-generation\"",
+  "section": "card:pipeline_tag",
+  "evidence": [
+   {
+    "path": "card:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:pipeline_tag",
+    "value": "text-generation",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "weights_precision",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "bfloat16",
+  "source_type": "repo_config",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/config.json",
+  "quote": "config:torch_dtype = \"bfloat16\"",
+  "section": "config:torch_dtype",
+  "evidence": [
+   {
+    "path": "config:torch_dtype",
+    "value": "bfloat16",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "bfloat16",
+   "quotes": [
+    "| **Precision** | bfloat16 |",
+    "* **Precision:** bfloat16"
+   ],
+   "agreement": "agrees",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_datasets",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_datasets__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_modality",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_modality__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_provenance",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_provenance__v4.json",
+  "status": "prose",
+  "value": "SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data (reasoning, tool calling, chain-of-thought), agentic traces collected across diverse tasks, and a curated selection of human-authored data. Base model pre-trained on a large-scale English and multilingual corpus (no provenance breakdown given).",
+  "quote": "the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data. [...] which was pre-trained on a large-scale English as well as multilingual corpus.",
+  "quotes": [
+   "the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data.",
+   "which was pre-trained on a large-scale English as well as multilingual corpus."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_acquisition",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_acquisition__v4.json",
+  "status": "prose",
+  "value": "SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought, agentic traces collected across diverse tasks, and a curated selection of human-authored data. Pre-training data details are deferred to the Granite 4.1 Technical Blog.",
+  "quote": "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data. [...] For full pre-training details (data composition, training recipe, and infrastructure), refer to our [Granite 4.1 Technical Blog](https://huggingface.co/blog/ibm-granite/granite-4-1).",
+  "quotes": [
+   "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data.",
+   "For full pre-training details (data composition, training recipe, and infrastructure), refer to our [Granite 4.1 Technical Blog](https://huggingface.co/blog/ibm-granite/granite-4-1)."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_data_size",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_data_size__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_scope",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_scope__v4.json",
+  "status": "prose",
+  "value": "SFT corpus comprises four sources: publicly available datasets under permissive licenses, internally generated synthetic data targeting reasoning, tool calling and chain-of-thought, agentic traces across diverse tasks, and curated human-authored data. Finetuned mostly on English instruction-response pairs plus multilingual data covering the supported languages. Base model pre-trained on a large-scale English and multilingual corpus.",
+  "quote": "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data. [...] Granite 4.2 models are primarily finetuned using instruction-response pairs mostly in English, but also multilingual data covering the supported languages listed above. [...] which was pre-trained on a large-scale English as well as multilingual corpus.",
+  "quotes": [
+   "For all the three, 3B, 8B and 30B models, the training corpus comprises four sources: (1) publicly available datasets under permissive licenses, (2) internally generated synthetic data targeting reasoning, tool calling, and chain-of-thought capabilities, (3) agentic traces collected across a diverse range of tasks, and (4) a curated selection of human-authored data.",
+   "Granite 4.2 models are primarily finetuned using instruction-response pairs mostly in English, but also multilingual data covering the supported languages listed above.",
+   "which was pre-trained on a large-scale English as well as multilingual corpus."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "knowledge_cutoff",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/knowledge_cutoff__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_curation",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_curation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "unsuitable_data_measures",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/unsuitable_data_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "personal_data",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/personal_data__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "data_bias_measures",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/data_bias_measures__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_method",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_method__v4.json",
+  "status": "prose",
+  "value": "Post-trained from Granite-4.1-8B-Base (pre-trained on a large-scale English and multilingual corpus) in stages: supervised fine-tuning (SFT) on instruction-following, chain-of-thought and reasoning data, then multi-phase, multi-environment reinforcement learning using GRPO, followed by a preference-alignment (RLHF) phase.",
+  "quote": "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities. [...] Granite-4.2-8B builds on [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base), which was pre-trained on a large-scale English as well as multilingual corpus. [...] The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning and thinking abilities. [...] The final stage of training applies multi-phase, multi-environment reinforcement learning using Group Relative Policy Optimization (GRPO). [...] After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety.",
+  "quotes": [
+   "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities.",
+   "Granite-4.2-8B builds on [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base), which was pre-trained on a large-scale English as well as multilingual corpus.",
+   "The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning and thinking abilities.",
+   "The final stage of training applies multi-phase, multi-environment reinforcement learning using Group Relative Policy Optimization (GRPO).",
+   "After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "design_rationale",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/design_rationale__v4.json",
+  "status": "prose",
+  "value": "The card gives some rationale for training choices: SFT uses instruction-following, chain-of-thought and reasoning data to cultivate reasoning and thinking abilities; hyperparameters were tuned before scaling to all three model sizes; for the 30B model a second SFT phase up-sampled agentic data while retaining a smaller share of general replay data. RL uses GRPO across multiple environments, with verifiable rewards where available and a generative reward model for open-ended prompts; an RLHF phase tunes helpfulness, conversational quality, and safety.",
+  "quote": "The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning and thinking abilities. [...] Hyperparameters were tuned before training was scaled to all three model sizes. [...] For the 30B model, we conducted a second SFT phase, in which the agentic data was up-sampled while a smaller share of general replay data was retained. [...] Most environments provide verifiable rewards, while open-ended prompts are scored by a generative reward model. [...] After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety.",
+  "quotes": [
+   "The SFT stage draws on instruction-following, chain-of-thought, and reasoning data to cultivate the model's reasoning and thinking abilities.",
+   "Hyperparameters were tuned before training was scaled to all three model sizes.",
+   "For the 30B model, we conducted a second SFT phase, in which the agentic data was up-sampled while a smaller share of general replay data was retained.",
+   "Most environments provide verifiable rewards, while open-ended prompts are scored by a generative reward model.",
+   "After the reward-driven phases, a preference-alignment (RLHF) phase tunes helpfulness, conversational quality, and safety."
+  ],
+  "section": "Stage 2: Supervised Fine-Tuning",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "hyperparameters",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/hyperparameters__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_hardware",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_hardware__v4.json",
+  "status": "prose",
+  "value": "NVIDIA GB200 NVL72 cluster hosted in CoreWeave (72-GPU NVLink domain intra-rack; NDR 400 Gb/s InfiniBand Fat-Tree inter-rack); total GPU count not stated",
+  "quote": "We trained the Granite 4.2 Language Models utilizing an NVIDIA GB200 NVL72 cluster hosted in CoreWeave. Intra-rack communication occurs via the 72-GPU NVLink domain, and a non-blocking, full Fat-Tree NDR 400 Gb/s InfiniBand network provides inter-rack communication.",
+  "quotes": [
+   "We trained the Granite 4.2 Language Models utilizing an NVIDIA GB200 NVL72 cluster hosted in CoreWeave. Intra-rack communication occurs via the 72-GPU NVLink domain, and a non-blocking, full Fat-Tree NDR 400 Gb/s InfiniBand network provides inter-rack communication."
+  ],
+  "section": "Training Methodology",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_time",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_time__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_compute",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "compute_methodology",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/compute_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "training_energy",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/training_energy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "energy_methodology",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/energy_methodology__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "carbon_emissions",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/carbon_emissions__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "inference_compute",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/inference_compute__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "intended_uses",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/intended_uses__v4.json",
+  "status": "prose",
+  "value": "Reasoning, code generation, tool calling, agentic workflows, and multilingual dialog; also usable as the backbone model for agentic coding tools. Designed for enterprise and research use (Granite family).",
+  "quote": "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog | [...] Granite-4.2-8B can be used as the backbone model for agentic coding tools. [...] Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use.",
+  "quotes": [
+   "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog |",
+   "Granite-4.2-8B can be used as the backbone model for agentic coding tools.",
+   "Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "out_of_scope_uses",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/out_of_scope_uses__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "target_systems",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/target_systems__v4.json",
+  "status": "prose",
+  "value": "Agentic workflows and agentic coding harnesses (backbone model for agentic coding tools), tool-calling systems, and multilingual dialog/chat",
+  "quote": "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog | [...] Granite-4.2-8B can be used as the backbone model for agentic coding tools. [...] **512K Context Window:** Supports long documents, multi-turn conversations, and complex agentic workflows.",
+  "quotes": [
+   "| **Best For** | Reasoning, Code Generation, Tool Calling, Agentic Workflows, Multilingual Dialog |",
+   "Granite-4.2-8B can be used as the backbone model for agentic coding tools.",
+   "**512K Context Window:** Supports long documents, multi-turn conversations, and complex agentic workflows."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "integration_means",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/integration_means__v4.json",
+  "status": "prose",
+  "value": "Can be served with vLLM (custom granite_thinking_parser reasoning parser, qwen3_coder tool-call parser) and SGLang (v0.5.18+), via OpenAI-compatible API; also usable with Hugging Face Transformers via tokenizer.apply_chat_template with enable_thinking, low_effort and tools options; ChatML-style prompt format with <think>...</think> reasoning.",
+  "quote": "Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm). [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference. [...] > **Tool calling parser:** Use `qwen3_coder`. [...] text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True) [...] - **Thinking enabled** — The generation prompt ends with `<|im_start|>assistant\\n<think>\\n`, causing the model to reason until it emits `</think>`, then produce the final answer.",
+  "quotes": [
+   "Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).",
+   "Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference.",
+   "> **Tool calling parser:** Use `qwen3_coder`.",
+   "text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True)",
+   "- **Thinking enabled** — The generation prompt ends with `<|im_start|>assistant\\n<think>\\n`, causing the model to reason until it emits `</think>`, then produce the final answer."
+  ],
+  "section": "Serving with vLLM",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "required_hardware",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/required_hardware__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "required_software",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "transformers",
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "card:library_name = \"transformers\"",
+  "section": "card:library_name",
+  "evidence": [
+   {
+    "path": "card:library_name",
+    "value": "transformers",
+    "source_type": "card_metadata"
+   },
+   {
+    "path": "api:library_name",
+    "value": "transformers",
+    "source_type": "hub_api"
+   },
+   {
+    "path": "config:transformers_version",
+    "value": "transformers 4.57.1",
+    "source_type": "repo_config"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "vLLM (v0.20+ for the custom granite_thinking_parser) or SGLang (v0.5.18+) for serving; transformers and accelerate (plus torch) for the Transformers quick start",
+   "quotes": [
+    "Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+).",
+    "Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference.",
+    "pip install torch torchvision torchaudio\npip install accelerate transformers"
+   ],
+   "agreement": "adds",
+   "section": "Serving with vLLM",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "limitations",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/limitations__v4.json",
+  "status": "prose",
+  "value": "Multilingual performance may vary compared to English (few-shot examples can help); the model may occasionally produce inaccurate, biased, or unsafe responses; content within <think>...</think> tags is internal reasoning that may be unpolished or intermediate and not final conclusions.",
+  "quote": "Although this model handles multilingual dialog, its performance may vary compared to English. Few-shot examples can help in such cases. [...] While aligned for safety, the model may occasionally produce inaccurate, biased, or unsafe responses. [...] The content within `<think>...</think>` tags represents internal reasoning and may contain unpolished or intermediate thoughts that do not represent final conclusions.",
+  "quotes": [
+   "Although this model handles multilingual dialog, its performance may vary compared to English. Few-shot examples can help in such cases.",
+   "While aligned for safety, the model may occasionally produce inaccurate, biased, or unsafe responses.",
+   "The content within `<think>...</think>` tags represents internal reasoning and may contain unpolished or intermediate thoughts that do not represent final conclusions."
+  ],
+  "section": "Ethical Considerations and Limitations",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "languages",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": [
+   "en",
+   "de",
+   "es",
+   "fr",
+   "ja",
+   "pt",
+   "ar",
+   "cs",
+   "it",
+   "ko",
+   "nl",
+   "zh"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "card:language = [\"en\", \"de\", \"es\", \"fr\", \"ja\", \"pt\", \"ar\", \"cs\", \"it\", \"ko\", \"nl\", \"zh\"]",
+  "section": "card:language",
+  "evidence": [
+   {
+    "path": "card:language",
+    "value": [
+     "en",
+     "de",
+     "es",
+     "fr",
+     "ja",
+     "pt",
+     "ar",
+     "cs",
+     "it",
+     "ko",
+     "nl",
+     "zh"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Tested languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese (other languages may work but have not been fully tested)",
+   "quotes": [
+    "| **Tested Languages** | English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese (other languages may work but have not been fully tested) |"
+   ],
+   "agreement": "agrees",
+   "section": "Model Summary",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "eval_results",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/eval_results__v4.json",
+  "status": "prose",
+  "value": "Granite-4.2-8B (8B Dense) scores: AIME25 86.67, HMMT Feb25 78.33, GPQA 64.14, LiveCodeBench v6 73.24, SciCode 36.09, MMLU-Pro 74.04, IFBench (prompt) 79.33, SWE Bench Verified 47.67, BFCL (v4) 52.39, RULER 128K 71.41. The card's table gives no explicit metric names.",
+  "quote": "<td>AIME25</td>\n    <td style=\"text-align:center;\">78.33</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">86.67</td> [...] <td>GPQA</td>\n    <td style=\"text-align:center;\">54.80</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">64.14</td> [...] Evaluations are run with an evaluation framework based on NeMo [Evaluator SDK](https://github.com/NVIDIA-NeMo/Evaluator).",
+  "quotes": [
+   "<td>AIME25</td>\n    <td style=\"text-align:center;\">78.33</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">86.67</td>",
+   "<td>GPQA</td>\n    <td style=\"text-align:center;\">54.80</td>\n    <td style=\"text-align:center; background-color: #DAE8FF;\">64.14</td>",
+   "Evaluations are run with an evaluation framework based on NeMo [Evaluator SDK](https://github.com/NVIDIA-NeMo/Evaluator)."
+  ],
+  "section": "Evaluation Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "eval_datasets",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/eval_datasets__v4.json",
+  "status": "prose",
+  "value": "SWE Bench Multilingual, SWE Bench Pro, SWE Bench Verified, Terminal-Bench 2.1, τ³-bench (AVG), BFCL (v4), ProfBench, BirdBench, GDPval, AIME25, HMMT Feb25, GPQA, LiveCodeBench v6, SciCode, MMLU-Pro, MMLU-ProX lite (IBM), Arena-Hard-V2, IFBench (prompt), RULER 64K, RULER 128K",
+  "quote": "<td>SWE Bench Multilingual</td> [...] <td>SWE Bench Pro</td> [...] <td>SWE Bench Verified</td> [...] <td>Terminal-Bench 2.1</td> [...] <td>τ³-bench (AVG)</td> [...] <td>BFCL (v4)</td> [...] <td>ProfBench</td> [...] <td>BirdBench</td>",
+  "quotes": [
+   "<td>SWE Bench Multilingual</td>",
+   "<td>SWE Bench Pro</td>",
+   "<td>SWE Bench Verified</td>",
+   "<td>Terminal-Bench 2.1</td>",
+   "<td>τ³-bench (AVG)</td>",
+   "<td>BFCL (v4)</td>",
+   "<td>ProfBench</td>",
+   "<td>BirdBench</td>"
+  ],
+  "section": "Evaluation Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "eval_methodology",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/eval_methodology__v4.json",
+  "status": "prose",
+  "value": "Evaluations are run with an evaluation framework based on NeMo Evaluator SDK. Generation settings recommended: temperature=1.0 and top_p=0.95 across all tasks (no shots/prompts stated for benchmarks).",
+  "quote": "Evaluations are run with an evaluation framework based on NeMo [Evaluator SDK](https://github.com/NVIDIA-NeMo/Evaluator). [...] > **Important:** Use `temperature=1.0` and `top_p=0.95` across **all tasks and serving backends**, including general chat, reasoning, and tool calling.",
+  "quotes": [
+   "Evaluations are run with an evaluation framework based on NeMo [Evaluator SDK](https://github.com/NVIDIA-NeMo/Evaluator).",
+   "> **Important:** Use `temperature=1.0` and `top_p=0.95` across **all tasks and serving backends**, including general chat, reasoning, and tool calling."
+  ],
+  "section": "Evaluation Results",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "safety_evaluation",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/safety_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "bias_fairness_evaluation",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/bias_fairness_evaluation__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "autonomy",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/autonomy__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "explainability",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/explainability__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "standards_compliance",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/standards_compliance__v4.json",
+  "status": "not_stated",
+  "value": null,
+  "quote": null,
+  "section": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "base_model",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": [
+   "ibm-granite/granite-4.1-8b-base"
+  ],
+  "source_type": "card_metadata",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "card:base_model = [\"ibm-granite/granite-4.1-8b-base\"]",
+  "section": "card:base_model",
+  "evidence": [
+   {
+    "path": "card:base_model",
+    "value": [
+     "ibm-granite/granite-4.1-8b-base"
+    ],
+    "source_type": "card_metadata"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Granite-4.1-8B-Base (post-trained from it)",
+   "quotes": [
+    "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities."
+   ],
+   "agreement": "agrees",
+   "section": "Training Methodology",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "base_model_relation",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": [
+   "finetune"
+  ],
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "derived:base_model_relation_tags = [\"finetune\"]",
+  "section": "derived:base_model_relation_tags",
+  "evidence": [
+   {
+    "path": "derived:base_model_relation_tags",
+    "value": [
+     "finetune"
+    ],
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "prose_check": {
+   "status": "prose",
+   "value": "Post-trained from Granite-4.1-8B-Base (supervised fine-tuning followed by reinforcement learning)",
+   "quotes": [
+    "Granite-4.2-8B is post-trained from [Granite-4.1-8B-Base](https://huggingface.co/ibm-granite/granite-4.1-8b-base) through a rigorous multi-stage pipeline that progressively unlocks reasoning, tool use, and instruction-following capabilities.",
+    "### Stage 2: Supervised Fine-Tuning",
+    "The final stage of training applies multi-phase, multi-environment reinforcement learning using Group Relative Policy Optimization (GRPO)."
+   ],
+   "agreement": "agrees",
+   "section": "Training Methodology",
+   "failed_quotes": null,
+   "check_version": "m1"
+  },
+  "pass": 1
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "distribution_channels",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "source_type": "card",
+  "source_url": "https://huggingface.co/ibm-granite/granite-4.2-8b/raw/f8de16cdcdbc6c779ca517604e050d82cc119e44/README.md",
+  "llm_cache": "data/raw/llm/granite/distribution_channels__v4.json",
+  "status": "prose",
+  "value": "Open weights on Hugging Face (HF Collection, Apache 2.0 licensed); can be served with vLLM and SGLang; GitHub repository available",
+  "quote": "| **HF Collection** | [Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models) | [...] Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm). [...] Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference.",
+  "quotes": [
+   "| **HF Collection** | [Granite 4.2 Language Models](https://huggingface.co/collections/ibm-granite/granite-42-language-models) |",
+   "Granite-4.2-8B is optimized for deployment with [vLLM](https://github.com/vllm-project/vllm).",
+   "Granite-4.2-8B can also be served with [SGLang](https://github.com/sgl-project/sglang) (v0.5.18+) for high-throughput inference."
+  ],
+  "section": "Model Summary",
+  "quote_check": "exact",
+  "failed_quotes": null,
+  "pass": 2
+ },
+ {
+  "model": "granite",
+  "repo_id": "ibm-granite/granite-4.2-8b",
+  "fact_id": "download_location",
+  "retrieved_at": "2026-09-30T10:17:02+00:00",
+  "status": "structured",
+  "value": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+  "source_type": "hub_api",
+  "source_url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-8b",
+  "quote": "derived:hub_url = \"https://huggingface.co/ibm-granite/granite-4.2-8b\"",
+  "section": "derived:hub_url",
+  "evidence": [
+   {
+    "path": "derived:hub_url",
+    "value": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+    "source_type": "hub_api"
+   }
+  ],
+  "quote_check": "structured",
+  "pass": 1
+ }
+]

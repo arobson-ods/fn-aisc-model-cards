@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "required_software",
+ "input_sha256": "a2b011069e430d268e1f7b7ca526724450088991c1b3f7b9a8d03740daed9edd",
+ "request_user": "Fact: required_software\nWhat to find: Software required to run the model (libraries/frameworks and versions).\nThe card's machine-readable metadata gives: \"transformers\"\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "transformers v4.51.0 (install it or upgrade with pip install -U transformers)",
+  "quotes": [
+   "Please, make sure you have transformers v4.51.0 installed, or upgrade using pip install -U transformers."
+  ],
+  "agreement": "adds",
+  "section": "How to use with transformers"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9617,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 211
+ },
+ "cost_usd_list_price": 0.040698200000000004,
+ "duration_ms": 2566
+}

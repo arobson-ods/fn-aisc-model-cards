@@ -1,0 +1,402 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:17:00Z",
+   "createdBy": [
+    "urn:model-cards:phi#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:phi#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for phi (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:phi#model"
+   ],
+   "element": [
+    "urn:model-cards:phi#agent",
+    "urn:model-cards:phi#supplier",
+    "urn:model-cards:phi#model",
+    "urn:model-cards:phi#training-data",
+    "urn:model-cards:phi#rel-4",
+    "urn:model-cards:phi#dependency-software",
+    "urn:model-cards:phi#rel-6",
+    "urn:model-cards:phi#evalset-AI2D",
+    "urn:model-cards:phi#rel-8",
+    "urn:model-cards:phi#evalset-ChartQA",
+    "urn:model-cards:phi#rel-10",
+    "urn:model-cards:phi#evalset-MMMU",
+    "urn:model-cards:phi#rel-12",
+    "urn:model-cards:phi#evalset-MathVista-MINI-",
+    "urn:model-cards:phi#rel-14",
+    "urn:model-cards:phi#evalset-OCRBench",
+    "urn:model-cards:phi#rel-16",
+    "urn:model-cards:phi#evalset-ScreenSpot-V2",
+    "urn:model-cards:phi#rel-18",
+    "urn:model-cards:phi#model-microsoft-Phi-4-reasoning",
+    "urn:model-cards:phi#rel-20",
+    "urn:model-cards:phi#rel-21",
+    "urn:model-cards:phi#rel-22",
+    "urn:model-cards:phi#licence-hi-model",
+    "urn:model-cards:phi#rel-24",
+    "urn:model-cards:phi#rel-25"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:phi#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:phi#supplier",
+   "name": "Microsoft Corporation",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:phi#model",
+   "name": "microsoft/Phi-4-reasoning-vision-15B",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:phi#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "releaseTime": "2026-03-04T00:00:00Z",
+   "ai_typeOfModel": [
+    "Mid-fusion multimodal architecture: Phi-4-Reasoning language model backbone with a SigLIP-2 vision encoder, whose visual tokens are projected into the language model's embedding space"
+   ],
+   "ai_domain": [
+    "image-text-to-text",
+    "en"
+   ],
+   "ai_informationAboutApplication": "Intended uses: General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; primary domains are scientific and mathematical reasoning over visual inputs and computer-use agent (CUA) tasks; also general multimodal tasks such as image captioning, visual question answering, optical character recognition, object localization, and grounding.\nOut of scope: Not specifically designed or evaluated for all downstream purposes, particularly high-risk scenarios. Should not be used in scenarios with consequential impact on legal status or allocation of resources or life opportunities (e.g., housing, employment, credit) without further assessments and additional debiasing techniques. Not suitable for medical diagnoses, legal advice, or financial planning. Languages other than English may have degraded performance.\nTarget systems: General-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments; computer-use agent (CUA) tasks; a building block for generative AI-powered features.",
+   "ai_limitation": "Trained primarily on English, so other languages and less-represented English varieties may perform worse; may over- or under-represent groups or reinforce stereotypes; may produce inappropriate or offensive content; may generate nonsensical or fabricated, inaccurate or outdated content; not suitable for medical, legal or financial advice or for consequential decisions without further assessment.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "AI2D accuracy",
+     "value": "84.8"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "ChartQA accuracy",
+     "value": "83.3"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "MathVista (MINI) accuracy",
+     "value": "75.2"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "MMMU accuracy",
+     "value": "54.3"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "OCRBench accuracy",
+     "value": "76"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "ScreenSpot-V2 accuracy",
+     "value": "88.2"
+    }
+   ],
+   "ai_standardCompliance": [
+    "Microsoft's Responsible AI Policy (safety training data for refusals is based on it); no formal external standard such as ISO/IEC 42001 is named"
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Public access via open-source repositories on Hugging Face and GitHub; enterprise or subscription-based access through Azure AI Foundry"
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "15119518144"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text, image"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "32768"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Supervised Fine-Tuning (SFT) on a curated mixture of reasoning and non-reasoning data, built on the Phi-4-Reasoning backbone with the SigLIP-2 vision encoder (mid-fusion); safety alignment also via SFT.\ntraining_hardware: 240 NVIDIA B200 GPUs (trained for 4 days)\ntraining_time: 4 days (on 240 B200 GPUs)",
+   "comment": "acceptable_use_policy: Card gives use restrictions: not suitable for medical diagnoses, legal advice, or financial planning; should not be used for consequential decisions on legal status or allocation of resources/life opportunities without further assessment and debiasing; developers must adhere to applicable laws and regulations. No separate acceptable use policy link.\naccess_conditions: false\nadditional_assets: Code is on GitHub (microsoft/phi-4-reasoning-vision-15B); a data card describing the training data is available; evaluation logs will be released publicly; a technical report is available.\narchitecture_details: Mid-fusion architecture built on the Phi-4-Reasoning language model backbone and SigLIP-2 vision encoder; the vision encoder converts images into visual tokens, which are projected into the language model's embedding space and injected into the pretrained language model, leveraging both pretrained components while keeping training and inference costs manageable. Dynamic resolution vision encoder with up to 3,600 visual tokens for high-resolution understanding (GUI grounding, fine-grained document analysis). Bidirectional attention is applied within images (intra-image) to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. 15B parameters.\ndesign_rationale: Mid-fusion architecture combining the Phi-4-Reasoning backbone and SigLIP-2 vision encoder, chosen to leverage both pretrained components while keeping training and inference costs manageable. A dynamic resolution vision encoder (up to 3,600 visual tokens) enables high-resolution understanding for GUI grounding and document analysis. Bidirectional attention is applied only within images to improve spatial reasoning without the overfitting risks of broader bidirectional schemes. A single model handles both reasoning and non-reasoning modes rather than separate models.\nintegration_means: Use the chat template with the system prompt for inference; force thinking by appending `<think>` or non-thinking by appending `<nothink>` to the generation template. Requires torch >= 2.7.1, transformers >= 4.57.1, and vllm >= 0.15.2 (only if using vLLM). Recommended to host on a vLLM server using bf16 precision.\neval_methodology: Evaluated with two open-source frameworks: Microsoft's Eureka ML Insights (internal development benchmarks and ablations; MathVista, MMMU-CoT, ScreenSpot/ScreenSpot-V2, ScreenSpot-Pro, V*Bench) and VLMEvalKit (standardized community benchmarks such as AI2D, ChartQA, DocVQA, MMMU, OCRBench). Comparisons were also run with forced nothink/thinking modes. Shots and prompts are not stated.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#training-data",
+   "name": "Training data of microsoft/Phi-4-reasoning-vision-15B (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "image",
+    "text"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Primarily filtered and improved open-source vision-language datasets (public), supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions; safety data is a mix of open-source and in-house generated synthetic datasets.\nTraining data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions. Safety post-training used a combination of open-source and in-house generated synthetic datasets. The card does not state how rights were obtained.",
+   "comment": "data_scope: Training data is a curated mixture of reasoning and non-reasoning data, primarily filtered and improved open-source vision-language datasets, supplemented by domain-specific data from internal Microsoft teams and targeted data acquisitions. Modalities are text and images; trained primarily on English text and image-text pairs.",
+   "dataset_dataPreprocessing": [
+    "Training data consists primarily of meticulously filtered and improved open-source vision-language datasets, supplemented by high-quality domain-specific data from internal Microsoft teams and targeted data acquisitions."
+   ],
+   "dataset_knownBias": [
+    "Known biases: model may over- or under-represent groups, erase representation of some groups, or reinforce stereotypes due to differing representation and negative stereotypes in training data reflecting societal biases, despite safety post-training. English language varieties with less representation may perform worse. Training data was meticulously filtered and improved."
+   ]
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-4",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:phi#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:phi#dependency-software",
+   "name": "transformers 4.56.1",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-6",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:phi#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-AI2D",
+   "name": "AI2D",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-8",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-AI2D"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-ChartQA",
+   "name": "ChartQA",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-10",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-ChartQA"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-MMMU",
+   "name": "MMMU",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-12",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-MMMU"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-MathVista-MINI-",
+   "name": "MathVista (MINI)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-14",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-MathVista-MINI-"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-OCRBench",
+   "name": "OCRBench",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-16",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-OCRBench"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:phi#evalset-ScreenSpot-V2",
+   "name": "ScreenSpot-V2",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-18",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:phi#evalset-ScreenSpot-V2"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:phi#model-microsoft-Phi-4-reasoning",
+   "name": "microsoft/Phi-4-reasoning",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/microsoft/Phi-4-reasoning",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "1de18ec97600877ce63dbf60c73b998da99f0195",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-20",
+   "from": "urn:model-cards:phi#model-microsoft-Phi-4-reasoning",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-21",
+   "from": "urn:model-cards:phi#model-microsoft-Phi-4-reasoning",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-22",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:phi#model-microsoft-Phi-4-reasoning"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:phi#licence-hi-model",
+   "simplelicensing_licenseExpression": "MIT",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-24",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:phi#licence-hi-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:phi#rel-25",
+   "from": "urn:model-cards:phi#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

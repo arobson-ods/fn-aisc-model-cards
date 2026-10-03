@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "0f355d69b69c41fa",
+ "request_user": "Fact definition: Benchmark evaluation results (benchmark, metric, score).\nExtracted value: The card has a benchmark table for Qwen3.8-Max, which it describes as the official version based on Qwen3.8-2.4T-A95B. One reported result is Terminal Bench 2.1 = 86.6. The card says Qwen3.8-Max was evaluated with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. The table also covers many other benchmarks, including SWE-bench Pro, GPQA Diamond and HLE.\nQuotes given as evidence (separated by [...]): Terminal Bench 2.1</td> [...] background:rgba(10, 46, 254, 0.08);\">86.6</td> [...] Terminal Bench 2.1: Evaluated with Claude Code (avg@10), using a 5-hour timeout and max_tokens=131,072. [...] In particular, **Qwen3.8-Max** is the official version based on Qwen3.8-2.4T-A95B\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes support Terminal Bench 2.1 = 86.6 for Qwen3.8-Max, evaluated with Claude Code (avg@10), a 5-hour timeout and max_tokens=131,072. The value also correctly notes that Qwen3.8-Max is based on Qwen3.8-2.4T-A95B. However, the claim that the table covers SWE-bench Pro, GPQA Diamond and HLE isn't backed by the quotes given. The value also gives a score for only one of the many benchmark results, so it only partly answers the fact definition."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 927,
+  "cache_read_input_tokens": 17622,
+  "output_tokens": 1037
+ },
+ "cost_usd_list_price": 0.0316884,
+ "duration_ms": 12472
+}

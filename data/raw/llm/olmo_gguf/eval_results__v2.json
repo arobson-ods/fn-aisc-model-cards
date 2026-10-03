@@ -1,0 +1,33 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "unsloth/Olmo-3-7B-Instruct-GGUF",
+ "fact_id": "eval_results",
+ "readme_sha256": "da5ef1f1b1d6fdacda2cf6056bd8a113c7c38c55580390d30cca08fcf648ebc4",
+ "request_user": "Fact: eval_results\nWhat to find: Benchmark evaluation results (benchmark, metric, score).\nCard sections that often contain it: Evaluation, Benchmarks, Results\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Evaluation table reports benchmark scores for Olmo 3 Instruct 7B (final), e.g. MATH 87.3, AIME 2024 44.3, AIME 2025 32.5, OMEGA 28.9, BigBenchHard 71.2, ZebraLogic 32.9, AGI Eval English 64.4, HumanEvalPlus 77.2, MBPP+ 60.2, LiveCodeBench v3 29.5, IFEval 85.6, IFBench 32.3, MMLU 69.1, PopQA 14.1, GPQA 40.4, AlpacaEval 2 LC 40.9, SimpleQA 79.3, LitQA2 38.2, BFCL 49.8, Safety 87.3. Also compared with SFT and DPO variants and other models (Qwen 3 8B, Qwen 3 VL 8B Instruct, Qwen 2.5 7B, Olmo 2 7B Instruct, Apertus 8B Instruct, Granite 3.3 8B Instruct). Metric names are not specified.",
+  "quotes": [
+   "| **Math** | MATH | 65.1 | 79.6 | 87.3 | 82.3 | 91.6 | 71.0 | 30.1 | 21.9 | 67.3 |",
+   "|  | AIME 2024 | 6.7 | 23.5 | 44.3 | 26.2 | 55.1 | 11.3 | 1.3 | 0.5 | 7.3 |",
+   "|  | IFBench | 27.4 | 29.3 | 32.3 | 29.3 | 34.0 | 28.4 | 26.7 | 22.1 | 22.3 |",
+   "| **Knowledge** | MMLU | 67.1 | 69.1 | 69.1 | 80.4 | 83.6 | 77.2 | 61.6 | 62.7 | 63.5 |",
+   "| **Safety** | Safety | 89.2 | 90.2 | 87.3 | 78.0 | 80.2 | 73.4 | 93.1 | 72.2 | 73.7 |"
+  ],
+  "section": "Evaluation"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 544,
+  "cache_read_input_tokens": 6062,
+  "output_tokens": 813
+ },
+ "cost_usd_list_price": 0.011522400000000002,
+ "duration_ms": 4609
+}

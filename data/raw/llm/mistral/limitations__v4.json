@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "mistralai/Mistral-Medium-3.5-128B",
+ "fact_id": "limitations",
+ "readme_sha256": "6d14ac4dba5a4c8b3d652ea67742ee1b41e424772194b8088cd62603d5032465",
+ "request_user": "Fact: limitations\nWhat to find: Known technical limitations, risks and failure modes.\nCard sections that often contain it: Limitations, Bias, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "The card has no dedicated limitations section. It warns that an incorrect Transformers config entry caused long-context performance degradation, which also affects GGUFs generated from the pre-fix config. It also says frameworks that rely on the Transformers config will show subpar performance, especially in long-context sessions, unless they include the fix.",
+  "quotes": [
+   "The Transformers config originally had an incorrect entry that caused long-context performance degradation.",
+   "GGUFs generated using the Transformers config prior to this commit are also affected.",
+   "Otherwise, you will experience subpar performance, especially in long-context sessions."
+  ],
+  "section": "Mistral Medium 3.5 128B"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 540,
+  "cache_read_input_tokens": 9889,
+  "output_tokens": 560
+ },
+ "cost_usd_list_price": 0.009741799999999998,
+ "duration_ms": 4272
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "a548d114f0df79f1",
+ "request_user": "Fact definition: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).\nExtracted value: No formal external standard or regulation (e.g. ISO/IEC 42001, AI Act) is named. The card says safety evaluations align with Google's AI principles and safety policies.\nQuotes given as evidence (separated by [...]): These evaluations align with [Google’s AI principles](https://ai.google/principles/), as well as safety policies, which aim to prevent our generative AI models from generating harmful content, including:\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card doesn't name any formal external standard or regulation, such as ISO/IEC 42001 or the AI Act. The quote shows that the safety evaluations align with Google's AI principles and safety policies. Both are Google's own frameworks, so the value is accurate and answers the definition. Elsewhere the card only mentions filtering 'in line with our policies', which is also internal, so leaving it out doesn't make the value wrong."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 774,
+  "cache_read_input_tokens": 10974,
+  "output_tokens": 294
+ },
+ "cost_usd_list_price": 0.014274799999999999,
+ "duration_ms": 9466
+}

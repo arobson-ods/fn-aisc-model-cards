@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "standards_compliance",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: standards_compliance\nWhat to find: Standards, frameworks or regulations the model claims to follow (e.g. ISO/IEC 42001, AI Act Code of Practice).\nCard sections that often contain it: Compliance, Responsibility, Safety\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state that the model follows any standards, frameworks or regulations (such as ISO/IEC 42001 or the EU AI Act Code of Practice). It only recommends using Granite Guardian alongside the model to flag risks across dimensions in the IBM AI Risk Atlas.",
+  "quotes": [
+   "To enhance safety in deployments, we recommend using Granite 4.2 alongside [Granite Guardian](https://huggingface.co/ibm-granite/granite-guardian-4.1-8b) to detect and flag risks across key dimensions outlined in the IBM AI Risk Atlas."
+  ],
+  "section": "Ethical Considerations and Limitations"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 570,
+  "cache_read_input_tokens": 16417,
+  "output_tokens": 323
+ },
+ "cost_usd_list_price": 0.0087974,
+ "duration_ms": 2788
+}

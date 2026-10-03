@@ -1,0 +1,11 @@
+{
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+ "api_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-2.4T-A95B",
+ "retrieved_at": "2026-09-30T10:17:00+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/README.md",
+ "config_url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/raw/207bd685a7e3696cfaff12ded7c6a7ea0f88c996/config.json"
+}

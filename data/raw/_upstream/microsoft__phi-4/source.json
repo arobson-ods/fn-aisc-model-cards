@@ -1,0 +1,11 @@
+{
+ "repo_id": "microsoft/phi-4",
+ "sha": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+ "api_url": "https://huggingface.co/api/models/microsoft/phi-4",
+ "retrieved_at": "2026-09-30T10:29:57+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/microsoft/phi-4/raw/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md",
+ "config_url": "https://huggingface.co/microsoft/phi-4/raw/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/config.json"
+}

@@ -1,0 +1,27 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "HuggingFaceTB/SmolLM3-3B",
+ "fact_id": "bias_fairness_evaluation",
+ "readme_sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+ "request_user": "Fact: bias_fairness_evaluation\nWhat to find: Bias or fairness evaluation of the model's outputs and its results.\nCard sections that often contain it: Bias, Fairness, Risks and Limitations\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "",
+  "quotes": [],
+  "section": ""
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 554,
+  "cache_read_input_tokens": 9308,
+  "output_tokens": 118
+ },
+ "cost_usd_list_price": 0.0052616,
+ "duration_ms": 1901
+}

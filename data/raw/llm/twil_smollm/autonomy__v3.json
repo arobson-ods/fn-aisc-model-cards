@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "autonomy",
+ "readme_sha256": "c9a88288d5c2ed310f4c5d51d2aab4d337c21c9c3162dda73fc4b1c644edce24",
+ "request_user": "Fact: autonomy\nWhat to find: Whether the model or system acts autonomously, or requires human-in-the-loop oversight.\nCard sections that often contain it: Intended Use, Safety, Agentic\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "not_stated",
+  "value": "The card does not state whether the model acts autonomously or requires human-in-the-loop oversight. It only says the model is not a general assistant or chat model, has no safety tuning beyond the base model's, and that tool use was not evaluated.",
+  "quotes": [
+   "The Track B suite does not cover code generation or tool use\n(HumanEval, LiveCodeBench and BFCL were not run for this model or its base), so this release\nmakes no claim about those."
+  ],
+  "section": "Limitations and caveats"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 551,
+  "cache_read_input_tokens": 10716,
+  "output_tokens": 263
+ },
+ "cost_usd_list_price": 0.0069812,
+ "duration_ms": 2704
+}

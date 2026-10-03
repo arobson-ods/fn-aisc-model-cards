@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "fact_id": "intended_uses",
+ "readme_sha256": "a25973b338b4839b240ffa57c7464d14755ea4f24970ccb93779d577ec9088b4",
+ "request_user": "Fact: intended_uses\nWhat to find: Intended uses of the model.\nCard sections that often contain it: Intended Use, Uses, Direct Use\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Designed for general-purpose multimodal AI systems and applications requiring vision-language understanding with selective reasoning, particularly in memory- or compute-constrained environments. Primary domains: scientific and mathematical reasoning over visual inputs, and computer-use agent (CUA) tasks such as interpreting screen content, localizing interactive GUI elements, and selecting actions within graphical user interfaces. Also capable of general multimodal tasks including image captioning, visual question answering, optical character recognition, object localization, and grounding.",
+  "quotes": [
+   "Phi-4-Reasoning-Vision-15B is designed for general-purpose multimodal AI systems and applications that require vision-language understanding with selective reasoning capabilities, particularly in memory- or compute-constrained environments.",
+   "- **Computer-use agent (CUA) tasks:** such as interpreting screen content, localizing interactive GUI elements, and selecting actions within graphical user interfaces.",
+   "The model is also capable of general multimodal tasks including image captioning, visual question answering, optical character recognition, object localization, and grounding."
+  ],
+  "section": "2.1 Primary Use Cases"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 533,
+  "cache_read_input_tokens": 10433,
+  "output_tokens": 482
+ },
+ "cost_usd_list_price": 0.0090426,
+ "duration_ms": 3412
+}

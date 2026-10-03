@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "e40d311dbd69e9e5",
+ "request_user": "Fact definition: How and why key design choices in training were made.\nExtracted value: The card gives rationale for several training choices. WiSE-FT interpolation uses a conservative λ = 0.25, keeping only a quarter of the fine-tuned delta. λ was chosen by constrained optimisation (maximise in-domain score subject to minimal held-out degradation), and this is the direct reason held-out capability survives. Checkpoint fusion averages intermediate SFT checkpoints selected by a diversity probe rather than taking the final checkpoint. MGPO (entropy-weighted GRPO) uses a programmatic verifier with partial credit for loose matches and token-F1 so that all-fail prompt groups still produce gradient. A sibling arm that skipped the conservative interpolation scored higher in-domain but lost about twelve points of held-out capability, so this release is the balanced point of that trade. The macro gate includes rule induction so a fine-tune cannot pass while quietly regressing inductive reasoning.\nQuotes given as evidence (separated by [...]): 2. **Checkpoint fusion** — parameter-space averaging of intermediate SFT checkpoints selected\n   by a diversity probe, rather than taking the final checkpoint. [...] with **λ = 0.25** — i.e. only a quarter of the fine-tuned delta is retained. λ was chosen by\n   constrained optimisation: maximise in-domain score subject to minimal degradation on held-out\n   benchmarks. This conservative λ is the direct reason held-out capability survives. [...] with\n   partial credit for loose matches and token-F1 so that all-fail prompt groups still produce\n   gradient. [...] A sibling arm that skipped stage 3's conservative interpolation scores considerably higher\nin-domain (macro gate 0.515) but gives back roughly twelve points of held-out capability. This\nrelease is the balanced point of that trade; the other was not published.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "partial",
+  "reason": "The quotes support the claims about WiSE-FT λ, checkpoint fusion, partial credit in MGPO, and the sibling-arm trade-off. The value also says the macro gate includes rule induction so a fine-tune can't pass while quietly regressing inductive reasoning. That is in the card, but none of the quoted evidence covers it. The 'entropy-weighted GRPO against a programmatic verifier' wording also comes from card text outside the quotes."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1221,
+  "cache_read_input_tokens": 10326,
+  "output_tokens": 439
+ },
+ "cost_usd_list_price": 0.0206212,
+ "duration_ms": 6749
+}

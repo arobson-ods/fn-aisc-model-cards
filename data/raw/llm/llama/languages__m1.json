@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+ "fact_id": "languages",
+ "input_sha256": "c48358ec422c6a591a454146f6652c97761823601757ec69f834be86ac0cb45c",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nThe card's machine-readable metadata gives: [\"ar\", \"de\", \"en\", \"es\", \"fr\", \"hi\", \"id\", \"it\", \"pt\", \"th\", \"tl\", \"vi\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "12 supported languages: Arabic, English, French, German, Hindi, Indonesian, Italian, Portuguese, Spanish, Tagalog, Thai, and Vietnamese. Pre-training included 200 total languages.",
+  "quotes": [
+   "Supported languages: Arabic, English, French, German, Hindi, Indonesian, Italian, Portuguese, Spanish, Tagalog, Thai, and Vietnamese. ",
+   "Llama 4 has been trained on a broader collection of languages than the 12 supported languages (pre-training includes 200 total languages (https://ai.meta.com/research/no-language-left-behind/))."
+  ],
+  "agreement": "adds",
+  "section": "Model Information"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9645,
+  "cache_read_input_tokens": 581,
+  "output_tokens": 348
+ },
+ "cost_usd_list_price": 0.0421802,
+ "duration_ms": 3119
+}

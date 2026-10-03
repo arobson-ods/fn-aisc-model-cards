@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "tiiuae/Falcon-H1R-7B",
+ "fact_id": "architecture_details",
+ "readme_sha256": "5b03e61e9faadb311a953191d18f25055bb06c31f9fa3c9800d0a7cff58f2b13",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Causal decoder-only model with a hybrid architecture (Transformers + Mamba2), built on Falcon-H1-7B-Base. The card does not state layers, attention type, experts, active parameters or rationale.",
+  "quotes": [
+   "- **Model type:** Causal decoder-only",
+   "- **Architecture:** Hybrid (Transformers + Mamba2) architecture",
+   "Built on top of [Falcon-H1-7B-Base](https://huggingface.co/tiiuae/Falcon-H1-7B-Base)"
+  ],
+  "section": "Model Description"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6718,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 285
+ },
+ "cost_usd_list_price": 0.029833,
+ "duration_ms": 2961
+}

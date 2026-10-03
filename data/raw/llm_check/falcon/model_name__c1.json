@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "ffd72a80d876b142",
+ "request_user": "Fact definition: Unique model identifier / name.\nValue taken from the model's structured metadata (api:id = \"tiiuae/Falcon-H1R-7B\"): tiiuae/Falcon-H1R-7B\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card sets model_id = \"tiiuae/Falcon-H1R-7B\" in the code and uses this same identifier in the vLLM and SGLang commands. This matches the metadata value exactly."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 606,
+  "cache_read_input_tokens": 6115,
+  "output_tokens": 138
+ },
+ "cost_usd_list_price": 0.008839,
+ "duration_ms": 3265
+}

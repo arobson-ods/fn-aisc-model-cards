@@ -1,0 +1,11 @@
+{
+ "repo_id": "microsoft/Phi-4-reasoning-vision-15B",
+ "sha": "c3e4fac79ddace21976ced56fbf1564b8bd8c89f",
+ "api_url": "https://huggingface.co/api/models/microsoft/Phi-4-reasoning-vision-15B",
+ "retrieved_at": "2026-09-30T10:17:00+00:00",
+ "gated": false,
+ "readme_status": 200,
+ "readme_source": "raw",
+ "readme_url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/README.md",
+ "config_url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/raw/c3e4fac79ddace21976ced56fbf1564b8bd8c89f/config.json"
+}

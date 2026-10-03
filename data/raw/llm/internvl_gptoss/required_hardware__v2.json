@@ -1,0 +1,29 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
+ "fact_id": "required_hardware",
+ "readme_sha256": "df85730e66c214fbb36542054c64c93837128b8963b1d987e2ac11af6b6426ec",
+ "request_user": "Fact: required_hardware\nWhat to find: Hardware required to run the model (e.g. GPU memory, number of accelerators).\nCard sections that often contain it: Hardware, Requirements, Deployment\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Models with up to 30B parameters can be deployed on a single A100 GPU (the 38B model needs two A100 GPUs, the 235B model eight A100 GPUs). This 20B-A4B model is within the up-to-30B range. The card also recommends vLLM for InternVL3.5-20B-A4B since lmdeploy does not yet support GPT-OSS.",
+  "quotes": [
+   "Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs."
+  ],
+  "section": "Quick Start"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 550,
+  "cache_read_input_tokens": 19261,
+  "output_tokens": 307
+ },
+ "cost_usd_list_price": 0.009126200000000001,
+ "duration_ms": 3093
+}

@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "3e2f0549f4a919c9",
+ "request_user": "Fact definition: Data processing and curation (cleaning, filtering, deduplication, normalisation, augmentation).\nExtracted value: The card only says the Molmo2 data is a collection of \"highly-curated\" image-text and video-text pairs. It gives no specific cleaning, filtering, deduplication, normalisation or augmentation steps.\nQuotes given as evidence (separated by [...]): a collection of datasets with highly-curated image-text and video-text pairs.\n\nGrade the extraction:\n- \"y\": the quotes are about this model and support every claim in the value, and the value answers the fact definition.\n- \"partial\": mostly right, but the value adds claims the quotes don't support, drops an important qualifier, or only partly answers the definition.\n- \"n\": wrong, unsupported, about a different model, or does not answer the definition.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The quote comes straight from the card and describes the Molmo2 data used to train this model. The extracted value says this is the card's only remark on curation and that no specific cleaning, filtering, deduplication, normalisation or augmentation steps are given. That is accurate: nothing else in the card covers data processing. So the value supports its claims and answers the fact definition as fully as the card allows."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8389,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 255
+ },
+ "cost_usd_list_price": 0.07222,
+ "duration_ms": 4575
+}

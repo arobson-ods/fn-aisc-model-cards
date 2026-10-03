@@ -1,0 +1,32 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "repo_id": "ibm-granite/granite-4.2-8b",
+ "fact_id": "additional_assets",
+ "readme_sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da",
+ "request_user": "Fact: additional_assets\nWhat to find: Other assets released with the model (training data, training code, inference or evaluation code, checkpoints) and how to access them.\nCard sections that often contain it: Model Sources, Resources, Links\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "A full listing of training datasets is available in the Granite 4.2 GitHub repository (github.com/ibm-granite/granite-4.2-language-models). The card also links a technical blog, documentation, a Granite 4.2 HF collection, and a custom granite_thinking_parser included in the model repository. Pre-training details are in the Granite 4.1 Technical Blog.",
+  "quotes": [
+   "A full listing of training datasets is available in the [Granite 4.2 GitHub repository](https://github.com/ibm-granite/granite-4.2-language-models).",
+   "- **GitHub:** https://github.com/ibm-granite/granite-4.2-language-models",
+   "- **HF Collection:** https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+   "> **Reasoning parser:** Use the custom `granite_thinking_parser` included in this repository (requires vLLM v0.20+)."
+  ],
+  "section": "Training Methodology"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16885,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 416
+ },
+ "cost_usd_list_price": 0.071704,
+ "duration_ms": 3341
+}

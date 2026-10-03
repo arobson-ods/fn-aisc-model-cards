@@ -1,0 +1,36 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v4",
+ "repo_id": "Qwen/Qwen3.8-2.4T-A95B",
+ "fact_id": "architecture_details",
+ "readme_sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331",
+ "request_user": "Fact: architecture_details\nWhat to find: Description of key design specifications (layers, attention type, experts, active parameters) and the rationale for them.\nCard sections that often contain it: Model Architecture, Model Summary, Architecture\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Causal language model with 2.4T total and 95B activated parameters; 92 layers; hidden layout 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)); Mixture of Experts with 512 experts, 10 routed + 1 shared activated; hidden dimension 8192. Built on the architectural foundation of Qwen3.5. The card gives no detailed rationale for the design choices.",
+  "quotes": [
+   "- Type: Causal Language Model",
+   "Number of Parameters: 2.4T in total and 95B activated",
+   "Number of Layers: 92",
+   "Hidden Layout: 23 × (3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE))",
+   "Number of Experts: 512",
+   "Number of Activated Experts: 10 Routed + 1 Shared",
+   "Hidden Dimension: 8192",
+   "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+  ],
+  "section": "Model Overview"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18229,
+  "cache_read_input_tokens": 535,
+  "output_tokens": 475
+ },
+ "cost_usd_list_price": 0.077777,
+ "duration_ms": 3519
+}

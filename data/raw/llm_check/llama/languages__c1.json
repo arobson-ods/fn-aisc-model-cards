@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "check_version": "c1",
+ "input_sha": "b9607221d684e4ff",
+ "request_user": "Fact definition: Natural languages the model supports.\nValue taken from the model's structured metadata (card:language = [\"ar\", \"de\", \"en\", \"es\", \"fr\", \"hi\", \"id\", \"it\", \"pt\", \"th\", \"tl\", \"vi\"]): [\"ar\", \"de\", \"en\", \"es\", \"fr\", \"hi\", \"id\", \"it\", \"pt\", \"th\", \"tl\", \"vi\"]\n\nGrade: \"y\" if this value is a correct answer to the fact definition for this model; \"partial\" if it is related but only a weak or indirect answer; \"n\" if it does not answer the definition or conflicts with the card text.",
+ "answer": {
+  "verdict": "y",
+  "reason": "The card lists 12 supported languages: Arabic, English, French, German, Hindi, Indonesian, Italian, Portuguese, Spanish, Tagalog, Thai, Vietnamese. The ISO codes match this list exactly, with nothing missing or extra."
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-opus-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 658,
+  "cache_read_input_tokens": 8473,
+  "output_tokens": 372
+ },
+ "cost_usd_list_price": 0.0144066,
+ "duration_ms": 4864
+}

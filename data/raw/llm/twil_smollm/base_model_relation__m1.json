@@ -1,0 +1,31 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "webAI-Official/TwIL-LM3",
+ "fact_id": "base_model_relation",
+ "input_sha256": "c4054e0c8e34720bb8bc4e8abbd5cce55ab24899167dfcb38564f04e63d3c95b",
+ "request_user": "Fact: base_model_relation\nWhat to find: Type of derivation from the base model (fine-tune, quantisation, merge, adapter).\nThe card's machine-readable metadata gives: [\"adapter\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "Fine-tune of SmolLM3-3B via LoRA SFT, checkpoint fusion, WiSE-FT interpolation and GRPO RL; released as a full merged model rather than an adapter",
+  "quotes": [
+   "A 3B reasoning model for **formal logic** tasks, built from\n[`HuggingFaceTB/SmolLM3-3B`](https://huggingface.co/HuggingFaceTB/SmolLM3-3B) through LoRA\nsupervised fine-tuning, checkpoint fusion, WiSE-FT weight interpolation, and entropy-weighted\nGRPO reinforcement learning.",
+   "Both repositories now ship full\nmerged models on `main`, loaded directly with `AutoModelForCausalLM`; the original LoRA-adapter\nrelease is archived on that repository's `TwIL-LM1` branch."
+  ],
+  "agreement": "conflicts",
+  "section": "TwIL-LM3"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 767,
+  "cache_read_input_tokens": 10754,
+  "output_tokens": 434
+ },
+ "cost_usd_list_price": 0.0095628,
+ "duration_ms": 3731
+}

@@ -1,0 +1,268 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:16:59Z",
+   "createdBy": [
+    "urn:model-cards:gemma#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:gemma#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for gemma (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:gemma#model"
+   ],
+   "element": [
+    "urn:model-cards:gemma#agent",
+    "urn:model-cards:gemma#supplier",
+    "urn:model-cards:gemma#model",
+    "urn:model-cards:gemma#training-data",
+    "urn:model-cards:gemma#rel-4",
+    "urn:model-cards:gemma#dependency-software",
+    "urn:model-cards:gemma#rel-6",
+    "urn:model-cards:gemma#evalset-MMLU-Pro-AIME-2026-no-tools-LiveCodeBench-v6-Codeforces-ELO-GPQA-Diamond-Tau2-HLE-BigBench-Extra-Hard-MMMLU-MMMU-Pro-OmniDocBench-1.5-MATH-Vision-MedXPertQA-MM-CoVoST-FLEURS-MRCR-v2-8-needle-128k",
+    "urn:model-cards:gemma#rel-8",
+    "urn:model-cards:gemma#model-google-gemma-4-31B",
+    "urn:model-cards:gemma#rel-10",
+    "urn:model-cards:gemma#rel-11",
+    "urn:model-cards:gemma#rel-12",
+    "urn:model-cards:gemma#licence-ma-model",
+    "urn:model-cards:gemma#rel-14",
+    "urn:model-cards:gemma#rel-15"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:gemma#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:gemma#supplier",
+   "name": "Google DeepMind",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:gemma#model",
+   "name": "google/gemma-4-31B-it",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:gemma#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Dense architecture (31B Dense) with hybrid attention interleaving local sliding window attention and full global attention; the Gemma 4 family includes Dense and Mixture-of-Experts variants"
+   ],
+   "ai_domain": [
+    "image-text-to-text",
+    "Multilingual support in over 140 languages; out-of-the-box support for 35+ languages, pre-trained on 140+ languages"
+   ],
+   "ai_informationAboutApplication": "Intended uses: Content creation and communication (text generation, chatbots and conversational AI, text summarization, image data extraction, audio processing and interaction for E2B/E4B/12B) and research and education (NLP and VLM research, language learning tools, knowledge exploration).\nTarget systems: Chatbots/conversational AI (customer service, virtual assistants, interactive applications), and agentic workflows/autonomous agents via native function calling; also research foundation for VLM/NLP",
+   "ai_limitation": "Limitations include training data biases/gaps affecting responses; difficulty with open-ended or highly complex tasks; struggles with subtle nuances, sarcasm, figurative language; may generate incorrect or outdated factual statements; may lack common sense reasoning. Risks include generation of harmful content, misuse, privacy violations and perpetuation of biases.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "Gemma 4 31B (instruction-tuned): MMLU Pro 85.2%; AIME 2026 no tools 89.2%; LiveCodeBench v6 80.0%; Codeforces ELO 2150; GPQA Diamond 84.3%; MMMU Pro 76.9%"
+    }
+   ],
+   "ai_standardCompliance": [
+    "Safety evaluations align with Google's AI principles and Google's safety policies. The card names no external standards or regulations such as ISO/IEC 42001 or the EU AI Act."
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open-weights models (pre-trained and instruction-tuned variants) available on Hugging Face, loadable with the Transformers library"
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/google/gemma-4-31B-it",
+   "releaseTime": "2026-03-11T18:22:36Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "31273088876"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text, image"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "262144"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\naccess_conditions: false\nadditional_assets: The card links to a Hugging Face collection of Gemma 4 models, a GitHub organization (google-gemma), documentation, and a technical report on arXiv. It states that the release includes open-weights models in both pre-trained and instruction-tuned variants (base model google/gemma-4-31B). No training data or training code is stated as released.\narchitecture_details: 31B Dense model: 30.7B parameters, 60 layers, 1024-token sliding window, 256K context, 262K vocabulary. Hybrid attention interleaves local sliding window attention with full global attention (final layer always global), giving the speed and low memory footprint of a lightweight model without sacrificing deep awareness for complex, long-context tasks. Global layers use unified Keys and Values and Proportional RoPE (p-RoPE) to optimize memory for long contexts.\ndesign_rationale: The card gives rationales for some design choices. Hybrid attention (local sliding window interleaved with global) gives the speed and low memory footprint of a lightweight model without losing deep awareness for long-context tasks. Training data includes code to learn programming syntax and patterns, and mathematical text to learn logical reasoning, symbolic representation and to address mathematical queries.\nintegration_means: Usable with the Hugging Face Transformers library (pip install -U transformers torch accelerate; load via AutoProcessor and AutoModelForMultimodalLM). Chat format uses system, assistant and user roles; thinking is enabled with the <|think|> token at the start of the system prompt.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:gemma#training-data",
+   "name": "Training data of google/gemma-4-31B-it (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "audio",
+    "image",
+    "text"
+   ],
+   "creationInfo": "_:creationinfo",
+   "dataset_dataCollectionProcess": "Web documents (web crawl) in over 140 languages, code, mathematics, images, and audio; cutoff January 2025. No synthetic, licensed or user data categories stated.\nPre-training data is a large-scale, diverse collection spanning web documents, code, mathematics and images (audio also listed), with a January 2025 cutoff; web text covers over 140 languages. Filtering applied: CSAM filtering, automated sensitive/personal data filtering, and content quality and safety filtering. The card does not describe annotation, synthetic data generation, or how rights were obtained.",
+   "comment": "data_scope: Large-scale, diverse pre-training dataset spanning multiple domains and modalities: web documents, code, mathematics, images, and audio, with a cutoff date of January 2025. Web content covers over 140 languages.\nknowledge_cutoff: January 2025\nunsuitable_data_measures: CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies.",
+   "dataset_dataPreprocessing": [
+    "CSAM filtering applied at multiple stages of data preparation; automated filtering of certain personal information and other sensitive data; additional filtering based on content quality and safety per Google's policies."
+   ],
+   "dataset_knownBias": [
+    "The card acknowledges that VLMs trained on real-world data can reflect socio-cultural biases; mitigation consists of careful scrutiny, input data pre-processing, and post-training evaluations. Training data was filtered for CSAM, certain personal/sensitive data, and by content quality and safety. It also notes biases or gaps in training data can limit responses, and encourages continuous monitoring and exploration of de-biasing techniques."
+   ]
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-4",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:gemma#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:gemma#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-6",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:gemma#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:gemma#evalset-MMLU-Pro-AIME-2026-no-tools-LiveCodeBench-v6-Codeforces-ELO-GPQA-Diamond-Tau2-HLE-BigBench-Extra-Hard-MMMLU-MMMU-Pro-OmniDocBench-1.5-MATH-Vision-MedXPertQA-MM-CoVoST-FLEURS-MRCR-v2-8-needle-128k",
+   "name": "MMLU Pro, AIME 2026 no tools, LiveCodeBench v6, Codeforces ELO, GPQA Diamond, Tau2, HLE, BigBench Extra Hard, MMMLU, MMMU Pro, OmniDocBench 1.5, MATH-Vision, MedXPertQA MM, CoVoST, FLEURS, MRCR v2 8 needle 128k",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-8",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:gemma#evalset-MMLU-Pro-AIME-2026-no-tools-LiveCodeBench-v6-Codeforces-ELO-GPQA-Diamond-Tau2-HLE-BigBench-Extra-Hard-MMMLU-MMMU-Pro-OmniDocBench-1.5-MATH-Vision-MedXPertQA-MM-CoVoST-FLEURS-MRCR-v2-8-needle-128k"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:gemma#model-google-gemma-4-31B",
+   "name": "google/gemma-4-31B",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/google/gemma-4-31B",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-10",
+   "from": "urn:model-cards:gemma#model-google-gemma-4-31B",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-11",
+   "from": "urn:model-cards:gemma#model-google-gemma-4-31B",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-12",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:gemma#model-google-gemma-4-31B"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:gemma#licence-ma-model",
+   "simplelicensing_licenseExpression": "Apache-2.0",
+   "creationInfo": "_:creationinfo",
+   "comment": "Licence link from card: https://ai.google.dev/gemma/docs/gemma_4_license"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-14",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:gemma#licence-ma-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:gemma#rel-15",
+   "from": "urn:model-cards:gemma#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

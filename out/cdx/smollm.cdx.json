@@ -1,0 +1,211 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.7",
+ "serialNumber": "urn:uuid:d7dd74fd-bf41-55ab-959d-ee1dabca0932",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-09-30T10:17:01Z",
+  "tools": {
+   "components": [
+    {
+     "type": "application",
+     "name": "model-cards pipeline"
+    }
+   ]
+  }
+ },
+ "components": [
+  {
+   "type": "machine-learning-model",
+   "bom-ref": "smollm:model",
+   "name": "HuggingFaceTB/SmolLM3-3B",
+   "version": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+   "hashes": [
+    {
+     "alg": "SHA-1",
+     "content": "a07cc9a04f16550a088caea529712d1d335b0ac1"
+    }
+   ],
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:access_conditions",
+     "value": "false"
+    },
+    {
+     "name": "model-cards:integration_means",
+     "value": "Load with transformers (v4.53.0+) via AutoModelForCausalLM/AutoTokenizer and tokenizer.apply_chat_template; /think and /no_think system prompt flags or enable_thinking kwarg; tool calling via xml_tools or python_tools; serve with vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch."
+    },
+    {
+     "name": "model-cards:distribution_channels",
+     "value": "Open weights on Hugging Face (model, checkpoints, quantized checkpoints collection); can be deployed via vLLM and SGLang in an OpenAI-compatible API; local inference with llama.cpp, ONNX, MLX, MLC and ExecuTorch."
+    }
+   ],
+   "pedigree": {
+    "ancestors": [
+     {
+      "type": "machine-learning-model",
+      "bom-ref": "smollm:ancestor-HuggingFaceTB/SmolLM3-3B-Base",
+      "name": "HuggingFaceTB/SmolLM3-3B-Base",
+      "externalReferences": [
+       {
+        "type": "distribution",
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base"
+       }
+      ],
+      "version": "d78a42f79198603e614095753484a04c10c2b940"
+     }
+    ],
+    "notes": "base_model_relation: finetune"
+   },
+   "externalReferences": [
+    {
+     "type": "distribution",
+     "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+    },
+    {
+     "type": "model-card",
+     "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B"
+    }
+   ],
+   "modelCard": {
+    "modelParameters": {
+     "architectureFamily": "Decoder-only transformer using GQA and NoPE (3:1 ratio)",
+     "modelArchitecture": "Decoder-only transformer using GQA and NoPE (with 3:1 ratio); 3B parameters. The card gives no layer count, experts or active parameters, and no stated rationale beyond the design aim of pushing the boundaries of small models.",
+     "inputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "outputs": [
+      {
+       "format": "text"
+      }
+     ],
+     "task": "text-generation",
+     "datasets": [
+      {
+       "ref": "smollm:training-data"
+      },
+      {
+       "ref": "smollm:evalset-Instruction-model-AIME-2025-GSM-Plus-LiveCodeBench-v4-GPQA-Diamond-IFEval-MixEval-Hard-BFCL-Global-MMLU.-Base-model-HellaSwag-ARC-CF-Winogrande-CommonsenseQA-MMLU-CF-MMLU-Pro-CF/MCF-PIQA-OpenBookQA-BoolQ-HumanEval-MBPP-MATH-4-shot-GSM8k-5-shot-Ruler-32k/64k/128k-multilingual-MLMM-Hellaswag-Belebele-Global-MMLU-CF-Flores-200-5-shot-."
+      }
+     ]
+    },
+    "quantitativeAnalysis": {
+     "performanceMetrics": [
+      {
+       "type": "reported results",
+       "value": "SmolLM3-3B (no extended thinking): AIME 2025 9.3, GSM-Plus 72.8, LiveCodeBench v4 15.2, GPQA Diamond 35.7, IFEval 76.7, MixEval Hard 26.9, BFCL 92.3, Global MMLU 53.5. Extended thinking: AIME 2025 36.7, GSM-Plus 83.4, LiveCodeBench v4 30.0, GPQA Diamond 41.7, IFEval 71.2, MixEval Hard 30.8, BFCL 88.8, Global MMLU 64.1. All evaluations zero-shot unless stated otherwise, run with lighteval."
+      }
+     ]
+    },
+    "considerations": {
+     "environmentalConsiderations": {
+      "properties": [
+       {
+        "name": "model-cards:training_hardware",
+        "value": "384 H100 GPUs"
+       }
+      ]
+     },
+     "useCases": [
+      "Should be used as assistive tools rather than definitive sources of information; users should verify important information. The model is an instruct model optimized for hybrid reasoning.",
+      "Can be used in agentic systems with tool calling (xml_tools or python_tools), as an instruct/hybrid reasoning model, and deployed via vLLM and SGLang as an OpenAI-compatible API; should be used as an assistive tool."
+     ],
+     "technicalLimitations": [
+      "Generated content may not always be factually accurate, logically consistent, or free from biases present in the training data; should be used as assistive tools rather than definitive sources, and users should verify important information.",
+      "out_of_scope_uses: The model should be used as an assistive tool rather than a definitive source of information; users should verify important information."
+     ]
+    },
+    "properties": [
+     {
+      "name": "model-cards:param_count",
+      "value": "3075098624"
+     },
+     {
+      "name": "model-cards:max_input_size",
+      "value": "65536"
+     },
+     {
+      "name": "model-cards:weights_precision",
+      "value": "bfloat16"
+     },
+     {
+      "name": "model-cards:languages",
+      "value": "en, fr, es, it, pt, zh, ar, ru"
+     },
+     {
+      "name": "model-cards:eval_methodology",
+      "value": "Evaluations run with lighteval; all zero-shot unless stated otherwise (e.g., MATH 4-shot, GSM8k 5-shot, Flores-200 5-shot). For Ruler 64k, YaRN applied to Qwen models with 32k context to extrapolate context length."
+     },
+     {
+      "name": "model-cards:autonomy",
+      "value": "The card positions the model as an assistive tool requiring human verification of outputs (not a definitive source); it also supports tool calling."
+     },
+     {
+      "name": "model-cards:standards_compliance",
+      "value": "EU AI Act: the card provides a Public Summary of Training Content for GPAI models, following the EU template"
+     }
+    ]
+   }
+  },
+  {
+   "type": "data",
+   "bom-ref": "smollm:training-data",
+   "name": "Training data of HuggingFaceTB/SmolLM3-3B (as described in the card)",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "training data",
+     "description": "data_provenance: Pretraining used a staged curriculum of web, code, math and reasoning data, with a public data mixture; pretraining datasets are in a public collection. Mid-training used 140B reasoning tokens; mid-training and post-training datasets will be uploaded later.\ndata_acquisition: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; post-training included midtraining on 140B reasoning tokens, then supervised fine-tuning and alignment via Anchored Preference Optimization (APO). Pretraining datasets are public in a collection; mid-training and post-training datasets will be uploaded later.\ndata_scope: Pretrained on 11.2T tokens with a staged curriculum of web, code, math and reasoning data; midtraining on 140B reasoning tokens. Trained on English, French, Spanish, German, Italian and Portuguese as main languages, plus fewer tokens of Arabic (standard), Chinese and Russian data."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:training_data_size",
+     "value": "11.2T tokens pretraining (the Training section lists 11T pretraining tokens); midtraining on 140B reasoning tokens"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "smollm:dependency-software",
+   "name": "transformers"
+  },
+  {
+   "type": "data",
+   "bom-ref": "smollm:evalset-Instruction-model-AIME-2025-GSM-Plus-LiveCodeBench-v4-GPQA-Diamond-IFEval-MixEval-Hard-BFCL-Global-MMLU.-Base-model-HellaSwag-ARC-CF-Winogrande-CommonsenseQA-MMLU-CF-MMLU-Pro-CF/MCF-PIQA-OpenBookQA-BoolQ-HumanEval-MBPP-MATH-4-shot-GSM8k-5-shot-Ruler-32k/64k/128k-multilingual-MLMM-Hellaswag-Belebele-Global-MMLU-CF-Flores-200-5-shot-.",
+   "name": "Instruction model: AIME 2025, GSM-Plus, LiveCodeBench v4, GPQA Diamond, IFEval, MixEval Hard, BFCL, Global MMLU. Base model: HellaSwag, ARC-CF, Winogrande, CommonsenseQA, MMLU-CF, MMLU Pro CF/MCF, PIQA, OpenBookQA, BoolQ, HumanEval+, MBPP+, MATH (4-shot), GSM8k (5-shot), Ruler 32k/64k/128k; multilingual: MLMM Hellaswag, Belebele, Global MMLU (CF), Flores-200 (5-shot).",
+   "data": [
+    {
+     "type": "dataset",
+     "name": "Instruction model: AIME 2025, GSM-Plus, LiveCodeBench v4, GPQA Diamond, IFEval, MixEval Hard, BFCL, Global MMLU. Base model: HellaSwag, ARC-CF, Winogrande, CommonsenseQA, MMLU-CF, MMLU Pro CF/MCF, PIQA, OpenBookQA, BoolQ, HumanEval+, MBPP+, MATH (4-shot), GSM8k (5-shot), Ruler 32k/64k/128k; multilingual: MLMM Hellaswag, Belebele, Global MMLU (CF), Flores-200 (5-shot)."
+    }
+   ],
+   "properties": [
+    {
+     "name": "model-cards:role",
+     "value": "evaluation"
+    }
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "smollm:model",
+   "dependsOn": [
+    "smollm:dependency-software"
+   ]
+  },
+  {
+   "ref": "smollm:dependency-software"
+  }
+ ]
+}

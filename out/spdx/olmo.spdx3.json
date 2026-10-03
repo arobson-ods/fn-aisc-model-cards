@@ -1,0 +1,279 @@
+{
+ "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+ "@graph": [
+  {
+   "type": "CreationInfo",
+   "@id": "_:creationinfo",
+   "specVersion": "3.0.1",
+   "created": "2026-09-30T10:16:57Z",
+   "createdBy": [
+    "urn:model-cards:olmo#agent"
+   ]
+  },
+  {
+   "type": "SpdxDocument",
+   "spdxId": "urn:model-cards:olmo#document",
+   "creationInfo": "_:creationinfo",
+   "name": "AI BOM for olmo (from its model card)",
+   "profileConformance": [
+    "core",
+    "software",
+    "ai",
+    "dataset",
+    "simpleLicensing"
+   ],
+   "rootElement": [
+    "urn:model-cards:olmo#model"
+   ],
+   "element": [
+    "urn:model-cards:olmo#agent",
+    "urn:model-cards:olmo#supplier",
+    "urn:model-cards:olmo#model",
+    "urn:model-cards:olmo#dataset-allenai-Dolci-Instruct-RL",
+    "urn:model-cards:olmo#rel-4",
+    "urn:model-cards:olmo#training-data",
+    "urn:model-cards:olmo#rel-6",
+    "urn:model-cards:olmo#dependency-software",
+    "urn:model-cards:olmo#rel-8",
+    "urn:model-cards:olmo#evalset-MATH-AIME-2024-AIME-2025-OMEGA-BigBenchHard-ZebraLogic-AGI-Eval-English-HumanEvalPlus-MBPP-LiveCodeBench-v3-IFEval-IFBench-MMLU-PopQA-GPQA-AlpacaEval-2-LC-Safety",
+    "urn:model-cards:olmo#rel-10",
+    "urn:model-cards:olmo#model-allenai-Olmo-3.1-32B-Instruct-DPO",
+    "urn:model-cards:olmo#rel-12",
+    "urn:model-cards:olmo#rel-13",
+    "urn:model-cards:olmo#rel-14",
+    "urn:model-cards:olmo#licence-mo-model",
+    "urn:model-cards:olmo#rel-16",
+    "urn:model-cards:olmo#rel-17"
+   ]
+  },
+  {
+   "type": "SoftwareAgent",
+   "spdxId": "urn:model-cards:olmo#agent",
+   "name": "model-cards pipeline (Open Data Services Field Work)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Organization",
+   "spdxId": "urn:model-cards:olmo#supplier",
+   "name": "Allen Institute for AI (Ai2)",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:olmo#model",
+   "name": "allenai/Olmo-3.1-32B-Instruct",
+   "software_primaryPurpose": "model",
+   "suppliedBy": "urn:model-cards:olmo#supplier",
+   "creationInfo": "_:creationinfo",
+   "software_packageVersion": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+   "verifiedUsing": [
+    {
+     "type": "Hash",
+     "algorithm": "sha1",
+     "hashValue": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+     "comment": "Hugging Face repository commit (git SHA-1)."
+    }
+   ],
+   "ai_typeOfModel": [
+    "Transformer style autoregressive language model"
+   ],
+   "ai_domain": [
+    "text-generation",
+    "en"
+   ],
+   "ai_informationAboutApplication": "Intended uses: Intended for research and educational use in accordance with Ai2's Responsible Use Guidelines.",
+   "ai_limitation": "Without safety filtering, the models can easily be prompted by users to generate harmful and sensitive content; such content may also be produced unintentionally, especially involving bias. Many statements from OLMo or any LLM are often inaccurate, so facts should be verified.",
+   "ai_metric": [
+    {
+     "type": "DictionaryEntry",
+     "key": "reportedResults",
+     "value": "Olmo 3.1 32B Instruct scores: MATH 93.4, AIME 2024 67.8, AIME 2025 57.9, OMEGA 42.2, BigBenchHard 84.0, ZebraLogic 61.7, AGI Eval English 79.5, HumanEvalPlus 86.7, MBPP+ 65.1, LiveCodeBench v3 54.7, IFEval 88.8, IFBench 39.7, MMLU 80.9, PopQA 25.0, GPQA 48.6, AlpacaEval 2 LC 59.8, Safety 89.5"
+    }
+   ],
+   "externalRef": [
+    {
+     "type": "ExternalRef",
+     "externalRefType": "other",
+     "comment": "Distribution channels: Open weights/checkpoints released on Hugging Face (loadable with the transformers library, including intermediate revisions); code released on GitHub repositories."
+    }
+   ],
+   "software_downloadLocation": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
+   "releaseTime": "2025-12-10T22:00:09Z",
+   "ai_hyperparameter": [
+    {
+     "type": "DictionaryEntry",
+     "key": "param_count",
+     "value": "32233522176"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "input_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "contextLength",
+     "value": "65536"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "output_modalities",
+     "value": "text"
+    },
+    {
+     "type": "DictionaryEntry",
+     "key": "weights_precision",
+     "value": "bfloat16"
+    }
+   ],
+   "ai_informationAboutTraining": "Pre-trained on the Dolma 3 dataset, then post-trained in three stages on Dolci datasets: Stage 1 SFT (supervised fine-tuning), Stage 2 DPO (direct preference optimization), Stage 3 RLVR (reinforcement learning from verifiable rewards).",
+   "comment": "releaseTime: release date not stated in the card; Hugging Face repo creation time used.\nacceptable_use_policy: Licensed under Apache 2.0; intended for research and educational use in accordance with Ai2's Responsible Use Guidelines (https://allenai.org/responsible-use)\naccess_conditions: false\nadditional_assets: Code, checkpoints and training details are released: Open-Instruct (DPO and RLVR), OLMo-Core (pre-training and SFT) and OLMo-Eval (evaluation) on GitHub; checkpoints accessible via Hugging Face revisions (e.g. step_XXXX naming; only the final few checkpoints for this model); training datasets (Dolci-Instruct-SFT, Dolci-Instruct-DPO, Dolci-Instruct-RL) on Hugging Face; logs coming soon.\nintegration_means: Use with the HuggingFace transformers library (transformers 4.57.0 or higher) via AutoModelForCausalLM/AutoTokenizer; optional 8-bit quantization with bitsandbytes; specific checkpoints loadable via the revision argument; fine-tuning with the OLMo-core repository.\nbase_model_relation: finetune"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:olmo#dataset-allenai-Dolci-Instruct-RL",
+   "name": "allenai/Dolci-Instruct-RL",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "software_downloadLocation": "https://huggingface.co/datasets/allenai/Dolci-Instruct-RL"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-4",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:olmo#dataset-allenai-Dolci-Instruct-RL"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:olmo#training-data",
+   "name": "Training data of allenai/Olmo-3.1-32B-Instruct (as described in the card)",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo",
+   "comment": "data_scope: Pre-trained on the Dolma 3 dataset and post-trained on Dolci datasets; post-training data covers math, code, chat, and general knowledge queries (SFT/DPO) and math, code, instruction-following, and general chat queries (RLVR). Language: English.\nknowledge_cutoff: Dec. 2024"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-6",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "trainedOn",
+   "to": [
+    "urn:model-cards:olmo#training-data"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "software_Package",
+   "spdxId": "urn:model-cards:olmo#dependency-software",
+   "name": "transformers",
+   "software_primaryPurpose": "library",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-8",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "dependsOn",
+   "to": [
+    "urn:model-cards:olmo#dependency-software"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "dataset_DatasetPackage",
+   "spdxId": "urn:model-cards:olmo#evalset-MATH-AIME-2024-AIME-2025-OMEGA-BigBenchHard-ZebraLogic-AGI-Eval-English-HumanEvalPlus-MBPP-LiveCodeBench-v3-IFEval-IFBench-MMLU-PopQA-GPQA-AlpacaEval-2-LC-Safety",
+   "name": "MATH, AIME 2024, AIME 2025, OMEGA, BigBenchHard, ZebraLogic, AGI Eval English, HumanEvalPlus, MBPP+, LiveCodeBench v3, IFEval, IFBench, MMLU, PopQA, GPQA, AlpacaEval 2 LC, Safety",
+   "software_primaryPurpose": "data",
+   "dataset_datasetType": [
+    "noAssertion"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-10",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "testedOn",
+   "to": [
+    "urn:model-cards:olmo#evalset-MATH-AIME-2024-AIME-2025-OMEGA-BigBenchHard-ZebraLogic-AGI-Eval-English-HumanEvalPlus-MBPP-LiveCodeBench-v3-IFEval-IFBench-MMLU-PopQA-GPQA-AlpacaEval-2-LC-Safety"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "ai_AIPackage",
+   "spdxId": "urn:model-cards:olmo#model-allenai-Olmo-3.1-32B-Instruct-DPO",
+   "name": "allenai/Olmo-3.1-32B-Instruct-DPO",
+   "software_primaryPurpose": "model",
+   "software_downloadLocation": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO",
+   "comment": "Base model declared in the model card; details not described in this document.",
+   "software_packageVersion": "fc84a4f699916fcf585aa54371f47897fa934d5c",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-12",
+   "from": "urn:model-cards:olmo#model-allenai-Olmo-3.1-32B-Instruct-DPO",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-13",
+   "from": "urn:model-cards:olmo#model-allenai-Olmo-3.1-32B-Instruct-DPO",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-14",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "descendantOf",
+   "to": [
+    "urn:model-cards:olmo#model-allenai-Olmo-3.1-32B-Instruct-DPO"
+   ],
+   "comment": "Relation declared: finetune",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "simplelicensing_LicenseExpression",
+   "spdxId": "urn:model-cards:olmo#licence-mo-model",
+   "simplelicensing_licenseExpression": "Apache-2.0",
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-16",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "hasDeclaredLicense",
+   "to": [
+    "urn:model-cards:olmo#licence-mo-model"
+   ],
+   "creationInfo": "_:creationinfo"
+  },
+  {
+   "type": "Relationship",
+   "spdxId": "urn:model-cards:olmo#rel-17",
+   "from": "urn:model-cards:olmo#model",
+   "relationshipType": "hasConcludedLicense",
+   "to": [
+    "expandedlicensing_NoAssertionLicense"
+   ],
+   "creationInfo": "_:creationinfo"
+  }
+ ]
+}

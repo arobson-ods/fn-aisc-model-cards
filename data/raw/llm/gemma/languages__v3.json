@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v3",
+ "repo_id": "google/gemma-4-31B-it",
+ "fact_id": "languages",
+ "readme_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nCard sections that often contain it: Languages, Model Details\n\nAnswer with status, value, quotes and section.",
+ "answer": {
+  "status": "stated",
+  "value": "Multilingual support in over 140 languages; out-of-the-box support for 35+ languages, pre-trained on 140+ languages",
+  "quotes": [
+   "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages.",
+   "**Multilingual** – Out-of-the-box support for 35+ languages, pre-trained on 140+ languages."
+  ],
+  "section": "Gemma 4 (introduction)"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 524,
+  "cache_read_input_tokens": 11361,
+  "output_tokens": 247
+ },
+ "cost_usd_list_price": 0.0068422,
+ "duration_ms": 2188
+}

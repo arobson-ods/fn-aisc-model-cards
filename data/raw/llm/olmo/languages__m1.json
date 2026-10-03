@@ -1,0 +1,30 @@
+{
+ "model": "claude-sonnet-5-5",
+ "check_version": "m1",
+ "repo_id": "allenai/Olmo-3.1-32B-Instruct",
+ "fact_id": "languages",
+ "input_sha256": "1c65fd7174cb824e4fa6be3b3e77024c36ec673e6773c0da472f66bc07d425ce",
+ "request_user": "Fact: languages\nWhat to find: Natural languages the model supports.\nThe card's machine-readable metadata gives: [\"en\"]\n\nRead only the card's TEXT (the model card above has no YAML front matter; ignore any code samples' arguments as statements of fact). Answer:\n- status: \"stated\" if the text states this fact for this model, else \"not_stated\".\n- value: what the text states, containing only claims the quotes support (\"\" if not stated).\n- quotes: 1-8 passages copied verbatim from the text that support the value ([] if not stated).\n- agreement: \"agrees\" if the text says the same as the metadata; \"adds\" if it is consistent but says more (for example an extra item); \"conflicts\" if it contradicts the metadata; \"not_stated\" if the text does not state the fact.\n- section: heading of the section containing the first quote (\"\" if none).",
+ "answer": {
+  "status": "stated",
+  "value": "English",
+  "quotes": [
+   "- **Language(s) (NLP):** English"
+  ],
+  "agreement": "agrees",
+  "section": "Model Description"
+ },
+ "backend": "cli",
+ "served_by": [
+  "claude-sonnet-5-5"
+ ],
+ "stop_reason": "success",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 742,
+  "cache_read_input_tokens": 6825,
+  "output_tokens": 161
+ },
+ "cost_usd_list_price": 0.005947000000000001,
+ "duration_ms": 2441
+}
