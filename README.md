@@ -4,6 +4,8 @@ A Field Work experiment on AI supply chains: we extract what 14 open-weight mode
 
 This is a probe of the standards and of disclosure practice. It is not a compliance assessment of any model.
 
+**Disclaimer:** This was a 2-3 hour experiment with heavy reliance on Claude. Results should be treated as provisional. This was a learning exercise not a finished work of analysis. 
+
 ## Pinned versions
 
 | Target | Version | Files (`targets/schemas/`, sha256 in `PINS.yaml`) | Retrieved |
