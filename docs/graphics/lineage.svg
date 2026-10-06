@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1114" viewBox="0 0 960 1114" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">The training-data trail goes cold at the base model</title><desc id="d">OLMo: Olmo-3.1-32B-Instruct (datasets) → Olmo-3.1-32B-Instruct-DPO (datasets) → Olmo-3.1-32B-Instruct-SFT (datasets) → Olmo-3-1125-32B (datasets); OLMo: Olmo-3-7B-Instruct-GGUF (none) → Olmo-3-7B-Instruct (datasets) → Olmo-3-7B-Instruct-DPO (datasets) → Olmo-3-7B-Instruct-SFT (datasets) → Olmo-3-1025-7B (datasets); Molmo: Molmo2-8B (datasets) → Qwen3-8B (none) → Qwen3-8B-Base (none) → siglip-so400m-patch14-384 (none); InternVL: InternVL3_5-GPT-OSS-20B-A4B-Preview-HF (datasets) → InternViT-300M-448px-V2_5 (none) → InternViT-300M-448px (datasets) → gpt-oss-20b (none); Llama: Llama-4-Scout-17B-16E-Instruct (none) → Llama-4-Scout-17B-16E (none); Gemma: gemma-4-31B-it (none) → gemma-4-31B (none); Phi: Phi-4-reasoning-vision-15B (none) → Phi-4-reasoning (none) → phi-4 (none); SmolLM: SmolLM3-3B (none) → SmolLM3-3B-Base (none); Falcon: Falcon-H1R-7B (none) → Falcon-H1-7B-Base (none); Granite: granite-4.2-8b (none) → granite-4.1-8b-base (none); SmolLM: TwIL-LM3 (none) → SmolLM3-3B (none) → SmolLM3-3B-Base (none)</desc>
+<rect width="960" height="1114" fill="#fcfcfb"/>
+<text x="32.0" y="48.0" font-size="24" fill="#0b0b0b" font-weight="700" text-anchor="start">The training-data trail goes cold at the base model</text>
+<text x="32.0" y="76.0" font-size="15" fill="#52514e" font-weight="400" text-anchor="start">Each row follows a published model back through the parent models its card declares</text>
+<circle cx="38" cy="107" r="6" fill="#2a78d6"/>
+<text x="52.0" y="112.0" font-size="14" fill="#0b0b0b" font-weight="400" text-anchor="start">Card metadata lists the model&#x27;s training datasets</text>
+<circle cx="420" cy="107" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"/>
+<text x="434.0" y="112.0" font-size="14" fill="#0b0b0b" font-weight="400" text-anchor="start">Lists none</text>
+<text x="183.0" y="148.0" font-size="13" fill="#898781" font-weight="700" text-anchor="start">Published model</text>
+<text x="351.0" y="148.0" font-size="13" fill="#898781" font-weight="700" text-anchor="start">Declared parent models →</text>
+<text x="32.0" y="186.0" font-size="13" fill="#0b0b0b" font-weight="700" text-anchor="start">Training datasets declared somewhere in the chain</text>
+<line x1="32" y1="194" x2="928" y2="194" stroke="#e1e0d9"/>
+<text x="32.0" y="239.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">OLMo</text>
+<text x="32.0" y="256.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">control model</text>
+<path d="M198,234 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,234 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M534,234 H686" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="234" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3.1-32B-Instruct: lists training datasets</title></circle>
+<text x="183.0" y="222.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3.1-32B-Instruct</text>
+<circle cx="358" cy="234" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3.1-32B-Instruct-DPO: lists training datasets</title></circle>
+<text x="351.0" y="255.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3.1-32B-Instruct-DPO</text>
+<circle cx="526" cy="234" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3.1-32B-Instruct-SFT: lists training datasets</title></circle>
+<text x="519.0" y="222.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3.1-32B-Instruct-SFT</text>
+<circle cx="694" cy="234" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3-1125-32B: lists training datasets</title></circle>
+<text x="687.0" y="255.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-1125-32B</text>
+<text x="32.0" y="301.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">OLMo</text>
+<text x="32.0" y="318.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">derived model</text>
+<path d="M198,296 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,296 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M534,296 H686" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M702,296 H854" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="296" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>unsloth/Olmo-3-7B-Instruct-GGUF: lists no training datasets</title></circle>
+<text x="183.0" y="284.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-7B-Instruct-GGUF</text>
+<circle cx="358" cy="296" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3-7B-Instruct: lists training datasets</title></circle>
+<text x="351.0" y="317.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-7B-Instruct</text>
+<circle cx="526" cy="296" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3-7B-Instruct-DPO: lists training datasets</title></circle>
+<text x="519.0" y="284.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-7B-Instruct-DPO</text>
+<circle cx="694" cy="296" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3-7B-Instruct-SFT: lists training datasets</title></circle>
+<text x="687.0" y="317.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-7B-Instruct-SFT</text>
+<circle cx="862" cy="296" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Olmo-3-1025-7B: lists training datasets</title></circle>
+<text x="855.0" y="284.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Olmo-3-1025-7B</text>
+<text x="32.0" y="363.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Molmo</text>
+<text x="32.0" y="380.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">derived model</text>
+<path d="M198,358 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,358 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M198,358 H328 Q340,358 340,370 V394 Q340,406 350,406" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="358" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>allenai/Molmo2-8B: lists training datasets</title></circle>
+<text x="183.0" y="346.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Molmo2-8B</text>
+<circle cx="358" cy="358" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>Qwen/Qwen3-8B: lists no training datasets</title></circle>
+<text x="351.0" y="379.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Qwen3-8B</text>
+<circle cx="526" cy="358" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>Qwen/Qwen3-8B-Base: lists no training datasets</title></circle>
+<text x="519.0" y="346.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Qwen3-8B-Base</text>
+<circle cx="358" cy="406" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>google/siglip-so400m-patch14-384: lists no training datasets</title></circle>
+<text x="351.0" y="427.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">siglip-so400m-patch14-384</text>
+<text x="32.0" y="473.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">InternVL</text>
+<text x="32.0" y="490.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">derived model</text>
+<path d="M198,468 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,468 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M198,468 H328 Q340,468 340,480 V504 Q340,516 350,516" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="468" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF: lists training datasets</title></circle>
+<text x="183.0" y="456.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">InternVL3_5-GPT-OSS-20B-A4B-Preview-HF</text>
+<circle cx="358" cy="468" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>OpenGVLab/InternViT-300M-448px-V2_5: lists no training datasets</title></circle>
+<text x="351.0" y="489.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">InternViT-300M-448px-V2_5</text>
+<circle cx="526" cy="468" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>OpenGVLab/InternViT-300M-448px: lists training datasets</title></circle>
+<text x="519.0" y="456.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">InternViT-300M-448px</text>
+<circle cx="358" cy="516" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>openai/gpt-oss-20b: lists no training datasets</title></circle>
+<text x="351.0" y="537.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">gpt-oss-20b</text>
+<text x="32.0" y="568.0" font-size="13" fill="#0b0b0b" font-weight="700" text-anchor="start">No training datasets declared anywhere in the chain: 7 of 11 chains</text>
+<line x1="32" y1="576" x2="928" y2="576" stroke="#e1e0d9"/>
+<text x="32.0" y="621.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Llama</text>
+<text x="32.0" y="638.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,616 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="616" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>meta-llama/Llama-4-Scout-17B-16E-Instruct: lists no training datasets</title></circle>
+<text x="183.0" y="604.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Llama-4-Scout-17B-16E-Instruct</text>
+<circle cx="358" cy="616" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>meta-llama/Llama-4-Scout-17B-16E: lists no training datasets</title></circle>
+<text x="351.0" y="637.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Llama-4-Scout-17B-16E</text>
+<text x="32.0" y="683.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Gemma</text>
+<text x="32.0" y="700.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,678 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="678" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>google/gemma-4-31B-it: lists no training datasets</title></circle>
+<text x="183.0" y="666.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">gemma-4-31B-it</text>
+<circle cx="358" cy="678" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>google/gemma-4-31B: lists no training datasets</title></circle>
+<text x="351.0" y="699.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">gemma-4-31B</text>
+<text x="32.0" y="745.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Phi</text>
+<text x="32.0" y="762.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,740 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,740 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="740" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>microsoft/Phi-4-reasoning-vision-15B: lists no training datasets</title></circle>
+<text x="183.0" y="728.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Phi-4-reasoning-vision-15B</text>
+<circle cx="358" cy="740" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>microsoft/Phi-4-reasoning: lists no training datasets</title></circle>
+<text x="351.0" y="761.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Phi-4-reasoning</text>
+<circle cx="526" cy="740" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>microsoft/phi-4: lists no training datasets</title></circle>
+<text x="519.0" y="728.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">phi-4</text>
+<text x="32.0" y="807.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">SmolLM</text>
+<text x="32.0" y="824.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,802 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="802" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>HuggingFaceTB/SmolLM3-3B: lists no training datasets</title></circle>
+<text x="183.0" y="790.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">SmolLM3-3B</text>
+<circle cx="358" cy="802" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>HuggingFaceTB/SmolLM3-3B-Base: lists no training datasets</title></circle>
+<text x="351.0" y="823.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">SmolLM3-3B-Base</text>
+<text x="32.0" y="869.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Falcon</text>
+<text x="32.0" y="886.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,864 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="864" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>tiiuae/Falcon-H1R-7B: lists no training datasets</title></circle>
+<text x="183.0" y="852.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Falcon-H1R-7B</text>
+<circle cx="358" cy="864" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>tiiuae/Falcon-H1-7B-Base: lists no training datasets</title></circle>
+<text x="351.0" y="885.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">Falcon-H1-7B-Base</text>
+<text x="32.0" y="931.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">Granite</text>
+<text x="32.0" y="948.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">major family</text>
+<path d="M198,926 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="926" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>ibm-granite/granite-4.2-8b: lists no training datasets</title></circle>
+<text x="183.0" y="914.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">granite-4.2-8b</text>
+<circle cx="358" cy="926" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>ibm-granite/granite-4.1-8b-base: lists no training datasets</title></circle>
+<text x="351.0" y="947.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">granite-4.1-8b-base</text>
+<text x="32.0" y="993.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="start">SmolLM</text>
+<text x="32.0" y="1010.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">derived model</text>
+<path d="M198,988 H350" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<path d="M366,988 H518" fill="none" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="190" cy="988" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>webAI-Official/TwIL-LM3: lists no training datasets</title></circle>
+<text x="183.0" y="976.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">TwIL-LM3</text>
+<circle cx="358" cy="988" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>HuggingFaceTB/SmolLM3-3B: lists no training datasets</title></circle>
+<text x="351.0" y="1009.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">SmolLM3-3B</text>
+<circle cx="526" cy="988" r="5.25" fill="#fcfcfb" stroke="#898781" stroke-width="1.5"><title>HuggingFaceTB/SmolLM3-3B-Base: lists no training datasets</title></circle>
+<text x="519.0" y="976.0" font-size="11" fill="#52514e" font-weight="400" text-anchor="start">SmolLM3-3B-Base</text>
+<text x="32.0" y="1052.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start">SPDX, CycloneDX and the EU form can all record &quot;derived from&quot;, but none can say how</text>
+<text x="32.0" y="1072.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start">(fine-tuned, quantised, merged or adapted). Mistral, Qwen and DeepSeek declare no parent and are not shown.</text>
+<text x="32.0" y="1096.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">Source: 14 open-weight model cards on Hugging Face, retrieved September 2026. &quot;Lists&quot; means the card&#x27;s machine-readable datasets field, not its prose.</text>
+</svg>

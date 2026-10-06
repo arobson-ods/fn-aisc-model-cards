@@ -24,6 +24,7 @@ targets/facts.yaml     61 facts: HF sources, and SPDX / CycloneDX / EU form path
 targets/eu_form.yaml   45 EU form items with audience flags and precision (exact | range)
 data/raw/              cached HTTP (http/), per-model api.json / README.md / config.json, _upstream/ chains, llm/
 data/extracted/        per-model fact records with evidence
+docs/graphics/         article graphics (SVG + PNG), alt text in docs/graphics/README.md
 out/                   spdx/ cdx/ eu/, matrix_disclosure.csv, matrix_schema.csv, gaps.csv, lineage.csv,
                        placement.csv, metadata_vs_prose.csv, headline.json, spotcheck.csv,
                        autocheck.csv, spotcheck_mini.csv (human review), archive_v3/ (previous run)
@@ -39,6 +40,7 @@ uv run python -m pipeline.autocheck     # second-model check of the sample + 15-
 uv run python -m pipeline.autocheck --score   # after a human fills out/spotcheck_mini.csv
 uv run python -m pipeline.emit         # SPDX + CycloneDX (validated offline) + EU form fills
 uv run python -m pipeline.report       # matrices, gaps, lineage, headline numbers
+uv run python -m pipeline.graphics     # article graphics: docs/graphics/*.svg (+ 2x PNG if ImageMagick is installed)
 uv run pytest                          # offline; network access fails the tests
 ```
 

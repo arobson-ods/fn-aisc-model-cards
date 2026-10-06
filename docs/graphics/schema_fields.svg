@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="882" viewBox="0 0 960 882" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">The standards have no field for some basic facts</title><desc id="d">Licence: SPDX field, CycloneDX field; Base model: SPDX field, CycloneDX field; Training datasets: SPDX field, CycloneDX field; Limitations: SPDX field, CycloneDX field; Training energy: SPDX field, CycloneDX field; Context length: SPDX field, CycloneDX free text only; Input types (text, image…): SPDX free text only, CycloneDX field; Parameter count: SPDX free text only, CycloneDX free text only; Knowledge cutoff date: SPDX free text only, CycloneDX free text only; Training compute: SPDX free text only, CycloneDX free text only; Training time: SPDX free text only, CycloneDX free text only; Training hardware: SPDX free text only, CycloneDX free text only; Languages: SPDX free text only, CycloneDX free text only; How it was derived (fine-tune, quantised…): SPDX free text only, CycloneDX free text only</desc>
+<rect width="960" height="882" fill="#fcfcfb"/>
+<text x="32.0" y="48.0" font-size="24" fill="#0b0b0b" font-weight="700" text-anchor="start">The standards have no field for some basic facts</text>
+<text x="32.0" y="76.0" font-size="15" fill="#52514e" font-weight="400" text-anchor="start">Can each AI bill-of-materials standard hold the fact in a field of its own?</text>
+<text x="520.0" y="128.0" font-size="15" fill="#0b0b0b" font-weight="700" text-anchor="middle">SPDX 3.0.1</text>
+<text x="720.0" y="128.0" font-size="15" fill="#0b0b0b" font-weight="700" text-anchor="middle">CycloneDX 1.7</text>
+<text x="32.0" y="190.0" font-size="13" fill="#898781" font-weight="700" text-anchor="start">Both standards have a field</text>
+<line x1="32" y1="198" x2="928" y2="198" stroke="#e1e0d9"/>
+<text x="32.0" y="234.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Licence</text>
+<rect x="460" y="217" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="234.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="217" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="234.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="268.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Base model</text>
+<rect x="460" y="251" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="268.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="251" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="268.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="302.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Training datasets</text>
+<rect x="460" y="285" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="302.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="285" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="302.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="336.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Limitations</text>
+<rect x="460" y="319" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="336.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="319" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="336.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="370.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Training energy</text>
+<rect x="460" y="353" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="370.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="353" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="370.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="410.0" font-size="13" fill="#898781" font-weight="700" text-anchor="start">Only one has a field</text>
+<line x1="32" y1="418" x2="928" y2="418" stroke="#e1e0d9"/>
+<text x="32.0" y="454.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Context length</text>
+<rect x="460" y="437" width="120" height="24" rx="12" fill="#cde2fb"/><text x="520.0" y="454.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<rect x="660" y="437" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="454.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="488.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Input types (text, image…)</text>
+<rect x="460" y="471" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="488.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="471" width="120" height="24" rx="12" fill="#cde2fb"/><text x="720.0" y="488.0" font-size="14" fill="#0b0b0b" font-weight="600" text-anchor="middle">Field</text>
+<text x="32.0" y="528.0" font-size="13" fill="#898781" font-weight="700" text-anchor="start">Neither has a field</text>
+<line x1="32" y1="536" x2="928" y2="536" stroke="#e1e0d9"/>
+<text x="32.0" y="572.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Parameter count</text>
+<rect x="460" y="555" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="572.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="555" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="572.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="606.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Knowledge cutoff date</text>
+<rect x="460" y="589" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="606.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="589" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="606.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="640.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Training compute</text>
+<rect x="460" y="623" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="640.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="623" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="640.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="674.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Training time</text>
+<rect x="460" y="657" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="674.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="657" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="674.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="708.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Training hardware</text>
+<rect x="460" y="691" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="708.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="691" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="708.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="742.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">Languages</text>
+<rect x="460" y="725" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="742.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="725" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="742.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="776.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="start">How it was derived (fine-tune, quantised…)</text>
+<rect x="460" y="759" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="520.0" y="776.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<rect x="660" y="759" width="120" height="24" rx="12" fill="none" stroke="#898781" stroke-dasharray="3 3"/><text x="720.0" y="776.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="middle">Free text only</text>
+<text x="32.0" y="820.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start">Free text only: the fact can go in a comment or a generic name–value list. The document stays valid,</text>
+<text x="32.0" y="840.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start">but no tool can rely on finding it there. This holds even for OLMo, the most open model in the sample.</text>
+<text x="32.0" y="864.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">Source: SPDX 3.0.1 AI and Dataset profiles; CycloneDX 1.7 ML-BOM model card. Mapping in targets/facts.yaml.</text>
+</svg>

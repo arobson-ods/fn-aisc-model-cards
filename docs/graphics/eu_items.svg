@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="608" viewBox="0 0 960 608" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Public model cards answer just over half of the EU form</title><desc id="d">The typical card answers 26 of 45 items. By section: Distribution and licences 99%; Model properties 86%; Intended use 71%; Training process 71%; General information 64%; Training data 40%; Compute used in training 10%; Energy use 2%. The form sends training-process, compute and energy items only to regulators.</desc>
+<rect width="960" height="608" fill="#fcfcfb"/>
+<text x="32.0" y="48.0" font-size="24" fill="#0b0b0b" font-weight="700" text-anchor="start">Public model cards answer just over half of the EU form</text>
+<text x="32.0" y="76.0" font-size="15" fill="#52514e" font-weight="400" text-anchor="start">Items on the EU Model Documentation Form that public model cards answer</text>
+<text x="32.0" y="140.0" font-size="52" fill="#0b0b0b" font-weight="700" text-anchor="start">26 of 45</text>
+<text x="250.0" y="116.0" font-size="17" fill="#0b0b0b" font-weight="600" text-anchor="start">items answered by the typical card</text>
+<text x="250.0" y="140.0" font-size="15" fill="#52514e" font-weight="400" text-anchor="start">Median of 14 cards. The fewest was 18, the most 37 (Llama).</text>
+<text x="32.0" y="184.0" font-size="14" fill="#52514e" font-weight="600" text-anchor="start">Share of items answered across all 14 cards, by section of the form</text>
+<text x="300.0" y="215.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Distribution and licences</text>
+<text x="300.0" y="232.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">5 items</text>
+<rect x="316" y="202" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,202.0 h449.4 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-449.4 z" fill="#2a78d6"><title>Distribution and licences: 99% of answers</title></path>
+<text x="777.4" y="217.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">99%</text>
+<text x="300.0" y="255.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Model properties</text>
+<text x="300.0" y="272.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">8 items</text>
+<rect x="316" y="242" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,242.0 h390.3 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-390.3 z" fill="#2a78d6"><title>Model properties: 86% of answers</title></path>
+<text x="718.3" y="257.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">86%</text>
+<text x="300.0" y="295.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Intended use</text>
+<text x="300.0" y="312.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">6 items</text>
+<rect x="316" y="282" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,282.0 h324.6 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-324.6 z" fill="#2a78d6"><title>Intended use: 71% of answers</title></path>
+<text x="652.6" y="297.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">71%</text>
+<text x="300.0" y="335.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Training process</text>
+<text x="300.0" y="352.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">2 items</text>
+<rect x="316" y="322" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,322.0 h324.6 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-324.6 z" fill="#2a78d6"><title>Training process: 71% of answers</title></path>
+<text x="652.6" y="337.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">71%</text>
+<text x="700.6" y="337.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start" font-style="italic">Sent only to regulators</text>
+<text x="300.0" y="375.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">General information</text>
+<text x="300.0" y="392.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">6 items</text>
+<rect x="316" y="362" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,362.0 h291.7 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-291.7 z" fill="#2a78d6"><title>General information: 64% of answers</title></path>
+<text x="619.7" y="377.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">64%</text>
+<text x="300.0" y="415.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Training data</text>
+<text x="300.0" y="432.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">9 items</text>
+<rect x="316" y="402" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,402.0 h178.5 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-178.5 z" fill="#2a78d6"><title>Training data: 40% of answers</title></path>
+<text x="506.5" y="417.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">40%</text>
+<text x="300.0" y="455.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Compute used in training</text>
+<text x="300.0" y="472.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">5 items</text>
+<rect x="316" y="442" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,442.0 h42.0 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-42.0 z" fill="#2a78d6"><title>Compute used in training: 10% of answers</title></path>
+<text x="370.0" y="457.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">10%</text>
+<text x="418.0" y="457.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start" font-style="italic">Sent only to regulators</text>
+<text x="300.0" y="495.0" font-size="15" fill="#0b0b0b" font-weight="400" text-anchor="end">Energy use</text>
+<text x="300.0" y="512.0" font-size="12" fill="#898781" font-weight="400" text-anchor="end">4 items</text>
+<rect x="316" y="482" width="460" height="20" fill="#e1e0d9" opacity="0.45"/>
+<path d="M316.0,482.0 h4.2 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-4.2 z" fill="#2a78d6"><title>Energy use: 2% of answers</title></path>
+<text x="332.2" y="497.0" font-size="15" fill="#0b0b0b" font-weight="600" text-anchor="start">2%</text>
+<text x="380.2" y="497.0" font-size="14" fill="#52514e" font-weight="400" text-anchor="start" font-style="italic">Sent only to regulators</text>
+<line x1="316" y1="198" x2="316" y2="524" stroke="#c3c2b7"/>
+<text x="316.0" y="542.0" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">0%</text>
+<text x="546.0" y="542.0" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">50%</text>
+<text x="776.0" y="542.0" font-size="12" fill="#898781" font-weight="400" text-anchor="middle">100%</text>
+<text x="32.0" y="574.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">Source: 14 open-weight model cards on Hugging Face, retrieved September 2026. An item counts as answered if anything public on the card answers it,</text>
+<text x="32.0" y="590.0" font-size="12" fill="#898781" font-weight="400" text-anchor="start">including details Hugging Face supplies such as the commit hash, so the figure is generous.</text>
+</svg>
