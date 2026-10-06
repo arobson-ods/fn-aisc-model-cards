@@ -2,6 +2,16 @@
 
 *14 Hugging Face model cards retrieved 2026-09-30, mapped onto three targets: SPDX 3.0.1 (AI and Dataset profiles), CycloneDX 1.7.2 (ML-BOM) and the EU GPAI Code of Practice Model Documentation Form (July 2025). We use 61 canonical facts. This is a probe of the standards and of disclosure practice, not a compliance assessment. Numbers come from `out/headline.json` and `out/gaps.csv`.*
 
+## What the 61 facts are
+
+We built a list of 61 facts by combining what the three formats ask for: the EU Model Documentation Form, SPDX 3.0.1 and CycloneDX 1.7. We added a few things model cards commonly publish but no format has a field for, such as knowledge cutoff and languages. This is a common frame for comparing the formats, not a proposal for what an AI bill of materials should contain.
+
+- **It is anchored to existing standards, not to need.** Things none of the formats asks for, and cards rarely mention, are not in the list. Examples: the tokenizer, per-dataset licences and consent, safety filters shipped with a deployment, file-level hashes, and who hosts inference.
+- **Every fact counts equally.** Parameter count weighs the same as explainability, so percentages are shares of this list, not of what matters most.
+- **The list leans towards the EU form.** 45 of the 61 facts map onto the form's 45 items, though not one to one (some facts fill an exact and a range item, and some items draw on two facts), and 21 facts are asked for only by the form.
+
+The EU-form figures below count the form's 45 items. Everything else counts the 61 facts.
+
 ## Headline numbers
 
 - **58%** of EU form items can be answered from the public card (median across models; range 18 to 37 of 45 items). The figure is generous: Hub-supplied data such as the commit hash and repo URL count as answers.

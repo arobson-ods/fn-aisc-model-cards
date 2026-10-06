@@ -55,6 +55,7 @@ One-off helpers:
 
 ## Notes on method
 
+- **The 61 facts:** we built a list of 61 facts by combining what the three formats ask for: the EU Model Documentation Form, SPDX 3.0.1 and CycloneDX 1.7. We added a few things model cards commonly publish but no format has a field for, such as knowledge cutoff and languages. This is a common frame for comparing the formats, not a proposal for what an AI bill of materials should contain. Every fact counts equally, and things no format asks for (e.g. the tokenizer, per-dataset licences) are not in it. See "What the 61 facts are" in `docs/findings.md`.
 - **Evidence:**
   - Pass-1 values cite the API field path they came from. Each is tagged `card_metadata` (card YAML), `hub_api` (computed by the Hub, e.g. the parameter count from safetensors) or `repo_config` (`config.json`).
   - Pass-2 values carry a verbatim quote, which is checked against the cached README. A value whose quote doesn't match gets `rejected_quote` and is never repaired.
